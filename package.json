@@ -1,0 +1,22 @@
+{
+  "name": "elementor.dev",
+  "version": "1.0.0",
+  "description": "Official Elementor Developer Resources",
+  "main": "index.js",
+  "authors": {
+    "name": "Rami Yushuvaev",
+    "email": "ramiy@elementor.com"
+  },
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "@vuepress/plugin-google-analytics": "^1.8.2",
+    "@vuepress/plugin-pwa": "^1.8.2"
+  }
+}
