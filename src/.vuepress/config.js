@@ -27,13 +27,13 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    base: '/elementor-dev/',
-    repo: 'rami-elementor/elementor-dev',
+    base: '/elementor-developers/',
+    repo: 'rami/elementor-developers',
     docsBranch: 'main',
     docsDir: 'src',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
-    lastUpdated: false,
+    lastUpdated: true,
     logo: 'https://avatars.githubusercontent.com/u/47606894?s=35',
     displayAllHeaders: true,
     smoothScroll: true,
@@ -466,7 +466,7 @@ module.exports = {
         twitterCard: _ => 'summary_large_image',
         type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
         url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
-        image: () => 'https://developers.elementor.com/wp-content/uploads/sites/7/2019/04/elementor_logo_gradient_120x120.png',
+        image: () => 'https://avatars.githubusercontent.com/u/47606894',
         publishedAt: $page => $page.frontmatter.date && new Date($page.frontmatter.date),
         modifiedAt: $page => $page.lastUpdated && new Date($page.lastUpdated),
       }
