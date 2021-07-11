@@ -1,6 +1,6 @@
 # Plugin Header
 
-The plugin's main PHP file should include header comment with basic information about the plugin. For the full list available header fields see [WordPress Header Requirements](https://developer.wordpress.org/plugins/plugin-basics/header-requirements/).
+The plugin's main PHP file `plugin-name.php` should include header comment with basic information about the plugin. For the full list available header fields see [WordPress Header Requirements](https://developer.wordpress.org/plugins/plugin-basics/header-requirements/).
 
 ## Basic Plugin Header
 
