@@ -103,6 +103,7 @@ module.exports = {
           children: [
             '',
             'requirements',
+            'guidelines',
           ]
         },
         {
