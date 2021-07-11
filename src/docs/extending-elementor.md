@@ -12,6 +12,7 @@ When extending Elementor, you should implement all the WordPress coding standard
 
 To start with, you need to create a simple WordPress Plugins focused on Elementor:
 
+* [File & Folder Structure](./file-folder-structure)
 * [Plugin Header](./plugin-header)
 * [Plugin Structure](./plugin-structure)
 * [Plugin Compatibility](./plugin-compatibility)

@@ -111,6 +111,7 @@ module.exports = {
           sidebarDepth: -1,
           children: [
             'extending-elementor',
+            'file-folder-structure',
             'plugin-header',
             'plugin-structure',
             'plugin-compatibility',
