@@ -4,6 +4,8 @@
 
 The Finder component enables quick access to a search bar that pops up, giving you easy access to many pages and settings on the site. Users can create new posts from Elementor, edit other pages, navigate to different setting pages etc.
 
+<img src="/assets/img/elementor-finder.png" alt="Elementor Finder">
+
 ## How it Works
 
 When using the finder it returns a set of links organized by categories, each category includes a set of links to different section on the site. For each search term entered by the user, the Finder filters the list of links based on the relevant "keywords".
