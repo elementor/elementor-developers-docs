@@ -28,7 +28,7 @@ module.exports = {
    */
   themeConfig: {
     base: '/elementor-developers/',
-    repo: 'rami/elementor-developers',
+    repo: 'ramiy/elementor-developers',
     docsBranch: 'main',
     docsDir: 'src',
     editLinks: true,
@@ -128,7 +128,8 @@ module.exports = {
           sidebarDepth: -1,
           children: [
             [ '', 'Introduction' ],
-            'dynamic-tags-types',
+            'dynamic-tags-categories',
+            'dynamic-tags-groups',
           ]
         },
         {
