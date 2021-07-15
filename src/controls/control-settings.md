@@ -43,16 +43,18 @@ Later on, you can utilize those settings when generating [Control Template](./co
 
 You can also support [Dynamic Tags](/dynamic-tags/) in your controls. To use this feature in your controls you add the `dynamic` setting:
 
-```php
+```php {9-12}
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
 	protected function get_default_settings() {
 
 		return [
+			'show_label' => true,
 			'label_block' => true,
+			'separator' => 'after',
 			'dynamic' => [
 				'active' => true,
-				'categories' => [ \Elementor\Modules\DynamicTags\Module\TagsModule::TEXT_CATEGORY ],
+				'categories' => [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ],
 			],
 		];
 
