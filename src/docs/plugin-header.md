@@ -25,6 +25,9 @@ Elementor has it's own plugin header where you can set the heights Elementor ver
 
 ```php
 /**
- * Elementor tested up to: 3.3.0
+ * Elementor tested up to: x.x.x
+ * Elementor Pro tested up to: x.x.x
  */
 ```
+
+To prevent compatibility problems between different versions of Elementor and other addons, we introduced the Compatibility Tag mechanism that notifies users about plugins that are not compatible to their currently-installed version of Elementor. This will make the relationship between Elementor and other extensions more transparent, and will make it easier to debug issues if any arise.
