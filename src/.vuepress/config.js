@@ -64,6 +64,14 @@ module.exports = {
         text: 'Components',
         items: [
           {
+            text: 'Context Menu',
+            link: '/context-menu/',
+          },
+          {
+            text: 'Finder',
+            link: '/finder/',
+          },
+          {
             text: 'Widgets',
             link: '/widgets/',
           },
@@ -72,20 +80,12 @@ module.exports = {
             link: '/controls/',
           },
           {
-            text: 'Finder',
-            link: '/finder/',
-          },
-          {
-            text: 'Context Menu',
-            link: '/context-menu/',
+            text: 'Dynamic Tags',
+            link: '/dynamic-tags/',
           },
           {
             text: 'Forms',
             link: '/forms/',
-          },
-          {
-            text: 'Dynamic Tags',
-            link: '/dynamic-tags/',
           },
           {
             text: 'Theme Locations',
@@ -128,8 +128,6 @@ module.exports = {
           sidebarDepth: -1,
           children: [
             [ '', 'Introduction' ],
-            'dynamic-tags-categories',
-            'dynamic-tags-groups',
           ]
         },
         {
@@ -139,6 +137,8 @@ module.exports = {
           children: [
             'dynamic-tags-structure',
             'dynamic-tags-data',
+            'dynamic-tags-groups',
+            'dynamic-tags-categories',
             'dynamic-tags-controls',
             'dynamic-tags-rendering',
           ]
