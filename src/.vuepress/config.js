@@ -88,7 +88,7 @@ module.exports = {
             link: '/dynamic-tags/',
           },
           {
-            text: 'Themes',
+            text: 'Theme Locations',
             link: '/themes/',
           },
         ],

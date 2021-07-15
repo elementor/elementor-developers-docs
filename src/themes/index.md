@@ -1,3 +1,3 @@
-# Theme Developers
+# Theme Locations
 
 xxx
