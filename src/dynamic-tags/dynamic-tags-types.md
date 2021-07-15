@@ -1,4 +1,0 @@
-# Dynamic Tags Types
-
-xxxx
-
