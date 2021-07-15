@@ -62,5 +62,3 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 
 }
 ```
-
-Please note that only Elementor Pro users will be able to use dynamic capabilities.
