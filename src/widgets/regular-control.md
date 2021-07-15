@@ -64,6 +64,42 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
+### Number Control
+
+In this example we are going to add a simple number control defined at the `Control_Number` class which to allow the user to save numbers:
+
+```php {12-23}
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function _register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => __( 'Content', 'plugin-name' ),
+			]
+		);
+
+		$this->add_control(
+			'size',
+			[
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'label' => __( 'Size', 'plugin-name' ),
+				'placeholder' => '0',
+				'min' => 0,
+				'max' => 100,
+				'step' => 1,
+				'default' => 50,
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+}
+```
+
 ### Select Control
 
 Another simple example is the `Control_Select` class which to allow to choose predefined fields:
