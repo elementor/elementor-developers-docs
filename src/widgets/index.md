@@ -1,6 +1,6 @@
 # Elementor Widgets
 
-<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
 Elementor is packed with dozens of useful widgets in the **Widgets Panel** split into several categories. Each widget has a set of custom controls (input fields) where end-users can fill data.
 

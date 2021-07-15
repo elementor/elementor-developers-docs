@@ -1,5 +1,7 @@
 # Scripts & Styles
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Just like WordPress, Elementor has special hooks to register custom scripts and styles. It's very important to use the correct hook to improve site performance. Using Elementor recommendations and best practice helps Elementor enqueue files dynamically only when they are used, reducing performance impact.
 
 ## Static vs. Dynamic Loading

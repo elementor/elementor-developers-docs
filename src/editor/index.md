@@ -1,5 +1,7 @@
 # Elementor Editor
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The editor is the environment in which the user creates the page and controls site settings. The editor is a general term that describes several areas. In turn, each area consists from several other inner areas. Some of them can be extended by 3rd party developers, others are not.
 
 ## Structure
