@@ -54,6 +54,10 @@ module.exports = {
             text: 'Scripts & Styles',
             link: '/scripts-styles/',
           },
+          {
+            text: 'Hooks',
+            link: '/hooks/',
+          },
         ],
       },
       {
@@ -82,10 +86,6 @@ module.exports = {
           {
             text: 'Dynamic Tags',
             link: '/dynamic-tags/',
-          },
-          {
-            text: 'Hooks',
-            link: '/hooks/',
           },
           {
             text: 'Themes',
