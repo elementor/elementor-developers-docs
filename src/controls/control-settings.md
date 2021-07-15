@@ -4,7 +4,7 @@
 
 ## Available Settings
 
-Each control has a set of default settings that determine the structure and the design of the control in the panel. Those default setting are defined in in the `$_base_settings` property.  Here is the list of default settings that all control have in common:
+Each control has a set of default settings that determine the structure and the design of the control in the panel. Those default setting are defined in the `$_base_settings` property.  Here is the list of default settings that all control have in common:
 
 | Name          | Type     | Default   | Description                                      |
 |---------------|----------|-----------|--------------------------------------------------|
