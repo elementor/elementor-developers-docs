@@ -109,3 +109,5 @@ dist
 # other
 .data
 .hide
+.temp
+.cache
