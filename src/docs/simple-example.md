@@ -13,9 +13,12 @@ Altogether, the main plugin class with some header data and extra phpDocs should
  * Description: Custom Elementor extension.
  * Plugin URI:  https://elementor.com/
  * Version:     1.0.0
- * Author:      Elementor
- * Author URI:  https://elementor.com/
+ * Author:      Elementor Developer
+ * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-test-extension
+ * 
+ * Elementor tested up to:     3.3.0
+ * Elementor Pro tested up to: 3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -161,7 +164,7 @@ final class Elementor_Test_Extension {
 	 * @access public
 	 */
 	public function init() {
-	
+
 		// Add Plugin actions
 		add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
 		add_action( 'elementor/controls/controls_registered', [ $this, 'init_controls' ] );
