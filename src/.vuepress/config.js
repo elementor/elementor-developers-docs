@@ -373,6 +373,15 @@ module.exports = {
           ]
         },
         {
+          title: 'Menu Structure',
+          collapsable: false,
+          sidebarDepth: -1,
+          children: [
+            'context-menu-types',
+            'context-menu-groups',
+          ]
+        },
+        {
           title: 'Manage Actions',
           collapsable: false,
           sidebarDepth: -1,

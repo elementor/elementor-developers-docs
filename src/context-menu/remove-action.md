@@ -2,8 +2,11 @@
 
 xxx
 
-```js
-// Remove existing action
+## Remove Widget Action
+
+Remove existing action.
+
+```js {1}
 elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
    groups.forEach( ( group ) => {
       if ( 'general' === group.name ) {
@@ -12,5 +15,21 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
       }
    } );
    return groups;
+} );
+```
+
+## Remove Column Action
+
+```js {1}
+elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view ) => {
+
+} );
+```
+
+## Remove Section Action
+
+```js {1}
+elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view ) => {
+
 } );
 ```
