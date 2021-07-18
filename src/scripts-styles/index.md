@@ -6,7 +6,7 @@ Just like WordPress, Elementor has special hooks to register custom scripts and 
 
 ## Static vs. Dynamic Loading
 
-Some scripts should be always loaded, others only when used. Elementor allows developers the freedom of choosing either way. A good example is the Editor vs Widgets. The Editor scripts should be loaded always. Widgets scripts, on the other hand, should be loaded only if they are used.
+Some scripts should be always loaded, others only when used. Elementor allows developers the freedom of choosing either way. A good example is the Editor vs Widgets. Editor scripts should always be loaded. Widgets scripts, on the other hand, should be loaded on the frontend only if the widget is being used.
 
 Each script and stylesheet increases the page size. This is why you should register assets and let Elementor decide whether to enqueue them. Elementor checks if the page uses an element requiring your script, and only then they are being loaded.
 
@@ -17,9 +17,16 @@ Register new scripts and styles to frontend pages using Elementor:
 * [Frontend Scripts](./frontend-scripts)
 * [Frontend Styles](./frontend-styles)
 
+## Preview Scripts & Styles
+
+Register new scripts and styles to [Elementor Preview](/editor/elementor-preview):
+
+* [Preview Scripts](./preview-scripts)
+* [Preview Styles](./preview-styles)
+
 ## Editor Scripts & Styles
 
-Register new scripts and styles to [Elementor Editor](/editor/):
+Register new scripts and styles to [Elementor Editor](/editor/elementor-panel):
 
 * [Editor Scripts](./editor-scripts)
 * [Editor Styles](./editor-styles)

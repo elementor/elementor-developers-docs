@@ -411,6 +411,15 @@ module.exports = {
           ]
         },
         {
+          title: 'Preview',
+          collapsable: false,
+          sidebarDepth: -1,
+          children: [
+            'preview-scripts',
+            'preview-styles',
+          ]
+        },
+        {
           title: 'Editor',
           collapsable: false,
           sidebarDepth: -1,
