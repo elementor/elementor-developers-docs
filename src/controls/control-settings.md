@@ -6,13 +6,13 @@
 
 Each control has a set of default settings that determine the structure and the design of the control in the panel. Those default setting are defined in the `$_base_settings` property.  Here is the list of default settings that all control have in common:
 
-| Name          | Type     | Default   | Description                                      |
-|---------------|----------|-----------|--------------------------------------------------|
-| `label`       | `string` |           | The label that appears above of the field.       |
-| `description` | `string` |           | The description that appears below the field.    |
-| `show_label`  | `bool`   | `true`    | Whether to display the label.                    |
-| `label_block` | `bool`   | `false`   | Whether to display the label in a separate line. |
-| `separator`   | `string` | `default` | Set the position of the control separator. Available values are `default`, `before`, `after` and `none`. `default` will position the separator depending on the control type. `before` / `after` will position the separator before/after the control. `none` will hide the separator. |
+| Name          | Type       | Default   | Description                                      |
+|---------------|------------|-----------|--------------------------------------------------|
+| `label`       | _`string`_ |           | The label that appears above of the field.       |
+| `description` | _`string`_ |           | The description that appears below the field.    |
+| `show_label`  | _`bool`_   | `true`    | Whether to display the label.                    |
+| `label_block` | _`bool`_   | `false`   | Whether to display the label in a separate line. |
+| `separator`   | _`string`_ | `default` | Set the position of the control separator. Available values are `default`, `before`, `after` and `none`. `default` will position the separator depending on the control type. `before` / `after` will position the separator before/after the control. `none` will hide the separator. |
 
 Each control can override the default settings and add new custom settings.
 
