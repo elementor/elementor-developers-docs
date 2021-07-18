@@ -4,7 +4,7 @@ When the Finder category class is ready, you need to add it to the categories ma
 
 ## Registering Finder Category
 
-When we add a new category, we need to provide the a unique ID and the class itself, the following way:
+When we add a new category, we need to provide a unique ID and the class itself, the following way:
 
 ```php
 function my_custom_finder_category( $categories_manager ) {
