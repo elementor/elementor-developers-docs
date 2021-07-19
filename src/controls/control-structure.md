@@ -63,3 +63,4 @@ The methods can be divided into the following groups:
 * [Settings](./control-settings/)
 * [Template](./control-template/)
 * [Values](./control-values/)
+* [Enqueue](./control-enqueue)
