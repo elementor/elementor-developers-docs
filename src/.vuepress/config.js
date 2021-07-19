@@ -421,6 +421,7 @@ module.exports = {
           children: [
             'context-menu-types',
             'context-menu-groups',
+            'context-menu-actions',
           ]
         },
         {
