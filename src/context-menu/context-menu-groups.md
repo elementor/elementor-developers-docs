@@ -15,20 +15,40 @@ Built-in context menu groups:
 
 All the groups are visually divided with a separator.
 
-## Menus
+## Groups Structure
 
-### Widget
-
-[ img ]
-
-### Column
-
-[ img ]
-
-### Empty Column
-
-[ img ]
+Active groups displayed in each element:
 
 ### Section
 
-[ img ]
+<img src="/assets/img/context-menu-section.png" alt="Section Context Menu" style="float: right; margin-left: 20px;">
+
+* General
+* Clipboard
+* Save
+* Tools
+* Delete
+
+<br clear="both">
+
+### Column
+
+<img src="/assets/img/context-menu-column.png" alt="Column Context Menu" style="float: right; margin-left: 20px;">
+
+* General
+* Add
+* Clipboard
+* Tools
+* Delete
+
+<br clear="both">
+
+### Widget
+
+<img src="/assets/img/context-menu-widget.png" alt="Widget Context Menu" style="float: right; margin-left: 20px;">
+
+* General
+* Clipboard
+* Save
+* Tools
+* Delete
