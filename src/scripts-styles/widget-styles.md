@@ -12,9 +12,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	public function __construct( $data = [], $args = null ) {
 
 		parent::__construct( $data, $args );
-		wp_register_style( 'widget-style-1', plugins_url( 'css/widget-style-1.css', __FILE__ ) );
-		wp_register_style( 'widget-style-2', plugins_url( 'css/widget-style-2.css', __FILE__ ), [ 'external-framework' ] );
-		wp_register_style( 'external-framework', plugins_url( 'js/libs/external-framework.css', __FILE__ ) );
+		wp_register_style( 'widget-style-1', plugins_url( 'assets/css/widget-style-1.css', __FILE__ ) );
+		wp_register_style( 'widget-style-2', plugins_url( 'assets/css/widget-style-2.css', __FILE__ ), [ 'external-framework' ] );
+		wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
 
 	}
 

@@ -12,11 +12,11 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 	protected function enqueue() {
 
 		// Styles
-		wp_register_style( 'control-style', plugins_url( 'css/control-style.css', __FILE__ ) );
+		wp_register_style( 'control-style', plugins_url( 'assets/css/control-style.css', __FILE__ ) );
 		wp_enqueue_style( 'control-style' );
 
 		// Scripts
-		wp_register_script( 'control-script', plugins_url( 'js/control-script.js', __FILE__ ) );
+		wp_register_script( 'control-script', plugins_url( 'assets/js/control-script.js', __FILE__ ) );
 		wp_enqueue_script( 'control-script' );
 
 	}

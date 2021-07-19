@@ -37,8 +37,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	public function __construct( $data = [], $args = null ) {
 		parent::__construct( $data, $args );
-		wp_register_script( 'script-handle', 'path/to/file.js', [ 'elementor-frontend' ], '1.0.0', true );
-		wp_register_style( 'style-handle', 'path/to/file.css' );
+		wp_register_script( 'script-handle', 'assets/js/widget-script.js', [ 'elementor-frontend' ], '1.0.0', true );
+		wp_register_style( 'style-handle', 'assets/css/widget-style.css' );
 	}
 
 	public function get_script_depends() {

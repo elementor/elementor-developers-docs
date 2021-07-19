@@ -9,9 +9,9 @@ Register styles and enqueue them when using Elementor Editor:
 ```php
 function my_plugin_editor_styles() {
 
-	wp_register_style( 'editor-style-1', plugins_url( 'css/editor-style-1.css', __FILE__ ) );
-	wp_register_style( 'editor-style-2', plugins_url( 'css/editor-style-2.css', __FILE__ ), [ 'external-framework' ] );
-	wp_register_style( 'external-framework', plugins_url( 'js/libs/external-framework.css', __FILE__ ) );
+	wp_register_style( 'editor-style-1', plugins_url( 'assets/css/editor-style-1.css', __FILE__ ) );
+	wp_register_style( 'editor-style-2', plugins_url( 'assets/css/editor-style-2.css', __FILE__ ), [ 'external-framework' ] );
+	wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
 
 	wp_enqueue_style( 'editor-style-1' );
 	wp_enqueue_style( 'editor-style-2' );

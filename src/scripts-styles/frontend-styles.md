@@ -9,9 +9,9 @@ Register stylesheets and enqueue them on frontend pages using Elementor:
 ```php
 function my_plugin_frontend_stylesheets() {
 
-	wp_register_style( 'frontend-style-1', plugins_url( 'css/frontend-style-1.css', __FILE__ ) );
-	wp_register_style( 'frontend-style-2', plugins_url( 'css/frontend-style-2.css', __FILE__ ), [ 'external-framework' ] );
-	wp_register_style( 'external-framework', plugins_url( 'js/libs/external-framework.css', __FILE__ ) );
+	wp_register_style( 'frontend-style-1', plugins_url( 'assets/css/frontend-style-1.css', __FILE__ ) );
+	wp_register_style( 'frontend-style-2', plugins_url( 'assets/css/frontend-style-2.css', __FILE__ ), [ 'external-framework' ] );
+	wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
 
 	wp_enqueue_style( 'frontend-style-1' );
 	wp_enqueue_style( 'frontend-style-2' );

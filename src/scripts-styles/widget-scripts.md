@@ -12,9 +12,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	public function __construct( $data = [], $args = null ) {
 
 		parent::__construct( $data, $args );
-		wp_register_script( 'widget-script-1', plugins_url( 'js/widget-script-1.js', __FILE__ ) );
-		wp_register_script( 'widget-script-2', plugins_url( 'js/widget-script-2.js', __FILE__ ), [ 'external-library' ] );
-		wp_register_script( 'external-library', plugins_url( 'js/libs/external-library.js', __FILE__ ) );
+		wp_register_script( 'widget-script-1', plugins_url( 'assets/js/widget-script-1.js', __FILE__ ) );
+		wp_register_script( 'widget-script-2', plugins_url( 'assets/js/widget-script-2.js', __FILE__ ), [ 'external-library' ] );
+		wp_register_script( 'external-library', plugins_url( 'assets/js/libs/external-library.js', __FILE__ ) );
 
 	}
 
