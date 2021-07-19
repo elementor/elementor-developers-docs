@@ -1,6 +1,6 @@
 # Control Styles
 
-When you create new [Elementor Controls](/controls/) and you need to register custom stylesheets, you need to register styles  using [wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/) function and enqueue using [wp_enqueue_style()](https://developer.wordpress.org/reference/functions/wp_enqueue_style/). To make sure Elementor loads the stylesheets only in the editor, use the control class `enqueue()` method.
+When you create new [Elementor Controls](/controls/) and you need to register custom stylesheets, you need to register styles using [wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/) function and enqueue them using [wp_enqueue_style()](https://developer.wordpress.org/reference/functions/wp_enqueue_style/) function. To make sure Elementor loads the stylesheets only in the editor, use the control `enqueue()` method.
 
 ## Registering Control Styles
 

@@ -17,19 +17,19 @@ Register new scripts and styles to frontend pages using Elementor:
 * [Frontend Scripts](./frontend-scripts)
 * [Frontend Styles](./frontend-styles)
 
-## Preview Scripts & Styles
-
-Register new scripts and styles to [Elementor Preview](/editor/elementor-preview):
-
-* [Preview Scripts](./preview-scripts)
-* [Preview Styles](./preview-styles)
-
 ## Editor Scripts & Styles
 
 Register new scripts and styles to [Elementor Editor](/editor/elementor-panel):
 
 * [Editor Scripts](./editor-scripts)
 * [Editor Styles](./editor-styles)
+
+## Preview Scripts & Styles
+
+Register new scripts and styles to [Elementor Preview](/editor/elementor-preview):
+
+* [Preview Scripts](./preview-scripts)
+* [Preview Styles](./preview-styles)
 
 ## Widget Scripts & Styles
 

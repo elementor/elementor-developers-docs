@@ -1,6 +1,6 @@
 # Control Scripts
 
-When you create new [Elementor Controls](/controls/) and you need to register custom scripts, you need to register scripts using [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) function and enqueue using [wp_enqueue_script()](https://developer.wordpress.org/reference/functions/wp_enqueue_script/). To make sure Elementor loads the scripts only in the editor, use the control class `enqueue()` method.
+When you create new [Elementor Controls](/controls/) and you need to register custom scripts, you need to register scripts using [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) function and enqueue them using [wp_enqueue_script()](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) function. To make sure Elementor loads the scripts only in the editor, use the control `enqueue()` method.
 
 ## Registering Control Scripts
 
