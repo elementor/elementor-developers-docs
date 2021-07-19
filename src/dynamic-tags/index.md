@@ -33,7 +33,7 @@ Learn more about dynamic tags anatomy and how to create your own custom tags:
 
 ## Code Examples
 
-Learn by examples. See how easy it is to to create new dynamic tags:
+Learn by examples. See how easy it is to create new dynamic tags:
 
 * [Simple Example](./simple-example)
 * [Complex Example](./complex-example)
