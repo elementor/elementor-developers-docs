@@ -206,7 +206,7 @@ final class Elementor_Test_Extension {
 		\Elementor\Plugin::$instance->controls_manager->register_control( 'control-type-', new \Test_Control() );
 
 	}
-	
+
 	/**
 	 * Admin notice
 	 *
