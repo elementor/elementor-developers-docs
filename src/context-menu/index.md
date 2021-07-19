@@ -19,3 +19,10 @@ External developers can register their own custom actions and modify existing on
 * [Add New Context Menu Action](./add-new-action)
 * [Remove Context Menu Action](./remove-action)
 * [Update Context Menu Action](./update-action)
+
+## Code Examples
+
+Learn by examples. See how easy it is to create new controls:
+
+* [Simple Example](./simple-example)
+* [Advanced Example](./advanced-example)
