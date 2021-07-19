@@ -22,15 +22,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 When you select the which category to assign you widget too, you can select one of the default categories:
 
-<!--
-* **Basic** – The `basic` category.
-* **Pro** – Elementor Pro `pro-elements` category.
-* **General** –  The `general` category.
-* **Site** – Elementor Pro `theme-elements` category.
-* **WooCommerce** –  Elementor Pro `woocommerce-elements` category.
-* **WordPress** – The `wordpress` category displaying WordPress widgets.
--->
-
 | Label           | Name                   | Package      | Description                                     |
 |-----------------| ---------------------- | ------------ | ----------------------------------------------- |
 | **Basic**       | `basic`                | Elementor    | Category for basic widgets.                     |

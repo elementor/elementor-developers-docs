@@ -52,17 +52,3 @@ The methods can be divided into five groups:
 * [Dependencies](./widget-dependencies)
 * [Controls](./widget-controls)
 * [Rendering](./widget-rendering)
-
-<!-- 
-Let’s break it down:
-
-* **Widget Name** – The `get_name()` method is a simple one, you just need to return a widget name that will be used in the code.
-* **Widget Title** – The `get_title()` method, which again, is a very simple one, you need to return the widget title that will be displayed as the widget label.
-* **Widget Icon** – The `get_icon()` method is an optional but recommended method, it lets you set the widget icon. you can use any of the eicon or font-awesome icons, simply return the class name as a string.
-* **Widget Categories** – The `get_categories()` method lets you set the category of the widget, return the category name as a string.
-* **Script Dependencies** – The `get_script_depends()` method lets you define JS files required to run the widget.
-* **Style Dependencies** – The `get_style_depends()` method lets you define CSS files required to run the widget.
-* **Widget Controls** – The `_register_controls()` method lets you define which controls (setting fields) your widget will have.
-* **Render Frontend Output** – The `render()` method, which is where you actually render the code and generate the final HTML on the frontend using PHP.
-* **Render Editor Output** – The `_content_template()` method, is where you render the editor output to generate the live preview using a Backbone JavaScript template.
- -->
