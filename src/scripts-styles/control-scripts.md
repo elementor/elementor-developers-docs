@@ -11,9 +11,9 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 
 	protected function enqueue() {
 
-		wp_register_script( 'control-script-1', plugins_url( 'js/control-script-1.js', __FILE__ ) );
-		wp_register_script( 'control-script-2', plugins_url( 'js/control-script-2.js', __FILE__ ), [ 'external-library' ] );
-		wp_register_script( 'external-library', plugins_url( 'js/libs/external-library.js', __FILE__ ) );
+		wp_register_script( 'control-script-1', plugins_url( 'assets/js/control-script-1.js', __FILE__ ) );
+		wp_register_script( 'control-script-2', plugins_url( 'assets/js/control-script-2.js', __FILE__ ), [ 'external-library' ] );
+		wp_register_script( 'external-library', plugins_url( 'assets/js/libs/external-library.js', __FILE__ ) );
 
 		wp_enqueue_script( 'control-script-1' );
 		wp_enqueue_script( 'control-script-2' );
