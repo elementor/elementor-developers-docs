@@ -23,8 +23,8 @@ When you select the which category to assign you widget too, you can select one 
 * **Basic** – The `basic` category.
 * **Pro** – Elementor Pro `pro-elements` category.
 * **Theme** – Elementor Pro `theme-elements` category.
-* **WooCommerce** –  Elementor Pro `woocommerce-elements` category.
-* **General** –  The `general` category.
+* **WooCommerce** – Elementor Pro `woocommerce-elements` category.
+* **General** – The `general` category.
 * **WordPress** – The `wordpress` category displaying WordPress widgets.
 
 Or you can register your own category.
