@@ -275,6 +275,7 @@ module.exports = {
           sidebarDepth: -1,
           children: [
             'custom-query-filter',
+            'placeholder-image',
           ]
         },
         {
