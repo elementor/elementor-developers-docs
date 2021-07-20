@@ -118,7 +118,7 @@ final class Elementor_Test_Extension {
 
 		// Compatibility checks here...
 
-    }
+	}
 
 	/**
 	 * Initialize the plugin

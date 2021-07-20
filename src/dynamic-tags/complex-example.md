@@ -154,7 +154,7 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	public function get_title() {
 		return __( 'Server Variable', 'plugin-name' );
 	}
-   
+
 	/**
 	 * Get Group
 	 *

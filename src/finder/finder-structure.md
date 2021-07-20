@@ -22,7 +22,7 @@ class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Cat
 
 	public function get_category_items() {}
 
-    public function is_dynamic() {}
+	public function is_dynamic() {}
 
 }
 ```

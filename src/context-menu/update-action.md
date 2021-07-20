@@ -8,18 +8,18 @@ Update existing action.
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
-   groups.forEach( ( group ) => {
-      if ( 'general' === group.name ) {
-         group.actions.forEach( ( action ) => {
-            if ( 'duplicate' === action.name ) {
-               action.icon = 'eicon-alert';
-               action.title = __( 'Hellooo', 'plugin-name' );
-               action.callback = () => alert( 'bla bla' );
-            }
-         } );
-      }
-   } );
-   return groups;
+	groups.forEach( ( group ) => {
+		if ( 'general' === group.name ) {
+			group.actions.forEach( ( action ) => {
+			if ( 'duplicate' === action.name ) {
+				action.icon = 'eicon-alert';
+				action.title = __( 'Hellooo', 'plugin-name' );
+				action.callback = () => alert( 'bla bla' );
+			}
+			} );
+		}
+	} );
+	return groups;
 } );
 ```
 

@@ -35,17 +35,17 @@ Adding a new inline editing attributes is done as follows:
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-    protected function render() {
-        $this->add_inline_editing_attributes( 'text', 'advanced' );
-        echo '<div ' . $this->get_render_attribute_string( 'text_attr' ) . '>' . $this->get_settings( 'text' ) . '</div>';
-    }
+	protected function render() {
+		$this->add_inline_editing_attributes( 'text', 'advanced' );
+		echo '<div ' . $this->get_render_attribute_string( 'text_attr' ) . '>' . $this->get_settings( 'text' ) . '</div>';
+	}
 
-    protected function _content_template() {
-        ?>
-        <# view.addInlineEditingAttributes( 'text', 'advanced' ); #>
-        <div {{{ view.getRenderAttributeString( 'text' ) }}}>{{{ settings.text }}}</div>
-        <?php
-    }
+	protected function _content_template() {
+		?>
+		<# view.addInlineEditingAttributes( 'text', 'advanced' ); #>
+		<div {{{ view.getRenderAttributeString( 'text' ) }}}>{{{ settings.text }}}</div>
+		<?php
+	}
 
 }
 ```
