@@ -35,18 +35,30 @@ A best practice is to register the script & styles inside the widgets PHP class.
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function __construct( $data = [], $args = null ) {
-		parent::__construct( $data, $args );
-		wp_register_script( 'script-handle', 'assets/js/widget-script.js', [ 'elementor-frontend' ], '1.0.0', true );
-		wp_register_style( 'style-handle', 'assets/css/widget-style.css' );
-	}
-
 	public function get_script_depends() {
-		return [ 'script-handle' ];
+
+		wp_register_script( 'widget-script-1', plugins_url( 'assets/js/widget-script-1.js', __FILE__ ) );
+		wp_register_script( 'widget-script-2', plugins_url( 'assets/js/widget-script-2.js', __FILE__ ), [ 'external-library' ] );
+		wp_register_script( 'external-library', plugins_url( 'assets/js/libs/external-library.js', __FILE__ ) );
+
+		return [
+			'widget-script-1',
+			'widget-script-2',
+		];
+
 	}
 
 	public function get_style_depends() {
-		return [ 'style-handle' ];
+
+		wp_register_style( 'widget-style-1', plugins_url( 'assets/css/widget-style-1.css', __FILE__ ) );
+		wp_register_style( 'widget-style-2', plugins_url( 'assets/css/widget-style-2.css', __FILE__ ), [ 'external-framework' ] );
+		wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
+
+		return [
+			'widget-style-1',
+			'widget-style-2',
+		];
+
 	}
 
 }
