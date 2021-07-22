@@ -48,10 +48,7 @@ function elementor_context_menus_scripts() {
 	wp_register_script(
 		'elementor-context-menus',
 		plugins_url( 'elementor-context-menus.js', __FILE__ ),
-		[
-			'jquery',
-			'elementor-editor'
-		]
+		[ 'elementor-editor' ]
 	);
 
 	wp_enqueue_script( 'elementor-context-menus' );
@@ -63,7 +60,7 @@ add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_context_menus_s
 **elementor-context-menus.js**
 
 ```js
-jQuery( window ).on( 'elementor:init', () => {
+window.addEventListener( 'elementor:init', () => {
 
 	elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
 
@@ -89,4 +86,3 @@ jQuery( window ).on( 'elementor:init', () => {
 
 } );
 ```
-
