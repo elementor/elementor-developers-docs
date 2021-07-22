@@ -1,6 +1,20 @@
 # Context Menu Groups
 
-The Context Menu popup is organized by groups. Each item in the group is called an action. Elementor context menu has several groups. The groups are displayed only if they have at least one action. For example, "Add" group displayed on empty columns, and allow the user to add new columns.
+The context menu popup is organized by groups. Each item in the group is called an action. Elementor context menu has several groups. The groups are displayed only if they have at least one action. For example, "Add" group displayed on empty columns, and allow the user to add new columns.
+
+## Group Object
+
+Elementor context menu is basically a JS array of group objects. Each group object has two properties:
+
+```js
+const group = {
+	name: '',
+	actions: [],
+}
+```
+
+* **Group Name** - A unique ID used in the code.
+* **Group Actions** - An array of action objects.
 
 ## Available Groups
 
@@ -15,7 +29,7 @@ Built-in context menu groups:
 
 All the groups are visually divided with a separator.
 
-## Groups Structure
+## Groups By Element Type
 
 Active groups displayed in each element:
 
