@@ -15,6 +15,7 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
 			group.actions.splice( actionIndex, 1 );
 		}
 	} );
+
 	return groups;
 
 } );
@@ -33,6 +34,7 @@ elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view )
 			group.actions.splice( actionIndex, 1 );
 		}
 	} );
+
 	return groups;
 
 } );
@@ -51,6 +53,7 @@ elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view 
 			group.actions.splice( actionIndex, 1 );
 		}
 	} );
+
 	return groups;
 
 } );
