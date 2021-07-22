@@ -70,7 +70,7 @@ jQuery( window ).on( 'elementor:init', () => {
 		const newAction = {
 			name: 'alert',
 			icon: 'eicon-alert',
-			title: __( 'Widgets name', 'plugin-name' ),
+			title: __( 'Widgets Type', 'elementor-context-menus' ),
 			isEnabled: () => true,
 			callback: () => {
 				alert( view.model.get( 'widgetType' ) );

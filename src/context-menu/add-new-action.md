@@ -12,7 +12,7 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
 	const newAction = {
 		name: 'alert',
 		icon: 'eicon-alert',
-		title: __( 'Widgets name', 'plugin-name' ),
+		title: __( 'Widgets Type', 'plugin-name' ),
 		isEnabled: () => true,
 		callback: () => {
 			alert( view.model.get( 'widgetType' ) );
