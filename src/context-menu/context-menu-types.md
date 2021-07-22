@@ -1,12 +1,19 @@
 # Context Menu Types
 
-Elementor has 3 types of context menu based on the area where the user opens it.
+Elementor has several types of context menu based on the area where the user opens it. To open a context menu the user need to select an element and right click it. As different elements have different functionality, each menu has different action items. When modifying an action, developers must indicate which element the action should be applied to.
 
-1. Right click on an **Element** (section, column, widget).
-1. Right click on an **Empty Column**.
-1. Right click on an "**Add new section / template**" area.
+## Available Types
 
-**Note:** The common Context Menu is the **Element** context menu covers vast majority of developers needs. The other two types are specific use-cases displaying only actions relevant to those areas. We won't be covering them.
+Elementor has 3 main context menu types:
+
+1. Right click on an **Element**.
+   * Right click on a **Section** element.
+   * Right click on a **Column** element.
+   * Right click on a **Widget** element.
+2. Right click on an **Empty Column Element**.
+3. Right click on an "**Add new section / template**" area.
+
+**Note:** The common Context Menu is the **Element** context menu (section, column and widget) covers vast majority of developers needs. The other two types are specific use-cases displaying only actions relevant to those areas. We won't be covering them as they are internal use-cases.
 
 ## JS Filter Hooks
 
