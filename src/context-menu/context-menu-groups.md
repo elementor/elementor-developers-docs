@@ -20,12 +20,12 @@ const group = {
 
 Built-in context menu groups:
 
-* **General** - includes actions that allow to edit the elements, duplicate etc.
-* **Add** - includes actions that allow to add new items to the element.
-* **Clipboard** - includes actions that allow to copy, paste, paste style etc.
-* **Save** - includes actions that allow to save as a global or save as template.
-* **Tools** - includes actions that open tools like the navigator.
-* **Delete** - an action that allows the user to delete the element.
+* **General** (_`general`_) - includes actions that allow to edit the elements, duplicate etc.
+* **Add** (_`addNew`_) - includes actions that allow to add new items to the element.
+* **Clipboard** (_`clipboard`_) - includes actions that allow to copy, paste, paste style etc.
+* **Save** (_`save`_) - includes actions that allow to save as a global or save as template.
+* **Tools** (_`tools`_) - includes actions that open tools like the navigator.
+* **Delete** (_`delete`_) - an action that allows the user to delete the element.
 
 All the groups are visually divided with a separator.
 
