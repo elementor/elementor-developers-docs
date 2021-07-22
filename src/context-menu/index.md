@@ -8,9 +8,9 @@ A context menu is a control menu that appears when users select an element on [E
 
 ## Context Menu Structure
 
-Elementor has [3 types of context menus](./context-menu-types) based on the area where the user open it or the Element which was clicked. Developers can hook to any element type and modify its actions.
+Elementor has several [Types](./context-menu-types) of context menus based on the area where the user open it, or the Element which was clicked. Developers can hook to any element type and modify its actions.
 
-Each menu is divided into [several groups](./context-menu-groups) containing several items. Groups are visually divided with a separator.
+Each menu is divided into several [Groups](./context-menu-groups) containing several items. All context menu groups are visually divided with separators.
 
 Each menu item called an [Action](./context-menu-actions). In simple words, Actions are JS callback functions applied on selected elements (section, column, widget).
 
