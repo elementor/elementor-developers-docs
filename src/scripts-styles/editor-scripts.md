@@ -33,5 +33,5 @@ function my_plugin_editor_scripts() {
 	wp_enqueue_script( 'editor-script-2' );
 
 }
-add_action( 'elementor/editor/after_register_scripts', 'my_plugin_editor_scripts' );
+add_action( 'elementor/editor/after_enqueue_scripts', 'my_plugin_editor_scripts' );
 ```
