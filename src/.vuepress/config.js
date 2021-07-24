@@ -208,20 +208,20 @@ module.exports = {
           ]
         },
         {
-          title: 'Creating Items',
+          title: 'Finder Structure',
           collapsable: false,
           sidebarDepth: -1,
           children: [
+            'finder-categories',
             'finder-structure',
-            'add-new-finder-items',
-            'register-new-category',
           ]
         },
         {
-          title: 'Changing Items',
+          title: 'Manage Items',
           collapsable: false,
           sidebarDepth: -1,
           children: [
+            'add-new-finder-items',
             'add-items-to-existing-category',
             'remove-finder-categories',
             'remove-finder-items',
