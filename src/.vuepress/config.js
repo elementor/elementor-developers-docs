@@ -276,6 +276,7 @@ module.exports = {
           children: [
             'custom-query-filter',
             'placeholder-image',
+            'frontend-content',
           ]
         },
         {
