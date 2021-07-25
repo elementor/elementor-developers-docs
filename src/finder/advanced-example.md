@@ -2,9 +2,46 @@
 
 For more advanced use cases we can will replace static links with core WordPress functions linking to WordPress dashboard settings panels.
 
-## The Code
+## Folder Structure
+
+The addon will have two files, one file to prevent direct access to the files, the other to extend the Finder.
+
+```
+elementor-finder-wordpress-settings/
+├─ index.php
+└─ elementor-finder-wordpress-settings.php
+```
+
+## Plugin Files
+
+**index.php**
 
 ```php
+<?php
+// Silence is golden.
+```
+
+**elementor-finder-wordpress-settings.php**
+
+```php
+<?php
+/**
+ * Plugin Name: Elementor Finder WordPress Settings
+ * Description: Custom WordPress settings links in Elementor Finder.
+ * Plugin URI:  https://elementor.com/
+ * Version:     1.0.0
+ * Author:      Elementor Developer
+ * Author URI:  https://developers.elementor.com/
+ * Text Domain: elementor-finder-wordpress-settings
+ *
+ * Elementor tested up to: 3.3.0
+ * Elementor Pro tested up to: 3.3.0
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 /**
  * Elementor Finder - WordPress Settings
  *
@@ -20,7 +57,7 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	 * @return string Finder category title.
 	 */
 	public function get_title() {
-		return __( 'WordPress Settings', 'plugin-name' );
+		return __( 'WordPress Settings', 'elementor-finder-wordpress-settings' );
 	}
 
 	/**
@@ -34,37 +71,37 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	public function get_category_items( array $options = [] ) {
 		return [
 			'general' => [
-				'title' => __( 'General', 'plugin-name' ),
+				'title' => __( 'General', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'wordpress',
 				'url' => admin_url( 'options-general.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'general', 'settings' ],
 			],
 			'writing' => [
-				'title' => __( 'Writing', 'plugin-name' ),
+				'title' => __( 'Writing', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'edit',
 				'url' => admin_url( 'options-writing.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'writing', 'settings' ],
 			],
 			'reading' => [
-				'title' => __( 'Reading', 'plugin-name' ),
+				'title' => __( 'Reading', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'post-content',
 				'url' => admin_url( 'options-reading.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'reading', 'settings' ],
 			],
 			'discussion' => [
-				'title' => __( 'Discussion', 'plugin-name' ),
+				'title' => __( 'Discussion', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'comments',
 				'url' => admin_url( 'options-discussion.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'discussion', 'settings' ],
 			],
 			'media' => [
-				'title' => __( 'Media', 'plugin-name' ),
+				'title' => __( 'Media', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'media',
 				'url' => admin_url( 'options-media.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'media', 'settings' ],
 			],
 			'permalink' => [
-				'title' => __( 'Permalink', 'plugin-name' ),
+				'title' => __( 'Permalink', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'editor-link',
 				'url' => admin_url( 'options-permalink.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'permalink', 'settings' ],
