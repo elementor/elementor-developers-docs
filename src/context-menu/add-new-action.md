@@ -14,9 +14,7 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
 		icon: 'eicon-alert',
 		title: __( 'Widgets Type', 'plugin-name' ),
 		isEnabled: () => true,
-		callback: () => {
-			alert( view.model.get( 'widgetType' ) );
-		},
+		callback: () => alert( view.model.get( 'widgetType' ) ),
 	};
 
 	groups.forEach( ( group ) => {
@@ -32,8 +30,26 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
 
 ## Add New Column Action
 
+Now let's add to the "tools" group a new action that will console log some text.
+
 ```js {1}
 elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view ) => {
+
+	const newAction = {
+		name: 'log',
+		icon: 'eicon-code',
+		title: __( 'Some Console Log', 'plugin-name' ),
+		isEnabled: () => true,
+		callback: () => console.log( 'some text...' ),
+	};
+
+	groups.forEach( ( group ) => {
+		if ( 'tools' === group.name ) {
+			group.actions.push( newAction );
+		}
+	} );
+
+	return groups;
 
 } );
 ```
