@@ -4,7 +4,7 @@ Let's build a full Elementor addon that modifies the context menu.
 
 ## Folder Structure
 
-The addon will have two files, one file will register and enqueue JS file in the editor, the other will modify the context menu.
+The addon will have several main files. One file to prevent direct access to the files, another file will register and enqueue JS file in the editor, and the last one will actually modify the context menu.
 
 ```
 elementor-context-menus/
