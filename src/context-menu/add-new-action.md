@@ -50,9 +50,7 @@ elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view 
 		icon: 'eicon-cog',
 		title: __( 'Page Settings', 'plugin-name' ),
 		isEnabled: () => true,
-		callback: () => {
-			alert( $e.run( 'panel/page-settings/settings' ) );
-		},
+		callback: () => $e.run( 'panel/page-settings/settings' ),
 	};
 
 	groups.forEach( ( group ) => {
