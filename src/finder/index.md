@@ -4,7 +4,7 @@
 
 The Finder component enables quick access to a search bar that pops up, giving you easy access to many pages and settings on the site. Users can create new posts from Elementor, edit other pages, navigate to different setting pages etc.
 
-<img src="/assets/img/elementor-finder.png" alt="Elementor Finder">
+![Elementor Finder](/assets/img/elementor-finder.png)
 
 ## Finder Structure
 
