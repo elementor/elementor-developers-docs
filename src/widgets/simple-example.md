@@ -4,7 +4,7 @@ To put all of the pieces together we are going to create a simple Elementor widg
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the widget and the other to register the widget.
+The addon will have four files. Two index files to prevent direct access to files, one file for the widget and the main file to register the widget.
 
 ```
 elementor-oembed-widget/
