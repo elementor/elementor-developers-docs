@@ -1,111 +1,87 @@
 # Simple Example
 
-To put all of the pieces together we are going to create a simple Elementor widget which will use the native oEmbed functionality of WordPress.
+To put all of the pieces together we are going to create a simple Elementor widget which will use the [native oEmbed functionality](https://developer.wordpress.org/reference/functions/wp_oembed_get/) of WordPress.
 
-## Widget Class
 
-First we need to create a class that extends the `\Elementor\Widget_Base` class:
+## Folder Structure
 
-```php
-class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
-}
+The addon will have two files, one file to prevent direct access to the files, the other to extend the Finder.
+
+```
+elementor-oembed-widget/
+|
+├─ widgets/
+|  ├─ index.php
+|  └─ oembed-widget.php
+|
+├─ index.php
+└─ elementor-oembed-widget.php
 ```
 
-## Widget Data
+## Plugin Files
 
-The next step is to fill in the widget data:
+**index.php**
 
 ```php
-class Elementor_Test_Widget extends \Elementor\Widget_Base {
-
-	public function get_name() {
-		return 'oembed';
-	}
-
-	public function get_title() {
-		return __( 'oEmbed', 'plugin-name' );
-	}
-
-	public function get_icon() {
-		return 'eicon-code';
-	}
-
-	public function get_custom_help_url() {
-		return 'https://developers.elementor.com/';
-	}
-
-	public function get_categories() {
-		return [ 'general' ];
-	}
-
-}
+<?php
+// Silence is golden.
 ```
 
-## Widget Controls
-
-Next we need to add controls with requires user settings. In this case, we only have one control which is a simple URL input:
+**elementor-oembed-widget.php**
 
 ```php
-class Elementor_Test_Widget extends \Elementor\Widget_Base {
+<?php
+/**
+ * Plugin Name: Elementor oEmbed Widget
+ * Description: Auto embed any embbedable content from external URLs into Elementor.
+ * Plugin URI:  https://elementor.com/
+ * Version:     1.0.0
+ * Author:      Elementor Developer
+ * Author URI:  https://developers.elementor.com/
+ * Text Domain: elementor-oembed-widget
+ *
+ * Elementor tested up to: 3.3.0
+ * Elementor Pro tested up to: 3.3.0
+ */
 
-	protected function _register_controls() {
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
-		$this->start_controls_section(
-			'content_section',
-			[
-				'label' => __( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
-			]
-		);
+/**
+ * Register oEmbed Widget.
+ *
+ * Include widget file and register widget class.
+ *
+ * @since 1.0.0
+ *
+ * @access public
+ */
+public function register_oembed_widget() {
 
-		$this->add_control(
-			'url',
-			[
-				'label' => __( 'URL to embed', 'plugin-name' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'input_type' => 'url',
-				'placeholder' => __( 'https://your-link.com', 'plugin-name' ),
-			]
-		);
+	require_once( __DIR__ . '/widgets/oembed-widget.php' );
 
-		$this->end_controls_section();
-
-	}
+	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_oEmbed_Widget() );
 
 }
+add_action( 'elementor/widgets/widgets_registered', 'register_oembed_widget' );
 ```
 
-## Frontend Rendering
-
-And last, we need to implement our `render()` method which takes the URL the user inputs in the above URL control and get the oEmbed content to display using the native [wp_oembed_get()](https://developer.wordpress.org/reference/functions/wp_oembed_get/) function.
+**widgets/index.php**
 
 ```php
-class Elementor_Test_Widget extends \Elementor\Widget_Base {
+<?php
+// Silence is golden.
+```
 
-	protected function render() {
+**widgets/oembed-widget.php**
 
-		$settings = $this->get_settings_for_display();
-
-		$html = wp_oembed_get( $settings['url'] );
-
-		echo '<div class="oembed-elementor-widget">';
-
-		echo ( $html ) ? $html : $settings['url'];
-
-		echo '</div>';
-
-	}
-
+```php
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
 }
-```
 
-First are going to retrieve the saved settings for the current widget, then use the `wp_oembed_get()` function to turn the URL into embbedable content into the `$html` parameter. If embbedable content was found, we will print the content HTML, otherwise we will print the URL. We are also going to add a simple wrapper to our widget with the `.oembed-elementor-widget` CSS class.
-
-## The Entire Code
-
-Altogether the widget class with some extra phpDocs should look as follows:
-
-```php
 /**
  * Elementor oEmbed Widget.
  *
@@ -138,7 +114,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'oEmbed', 'plugin-name' );
+		return __( 'oEmbed', 'elementor-oembed-widget' );
 	}
 
 	/**
@@ -193,7 +169,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => __( 'Content', 'elementor-oembed-widget' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -201,10 +177,10 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'url',
 			[
-				'label' => __( 'URL to embed', 'plugin-name' ),
+				'label' => __( 'URL to embed', 'elementor-oembed-widget' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'input_type' => 'url',
-				'placeholder' => __( 'https://your-link.com', 'plugin-name' ),
+				'placeholder' => __( 'https://your-link.com', 'elementor-oembed-widget' ),
 			]
 		);
 
@@ -223,13 +199,10 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 
 		$settings = $this->get_settings_for_display();
-
 		$html = wp_oembed_get( $settings['url'] );
 
 		echo '<div class="oembed-elementor-widget">';
-
 		echo ( $html ) ? $html : $settings['url'];
-
 		echo '</div>';
 
 	}
