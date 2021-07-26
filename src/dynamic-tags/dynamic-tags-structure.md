@@ -22,7 +22,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function get_title() {}
 
-	public function get_group() {}
+	public function get_groups() {}
 
 	public function get_categories() {}
 

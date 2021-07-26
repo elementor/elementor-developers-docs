@@ -17,8 +17,8 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 		return __( 'Dynamic Tag Name', 'plugin-name' );
 	}
 
-	public function get_group() {
-		return 'group-name';
+	public function get_groups() {
+		return [ 'group-name' ];
 	}
 
 	public function get_categories() {
@@ -32,6 +32,6 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 * **Dynamic Tag Title** – The `get_title()` method returns the tag label displayed to the user.
 
-* **Dynamic Tag Group** – The `get_group()` – method returns a group the tag will appear under.
+* **Dynamic Tag Group** – The `get_groups()` – method returns an array of groups the tag will appear under.
 
-* **Dynamic Tag Categories** – The `get_categories()` method return an array of control categories the tag belongs to.
+* **Dynamic Tag Categories** – The `get_categories()` method returns an array of control categories the tag belongs to.

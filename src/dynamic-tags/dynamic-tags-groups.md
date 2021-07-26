@@ -20,13 +20,13 @@ If you would like to use the groups added by Elementor Pro, it will require your
 
 ## Applying Groups
 
-When creating new dynamic tags, you can set the tag group by returning the group name in the `get_group()` method:
+When creating new dynamic tags, you can set the tag group by returning group names in the `get_groups()` method:
 
 ```php
 Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function get_group() {
-		return 'actions';
+	public function get_groups() {
+		return [ 'actions' ];
 	}
 
 }
