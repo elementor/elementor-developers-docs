@@ -4,10 +4,15 @@ For more advanced use cases we can will replace static links with core WordPress
 
 ## Folder Structure
 
-The addon will have two files, one file to prevent direct access to the files, the other to extend the Finder.
+The addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class.
 
 ```
 elementor-finder-wordpress-settings/
+|
+├─ finder/
+|  ├─ index.php
+|  └─ wordpress-settings.php
+|
 ├─ index.php
 └─ elementor-finder-wordpress-settings.php
 ```
@@ -38,6 +43,43 @@ elementor-finder-wordpress-settings/
  * Elementor Pro tested up to: 3.3.0
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * Add custom Finder categories.
+ *
+ * Include finder file and register the class.
+ *
+ * @since 1.0.0
+ * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $categories_manager.
+ * @return void
+ */
+function elementor_finder_wordpress_settings( $categories_manager ) {
+
+	require_once( __DIR__ . '/finder/wordpress-settings.php' );
+
+	$categories_manager->add_category(
+		'wordpress-settings',
+		new Elementor_Finder_WordPress_Settings()
+	);
+
+};
+add_action( 'elementor/finder/categories/init', 'elementor_finder_wordpress_settings' );
+```
+
+**finder/index.php**
+
+```php
+<?php
+// Silence is golden.
+```
+
+**finder/social-media.php**
+
+```php
+<?php
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -96,7 +138,7 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 			],
 			'media' => [
 				'title' => __( 'Media', 'elementor-finder-wordpress-settings' ),
-				'icon' => 'media',
+				'icon' => 'image',
 				'url' => admin_url( 'options-media.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'media', 'settings' ],
 			],
@@ -110,20 +152,8 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	}
 
 }
-
-/**
- * Add custom Finder categories.
- *
- * @since 1.0.0
- * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $categories_manager.
- */
-function elementor_finder_wordpress_settings( $categories_manager ) {
-
-	$categories_manager->add_category(
-		'wordpress-settings',
-		new Elementor_Finder_WordPress_Settings()
-	);
-
-};
-add_action( 'elementor/finder/categories/init', 'elementor_finder_wordpress_settings' );
 ```
+
+## The Result
+
+![Elementor Finder WordPress Settings](/assets/img/elementor-finder-wordPress-settings.png)

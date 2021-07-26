@@ -4,10 +4,15 @@ To see how simple it is to extend the finder, we are going to create a very simp
 
 ## Folder Structure
 
-The addon will have two files, one file to prevent direct access to the files, the other to extend the Finder.
+The addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class.
 
 ```
 elementor-finder-social-media/
+|
+├─ finder/
+|  ├─ index.php
+|  └─ social-media.php
+|
 ├─ index.php
 └─ elementor-finder-social-media.php
 ```
@@ -38,6 +43,43 @@ elementor-finder-social-media/
  * Elementor Pro tested up to: 3.3.0
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * Add custom Finder categories.
+ *
+ * Include finder file and register the class.
+ *
+ * @since 1.0.0
+ * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $categories_manager.
+ * @return void
+ */
+function elementor_finder_social_media( $categories_manager ) {
+
+	require_once( __DIR__ . '/finder/social-media.php' );
+
+	$categories_manager->add_category(
+		'social-media',
+		new Elementor_Finder_Social_Media()
+	);
+
+};
+add_action( 'elementor/finder/categories/init', 'elementor_finder_social_media' );
+```
+
+**finder/index.php**
+
+```php
+<?php
+// Silence is golden.
+```
+
+**finder/social-media.php**
+
+```php
+<?php
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
@@ -82,30 +124,18 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 				'url' => 'https://twitter.com/',
 				'keywords' => [ 'twitter', 'social', 'media' ],
 			],
-			'linkedin' => [
-				'title' => __( 'LinkedIn', 'elementor-finder-social-media' ),
-				'icon' => 'linkedin',
-				'url' => 'https://linkedin.com/',
-				'keywords' => [ 'linkedin', 'social', 'media' ],
+			'pinterest' => [
+				'title' => __( 'Pinterest', 'elementor-finder-social-media' ),
+				'icon' => 'pinterest',
+				'url' => 'https://www.pinterest.com/',
+				'keywords' => [ 'pinterest', 'social', 'media' ],
 			],
 		];
 	}
 
 }
-
-/**
- * Add custom Finder categories.
- *
- * @since 1.0.0
- * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $categories_manager.
- */
-function elementor_finder_social_media( $categories_manager ) {
-
-	$categories_manager->add_category(
-		'social-media',
-		new Elementor_Finder_Social_Media()
-	);
-
-};
-add_action( 'elementor/finder/categories/init', 'elementor_finder_social_media' );
 ```
+
+## The Result
+
+![Elementor Finder Social Media](/assets/img/elementor-finder-social-media.png)
