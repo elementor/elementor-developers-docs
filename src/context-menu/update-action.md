@@ -35,7 +35,7 @@ elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view )
 		if ( 'delete' === group.name ) {
 			group.actions.forEach( ( action ) => {
 				if ( 'delete' === action.name ) {
-					action.title = __( 'Remove', 'plugin-name' );
+					action.title = 'Remove';
 				}
 			} );
 		}
@@ -58,7 +58,7 @@ elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view 
 			group.actions.forEach( ( action ) => {
 				if ( 'edit' === action.name ) {
 					action.icon = 'eicon-alert';
-					action.title = __( 'Hellooo', 'plugin-name' );
+					action.title = 'Hellooo';
 					action.callback = () => alert( 'bla bla' );
 				}
 			} );

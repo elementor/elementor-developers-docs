@@ -12,7 +12,7 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
 	const newAction = {
 		name: 'alert',
 		icon: 'eicon-alert',
-		title: __( 'Widgets Type', 'plugin-name' ),
+		title: 'Widgets Type',
 		isEnabled: () => true,
 		callback: () => alert( view.model.get( 'widgetType' ) ),
 	};
@@ -38,7 +38,7 @@ elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view )
 	const newAction = {
 		name: 'log',
 		icon: 'eicon-code',
-		title: __( 'Some Console Log', 'plugin-name' ),
+		title: 'Some Console Log',
 		isEnabled: () => true,
 		callback: () => console.log( 'some text...' ),
 	};
@@ -64,7 +64,7 @@ elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view 
 	const newAction = {
 		name: 'page-settings',
 		icon: 'eicon-cog',
-		title: __( 'Page Settings', 'plugin-name' ),
+		title: 'Page Settings',
 		isEnabled: () => true,
 		callback: () => $e.run( 'panel/page-settings/settings' ),
 	};

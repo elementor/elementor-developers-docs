@@ -10,7 +10,7 @@ An action is a JS object containing the following properties and methods:
 const action = {
 	name: 'action-id',
 	icon: 'eicon-code',
-	title: __( 'Action Label', 'plugin-name' ),
+	title: 'Action Label',
 	shortcut: '',
 	isEnabled: () => true,
 	callback: () => {},

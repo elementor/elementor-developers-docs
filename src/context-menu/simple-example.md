@@ -67,7 +67,7 @@ window.addEventListener( 'elementor:init', () => {
 		const newAction = {
 			name: 'alert',
 			icon: 'eicon-alert',
-			title: __( 'Widgets Type', 'elementor-context-menus' ),
+			title: 'Widgets Type',
 			isEnabled: () => true,
 			callback: () => {
 				alert( view.model.get( 'widgetType' ) );
