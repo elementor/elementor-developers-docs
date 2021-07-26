@@ -72,7 +72,7 @@ window.addEventListener( 'elementor:init', () => {
 		icon: 'eicon-wrench',
 		title: __( 'Google PageSpeed', 'elementor-page-speed-context-menu' ),
 		isEnabled: () => true,
-		callback: () => window.open( pageSpeedURL, '_blank' ),
+		callback: () => window.open( pageSpeedURL, '_blank' ).focus(),
 	};
 
 	// Add "Google PageSpeed" action to Widget context menu.
