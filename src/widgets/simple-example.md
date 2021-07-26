@@ -2,10 +2,9 @@
 
 To put all of the pieces together we are going to create a simple Elementor widget which will use the [native oEmbed functionality](https://developer.wordpress.org/reference/functions/wp_oembed_get/) of WordPress.
 
-
 ## Folder Structure
 
-The addon will have two files, one file to prevent direct access to the files, the other to extend the Finder.
+The addon will have four files. Two index file to prevent direct access to files, one file for the widget and the other to register the widget.
 
 ```
 elementor-oembed-widget/
@@ -54,10 +53,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include widget file and register widget class.
  *
  * @since 1.0.0
- *
- * @access public
+ * @return void
  */
-public function register_oembed_widget() {
+function register_oembed_widget() {
 
 	require_once( __DIR__ . '/widgets/oembed-widget.php' );
 
