@@ -1,134 +1,150 @@
 # Simple Example
 
-To put all of the pieces together we are going to create a simple Dynamic Tag which will return a random number.
+To put all of the pieces together we are going to create a simple Dynamic Tag which will return a random number. To simplify the example, this dynamic tag won't have controls. But you can enhance the code and add two controls for minimum and maximum limits.
 
-## Dynamic Tag Class
+## Folder Structure
 
-First we need to create a class that extends the `Elementor\Core\DynamicTags\Tag` class:
+The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag.
 
-```php
-Class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Tag {
-}
+```
+elementor-random-number-dynamic-tag/
+|
+├─ dynamic-tags/
+|  ├─ index.php
+|  └─ random-number-dynamic-tag.php
+|
+├─ index.php
+└─ elementor-random-number-dynamic-tag.php
 ```
 
-## Dynamic Tag Data
+## Plugin Files
 
-Next we need to add data settings for our tag:
+**index.php**
 
 ```php
-Class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Tag {
-
-	public function get_name() {
-		return 'random-number';
-	}
-
-	public function get_title() {
-		return __( 'Random Number', 'plugin-name' );
-	}
-
-	public function get_group() {
-		return 'actions';
-	}
-
-	public function get_categories() {
-		return [ \Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY ];
-	}
-
-}
+<?php
+// Silence is golden.
 ```
 
-## Dynamic Tag Controls
-
-To simplify the example, this dynamic tag won't have any controls. But you can enhance the code and add two controls for minimum and maximum limits.
-
-## Dynamic Tag Rendering
-
-Now we will echo the tag output using in the `render()` method - a simple `rand()` output.
+**elementor-random-number-dynamic-tag.php**
 
 ```php
-Class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Tag {
+<?php
+/**
+ * Plugin Name: Elementor Random Number Dynamic Tag
+ * Description: Add dynamic tag that returns a random number.
+ * Plugin URI:  https://elementor.com/
+ * Version:     1.0.0
+ * Author:      Elementor Developer
+ * Author URI:  https://developers.elementor.com/
+ * Text Domain: elementor-random-number-dynamic-tag
+ *
+ * Elementor tested up to: 3.3.0
+ * Elementor Pro tested up to: 3.3.0
+ */
 
-	public function render() {
-		echo rand();
-	}
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
 }
-```
 
-## Register the Dynamic Tag
+/**
+ * Register Random Number Dynamic Tag.
+ *
+ * Include dynamic tag file and register tag class.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+function register_random_number_dynamic_tag( $dynamic_tags ) {
 
-When the dynamic tag class is ready, we have to register the tag with Elementor’s dynamic tag manager at the `elementor/dynamic_tags/register_tags` hook:
+	require_once( __DIR__ . '/dynamic-tags/random-number-dynamic-tag.php' );
 
-```php
-function register_random_number_tag( $dynamic_tags ) {
 	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Random_Number' );
+
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_random_number_tag' );
+add_action( 'elementor/dynamic_tags/register_tags', 'register_random_number_dynamic_tag' );
 ```
 
-## The Entire Code
-
-Altogether the widget class with some extra phpDocs should look as follows:
+**dynamic-tags/index.php**
 
 ```php
+<?php
+// Silence is golden.
+```
+
+**dynamic-tags/random-number-dynamic-tag.php**
+
+```php
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * Elementor Dynamic Tag - Random Number
+ *
+ * Elementor dynamic tag that returns a random number.
+ *
+ * @since 1.0.0
+ */
 class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Tag {
 
 	/**
-	 * Get Name
+	 * Get dynamic tag name.
 	 *
-	 * Returns the name of the tag.
+	 * Retrieve the name of the random number tag.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string
+	 * @return string Dynamic tag name.
 	 */
 	public function get_name() {
 		return 'random-number';
 	}
 
 	/**
-	 * Get Title
+	 * Get dynamic tag title.
 	 *
-	 * Returns the title of the tag.
+	 * Returns the title of the random number tag.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string
+	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return __( 'Random Number', 'plugin-name' );
+		return __( 'Random Number', 'elementor-random-number-dynamic-tag' );
 	}
 
 	/**
-	 * Get Group
+	 * Get dynamic tag groups.
 	 *
-	 * Returns the group of the tag.
+	 * Retrieve the list of groups the random number tag belongs to.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string
+	 * @return array Dynamic tag groups.
 	 */
-	public function get_group() {
+	public function get_groups() {
 		return [ 'actions' ];
 	}
 
 	/**
-	 * Get Categories
+	 * Get dynamic tag categories.
 	 *
-	 * Returns an array of tag categories.
+	 * Retrieve the list of categories the random number tag belongs to.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return array
+	 * @return array Dynamic tag categories.
 	 */
 	public function get_categories() {
 		return [ \Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY ];
 	}
 
 	/**
-	 * Render
+	 * Render tag output on the frontend.
 	 *
-	 * Prints the dynamic tag value.
+	 * Written in PHP and used to generate the final HTML.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -139,15 +155,4 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	}
 
 }
-
-/**
- * Register new dynamic tag that generates random numbers.
- *
- * @since 1.0.0
- * @return void
- */
-function register_random_number_tag( $dynamic_tags ) {
-	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Random_Number' );
-}
-add_action( 'elementor/dynamic_tags/register_tags', 'register_random_number_tag' );
 ```

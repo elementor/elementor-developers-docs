@@ -1,174 +1,149 @@
 # Advanced Example
 
-More advanced example will include the use of custom field and controls where the user can set fields. The tag will calculate the average of those fields.
+More advanced example will include the use of custom field and controls where the user can set fields. The tag will calculate the average of those fields. The tag will have a single control where the user can set a coma-separated list of ACF field IDs.
 
-## Dynamic Tag Class
+## Folder Structure
 
-First we need to create a class that extends the `Elementor\Core\DynamicTags\Tag` class:
+The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag.
 
-```php
-Class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag {
-}
+```
+elementor-acf-average-dynamic-tag/
+|
+├─ dynamic-tags/
+|  ├─ index.php
+|  └─ acf-average-dynamic-tag.php
+|
+├─ index.php
+└─ elementor-acf-average-dynamic-tag.php
 ```
 
-## Dynamic Tag Data
+## Plugin Files
 
-Now we can start filling in the data methods:
+**index.php**
 
 ```php
-Class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag {
-
-	public function get_name() {
-		return 'acf-average';
-	}
-
-	public function get_title() {
-		return __( 'ACF Average', 'plugin-name' );
-	}
-
-	public function get_group() {
-		return 'site';
-	}
-
-	public function get_categories() {
-		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
-	}
-
-}
+<?php
+// Silence is golden.
 ```
-
-## Dynamic Tag Controls
-
-The tag will have a single control where the user can set a coma-separated list of IDs:
+**elementor-acf-average-dynamic-tag.php**
 
 ```php
-Class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag {
+<?php
+/**
+ * Plugin Name: Elementor ACF Average Dynamic Tag
+ * Description: Add dynamic tag that returns an ACF average.
+ * Plugin URI:  https://elementor.com/
+ * Version:     1.0.0
+ * Author:      Elementor Developer
+ * Author URI:  https://developers.elementor.com/
+ * Text Domain: elementor-acf-average-dynamic-tag
+ *
+ * Elementor tested up to: 3.3.0
+ * Elementor Pro tested up to: 3.3.0
+ */
 
-	protected function _register_controls() {
-		$this->add_control(
-			'fields',
-			[
-				'label' => __( 'Fields', 'plugin-name' ),
-				'type' => 'text',
-			]
-		);
-	}
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
 }
-```
 
-## Dynamic Tag Rendering
+/**
+ * Register ACF Average Dynamic Tag.
+ *
+ * Include dynamic tag file and register tag class.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+function register_acf_average_dynamic_tag( $dynamic_tags ) {
 
-Finally, we will calculate the average of the coma-separated list of ACF fields:
+	require_once( __DIR__ . '/dynamic-tags/acf-average-dynamic-tag.php' );
 
-```php
-Class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag {
-
-	public function render() {
-		$fields = $this->get_settings( 'fields' );
-		$sum = 0;
-		$count = 0;
-		$value = 0;
-
-		// Make sure that ACF if installed and activated
-		if ( ! function_exists( 'get_field' ) ) {
-			echo 0;
-			return;
-		}
-
-		foreach ( explode( ',', $fields ) as $index => $field_name ) {
-			$field = get_field( $field_name );
-			if ( (int) $field > 0 ) {
-				$sum += (int) $field;
-				$count++;
-			}
-		}
-
-		if ( 0 !== $count ) {
-			$value = $sum / $count;
-		}
-
-		echo $value;
-	}
-
-}
-```
-
-## Register the Dynamic Tag
-
-When the dynamic tag class is ready, we have to register the tag with Elementor’s dynamic tag manager at the `elementor/dynamic_tags/register_tags` hook:
-
-```php
-function register_acf_average_tag( $dynamic_tags ) {
 	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_ACF_Average' );
+
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_acf_average_tag' );
+add_action( 'elementor/dynamic_tags/register_tags', 'register_acf_average_dynamic_tag' );
 ```
 
-## The Entire Code
-
-Altogether the widget class with some extra phpDocs should look as follows:
-
+**dynamic-tags/index.php**
 
 ```php
+<?php
+// Silence is golden.
+```
+
+**dynamic-tags/acf-average-dynamic-tag.php**
+
+```php
+<?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * Elementor Dynamic Tag - ACF Average
+ *
+ * Elementor dynamic tag that returns an ACF average.
+ *
+ * @since 1.0.0
+ */
 class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag {
 
 	/**
-	 * Get Name
+	 * Get dynamic tag name.
 	 *
-	 * Returns the name of the tag.
+	 * Retrieve the name of the ACF average tag.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string
+	 * @return string Dynamic tag name.
 	 */
 	public function get_name() {
 		return 'acf-average';
 	}
 
 	/**
-	 * Get Title
+	 * Get dynamic tag title.
 	 *
-	 * Returns the title of the tag.
+	 * Returns the title of the ACF average tag.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string
+	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return __( 'ACF Average', 'plugin-name' );
+		return __( 'ACF Average', 'elementor-acf-average-dynamic-tag' );
 	}
 
 	/**
-	 * Get Group
+	 * Get dynamic tag groups.
 	 *
-	 * Returns the group of the tag.
+	 * Retrieve the list of groups the ACF average tag belongs to.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string
+	 * @return array Dynamic tag groups.
 	 */
-	public function get_group() {
+	public function get_groups() {
 		return [ 'site' ];
 	}
 
 	/**
-	 * Get Categories
+	 * Get dynamic tag categories.
 	 *
-	 * Returns an array of tag categories.
+	 * Retrieve the list of categories the ACF average tag belongs to.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return array
+	 * @return array Dynamic tag categories.
 	 */
 	public function get_categories() {
 		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
 	}
 
 	/**
-	 * Register Controls
+	 * Register dynamic tag controls.
 	 *
-	 * Registers the dynamic tag controls.
+	 * Add input fields to allow the user to customize the ACF average tag settings.
 	 *
 	 * @since 1.0.0
 	 * @access protected
@@ -178,16 +153,16 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 		$this->add_control(
 			'fields',
 			[
-				'label' => __( 'Fields', 'plugin-name' ),
+				'label' => __( 'Fields', 'elementor-acf-average-dynamic-tag' ),
 				'type' => 'text',
 			]
 		);
 	}
 
 	/**
-	 * Render
+	 * Render tag output on the frontend.
 	 *
-	 * Prints the dynamic tag value.
+	 * Written in PHP and used to generate the final HTML.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -221,17 +196,6 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	}
 
 }
-
-/**
- * Register new dynamic tag that calculates ACF fields average.
- *
- * @since 1.0.0
- * @return void
- */
-function register_acf_average_tag( $dynamic_tags ) {
-	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_ACF_Average' );
-}
-add_action( 'elementor/dynamic_tags/register_tags', 'register_acf_average_tag' );
 ```
 
 ## The Result
