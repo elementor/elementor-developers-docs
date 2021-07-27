@@ -35,7 +35,7 @@ elementor-page-speed-context-menu/
 ```php
 <?php
 /**
- * Plugin Name: Elementor PageSpeed Context Menus
+ * Plugin Name: Elementor PageSpeed Context Menu
  * Description: Add PageSpeed to Elementor context menu.
  * Plugin URI:  https://elementor.com/
  * Version:     1.0.0
@@ -51,7 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-function elementor_page_speed_context_menus_scripts() {
+function elementor_page_speed_context_menu_scripts() {
 
 	wp_enqueue_script(
 		'elementor-page-speed-context-menu',
@@ -62,7 +62,7 @@ function elementor_page_speed_context_menus_scripts() {
 	);
 
 }
-add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_page_speed_context_menus_scripts' );
+add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_page_speed_context_menu_scripts' );
 ```
 
 **assets/index.php**
