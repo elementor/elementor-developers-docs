@@ -1,16 +1,24 @@
 # Advanced Example
 
-Let's build a full Elementor addon that sends a page to [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/) to test your page performance.
+Let's build a full Elementor addon that sends opens [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/) in a new tab to test page performance.
 
 ## Folder Structure
 
-The addon will have three main files. One file to prevent direct access to the files, another file will register and enqueue JS file in the editor, and the last one will add the page-speed action to Elementor context menu.
+The addon will have several index files to prevent direct access to folders, the main file will register and enqueue JS file in the editor, and the JS that adds the page-speed action to Elementor context menu.
 
 ```
 elementor-page-speed-context-menu/
+|
+├─ assets/
+|  |
+|  ├─ js/
+|  |  ├─ index.php
+|  |  └─ page-speed-context-menu.js
+|  |
+|  └─ index.php
+|
 ├─ index.php
-├─ elementor-page-speed-context-menu.php
-└─ elementor-page-speed-context-menu.js
+└─ elementor-page-speed-context-menu.php
 ```
 
 ## Plugin Files
@@ -43,76 +51,74 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-function elementor_context_menus_scripts() {
+function elementor_page_speed_context_menus_scripts() {
 
-	wp_register_script(
+	wp_enqueue_script(
 		'elementor-page-speed-context-menu',
-		plugins_url( 'elementor-page-speed-context-menu.js', __FILE__ ),
-		[ 'elementor-editor' ]
+		plugins_url( 'assets/js/page-speed-context-menu.js', __FILE__ ),
+		[ 'jquery' ],
+		'1.0.0',
+		false
 	);
 
-	wp_enqueue_script( 'elementor-page-speed-context-menu' );
-
 }
-add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_context_menus_scripts' );
+add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_page_speed_context_menus_scripts' );
 ```
 
-**elementor-page-speed-context-menu.js**
+**assets/index.php**
+
+```php
+<?php
+// Silence is golden.
+```
+
+**assets/js/index.php**
+
+```php
+<?php
+// Silence is golden.
+```
+
+**assets/js/page-speed-context-menu.js**
 
 ```js
-window.addEventListener( 'elementor:init', () => {
+jQuery( window ).on( 'elementor:init', () => {
 
 	const currentPageURL = ''; // TODO: return page URL
 
 	const pageSpeedURL = `https://developers.google.com/speed/pagespeed/insights/?url=${currentPageURL}&tab=desktop`;
 
+	const elTypes = [ 'widget', 'column', 'section' ];
+
 	// Google PageSpeed action object
 	const newAction = {
 		name: 'alert',
 		icon: 'eicon-wrench',
-		title: __( 'Google PageSpeed', 'elementor-page-speed-context-menu' ),
+		title: 'Google PageSpeed',
 		isEnabled: () => true,
 		callback: () => window.open( pageSpeedURL, '_blank' ).focus(),
 	};
 
-	// Add "Google PageSpeed" action to Widget context menu.
-	elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
+	// Add "Google PageSpeed" action to widget/column/section context menus.
+	elTypes.forEach( ( elType ) => {
 
-		groups.forEach( ( group ) => {
-			if ( 'tools' === group.name ) {
-				group.actions.push( newAction );
-			}
+		elementor.hooks.addFilter( `elements/${elType}/contextMenuGroups`, ( groups, view ) => {
+
+			groups.forEach( ( group ) => {
+				if ( 'general' === group.name ) {
+					group.actions.push( newAction );
+				}
+			} );
+	
+			return groups;
+	
 		} );
-
-		return groups;
-
-	} );
-
-	// Add "Google PageSpeed" action to Column context menu.
-	elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view ) => {
-
-		groups.forEach( ( group ) => {
-			if ( 'tools' === group.name ) {
-				group.actions.push( newAction );
-			}
-		} );
-
-		return groups;
-
-	} );
-
-	// Add "Google PageSpeed" action to Section context menu.
-	elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view ) => {
-
-		groups.forEach( ( group ) => {
-			if ( 'tools' === group.name ) {
-				group.actions.push( newAction );
-			}
-		} );
-
-		return groups;
 
 	} );
 
 } );
 ```
+
+## The Result
+
+![Elementor PageSpeed Context Menu](/assets/img/elementor-context-menu-page-speed.png)

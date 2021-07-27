@@ -4,13 +4,21 @@ Let's build a full Elementor addon that modifies the context menu.
 
 ## Folder Structure
 
-The addon will have several main files. One file to prevent direct access to the files, another file will register and enqueue JS file in the editor, and the last one will actually modify the context menu.
+The addon will have several index files to prevent direct access to folders, the main file will register and enqueue JS file in the editor, and the JS that actually modify the context menu.
 
 ```
 elementor-context-menus/
+|
+├─ assets/
+|  |
+|  |─ js/
+|  |  ├─ index.php
+|  |  └─ context-menus.js
+|  |
+|  └─ index.php
+|
 ├─ index.php
-├─ elementor-context-menus.php
-└─ elementor-context-menus.js
+└─ elementor-context-menus.php
 ```
 
 ## Plugin Files
@@ -45,33 +53,45 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 function elementor_context_menus_scripts() {
 
-	wp_register_script(
+	wp_enqueue_script(
 		'elementor-context-menus',
-		plugins_url( 'elementor-context-menus.js', __FILE__ ),
-		[ 'elementor-editor' ]
+		plugins_url( 'assets/js/context-menus.js', __FILE__ ),
+		[ 'jquery' ],
+		'1.0.0',
+		false
 	);
-
-	wp_enqueue_script( 'elementor-context-menus' );
 
 }
 add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_context_menus_scripts' );
 ```
 
-**elementor-context-menus.js**
+**assets/index.php**
+
+```php
+<?php
+// Silence is golden.
+```
+
+**assets/js/index.php**
+
+```php
+<?php
+// Silence is golden.
+```
+
+**assets/js/context-menus.js**
 
 ```js
-window.addEventListener( 'elementor:init', () => {
+jQuery( window ).on( 'elementor:init', () => {
 
 	elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
 
 		const newAction = {
 			name: 'alert',
 			icon: 'eicon-alert',
-			title: 'Widgets Type',
+			title: 'Widget Type',
 			isEnabled: () => true,
-			callback: () => {
-				alert( view.model.get( 'widgetType' ) );
-			},
+			callback: () => alert( view.model.get( 'widgetType' ) ),
 		};
 
 		groups.forEach( ( group ) => {
@@ -86,3 +106,7 @@ window.addEventListener( 'elementor:init', () => {
 
 } );
 ```
+
+## The Result
+
+![Elementor Context Menu Example](/assets/img/elementor-context-menu-example.png)
