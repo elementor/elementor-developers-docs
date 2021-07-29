@@ -47,6 +47,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Register New Dynamic Tag Group.
+ *
+ * Register new site group for site-related tags.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+function register_site_dynamic_tag_group( $dynamic_tags ) {
+
+	\Elementor\Plugin::$instance->dynamic_tags->register_group(
+		'site',
+		[
+			'title' => __( 'Site', 'elementor-acf-average-dynamic-tag' )
+		]
+	);
+
+}
+add_action( 'elementor/dynamic_tags/register_tags', 'register_site_dynamic_tag_group' );
+
+/**
  * Register ACF Average Dynamic Tag.
  *
  * Include dynamic tag file and register tag class.
@@ -202,8 +222,8 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 
 Dynamic tag in a group view:
 
-<img src="/assets/img/dynamic-tag-example-acf-average.png" alt="Dynamic Tag Example">
+![Dynamic tag example - group view](/assets/img/elementor-dynamic-tag-example-acf-average-groups.png)
 
 Dynamic tag controls:
 
-<img src="/assets/img/dynamic-tag-example-acf-average-controls.png" alt="Dynamic Tag Example">
+![Dynamic tag example - controls](/assets/img/elementor-dynamic-tag-example-acf-average-controls.png)

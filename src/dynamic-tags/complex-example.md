@@ -212,3 +212,13 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 
 }
 ```
+
+## The Result
+
+Dynamic tag in a group view:
+
+![Dynamic tag example - groups](/assets/img/elementor-dynamic-tag-example-server-variable-groups.png)
+
+Dynamic tag controls:
+
+![Dynamic tag example - controls](/assets/img/elementor-dynamic-tag-example-server-variable-controls.png)
