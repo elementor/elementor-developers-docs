@@ -6,18 +6,18 @@ Multi-value controls are used to return more than a single value. Each value in 
 
 The following controls come with Elementor:
 
-* [URL]() – A URL field with a button to open the link in an external tab.
-* [Media]() – A media chooser section based on the WordPress media library.
-* [Image Dimensions]() – A component with image width, input, image height input and an apply button.
-* [Text Shadow]() – Input fields for horizontal shadow, vertical shadow, shadow blur and shadow color.
-* [Box Shadow]() – Input fields for horizontal shadow, vertical shadow, shadow blur, shadow spread and shadow color.
-* [Icons Control]() – Elementor’s Icon Library for Font Icons or SVG upload based on the WordPress media library.
+* [URL](./classes/control-url) – A URL field with a button to open the link in an external tab.
+* [Media](./classes/control-media) – A media chooser section based on the WordPress media library.
+* [Image Dimensions](./classes/control-image-dimensions) – A component with image width, input, image height input and an apply button.
+* [Icons Control](./classes/control-icons) – An icon chooser (Font Icons or SVG files) based on the Elementor Icon Library.
+* [Text Shadow](./classes/control-text-shadow) – Input fields for horizontal shadow, vertical shadow, shadow blur and shadow color.
+* [Box Shadow](./classes/control-box-shadow) – Input fields for horizontal shadow, vertical shadow, shadow blur, shadow spread and shadow color.
 
 ## Extending Multi Value Controls
 
 To create your own multi value control, you need to extend the `\Elementor\Control_Base_Multiple` abstract class:
 
 ```php {1}
-class Control_Test extends \Elementor\Control_Base_Multiple {
+class Elementor_Test_Control extends \Elementor\Control_Base_Multiple {
 }
 ```

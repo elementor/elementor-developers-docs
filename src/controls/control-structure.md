@@ -9,14 +9,14 @@ Each control needs to have a two basic methods, the control unique name and the 
 To create your own control, you need to **extend** the abstract base controls:
 
 ```php
-class Control_Test extends \Elementor\Base_Control {
+class Elementor_Test_Control extends \Elementor\Base_Control {
 }
 ```
 
 You can also extend one of the [specific control types](./control-types):
 
 ```php
-class Control_Test extends \Elementor\Base_Data_Control {
+class Elementor_Test_Control extends \Elementor\Base_Data_Control {
 }
 ```
 

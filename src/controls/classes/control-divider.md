@@ -1,0 +1,68 @@
+# Divider Control
+
+Elementor divider control displays a separator between controls.
+
+The control is defined in `Control_Divider` class which extends `Base_UI_Control` class.
+
+Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::DIVIDER` constant.
+
+## Arguments
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Default</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><code>type</code></td>
+			<td><code>string</code></td>
+			<td>divider</td>
+			<td>The type of the control.</td>
+		</tr>
+		<tr>
+			<td><code>separator</code></td>
+			<td><code>string</code></td>
+			<td>none</td>
+			<td>Set the position of the control separator. Available values are <code>default</code>, <code>before</code>, <code>after</code> and <code>none</code>. <code>default</code> will position the separator depending on the control type. <code>before</code> / <code>after</code> will position the separator before/after the control. <code>none</code> will hide the separator.</td>
+		</tr>
+	</tbody>
+</table>
+
+## Return Value
+
+This control does not return any value.
+
+## Usage
+
+```php {14-19}
+<?php
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function _register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => __( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+
+		$this->add_control(
+			'hr',
+			[
+				'type' => \Elementor\Controls_Manager::DIVIDER,
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+}
+```

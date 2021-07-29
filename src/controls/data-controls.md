@@ -6,31 +6,32 @@ Data controls are simple controls used to return a single value and save it in t
 
 The following controls come with Elementor:
 
-* [Text]() – A simple text field.
-* [Number]() – A simple number field.
-* [Textarea]() – A textarea field.
-* [WYSIWYG]() – The WordPress rich-text editor based on "*TinyMCE*".
-* [Code]() – A code editor textarea based on "*Ace Editor*".
-* [Hidden]() – A hidden input field in the panel, to save data in the database.
-* [Switcher]() – A switcher control (on/off), a fancy representation of checkbox.
-* [Popover Toggle]() – A toggle button to open and close a popover.
-* [Select]() – A simple select box field.
-* [Select2]() – A select box field based on "*Select2*" plugin.
-* [Choose]() – A radio buttons styled as groups of buttons with icons.
-* [Color]() – A color picker field with an alpha slider.
-* [Icon]() – A font icon select box field based on "*Font Awesome*" fonts.
-* [Font]() – A font select box field based on "*Google Fonts*" library.
-* [Date-Time]() – A date/time picker field based on the "*Flatpickr*" library.
-* [Entrance Animation]() – An entrance animation select box field based on "*Animate.css*" library.
-* [Hover Animation]() – A hover animation select box field based on "*Hover.css*" library.
-* [Gallery]() – A gallery field based on the WordPress media library.
-* [Repeater]() – Repeater controls allow you to build repeatable blocks of fields.
+* [Text](./classes/control-text) – A simple text field.
+* [Number](./classes/control-number) – A simple number field.
+* [Textarea](./classes/control-textarea) – A textarea field.
+* [WYSIWYG](./classes/control-wysiwyg) – The WordPress rich-text editor based on "*TinyMCE*".
+* [Code](./classes/control-code) – A code editor textarea based on "*Ace Editor*".
+* [Hidden](./classes/control-hidden) – A hidden input field in the panel, to save data in the database.
+* [Switcher](./classes/control-switcher) – A switcher control (on/off), a fancy representation of checkboxes.
+* [Popover Toggle](./classes/control-popover-toggle) – A toggle button to open and close a popover.
+* [Select](./classes/control-select) – A simple select box field.
+* [Select2](./classes/control-select2) – A select box field based on "*Select2*" plugin.
+* [Choose](./classes/control-choose) – A radio buttons styled as groups of buttons with icons.
+* [Color](./classes/control-color) – A color picker field with an alpha slider.
+* [Icon](./classes/control-icon) – A font icon select box field based on "*Font Awesome*" fonts.
+* [Font](./classes/control-font) – A font select box field based on "*Google Fonts*" library.
+* [Date-Time](./classes/control-date-time) – A date/time picker field based on the "*Flatpickr*" library.
+* [Gallery](./classes/control-gallery) – A gallery field based on the WordPress media library.
+* [Repeater](./classes/control-repeater) – Repeater controls allow you to build repeatable blocks of fields.
+* [Entrance Animation](./classes/control-animation) – An entrance animation select box field based on "*Animate.css*" library.
+* [Exit Animation](./classes/control-exit-animation) – An exit animation select box field based on "*Animate.css*" library.
+* [Hover Animation](./classes/control-hover-animation) – A hover animation select box field based on "*Hover.css*" library.
 
 ## Extending Data Controls
 
 To create your own data control, you need to extend the `\Elementor\Base_Data_Control` abstract class:
 
 ```php {1}
-class Control_Test extends \Elementor\Base_Data_Control {
+class Elementor_Test_Control extends \Elementor\Base_Data_Control {
 }
 ```

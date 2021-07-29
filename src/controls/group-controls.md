@@ -6,18 +6,19 @@ Group control are used to group together several regular controls and return the
 
 The following controls come with Elementor:
 
-* [Typography]() – Font size, font family, font weight, text transform, font style, line height and letter spacing.
-* [Text Shadow]() – Add a shadow effect to texts.
-* [Box Shadow]() – Add a shadow effect to elements.
-* [Border]() – Border type, border width and border color.
-* [Background]() – Background color, background image, background gradient or background video.
-* [Image Size]() – Select image sizes (thumbnail, medium, medium_large, large) or custom dimension.
+* [Typography](./classes/group-control-typography) – Font size, font family, font weight, text transform, font style, line height and letter spacing.
+* [Text Shadow](./classes/group-control-text-shadow) – Add a shadow effect to texts.
+* [Box Shadow](./classes/group-control-box-shadow) – Add a shadow effect to elements.
+* [Border](./classes/group-control-border) – Border type, border width and border color.
+* [Background](./classes/group-control-background) – Background color, background image, background gradient or background video.
+* [Image Size](./classes/group-control-image-size) – Select image sizes (thumbnail, medium, medium_large, large) or custom dimension.
+* [CSS Filter](./classes/group-control-css-filter) – Apply CSS filters like blur, brightens, contrast, saturation or hue.
 
 ## Extending Group Controls
 
 To create your own group control, you need to extend the `\Elementor\Group_Control_Base` abstract class:
 
 ```php {1}
-class Control_Test extends \Elementor\Group_Control_Base {
+class Elementor_Test_Control extends \Elementor\Group_Control_Base {
 }
 ```
