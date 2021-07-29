@@ -123,7 +123,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access public
 	 * @return array Dynamic tag groups.
 	 */
-	public function get_groups() {
+	public function get_group() {
 		return [ 'site' ];
 	}
 

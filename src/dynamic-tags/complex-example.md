@@ -143,7 +143,7 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access public
 	 * @return array Dynamic tag groups.
 	 */
-	public function get_groups() {
+	public function get_group() {
 		return [ 'request-variables' ];
 	}
 

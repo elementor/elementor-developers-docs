@@ -124,7 +124,7 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	 * @access public
 	 * @return array Dynamic tag groups.
 	 */
-	public function get_groups() {
+	public function get_group() {
 		return [ 'actions' ];
 	}
 
