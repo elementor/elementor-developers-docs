@@ -2,17 +2,21 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-**Elementor Pro 2.0** introduced the **Theme Builder**. This feature transformed Elementor from a regular page-builder to a full site-builder. Developers can make **Elementor Compatible Themes** by supporting the **Theme Locations** functionality.
+**Elementor Pro 2.0** introduced the **Theme Builder**. This feature transformed Elementor from a regular *page-builder* to a full *site-builder*.
 
 ## Overview
 
-Previously, Elementor was a regular page-builder working only with areas inside [the_content()](https://developer.wordpress.org/reference/functions/the_content/) of a single page. You couldn’t really use Elementor to set global headers/footers, design custom archive pages or content pages!
+Previously, Elementor was a regular page-builder working only with areas inside [the_content()](https://developer.wordpress.org/reference/functions/the_content/) of a single page. You couldn’t really use Elementor to set global headers, global footers, design custom archive pages, search results, author pages, 404 pages etc.
 
-The new "Theme Builder" functionality changed everything! The weight has shifted from theme developers to the users. Users no longer need to rely on pre-designed themes, the can design their own layouts. Surprisingly, themes that adopted the change saw an increase in the amount of downloads and overall usage.
+The new "Theme Builder" functionality changed everything! The weight has shifted from theme developers to the users. Users no longer need to rely on pre-designed themes, the can design their own layouts using simple drag-and-drop functionality without any code.
+
+You would expect a decline in theme usage but surprisingly themes that adopted the change saw an increase in overall usage and total downloads.
+
+Every theme developer can make his theme **Elementor Compatible** by supporting the **Theme Locations** functionality. You just need to add a few lines of code that wrap some elements. It will help Elementor replace theme elements with Elementor designs in case the user prefers to create his own designs.
 
 ## Elementor Compatibility
 
-External developers can make **Elementor Compatible** themes. Learn how to do that:
+Learn how to develop "Elementor Compatible" themes:
 
 * [Theme Locations](./theme-locations)
 * [Registering Locations](./registering-locations)
