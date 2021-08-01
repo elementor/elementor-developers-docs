@@ -177,11 +177,17 @@ class Elementor_EmojiOneArea_Control extends \Elementor\Base_Data_Control {
 		$control_uid = $this->get_control_uid();
 		?>
 		<div class="elementor-control-field">
+
+			<# if ( data.label ) {#>
 			<label for="<?php echo esc_attr( $control_uid ); ?>" class="elementor-control-title">{{{ data.label }}}</label>
+			<# } #>
+
 			<div class="elementor-control-input-wrapper">
 				<textarea id="<?php echo esc_attr( $control_uid ); ?>" class="elementor-control-tag-area" rows="{{ data.rows }}" data-setting="{{ data.name }}" placeholder="{{ data.placeholder }}"></textarea>
 			</div>
+
 		</div>
+
 		<# if ( data.description ) { #>
 		<div class="elementor-control-field-description">{{{ data.description }}}</div>
 		<# } #>
