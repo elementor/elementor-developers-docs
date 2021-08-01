@@ -11,11 +11,9 @@ elementor-page-speed-context-menu/
 |
 ├─ assets/
 |  |
-|  ├─ js/
-|  |  ├─ index.php
-|  |  └─ page-speed-context-menu.js
-|  |
-|  └─ index.php
+|  └─ js/
+|     ├─ index.php
+|     └─ page-speed-context-menu.js
 |
 ├─ index.php
 └─ elementor-page-speed-context-menu.php
@@ -63,13 +61,6 @@ function elementor_page_speed_context_menu_scripts() {
 
 }
 add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_page_speed_context_menu_scripts' );
-```
-
-**assets/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **assets/js/index.php**

@@ -11,11 +11,9 @@ elementor-context-menus/
 |
 ├─ assets/
 |  |
-|  |─ js/
-|  |  ├─ index.php
-|  |  └─ context-menus.js
-|  |
-|  └─ index.php
+|  └─ js/
+|     ├─ index.php
+|     └─ context-menus.js
 |
 ├─ index.php
 └─ elementor-context-menus.php
@@ -63,13 +61,6 @@ function elementor_context_menus_scripts() {
 
 }
 add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_context_menus_scripts' );
-```
-
-**assets/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **assets/js/index.php**
