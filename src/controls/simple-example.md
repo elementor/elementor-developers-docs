@@ -381,4 +381,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## The Result
 
-xxx
+Emojis control in a widget:
+
+![Emojis control in a widget](/assets/img/elementor-control-emojis-1.png)
+
+The control content displayed in Elementor preview:
+
+![Control content in Elementor preview](/assets/img/elementor-control-emojis-2.png)
