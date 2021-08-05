@@ -354,7 +354,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content',
 			[
 				'label' => __( 'Content with Emoji', 'elementor-emojionearea-control' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
+				'type' => 'emojionearea',
 
 			]
 		);
