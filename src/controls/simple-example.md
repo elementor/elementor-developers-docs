@@ -136,12 +136,12 @@ class Elementor_EmojiOneArea_Control extends \Elementor\Base_Data_Control {
 	 */
 	public function enqueue() {
 		// Styles
-		wp_register_style( 'emojionearea', 'https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.css', [], '3.4.1' );
+		wp_register_style( 'emojionearea', 'https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.css', [], '3.4.2' );
 		wp_enqueue_style( 'emojionearea' );
 
 		// Scripts
-		wp_register_script( 'emojionearea', 'https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.js', [], '3.4.1' );
-		wp_register_script( 'emojionearea-control', plugins_url( 'assets/js/emojionearea.js', __FILE__ ), [ 'elementor', 'emojionearea', 'jquery' ], '1.0.0' );
+		wp_register_script( 'emojionearea', 'https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js', [], '3.4.2' );
+		wp_register_script( 'emojionearea-control', plugins_url( '/assets/js/emojionearea.js', dirname( __FILE__ ) ), [ 'emojionearea', 'jquery' ], '1.0.0' );
 		wp_enqueue_script( 'emojionearea-control' );
 	}
 
