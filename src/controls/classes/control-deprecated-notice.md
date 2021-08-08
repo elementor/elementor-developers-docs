@@ -93,27 +93,11 @@ This control does not return any value.
 
 ## Usage
 
-There are two ways to use this control, either add it like any other control, or use the new method deprecated_notice() added to Elementor\Widget_Base.
+There are two ways to add deprecation notice to widgets:
 
-### Use as built-in method
+### Using the Regular Add Control
 
-```php {8}
-<?php
-class Elementor_Test_Widget extends \Elementor\Widget_Base {
-
-	// Invoke the method at the beginning or controls registration.
-	// Note that the widget title as the name of the deprecated widget.
-	protected function _register_controls() {
-
-		$this->deprecated_notice( 'Your Great Plugin', '2.6.0', '3.0.0', 'your-new-widget' );
-
-		// register the rest of the controls as usual
-
-	}
-}
-```
-
-2. To add like any other control:
+Add a notice warning that the widget is deprecated using the regular `add_control()` method.
 
 ```php {14-25}
 <?php
@@ -142,9 +126,44 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			]
 		);
 
+		// Register the rest of the controls as usual.
+
 		$this->end_controls_section();
 
 	}
 
+}
+```
+
+### Using a Deprecated Notice Method
+
+Add a notice warning that the widget is deprecated using the `deprecated_notice()` method.
+
+```php {14-19}
+<?php
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function _register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => __( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+
+		$this->deprecated_notice(
+			'Your Great Plugin',
+			'2.6.0',
+			'3.0.0',
+			'your-new-widget'
+		);
+
+		// Register the rest of the controls as usual.
+
+		$this->end_controls_section();
+
+	}
 }
 ```
