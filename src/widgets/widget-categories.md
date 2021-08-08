@@ -1,12 +1,18 @@
 # Widget Categories
 
-Elementor **Widget Categories** are used to organize the widgets into groups. When Elementor is initialized, it registers several default categories. The categories are displayed in the widgets panel, only if they have widgets assigned to them.
+<img src="/assets/img/elementor-categories.png" alt="Elementor Widget Categories" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-![Elementor Categories](/assets/img/elementor-categories.png)
+Elementor **Widget Categories** are used to organize the widgets into groups. When Elementor is initialized, it registers several default categories.
+
+The categories are displayed in the widgets panel, only if they have widgets assigned to them.
+
+External developers can create new categories and display their widgets separately in a branded category.
 
 ## Using Widget Categories
 
-We use widget categories while registering new Elementor widgets. By extending the `\Elementor\Widget_Base` class, we are inheriting the `\Elementor\Widget_Base::get_categories()` method that returns the general category by default. To assign the widget to a different category, we need to override the method and return our new category the following way:
+We use widget categories while registering new Elementor widgets. By extending the `\Elementor\Widget_Base` class, we are inheriting the `\Elementor\Widget_Base::get_categories()` method that returns the `general` category by default.
+
+To assign the widget to a different category, we need to override the method and return our new category the following way:
 
 ```php {3-5}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
