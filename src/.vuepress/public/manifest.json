@@ -1,49 +1,48 @@
 {
-    "name": "Elementor Developers",
-    "short_name": "elementor-dev",
-    "description": "Official Elementor Developer Resources",
-    "lang": "en-US",
-    "start_url": "https://rami-elementor.github.io/elementor-dev/",
-    "background_color": "#ffffff",
-    "theme_color": "#3eaf7c",
-    "display": "standalone",
-    "icons": [
-      {
-        "src": "\/assets\/img\/logo.svg",
-        "sizes": "36x36",
-        "type": "image\/svg",
-        "density": "0.75"
-      },
-      {
-        "src": "\/assets\/img\/logo.svg",
-        "sizes": "48x48",
-        "type": "image\/svg",
-        "density": "1.0"
-      },
-      {
-        "src": "\/assets\/img\/logo.svg",
-        "sizes": "72x72",
-        "type": "image\/svg",
-        "density": "1.5"
-      },
-      {
-        "src": "\/assets\/img\/logo.svg",
-        "sizes": "96x96",
-        "type": "image\/svg",
-        "density": "2.0"
-      },
-      {
-        "src": "\/assets\/img\/logo.svg",
-        "sizes": "144x144",
-        "type": "image\/svg",
-        "density": "3.0"
-      },
-      {
-        "src": "\/assets\/img\/logo.svg",
-        "sizes": "192x192",
-        "type": "image\/svg",
-        "density": "4.0"
-      }
-    ]
-  }
-  
+  "name": "Elementor Developers",
+  "short_name": "elementor-dev",
+  "description": "Official Elementor Developer Resources",
+  "lang": "en-US",
+  "start_url": "https://elementor-developers.netlify.app/",
+  "background_color": "#ffffff",
+  "theme_color": "#3eaf7c",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "\/assets\/img\/logo.svg",
+      "sizes": "36x36",
+      "type": "image\/svg",
+      "density": "0.75"
+    },
+    {
+      "src": "\/assets\/img\/logo.svg",
+      "sizes": "48x48",
+      "type": "image\/svg",
+      "density": "1.0"
+    },
+    {
+      "src": "\/assets\/img\/logo.svg",
+      "sizes": "72x72",
+      "type": "image\/svg",
+      "density": "1.5"
+    },
+    {
+      "src": "\/assets\/img\/logo.svg",
+      "sizes": "96x96",
+      "type": "image\/svg",
+      "density": "2.0"
+    },
+    {
+      "src": "\/assets\/img\/logo.svg",
+      "sizes": "144x144",
+      "type": "image\/svg",
+      "density": "3.0"
+    },
+    {
+      "src": "\/assets\/img\/logo.svg",
+      "sizes": "192x192",
+      "type": "image\/svg",
+      "density": "4.0"
+    }
+  ]
+}
