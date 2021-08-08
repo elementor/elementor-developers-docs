@@ -75,7 +75,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-24,41-43,48-50}
+```php {14-28,36,41}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 

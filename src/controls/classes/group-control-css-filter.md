@@ -69,7 +69,7 @@ Note that when using group controls, the type should be set using the `Group_Con
 
 ## Usage
 
-```php {14-22,30,35}
+```php {14-20,28,33}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
