@@ -1,10 +1,10 @@
 # Complex Example
 
-Let's build a simple Elementor addon that adds a new control to Elementor. The control will display a textarea field, and we will use [Emoji One Area](https://github.com/mervick/emojionearea) library to allow the user to add emojis to the content.
+Let's build an addon that adds a new control to Elementor by using an external library. The control will display a textarea field, and we will use [Emoji One Area](https://github.com/mervick/emojionearea) library to allow the user to add emojis to the content.
 
 ## Folder Structure
 
-The addon will have several index files to prevent direct access to folders, the main file will register the control and his JS file.
+The addon will have several index files to prevent direct access to folders, the main file will register the control and his JS file. To test the control we will create a simple test widget.
 
 ```
 elementor-emojionearea-control/
