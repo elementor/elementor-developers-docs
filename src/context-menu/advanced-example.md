@@ -9,11 +9,9 @@ The addon will have several index files to prevent direct access to folders, the
 ```
 elementor-page-speed-context-menu/
 |
-├─ assets/
-|  |
-|  └─ js/
-|     ├─ index.php
-|     └─ page-speed-context-menu.js
+├─ assets/js/
+|  ├─ index.php
+|  └─ page-speed-context-menu.js
 |
 ├─ index.php
 └─ elementor-page-speed-context-menu.php

@@ -14,12 +14,10 @@ elementor-emojionearea-control/
 |  └─ emojionearea.js
 |
 ├─ controls/
-|  |
 |  ├─ index.php
 |  └─ emojionearea.php
 |
 ├─ widgets/
-|  |
 |  ├─ index.php
 |  └─ test-widget.php
 |

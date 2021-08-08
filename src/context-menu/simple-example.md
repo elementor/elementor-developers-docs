@@ -9,11 +9,9 @@ The addon will have several index files to prevent direct access to folders, the
 ```
 elementor-context-menus/
 |
-├─ assets/
-|  |
-|  └─ js/
-|     ├─ index.php
-|     └─ context-menus.js
+├─ assets/js/
+|  ├─ index.php
+|  └─ context-menus.js
 |
 ├─ index.php
 └─ elementor-context-menus.php
