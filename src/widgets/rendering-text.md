@@ -26,7 +26,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'label' => __( 'Title', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'placeholder' => __( 'Enter your title', 'plugin-name' ),
-
 			]
 		);
 
