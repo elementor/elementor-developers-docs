@@ -2,7 +2,7 @@
 
 Creating a custom Control is a task reserved for advanced Elementor developers, you should be well familiar with the code base before creating your own controls. The first place to start with is the `Base_Control` class and all the inner methods, then you should see how Elementor creates different controls implementing the base methods with custom needs.
 
-Each control needs to have a two basic methods, the control unique name and the HTML code that displays the field in the editor. More advanced controls can set custom settings, define default values, enqueue scripts and style, and do almost everything you imagination can think of.
+Each control needs to have a two basic methods, the control unique name and the HTML code that displays the field in the editor. More advanced controls can set custom settings, define default values, enqueue scripts and style, and do almost everything your imagination can think of.
 
 ## Extending Controls
 
