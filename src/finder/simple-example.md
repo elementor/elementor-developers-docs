@@ -60,10 +60,7 @@ function elementor_finder_social_media( $categories_manager ) {
 
 	require_once( __DIR__ . '/finder/social-media.php' );
 
-	$categories_manager->add_category(
-		'social-media',
-		new Elementor_Finder_Social_Media()
-	);
+	$categories_manager->add_category( 'social-media', new Elementor_Finder_Social_Media() );
 
 };
 add_action( 'elementor/finder/categories/init', 'elementor_finder_social_media' );

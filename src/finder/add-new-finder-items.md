@@ -50,10 +50,7 @@ When we add a new category, we need to provide a unique ID and the class itself,
 ```php
 function register_new_finder_category( $categories_manager ) {
 
-	$categories_manager->add_category(
-		'my-category-name',
-		new New_Finder_Category()
-	);
+	$categories_manager->add_category( 'my-category-name', new New_Finder_Category() );
 
 };
 add_action( 'elementor/finder/categories/init', 'register_new_finder_category' );

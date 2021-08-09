@@ -60,10 +60,7 @@ function elementor_finder_wordpress_settings( $categories_manager ) {
 
 	require_once( __DIR__ . '/finder/wordpress-settings.php' );
 
-	$categories_manager->add_category(
-		'wordpress-settings',
-		new Elementor_Finder_WordPress_Settings()
-	);
+	$categories_manager->add_category( 'wordpress-settings', new Elementor_Finder_WordPress_Settings() );
 
 };
 add_action( 'elementor/finder/categories/init', 'elementor_finder_wordpress_settings' );
