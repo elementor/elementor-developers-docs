@@ -63,6 +63,7 @@ class Elementor_Test_Field_Type extends \ElementorPro\Modules\Forms\Fields\Field
 Lets create a new field type for Elementor form widget. The field will allow end-users to enter their credit card number.
 
 ```php
+<?php
 class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
 	public function get_type() {
@@ -74,15 +75,23 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 	}
 
 	public function render( $item, $item_index, $form ) {
-		$form->add_render_attribute( "input{$item_index}", 'class', 'elementor-field-textual' );
-		$form->add_render_attribute( "input{$item_index}", 'type', 'tel' );
-		$form->add_render_attribute( "input{$item_index}", 'inputmode', 'numeric' );
-		$form->add_render_attribute( "input{$item_index}", 'maxlength', '19' );
-		$form->add_render_attribute( "input{$item_index}", 'pattern', '[0-9\s]{13,19}' );
-		$form->add_render_attribute( "input{$item_index}", 'placeholder', 'xxxx xxxx xxxx xxxx' );
-		$form->add_render_attribute( "input{$item_index}", 'autocomplete', 'cc-number' );
+		$form_id = $form->get_id();
 
-		echo '<input ' . $form->get_render_attribute_string( "input{$item_index}" ) . '>';
+		$form->add_render_attribute(
+			'input' . $item_index,
+			[
+				'class' => 'elementor-field-textual',
+				'for' => $form_id . $item_index,
+				'type' => 'tel',
+				'inputmode' => 'numeric',
+				'maxlength' => '19',
+				'pattern' => '[0-9\s]{19}',
+				'placeholder' => $item['placeholder'],
+				'autocomplete' => 'cc-number',
+			]
+		);
+
+		echo '<input ' . $form->get_render_attribute_string( 'input' . $item_index ) . '>';
 	}
 
 	public function validation( $field, $record, $ajax_handler ) {
@@ -90,9 +99,35 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 			return;
 		}
 
-		if ( preg_match( '/^4[0-9]{12}(?:[0-9]{3})?$/', $field['value'] ) !== 1 ) {
+		if ( preg_match( '/^[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$/', $field['value'] ) !== 1 ) {
 			$ajax_handler->add_error( $field['id'], __( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'plugin-name' ) );
 		}
+	}
+
+	public function update_controls( $widget ) {
+		$elementor = \ElementorPro\Plugin::elementor();
+
+		$control_data = $elementor->controls_manager->get_control_from_stack( $widget->get_unique_name(), 'form_fields' );
+
+		if ( is_wp_error( $control_data ) ) {
+			return;
+		}
+
+		$field_controls = [
+			'placeholder' => [
+				'name' => 'placeholder',
+				'label' => __( 'Placeholder', 'plugin-name' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => 'xxxx xxxx xxxx xxxx',
+				'condition' => [
+					'field_type' => $this->get_type(),
+				],
+			],
+		];
+
+		$control_data['fields'] = $this->inject_field_controls( $control_data['fields'], $field_controls );
+
+		$widget->update_control( 'form_fields', $control_data );
 	}
 
 }
