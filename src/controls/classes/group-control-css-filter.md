@@ -69,7 +69,7 @@ Note that when using group controls, the type should be set using the `Group_Con
 
 ## Usage
 
-```php {14-20,28,33}
+```php {14-20,29-31,37-39}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -87,7 +87,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			Group_Control_Css_Filter::get_type(),
 			[
 				'name' => 'custom_css_filters',
-				'selector' => '{{WRAPPER}} .elementor-background-overlay',
+				'selector' => '{{WRAPPER}} .your-class',
 			]
 		);
 
@@ -97,12 +97,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<div class="your-class"> ... </div>';
+		?>
+		<div class="your-class">
+			...
+		</div>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<div class="your-class"> ... </div>
+		<div class="your-class">
+			...
+		</div>
 		<?php
 	}
 

@@ -81,7 +81,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-27,35,40}
+```php {14-27,36-38,44-46}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -116,12 +116,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<h2 class="title" style="color: ' . $settings['title_color'] . '"> .. </h2>';
+		?>
+		<h2 class="title" style="color: <?php echo esc_attr( $settings['title_color'] ); ?>;">
+			...
+		</h2>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<h2 class="title" style="color: {{ settings.title_color }}"> .. </h2>
+		<h2 class="title" style="color: {{ settings.title_color }}">
+			...
+		</h2>
 		<?php
 	}
 

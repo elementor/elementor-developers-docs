@@ -39,7 +39,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$settings = $this->get_settings_for_display();
 
 		// Get image url
-		echo '<img src="' . $settings['image']['url'] . '" alt="">';
+		echo '<img src="' . esc_url( $settings['image']['url'] ) . '" alt="">';
 
 		// Get image by id
 		echo wp_get_attachment_image( $settings['image']['id'], 'thumbnail' );

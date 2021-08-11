@@ -85,7 +85,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-24,32,37}
+```php {14-24,33-35,42-44}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -117,12 +117,19 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<h2 class="title" style="font-family: ' . $settings['font_family'] . '"> .. </h2>';
+		?>
+		<h2 class="title" style="font-family: <?php echo esc_attr( $settings['font_family'] ); ?>;">
+			...
+		</h2>
+		<?php
+
 	}
 
 	protected function content_template() {
 		?>
-		<h2 class="title" style="font-family: {{ settings.font_family }}"> .. </h2>
+		<h2 class="title" style="font-family: {{ settings.font_family }}">
+			...
+		</h2>
 		<?php
 	}
 

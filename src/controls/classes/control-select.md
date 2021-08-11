@@ -75,7 +75,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-28,36,41}
+```php {14-28,37-39,45-47}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -111,12 +111,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<div style="border-style: ' . $settings['border_style'] . '"> .. </div>';
+		?>
+		<div style="border-style: <?php echo esc_attr( $settings['border_style'] ); ?>">
+			...
+		</div>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<div style="border-style: {{ settings.border_style }}"> .. </div>
+		<div style="border-style: {{ settings.border_style }}">
+			...
+		</div>
 		<?php
 	}
 

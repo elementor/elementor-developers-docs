@@ -63,7 +63,7 @@ Note that when using group controls, the type should be set using the `Group_Con
 
 ## Usage
 
-```php {14-21,29,34}
+```php {14-21,30-32,38-40}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -82,7 +82,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'border',
 				'label' => __( 'Border', 'plugin-name' ),
-				'selector' => '{{WRAPPER}} .wrapper',
+				'selector' => '{{WRAPPER}} .your-class',
 			]
 		);
 
@@ -92,12 +92,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<div class="wrapper"> ... </div>';
+		?>
+		<div class="your-class">
+			...
+		</div>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<div class="wrapper"> ... </div>
+		<div class="your-class">
+			...
+		</div>
 		<?php
 	}
 

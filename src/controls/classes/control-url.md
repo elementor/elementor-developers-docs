@@ -138,7 +138,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$target = $settings['website_link']['is_external'] ? ' target="_blank"' : '';
 		$nofollow = $settings['website_link']['nofollow'] ? ' rel="nofollow"' : '';
-		echo '<a href="' . $settings['website_link']['url'] . '"' . $target . $nofollow . '> ... </a>';
+		echo '<a href="' . esc_attr( $settings['website_link']['url'] ) . '"' . $target . $nofollow . '> ... </a>';
 	}
 
 	protected function content_template() {

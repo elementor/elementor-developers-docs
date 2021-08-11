@@ -114,7 +114,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-24,32,37}
+```php {14-24,33-35,41-43}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -146,12 +146,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<div class="your-class"> ... </div>';
+		?>
+		<div class="your-class">
+			...
+		</div>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<div class="your-class"> ... </div>
+		<div class="your-class">
+			...
+		</div>
 		<?php
 	}
 

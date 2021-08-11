@@ -77,7 +77,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-20,28-30,35-40}
+```php {14-20,28-29,31,37-42}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -107,7 +107,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$due_date = strtotime( $this->get_settings( 'due_date' ) );
 		$due_date_in_days = $due_date / DAY_IN_SECONDS;
-		echo '<p>' . sprintf( __( 'Something will happen in %s days.', 'plugin-name' ), $due_date_in_days ) . '</p>';
+		?>
+		<p><?php printf( __( 'Something will happen in %s days.', 'plugin-name' ), $due_date_in_days ); ?></p>
+		<?php
 	}
 
 	protected function content_template() {

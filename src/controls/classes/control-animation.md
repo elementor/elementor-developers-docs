@@ -99,7 +99,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<div class="<?php echo $settings['entrance_animation']; ?>">
+		<div class="<?php echo esc_attr( $settings['entrance_animation'] ); ?>">
 			...
 		</div>
 		<?php

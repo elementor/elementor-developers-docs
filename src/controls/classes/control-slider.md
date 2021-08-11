@@ -106,7 +106,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-39,47,52}
+```php {14-39,48-50,56-58}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -153,12 +153,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<div class="box" style="width: ' . $settings['width']['size'] . $settings['width']['unit'] '"> ... </div>';
+		?>
+		<div class="box" style="width: <?php echo esc_attr( $settings['width']['size'] . $settings['width']['unit'] ); ?>">
+			...
+		</div>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<div class="box" style="width: {{ settings.width.size }}{{ settings.width.unit }}"> ... </div>';
+		<div class="box" style="width: {{ settings.width.size }}{{ settings.width.unit }}">
+			...
+		</div>
 		<?php
 	}
 

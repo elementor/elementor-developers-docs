@@ -91,7 +91,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-34,42,47}
+```php {14-34,43,49}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -133,7 +133,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<i class="' . $settings['icon'] . '" aria-hidden="true"></i>';
+		?>
+		<i class="<?php echo esc_attr( $settings['icon'] ); ?>" aria-hidden="true"></i>
+		<?php
 	}
 
 	protected function content_template() {
