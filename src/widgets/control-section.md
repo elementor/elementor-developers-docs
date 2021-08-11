@@ -26,6 +26,7 @@ Each control has the following key parameters:
 * **Section Setting** `(array)` – Extra section parameters.
   * **Label** `(string)` – Label displayed to the user in the panel.
   * **Tab** `(string)` – The tab where the section is included in. Default is `content`.
+  * **Conditions** `(array)` – Control display conditions.
 
 ## Examples
 

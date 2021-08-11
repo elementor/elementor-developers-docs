@@ -34,6 +34,7 @@ Each control has the following key parameters:
   * **Label Off** `(string)` – Label displayed when default settings are set.
   * **Label On** `(string)` – Label displayed when custom settings are set.
   * **Return Value** `(string)` – String returned when custom settings are set.
+  * **Conditions** `(array)` – Control display conditions.
 
 ## Examples
 
