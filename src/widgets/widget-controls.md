@@ -15,6 +15,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 		$this->add_control();
 
+		$this->add_responsive_control();
+
+		$this->add_group_control();
+
 		$this->end_controls_section();
 
 	}
@@ -30,9 +34,9 @@ Elementor has three **Control Types** that can be added to widgets:
 
 * [Regular Control](./regular-control) – add single control.
 * [Responsive Control](./responsive-control) – a control that sets different values to different screen sizes.
-* [Group Control](./group-control) – add control that group together several regular controls.
+* [Group Control](./group-control) – add control that group together several other controls.
 
-Elementor also has **Control UI Wrappers** that can be used to group and rearranged controls:
+Elementor also has **UI Wrappers for Controls** that can be used to group and rearranged controls:
 
 * [Control Section](./control-section) – a wrapper for controls.
 * [Control Tabs](./control-tabs) – arrange controls in tabs.
