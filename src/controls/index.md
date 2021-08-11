@@ -6,7 +6,7 @@ Elementor Controls are **input fields** and **UI elements** that are used to con
 
 Elementor includes a wide range of controls out-of-the-box. They are being used in widgets and panels to collect user data and generate custom output based on user selections.
 
-<img src="/assets/img/elementor-controls.png" alt="Elementor Controls" style="float: right; width: 300px;">
+<img src="/assets/img/elementor-controls.png" alt="Elementor Controls" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 ## Using Controls
 

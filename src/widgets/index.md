@@ -4,7 +4,7 @@
 
 Elementor is packed with dozens of useful widgets in the **Widgets Panel** split into several categories. Each widget has a set of custom controls (input fields) where end-users can fill data.
 
-<img src="/assets/img/elementor-widgets.png" alt="Elementor Widgets Panel" style="float: right; width: 300px;">
+<img src="/assets/img/elementor-widgets.png" alt="Elementor Widgets Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 ## Creating New Widgets
 

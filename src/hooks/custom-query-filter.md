@@ -6,7 +6,7 @@ Both **Posts Widgets** and **Portfolio Widgets** come with a feature-packed quer
 
 ## Setting Up a Custom Filter
 
-<img src="/assets/img/query-id.png" alt="Elementor Controls" style="float: right; width: 300px;">
+<img src="/assets/img/query-id.png" alt="Elementor Controls" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 In Posts widget or Portfolio widget, give your query an ID, make sure it is unique unless you want the filter to run on multiple posts widget or portfolio widgets.
 
