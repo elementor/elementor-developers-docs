@@ -12,8 +12,8 @@ function register_new_form_fields() {
 	require_once( __DIR__ . '/forms/fields/field-1.php' );
 	require_once( __DIR__ . '/forms/fields/field-2.php' );
 
-	new Field_1();
-	new Field_2();
+	\ElementorPro\Plugin::instance()->modules_manager->get_modules( 'forms' )->add_form_field_type( 'field-1', new \Field_1() );
+	\ElementorPro\Plugin::instance()->modules_manager->get_modules( 'forms' )->add_form_field_type( 'field-2', new \Field_2() );
 
 }
 add_action( 'elementor_pro/init', 'register_new_form_fields' );
