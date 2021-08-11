@@ -25,7 +25,11 @@ Retrieving data from a single control:
 
 ```php
 protected function render() {
-	echo '<h3>' . $this->get_settings_for_display( 'title' ) . '</h3>';
+	?>
+	<h3>
+		<?php echo $this->get_settings_for_display( 'title' ); ?>
+	</h3>
+	<?php
 }
 ```
 
@@ -34,8 +38,12 @@ But when we need to retrieve data from multiple controls, we can retrieve all th
 ```php
 protected function render() {
 	$settings = $this->get_settings_for_display();
-	echo '<h3 class="' . $settings['class'] . '">' . $settings['title'] . '</h3>';
+	?>
+	<h3 class="<?php echo esc_attr( $settings['class'] ); ?>">
+		<?php echo $settings['title']; ?>
+	</h3>
+	<?php
 }
 ```
 
-In both ways we get the same result, but keep in mind that the second way has performance benefits.
+In both ways we get the same result, but keep in mind that in some case the second way has performance benefits.
