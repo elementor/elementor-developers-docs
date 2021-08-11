@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: 'Getting Started',
+    title: 'Developer Docs',
     collapsable: false,
     sidebarDepth: -1,
     children: [
@@ -8,6 +8,14 @@ module.exports = [
       'requirements',
       'overview',
       // 'guidelines',
+    ]
+  },
+  {
+    title: 'Getting Started',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'writing-your-first-addon',
     ]
   },
   {
