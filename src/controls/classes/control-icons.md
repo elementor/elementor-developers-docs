@@ -113,7 +113,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 		return __( 'Icons Test Widget', 'plugin-name' );
 	}
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'section_icon',
@@ -147,7 +147,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<# var iconHTML = elementor.helpers.renderIcon( view, settings.selected_icon, { 'aria-hidden': true }, 'i' , 'object' ); #>
 

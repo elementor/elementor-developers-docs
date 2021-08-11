@@ -85,7 +85,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -119,7 +119,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		echo '<h2 class="title" style="color: ' . $settings['title_color'] . '"> .. </h2>';
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<h2 class="title" style="color: {{ settings.title_color }}"> .. </h2>
 		<?php

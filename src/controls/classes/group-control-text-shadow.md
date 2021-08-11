@@ -67,7 +67,7 @@ Note that when using group controls, the type should be set using the `Group_Con
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -95,7 +95,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		echo '<div class="wrapper"> ... </div>';
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<div class="wrapper"> ... </div>
 		<?php
