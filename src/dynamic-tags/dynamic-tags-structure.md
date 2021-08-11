@@ -26,7 +26,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function get_categories() {}
 
-	protected function _register_controls() {}
+	protected function register_controls() {}
 
 	public function render() {}
 

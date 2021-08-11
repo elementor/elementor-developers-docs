@@ -169,7 +169,7 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access protected
 	 * @return void
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 		$variables = [];
 
 		foreach ( array_keys( $_SERVER ) as $variable ) {

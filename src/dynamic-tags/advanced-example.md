@@ -169,7 +169,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access protected
 	 * @return void
 	 */
-	protected function _register_controls() {
+	protected function register_controls() {
 		$this->add_control(
 			'fields',
 			[
