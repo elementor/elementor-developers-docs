@@ -16,9 +16,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-* `render()` – Written in PHP and used to render Frontend output.
+* `render()` – Written as a PHP template that generates the **Frontend** output.
 
-* `content_template()` – Written as a Backbone JavaScript template and used to generate the live preview in the Editor.
+* `content_template()` – Written as a JS template that generates the [Preview](/editor/elementor-preview) output in [The Editor](/editor/).
 
 ## Rendering Different Controls
 
