@@ -37,7 +37,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$this->add_inline_editing_attributes( 'text', 'advanced' );
-		echo '<div ' . $this->get_render_attribute_string( 'text_attr' ) . '>' . $this->get_settings( 'text' ) . '</div>';
+		echo '<div ' . $this->get_render_attribute_string( 'text' ) . '>' . $this->get_settings( 'text' ) . '</div>';
 	}
 
 	protected function content_template() {
