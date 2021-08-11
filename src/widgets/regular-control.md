@@ -39,7 +39,7 @@ In this example we are going to add a simple text control defined at the `Contro
 ```php {12-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -71,7 +71,7 @@ In this example we are going to add a simple number control defined at the `Cont
 ```php {12-23}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -107,7 +107,7 @@ Another simple example is the `Control_Select` class which to allow to choose pr
 ```php {12-24}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -144,7 +144,7 @@ If you liked the select control, you will love the choose control. The `Control_
 ```php {12-33}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -190,7 +190,7 @@ Another useful control is the `Control_Slider` that displays a draggable range s
 ```php {12-29}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -232,7 +232,7 @@ One of the more more popular controls is the `Control_Color`, it allows to choos
 ```php {12-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -264,7 +264,7 @@ And finally for advanced uses you can use the `Control_Media` to select images f
 ```php {12-21}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',

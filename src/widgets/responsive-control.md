@@ -39,7 +39,7 @@ The regular slider control defined in `Control_Slider` adds a draggable range sl
 ```php {13-41}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'style_section',
@@ -93,7 +93,7 @@ Another handy control is the dimensions control that defined in `Control_Dimensi
 ```php {13-23}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'style_section',
@@ -129,7 +129,7 @@ Finally we are going to use Select/Choose control defined in `Control_Choose` to
 ```php {13-35}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'style_section',

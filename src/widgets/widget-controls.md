@@ -4,12 +4,12 @@ Each widget needs to have some controls (setting fields), where users can select
 
 ## Registering Controls
 
-In your widget class you can add controls inside the `_register_controls()` method as follows:
+In your widget class you can add controls inside the `register_controls()` method as follows:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section();
 
@@ -22,7 +22,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-* **Widget Controls** – The `_register_controls()` method lets you define which controls (setting fields) your widget will have.
+* **Widget Controls** – The `register_controls()` method lets you define which controls (setting fields) your widget will have.
 
 ## Available Control Types
 

@@ -36,11 +36,11 @@ protected function render() {
 
 ## JS Render Attribute
 
-In the `_content_template()` method we can add attributes to the HTML tag using `addRenderAttribute()` and retrieve the attribute using `getRenderAttributeString()`.
+In the `content_template()` method we can add attributes to the HTML tag using `addRenderAttribute()` and retrieve the attribute using `getRenderAttributeString()`.
 
 ```php
 <?php
-protected function _content_template() {
+protected function content_template() {
 	?>
 	<#
 	view.addRenderAttribute(

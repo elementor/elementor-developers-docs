@@ -10,7 +10,7 @@ Let's say you have a widget with a two controls in which the users can set a tit
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'section_content',
@@ -61,7 +61,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		echo '<h3>' . $settings['title'] . '</h3>';
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<h3>{{{ settings.title }}}</h3>
 		<?php

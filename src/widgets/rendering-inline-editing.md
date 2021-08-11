@@ -22,7 +22,7 @@ Keep in mind that we recommend to use inline editing the following way:
 
 ## Adding Inline Editing
 
-Inline editing support is added using the `add_inline_editing_attributes()` method inside your widget `render()` and the `addInlineEditingAttributes()` method in `_content_template()`.
+Inline editing support is added using the `add_inline_editing_attributes()` method inside your widget `render()` and the `addInlineEditingAttributes()` method in `content_template()`.
 
 Each inline editing attribute has two parameters:
 
@@ -40,7 +40,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		echo '<div ' . $this->get_render_attribute_string( 'text_attr' ) . '>' . $this->get_settings( 'text' ) . '</div>';
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<# view.addInlineEditingAttributes( 'text', 'advanced' ); #>
 		<div {{{ view.getRenderAttributeString( 'text' ) }}}>{{{ settings.text }}}</div>
@@ -58,7 +58,7 @@ Full example with three controls all having inline support. A simple text withou
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -112,7 +112,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function _content_template() {
+	protected function content_template() {
 		?>
 		<#
 		view.addInlineEditingAttributes( 'title', 'none' );

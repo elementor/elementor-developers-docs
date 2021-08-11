@@ -36,7 +36,7 @@ The first example is a single section in "**Content**" tab. When The section wil
 ```php {5-11,19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -70,7 +70,7 @@ Now lets create multiple sections for our controls:
 ```php {5-11,19,21-27,35}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -122,7 +122,7 @@ Elementor has a predefined list of tab that you can use, but with widgets the co
 ```php {5-11,19,21-27,35,37-43,51}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function _register_controls() {
+	protected function register_controls() {
 
 		$this->start_controls_section(
 			'content_section',

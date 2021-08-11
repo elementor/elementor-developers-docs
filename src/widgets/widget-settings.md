@@ -10,7 +10,7 @@ With JS templates we don’t really need to retrieve the data using a special fu
 
 ```php
 <?php
-protected function _content_template() {
+protected function content_template() {
 	?>
 	<h3 class="{{{ settings.class }}}">{{{ settings.title }}}</h3>
 	<?php
