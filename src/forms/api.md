@@ -1,7 +1,7 @@
 # Form API
 
 ::: danger
-This page will be deleted. All content will moved to specific sections.
+This page will be deleted once all content will move to specific sections.
 :::
 
 **[Elementor Pro](https://elementor.com/pro/)** adds new features to the core Elementor. The Forms API allows developers to filter content, validate data, alter webhooks, execute custom code and much more.
