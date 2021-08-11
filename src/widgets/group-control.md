@@ -25,6 +25,7 @@ Each control has the following key parameters:
   * **Name** `(string)` – Unique id used in the code. (Only chars, numbers and underscore are allowed)
   * **Label** `(string)` – The label displayed to the user in the panel.
   * **Separator** `(string)` – The position of the separator.
+  * **Frontend Available** `(bool)` – Whether the data is available in the Frontend using `getSettings()`.
 
 **Note**: Each control has its own set of *Custom Settings* in addition to the default settings mentioned above.
 

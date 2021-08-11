@@ -27,6 +27,7 @@ Each control has the following key parameters:
   * **Show Label** `(bool)` – Whether to show the label.
   * **Label Block** `(bool)` – Whether to display the label in a separate line.
   * **Separator** `(string)` – The position of the separator.
+  * **Frontend Available** `(bool)` – Whether the data is available in the Frontend using `getSettings()`.
 
 **Note**: Each control has its own set of *Custom Settings* in addition to the default settings mentioned above. For Example, text control has a *placeholder* settings, slider has a *range* settings, color controls has a *default* settings etc.
 
