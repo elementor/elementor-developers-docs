@@ -4,9 +4,9 @@
 
 Elementor is an extendable framework. It offers an architecture that allows external developers to add new functionality with addons. To do that you simply need to create a new class for your component and then register the class to let Elementor know about it.
 
-# Lifecycle Hooks
+## Lifecycle Hooks
 
-Each component has it's own hooks. The common way to register new hooks will like that:
+Each component has it's own hooks but the registration method. The common way to register new hooks looks like that:
 
 ```php
 function register_something() {
@@ -21,6 +21,8 @@ function register_something() {
 add_action( 'elementor/something/register', 'register_something' );
 ```
 
+You hook to some kind of action hook, and pass a callback function that imports your class and then you register the class to the component manager.
+
 ## Registering Widgets
 
 To register widget related elements:
@@ -32,8 +34,5 @@ To register widget related elements:
   * [Registering Controls](./registering-controls)
 * **Dynamic Tags**
   * [Registering Dynamic Tags](./registering-dynamic-tags)
-* **Formד**
-  * [Registering Form Fields](./registering-form-fields)
-  * [Registering Form Actions](./registering-form-actions)
 * **Finder**
   * [Registering Finder Categories](./registering-finder-categories)
