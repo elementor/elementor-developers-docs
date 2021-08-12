@@ -58,7 +58,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td><code>fields</code></td>
 			<td><code>array</code></td>
 			<td></td>
-			<td>An array of arrays containing the repeater fields.</td>
+			<td>A multi dimensional array containing the repeater fields.</td>
 		</tr>
 		<tr>
 			<td><code>title_field</code></td>
@@ -76,14 +76,14 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td><code>default</code></td>
 			<td><code>array</code></td>
 			<td></td>
-			<td>Default repeater values. An array of arrays containing fields as keys and default values for each key as values: <code>[ [ 'title' =&gt; '', 'content' =&gt; '' ], [ 'title' =&gt; '', 'content' =&gt; '' ], ... ]</code></td>
+			<td>Default repeater values. A multi dimensional array containing fields as keys and default values for each key as values: <code>[ [ 'title' =&gt; '', 'content' =&gt; '' ], [ 'title' =&gt; '', 'content' =&gt; '' ], ... ]</code></td>
 		</tr>
 	</tbody>
 </table>
 
 ## Return Value
 
-(_`array`_) An array of arrays, containing inner fields values.
+(_`array`_) A multi dimensional array containing inner fields values.
 
 ## Usage
 

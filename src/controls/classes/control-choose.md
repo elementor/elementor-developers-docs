@@ -58,7 +58,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td><code>options</code></td>
 			<td><code>array</code></td>
 			<td></td>
-			<td>An array of arrays containing the <code>title</code> and the <code>icon</code> for each radio button: <code>[ [ 'title' =&gt; '', 'icon' =&gt; '' ], [ 'title' =&gt; '', 'icon' =&gt; '' ], ... ]</code>.</td>
+			<td>A multi dimensional array containing the <code>title</code> and the <code>icon</code> for each radio button: <code>[ [ 'title' =&gt; '', 'icon' =&gt; '' ], [ 'title' =&gt; '', 'icon' =&gt; '' ], ... ]</code>.</td>
 		</tr>
 		<tr>
 			<td><code>toggle</code></td>

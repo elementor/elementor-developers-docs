@@ -64,7 +64,7 @@ Note that when using group controls, the type should be set using the `Group_Con
 			<td><code>fields_options</code></td>
 			<td><code>array</code></td>
 			<td></td>
-			<td>An array of arrays containing data that overrides control settings.</td>
+			<td>A multi dimensional array containing data that overrides control settings.</td>
 		</tr>
 	</tbody>
 </table>
