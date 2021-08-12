@@ -61,10 +61,10 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td>The field placeholder that appears when the field has no values.</td>
 		</tr>
 		<tr>
-			<td><code>show_external</code></td>
-			<td><code>bool</code></td>
-			<td>true</td>
-			<td>Whether to show ‘Is External’ button.</td>
+			<td><code>options</code></td>
+			<td><code>array</code></td>
+			<td>[<br>'is_external',<br>'nofollow',<br>'custom_attributes'<br>]</td>
+			<td>An array of URL options to show. By default it shows all the options. But you can select which URL elements to show.</td>
 		</tr>
 		<tr>
 			<td><code>default</code></td>
@@ -72,11 +72,11 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td></td>
 			<td>
 				The field default values.
-				<p></p>
 				<ul>
 					<li><strong>$url</strong> (<code>string</code>) The URL.</li>
 					<li><strong>$is_external</strong> (<code>bool</code>) Whether to open the url in the same tab or in a new one.</li>
 					<li><strong>$nofollow</strong> (<code>bool</code>) Whether to add nofollow attribute.</li>
+					<li><strong>$custom_attributes</strong> (<code>string</code>) Custom attributes string that come as a string of comma-delimited key|value pairs.</li>
 				</ul>
 			</td>
 		</tr>
@@ -90,6 +90,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 	'url' => 'https://your-link.com',
 	'is_external' => true,
 	'nofollow' => true,
+	'custom_attributes' => '',
 ]
 ```
 
@@ -98,10 +99,11 @@ Note that when using the control, the type should be set using the `\Elementor\C
 * **$url** (_`string`_) The URL.
 * **$is_external** (_`bool`_) Whether to open the url in the same tab or in a new one.
 * **$nofollow** (_`bool`_) Whether to add nofollow attribute.
+* **$custom_attributes** (_`string`_) Custom attributes string that come as a string of comma-delimited key|value pairs.
 
 ## Usage
 
-```php {14-27,35-37,42-46}
+```php {14-27,35-37,39-41,47-49}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -121,11 +123,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'label' => __( 'Link', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::URL,
 				'placeholder' => __( 'https://your-link.com', 'plugin-name' ),
-				'show_external' => true,
 				'default' => [
 					'url' => '',
 					'is_external' => true,
 					'nofollow' => true,
+					'custom_attributes' => '',
 				],
 			]
 		);
@@ -136,18 +138,21 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		$target = $settings['website_link']['is_external'] ? ' target="_blank"' : '';
-		$nofollow = $settings['website_link']['nofollow'] ? ' rel="nofollow"' : '';
-		echo '<a href="' . esc_attr( $settings['website_link']['url'] ) . '"' . $target . $nofollow . '> ... </a>';
+		if ( ! empty( $settings['website_link']['url'] ) ) {
+			$this->add_link_attributes( 'website_link', $settings['website_link'] );
+		}
+		?>
+		<a <?php echo $this->get_render_attribute_string( 'website_link' ); ?>>
+			...
+		</a>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<#
-		var target = settings.website_link.is_external ? ' target="_blank"' : '';
-		var nofollow = settings.website_link.nofollow ? ' rel="nofollow"' : '';
-		#>
-		<a href="{{ settings.website_link.url }}"{{ target }}{{ nofollow }}> ... </a>
+		<a href="{{ settings.website_link.url }}">
+			...
+		</a>
 		<?php
 	}
 
