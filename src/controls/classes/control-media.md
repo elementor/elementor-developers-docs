@@ -55,12 +55,17 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td>Set the position of the control separator. Available values are <code>default</code>, <code>before</code>, <code>after</code> and <code>none</code>. <code>default</code> will position the separator depending on the control type. <code>before</code> / <code>after</code> will position the separator before/after the control. <code>none</code> will hide the separator.</td>
 		</tr>
 		<tr>
+			<td><code>media_types</code></td>
+			<td><code>array</code></td>
+			<td>['image']</td>
+			<td>Supported media types. Available values are <code>image</code>, <code>video</code> and <code>svg</code>.</td>
+		</tr>
+		<tr>
 			<td><code>default</code></td>
 			<td><code>array</code></td>
 			<td></td>
 			<td>
 				Default media values.
-				<p></p>
 				<ul>
 					<li><strong>$id</strong> (<code>int</code>) Media id.</li>
 					<li><strong>$url</strong> (<code>string</code>) Media url.</li>
@@ -86,7 +91,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-23,32-39,44}
+```php {14-23,32-33,35-36,38-43,48-65}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -125,12 +130,33 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		echo wp_get_attachment_image( $settings['image']['id'], 'thumbnail' );
 
 		// Get image HTML
-		echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings );
+		$this->add_render_attribute( 'image', 'src', $settings['image']['url'] );
+		$this->add_render_attribute( 'image', 'alt', \Elementor\Control_Media::get_image_alt( $settings['image'] ) );
+		$this->add_render_attribute( 'image', 'title', \Elementor\Control_Media::get_image_title( $settings['image'] ) );
+		$this->add_render_attribute( 'image', 'class', 'my-custom-class' );
+		echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'thumbnail', 'image' );
 	}
 
 	protected function content_template() {
 		?>
-		<img src="{{ settings.image.url }}">
+		<#
+		if ( settings.image.url ) {
+			var image = {
+				id: settings.image.id,
+				url: settings.image.url,
+				size: settings.image_size,
+				dimension: settings.image_custom_dimension,
+				model: view.getEditModel()
+			};
+
+			var image_url = elementor.imagesManager.getImageUrl( image );
+
+			if ( ! image_url ) {
+				return;
+			}
+		}
+		#>
+		<img src="{{ image_url }}">
 		<?php
 	}
 
