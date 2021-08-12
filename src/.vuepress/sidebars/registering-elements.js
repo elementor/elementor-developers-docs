@@ -7,14 +7,17 @@ module.exports = [
         [ '', 'Introduction' ],
       ]
     },
-    // {
-    //   title: 'Components',
-    //   collapsable: false,
-    //   sidebarDepth: -1,
-    //   children: [
-    //     'xxx',
-    //     'xxx',
-    //   ]
-    // },
+    {
+      title: 'Components',
+      collapsable: false,
+      sidebarDepth: -1,
+      children: [
+        'registering-widgets',
+        'registering-widget-categories',
+        'registering-controls',
+        'registering-dynamic-tags',
+        'registering-finder-categories',
+      ]
+    },
   ];
   
