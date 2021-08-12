@@ -55,10 +55,10 @@ Note that when using group controls, the type should be set using the `Group_Con
 			<td>Set the position of the control separator. Available values are <code>default</code>, <code>before</code>, <code>after</code> and <code>none</code>. <code>default</code> will position the separator depending on the control type. <code>before</code> / <code>after</code> will position the separator before/after the control. <code>none</code> will hide the separator.</td>
 		</tr>
 		<tr>
-			<td><code>scheme</code></td>
-			<td><code>string</code></td>
+			<td><code>exclude</code></td>
+			<td><code>array</code></td>
 			<td></td>
-			<td>The "typography scheme" to display in the control.</td>
+			<td>Exclude some controls from the group control. Example: <code>['font_style']</code></td>
 		</tr>
 	</tbody>
 </table>
@@ -69,7 +69,7 @@ Note that when using group controls, the type should be set using the `Group_Con
 
 ## Usage
 
-```php {14-22,31-33,39-41}
+```php {14-20,29-31,37-39}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -87,8 +87,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'content_typography',
-				'label' => __( 'Typography', 'plugin-name' ),
-				'scheme' => Scheme_Typography::TYPOGRAPHY_1,
 				'selector' => '{{WRAPPER}} .your-class',
 			]
 		);

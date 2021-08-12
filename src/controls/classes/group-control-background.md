@@ -61,6 +61,12 @@ Note that when using group controls, the type should be set using the `Group_Con
 			<td>The specific background types to use. Available types are <code>classic</code>, <code>gradient</code> and <code>video</code>. Default is an empty array, including all the types.</td>
 		</tr>
 		<tr>
+			<td><code>exclude</code></td>
+			<td><code>array</code></td>
+			<td></td>
+			<td>Exclude some controls from the group control. Example: <code>['image']</code></td>
+		</tr>
+		<tr>
 			<td><code>fields_options</code></td>
 			<td><code>array</code></td>
 			<td></td>

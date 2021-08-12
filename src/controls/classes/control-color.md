@@ -1,6 +1,6 @@
 # Color Control
 
-Elementor color control displays a color picker field with an alpha slider. It includes a customizable color palette that can be preset by the user. Accepts a scheme argument that allows you to set a value from the active color `scheme` as the default value returned by the control.
+Elementor color control displays a color picker field with an alpha slider. It includes a customizable color palette that can be preset by the user.
 
 The control is defined in `Control_Color` class which extends `Base_Data_Control` class.
 
@@ -59,12 +59,6 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td><code>bool</code></td>
 			<td>true</td>
 			<td>Whether to allow alpha channel.</td>
-		</tr>
-		<tr>
-			<td><code>scheme</code></td>
-			<td><code>array</code></td>
-			<td></td>
-			<td>The "color scheme" to display in the control.</td>
 		</tr>
 		<tr>
 			<td><code>default</code></td>

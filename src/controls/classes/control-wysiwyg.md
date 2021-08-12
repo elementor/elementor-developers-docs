@@ -69,7 +69,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-22,30,35}
+```php {14-22,31-33,40-42}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -99,12 +99,19 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<div class="description">' . $settings['item_description'] . '</div>';
+		?>
+		<div class="description">
+			<?php echo $settings['item_description']; ?>
+		</div>
+		<?php
+
 	}
 
 	protected function content_template() {
 		?>
-		<div class="description">{{{ settings.item_description }}}</div>
+		<span class="description">
+			{{{ settings.item_description }}}
+		</span>
 		<?php
 	}
 

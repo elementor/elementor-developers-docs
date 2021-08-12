@@ -55,10 +55,10 @@ Note that when using group controls, the type should be set using the `Group_Con
 			<td>Set the position of the control separator. Available values are <code>default</code>, <code>before</code>, <code>after</code> and <code>none</code>. <code>default</code> will position the separator depending on the control type. <code>before</code> / <code>after</code> will position the separator before/after the control. <code>none</code> will hide the separator.</td>
 		</tr>
 		<tr>
-			<td><code>scheme</code></td>
-			<td><code>string</code></td>
+			<td><code>exclude</code></td>
+			<td><code>array</code></td>
 			<td></td>
-			<td>The "typography scheme" to display in the control.</td>
+			<td>Exclude some controls from the group control. Example: <code>['saturate']</code></td>
 		</tr>
 	</tbody>
 </table>

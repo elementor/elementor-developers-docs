@@ -66,7 +66,6 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td></td>
 			<td>
 				An array of ranges for each register size.
-				<p></p>
 				<ul>
 					<li><strong>$min</strong> (<code>int</code>) The minimum value of range.</li>
 					<li><strong>$max</strong> (<code>int</code>) The maximum value of range.</li>
@@ -80,7 +79,6 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td></td>
 			<td>
 				Default slider value.
-				<p></p>
 				<ul>
 					<li><strong>$unit</strong> (<code>string</code>) Initial unit of the slider.</li>
 					<li><strong>$size</strong> (<code>int</code>) Initial size of the slider.</li>
@@ -142,7 +140,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 					'size' => 50,
 				],
 				'selectors' => [
-					'{{WRAPPER}} .box' => 'width: {{SIZE}}{{UNIT}};',
+					'{{WRAPPER}} .your-class' => 'width: {{SIZE}}{{UNIT}};',
 				],
 			]
 		);
@@ -154,7 +152,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<div class="box">
+		<div class="your-class">
 			...
 		</div>
 		<?php
@@ -162,7 +160,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
-		<div class="box">
+		<div class="your-class">
 			...
 		</div>
 		<?php

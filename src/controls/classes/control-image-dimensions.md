@@ -60,7 +60,6 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td></td>
 			<td>
 				Default image dimension values.
-				<p></p>
 				<ul>
 					<li><strong>$width</strong> (<code>int</code>) Image width.</li>
 					<li><strong>$height</strong> (<code>int</code>) Image height.</li>

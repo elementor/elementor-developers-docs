@@ -61,29 +61,18 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td>An array of available CSS units like <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>deg</code> and <code>vh</code>.</td>
 		</tr>
 		<tr>
-			<td><code>range</code></td>
-			<td><code>array</code></td>
-			<td></td>
-			<td>
-				An array of ranges for each register size.
-				<p></p>
-				<ul>
-					<li><strong>$min</strong> (<code>int</code>) The minimum value of range.</li>
-					<li><strong>$max</strong> (<code>int</code>) The maximum value of range.</li>
-					<li><strong>$step</strong> (<code>int</code>) The intervals value that will be incremented or decremented when using the controls’ spinners.</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
 			<td><code>default</code></td>
 			<td><code>array</code></td>
 			<td></td>
 			<td>
 				Default slider value.
-				<p></p>
 				<ul>
-					<li><strong>$unit</strong> (<code>string</code>) Initial unit of the slider.</li>
-					<li><strong>$size</strong> (<code>int</code>) Initial size of the slider.</li>
+					<li><strong>$top</strong> (<code>int</code>) Initial size of the top dimension.</li>
+					<li><strong>$right</strong> (<code>int</code>) Initial size of the right dimension.</li>
+					<li><strong>$bottom</strong> (<code>int</code>) Initial size of the bottom dimension.</li>
+					<li><strong>$left</strong> (<code>int</code>) Initial size of the left dimension.</li>
+					<li><strong>$unit</strong> (<code>string</code>) Initial size of the CSS unit type.</li>
+					<li><strong>$isLinked</strong> (<code>bool</code>) Whether to link all the values together or not.</li>
 				</ul>
 			</td>
 		</tr>
@@ -132,7 +121,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'margin',
 			[
 				'label' => __( 'Margin', 'plugin-name' ),
-				'type' => Controls_Manager::DIMENSIONS,
+				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
 					'{{WRAPPER}} .your-class' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',

@@ -99,7 +99,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-24,33,39}
+```php {14-24,33-35,41-43}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -132,13 +132,17 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<span class="price"><?php echo $settings['price']; ?></span>
+		<span class="price">
+			<?php echo $settings['price']; ?>
+		</span>
 		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<span class="price">{{{ settings.price }}}</span>
+		<span class="price">
+			{{{ settings.price }}}
+		</span>
 		<?php
 	}
 
