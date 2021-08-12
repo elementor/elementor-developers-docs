@@ -100,10 +100,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => __( 'Title Color', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
-				'scheme' => [
-					'type' => \Elementor\Scheme_Color::get_type(),
-					'value' => \Elementor\Scheme_Color::COLOR_1,
-				],
 				'selectors' => [
 					'{{WRAPPER}} .title' => 'color: {{VALUE}}',
 				],
