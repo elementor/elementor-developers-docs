@@ -56,7 +56,7 @@ The header comments are a basic way WordPress uses to provide information about 
 
 The widget registration function is the way Elementor registers new widgets. We use the `elementor/widgets/widgets_registered` lifecycle hook and run the `register_hello_world_widget()` function.
 
-The function first loads the plugin file `hello-world-widget.php` and then register the widget class `Elementor_Hello_World_Widget()` using the widget manager.
+The function first loads the two widget files and then registers the widget classes using the widget manager.
 
 ### 1st Widget
 
