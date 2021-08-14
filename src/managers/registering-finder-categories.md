@@ -1,6 +1,6 @@
 # Registering Finder Categories
 
-When you create new [Finder Categories](/finder/) you need to register them to let the finder categories manager know them. The registration process is done by hooking to the `elementor/finder/categories/init` action hook.
+When you create new [Finder Categories](/finder/) you need to register them to let the **Finder Categories Manager** know them. The registration process is done by hooking to the `elementor/finder/categories/init` action hook.
 
 ## Registering New Finder Categories
 

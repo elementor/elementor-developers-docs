@@ -1,6 +1,6 @@
 # Registering Widgets
 
-When you create new [Elementor Widgets](/widgets/) you need to register them to let the widget manager know them. The registration process is done by hooking to the `elementor/widgets/widgets_registered` action hook.
+When you create new [Elementor Widgets](/widgets/) you need to register them to let the **Widgets Manager** know them. The registration process is done by hooking to the `elementor/widgets/widgets_registered` action hook.
 
 ## Registering New Widgets
 

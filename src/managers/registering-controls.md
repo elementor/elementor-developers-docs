@@ -1,6 +1,6 @@
 # Registering Controls
 
-When you create new [Elementor Controls](/controls/) you need to register them to let the control manager know them. The registration process is done by hooking to the `elementor/controls/controls_registered` action hook.
+When you create new [Elementor Controls](/controls/) you need to register them to let the **Controls Manager** know them. The registration process is done by hooking to the `elementor/controls/controls_registered` action hook.
 
 ## Registering New Controls
 

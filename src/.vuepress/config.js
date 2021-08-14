@@ -8,7 +8,7 @@ const editorSidebar = require('./sidebars/editor');
 const finderSidebar = require('./sidebars/finder');
 const formsSidebar = require('./sidebars/forms');
 const hooksSidebar = require('./sidebars/hooks');
-const registeringElementsSidebar = require('./sidebars/registering-elements');
+const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
 const themesSidebar = require('./sidebars/themes');
 const widgetsSidebar = require('./sidebars/widgets');
@@ -68,8 +68,8 @@ module.exports = {
             link: '/scripts-styles/',
           },
           {
-            text: 'Registering Elements',
-            link: '/registering-elements/',
+            text: 'Managers',
+            link: '/managers/',
           },
           {
             text: 'Hooks',
@@ -120,7 +120,7 @@ module.exports = {
       '/finder/': finderSidebar,
       '/forms/': formsSidebar,
       '/hooks/': hooksSidebar,
-      '/registering-elements/': registeringElementsSidebar,
+      '/managers/': managersSidebar,
       '/scripts-styles/': scriptsStylesSidebar,
       '/themes/': themesSidebar,
       '/widgets/': widgetsSidebar,
