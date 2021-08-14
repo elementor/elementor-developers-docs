@@ -56,7 +56,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function register_site_dynamic_tag_group( $dynamic_tags ) {
 
-	\Elementor\Plugin::$instance->dynamic_tags->register_group(
+	\Elementor\Plugin::instance()->dynamic_tags->register_group(
 		'site',
 		[
 			'title' => __( 'Site', 'elementor-acf-average-dynamic-tag' )

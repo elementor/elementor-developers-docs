@@ -12,8 +12,8 @@ function register_new_controls() {
 	require_once( __DIR__ . '/controls/control-1.php' );
 	require_once( __DIR__ . '/controls/control-2.php' );
 
-	\Elementor\Plugin::$instance->controls_manager->register_control( 'control-name',new \Elementor_Control_1() );
-	\Elementor\Plugin::$instance->controls_manager->register_control( 'control-name',new \Elementor_Control_2() );
+	\Elementor\Plugin::instance()->controls_manager->register_control( 'control-name', new \Elementor_Control_1() );
+	\Elementor\Plugin::instance()->controls_manager->register_control( 'control-name', new \Elementor_Control_2() );
 
 }
 add_action( 'elementor/controls/controls_registered', 'register_new_controls' );

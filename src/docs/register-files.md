@@ -109,7 +109,7 @@ final class Elementor_Test_Extension {
 
 	public function register_controls() {
 
-		$controls_manager = \Elementor\Plugin::$instance->controls_manager;
+		$controls_manager = \Elementor\Plugin::instance()->controls_manager;
 		$controls_manager->register_control( 'control-type-1', new Test_Control1() );
 		$controls_manager->register_control( 'control-type-2', new Test_Control2() );
 

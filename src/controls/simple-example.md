@@ -63,7 +63,7 @@ function register_currency_control() {
 
 	require_once( __DIR__ . '/controls/currency.php' );
 
-    \Elementor\Plugin::$instance->controls_manager->register_control( 'currency', new \Elementor_Currency_Control() );
+    \Elementor\Plugin::instance()->controls_manager->register_control( 'currency', new \Elementor_Currency_Control() );
 
 }
 add_action( 'elementor/controls/controls_registered', 'register_currency_control' );

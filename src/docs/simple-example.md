@@ -203,7 +203,7 @@ final class Elementor_Test_Extension {
 		require_once( __DIR__ . '/controls/test-control.php' );
 
 		// Register control
-		\Elementor\Plugin::$instance->controls_manager->register_control( 'control-type-', new \Test_Control() );
+		\Elementor\Plugin::instance()->controls_manager->register_control( 'control-type-', new \Test_Control() );
 
 	}
 

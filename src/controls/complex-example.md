@@ -67,7 +67,7 @@ function register_emojionearea_control() {
 
 	require_once( __DIR__ . '/controls/emojionearea.php' );
 
-    \Elementor\Plugin::$instance->controls_manager->register_control( 'emojionearea', new \Elementor_EmojiOneArea_Control() );
+    \Elementor\Plugin::instance()->controls_manager->register_control( 'emojionearea', new \Elementor_EmojiOneArea_Control() );
 
 }
 add_action( 'elementor/controls/controls_registered', 'register_emojionearea_control' );
