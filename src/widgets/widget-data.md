@@ -36,7 +36,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Widget Title** – The `get_title()` method returns the widget label that will be displayed to the user.
 
-* **Widget Icon** – The `get_icon()` method is an optional but recommended method, it lets you set the widget icon. You can use any "_eicon_" or "_font-awesome_" icons, simply return the css class name.
+* **Widget Icon** – The `get_icon()` method is an optional but recommended method, it lets you set the widget icon. You can use any [Elementor Icons](https://elementor.github.io/elementor-icons/) or [FontAwesome Icons](https://fontawesome.com/), simply return the css class name.
 
 * **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL where the user can get more information about the widget below the controls.
 

@@ -18,7 +18,7 @@ const action = {
 ```
 
 * **Action Name** - A unique ID used in the code.
-* **Action Icon** - The action icon.
+* **Action Icon** - The action icon, [Elementor Icons](https://elementor.github.io/elementor-icons/) or [FontAwesome Icons](https://fontawesome.com/).
 * **Action Title** - The label displayed to the user.
 * **Action Shortcut** - Keyboard shortcut that activate the action.
 * **Is Enabled** - Whether the action enabled or disabled.
