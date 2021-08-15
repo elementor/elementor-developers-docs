@@ -1,6 +1,6 @@
 # Context Menu Groups
 
-The context menu popup is organized by groups. Each item in the group is called an action. Elementor context menu has several groups. The groups are displayed only if they have at least one action. For example, "Add" group displayed on empty columns, and allow the user to add new columns.
+The context menu popup is organized by groups. Each item in the group is called an action. Each context menu has several groups. All the groups are visually divided with a separator. The groups are displayed only if they have at least one action.
 
 ## Group Object
 
@@ -18,7 +18,7 @@ const group = {
 
 ## Available Groups
 
-Built-in context menu groups:
+Built-in context menu groups for all the Elements (Section, Column and Widget):
 
 * **General** (_`general`_) - includes actions that allow to edit the elements, duplicate etc.
 * **Add** (_`addNew`_) - includes actions that allow to add new items to the element.
@@ -26,8 +26,6 @@ Built-in context menu groups:
 * **Save** (_`save`_) - includes actions that allow to save as a global or save as template.
 * **Tools** (_`tools`_) - includes actions that open tools like the navigator.
 * **Delete** (_`delete`_) - an action that allows the user to delete the element.
-
-All the groups are visually divided with a separator.
 
 ## Groups By Element Type
 
