@@ -73,7 +73,7 @@ add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_page_speed_cont
 ```js
 jQuery( window ).on( 'elementor:init', () => {
 
-	const currentPageURL = ''; // TODO: return page URL
+	const currentPageURL = elementor.documents.currentDocument.config.urls.permalink;
 
 	const pageSpeedURL = `https://developers.google.com/speed/pagespeed/insights/?url=${currentPageURL}&tab=desktop`;
 
