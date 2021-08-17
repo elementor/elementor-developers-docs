@@ -158,7 +158,7 @@ final class Elementor_Test_Extension {
 	 * Load the plugin only after Elementor (and other plugins) are loaded.
 	 * Load the files required to run the plugin.
 	 *
-	 * Fired by `plugins_loaded` action hook.
+	 * Fired by `elementor/init` action hook.
 	 *
 	 * @since 1.0.0
 	 * @access public
