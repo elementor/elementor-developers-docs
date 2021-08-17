@@ -64,16 +64,57 @@ Lets create a new field type for Elementor form widget. The field will allow end
 
 ```php
 <?php
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
+/**
+ * Elementor Form Field Type - Credit Card Number
+ *
+ * Add a new "Credit Card Number" field type to Elementor form widget.
+ *
+ * @since 1.0.0
+ */
 class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
+	/**
+	 * Get field type.
+	 *
+	 * Retrieve the unique ID of the field type.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return string Field type.
+	 */
 	public function get_type() {
-		return 'credit card number';
+		return 'credit-card-number';
 	}
 
+	/**
+	 * Get field name.
+	 *
+	 * Retrieve the field type label.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return string Field name.
+	 */
 	public function get_name() {
 		return __( 'Credit Card Number', 'plugin-name' );
 	}
 
+	/**
+	 * Render field output on the frontend.
+	 *
+	 * Written in PHP and used to generate the final HTML.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @param mixed $item
+	 * @param mixed $item_index
+	 * @param mixed $form
+	 * @return void
+	 */
 	public function render( $item, $item_index, $form ) {
 		$form_id = $form->get_id();
 
@@ -94,6 +135,16 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 		echo '<input ' . $form->get_render_attribute_string( 'input' . $item_index ) . '>';
 	}
 
+	/**
+	 * Field validation.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @param \ElementorPro\Modules\Forms\Classes\Field_Base   $field
+	 * @param \ElementorPro\Modules\Forms\Classes\Form_Record  $record
+	 * @param \ElementorPro\Modules\Forms\Classes\Ajax_Handler $ajax_handler
+	 * @return void
+	 */
 	public function validation( $field, $record, $ajax_handler ) {
 		if ( empty( $field['value'] ) ) {
 			return;
@@ -104,6 +155,14 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 		}
 	}
 
+	/**
+	 * Update form widget controls.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @param \Elementor\Widget_Base $widget The form widget instance.
+	 * @return void
+	 */
 	public function update_controls( $widget ) {
 		$elementor = \ElementorPro\Plugin::elementor();
 
