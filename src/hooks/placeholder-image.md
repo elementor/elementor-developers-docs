@@ -6,6 +6,12 @@ Elementor image widget and media based controls display a placeholder image unti
 
 By default, Elementor uses the default image located in Elementor's plugin assets folder. But, if you would like to change the default image with a custom one, Elementor let's you do that.
 
+## Hook Details
+
+* **Hook Type:** Filter Hook
+* **Hook Name:** `elementor/utils/get_placeholder_image_src`
+* **Affects On:** Elementor Editor
+
 ## Placeholder Image Filter Hook
 
 With the `elementor/utils/get_placeholder_image_src` filter hook developers can change the source of the default placeholder image.

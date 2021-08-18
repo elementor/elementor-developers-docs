@@ -4,6 +4,19 @@
 
 Both **Posts Widgets** and **Portfolio Widgets** come with a feature-packed query control that allows you to select specific posts to show in the widget. But sometimes you need more control over the query and for that, we added a Custom Query filter to expose the [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/) object and allow you to customize the query in any way you want.
 
+## Hook Details
+
+* **Hook Type:** Action Hook
+* **Hook Name:** `elementor/query/{$query_id}`
+* **Affects On:** Query
+
+## Hook Arguments
+
+| Argument | Type                       | Description                   |
+|----------|----------------------------|-------------------------------|
+| `query`  | _`\WP_Query`_              | The WordPress query instance. |
+| `widget` | _`\Elementor\Widget_Base`_ | The widget instance.          |
+
 ## Setting Up a Custom Filter
 
 <img src="/assets/img/query-id.png" alt="Elementor Controls" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
@@ -87,10 +100,6 @@ add_action( 'elementor/query/{$query_id}', function( $query ) {
 } );
 ```
 
-## Final Notes
-
-The action hook provides two parameters:
-  * `$query` – The WP_Query object.
-  * `$widget` – The Current widget object.
+## Notes
 
 You may need to refresh the [Editor](/editor/) to see the effect of the filter.

@@ -8,20 +8,18 @@ module.exports = [
     ]
   },
   {
-    title: 'PHP Filter Hooks',
+    title: 'PHP Hooks',
     collapsable: false,
     sidebarDepth: -1,
     children: [
       'custom-query-filter',
       'placeholder-image',
       'frontend-content',
-    ]
-  },
-  {
-    title: 'PHP Action Hooks',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
+      'render-widget-content',
+      'print-widget-template',
+      'print-google-fonts',
+      'elementor-loaded',
+      'elementor-init',
       'php',
     ]
   },
