@@ -42,7 +42,7 @@ function register_something( $some_manager ) {
 add_action( 'elementor/something/register', 'register_something' );
 ```
 
-Please note that some managers already use the new syntax, are not. We plan to update many managers in Elementor 3.5 and in future versions should have fully standard way to register new elements.
+Please note that some managers already use the new syntax, are not. We plan to update many managers in Elementor 3.5, and future versions should have fully standard way to register new elements across all the components.
 
 ## Managers
 
