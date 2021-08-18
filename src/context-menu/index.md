@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-A context menu is a control menu that appears when users select an element on [Elementor Preview](/editor/elementor-preview) area and right-click the mouse. The popup menu offers a set of available actions based on the context, or the selected element. This is why it refers as contextual menu.
+A context menu is a popup menu that appears when users select an element on [Elementor Preview](/editor/elementor-preview) area and right-click the mouse. The popup menu offers a set of available actions based on the context, or the selected element. This is why it refers as contextual menu.
 
 ![Elementor Context Menu](/assets/img/elementor-context-menu.png)
 
@@ -24,7 +24,7 @@ External developers can register their own custom actions and modify existing on
 
 ## Code Examples
 
-Learn by examples. See how easy it is to create new controls:
+Learn by examples. See how easy it is to create new context menu:
 
 * [Simple Example](./simple-example)
 * [Advanced Example](./advanced-example)
