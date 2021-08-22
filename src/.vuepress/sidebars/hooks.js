@@ -12,27 +12,23 @@ module.exports = [
     collapsable: false,
     sidebarDepth: -1,
     children: [
-      'custom-query-filter',
       'placeholder-image',
       'frontend-content',
+      'render-frontend-elements',
       'render-widget-content',
       'print-widget-template',
       'print-google-fonts',
       'elementor-loaded',
       'elementor-init',
-      'php',
+      'widget-skins',
+      'save-editor-data',
+      'parse-element-css',
+      'custom-query-filter',
+      'injecting-controls',
     ]
   },
   {
-    title: 'JS Filter Hooks',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'js',
-    ]
-  },
-  {
-    title: 'JS Action Hooks',
+    title: 'JS Hooks',
     collapsable: false,
     sidebarDepth: -1,
     children: [

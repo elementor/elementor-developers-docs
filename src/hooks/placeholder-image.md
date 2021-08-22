@@ -1,5 +1,7 @@
 # Placeholder Image
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img src="/assets/img/elementor-placeholder-image.png" alt="Elementor Placeholder Image" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 Elementor image widget and media based controls display a placeholder image until the user selects a specific image from the media library.
@@ -19,6 +21,13 @@ With the `elementor/utils/get_placeholder_image_src` filter hook developers can 
 You can set a placeholder image from an external URL:
 
 ```php
+/**
+ * Change the default Elementor placeholder image.
+ *
+ * Use an image located in an external URL.
+ *
+ * @since 1.0.0
+ */
 function custom_elementor_placeholder_image() {
 	return 'https://developers.elementor.com/path/to/placeholder.png';
 }
@@ -28,6 +37,13 @@ add_filter( 'elementor/utils/get_placeholder_image_src', 'custom_elementor_place
 Or set a placeholder image located in your plugin folder:
 
 ```php
+/**
+ * Change the default Elementor placeholder image.
+ *
+ * Use an image located in the plugin assets files.
+ *
+ * @since 1.0.0
+ */
 function custom_elementor_placeholder_image() {
 	return plugins_url( 'assets/images/placeholder.png', __FILE__ );
 }

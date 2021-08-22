@@ -1,5 +1,7 @@
 # Render Widget Content
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Elementor has a hook that allows developers to change the widget content in the frontend. It will be applied on the final HTML content of a single widget. In the Editor Preview it will be shown after the user finishes editing the element.
 
 ## Hook Details

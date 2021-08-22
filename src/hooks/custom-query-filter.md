@@ -30,10 +30,16 @@ In this example the query ID is set to `my_custom_filter`, so when Elementor ren
 After you have set up the Custom Query Filter you can use it to modify the query in the same way WordPress native [pre_get_posts](https://developer.wordpress.org/reference/hooks/pre_get_posts/) hook lets you modify the Query. Using the Custom Query filter is just like any other WordPress native action hook:
 
 ```php
-// Posts Widget or Portfolio Widget
-add_action( 'elementor/query/{$query_id}', function( $query ) {
+/**
+ * Update the Posts Widget or Portfolio Widget query.
+ *
+ * @since 1.0.0
+ * @param \WP_Query $query The WordPress query instance.
+ */
+function custom_query_callback( $query ) {
 	// Modify the posts query here
-} );
+}
+add_action( 'elementor/query/{$query_id}', 'custom_query_callback' );
 ```
 
 ## Examples
@@ -43,19 +49,31 @@ add_action( 'elementor/query/{$query_id}', function( $query ) {
 Showing multiple post types in Posts Widget use the following code snippet:
 
 ```php
-add_action( 'elementor/query/{$query_id}', function( $query ) {
-	// Here we set the query to fetch posts with
-	// post type of 'custom-post-type1' and 'custom-post-type2'
+/**
+ * Update the query to use specific post types.
+ *
+ * @since 1.0.0
+ * @param \WP_Query $query The WordPress query instance.
+ */
+function my_query_by_post_types( $query ) {
 	$query->set( 'post_type', [ 'custom-post-type1', 'custom-post-type2' ] );
-} );
+}
+add_action( 'elementor/query/{$query_id}', 'my_query_by_post_types' );
 ```
 
 ### Filter Posts by Post Meta in Portfolio Widget
 
-Showing post with meta key filter in Portfolio Widget
+Showing post with meta key filter in Portfolio Widget:
 
 ```php
-add_action( 'elementor/query/{$query_id}', function( $query ) {
+/**
+ * Update the query by specific post meta.
+ *
+ * @since 1.0.0
+ * @param \WP_Query $query The WordPress query instance.
+ */
+function my_query_by_post_meta( $query ) {
+
 	// Get current meta Query
 	$meta_query = $query->get( 'meta_query' );
 
@@ -70,20 +88,28 @@ add_action( 'elementor/query/{$query_id}', function( $query ) {
 		'value' => [ 'design', 'development' ],
 		'compare' => 'in',
 	];
+
 	$query->set( 'meta_query', $meta_query );
-} );
+
+}
+add_action( 'elementor/query/{$query_id}', 'my_query_by_post_meta' );
 ```
 
 ### Most Popular Post by Comment count in Posts Widget
 
-Showing posts ordered by comment count in Posts Widget
+Showing posts ordered by comment count in Posts Widget:
 
 ```php
-add_action( 'elementor/query/{$query_id}', function( $query ) {
-	// Here we set the query to fetch posts with
-	// ordered by comments count
+/**
+ * Order the posts in the query by comment count.
+ *
+ * @since 1.0.0
+ * @param \WP_Query $query The WordPress query instance.
+ */
+function my_query_by_different_order( $query ) {
 	$query->set( 'orderby', 'comment_count' );
-} );
+}
+add_action( 'elementor/query/{$query_id}', 'my_query_by_different_order' );
 ```
 
 ### Show Posts of Multiple statuses in Posts Widget
@@ -93,11 +119,16 @@ Showing posts ordered by comment count in Posts Widget.
 NOTE: Using this snippet may result in displaying private data. Please use with caution.
 
 ```php
-add_action( 'elementor/query/{$query_id}', function( $query ) {
-	// Here we set the query to fetch posts with post status 'future' and 'draft'.
-	// Refer to WP_Query documentation in WP codex for values list.
+/**
+ * Update the query to use specific post statuses.
+ *
+ * @since 1.0.0
+ * @param \WP_Query $query The WordPress query instance.
+ */
+function my_query_by_post_status( $query ) {
 	$query->set( 'post_status', [ 'future', 'draft'] );
-} );
+}
+add_action( 'elementor/query/{$query_id}', 'my_query_by_post_status' );
 ```
 
 ## Notes

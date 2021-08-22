@@ -1,5 +1,7 @@
 # Print Widget Template
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Elementor has a hook that allows developers to change the widget JavaScript template in the [Elementor Preview](/editor/elementor-preview).
 
 ## Hook Details
@@ -19,6 +21,15 @@ Elementor has a hook that allows developers to change the widget JavaScript temp
 ## Example
 
 ```php
+/**
+ * Update the heading widget JS template in Elementor Preview.
+ *
+ * Adds an icon to all external links.
+ *
+ * @since 1.0.0
+ * @param string                 $template The JavaScript template output.
+ * @param \Elementor\Widget_Base $widget   The widget instance.
+ */
 function change_heading_js_template( $template, $widget ) {
 
 	if ( 'heading' === $widget->get_name() ) {

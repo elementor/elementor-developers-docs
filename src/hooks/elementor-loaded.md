@@ -1,5 +1,7 @@
 # Elementor Loaded
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor has a hook that fires when the plugin is loaded, before loading all the components.
 
 ## Hook Details
