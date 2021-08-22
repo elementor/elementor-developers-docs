@@ -49,7 +49,7 @@ add_action( 'wp_footer', function() {
 
 ### `init`
 
-Elementor frontend is loaded
+Elementor frontend is loaded.
 
 #### Arguments
 
@@ -65,7 +65,7 @@ elementorFrontend.hooks.addAction( 'init', function() {
 
 ### `frontend/element_ready/global`
 
-Runs on every element (includes sections and columns) when it’s ready
+Runs on every element (includes sections and columns) when it’s ready.
 
 #### Arguments
 
