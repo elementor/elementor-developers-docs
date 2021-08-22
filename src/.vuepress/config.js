@@ -64,12 +64,12 @@ module.exports = {
             link: '/editor/',
           },
           {
-            text: 'Scripts & Styles',
-            link: '/scripts-styles/',
-          },
-          {
             text: 'Managers',
             link: '/managers/',
+          },
+          {
+            text: 'Scripts & Styles',
+            link: '/scripts-styles/',
           },
           {
             text: 'Hooks',
