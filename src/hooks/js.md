@@ -49,7 +49,7 @@ add_action( 'wp_footer', function() {
 
 ### `init`
 
-Elementor frontend is loaded
+Elementor frontend is loaded.
 
 #### Arguments
 
