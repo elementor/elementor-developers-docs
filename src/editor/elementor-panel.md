@@ -19,4 +19,4 @@ The panel area consists of several panels:
 
 ## Extending the Panels
 
-Most of the panels are extendible. Developers can add new elements to existing panels and we are working on an official ways to create new panels programmatically without any workarounds currently used by some plugin authors.
+Some of the panels are extendible. Developers can add new elements to existing panels and we are working on an official ways to create new panels programmatically without any workarounds currently used by some plugin authors.
