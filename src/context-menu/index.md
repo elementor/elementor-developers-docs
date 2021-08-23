@@ -2,21 +2,21 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-A context menu is a popup menu that appears when users select an element on [Elementor Preview](/editor/elementor-preview) area and right-click the mouse. The popup menu offers a set of available actions based on the context, or the selected element. This is why it refers as contextual menu.
+A context menu is a popup menu that appears when users right click an element in the [Elementor preview](/editor/elementor-preview) area. This popup menu offers a set of available actions based on location or the selected element. This is why it is called a context menu.
 
 ![Elementor Context Menu](/assets/img/elementor-context-menu.png)
 
 ## Context Menu Structure
 
-Elementor has several [Types](./context-menu-types) of context menus based on the area where the user open it, or the Element which was clicked. Developers can hook to any element type and modify its actions.
+Elementor has several [types](./context-menu-types) of context menus based on the selected element or its location. Developers can hook to any element type and modify its actions.
 
-Each menu is divided into several [Groups](./context-menu-groups) containing several items. All context menu groups are visually divided with separators.
+Each menu is divided into several [groups],(./context-menu-groups) each containing several items. Context menu groups are visually divided with separators.
 
-Each menu item called an [Action](./context-menu-actions). In simple words, Actions are JS callback functions applied on selected elements (section, column, widget).
+Each menu item is called an [action](./context-menu-actions). Actions are JS callback functions applied to selected elements (section, column, widget).
 
 ## Extending Context Menus
 
-External developers can register their own custom actions and modify existing ones. Learn more how to do exactly that:
+External developers can register their own custom actions and modify existing ones. Learn more:
 
 * [Add New Context Menu Action](./add-new-action)
 * [Remove Context Menu Action](./remove-action)
@@ -24,7 +24,7 @@ External developers can register their own custom actions and modify existing on
 
 ## Code Examples
 
-Learn by examples. See how easy it is to create new context menu:
+Check out these examples to see context menu creation in action:
 
 * [Simple Example](./simple-example)
 * [Advanced Example](./advanced-example)
