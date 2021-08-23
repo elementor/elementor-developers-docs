@@ -23,7 +23,7 @@ The built-in context menu groups for elements (section, Column and widget) inclu
 * **General** (_`general`_) - actions to edit the elements (e.g. duplicate).
 * **Add** (_`addNew`_) - actions to add new items to the element.
 * **Clipboard** (_`clipboard`_) - actions to copy, paste, paste style etc.
-* **Save** (_`save`_) - actions to save as a global component or save as a template.
+* **Save** (_`save`_) - actions to save as a global widget or save as a template.
 * **Tools** (_`tools`_) - actions to open tools (e.g. navigator).
 * **Delete** (_`delete`_) - actions to delete elements.
 
