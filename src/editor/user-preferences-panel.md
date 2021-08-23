@@ -4,4 +4,12 @@
 
 The **User Preferences** is a panel in [The Editor](/editor/) where you can control the look and feel of the Elementor Editor. You can choose whether to display a light or a dart theme, set the default panel width, whether to show/hide editing buttons etc.
 
-## Extending the User Preferences Panel
+## Structure and Functionality
+
+Currently the panel has only section:
+
+* **Preferences** - managing the look and feel of the Elementor Editor.
+
+## Extending the Panel
+
+Developers can extend the user preferences by [injecting new controls](/hooks/injecting-controls) to the panel. Make sure you add only controls that manage how your addon is displayed in the Editor.
