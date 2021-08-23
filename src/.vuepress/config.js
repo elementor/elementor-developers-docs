@@ -29,10 +29,15 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
+    ['link', { rel: 'icon', href: '/assets/img/logo.svg' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'mask-icon', href: '/assets/img/logo.svg', color: '#3eaf7c' }],
+    ['link', { rel: 'apple-touch-icon', href: '/assets/img/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'msapplication-TileImage', content: '/assets/img/logo.svg' }],
+    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
 
   /**
