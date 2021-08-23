@@ -1,10 +1,10 @@
 # Update Action
 
-To modify an existing action we need to change the action object value in a specific entry.
+To modify an existing action, we need to change the action object value in a specific entry.
 
 ## Update Widget Action
 
-Update icon of the widget "duplicate" action:
+In the example below, we'll update the "duplicate" action of a widget:
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
@@ -26,7 +26,7 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
 
 ## Update Column Action
 
-Update the label of the column "delete" action:
+Now we'll update the label of a "delete" action for a column:
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view ) => {
@@ -48,7 +48,7 @@ elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view )
 
 ## Update Section Action
 
-Update the entire section "edit" action:
+Now we'll update the "edit" action of an entire section:
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view ) => {

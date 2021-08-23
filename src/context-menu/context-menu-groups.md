@@ -1,10 +1,10 @@
 # Context Menu Groups
 
-The context menu popup is organized by groups. Each item in the group is called an action. Each context menu has several groups. All the groups are visually divided with a separator. The groups are displayed only if they have at least one action.
+Context menu popups contain several groups divided by a separator. Each group contains a number of actions - groups are only displayed if they have at least one action.
 
 ## Group Object
 
-Elementor context menu is basically a JS array of group objects. Each group object has two properties:
+An Elementor context menu is basically a JS array of group objects. Each group object has two properties:
 
 ```js
 const group = {
@@ -18,18 +18,18 @@ const group = {
 
 ## Available Groups
 
-Built-in context menu groups for all the Elements (Section, Column and Widget):
+The built-in context menu groups for elements (section, Column and widget) include:
 
-* **General** (_`general`_) - includes actions that allow to edit the elements, duplicate etc.
-* **Add** (_`addNew`_) - includes actions that allow to add new items to the element.
-* **Clipboard** (_`clipboard`_) - includes actions that allow to copy, paste, paste style etc.
-* **Save** (_`save`_) - includes actions that allow to save as a global or save as template.
-* **Tools** (_`tools`_) - includes actions that open tools like the navigator.
-* **Delete** (_`delete`_) - an action that allows the user to delete the element.
+* **General** (_`general`_) - actions to edit the elements (e.g. duplicate).
+* **Add** (_`addNew`_) - actions to add new items to the element.
+* **Clipboard** (_`clipboard`_) - actions to copy, paste, paste style etc.
+* **Save** (_`save`_) - actions to save as a global component or save as a template.
+* **Tools** (_`tools`_) - actions to open tools (e.g. navigator).
+* **Delete** (_`delete`_) - actions to delete elements.
 
 ## Groups By Element Type
 
-Active groups displayed in each element:
+Below are the active groups displayed in each element:
 
 ### Section
 
