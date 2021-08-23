@@ -4,13 +4,13 @@ To add a new action to the context menu, we need to define a new action object a
 
 ## Add New Widget Action
 
-In the example below, we'll add a new "alert" action to the general group. This action will activate a callback function alerting the widget name.
+In the example below, we'll add a new action to the general group. This action will activate a callback function [alerting](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) the widget type.
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
 
 	const newAction = {
-		name: 'alert',
+		name: 'alert-widget-type',
 		icon: 'eicon-alert',
 		title: 'Widget Type',
 		isEnabled: () => true,
