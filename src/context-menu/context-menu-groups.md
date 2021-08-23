@@ -27,6 +27,10 @@ The built-in context menu groups for elements (section, Column and widget) inclu
 * **Tools** (_`tools`_) - actions to open tools (e.g. navigator).
 * **Delete** (_`delete`_) - actions to delete elements.
 
+::: warning Please Note
+Due to a temporary limitation, external developers can add new actions only to 3 groups: `general`, `clipboard` and `delete`.
+:::
+
 ## Groups By Element Type
 
 Below are the active groups displayed in each element:
