@@ -6,10 +6,10 @@ Elementor has several types of context menus based on the selected location or e
 
 Elementor has 3 main context menu types:
 
-1.  **Element**, consisting of:
-   * **Section** elements
-   * **Column** elements
-   * **Widget** elements
+1. **Element**, consisting of:
+  * **Section** elements
+  * **Column** elements
+  * **Widget** elements
 2. **Empty column elements**
 3. "**Add new section / template**" 
 
