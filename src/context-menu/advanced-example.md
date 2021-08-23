@@ -81,7 +81,7 @@ jQuery( window ).on( 'elementor:init', () => {
 
 	// Google PageSpeed action object
 	const newAction = {
-		name: 'alert',
+		name: 'google-page-speed',
 		icon: 'eicon-wrench',
 		title: 'Google PageSpeed',
 		isEnabled: () => true,
