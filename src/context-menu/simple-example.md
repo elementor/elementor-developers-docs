@@ -1,10 +1,10 @@
 # Simple Example
 
-Let's build a full Elementor addon that modifies the context menu.
+In this example, we'll build a full Elementor add-on to modify a context menu.
 
 ## Folder Structure
 
-The addon will have several index files to prevent direct access to folders, the main file will register and enqueue JS file in the editor, and the JS that actually modify the context menu.
+This add-on will have several index files to prevent direct access to the folders. The main file will register and enqueue a JS file in the editor, and the JS will modify the context menu.
 
 ```
 elementor-context-menus/
