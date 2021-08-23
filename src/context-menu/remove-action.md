@@ -4,7 +4,7 @@ To remove an existing action from the context menu, we need to delete that actio
 
 ## Remove Widget Action
 
-In the example below, we'll remove "duplicate", a widget action located in the "general" group:
+In the example below, we'll remove the "duplicate" action from a widget "general" group:
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
@@ -23,7 +23,7 @@ elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view )
 
 ## Remove Column Action
 
-Now we'll remove "add new column", a column action located in the "add" group:
+Now we'll remove the "add new column" action from a column "add" group:
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view ) => {
@@ -42,7 +42,7 @@ elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view )
 
 ## Remove Section Action
 
-Now we'll remove "Save as Template", a section action located in the "save" group:
+Now we'll remove the "save as template" action from a section "save" group:
 
 ```js {1}
 elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view ) => {
