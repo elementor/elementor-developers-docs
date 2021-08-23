@@ -44,10 +44,13 @@ $this->start_controls_section(
 To create custom tabs use the `add_tab()` method.
 
 ```php
-\Elementor\Controls_Manager::add_tab(
-	'new-tab',
-	__( 'New Tab', 'plugin-name' )
-);
+function add_panel_tab() {
+	\Elementor\Controls_Manager::add_tab(
+		'new-tab',
+		__( 'New Tab', 'plugin-name' )
+	);
+}
+add_action( 'elementor/init', 'add_panel_tab' );
 ```
 
 To add custom icon above the tab label you will need to add custom CSS:
