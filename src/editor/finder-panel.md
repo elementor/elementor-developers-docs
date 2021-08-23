@@ -1,3 +1,0 @@
-# Finder Panel
-
-xxx

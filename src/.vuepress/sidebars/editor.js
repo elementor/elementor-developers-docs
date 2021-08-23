@@ -27,8 +27,6 @@ module.exports = [
       'page-settings-panel',
       'history-panel',
       'widgets-panel',
-      'finder-panel',
-      'navigator-panel',
     ]
   },
   {
