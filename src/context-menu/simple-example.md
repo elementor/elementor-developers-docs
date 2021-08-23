@@ -76,7 +76,7 @@ jQuery( window ).on( 'elementor:init', () => {
 	elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
 
 		const newAction = {
-			name: 'alert',
+			name: 'alert-widget-type',
 			icon: 'eicon-alert',
 			title: 'Widget Type',
 			isEnabled: () => true,
