@@ -1,10 +1,10 @@
 # Widget Scripts
 
-When you develop new [Elementor Widgets](/widgets/) and you need to register custom scripts, you need to register scripts using [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) function and enqueue using widget `get_script_depends()` method. This way Elementor will load scripts dynamically only on pages using this widget.
+When you develop new [Elementor widgets](/widgets/) and you need to register custom scripts, they must be registered using the [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) function and enqueued using the widget `get_script_depends()` method. This way Elementor will dynamically  load these scripts only on pages using this widget.
 
 ## Registering Widget Scripts
 
-Register widgets scripts and set them as widget dependencies:
+In the example below, we'll register widget scripts and set them as widget dependencies:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -26,5 +26,5 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 ```
 
 ::: tip Best Practice
-A best practice is to register script inside the widget PHP class. This way you make sure the script is loaded only if the widget is used.
+Best practice is to register scripts inside the widget PHP class. This ensures that the script is loaded only if the widget is used.
 :::
