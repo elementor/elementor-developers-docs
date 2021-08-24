@@ -45,7 +45,7 @@ Learn about the widget render mechanism and how to use it in your widgets:
 
 ## Code Examples
 
-Learn by doing. See how easy it is to create Elementor widgets:
+Learn by doing. Check out how easy it is to create Elementor widgets:
 
 * [Simple Example](./simple-example)
 * [Complex Example](./complex-example)
