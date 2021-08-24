@@ -1,12 +1,12 @@
 # Widget Structure
 
-Creating a custom Elementor Widget is not very different from creating a native WordPress widget, you basically start by creating a class that extends the `\Elementor\Widget_Base` class and fill in all the required methods.
+Creating a custom Elementor Widget is not very different from creating a native WordPress widget. Start by creating a class that extends the `\Elementor\Widget_Base` class and fill in all the required methods.
 
-Each widget needs to have a few basic settings like a unique name that the widget will be identified by in the code, a title that will be used as the widget label and an icon. On top of that we have some advanced settings like the widget controls which are basically the fields where the user select his custom data, and the render script that generates the final output based on the user data from the widget controls.
+Each widget needs to have a few basic settings - a unique name that will indentify the widget in the code, a title that will be used as the widget label and an icon. There are also advanced settings such as widget controls which are the fields where users select their custom data, and the render script that generates the final output based on user data from the widget controls.
 
 ## Widget Class
 
-First we need to create a class that extends the `\Elementor\Widget_Base` class:
+First, we need to create a class that extends the `\Elementor\Widget_Base` class:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
