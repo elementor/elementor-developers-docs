@@ -1,10 +1,10 @@
 # Editor Styles
 
-When you develop addons that extend [Elementor Editor](/editor/) and you have your own custom stylesheets, use `elementor/editor/before_enqueue_styles` or `elementor/editor/after_enqueue_scripts` action hooks which are fired when Elementor Editor styles are registered and enqueued.
+When you develop add-ons that extend the [Elementor Editor](/editor/) and you are using your own custom stylesheets, use `elementor/editor/before_enqueue_styles` or `elementor/editor/after_enqueue_scripts` action hooks, which are fired when Elementor Editor styles are registered and enqueued.
 
 ## Registering Editor Styles
 
-Register and enqueue custom stylesheets **before** Elementor styles are registered and enqueued:
+In the example below, we'll register and enqueue custom stylesheets **before** Elementor styles are registered and enqueued:
 
 ```php {11}
 function my_plugin_editor_styles() {
@@ -20,7 +20,7 @@ function my_plugin_editor_styles() {
 add_action( 'elementor/editor/before_enqueue_styles', 'my_plugin_editor_styles' );
 ```
 
-Register and enqueue custom stylesheets **after** Elementor styles are registered and enqueued:
+Now we'll register and enqueue custom stylesheets **after** Elementor styles are registered and enqueued:
 
 ```php {11}
 function my_plugin_editor_styles() {
