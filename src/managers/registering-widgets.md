@@ -1,6 +1,6 @@
 # Registering Widgets
 
-When you create new [Elementor widgets](/widgets/), you must register them. The registration process is done by hooking to the `elementor/widgets/widgets_registered` action hook.
+When you create new [Elementor widgets](/widgets/), you must register them. This is done by hooking to the `elementor/widgets/widgets_registered` action hook.
 
 ## Registering New Widgets
 
