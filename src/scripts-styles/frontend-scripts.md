@@ -1,6 +1,6 @@
 # Frontend Scripts
 
-Some add-ons have custom frontend scripts loaded to the client side on pages built with Elementor. In these cases, use `elementor/frontend/before_register_scripts` or `elementor/frontend/after_register_scripts` action hooks which are fired when Elementor frontend scripts are registered and enqueued.
+Some add-ons have custom frontend scripts loaded to the client side on pages built with Elementor. In these cases, use `elementor/frontend/before_register_scripts` or `elementor/frontend/after_register_scripts` action hooks, which are fired when Elementor frontend scripts are registered and enqueued.
 
 ## Registering Frontend Scripts
 
