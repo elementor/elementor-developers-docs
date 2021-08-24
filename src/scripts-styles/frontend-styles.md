@@ -1,10 +1,10 @@
 # Frontend Styles
 
-When you have custom stylesheets you need to register on all pages that are using Elementor, use `elementor/frontend/before_enqueue_styles` or `elementor/frontend/after_enqueue_styles` action hooks which are fired when Elementor frontend styles are registered and enqueued.
+When using custom stylesheets, they must be registered to all pages using Elementor. Use the `elementor/frontend/before_enqueue_styles` or `elementor/frontend/after_enqueue_styles` action hooks which are fired when Elementor frontend styles are registered and enqueued.
 
 ## Registering Frontend Styles
 
-Register and enqueue custom stylesheets **before** Elementor frontend styles are registered and enqueued:
+In the example below, we'll register and enqueue custom stylesheets **before** Elementor frontend styles are registered and enqueued:
 
 ```php {11}
 function my_plugin_frontend_stylesheets() {
@@ -20,7 +20,7 @@ function my_plugin_frontend_stylesheets() {
 add_action( 'elementor/frontend/before_enqueue_styles', 'my_plugin_frontend_stylesheets' );
 ```
 
-Register and enqueue custom stylesheets **after** Elementor frontend styles are registered and enqueued:
+Now, we'll register and enqueue custom stylesheets **after** Elementor frontend styles are registered and enqueued:
 
 ```php {11}
 function my_plugin_frontend_stylesheets() {
