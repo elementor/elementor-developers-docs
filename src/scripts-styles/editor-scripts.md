@@ -4,7 +4,7 @@ When you develop addons that extend [Elementor Editor](/editor/) and you have yo
 
 ## Registering Editor Scripts
 
-Register and enqueue custom scripts **before** Elementor scripts are registered and enqueued:
+In the example below, we'll register and enqueue custom scripts **before** Elementor scripts are registered and enqueued:
 
 ```php {11}
 function my_plugin_editor_scripts() {
@@ -20,7 +20,7 @@ function my_plugin_editor_scripts() {
 add_action( 'elementor/editor/before_enqueue_scripts', 'my_plugin_editor_scripts' );
 ```
 
-Register and enqueue custom scripts **after** Elementor scripts are registered and enqueued:
+Now we'll register and enqueue custom scripts **after** Elementor scripts are registered and enqueued:
 
 ```php {11}
 function my_plugin_editor_scripts() {
