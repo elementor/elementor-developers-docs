@@ -1,10 +1,10 @@
 # Frontend Scripts
 
-Some addons have custom frontend scripts loaded on client side on pages built with Elementor, use `elementor/frontend/before_register_scripts` or `elementor/frontend/after_register_scripts` action hooks which are fired when Elementor frontend scripts are registered and enqueued.
+Some add-ons have custom frontend scripts loaded to the client side on pages built with Elementor. In these cases, use `elementor/frontend/before_register_scripts` or `elementor/frontend/after_register_scripts` action hooks which are fired when Elementor frontend scripts are registered and enqueued.
 
 ## Registering Frontend Scripts
 
-Register and enqueue custom scripts **before** Elementor frontend scripts are registered and enqueued:
+In the exammple below, we'll register and enqueue custom scripts **before** Elementor frontend scripts are registered and enqueued:
 
 ```php {11}
 function my_plugin_frontend_scripts() {
@@ -20,7 +20,7 @@ function my_plugin_frontend_scripts() {
 add_action( 'elementor/frontend/before_register_scripts', 'my_plugin_frontend_scripts' );
 ```
 
-Register and enqueue custom scripts **after** Elementor frontend scripts are registered and enqueued:
+Now we'll register and enqueue custom scripts **after** Elementor frontend scripts are registered and enqueued:
 
 ```php {11}
 function my_plugin_frontend_scripts() {
@@ -37,5 +37,5 @@ add_action( 'elementor/frontend/after_register_scripts', 'my_plugin_frontend_scr
 ```
 
 ::: warning Please Note
-Those scripts will be loaded on all pages built with Elementor. To reduce performance impact, make sure you minify the files.
+Those scripts will be loaded on all pages built with Elementor using this add-on. To reduce performance impact, make sure you minify the files.
 :::
