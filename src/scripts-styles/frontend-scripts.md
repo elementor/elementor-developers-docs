@@ -4,7 +4,7 @@ Some add-ons have custom frontend scripts loaded to the client side on pages bui
 
 ## Registering Frontend Scripts
 
-In the exammple below, we'll register and enqueue custom scripts **before** Elementor frontend scripts are registered and enqueued:
+In the example below, we'll register and enqueue custom scripts **before** Elementor frontend scripts are registered and enqueued:
 
 ```php {11}
 function my_plugin_frontend_scripts() {
