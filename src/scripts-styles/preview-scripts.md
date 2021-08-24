@@ -4,7 +4,7 @@ When you develop addons that extend [Elementor preview](/editor/elementor-previe
 
 ## Registering Preview Scripts
 
-Register and enqueue custom scripts after Elementor preview scripts are registered and enqueued:
+In the example below, we'll register and enqueue custom scripts after Elementor preview scripts are registered and enqueued:
 
 ```php {11}
 function my_plugin_preview_scripts() {
