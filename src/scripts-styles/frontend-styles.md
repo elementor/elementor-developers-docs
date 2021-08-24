@@ -20,7 +20,7 @@ function my_plugin_frontend_stylesheets() {
 add_action( 'elementor/frontend/before_enqueue_styles', 'my_plugin_frontend_stylesheets' );
 ```
 
-Now, we'll register and enqueue custom stylesheets **after** Elementor frontend styles are registered and enqueued:
+Now we'll register and enqueue custom stylesheets **after** Elementor frontend styles are registered and enqueued:
 
 ```php {11}
 function my_plugin_frontend_stylesheets() {
