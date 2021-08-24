@@ -26,7 +26,7 @@ function register_new_finder_categories( $finder_categories_manager ) {
 add_action( 'elementor/finder/categories/init', 'register_new_finder_categories' );
 ```
 
-This hooks to the `elementor/finder/categories/init` action hook holding the `$categories_manager` parameter, passing a callback function that imports the new finder files and registers them with the finder categories manager.
+This hooks to the `elementor/finder/categories/init` action hook holding the `$categories_manager` parameter, passing a callback function that imports the new finder files, and registers them with the finder categories manager.
 
 ## New Registration Method
 
