@@ -37,5 +37,5 @@ add_action( 'elementor/frontend/after_enqueue_styles', 'my_plugin_frontend_style
 ```
 
 ::: warning Please Note
-Those stylesheets will be loaded on all pages built with Elementor. To reduce performance impact, make sure you minify the files.
+These stylesheets will be loaded on all pages built with Elementor. To reduce performance impact, make sure you minify the files.
 :::
