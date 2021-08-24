@@ -1,6 +1,6 @@
 # Registering Controls
 
-When you create new [Elementor Controls](/controls/) you need to register them to let the **Controls Manager** know them. The registration process is done by hooking to the `elementor/controls/controls_registered` action hook.
+When you create new [Elementor controls](/controls/) you must register them. This is done by hooking to the `elementor/controls/controls_registered` action hook.
 
 ## Registering New Controls
 
@@ -24,11 +24,11 @@ function register_new_controls() {
 add_action( 'elementor/controls/controls_registered', 'register_new_controls' );
 ```
 
-We hook to the `elementor/controls/controls_registered` action hook and pass a callback function that imports the new control files and then registers them with the control manager.
+This hooks to the `elementor/controls/controls_registered` action hook and passes a callback function importing the new control files and registering them with the control manager.
 
 ## New Registration Method
 
-As of Elementor 3.5, developers should use the new way to register controls:
+As of Elementor 3.5, developers should use the following code:
 
 ```php
 /**
@@ -50,4 +50,4 @@ function register_new_controls( $controls_manager ) {
 add_action( 'elementor/controls/register', 'register_new_controls' );
 ```
 
-We hook to the new `elementor/controls/register` action hook which holds the controls manager. Then we use the manager to register new controls by passing the control instances.
+This hooks to the new `elementor/controls/register` action hook which holds the controls manager. The manager then registers the new controls by passing the control instances.
