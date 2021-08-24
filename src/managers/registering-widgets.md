@@ -50,4 +50,4 @@ function register_new_widgets( $widgets_manager ) {
 add_action( 'elementor/widgets/register', 'register_new_widgets' );
 ```
 
-This hooks to the new `elementor/widgets/register` action hook which holds the widgets manager. Then we use the manager to register new widgets by passing the widget instance.
+This hooks to the new `elementor/widgets/register` action hook which holds the widgets manager. The manager then registers new widgets by passing the widget instance.
