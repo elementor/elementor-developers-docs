@@ -1,10 +1,10 @@
 # Widget Styles
 
-When you develop new [Elementor Widgets](/widgets/) and you need to register custom stylesheets, you need to register styles using [wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/) function and enqueue using widget `get_style_depends()` method. This way Elementor will load stylesheet dynamically only on pages using this widget.
+When you develop new [Elementor Widgets](/widgets/) and you need to register custom stylesheets, they must be registered using the [wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/) function and enqueued using the widget `get_style_depends()` method. This way Elementor will dynamically load the stylesheets only on pages using this widget.
 
 ## Registering Widget Styles
 
-Register widgets stylesheets and set them as widget dependencies:
+In the example below, we'll register widget stylesheets and set them as widget dependencies:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -26,5 +26,5 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 ```
 
 ::: tip Best Practice
-A best practice is to register stylesheets inside the widget PHP class. This way you make sure the stylesheet is loaded only if the widget is used.
+Best practice is to register stylesheets inside the widget PHP class. This ensures that the stylesheet is loaded only if the widget is used.
 :::
