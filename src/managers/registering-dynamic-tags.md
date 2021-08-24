@@ -26,7 +26,7 @@ function register_new_dynamic_tags( $dynamic_tags_manager ) {
 add_action( 'elementor/dynamic_tags/register_tags', 'register_new_dynamic_tags' );
 ```
 
-This hooks to the `elementor/dynamic_tags/register_tags` action hook that holds the `$dynamic_tags_manager` parameter, passing a callback function importing the new dynamic tag files and registering them with the dynamic tags manager.
+This hooks to the `elementor/dynamic_tags/register_tags` action hook that holds the `$dynamic_tags_manager` parameter, passing a callback function importing the new dynamic tag files, and registering them with the dynamic tags manager.
 
 ## New Registration Method
 
