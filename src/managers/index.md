@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor is an extendable framework. It offers an architecture that allows external developers to add new functionality with addons. To do that you simply need to create a new class for your component that extend the base class and inherits its methods and then you need to register the class using the component manager to let Elementor know about it.
+Elementor is an extendable framework. It offers an architecture that allows external developers to add new functionality with add-ons. To do that, you simply need to create a new class for your component that extends the base class and inherits its methods. You then need to register the class using the component manager, informing Elementor of its existence.
 
 ## Registering Elements
 
-Each component has it's own manager that holds all the references to all the registered elements. To register your own element you need to use a registration method in the component manager. The traditional way to register new elements looks like that:
+Each component has its own manager that holds all the references to all the registered elements. To register your own element, you need to use a registration method in the component manager. The traditional way to register new elements looks like this:
 
 ```php
 function register_something() {
@@ -21,13 +21,13 @@ function register_something() {
 add_action( 'elementor/something/register', 'register_something' );
 ```
 
-You hook to some kind of action hook, and pass a callback function that imports your class and then you register the class using the component manager located in `\Elementor\Plugin` class.
+You hook to some kind of action hook, pass a callback function that imports your class and then you register the class using the component manager located in the `\Elementor\Plugin` class.
 
 ### Simplifying Registration
 
-Elementor also improving the managers system across all the elements, standardizing the way you register new component elements and simplify the registration process.
+Elementor is improving the managers system across all elements, standardizing the way you register new component elements and simplifying the registration process.
 
-The new registration method will include the manager as a parameter, this way external developers won't need know the namespace, classes and registration methods names. In addition, external plugins won't break sites when deactivating the Elementor plugin because the manager passed as a parameter.
+The new registration method will include the manager as a parameter. This way external developers won't need know the namespace, classes and registration methods names. In addition, external plugins won't break sites when deactivating the Elementor plugin because the manager passed as a parameter.
 
 ```php
 function register_something( $some_manager ) {
@@ -42,7 +42,7 @@ function register_something( $some_manager ) {
 add_action( 'elementor/something/register', 'register_something' );
 ```
 
-Please note that some managers already use the new syntax, are not. We plan to update many managers in Elementor 3.5, and future versions should have fully standard way to register new elements across all the components.
+Please note that some managers already use the new syntax. We plan on updating many managers in Elementor 3.5, and future versions should have fully standard way to register new elements across all the components.
 
 ## Managers
 
