@@ -1,6 +1,6 @@
 # Preview Scripts
 
-When you develop addons that extend [Elementor Preview](/editor/elementor-preview) and you need to register custom scripts, use the `elementor/preview/enqueue_scripts` action hook which is fired when Elementor Preview scripts are registered and enqueued.
+When you develop addons that extend [Elementor preview](/editor/elementor-preview) and need to register custom scripts, use the `elementor/preview/enqueue_scripts` action hook, which is fired when Elementor Preview scripts are registered and enqueued.
 
 ## Registering Preview Scripts
 
