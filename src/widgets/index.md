@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor is packed with dozens of useful widgets in the **Widgets Panel**. Each widget has a set of custom controls (input fields) in which end-users can enter data.
+Elementor is packed with dozens of useful widgets in the **Widgets Panel**. These widgets are divided into categories. Each widget has a set of custom controls (input fields) in which end-users can enter data.
 
 <img src="/assets/img/elementor-widgets.png" alt="Elementor Widgets Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
