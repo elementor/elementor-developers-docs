@@ -53,7 +53,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
     lastUpdated: true,
-    logo: 'https://avatars.githubusercontent.com/u/47606894?s=35',
+    logo: '/assets/img/logo.svg',
     displayAllHeaders: true,
     smoothScroll: true,
     search: false,
