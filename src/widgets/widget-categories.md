@@ -4,7 +4,7 @@
 
 Elementor **Widget Categories** are used to organize the widgets into groups. When Elementor is initialized, it registers several default categories.
 
-The categories are displayed in the widgets panel, only if they have widgets assigned to them.
+Categories are only displayed in the widgets panel if they have widgets assigned to them.
 
 External developers can create new categories and display their widgets separately in a branded category.
 
@@ -26,7 +26,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## Default Categories
 
-When you select the which category to assign you widget too, you can select one of the default categories:
+When you select which category to assign your widget to, you can select one of the default categories:
 
 | Label           | Name                   | Package      | Description                                     |
 |-----------------| ---------------------- | ------------ | ----------------------------------------------- |
@@ -43,7 +43,7 @@ Or you can register your own category.
 
 ## Creating New Categories
 
-Elementor allows developers to add new Widget Categories to group their own custom widgets. Registering a new widget category is done using `elementor/elements/categories_registered` action.
+Elementor allows developers to add new widget Categories to group their own custom widgets. Registering a new widget category is done using `elementor/elements/categories_registered` action.
 
 Note that when creating a new category, you need to supply the category name/slug, category title/label and the category icon.
 
