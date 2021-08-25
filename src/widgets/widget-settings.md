@@ -1,12 +1,12 @@
 # Widget Settings
 
-Before the [widget rendering](./widget-rendering) function start generating the final HTML, it needs to retrieve the data from the controls.
+Before the [widget rendering](./widget-rendering) function starts generating the final HTML, it needs to retrieve data from the controls.
 
 In Elementor terminology, "*Widget Settings*" is all the "*User Data*" retrieved from the widget controls.
 
 ## Retrieving JS Settings
 
-With JS templates we don’t really need to retrieve the data using a special function, it's done by Elementor for us. The data from the controls stored in `settings` variable.
+With JS templates we don’t need to retrieve the data using a special function, it's done by Elementor for us. Data from the controls is stored in the `settings` variable.
 
 ```php
 <?php
@@ -19,7 +19,7 @@ protected function content_template() {
 
 ## Retrieving PHP Settings
 
-When retrieving the data saved by the user we can either retrieve all data from all the controls of a piece of data from a specific control. The data retrieval is done using `get_settings_for_display()` method.
+When retrieving data saved by the user, we can either retrieve all the data from all the controls or a piece of data from a specific control. Data retrieval is done using `get_settings_for_display()` method.
 
 Retrieving data from a single control:
 
@@ -33,7 +33,7 @@ protected function render() {
 }
 ```
 
-But when we need to retrieve data from multiple controls, we can retrieve all the data from all the controls into a single parameter:
+When we retrieve data from multiple controls, we can retrieve all the data from all the controls into a single parameter:
 
 ```php
 protected function render() {
@@ -46,4 +46,4 @@ protected function render() {
 }
 ```
 
-In both ways we get the same result, but keep in mind that in some case the second way has performance benefits.
+Either way achieves the same result, however, in some cases the second way has performance benefits.
