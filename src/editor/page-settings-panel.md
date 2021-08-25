@@ -46,3 +46,27 @@ $test_color = $page_settings_model->get_settings( 'test_color' );
 
 echo $test_color; // Possible output: '#9b0a46'
 ```
+
+## Adding New Settings
+
+Deve;opers can add new controls to this panel. This is done by [injecting controls](/hooks/injecting-controls) to page settings.
+
+Let’s see an example how we can add a color control to the style tab:
+
+```php
+function add_elementor_page_settings_controls( \Elementor\PageSettings\Page $page ) {
+	$page->add_control(
+		'test_color',
+		[
+			'label' => __( 'Test Color', 'plugin-name' ),
+			'type' => \Elementor\Controls_Manager::COLOR,
+			'selectors' => [
+				'{{WRAPPER}} .test' => 'color: {{VALUE}}',
+			],
+		]
+	);
+}
+add_action( 'elementor/element/page-settings/section_page_style/before_section_end', 'add_elementor_page_settings_controls' );
+```
+
+In page settings scope, the `{{WRAPPER}}` placeholder represents a unique class of the `<body>` element. 
