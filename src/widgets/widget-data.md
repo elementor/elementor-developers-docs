@@ -1,10 +1,10 @@
 # Widget Data
 
-Each widget require basic information like the widget id, label and icon.
+Every widget requires basic information such as the widget id, label and icon.
 
 ## Data Methods
 
-Widget data needs to be "returned" by the methods. Those methods are dead simple:
+Widget data needs to be "returned" by certain methods. Those methods are simple:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -32,12 +32,12 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-* **Widget Name** – The `get_name()` method returns the widget name that will be used in the code.
+* **Widget Name** – The `get_name()` method returns the widget name as it will be used in the code.
 
-* **Widget Title** – The `get_title()` method returns the widget label that will be displayed to the user.
+* **Widget Title** – The `get_title()` method returns the widget label as it will be displayed to the user.
 
-* **Widget Icon** – The `get_icon()` method is an optional but recommended method, it lets you set the widget icon. You can use any [Elementor Icons](https://elementor.github.io/elementor-icons/) or [FontAwesome Icons](https://fontawesome.com/), simply return the css class name.
+* **Widget Icon** – The `get_icon()` method is an optional but recommended method. It lets you set the widget icon. You can use any [Elementor Icons](https://elementor.github.io/elementor-icons/) or [FontAwesome Icons](https://fontawesome.com/), simply return the CSS class name.
 
-* **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL where the user can get more information about the widget below the controls.
+* **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL, where the user can get more information about the widget, below the controls.
 
-* **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widget-categories), return the category name as a string.
+* **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widget-categories), and returns the category name as a string.
