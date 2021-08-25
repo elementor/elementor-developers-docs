@@ -21,7 +21,7 @@ Developers can add new controls to this panel. This is done by [injecting contro
 Let’s see an example how we can add a new control:
 
 ```php
-function add_elementor_page_settings_controls( \Elementor\PageSettings\Page $page ) {
+function add_elementor_editor_preferences_controls( \Elementor\PageSettings\Page $page ) {
 	$this->add_control(
 		'something',
 			[
@@ -31,7 +31,7 @@ function add_elementor_page_settings_controls( \Elementor\PageSettings\Page $pag
 			]
 	);
 }
-add_action( 'elementor/element/editorPreferences-settings/preferences/before_section_end', 'add_elementor_page_settings_controls' );
+add_action( 'elementor/element/editorPreferences-settings/preferences/before_section_end', 'add_elementor_editor_preferences_controls' );
 ```
 
 ## Retrieving Saved Data
