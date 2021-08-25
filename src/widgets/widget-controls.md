@@ -26,17 +26,17 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-* **Widget Controls** – The `register_controls()` method lets you define which controls (setting fields) your widget will have.
+* **Widget Controls** – The `register_controls()` method lets you define which controls (setting fields) your widget will contain.
 
 ## Available Control Types
 
 Elementor has three **Control Types** that can be added to widgets:
 
-* [Regular Control](./regular-control) – add single control.
-* [Responsive Control](./responsive-control) – a control that sets different values to different screen sizes.
-* [Group Control](./group-control) – add control that group together several other controls.
+* [Regular Control](./regular-control) – add a single control.
+* [Responsive Control](./responsive-control) – add a control that sets different values to different screen sizes.
+* [Group Control](./group-control) – add a control that groups together several other controls.
 
-Elementor also has **UI Wrappers for Controls** that can be used to group and rearranged controls:
+Elementor also has **UI Wrappers for Controls** that can be used to group and rearrange controls:
 
 * [Control Section](./control-section) – a wrapper for controls.
 * [Control Tabs](./control-tabs) – arrange controls in tabs.
