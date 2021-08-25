@@ -1,8 +1,8 @@
 # Registering Locations
 
-To support Elementor Locations, the theme needs to register supported location in the `functions.php` file. Theme developers can support all core locations, support some locations or create their own custom locations.
+To support Elementor locations, the theme needs to register supported locations in the `functions.php` file. Theme developers can support all core locations, some locations or create custom locations.
 
-To register new locations we need to hook to the `elementor/theme/register_locations` action and use either the `register_all_core_location()` method to register all the locations or the `register_location()` method to register custom locations.
+To register new locations, we need to hook to the `elementor/theme/register_locations` action and use either the `register_all_core_location()` method to register all the locations, or the `register_location()` method to register custom locations.
 
 ## Registering All Locations
 
@@ -53,5 +53,5 @@ add_action( 'elementor/theme/register_locations', 'theme_prefix_register_element
 Let’s see what each argument does:
 
 * **label** (_`string`_) – The location label in Elementor.
-* **multiple** (_`bool`_) – Whether to display all the template belong to this location (`true`) or only the best match (`false`). Default is false, to display the best match template in the location.
-* **edit_in_content** (_`bool`_) – Whether to this template is edited in the content area or the theme uses this location in the layout. Default is true, edit in the content area.
+* **multiple** (_`bool`_) – Display either the entire template belonging to this location (`true`) or only the best match (`false`). The default is false, displaying the best matched template in the location.
+* **edit_in_content** (_`bool`_) – Determines if this template can be edited in the content area (`true`) or does the theme use this location in the layout (`false`). Default is true, edit in the content area.
