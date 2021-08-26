@@ -34,6 +34,9 @@ add_action( 'elementor/theme/register_locations', 'theme_prefix_register_element
 ```
 ## Registering New Locations
 
+Registering new locations is done using the following code:
+
+
 ```php
 function theme_prefix_register_elementor_locations( $elementor_theme_manager ) {
 
