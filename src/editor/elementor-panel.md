@@ -14,8 +14,6 @@ The panel area consists of several panels:
 * [Page Settings Panel](./page-settings-panel)
 * [History Panel](./history-panel)
 * [Widgets Panel](./widgets-panel)
-* [Finder Panel](./finder-panel)
-* [Navigator Panel](./navigator-panel)
 
 ## Extending the Panels
 

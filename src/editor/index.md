@@ -21,5 +21,4 @@ The Elementor Panel can be compared to a sideboard and its functionality will de
 * [Page Settings Panel](./page-settings-panel)
 * [History Panel](./history-panel)
 * [Widgets Panel](./widgets-panel)
-* [Finder Panel](./finder-panel)
-* [Navigator Panel](./navigator-panel)
+
