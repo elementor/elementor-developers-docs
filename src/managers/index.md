@@ -27,7 +27,7 @@ You hook to some kind of action hook, pass a callback function that imports your
 
 Elementor is improving the managers system across all elements, standardizing the way you register new component elements and simplifying the registration process.
 
-The new registration method will include the manager as a parameter. This way, external developers won't need know the namespace, classes and registration methods names. In addition, external plugins won't break sites when deactivating the Elementor plugin because the manager passed as a parameter.
+The new registration method will include the manager as a parameter. This way, external developers won't need know the namespace, classes and registration methods names.
 
 ```php
 function register_something( $some_manager ) {
