@@ -1,8 +1,8 @@
 # Registering Locations
 
-To support Elementor locations, the theme needs to register supported locations in the `functions.php` file. Theme developers can support all core locations, some locations or create custom locations.
+To support Elementor locations, the theme needs to register supported locations in the `functions.php` file. Theme developers can support all core locations, some locations or create new locations.
 
-To register new locations, we need to hook to the `elementor/theme/register_locations` action and use either the `register_all_core_location()` method to register all the locations, or the `register_location()` method to register custom locations.
+To register new locations, we need to hook to the `elementor/theme/register_locations` action and use either the `register_all_core_location()` method to register all the locations, or the `register_location()` method to register new locations.
 
 ## Registering All Locations
 
