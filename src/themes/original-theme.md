@@ -1,6 +1,6 @@
 # Original Theme
 
-To simplify the process we striped all custom code from the theme (including the WordPress loop), and move it to the `/template-parts/` folder. This way the code snippets will be much shorter and simpler to understand.
+To simplify the process we stripped all custom code from a theme (including the WordPress loop), and moved it to the `/template-parts/` folder. This way the code snippets will be much shorter and simpler to understand.
 
 ## Original Files
 
