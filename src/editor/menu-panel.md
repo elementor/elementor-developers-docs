@@ -2,14 +2,14 @@
 
 <img src="/assets/img/menu-panel.png" alt="Elementor Menu Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-The **Menu Panel** is the main panel in [The Editor](/editor/) from where the user can navigate to other panel. In other words it's like the dashboard for other Elementor panels.
+The **menu panel** is the main panel in [the editor](/editor/). From here, users can navigate to the other panels. In other words, it acts as a dashboard for other Elementor panels.
 
 ## Structure and Functionality
 
 The panel has two sections:
 
 * **Settings** - Links to other panels controlling the settings.
-* **Navigate From Page** - External links and tools.
+* **Navigate From Page** - Links to external links and tools.
 
 ## Extending the Menu Panel
 
