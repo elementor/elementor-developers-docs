@@ -2,7 +2,9 @@
 
 <img src="/assets/img/user-preferences-panel.png" alt="Elementor User Preferences Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-The **User Preferences** is a panel in [The Editor](/editor/) where you can control the look and feel of the Elementor Editor. You can choose whether to display a light or a dart theme, set the default panel width, whether to show/hide editing buttons etc.
+The **User Preferences** is a panel in [The Editor](/editor/) where the user can control how the Elementor Editor will look like. Each user can choose whether to display a light or a dart theme, set the default panel width, whether to show/hide editing buttons etc.
+
+The preferences settings are user-based, meaning that different users on the site can set different preferences for them selfs. All the data is saved in the `wp_users` table in the database.
 
 ## Structure and Functionality
 

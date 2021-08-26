@@ -2,7 +2,9 @@
 
 <img src="/assets/img/page-settings-panel.png" alt="Elementor Page Settings Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-The **Page Settings** is a panel in [The Editor](/editor/) where the user can change the Post/Page fields like the title, the excerpt (if the post type supports excerpts), feature image etc.
+The **Page Settings** is a panel in [The Editor](/editor/) where the user can change the post/page fields like the title, the excerpt (if the post type supports excerpts), feature image, post status etc.
+
+Page settings based on posts/pages, meaning that each post/page on the site has it's own unique settings saved in the `wp_posts` table in the database.
 
 ## Structure and Functionality
 
@@ -54,19 +56,39 @@ Deve;opers can add new controls to this panel. This is done by [injecting contro
 Let’s see an example how we can add a color control to the style tab:
 
 ```php
-function add_elementor_page_settings_controls( \Elementor\PageSettings\Page $page ) {
-	$page->add_control(
+/**
+ * Register additional document controls.
+ *
+ * @param \Elementor\Core\DocumentTypes\PageBase $document The PageBase document instance.
+ */
+function register_document_controls( $document ) {
+
+    if ( ! $document instanceof \Elementor\Core\DocumentTypes\PageBase || ! $document::get_property( 'has_elements' ) ) {
+        return;
+    }
+
+    $document->start_controls_section(
+        'test_section',
+        [
+            'label' => __( 'Test Section', 'plugin-name' ),
+            'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+        ]
+    );
+
+	$document->add_control(
 		'test_color',
 		[
 			'label' => __( 'Test Color', 'plugin-name' ),
 			'type' => \Elementor\Controls_Manager::COLOR,
 			'selectors' => [
-				'{{WRAPPER}} .test' => 'color: {{VALUE}}',
+				'{{WRAPPER}}' => 'background-color: {{VALUE}}',
 			],
 		]
 	);
+
+    $document->end_controls_section();
 }
-add_action( 'elementor/element/page-settings/section_page_style/before_section_end', 'add_elementor_page_settings_controls' );
+add_action( 'elementor/documents/register_controls', 'register_document_controls' );
 ```
 
-In page settings scope, the `{{WRAPPER}}` placeholder represents a unique class of the `<body>` element. 
+In page settings scope, the `{ { WRAPPER } }` placeholder represents a unique class of the `<body>` element. 
