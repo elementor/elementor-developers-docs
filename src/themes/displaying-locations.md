@@ -18,7 +18,7 @@ get_footer();
 
 ## Location with a Fallback Design
 
-Some themes have default designs. Users will be able to show either; the archive location designed in Elementor, or the regular theme layout, in case the user didn’t set an Elementor design for this location.
+Some themes have default designs. Users will be able to show either; the archive location designed in Elementor, or the regular theme layout (in case the user didn’t set an Elementor design for this location).
 
 ```php
 <?php
