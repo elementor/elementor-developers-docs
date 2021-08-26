@@ -1,10 +1,10 @@
 # Theme Locations
 
-The **Theme Builder** only works if the theme has registered **Theme Locations**. It signals to Elementor that the theme supports global headers / footers, custom archive pages or single pages. Themes can support all core locations, some locations or create their own custom locations.
+**Theme Builder** only works if the theme has registered **theme locations**. This signals to Elementor that the theme supports global headers / footers, custom archive pages or single pages. Themes can support all core locations, some locations or create their own custom locations.
 
 ## Available Locations
 
-The following groups make up the Elementor locations:
+Following are the Elementor locations:
 
 * **Header** – template header replaces the theme `header.php` file.
 * **Footer** – template footer replaces the theme `footer.php` file.
