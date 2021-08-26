@@ -6,7 +6,7 @@ There are two ways to support Elementor locations - you can either use custom El
 
 ## Live Example
 
-In this example, we'll migrate a sample theme:
+In this following, we'll look at some examples of theme migration:
 
 * [Original Theme](./original-theme)
 * [Migrating Themes with Functions](./migrating-themes-with-hooks)
