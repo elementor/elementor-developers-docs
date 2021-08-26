@@ -53,5 +53,5 @@ add_action( 'elementor/theme/register_locations', 'theme_prefix_register_element
 Let’s see what each argument does:
 
 * **label** (_`string`_) – The location label in Elementor.
-* **multiple** (_`bool`_) – Display either the entire template belonging to this location (`true`) or only the best match (`false`). The default is false, displaying the best matched template in the location.
-* **edit_in_content** (_`bool`_) – Determines if this template can be edited in the content area (`true`) or does the theme use this location in the layout (`false`). Default is true, edit in the content area.
+* **multiple** (_`bool`_) – Determines whether or not to display multiple locations. If set to `true`, it will display the entire template belonging to this location. If set to `false` it will display only the best match. The default is `false`.
+* **edit_in_content** (_`bool`_) – Determines whether or not to edit the template in the content area. If set to `true` the template can be edited in the content area. If set to `false` it cannot. The default is `true`.
