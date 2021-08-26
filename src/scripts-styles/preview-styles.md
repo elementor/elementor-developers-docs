@@ -1,6 +1,6 @@
 # Preview Styles
 
-When you develop add-ons that extend [Elementor preview](/editor/elementor-preview) and need to register custom stylesheets, use the `elementor/preview/enqueue_styles` action hook, which is fired when Elementor preview styles are registered and enqueued.
+When you develop addons that extend [Elementor preview](/editor/elementor-preview) and need to register custom stylesheets, use the `elementor/preview/enqueue_styles` action hook, which is fired when Elementor preview styles are registered and enqueued.
 
 ## Registering Preview Styles
 

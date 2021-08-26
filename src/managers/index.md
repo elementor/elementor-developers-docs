@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor is an extendable framework. It offers an architecture allowing external developers to add new functionality with add-ons. To do that, you simply need to create a new class for your component that extends the base class and inherits its methods. You then need to register the class using the component manager, informing Elementor of its existence.
+Elementor is an extendable framework. It offers an architecture allowing external developers to add new functionality with addons. To do that, you simply need to create a new class for your component that extends the base class and inherits its methods. You then need to register the class using the component manager, informing Elementor of its existence.
 
 ## Registering Elements
 
