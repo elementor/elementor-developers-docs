@@ -1,6 +1,6 @@
 # Migrating Themes with Functions
 
-In this example we will add [Elementor Locations](./theme-locations) to the [Original Theme](./original-theme) using simple **functions**. After the migration the theme will look as follows:
+In this example, we'll add [Elementor locations](./theme-locations) to the [original theme](./original-theme) using simple **functions**. After migration, the theme will look as follows:
 
 ## Themes Files
 
