@@ -112,9 +112,23 @@ The new `404.php` file:
 <?php
 get_header();
 
-// Elementor `404` location
+// Elementor `single` location
 if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'single' ) ) {
 	get_template_part( 'template-parts/404' );
+}
+
+get_footer();
+```
+
+The new `search.php` file:
+
+```php
+<?php
+get_header();
+
+// Elementor `archive` location
+if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'archive' ) ) {
+	get_template_part( 'template-parts/search' );
 }
 
 get_footer();
