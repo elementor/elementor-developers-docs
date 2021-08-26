@@ -2,7 +2,7 @@
 
 <img src="/assets/img/elementor-tabs.jpg" alt="Elementor Tabs" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-In some panels, Elementor uses tab navigation to display controls. When extending Elementor, you can use any tab you need or create new ones.
+In some panels, Elementor uses tab navigation to display controls. When extending Elementor, you can use any tab you need, or create new ones.
 
 ## Built-in Tabs
 
@@ -17,17 +17,17 @@ Elementor has 6 pre-defined tabs used in different panels:
 | `layout`     | Layout     | `\Elementor\Controls_Manager::TAB_LAYOUT`      |
 | `settings`   | Settings   | `\Elementor\Controls_Manager::TAB_SETTINGS`    |
 
-The tabs set in `\Elementor\Controls_Manager` class. They are defined as constants and registered using in the `init_tabs()` method, each constant containing the tab name and tab label.
+The tabs are set in the `\Elementor\Controls_Manager` class. They are defined as constants and registered using the `init_tabs()` method, each constant containing the tab name and label.
 
 ## Usage Examples
 
-[Widgets Panel](./widgets-panel), for example, display controls in a **Content Tab** to allow the user to set the widget content, and a **Style Tab** to design the content. In addition, Elementor adds an **Advanced Tab** to all the widgets.
+The [widgets panel](./widgets-panel), for example, displays controls in a **Content tab**, allowing the user to set the widget content, and a **Style tab** to design the content. In addition, Elementor adds an **Advanced tab** to all widgets.
 
-[Page Settings Panel](./page-settings-panel), on the other hand, display controls in the **Settings Tab**, the **Style Tab**, the **Layout Tab** and others – depending on the setting screen.
+The [page settings panel](./page-settings-panel), on the other hand, displays controls in the **Settings tab**, the **Style tab**, the **Layout tab**, among others – depending on the settings.
 
 ## Using Tabs
 
-When we add a new control to the element panel we use the inherited `add_control()` method. Before adding new control, we need to create a new section using the `start_controls_section()` method. In this method we define the tab:
+When we add a new control to the element panel, we use the inherited `add_control()` method. Before adding a new control, we need to create a new section using the `start_controls_section()` method. In this method we define the tab:
 
 ```php {5}
 $this->start_controls_section(
@@ -41,7 +41,7 @@ $this->start_controls_section(
 
 ## Add New Tabs
 
-To create custom tabs use the `add_tab()` method.
+To create custom tabs, use the `add_tab()` method:
 
 ```php
 function add_panel_tab() {
@@ -53,7 +53,7 @@ function add_panel_tab() {
 add_action( 'elementor/init', 'add_panel_tab' );
 ```
 
-To add custom icon above the tab label you will need to add custom CSS:
+To add a custom icon above the tab label, you will need to add custom CSS:
 
 ```css
 .elementor-panel .elementor-tab-control-new-tab a:before {
@@ -65,7 +65,7 @@ To add custom icon above the tab label you will need to add custom CSS:
 ## Best Practices
 
 ::: warning Official Guidelines
-Please note that the official Elementor guidelines regarding to **Tabs** is to use one of the default tabs.
+The official Elementor guidelines strongly recommend using one of the default tabs.
 :::
 
-Saying that, we did document this feature as some plugin authors use code workarounds that slow the Editor and in some edge cases break it.
+That being said, this feature is documented as some addon authors use code workarounds that slow down the editor and, in some edge cases, break it.
