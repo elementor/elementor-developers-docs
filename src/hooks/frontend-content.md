@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that filters the content in the frontend. It applied on the final HTML content, the entire Elementor content in the page/post. Developers can change the HTML output before Elementor display it to the user.
+Elementor has a hook that filters frontend content. It is applied to the final HTML content, i.e., all the content Elementor displays on the page/post. Developers can change the HTML output before Elementor displays it to the end-user.
 
 ## Hook Details
 
@@ -16,9 +16,9 @@ Elementor has a hook that filters the content in the frontend. It applied on the
 |-----------|------------|------------------------------------------------------------|
 | `content` | _`string`_ | The entire Elementor HTML output of the current page/post. |
 
-## Check whether to display the content
+## Check Whether or Not to Display the Content
 
-Membership plugins can use this filter hook to check if the user can see the page content.
+Membership addons can use this filter hook to check whether or not the user can see the page content.
 
 ```php
 /**
