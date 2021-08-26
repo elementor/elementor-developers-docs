@@ -4,7 +4,7 @@ When you create new [Elementor widgets](/widgets/), you must register them. This
 
 ## Registering New Widgets
 
-As of Elementor 3.5 a new registration system was implemented and developers should use the following code to register widgets:
+As of Elementor 3.5, a new registration system was implemented and developers should use the following code to register widgets:
 
 ```php
 /**
@@ -31,7 +31,7 @@ This hooks to the new `elementor/widgets/register` action hook which holds the w
 
 ## Registering New Widgets in Previous Versions
 
-For earlier Elementor versions, register new widgets using the following code:
+For earlier versions of Elementor, register new widgets using the following code:
 
 ```php
 /**
