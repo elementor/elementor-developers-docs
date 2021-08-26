@@ -18,7 +18,7 @@ get_footer();
 
 ## Location with a Fallback Design
 
-Some themes have default designs. Users will be able to show either; the custom archive locations designed in Elementor, or the regular theme layout, in case the user didn’t set an Elementor design for this location.
+Some themes have default designs. Users will be able to show either; the archive location designed in Elementor, or the regular theme layout, in case the user didn’t set an Elementor design for this location.
 
 ```php
 <?php
@@ -32,7 +32,7 @@ if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_
 get_footer();
 ```
 
-## Custom Location Display
+## Display New Location
 
 Many themes have sidebars. We can let the user design this area using Elementor. This is done by registering new “main-sidebar” locations.
 
@@ -64,4 +64,4 @@ Many themes have sidebars. We can let the user design this area using Elementor.
 <?php get_footer(); ?>
 ```
 
-This is a simple example. You can also add custom locations above the header for your top bars, custom locations for the footer, create your own content layout in single pages, and archive pages. These will allow the user to edit each location using Elementor. The possibilities are endless.
+This is a simple example. You can also add new locations above the header for your top bars, custom locations for the footer, create your own content layout in single pages, and archive pages. These will allow the user to edit each location using Elementor. The possibilities are endless.
