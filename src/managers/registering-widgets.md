@@ -4,31 +4,7 @@ When you create new [Elementor widgets](/widgets/), you must register them. This
 
 ## Registering New Widgets
 
-To register new widgets use the following code:
-
-```php
-/**
- * Register new Elementor widgets.
- *
- * @return void
- */
-function register_new_widgets() {
-
-	require_once( __DIR__ . '/widgets/widget-1.php' );
-	require_once( __DIR__ . '/widgets/widget-2.php' );
-
-	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Widget_1() );
-	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Widget_2() );
-
-}
-add_action( 'elementor/widgets/widgets_registered', 'register_new_widgets' );
-```
-
-This hooks the `elementor/widgets/widgets_registered` action hook and passes a callback function importing the new widget files and registering them with the widget manager.
-
-## New Registration Method
-
-As of Elementor 3.5, developers should use the following code to register widgets:
+As of Elementor 3.5 a new registration system was implemented and developers should use the following code to register widgets:
 
 ```php
 /**
@@ -51,3 +27,29 @@ add_action( 'elementor/widgets/register', 'register_new_widgets' );
 ```
 
 This hooks to the new `elementor/widgets/register` action hook which holds the widgets manager. The manager then registers new widgets by passing the widget instance.
+
+
+## Registering New Widgets in Previous Versions
+
+For earlier Elementor versions, register new widgets using the following code:
+
+```php
+/**
+ * Register new Elementor widgets.
+ *
+ * @return void
+ */
+function register_new_widgets() {
+
+	require_once( __DIR__ . '/widgets/widget-1.php' );
+	require_once( __DIR__ . '/widgets/widget-2.php' );
+
+	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Widget_1() );
+	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Widget_2() );
+
+}
+add_action( 'elementor/widgets/widgets_registered', 'register_new_widgets' );
+```
+
+This hooks the `elementor/widgets/widgets_registered` action hook and passes a callback function importing the new widget files and registering them with the widget manager.
+
