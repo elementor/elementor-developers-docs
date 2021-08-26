@@ -4,7 +4,7 @@ When you create new [finder categories](/finder/) you must register them. This i
 
 ## Registering New Finder Categories
 
-To register new finder categories use the following code:
+Register new finder categories using the following code:
 
 ```php
 /**
