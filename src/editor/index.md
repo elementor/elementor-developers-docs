@@ -2,18 +2,18 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-The editor is the environment in which users create pages and control site settings. The editor is a general term that includes several areas. Each of these areas consists of several inner areas. These inner areas are sometimes extended by 3rd party developers.
+The editor is the environment in which users create pages and control site settings. The editor is a general term that includes two main areas. Each of these areas contains inner areas which can be extended by 3rd party developers.
 
 ## Structure
 
-The editor includes the entire editing screen consisting of two main areas:
+The editor includes the entire editing screen and consists of two main areas:
 
 * [Elementor Preview](./elementor-preview)
 * [Elementor Panel](./elementor-panel)
 
 ## Editor Panels
 
-Elementor Panels can be compared to an editing dashboard. They have many inner panels, each controlling a different function.
+The Elementor Panel can be compared to a sideboard and its functionality will depend on what panel is being displayed:
 
 * [Menu Panel](./menu-panel)
 * [Site Settings Panel](./site-settings-panel)
