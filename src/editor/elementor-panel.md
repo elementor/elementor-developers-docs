@@ -1,6 +1,6 @@
 # Elementor Panel
 
-The panel is like the editing dashboard, this is the area where the user controls all aspects of the page. It includes the global settings, page settings, widgets panel etc.
+The panel is like an editing dashboard. This is the area where users can control all aspects of a page. It includes the global settings, page settings, widgets panel etc.
 
 ![Elementor Panel](/assets/img/elementor-panel.png)
 
@@ -17,4 +17,4 @@ The panel area consists of several panels:
 
 ## Extending the Panels
 
-Some of the panels are extendible. Developers can add new elements to existing panels and we are working on an official ways to create new panels programmatically without any workarounds currently used by some plugin authors.
+Some of these panels are extendible. Developers can add new elements to existing panels and we're working on an official way to create new panels without any of the workarounds currently used by some addon authors.
