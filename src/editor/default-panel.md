@@ -1,10 +1,10 @@
 # Default Panel
 
-By default Elementor displays the [Widgets Panel]() when the Editor is loaded for the first time. You can change this.
+By default, Elementor displays the [widgets panel]() when the editor is loaded for the first time. You can change this.
 
 ## Changing the Default Panel
 
-To change the default panel to [Page Settings Panel](./page-settings-panel), use the following code:
+Use the code below to make the [page settings panel](./page-settings-panel) the default panel:
 
 ```php
 function change_default_elementor_panel( $config ) {
@@ -26,7 +26,7 @@ add_filter( 'elementor/document/config', 'change_default_elementor_panel' );
 
 ## Available Panels
 
-Here is a partial list of the built-in panels you can use:
+Here is a partial list of the built-in panels you can use as the default panel:
 
 * [Menu Panel](./menu-panel)
   * `panel/menu`
