@@ -4,7 +4,7 @@ When you create new [Elementor controls](/controls/) you must register them. Thi
 
 ## Registering New Controls
 
-To register new controls use the following code:
+Register new controls using the following code:
 
 ```php
 /**
