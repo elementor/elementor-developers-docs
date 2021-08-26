@@ -37,5 +37,5 @@ add_action( 'elementor/frontend/after_register_scripts', 'my_plugin_frontend_scr
 ```
 
 ::: warning Please Note
-Those scripts will be loaded on all pages built with Elementor using this add-on. To reduce performance impact, make sure you minify the files.
+Those scripts will be loaded on all pages built with Elementor. To reduce performance impact, make sure you minify the files.
 :::
