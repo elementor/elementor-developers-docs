@@ -19,7 +19,7 @@ Elementor has a hook that lets developers apply custom skins to widgets. It runs
 
 #### Example
 
-Let's add a custom skin for the Google Maps widget.
+Let's add a custom skin to the Google Maps widget.
 
 ```php
 /**
