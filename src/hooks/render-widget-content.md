@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that lets developers change a widget's content in the frontend. These changes will be applied to the final HTML content of the widget. In the preview, they will be shown after the user finishes editing the element.
+Elementor has a hook that lets developers change a widget's content in the frontend. These changes will be applied to the final HTML content of the widget. In the preview area, they will be shown after the user finishes editing the element.
 
 ## Hook Details
 
