@@ -2,13 +2,13 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Both **Posts Widgets** and **Portfolio Widgets** come with a feature-packed query control that allows you to select specific posts to show in the widget. But sometimes you need more control over the query and for that, we added a Custom Query filter to expose the [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/) object and allow you to customize the query in any way you want.
+Both **posts widgets** and **portfolio widgets** come with a robust query control that lets you select specific posts to show in the widget. But sometimes, you need more control over the query. For those situations, there is the custom query filter, which exposes the [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/) object, and allows you to customize the query in any way you want.
 
 ## Hook Details
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/query/{$query_id}`
-* **Affects On:** Query
+* **Affects:** Query
 
 ## Hook Arguments
 
@@ -21,17 +21,17 @@ Both **Posts Widgets** and **Portfolio Widgets** come with a feature-packed quer
 
 <img src="/assets/img/elementor-posts-query-id.png" alt="Elementor Posts Query ID" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-In Posts widget or Portfolio widget, give your query an ID, make sure it is unique unless you want the filter to run on multiple posts widget or portfolio widgets.
+In a posts or portfolio widget, give your query an ID, making sure it is unique, unless you want the filter to run on multiple posts or portfolio widgets.
 
-In this example the query ID is set to `my_custom_filter`, so when Elementor render’s the widget it will create a custom filter based on the query ID: `elementor/query/my_custom_filter`.
+In the examples below, the query ID is set to `my_custom_filter`, so when Elementor renders the widget, it will create a custom filter based on the query ID: `elementor/query/my_custom_filter`.
 
 ## Using the Custom Filter
 
-After you have set up the Custom Query Filter you can use it to modify the query in the same way WordPress native [pre_get_posts](https://developer.wordpress.org/reference/hooks/pre_get_posts/) hook lets you modify the Query. Using the Custom Query filter is just like any other WordPress native action hook:
+After you have set up the custom query filter, you can use it to modify the query in the same way that the WordPress native [pre_get_posts](https://developer.wordpress.org/reference/hooks/pre_get_posts/) hook lets you modify a query. Using the custom query filter is just like any other WordPress native action hook:
 
 ```php
 /**
- * Update the Posts Widget or Portfolio Widget query.
+ * Update the posts widget or portfolio widget query.
  *
  * @since 1.0.0
  * @param \WP_Query $query The WordPress query instance.
@@ -44,9 +44,9 @@ add_action( 'elementor/query/{$query_id}', 'custom_query_callback' );
 
 ## Examples
 
-### Multiple Post Types in Posts Widget
+### Multiple Post Types in a Posts Widget
 
-Showing multiple post types in Posts Widget use the following code snippet:
+Show multiple post types in a posts widget using the following code snippet:
 
 ```php
 /**
@@ -61,9 +61,9 @@ function my_query_by_post_types( $query ) {
 add_action( 'elementor/query/{$query_id}', 'my_query_by_post_types' );
 ```
 
-### Filter Posts by Post Meta in Portfolio Widget
+### Filter Posts by the Posts' Metadata in a Portfolio Widget
 
-Showing post with meta key filter in Portfolio Widget:
+Use the code below to show posts with a metadata key filter in a portfolio widget:
 
 ```php
 /**
@@ -95,9 +95,9 @@ function my_query_by_post_meta( $query ) {
 add_action( 'elementor/query/{$query_id}', 'my_query_by_post_meta' );
 ```
 
-### Most Popular Post by Comment count in Posts Widget
+### Most Popular Post by Comment Count in a Posts Widget
 
-Showing posts ordered by comment count in Posts Widget:
+Use the following to show posts ordered by comment count in a posts widget:
 
 ```php
 /**
@@ -112,9 +112,9 @@ function my_query_by_different_order( $query ) {
 add_action( 'elementor/query/{$query_id}', 'my_query_by_different_order' );
 ```
 
-### Show Posts of Multiple statuses in Posts Widget
+### Show Posts with Multiple Statuses in a Posts Widget
 
-Showing posts ordered by comment count in Posts Widget.
+Use the following to show posts ordered by comment count in a posts widget.
 
 NOTE: Using this snippet may result in displaying private data. Please use with caution.
 
@@ -133,4 +133,4 @@ add_action( 'elementor/query/{$query_id}', 'my_query_by_post_status' );
 
 ## Notes
 
-You may need to refresh the [Editor](/editor/) to see the effect of the filter.
+You may need to refresh the [editor](/editor/) to see the effect of the filter.
