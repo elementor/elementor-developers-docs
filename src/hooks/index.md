@@ -12,4 +12,4 @@ Action hooks are used to run custom code when certain events occur. Filter hooks
 
 ## Elementor Hooks
 
-Elementor has both **filter hooks** and **action hooks**. It offers [PHP hooks](./php) and [JS hooks](./js). You can find **frontend hooks** and **editor hooks**.
+Elementor has both **filter hooks** and **action hooks**. It offers **PHP hooks** and **JS hooks**. You can find **frontend hooks** and **editor hooks**.
