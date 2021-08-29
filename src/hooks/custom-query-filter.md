@@ -114,7 +114,7 @@ add_action( 'elementor/query/{$query_id}', 'my_query_by_different_order' );
 
 ### Show Posts with Multiple Statuses in a Posts Widget
 
-Use the following to show posts ordered by comment count in a posts widget.
+Use the following to show posts by a specific post statuses.
 
 NOTE: Using this snippet may result in displaying private data. Please use with caution.
 
