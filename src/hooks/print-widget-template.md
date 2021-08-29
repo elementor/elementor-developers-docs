@@ -2,14 +2,14 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that allows developers to change the widget JavaScript template in the [Elementor Preview](/editor/elementor-preview).
+Elementor has a hook that lets developers change a widget's JavaScript template in the [Elementor preview](/editor/elementor-preview) area.
 
 ## Hook Details
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/{$element_type}/print_template`
 * **Notes:** The dynamic portion of the hook name, `$element_type`, refers to `widget`.
-* **Affects On:** Elementor Preview
+* **Affects:** Elementor preview
 
 ## Hook Arguments
 
@@ -22,7 +22,7 @@ Elementor has a hook that allows developers to change the widget JavaScript temp
 
 ```php
 /**
- * Update the heading widget JS template in Elementor Preview.
+ * Update the heading widget JS template in Elementor preview.
  *
  * Adds an icon to all external links.
  *
@@ -44,7 +44,7 @@ function change_heading_js_template( $template, $widget ) {
 add_action( 'elementor/widget/print_template', 'change_heading_js_template', 10, 2 );
 ```
 
-The code above it for example only, we do not recommend to use `str_replace` on templates, because the template may be changed and the `str_replace` will fail. Instead, take the whole original template and change it for your needs.
+The code above is only an example. We do not recommend using `str_replace` on templates, because the template may be changed and the `str_replace` will fail. Instead, edit the entire original template for your needs.
 
 ## Notes
 
