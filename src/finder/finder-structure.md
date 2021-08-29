@@ -1,10 +1,10 @@
 # Finder Structure
 
-Elementor Finder is organized into categories, each includes an array of links.
+The finder is organized into categories, each of which includes an array of links.
 
 ## Finder Class
 
-First we need to create a class that extends the `\Elementor\Core\Common\Modules\Finder\Base_Category` class which is the base Finder Category class:
+To edit the finder's categories, we need to first create a class that extends the `\Elementor\Core\Common\Modules\Finder\Base_Category` class - the base finder category class:
 
 ```php
 class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
@@ -13,7 +13,7 @@ class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Cat
 
 ## Finder Methods
 
-The class will have the following methods:
+The extended class will have the following methods:
 
 ```php
 class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
@@ -31,4 +31,4 @@ class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Cat
 
 * **Category Items** - The `get_category_items()` method returns an array of links belong to the category.
 
-* **Is Dynamic** - The `is_dynamic()` method is an optional method that return a boolean value. It is being used when the category items return data using ajax requests (like posts/pages titles). We won't be covering this method.
+* **Is Dynamic** - The `is_dynamic()` method is an optional method that return a boolean value. It is used when the category items return data using Ajax requests (like posts/pages titles). We wiil not be covering this method.
