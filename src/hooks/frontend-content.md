@@ -8,7 +8,7 @@ Elementor has a hook that filters frontend content. It is applied to the final H
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/frontend/the_content`
-* **Affects On:** Frontend
+* **Affects:** Frontend
 
 ## Hook Arguments
 
