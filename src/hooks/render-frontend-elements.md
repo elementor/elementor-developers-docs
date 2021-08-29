@@ -2,18 +2,18 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that allows developers to add code before/after the element in the Frontend and in the Editor. It applied on the final HTML of the element. Either a single element or all the elements. Developers can change the HTML output before Elementor display it to the user.
+Elementor has a hook that lets developers add code before or after elements in the frontend and in the editor. This hook can be applied to either either a single element or all the elements on a page and is applied to the final HTML output of the element(s).  Developers can use this hook to change the HTML output before Elementor displays it to the end-user.
 
 ## Hook Details
 
-* **Hook Type:** Action Hooks
+* **Hook Type:** Action Hook
 * **Hook Name:**
   * `elementor/frontend/before_render`
   * `elementor/frontend/after_render`
   * `elementor/frontend/{$element_type}/before_render`
   * `elementor/frontend/{$element_type}/after_render`
 * **Notes:** The dynamic portion of the hook name, `$element_type`, refers to `element type`.
-* **Affects On:** Frontend
+* **Affects:** Frontend
 
 ## Hook Arguments
 
@@ -25,7 +25,7 @@ Elementor has a hook that allows developers to add code before/after the element
 
 ```php
 /**
- * Add custom class and a data attribute to all the elements
+ * Add a custom class and a data attribute to all the elements
  * containing a specific setting defined through the element
  * control.
  *
