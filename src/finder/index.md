@@ -2,28 +2,28 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-The Finder component enables quick access to a search bar that pops up, giving you easy access to many pages and settings on the site. Users can create new posts from Elementor, edit other pages, navigate to different setting pages etc.
+The finder component opens a popup search bar offering easy access to many pages and settings on the site. It can be used to create new posts, edit other pages, navigate to different setting pages, and more.
 
-![Elementor Finder](/assets/img/elementor-finder.png)
+![Elementor finder](/assets/img/elementor-finder.png)
 
 ## Finder Structure
 
-Elementor Finder is an array of [Categories](./finder-categories). Each category has an array of **Items**. Each item includes a label, a link and a set of keywords. When a user enters a search term, the Finder filters the list of items based on the relevant keywords.
+The finder contains an array of [categories](./finder-categories). Each category has an array of **items**. Each item includes a label, a link and a set of keywords. When a user enters a search term, the finder filters the list of items based on the relevant keywords.
 
-Learn more about the [Finder Structure](./finder-structure), its main class and the available methods.
+Learn more about the [finder structure](./finder-structure), its main class and the available methods.
 
 ## Extending the Finder
 
-External developers can register their own custom Finder categories with their own custom links. Learn more how to do exactly that:
+External developers can register their own custom finder categories with their own custom links. Learn more:
 
-* [Add New Finder items](./add-new-finder-items)
-* [Add Items to Existing Category](./add-items-to-existing-category)
-* [Remove Finder Categories](./remove-finder-categories)
-* [Remove Finder Items](./remove-finder-items)
+* [Add new finder items](./add-new-finder-items)
+* [Add items to an existing category](./add-items-to-existing-category)
+* [Remove finder categories](./remove-finder-categories)
+* [Remove finder items](./remove-finder-items)
 
 ## Code Examples
 
-Learn by examples. See how easy it is to extend the Finder:
+Check out how easy it is to extend the finder:
 
-* [Simple Example](./simple-example)
-* [Advanced Example](./advanced-example)
+* [Simple example](./simple-example)
+* [Advanced example](./advanced-example)
