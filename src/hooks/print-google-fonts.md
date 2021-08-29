@@ -2,21 +2,21 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Elementor offers a special filter hook that allows developes to prevent loading of Google Fonts by Elementor. In other words, won't enqueue all the frontend Google fonts.
+Elementor offers a special filter hook that lets developers prevent Google fonts from loading. In other words, not all frontend Google fonts will be enqueued.
 
 ## Hook Details
 
 * **Hook Type:** Filter Hook
 * **Hook Name:** `elementor/frontend/print_google_fonts`
-* **Affects On:** Frontend
+* **Affects:** Frontend
 
 ## Control Google Fonts Enqueue
 
-To prevent Elementor loading of Google Fonts in the frontend:
+To prevent Elementor from loading Google fonts in the frontend:
 
 ```php
 /**
- * Prevent Elementor loading Google Fonts in the frontend.
+ * Prevent Elementor from loading Google Fonts in the frontend.
  *
  * @since 1.0.0
  */
