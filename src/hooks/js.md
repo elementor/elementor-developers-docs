@@ -1,18 +1,18 @@
 # JS Hooks
 
-Elementor has many JS hooks that allow you to change the default behavior and even extend it with new functionality.
+Elementor has a number of JS hooks that allow you to change default behavior and even add new functionality.
 
 ## Frontend Filters
 
 ### `frontend/handlers/menu_anchor/scroll_top_distance`
 
-Applied to the Menu Anchor widget, set a custom top distance
+Applied to the menu anchor widget, sets a custom top distance
 
 #### Arguments
 
 | Argument    | Type            | Description                                                              |
 |-------------|-----------------|--------------------------------------------------------------------------|
-| `scrollTop` | _`integer`_     | The default scrollTop. It takes only the WordPress Admin Bar in account. |
+| `scrollTop` | _`integer`_     | The default scrollTop. It only takes the WordPress admin bar in account. |
 
 #### Example
 
@@ -49,7 +49,7 @@ add_action( 'wp_footer', function() {
 
 ### `init`
 
-Elementor frontend is loaded.
+Loads the Elementor frontend.
 
 #### Arguments
 
@@ -107,7 +107,7 @@ elementorFrontend.hooks.addAction( 'frontend/element_ready/widget', function( $s
 
 ### `frontend/element_ready/{elementType.skinName}`
 
-Runs on a specific element type and it’s skin when it’s ready.
+Runs on a specific element type and its skin when it’s ready.
 
 #### Arguments
 
