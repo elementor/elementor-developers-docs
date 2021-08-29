@@ -2,14 +2,14 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor has a hook that allows developers to apply custom skins for widgets. It run after the widget constructor and register custom skins for a specific widget types that supports skins.
+Elementor has a hook that lets developers apply custom skins to widgets. It runs after the widget constructor and registers custom skins for a specific widget types that support skins.
 
 ## Hook Details
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/widget/{$widget_name}/skins_init`
 * **Notes:** The dynamic portion of the hook name, `$widget_name`, refers to the widget name.
-* **Affects On:** Init
+* **Affects:** Init
 
 ## Hook Arguments
 
