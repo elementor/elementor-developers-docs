@@ -2,13 +2,13 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor has a hook that allows developers to run code after the user saved data in the editor.
+Elementor has a hook that lets developers run code after the user has saved data in the editor.
 
 ## Hook Details
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/editor/after_save`
-* **Affects On:** Editor
+* **Affects:** Editor
 
 ## Hook Arguments
 
@@ -19,7 +19,7 @@ Elementor has a hook that allows developers to run code after the user saved dat
 
 ## Examples
 
-A good example is when you want to log user activities, each time the user saves Elementor data you can log this activity.
+A good example of using this hook is when you want to log user activities. Each time the user saves Elementor data, you can log this activity.
 
 ```php
 /**
@@ -45,7 +45,7 @@ function log_saved_elementor_data( $post_id, $editor_data ) {
 add_action( 'elementor/editor/after_save', 'log_saved_elementor_data' );
 ```
 
-Another example is when you want to clear cache each time the user updates the post:
+Another example is when you want to clear the cache each time the user updates a post:
 
 ```php
 /**
