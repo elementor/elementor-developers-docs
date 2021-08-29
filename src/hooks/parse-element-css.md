@@ -2,13 +2,13 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor has a hook that allows developers to add new CSS rules to the element before the CSS file is generated.
+Elementor has a hook that lets developers add new CSS rules to the element before the CSS file is generated.
 
 ## Hook Details
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/element/parse_css`
-* **Affects On:** Frontend
+* **Affects:** Frontend
 
 ## Hook Arguments
 
@@ -19,7 +19,7 @@ Elementor has a hook that allows developers to add new CSS rules to the element 
 
 ## Example
 
-Let's add simple CSS rule to the generated CSS file.s
+Let's add a simple CSS rule to the generated CSS files:
 
 ```php
 /**
@@ -43,7 +43,7 @@ function add_custom_css_rule_to_the_css_file( $post_css_file, $element ) {
 add_action(	'elementor/element/parse_css', 'add_custom_css_rule_to_the_css_file', 10, 2 );
 ```
 
-Now let's add a CSS rule with a unique elementor selector.
+Now let's add a CSS rule with a unique elementor selector:
 
 ```php
 /**
