@@ -2,13 +2,13 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that allows developers to change the widget content in the frontend. It will be applied on the final HTML content of a single widget. In the Editor Preview it will be shown after the user finishes editing the element.
+Elementor has a hook that lets developers change a widget's content in the frontend. These changes will be applied to the final HTML content of the widget. In the preview, they will be shown after the user finishes editing the element.
 
 ## Hook Details
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/widget/render_content`
-* **Affects On:** Frontend
+* **Affects:** Frontend
 
 ## Hook Arguments
 
@@ -19,7 +19,7 @@ Elementor has a hook that allows developers to change the widget content in the 
 
 ## Change Widget Content
 
-Go over all the `heading` widgets and if the heading use external links, add an icon after the links indicating it's an external links:
+Go over all the `heading` widgets and, if the heading uses external links, add an icon after the links indicating it's an external link:
 
 ```php
 /**
