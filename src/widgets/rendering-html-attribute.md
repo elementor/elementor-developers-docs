@@ -1,10 +1,12 @@
-# Rendering HTML Attribute
+# Rendering HTML Attributes
 
-Used to add render attribute to specific HTML elements. For example a widget can add a new `<div>` tag with hardcoded "class" attribute or add a new `<a>` tag with hardcoded "target" and "rel" attributes. This way you need to add `if` statements to check whether it has classes/target/rel attributed before adding them to the HTML tag. In addition you need to escape user data with `esc_attr()` to improve security.
+This type of rendering is used to add render attributes to specific HTML elements. For example, a widget can add a new `<div>` tag with a hardcoded "class" attribute or add a new `<a>` tag with hardcoded "target" and "rel" attributes. When used, you need to add `if` statements to check whether or not there are classes/target/rel attributed before adding them to the HTML tag. In addition, you need to escape user data with `esc_attr()` to improve security.
 
-Elementor offers another way to add HTML attributes using `add_render_attribute()` and `get_render_attribute_string()` methods.
+Elementor offers another way to add HTML attributes using the `add_render_attribute()` and `get_render_attribute_string()` methods.
 
 ## Simple Widget Output
+
+Let's look at a simple widget output:
 
 ```html
 <div id="" class="" role="" aria-label=""> ... </div>
@@ -12,7 +14,7 @@ Elementor offers another way to add HTML attributes using `add_render_attribute(
 
 ## PHP Render Attribute
 
-In the `render()` method we can add attributes to the HTML tag using `add_render_attribute()` and retrieve the attribute using `get_render_attribute_string()`.
+Using the `render()` method, we can add attributes to the HTML tag using `add_render_attribute()` and retrieve the attribute using `get_render_attribute_string()`:
 
 ```php
 <?php
@@ -36,7 +38,7 @@ protected function render() {
 
 ## JS Render Attribute
 
-In the `content_template()` method we can add attributes to the HTML tag using `addRenderAttribute()` and retrieve the attribute using `getRenderAttributeString()`.
+Using the `content_template()` method, we can add attributes to the HTML tag using `addRenderAttribute()` and retrieve the attribute using `getRenderAttributeString()`:
 
 ```php
 <?php
