@@ -4,7 +4,7 @@ A common [widget rendering](./widget-rendering) use case is using the control va
 
 ## Styling Elements
 
-Let's say you have a widget with two controls in which the users can set a title, and control the element "color".
+Let's say you have a widget with two controls in which users can set a title, and control the element "color".
 
 ```php {34-44}
 <?php
@@ -70,9 +70,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-Note that each element on the page includes a set of style settings that are printed as CSS rules under a unique element selector. The widget can easily use the returned control value has a design rule.
+Note that each element on the page includes a set of style settings that are printed as CSS rules under a unique element selector. The widget can easily use the returned control value as a design rule.
 
-Our test widget will add custom CSS rules to the page's CSS file. Those rules will affect only this widget as the `{ { WRAPPER } }` prefix means that only this instance of the widget will use this color.
+Our test widget will add custom CSS rules to the page's CSS file. Those rules will only affect this widget as the `{ { WRAPPER } }` prefix means that only this instance of the widget will use this color.
 
 ## Selector Tokens
 
