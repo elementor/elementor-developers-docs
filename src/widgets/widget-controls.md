@@ -1,10 +1,10 @@
 # Widget Controls
 
-Each widget needs to have some controls (setting fields), where users can select their data. This data is saved in the database and later used to generate custom output based on user selection.
+Each widget needs to have some controls (setting fields), where users can select their data. This data is saved in the database and later used to generate custom output based on the user's selection.
 
 ## Registering Controls
 
-In your widget class you can add controls inside the `register_controls()` method as follows:
+In your widget class, you can add controls inside the `register_controls()` method as follows:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -30,23 +30,23 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## Available Control Types
 
-Elementor has three **Control Types** that can be added to widgets:
+Elementor has three **control types** that can be added to widgets:
 
-* [Regular Control](./regular-control) – add a single control.
-* [Responsive Control](./responsive-control) – add a control that sets different values to different screen sizes.
-* [Group Control](./group-control) – add a control that groups together several other controls.
+* [Regular Control](./regular-control) – adds a single control.
+* [Responsive Control](./responsive-control) – adds a control that sets different values for different screen sizes.
+* [Group Control](./group-control) – adds a control that groups together several other controls.
 
-Elementor also has **UI Wrappers for Controls** that can be used to group and rearrange controls:
+Elementor also has **UI wrappers for controls** that can be used to group and rearrange controls:
 
 * [Control Section](./control-section) – a wrapper for controls.
-* [Control Tabs](./control-tabs) – arrange controls in tabs.
-* [Control Popovers](./control-popovers) – toggle popover control.
+* [Control Tabs](./control-tabs) – a wrapper that arranges controls in tabs.
+* [Control Popovers](./control-popovers) – a wrapper that toggles popover control.
 
 ## Control Methods
 
 Elementor controls have a *single method* that registers a settings field. UI wrappers for controls have *two/four methods* that wrap other controls.
 
-Available Methods:
+Available methods:
 
 * **Regular Control** - `add_control()`
 * **Responsive Control** - `add_responsive_control()`
