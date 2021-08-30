@@ -1,10 +1,10 @@
 # Dynamic Tags Structure
 
-Each Dynamic Tag needs to have a few basic settings like a unique name, a title that will be used. On top of that, we have some advanced settings like the Dynamic Tag controls which are basically optional fields where the user can configure his custom data. And a render method that generates the final output based on the user settings from the Dynamic Tag’s controls.
+Each dynamic tag needs to have a few basic settings, such as a unique name. On top of that, there are some advanced settings like dynamic tag controls, which are basically optional fields where users can configure their custom data. There is also a render method that generates the final output based on user settings taken from the dynamic tag’s controls.
 
 ## Extending Dynamic Tags
 
-To create your own control, you need to **extend** the dynamic tags control to inherits its methods:
+To create your own control, you need to **extend** the dynamic tags control to inherit its methods:
 
 ```php
 Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
@@ -13,7 +13,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 ## Dynamic Tags Methods
 
-A simple Dynamic Tag skeleton will look like this:
+A simple dynamic tag skeleton will look like this:
 
 ```php
 Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
@@ -33,7 +33,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 }
 ```
 
-The methods can be divided into the following groups:
+The dynamic tags methods can be divided into the following groups:
 
 * [Data](./dynamic-tags-data)
 * [Groups](./dynamic-tags-groups)
@@ -41,4 +41,4 @@ The methods can be divided into the following groups:
 * [Controls](./dynamic-tags-controls)
 * [Rendering](./dynamic-tags-rendering)
 
-Please note that the `\Elementor\Core\DynamicTags\Tag` class has many more methods used to do different things, but the methods mentioned above will cover the vast majority of your needs.
+Please note that the `\Elementor\Core\DynamicTags\Tag` class has many more methods, but the methods mentioned above will cover the vast majority of your needs.
