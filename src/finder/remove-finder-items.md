@@ -1,10 +1,10 @@
 # Remove Finder Items
 
-Developers can remove specific items from Finder Categories. It can be achieved using the `elementor/finder/categories` filter hook.
+Developers can remove specific items from finder categories by using the `elementor/finder/categories` filter hook.
 
 ## Removing Items
 
-To remove the "`post`" item from the "`create`" category, we will use the following code:
+In the example below, we'll remove the "`post`" item from the "`create`" category:
 
 ```php
 function remove_elementor_finder_item( array $categories ) {
