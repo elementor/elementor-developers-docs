@@ -20,8 +20,8 @@ $this->add_responsive_control(
 
 Each control has the following key parameters:
 
-  * **Control Name** `(string)` – Unique ID used in the code.
-  * **Control Setting** `(array)` – Extra control parameters.
+* **Control Name** `(string)` – Unique ID used in the code.
+* **Control Setting** `(array)` – Extra control parameters.
   * **Type** `(string)` – The control type.
   * **Label** `(string)` – Label displayed to the user in the panel.
   * **Show Label** `(bool)` – Whether or not to show the label.
