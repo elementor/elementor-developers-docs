@@ -1,10 +1,10 @@
 # Simple Example
 
-To see how simple it is to extend the finder, we are going to create a very simple Finder category with static links to social media websites.
+To see how easy it is to extend the finder, we are going to create a very simple finder category with static links to social media websites.
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class.
+This addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class.
 
 ```
 elementor-finder-social-media/
@@ -93,7 +93,7 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string Finder category title.
+	 * @return string finder category title.
 	 */
 	public function get_title() {
 		return __( 'Social Media Websites', 'elementor-finder-social-media' );
