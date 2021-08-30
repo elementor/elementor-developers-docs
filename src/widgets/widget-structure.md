@@ -48,7 +48,7 @@ The `\Elementor\Widget_Base` class has many more methods, but the vast majority 
 These methods can be divided into five groups:
 
 * [Data](./widget-data)
-* [Grouping](./widget-categories)
+* [Categories](./widget-categories)
 * [Dependencies](./widget-dependencies)
 * [Controls](./widget-controls)
 * [Rendering](./widget-rendering)
