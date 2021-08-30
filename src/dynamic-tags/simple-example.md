@@ -1,10 +1,10 @@
 # Simple Example
 
-To put all of the pieces together we are going to create a simple Dynamic Tag which will return a random number. To simplify the example, this dynamic tag won't have controls. But you can enhance the code and add two controls for minimum and maximum limits.
+To put it all together, we're going to create a simple dynamic tag which will return a random number. To simplify the example, this dynamic tag won't have controls. But you can enhance the code and add two controls for minimum and maximum limits.
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag.
+The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag:
 
 ```
 elementor-random-number-dynamic-tag/
