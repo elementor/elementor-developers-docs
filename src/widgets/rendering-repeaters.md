@@ -1,8 +1,10 @@
 # Rendering Repeaters
 
-One advance use-cases is to render multiple elements from the repeater control. The user sets multiple fields in the repeater control and we need to print them on screen.
+One advanced use-case is to render multiple elements using the repeater control. Here, users set multiple fields in the repeater control and we need to print them on screen.
 
 ## Render Multiple Fields
+
+Use the following to render multiple fields:
 
 ```php {14-46,55-67,73-89}
 <?php
