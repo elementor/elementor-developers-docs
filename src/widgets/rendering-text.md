@@ -6,7 +6,7 @@ The most common [widget rendering](./widget-rendering) use case is to print the 
 
 Let's say you have a widget with a single control in which the users can set a "title". To print the title entered by the user, we simply echo the control value:
 
-```php {14-22,28-31,33-37}
+```php {14-21,28-29,33-35}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
