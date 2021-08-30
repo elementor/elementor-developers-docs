@@ -1,10 +1,10 @@
 # Dynamic Tags Rendering
 
-The render method generates the final output and echos the data to the control. If the dynamic tag has controls, the render function should use the data while generating the output.
+The render method generates the final output and echoes the data to the control. If the dynamic tag has controls, the render function should use the data while generating the output.
 
 ## Rendering Methods
 
-To render the dynamic tag output and echos the data we use the `render()` method as follows:
+To render the dynamic tag output and data echoes, we use the `render()` method as follows:
 
 ```php
 Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
@@ -18,7 +18,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 }
 ```
 
-To extract data from the [dynamic tag controls](./dynamic-tags-controls) we can use the `get_settings()` method:
+To extract data from the [dynamic tag controls](./dynamic-tags-controls), we can use the `get_settings()` method:
 
 ```php
 Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
