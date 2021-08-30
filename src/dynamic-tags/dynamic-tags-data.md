@@ -1,10 +1,10 @@
 # Dynamic Tags Data
 
-Each dynamic tag require basic information like the a unique id, title, group and category.
+Each dynamic tag requires basic information like the unique id, title, group and category.
 
 ## Data Methods
 
-Dynamic tag data is "returned" by the methods:
+Dynamic tags data is "returned" by these methods:
 
 ```php
 Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
@@ -28,7 +28,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 }
 ```
 
-* **Dynamic Tag Name** - The `get_name()` method returns a unique id that will be used in the code.
+* **Dynamic Tag Name** - The `get_name()` method returns a unique ID that will be used in the code.
 
 * **Dynamic Tag Title** – The `get_title()` method returns the tag label displayed to the user.
 
