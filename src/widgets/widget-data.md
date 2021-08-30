@@ -29,6 +29,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		return [ 'general' ];
 	}
 
+	public function get_keywords() {
+		return [ 'keyword', 'keyword' ];
+	}
+
 }
 ```
 
@@ -40,4 +44,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL, where the user can get more information about the widget, below the controls.
 
-* **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widget-categories), and returns the category name as a string.
+* **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widget-categories).
+
+* **Widget Keywords** – The `get_keywords()` method lets you set widget keywords and used to filter the widgets list.
