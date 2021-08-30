@@ -1,10 +1,10 @@
 # Control Popovers
 
-**Control Popovers** are UI wrappers used to group controls and display them in popups over the panel. When using popovers you can clean your panel by moving controls to popups and display them only when the user choose to see them by clicking the popover control. The best example to understand popovers is to see how the typography control works. Typography has a toggle control, only if the user choose to change the default typography settings he will see the extra controls in a popover. Popovers are created using two methods: `start_popover()` creates a new popover and `end_popover()` closes the popover.
+**Control popovers** are UI wrappers used to group controls and display them in popups, which will appear over the panel. Using popovers can help you can declutter the panel by moving controls to popups and displaying them only when the user chooses to see them. An excellent example of this is the typography control. It contains a toggle, and only if the user chooses to change the default typography settings will the extra controls appear in a popover. Popovers are created using two methods: `start_popover()` creates a new popover and `end_popover()` closes the popover.
 
 ## Control Popovers Structure
 
-Adding a new control popovers is done as follows:
+Use the following to add a new control popover:
 
 ```php
 $this->add_control(
@@ -27,9 +27,9 @@ $this->end_popover();
 
 Each control has the following key parameters:
 
-* **Popovers Name** `(string)` – Unique id used in the code.
-* **Popovers Setting** `(array)` – Extra popover parameters.
-* **Label** `(string)` – Label displayed to the user in the panel.
+  * **Popovers Name** `(string)` – Unique id used in the code.
+  * **Popovers Setting** `(array)` – Extra popover parameters.
+  * **Label** `(string)` – Label displayed to the user in the panel.
   * **Type** `(string)` – The control type.
   * **Label Off** `(string)` – Label displayed when default settings are set.
   * **Label On** `(string)` – Label displayed when custom settings are set.
@@ -40,7 +40,7 @@ Each control has the following key parameters:
 
 ### Control Popovers
 
-Let's group controls into two popovers, "Normal" tab and "Hover" tab:
+In the example below, we'll group controls into two popovers - "Normal" tab and "Hover" tab:
 
 ```php {13-22,24,32}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
