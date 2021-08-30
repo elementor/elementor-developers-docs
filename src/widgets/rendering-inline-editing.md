@@ -1,6 +1,6 @@
 # Rendering Inline Editing
 
-When developing widgets, developers can define which controls will be inline editable, outside of the Editor in Elementor Preview.
+When developing widgets, developers can define which controls will be inline editable in the preview area.
 
 <iframe width="560" height="315"src="https://www.youtube.com/embed/miNu2oONgYI" frameborder="0" allowfullscreen></iframe>
 
@@ -12,9 +12,9 @@ Elementor supports the following types of toolbars for inline editing:
 * **Basic Toolbar** – `(basic)` Inline text editing with a minimal toolbar, including: bold, italic and underline buttons.
 * **Advanced Toolbar** – `(advanced)` Inline text editing with a full toolbar, including: adding/removing links, H1-H6 heading, blockquote, preformatting and bulleted or numbered list buttons.
 
-![Inline Editing Example](/assets/img/inline-editing-example.png)
+![Inline editing example](/assets/img/inline-editing-example.png)
 
-Keep in mind that we recommend to use inline editing the following way:
+Elementor recommends using inline editing as follows:
 
 * **Input controls** – use inline editing without any toolbars in simple text/number/url/email fields.
 * **Textarea controls** – use inline editing with a minimal toolbar.
@@ -29,7 +29,7 @@ Each inline editing attribute has two parameters:
 * **Key** `(string)` – Unique name used in the code.
 * **Toolbar** `(string)` – Toolbar type. Accepted values are: `advanced`, `basic` or `none`. Default is `none`.
 
-Adding a new inline editing attributes is done as follows:
+Use the following to add new inline editing attributes:
 
 ```php {5-6,11-12}
 <?php
@@ -50,9 +50,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-## Example Inline Editing
+## Example of Inline Editing
 
-Full example with three controls all having inline support. A simple text without a toolbar only inline editing, a textarea with a basic toolbar and a wysiwyg with advanced toolbar:
+The following is a full example using three controls all having inline support. This includes simple text without a toolbar, a textarea with a basic toolbar, and a wysiwyg with an advanced toolbar:
 
 ```php {48-50,52-54,61-63,65-67}
 <?php
