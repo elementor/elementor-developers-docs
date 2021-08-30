@@ -1,10 +1,10 @@
 # Rendering Text
 
-The most common [widget rendering](./widget-rendering) use case is to print the value of a simple text control. Usually used by controls from the "Content" tab.
+The most common [widget rendering](./widget-rendering) use case is to print the value of a simple text control. These controls are usually found in the content tab.
 
 ## Printing Text Values
 
-Let's say you have a widget with a single control in which the users can set a "title". To print the title the user entered, we simply echo the control value:
+Let's say you have a widget with a single control in which the users can set a "title". To print the title entered by the user, we simply echo the control value:
 
 ```php {14-22,28-31,33-37}
 <?php
