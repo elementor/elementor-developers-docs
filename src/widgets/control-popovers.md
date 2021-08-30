@@ -27,8 +27,8 @@ $this->end_popover();
 
 Each control has the following key parameters:
 
-  * **Popovers Name** `(string)` – Unique id used in the code.
-  * **Popovers Setting** `(array)` – Extra popover parameters.
+* **Popovers Name** `(string)` – Unique id used in the code.
+* **Popovers Setting** `(array)` – Extra popover parameters.
   * **Label** `(string)` – Label displayed to the user in the panel.
   * **Type** `(string)` – The control type.
   * **Label Off** `(string)` – Label displayed when default settings are set.
