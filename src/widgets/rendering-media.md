@@ -1,10 +1,10 @@
 # Rendering Media
 
-Elementor let’s you select an image using the media control defined in `\Elementor\Control_Media` class. There are several ways to render media files, we will cover them here.
+Elementor lets you select an image using the media control defined in `\Elementor\Control_Media` class. There are two ways to render media files.
 
 ## Simple Image Rendering
 
-The simplest media rendering method is to print the image URL in a custom `<img>` tag. You can also use the [wp_get_attachment_image()](https://developer.wordpress.org/reference/functions/wp_get_attachment_image/) function generate the image markup.
+The simplest media rendering method is to print the image URL in a custom `<img>` tag. You can also use the [wp_get_attachment_image()](https://developer.wordpress.org/reference/functions/wp_get_attachment_image/) function to generate the image markup.
 
 ```php {14-23,33,36,41}
 <?php
@@ -54,9 +54,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-## Advance Image Rendering
+## Advanced Image Rendering
 
-The more advanced way to handle images is to combine the `\Elementor\Control_Media` with `\Elementor\Group_Control_Image_Size`.
+The more advanced way to handle images is to combine the `\Elementor\Control_Media` with `\Elementor\Group_Control_Image_Size`:
 
 ```php {14-23,25-32,40,45-60}
 <?php
