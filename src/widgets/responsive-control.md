@@ -1,10 +1,10 @@
 # Responsive Control
 
-**Responsive Controls** are [regular controls](./regular-control) with special capability that lets the user set different values to different devices and screen sizes. To add Responsive Controls to Elementor widgets we are using the `add_responsive_control()` method.
+**Responsive controls** are [regular controls](./regular-control) with special capabilities that let users set different values for different devices and screen sizes. To add responsive controls to Elementor widgets we use the `add_responsive_control()` method.
 
 ## Responsive Control Structure
 
-Adding a new responsive controls is done as follows:
+The following will add a new responsive control:
 
 ```php
 $this->add_responsive_control(
@@ -20,23 +20,23 @@ $this->add_responsive_control(
 
 Each control has the following key parameters:
 
-* **Control Name** `(string)` – Unique id used in the code.
-* **Control Setting** `(array)` – Extra control parameters.
+  * **Control Name** `(string)` – Unique ID used in the code.
+  * **Control Setting** `(array)` – Extra control parameters.
   * **Type** `(string)` – The control type.
   * **Label** `(string)` – The label displayed to the user in the panel.
-  * **Show Label** `(bool)` – Whether to show the label.
-  * **Label Block** `(bool)` – Whether to display the label in a separate line.
+  * **Show Label** `(bool)` – Whether or not to show the label.
+  * **Label Block** `(bool)` – Whether or not to display the label in a separate line.
   * **Separator** `(string)` – The position of the separator.
-  * **Frontend Available** `(bool)` – Whether the data is available in the Frontend using `getSettings()`.
+  * **Frontend Available** `(bool)` – Whether or not the data is available in the frontend using `getSettings()`.
   * **Conditions** `(array)` – Control display conditions.
 
-**Note**: Each control has its own set of Custom Settings in addition to the default settings mentioned above.
+**Note**: Each control has its own set of custom settings in addition to the default settings mentioned above.
 
 ## Examples
 
 ### Responsive Slider
 
-The regular slider control defined in `Control_Slider` adds a draggable range slider. To make it responsive and allow the user to set different values based on the device, we will use the following code:
+The regular slider control defined in `Control_Slider` adds a draggable range slider. To make it responsive, and allow the user to set different values based on the device, use the following code:
 
 ```php {13-41}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -90,7 +90,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Responsive Dimensions
 
-Another handy control is the dimensions control that defined in `Control_Dimensions`. It adds input fields for top, right, bottom, left and the option to link them together. It’s is usually used for Margins, Paddings and Borders. With responsive dimensions we can set different values based on the device:
+Another handy control is the dimensions control, defined in `Control_Dimensions`. It adds input fields for top, right, bottom, left and includes the option to link the fields together. It’s usually used for margins, paddings and borders. With responsive dimensions, we can set different values based on the device:
 
 ```php {13-23}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -126,7 +126,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Responsive Choose
 
-Finally we are going to use Select/Choose control defined in `Control_Choose` to set custom alignment with responsive values allowing the user to set different alignment for different screen sizes.
+Finally, we are going to use the select/choose control, which is defined in `Control_Choose`. This will allow us to set custom alignments with responsive values, allowing users to set different alignments for different screen sizes.
 
 ```php {13-35}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
