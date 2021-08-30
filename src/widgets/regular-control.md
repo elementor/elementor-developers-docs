@@ -4,7 +4,7 @@ Regular [widget controls](./widget-controls) are added to Elementor widgets usin
 
 ## Regular Control Structure
 
-Adding a new controls is done as follows:
+Use the following to add a new control:
 
 ```php
 $this->add_control(
@@ -20,23 +20,23 @@ $this->add_control(
 
 Each control has the following key parameters:
 
-* **Control Name** `(string)` – Unique id used in the code.
-* **Control Setting** `(array)` – Extra control parameters.
+  * **Control Name** `(string)` – Unique ID used in the code.
+  * **Control Setting** `(array)` – Extra control parameters.
   * **Type** `(string)` – The control type.
   * **Label** `(string)` – The label displayed to the user in the panel.
-  * **Show Label** `(bool)` – Whether to show the label.
-  * **Label Block** `(bool)` – Whether to display the label in a separate line.
+  * **Show Label** `(bool)` – Whether or not to show the label.
+  * **Label Block** `(bool)` – Whether or not to display the label in a separate line.
   * **Separator** `(string)` – The position of the separator.
-  * **Frontend Available** `(bool)` – Whether the data is available in the Frontend using `getSettings()`.
+  * **Frontend Available** `(bool)` – Whether the data is available in the frontend using `getSettings()`.
   * **Conditions** `(array)` – Control display conditions.
 
-**Note**: Each control has its own set of *Custom Settings* in addition to the default settings mentioned above. For Example, text control has a *placeholder* settings, slider has a *range* settings, color controls has a *default* settings etc.
+**Note**: Each control has its own set of *custom settings* in addition to the default settings mentioned above. For example, text control has a *placeholder* setting, slider has a *range* setting, color controls have a *default* setting, etc.
 
 ## Examples
 
 ### Text Control
 
-In this example we are going to add a simple text control defined at the `Control_Text` class which to allow the user to save a simple string, the control will have a placeholder set:
+In the example below, we're going to add a simple text control defined at the `control_text` class, which will allow users to save a simple string. The control will have a placeholder set:
 
 ```php {12-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -68,7 +68,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Number Control
 
-In this example we are going to add a simple number control defined at the `Control_Number` class which to allow the user to save numbers:
+In the example below, we're going to add a simple number control defined at the `Control_Number` class, which will allow users to save numbers:
 
 ```php {12-23}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -104,7 +104,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Select Control
 
-Another simple example is the `Control_Select` class which to allow to choose predefined fields:
+Another simple example is the `Control_Select` class, which will allow users to choose predefined fields:
 
 ```php {12-24}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -141,7 +141,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Choose Control
 
-If you liked the select control, you will love the choose control. The `Control_Choose` class allows the user to choose predefined fields but the components are styled component with an icon for each option.
+Choose control is an improved version of select control. The `Control_Choose` class allows users to choose predefined fields, but the components are styled with an icon for each option.
 
 ```php {12-33}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -187,7 +187,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Slider Control
 
-Another useful control is the `Control_Slider` that displays a draggable range slider:
+Another useful control is the `Control_Slider`, which displays a draggable range slider:
 
 ```php {12-29}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -229,7 +229,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Color Control
 
-One of the more more popular controls is the `Control_Color`, it allows to choose a color:
+One of the more more popular controls is `Control_Color`, which lets users choose a color:
 
 ```php {12-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -261,7 +261,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ### Media Control
 
-And finally for advanced uses you can use the `Control_Media` to select images from the WordPress media library:
+And finally, for advanced users, you can use `Control_Media` to select images from the WordPress media library:
 
 ```php {12-21}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
