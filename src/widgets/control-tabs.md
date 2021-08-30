@@ -27,11 +27,11 @@ $this->end_controls_tabs();
 
 Each wrapper tabs control has the following key parameters:
 
-* **Tab Name** `(string)` – Unique id used in the code.
+* **Tab Name** `(string)` – Unique ID used in the code.
 
 Each inner tab control has the following key parameters:
 
-* **Tab Name** `(string)` – Unique id used in the code.
+* **Tab Name** `(string)` – Unique ID used in the code.
 * **Tab Setting** `(array)` – Extra tab parameters.
   * **Label** `(string)` – Label displayed to the user in the panel.
 
