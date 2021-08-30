@@ -1,12 +1,12 @@
 # Widget Settings
 
-Before the [widget rendering](./widget-rendering) function starts generating the final HTML, it needs to retrieve data from the controls.
+Before the [widget rendering](./widget-rendering) function starts generating the final HTML output, it needs to retrieve data from the controls.
 
-In Elementor terminology, "*Widget Settings*" is all the "*User Data*" retrieved from the widget controls.
+In Elementor terminology, "*widget settings*" are all the "*user data*" retrieved from the widget controls.
 
 ## Retrieving JS Settings
 
-With JS templates we don’t need to retrieve the data using a special function, it's done by Elementor for us. Data from the controls is stored in the `settings` variable.
+With JS templates we don’t need to retrieve the data using a special function, it's done by Elementor for us. Data from the controls is stored in the `settings` variable and can be retrieved like this:
 
 ```php
 <?php
@@ -19,9 +19,9 @@ protected function content_template() {
 
 ## Retrieving PHP Settings
 
-When retrieving data saved by the user, we can either retrieve all the data from all the controls or a piece of data from a specific control. Data retrieval is done using `get_settings_for_display()` method.
+When retrieving data saved by the user, we can either retrieve all the data from all the controls or specific data from a specific control. Data retrieval is done using `get_settings_for_display()` method.
 
-Retrieving data from a single control:
+Use the following to retrieve data from a single control:
 
 ```php
 protected function render() {
@@ -33,7 +33,7 @@ protected function render() {
 }
 ```
 
-When we retrieve data from multiple controls, we can retrieve all the data from all the controls into a single parameter:
+When retrieving data from multiple controls, we can retrieve all the data from all the controls into a single parameter:
 
 ```php
 protected function render() {
@@ -46,4 +46,4 @@ protected function render() {
 }
 ```
 
-Either way achieves the same result, however, in some cases the second way has performance benefits.
+Either way achieves the same result, however, in some cases the second method has performance benefits.
