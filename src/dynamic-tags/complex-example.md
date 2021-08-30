@@ -1,10 +1,10 @@
 # Complex Example
 
-To showcase a complex dynamic tag we are going to allow the use to display server variables from a list of available server variables. It will include custom [Dynamic Tags Group](./dynamic-tags-groups). It will have a control with a select box containing all the available server variables. And the render function will return the variable the user selected and return its value.
+To showcase a complex dynamic tag, we are going to allow the user to display server variables from a list of available server variables. It will include a custom [dynamic tags group](./dynamic-tags-groups) and feature a control with a select box containing all the available server variables. The render function will return the variable the user selected and return its value.
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag.
+The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag:
 
 ```
 elementor-server-variable-dynamic-tag/
@@ -215,10 +215,10 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 
 ## The Result
 
-Dynamic tag in a group view:
+The dynamic tag in a group view:
 
 ![Dynamic tag example - groups](/assets/img/elementor-dynamic-tag-example-server-variable-groups.png)
 
-Dynamic tag controls:
+The dynamic tag controls:
 
 ![Dynamic tag example - controls](/assets/img/elementor-dynamic-tag-example-server-variable-controls.png)
