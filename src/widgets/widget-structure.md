@@ -30,6 +30,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	public function get_categories() {}
 
+	public function get_keywords() {}
+
 	public function get_script_depends() {}
 
 	public function get_style_depends() {}
