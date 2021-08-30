@@ -1,10 +1,10 @@
 # Advanced Example
 
-More advanced example will include the use of custom field and controls where the user can set fields. The tag will calculate the average of those fields. The tag will have a single control where the user can set a coma-separated list of ACF field IDs.
+This more advanced example will include the use of custom fields, and controls where the user can set fields. The tag will calculate the average of those fields and include a single control where the user can set a comma-separated list of ACF field IDs.
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag.
+The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag:
 
 ```
 elementor-acf-average-dynamic-tag/
@@ -220,10 +220,10 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 
 ## The Result
 
-Dynamic tag in a group view:
+The dynamic tag in a group view:
 
 ![Dynamic tag example - group view](/assets/img/elementor-dynamic-tag-example-acf-average-groups.png)
 
-Dynamic tag controls:
+The dynamic tag controls:
 
 ![Dynamic tag example - controls](/assets/img/elementor-dynamic-tag-example-acf-average-controls.png)
