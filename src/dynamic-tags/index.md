@@ -4,25 +4,25 @@
 
 <img src="/assets/img/dynamic-tag-switcher.png" alt="Dynamic Tag Switcher" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-Dynamic Tags are used to insert more personalized data based on external factors from various sources.
+Dynamic Tags are used to insert customized data based on various sources.
 
-For example, Elementor Pro allows you to add dynamic data based on the page and site parameters, data like the *Post Title*, *Post Excerpt*, *Author Info*, *Site Name*, *Site Logo* and much more.
+For example, Elementor Pro allows you to add dynamic data based on the page and site parameters, this includes data such as; *Post Title*, *Post Excerpt*, *Author Info*, *Site Name*, *Site Logo*, and much more.
 
-Addons developers can create dynamic tags the return random numbers, or even use external API to pull data to Elementor. The possibilities are endless.
+Addon developers can create a wide range of dynamic tags, and can even use external APIs to pull data to Elementor. The possibilities are endless.
 
 ## How it Works
 
-Dynamic tags interact with [Controls](/controls/) by extending the control functionality. They turn static controls to a smart components. With dynamic tags the user can enter dynamically generated data to his site.
+Dynamic tags interact with [controls](/controls/) by extending the control functionality. They turn static controls into smart components. With dynamic tags, users can use dynamically generated data on their sites.
 
-You could say that Dynamic Tags are like functions, the user can define custom parameters to change the output based on different factors.
+You could say that dynamic tags are like functions, the user can define custom parameters to change the output based on different factors.
 
 ## Elementor Pro
 
-The entire dynamic tags functionality defined in Elementor core, but it has no active dynamic tags. This is where Elementor Pro comes into picture. The Pro version of Elementor adds dozens of dynamic tags to choose from.
+The dynamic tags functionality is defined in Elementor's core, but the basic version of Elementor does not support active dynamic tags. These is a feature of Elementor Pro, which includes dozens of dynamic tags to choose from.
 
 ## Creating Dynamic Tags
 
-Learn more about dynamic tags anatomy and how to create your own custom tags:
+Learn more about the anatomy of dynamic tags and how to create your own:
 
 * [Dynamic Tags Structure](./dynamic-tags-structure)
 * [Dynamic Tags Data](./dynamic-tags-data)
@@ -33,7 +33,7 @@ Learn more about dynamic tags anatomy and how to create your own custom tags:
 
 ## Code Examples
 
-Learn by examples. See how easy it is to create new dynamic tags:
+Check out how easy it is to create new dynamic tags:
 
 * [Simple Example](./simple-example)
 * [Complex Example](./complex-example)
