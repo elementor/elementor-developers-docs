@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor is packed with dozens of useful widgets in the **Widgets Panel**. These widgets are divided into categories. Each widget has a set of custom controls (input fields) in which end-users can enter data.
+Elementor is packed with dozens of useful widgets in the **widgets panel**. These widgets are divided into categories. Each widget has a set of custom controls (input fields) allowing end-users to enter data.
 
 <img src="/assets/img/elementor-widgets.png" alt="Elementor Widgets Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
@@ -45,7 +45,7 @@ Learn about the widget render mechanism and how to use it in your widgets:
 
 ## Code Examples
 
-Learn by doing. Check out how easy it is to create Elementor widgets:
+Check out how easy it is to create Elementor widgets:
 
 * [Simple Example](./simple-example)
 * [Complex Example](./complex-example)
