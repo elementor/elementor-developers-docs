@@ -1,10 +1,10 @@
 # Simple Example
 
-To put all of the pieces together we are going to create a simple Elementor widget which will use the [native oEmbed functionality](https://developer.wordpress.org/reference/functions/wp_oembed_get/) of WordPress to auto-embed content from external sites using simple URLs.
+Putting all these pieces together, we are going to create a simple Elementor widget which will use the [native oEmbed functionality](https://developer.wordpress.org/reference/functions/wp_oembed_get/) of WordPress to auto-embed content from external sites using simple URLs.
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the widget and the main file to register the widget.
+This addon will have four files. Two index files to prevent direct access to files, one file for the widget and the main file to register the widget:
 
 ```
 elementor-oembed-widget/
