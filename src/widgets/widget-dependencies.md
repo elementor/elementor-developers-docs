@@ -4,7 +4,7 @@ Some widgets are dependent on custom scripts and styles for functionality and lo
 
 ## Defining Dependencies
 
-Inside the widget class we can enqueue required JS and CSS dependencies the following way:
+Inside the widget class we can enqueue any required JS and CSS dependencies the following way:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -29,7 +29,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 Like any other WordPress plugin, scripts and styles have to be registered using the [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) and [wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/) functions in the plugin’s PHP.
 
 ::: tip Best Practice
-Best practice is to register the script & styles inside the widgets PHP class. This way you make sure the script is loaded only if the widget is used.
+Best practice is to register the script & styles inside the widget's PHP class. This way you make sure the script is loaded only if the widget is used.
 :::
 
 ```php
