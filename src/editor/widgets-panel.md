@@ -2,7 +2,7 @@
 
 <img src="/assets/img/widgets-panel.png" alt="Elementor Widgets Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-**Widgets** is the gate panel (the first panel users see) in [the editor](/editor/). From here, users can drag & drop widgets to the [Elementor preview](./elementor-preview).
+**Widgets** is the gate panel (the first panel users see) in [the editor](/editor/). From here, users can drag & drop widgets to the [preview](./elementor-preview) area.
 
 ## Structure and Functionality
 
