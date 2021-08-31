@@ -18,7 +18,7 @@ Elementor has a hook that filters frontend content. It is applied to the final H
 
 ## Check Whether or Not to Display the Content
 
-Membership addons can use this filter hook to check whether or not the user can see the page content.
+Membership addons can use this filter hook to check whether or not the user can see the page content:
 
 ```php
 /**
