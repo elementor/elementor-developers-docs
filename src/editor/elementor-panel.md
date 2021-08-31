@@ -17,4 +17,4 @@ The panel area consists of several panels:
 
 ## Extending the Panels
 
-Some of these panels are extendible. Developers can add new elements to existing panels and we're working on an official way to create new panels without any of the workarounds currently used by some addon authors.
+Some of these panels are extendible. Developers can add new elements to existing panels and we're working on an official way to create new panels, without the workarounds currently used by some addon authors.
