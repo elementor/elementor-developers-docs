@@ -19,7 +19,7 @@ Elementor has a hook that lets developers add code before or after elements in t
 
 | Argument  | Type                        | Description           |
 |-----------|-----------------------------|-----------------------|
-| `element` | _`\Elementor\Element_Base`_ | The element instance. |
+| `element` | _`\Elementor\Element_Base`_ | The element instance  |
 
 ## Example
 
