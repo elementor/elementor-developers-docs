@@ -15,11 +15,11 @@ Elementor has a hook that lets developers apply custom skins to widgets. It runs
 
 | Argument  | Type                       | Description          |
 |-----------|----------------------------|----------------------|
-| `widget`  | _`\Elementor\Widget_Base`_ | The widget instance. |
+| `widget`  | _`\Elementor\Widget_Base`_ | The widget instance  |
 
 #### Example
 
-Let's add a custom skin to the Google Maps widget.
+Let's add a custom skin to the Google Maps widget:
 
 ```php
 /**
