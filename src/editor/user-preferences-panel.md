@@ -2,7 +2,7 @@
 
 <img src="/assets/img/user-preferences-panel.png" alt="Elementor User Preferences Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-**User Preferences** is a panel in [the editor](/editor/) where the user can control the editor's look and feel. Users can choose whether to display a light or a dark theme, set the default panel width, decide to show/hide editing buttons etc.
+**User Preferences** is a panel in [the editor](/editor/) where the user can control the editor's look and feel. Users can choose whether to display a light or a dark theme, set the default panel width, decide to show/hide editing buttons, etc.
 
 These preferences are user-based, meaning that different users can set different preferences for themselves. This data is saved in the `wp_users` table in the database.
 
