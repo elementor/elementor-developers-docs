@@ -12,7 +12,7 @@ By default, Elementor uses the default image located in Elementor's plugin asset
 
 * **Hook Type:** Filter Hook
 * **Hook Name:** `elementor/utils/get_placeholder_image_src`
-* **Affects:** Elementor Editor
+* **Affects:** Editor
 
 ## Placeholder Image Filter Hook
 
