@@ -6,7 +6,7 @@
 
 ## Structure and Functionality
 
-The panel has two tabs, each serving a different purpose:
+The panel has two tabs:
 
 * **Revisions** - Page versions saved in the database.
 * **Actions** - Page changes made since the page was last saved.
