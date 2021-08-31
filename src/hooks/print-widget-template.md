@@ -2,21 +2,21 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that lets developers change a widget's JavaScript template in the [Elementor preview](/editor/elementor-preview) area.
+Elementor has a hook that lets developers change a widget's JavaScript template in the [preview](/editor/elementor-preview) area.
 
 ## Hook Details
 
 * **Hook Type:** Action Hook
 * **Hook Name:** `elementor/{$element_type}/print_template`
 * **Notes:** The dynamic portion of the hook name, `$element_type`, refers to `widget`.
-* **Affects:** Elementor preview
+* **Affects:** Preview
 
 ## Hook Arguments
 
 | Argument   | Type                       | Description                     |
 |------------|----------------------------|---------------------------------|
-| `template` | _`string`_                 | The JavaScript template output. |
-| `widget`   | _`\Elementor\Widget_Base`_ | The widget instance.            |
+| `template` | _`string`_                 | The JavaScript template output  |
+| `widget`   | _`\Elementor\Widget_Base`_ | The widget instance             |
 
 ## Example
 
