@@ -34,7 +34,7 @@ $page_permalink = get_permalink();
 $page_thumbnail = get_the_post_thumbnail();
 ```
 
-The data in the style tab is saved in the `post meta` of the page. This `post meta` contains all the settings related to the document settings (excluding some settings that require different treatment).
+The data in the style tab is saved in the `post meta` of the page. This `post meta` contains most of the settings related to document settings (excluding some settings that require different treatment).
 
 ```php
 // Retrieve the page settings manager
