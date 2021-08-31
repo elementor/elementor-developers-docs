@@ -53,6 +53,7 @@ module.exports = [
     sidebarDepth: -1,
     children: [
       'simple-example',
+      'advanced-example',
       'complex-example',
     ]
   },

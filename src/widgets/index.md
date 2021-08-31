@@ -48,4 +48,5 @@ Learn about the widget render mechanism and how to use it in your widgets:
 Check out how easy it is to create Elementor widgets:
 
 * [Simple Example](./simple-example)
+* [Advanced Example](./advanced-example)
 * [Complex Example](./complex-example)
