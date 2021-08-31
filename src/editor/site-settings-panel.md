@@ -16,4 +16,4 @@ Design system allows users to create custom color schemes and typographies to be
 
 Theme styles are the general theme settings, creating set fallback styles for various HTML elements. If no definitions are set for specific widgets, the theme styles are used.
 
-The settings sections allow you to set site identity, layout, breakpoints, custom CSS and much more.
+The settings sections allow you to set site identity, layout, breakpoints, custom CSS, etc.
