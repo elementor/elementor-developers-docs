@@ -82,6 +82,10 @@ class Elementor_Hello_World_Widget_1 extends \Elementor\Widget_Base {
 		return [ 'basic' ];
 	}
 
+	public function get_keywords() {
+		return [ 'hello', 'world' ];
+	}
+
 	protected function render() {
 		?>
 
@@ -116,6 +120,10 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 
 	public function get_categories() {
 		return [ 'basic' ];
+	}
+
+	public function get_keywords() {
+		return [ 'hello', 'world' ];
 	}
 
 	protected function register_controls() {

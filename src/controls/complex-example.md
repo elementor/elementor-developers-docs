@@ -329,6 +329,19 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	}
 
 	/**
+	 * Get widget keywords.
+	 *
+	 * Retrieve the list of keywords the test widget belongs to.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return array Widget keywords.
+	 */
+	public function get_keywords() {
+		return [ 'test', 'emoji' ];
+	}
+
+	/**
 	 * Register test widget controls.
 	 *
 	 * Add input fields to allow the user to customize the widget settings.

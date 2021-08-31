@@ -300,6 +300,19 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 	}
 
 	/**
+	 * Get widget keywords.
+	 *
+	 * Retrieve the list of keywords the currency widget belongs to.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return array Widget keywords.
+	 */
+	public function get_keywords() {
+		return [ 'currency', 'currencies' ];
+	}
+
+	/**
 	 * Register currency widget controls.
 	 *
 	 * Add input fields to allow the user to customize the widget settings.
