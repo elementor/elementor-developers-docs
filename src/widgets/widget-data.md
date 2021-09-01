@@ -46,4 +46,4 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widget-categories).
 
-* **Widget Keywords** – The `get_keywords()` method lets you set widget keywords and used to filter the widgets list.
+* **Widget Keywords** – The `get_keywords()` method lets you set widget keywords and is used to filter the widget list.
