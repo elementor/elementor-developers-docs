@@ -66,7 +66,7 @@ This will create a new section for our controls under the "**Content**" tab.
 
 ### Multiple Sections
 
-Now lets create multiple control sections for the "**Content**" tab:
+Now let's create multiple control sections for the "**Content**" tab:
 
 ```php {5-11,19,21-27,35}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -110,7 +110,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-This will create two section for our controls under the "**Content**" tab.
+This will create two sections for our controls under the "**Content**" tab.
 
 ![Elementor Multiple Sections](/assets/img/elementor-multiple-sections.png)
 
