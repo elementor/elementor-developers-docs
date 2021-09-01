@@ -2,7 +2,7 @@
 
 Before the [widget rendering](./widget-rendering) function starts generating the final HTML output, it needs to retrieve data from the controls.
 
-In Elementor terminology, "*widget settings*" are all the "*user data*" retrieved from the widget controls.
+In Elementor terminology, "*widget settings*" are the "*user data*" retrieved from the widget controls.
 
 ## Retrieving JS Settings
 
