@@ -4,7 +4,7 @@ The finder is organized into categories, each of which includes an array of link
 
 ## Finder Class
 
-To edit the finder's categories, we need to first create a class that extends the `\Elementor\Core\Common\Modules\Finder\Base_Category` class - the base finder category class:
+To edit the finder's categories, we first need to create a class that extends the `\Elementor\Core\Common\Modules\Finder\Base_Category` class - the base finder category class:
 
 ```php
 class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
