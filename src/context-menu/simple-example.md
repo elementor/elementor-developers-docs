@@ -4,7 +4,7 @@ In this example, we'll build a full Elementor addon to modify a context menu.
 
 ## Folder Structure
 
-This addon will have several index files to prevent direct access to the folders. The main file will register and enqueue a JS file in the editor, and the JS will modify the context menu.
+This addon will have several index files to prevent direct access to the folders. The main file will register and enqueue a JS file in the editor, and the JS will modify the context menu:
 
 ```
 elementor-context-menus/
