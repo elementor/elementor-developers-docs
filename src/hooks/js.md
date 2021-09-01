@@ -1,6 +1,6 @@
 # JS Hooks
 
-Elementor has a number of JS hooks that allow you to change default behavior and even add new functionality.
+Elementor has a number of JS hooks that allow developers to change default behavior and even add new functionality.
 
 ## Frontend Filters
 
