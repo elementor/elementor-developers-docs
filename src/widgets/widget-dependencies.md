@@ -20,9 +20,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-* **Script Dependencies** – The `get_script_depends()` method lets you define JS files required to run the widget.
+* **Script Dependencies** – The `get_script_depends()` method lets you define the JS files required to run the widget.
 
-* **Style Dependencies** – The `get_style_depends()` method lets you define CSS files required to run the widget.
+* **Style Dependencies** – The `get_style_depends()` method lets you define the CSS files required to run the widget.
 
 ## Registering Scripts & Styles
 
