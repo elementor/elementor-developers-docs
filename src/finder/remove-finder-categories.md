@@ -1,6 +1,6 @@
 # Remove Finder Categories
 
-Developers can use the `elementor/finder/categories` filter hook to remove entire finder categories along with all their items. 
+Developers can use the `elementor/finder/categories` filter hook to remove entire finder categories, along with all their items. 
 
 ## Removing Categories
 
