@@ -18,7 +18,7 @@ const group = {
 
 ## Available Groups
 
-The built-in context menu groups for elements (section, Column and widget) include:
+The built-in context menu groups for elements (section, column and widget) include:
 
 * **General** (_`general`_) - actions to edit the elements (e.g. duplicate).
 * **Add** (_`addNew`_) - actions to add new items to the element.
@@ -28,7 +28,7 @@ The built-in context menu groups for elements (section, Column and widget) inclu
 * **Delete** (_`delete`_) - actions to delete elements.
 
 ::: warning Please Note
-Due to a temporary limitation, external developers can add new actions only to 3 groups: `general`, `clipboard` and `delete`.
+Due to a temporary limitation, external developers can only add new actions to 3 groups: `general`, `clipboard` and `delete`.
 :::
 
 ## Groups By Element Type
