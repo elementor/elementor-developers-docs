@@ -1,6 +1,6 @@
 # Rendering Text
 
-The most common [widget rendering](./widget-rendering) use case is to print the value of a simple text control. These controls are usually found in the "Content" tab.
+The most common [widget rendering](./widget-rendering) use case is to print the value of a simple text control. These controls are usually found in the content tab.
 
 ## Printing Text Values
 
