@@ -4,7 +4,7 @@ In some cases, developers would like to add new items to existing finder categor
 
 ## Add Items
 
-In the example below, the developer is adding the `theme-template` item to the `create` category. This will allow the users to easily add new theme templates:
+In the example below, the developer is adding the `theme-template` item to the `create` category. This will allow users to easily add new theme templates:
 
 ```php
 public function add_new_finder_items( array $categories ) {

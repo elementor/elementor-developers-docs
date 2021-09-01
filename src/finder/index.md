@@ -8,7 +8,7 @@ The finder component opens a popup search bar offering easy access to many pages
 
 ## Finder Structure
 
-The finder contains an array of [categories](./finder-categories). Each category has an array of **items**. Each item includes a label, a link and a set of keywords. When a user enters a search term, the finder filters the list of items based on the relevant keywords.
+The finder contains an array of [categories](./finder-categories). Each category contains a number of **items**. Each item includes a label, a link and a set of keywords. When a user enters a search term, the finder filters the list of items based on the relevant keywords.
 
 Learn more about the [finder structure](./finder-structure), its main class and the available methods.
 

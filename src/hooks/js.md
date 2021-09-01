@@ -1,6 +1,6 @@
 # JS Hooks
 
-Elementor has a number of JS hooks that allow you to change default behavior and even add new functionality.
+Elementor has a number of JS hooks that allow developers to change default behavior and even add new functionality.
 
 ## Frontend Filters
 
@@ -12,7 +12,7 @@ Applied to the menu anchor widget, sets a custom top distance
 
 | Argument    | Type            | Description                                                              |
 |-------------|-----------------|--------------------------------------------------------------------------|
-| `scrollTop` | _`integer`_     | The default scrollTop. It only takes the WordPress admin bar in account. |
+| `scrollTop` | _`integer`_     | The default scrollTop. It only takes the WordPress admin bar into account|
 
 #### Example
 
@@ -146,9 +146,9 @@ Applied when the settings panel is opened to edit an element.
 
 | Argument | Type       | Description                  |
 |----------|------------|------------------------------|
-| `panel`  | _`object`_ | The Panel object.            |
-| `model`  | _`object`_ | The Backbone model instance. |
-| `view`   | _`object`_ | The Backbone view instance.  |
+| `panel`  | _`object`_ | The panel object             |
+| `model`  | _`object`_ | The backbone model instance  |
+| `view`   | _`object`_ | The backbone view instance   |
 
 #### Example
 
@@ -175,9 +175,9 @@ Applied when the settings panel is opened to edit a specific element name.
 
 | Argument | Type       | Description                  |
 |----------|------------|------------------------------|
-| `panel`  | _`object`_ | The Panel object.            |
-| `model`  | _`object`_ | The Backbone model instance. |
-| `view`   | _`object`_ | The Backbone view instance.  |
+| `panel`  | _`object`_ | The panel object             |
+| `model`  | _`object`_ | The backbone model instance  |
+| `view`   | _`object`_ | The backbone view instance   |
 
 #### Example
 

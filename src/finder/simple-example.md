@@ -4,7 +4,7 @@ To see how easy it is to extend the finder, we are going to create a very simple
 
 ## Folder Structure
 
-This addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class.
+This addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class:
 
 ```
 elementor-finder-social-media/

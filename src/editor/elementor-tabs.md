@@ -17,7 +17,7 @@ Elementor has 6 pre-defined tabs used in different panels:
 | `layout`     | Layout     | `\Elementor\Controls_Manager::TAB_LAYOUT`      |
 | `settings`   | Settings   | `\Elementor\Controls_Manager::TAB_SETTINGS`    |
 
-The tabs are set in the `\Elementor\Controls_Manager` class. They are defined as constants and registered using the `init_tabs()` method, each constant containing the tab name and label.
+The tabs are set in the `\Elementor\Controls_Manager` class. They are defined as constants and registered using the `init_tabs()` method; each constant contains the tab name and label.
 
 ## Usage Examples
 
@@ -27,7 +27,7 @@ The [page settings panel](./page-settings-panel), on the other hand, displays co
 
 ## Using Tabs
 
-When we add a new control to the element panel, we use the inherited `add_control()` method. Before adding a new control, we need to create a new section using the `start_controls_section()` method. In this method we define the tab:
+When we add a new control to the element panel, we use the inherited `add_control()` method. Before adding a new control, we need to create a new section using the `start_controls_section()` method. We use this method to define the tab:
 
 ```php {5}
 $this->start_controls_section(
@@ -68,4 +68,4 @@ To add a custom icon above the tab label, you will need to add custom CSS:
 The official Elementor guidelines strongly recommend using one of the default tabs.
 :::
 
-That being said, this feature is documented as some addon authors use code workarounds that slow down the editor and, in some edge cases, break it.
+Nevertheless, this feature is documented as some addon authors use code workarounds that slow down the editor and, in some edge cases, break it.

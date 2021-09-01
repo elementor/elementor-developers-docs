@@ -14,8 +14,8 @@ Elementor has a hook that lets developers add new CSS rules to the element befor
 
 | Argument   | Type                               | Description                 |
 |------------|------------------------------------|-----------------------------|
-| `post_css` | _`\Elementor\Core\Files\CSS\Post`_ | The post CSS file instance. |
-| `element`  | _`\Elementor\Element_Base`_        | The element instance.       |
+| `post_css` | _`\Elementor\Core\Files\CSS\Post`_ | The post CSS file instance  |
+| `element`  | _`\Elementor\Element_Base`_        | The element instance        |
 
 ## Example
 

@@ -14,11 +14,11 @@ Elementor has a hook that filters frontend content. It is applied to the final H
 
 | Argument  | Type       | Description                                                |
 |-----------|------------|------------------------------------------------------------|
-| `content` | _`string`_ | The entire Elementor HTML output of the current page/post. |
+| `content` | _`string`_ | The entire Elementor HTML output of the current page/post |
 
 ## Check Whether or Not to Display the Content
 
-Membership addons can use this filter hook to check whether or not the user can see the page content.
+Membership addons can use this filter hook to check whether or not the user can see the page content:
 
 ```php
 /**

@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that lets developers add code before or after elements in the frontend. This hook can be applied to either either a single element or all the elements on a page and is applied to the final HTML output of the element(s).  Developers can use this hook to change the HTML output before Elementor displays it to the end-user.
+Elementor has a hook that lets developers add code before or after elements in the frontend. This hook can be applied to either a single element or all the elements on a page and is applied to the final HTML output of the element(s).  Developers can use this hook to change the HTML output before Elementor displays it to the end-user.
 
 ## Hook Details
 
@@ -19,7 +19,7 @@ Elementor has a hook that lets developers add code before or after elements in t
 
 | Argument  | Type                        | Description           |
 |-----------|-----------------------------|-----------------------|
-| `element` | _`\Elementor\Element_Base`_ | The element instance. |
+| `element` | _`\Elementor\Element_Base`_ | The element instance  |
 
 ## Example
 

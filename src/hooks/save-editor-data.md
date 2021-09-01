@@ -15,11 +15,11 @@ Elementor has a hook that lets developers run code after the user has saved data
 | Argument      | Type        | Description                   |
 |---------------|-------------|-------------------------------|
 | `post_id`     | _`integer`_ | The post ID.                  |
-| `editor_data` | _`array`_   | A list of Elementor elements. |
+| `editor_data` | _`array`_   | A list of Elementor elements  |
 
 ## Examples
 
-A good example of using this hook is when you want to log user activities. Each time the user saves Elementor data, you can log this activity.
+A good example of using this hook is when you want to log user activities. Each time the user saves Elementor data, you can log this activity:
 
 ```php
 /**

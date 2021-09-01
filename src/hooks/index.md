@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has many interesting hooks allowing developers to change default settings and even extend Elementor with new functionality.
+Elementor has many interesting hooks that let developers change default settings and even extend Elementor with new functionality.
 
 ## What are Hooks
 
@@ -12,4 +12,4 @@ Action hooks are used to run custom code when certain events occur. Filter hooks
 
 ## Elementor Hooks
 
-Elementor has both **filter hooks** and **action hooks**. It offers **PHP hooks** and **JS hooks**. You can find **frontend hooks** and **editor hooks**.
+Elementor has both **filter hooks** and **action hooks**. It also offers **PHP hooks** and **JS hooks**. These hooks come as both **frontend hooks** and **editor hooks**.

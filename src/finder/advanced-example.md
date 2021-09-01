@@ -1,10 +1,10 @@
 # Advanced Example
 
-For more advanced use cases we can will replace static links with core WordPress functions linking to WordPress dashboard settings panels.
+For a more advanced use-case, we'll replace static links with core WordPress functions, linking to the WordPress dashboard settings panels.
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class.
+The addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class:
 
 ```
 elementor-finder-wordpress-settings/

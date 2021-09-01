@@ -4,7 +4,7 @@ In this example, we'll build a full Elementor addon that sends and opens [Google
 
 ## Folder Structure
 
-This addon will contain several index files to prevent direct access to folders. The main file will register and enqueue a JS file in the editor, and the JS will add the page-speed action to the Elementor context menu.
+This addon will contain several index files to prevent direct access to folders. The main file will register and enqueue a JS file in the editor, and the JS will add the page-speed action to the Elementor context menu:
 
 ```
 elementor-page-speed-context-menu/

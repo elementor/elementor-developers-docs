@@ -14,8 +14,8 @@ Elementor has a hook that lets developers change a widget's content in the front
 
 | Argument  | Type                       | Description             |
 |-----------|----------------------------|-------------------------|
-| `content` | _`string`_                 | The widget HTML output. |
-| `widget`  | _`\Elementor\Widget_Base`_ | The widget instance.    |
+| `content` | _`string`_                 | The widget HTML output  |
+| `widget`  | _`\Elementor\Widget_Base`_ | The widget instance     |
 
 ## Change Widget Content
 

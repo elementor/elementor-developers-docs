@@ -13,7 +13,7 @@ Elementor has 3 main context menu types:
 2. **Empty column elements**
 3. "**Add new section / template**" 
 
-The **Element** context menu (section, column and widget) is the most common context menu. It covers the vast majority of users' and developers' needs. The other two types are specific use-cases displaying only actions relevant to those cases. We won't be covering them as they are internal use-cases and have no filter hooks allowing you to modify them.
+**Element** context menus (section, column and widget) are the most common. They cover the vast majority of users' and developers' needs. The other two types are specific use-cases, displaying only actions relevant to those cases. We won't be covering them as they are internal use-cases and have no filter hooks allowing you to modify them.
 
 ## JS Filter Hooks
 
@@ -25,7 +25,7 @@ This gives us three elements to choose from:
 * **Column** - `elements/column/contextMenuGroups`
 * **Widget** - `elements/widget/contextMenuGroups`
 
-**Note:** as mentioned above, we will only be focusing on the **Element** context menu.
+**Note:** as mentioned above, we will only be focusing on **element** context menus.
 
 ## Different Context Menus
 
@@ -45,4 +45,4 @@ Each element has its own set of actions as seen below:
 
 ### Add new section / template
 
-![Context Menu for add new section / template](/assets/img/context-menu-add-new-section-template.png)
+![Context menu for add new section / template](/assets/img/context-menu-add-new-section-template.png)
