@@ -1,6 +1,6 @@
 # Rendering Style
 
-A common [widget rendering](./widget-rendering) use case is using the control value to style different HTML elements. Usually used by controls from the "Content" tab.
+A common [widget rendering](./widget-rendering) use case is using the control value to style different HTML elements. Usually used by controls from the content tab.
 
 ## Styling Elements
 
