@@ -6,7 +6,7 @@ Elementor **widget categories** are used to organize the widgets into groups. Wh
 
 Categories are only displayed in the widgets panel if they have widgets assigned to them.
 
-External developers can create new categories and display their widgets separately, in a branded category.
+External developers can create new categories and display their widgets separately, in branded categories.
 
 ## Using Widget Categories
 
@@ -30,14 +30,14 @@ When you select which category to assign your widget to, you can select one of t
 
 | Label           | Name                   | Package      | Description                                     |
 |-----------------| ---------------------- | ------------ | ----------------------------------------------- |
-| **Basic**       | `basic`                | Elementor    | Category for basic widgets.                     |
-| **Pro**         | `pro-elements`         | ElementorPro | Category for advanced widgets.                  |
-| **General**     | `general`              | Elementor    | Category for general widgets.                   |
-| **Site**        | `theme-elements`       | ElementorPro | Category for site & theme widgets.              |
-| **WooCommerce** | `woocommerce-elements` | ElementorPro | Category for WooCommerce widgets.               |
-| **{Custom}**    |                        | {Extensions} | Custom categories added by external developers. |
-| **Pojo Themes** | `pojo`                 | Pojo Themes  | Category for Pojo widgets.                      |
-| **WordPress**   | `wordpress`            | WordPress    | Category for WordPress widgets.                 |
+| **Basic**       | `basic`                | Elementor    | Category for basic widgets                      |
+| **Pro**         | `pro-elements`         | ElementorPro | Category for advanced widgets                   |
+| **General**     | `general`              | Elementor    | Category for general widgets                    |
+| **Site**        | `theme-elements`       | ElementorPro | Category for site & theme widgets               |
+| **WooCommerce** | `woocommerce-elements` | ElementorPro | Category for WooCommerce widgets                |
+| **{Custom}**    |                        | {Extensions} | Custom categories added by external developers  |
+| **Pojo Themes** | `pojo`                 | Pojo Themes  | Category for Pojo widgets                       |
+| **WordPress**   | `wordpress`            | WordPress    | Category for WordPress widgets                  |
 
 Or you can register your own category.
 
