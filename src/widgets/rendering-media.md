@@ -1,6 +1,6 @@
 # Rendering Media
 
-Elementor lets you select an image using the media control defined in `\Elementor\Control_Media` class. There are two ways to render media files.
+Elementor lets you select an image using the media control defined in the `\Elementor\Control_Media` class. There are two ways to render media files.
 
 ## Simple Image Rendering
 
