@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Both **posts widgets** and **portfolio widgets** come with a robust query control that lets you select specific posts to show in the widget. But sometimes, you need more control over the query. For those situations, there is the custom query filter, which exposes the [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/) object, and allows you to customize the query in any way you want.
+Both **posts widgets** and **portfolio widgets** come with a robust query control that lets you select specific posts to show in the widget. But sometimes, you need more control over the query. For those situations, there is the custom query filter, which exposes the [WP_Query](https://developer.wordpress.org/reference/classes/wp_query/) object and allows you to customize the query in any way you want.
 
 ## Hook Details
 
@@ -46,7 +46,7 @@ add_action( 'elementor/query/{$query_id}', 'custom_query_callback' );
 
 ### Multiple Post Types in a Posts Widget
 
-Show multiple post types in a posts widget using the following code snippet:
+Use the following code snippet to show multiple post types in a posts widget:
 
 ```php
 /**
@@ -114,7 +114,7 @@ add_action( 'elementor/query/{$query_id}', 'my_query_by_different_order' );
 
 ### Show Posts with Multiple Statuses in a Posts Widget
 
-Use the following to show posts by a specific post statuses.
+Use the following to show posts by specific post statuses:
 
 NOTE: Using this snippet may result in displaying private data. Please use with caution.
 
@@ -133,4 +133,4 @@ add_action( 'elementor/query/{$query_id}', 'my_query_by_post_status' );
 
 ## Notes
 
-You may need to refresh the [editor](/editor/) to see the effect of the filter.
+You may need to refresh the [editor](/editor/) to see the filter's effect.
