@@ -6,15 +6,15 @@ Elementor includes a wide array of controls out-of-the-box. Each control has a c
 
 Elementor has several base controls extending the abstract base class, each built to serve a different purpose:
 
-* [UI Controls](./ui-controls) – Control for creating UI controls visible only in the panel, they don’t return any value.
-* [Data_Controls](./data-controls) – Control for creating data controls that returns a single value.
-* [Multi Value Controls](./multi-value-controls) – Control for creating controls that returns multiple values.
-* [Unit Controls](./unit-controls) – Control for creating unit control that returns unit based values.
+* [UI Controls](./ui-controls) – Control for creating UI controls visible only in the panel. These controls don’t return any value.
+* [Data_Controls](./data-controls) – Control for creating data controls that return a single value.
+* [Multi Value Controls](./multi-value-controls) – Control for creating controls that return multiple values.
+* [Unit Controls](./unit-controls) – Control for creating unit controls that return unit-based values.
 * [Group Controls](./group-controls) – Control for creating group controls that group together several regular controls.
 
 ## Inheritance
 
-Behind the since, the abstract base class above are created by extending the `\Elementor\Base_Control` abstract class an inherit its properties and methods. All other controls you see in the editor extend those base controls.
+Behind the scenes, the abstract base classes above are created by extending the `\Elementor\Base_Control` abstract class and inherit its properties and methods. All other controls you see in the editor extend those base controls.
 
 ```
 Base_Control
