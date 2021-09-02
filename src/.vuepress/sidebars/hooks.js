@@ -12,6 +12,7 @@ module.exports = [
     collapsable: false,
     sidebarDepth: -1,
     children: [
+      'php',
       'placeholder-image',
       'frontend-content',
       'render-frontend-elements',
