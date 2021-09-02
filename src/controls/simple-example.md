@@ -4,7 +4,7 @@ Let's build an addon that adds a new control to Elementor. The control will disp
 
 ## Folder Structure
 
-The addon will have several index files to prevent direct access to folders, the main file will register the control and a simple widget, to see the control in action.
+The addon will have several index files to prevent direct access to folders, while the main file will register the control, along with a simple widget to test the control.
 
 ```
 elementor-currency-control/
