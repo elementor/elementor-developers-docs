@@ -1,12 +1,12 @@
 # Control Values
 
-You can set custom default value for your control. If, for example, you added new field, you can define their default value.
+You can set custom default values for your control. For example, if you add a new field, you can define its default value.
 
 ## Control Default Value
 
-Set the default values to display when initializing the control. Please note that some controls return single value (strings, numbers bool etc.), while other controls return arrays. Make sure you set a default value with the same data type.
+Set the default values to display when initializing the control. Note that some controls return a single value (strings, numbers, bool etc.), while other controls return arrays. Make sure you set a default value with the same data type.
 
-Settings default a value for a [data control](./data-controls) which return a single value:
+The following will set a default value for a [data control](./data-controls), which will return a single value:
 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Data_Control {

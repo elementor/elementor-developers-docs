@@ -1,18 +1,18 @@
 # Group Controls
 
-Group control are used to group together several regular controls and return them in a small popup in the editor. This control helps improve UX and display a large number of controls in single line.
+Group controls are used to group together several regular controls and return them as a small popup in the editor. This helps improve UX by displaying a large number of controls in single line.
 
 ## Using Group Controls
 
-The following controls come with Elementor:
+The following controls are included in Elementor:
 
 * [Typography](./classes/group-control-typography) – Font size, font family, font weight, text transform, font style, line height and letter spacing.
 * [Text Shadow](./classes/group-control-text-shadow) – Add a shadow effect to texts.
 * [Box Shadow](./classes/group-control-box-shadow) – Add a shadow effect to elements.
 * [Border](./classes/group-control-border) – Border type, border width and border color.
 * [Background](./classes/group-control-background) – Background color, background image, background gradient or background video.
-* [Image Size](./classes/group-control-image-size) – Select image sizes (thumbnail, medium, medium_large, large) or custom dimension.
-* [CSS Filter](./classes/group-control-css-filter) – Apply CSS filters like blur, brightens, contrast, saturation or hue.
+* [Image Size](./classes/group-control-image-size) – Select image sizes (thumbnail, medium, medium_large, large) or custom dimensions.
+* [CSS Filter](./classes/group-control-css-filter) – Apply CSS filters like blur, brighten, contrast, saturation or hue.
 
 ## Extending Group Controls
 

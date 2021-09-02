@@ -1,8 +1,8 @@
 # Control Structure
 
-Creating a custom Control is a task reserved for advanced Elementor developers, you should be well familiar with the code base before creating your own controls. The first place to start with is the `Base_Control` class and all the inner methods, then you should see how Elementor creates different controls implementing the base methods with custom needs.
+Creating custom controls is a task reserved for advanced Elementor developers who are very familiar with the code base. The process starts with learning the `Base_Control` class, along with its inner methods. This will allow you to understand how Elementor creates different controls and how you can customize these base methods.
 
-Each control needs to have a two basic methods, the control unique name and the HTML code that displays the field in the editor. More advanced controls can set custom settings, define default values, enqueue scripts and style, and do almost everything your imagination can think of.
+Each control must have a two basic methods - a unique name and the HTML code that displays the field in the editor. More advanced controls can set custom settings, define default values, enqueue scripts and styles, and much more.
 
 ## Extending Controls
 
@@ -20,11 +20,11 @@ class Elementor_Test_Control extends \Elementor\Base_Data_Control {
 }
 ```
 
-This way your class will inherits all the methods from the class you extend.
+This way your class will inherit all the methods from the class you extend.
 
 ## Control Methods
 
-A simple Control requires only two methods, the control type and the template:
+A simple control only requires two methods, the control type and the template:
 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
@@ -54,7 +54,7 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 }
 ```
 
-The methods can be divided into the following groups:
+These methods can be divided into the following groups:
 
 * [Settings](./control-settings/)
 * [Template](./control-template/)

@@ -1,6 +1,6 @@
 # Dynamic Tags Data
 
-Each dynamic tag requires basic information like the unique id, title, group and category.
+Each dynamic tag requires basic information like the unique ID, title, group and category.
 
 ## Data Methods
 

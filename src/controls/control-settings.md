@@ -1,24 +1,24 @@
 # Control Settings
 
-**Control Settings** is the place where you set the default of your control like the label, description, whether to show a separator, hide the label, etc.
+**Control settings** allow developers to set defaults for controls such as the label, description, whether or not to show a separator, hide the label, etc.
 
 ## Available Settings
 
-Each control has a set of default settings that determine the structure and the design of the control in the panel. Those default setting are defined in the `$_base_settings` property.  Here is the list of default settings that all control have in common:
+Each control has default settings that determine the structure and design of the control in the panel. These default setting are defined in the `$_base_settings` property.  Following, is the list of default settings which all controls have in common:
 
 | Name          | Type       | Default   | Description                                      |
 |---------------|------------|-----------|--------------------------------------------------|
-| `label`       | _`string`_ |           | The label that appears above of the field.       |
-| `description` | _`string`_ |           | The description that appears below the field.    |
-| `show_label`  | _`bool`_   | `true`    | Whether to display the label.                    |
-| `label_block` | _`bool`_   | `false`   | Whether to display the label in a separate line. |
+| `label`       | _`string`_ |           | The label that appears above of the field        |
+| `description` | _`string`_ |           | The description that appears below the field     |
+| `show_label`  | _`bool`_   | `true`    | Whether or not to display the label              |
+| `label_block` | _`bool`_   | `false`   | Whether or not to display the label in a separate line  |
 | `separator`   | _`string`_ | `default` | Set the position of the control separator. Available values are `default`, `before`, `after` and `none`. `default` will position the separator depending on the control type. `before` / `after` will position the separator before/after the control. `none` will hide the separator. |
 
 Each control can override the default settings and add new custom settings.
 
 ## Settings Method
 
-If the control will use the default settings, you don't need to add it to your class. If you would like to change the default settings or add new ones, use the `get_default_settings()` method. This method should return an array:
+If a control uses the default settings, you don't need to add it to your class. If you would like to change the default settings or add new ones, use the `get_default_settings()` method. This method should return an array:
 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
@@ -37,11 +37,11 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 }
 ```
 
-Later on, you can utilize those settings when generating [Control Template](./control-template/).
+Later on, you can utilize those settings when generating a [control template](./control-template/).
 
 ## Dynamic Tags
 
-You can also support [Dynamic Tags](/dynamic-tags/) in your controls. To use this feature in your controls you add the `dynamic` setting:
+You can also support [dynamic tags](/dynamic-tags/) in your controls. To use this feature in your controls, add the `dynamic` setting:
 
 ```php {9-12}
 class Elementor_Test_Control extends \Elementor\Base_Control {

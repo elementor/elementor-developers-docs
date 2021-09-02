@@ -4,10 +4,10 @@ Unit controls are used to return unit based values.
 
 ## Using Unit Controls
 
-The following controls come with Elementor:
+The following controls are included in Elementor:
 
 * [Slider](./classes/control-slider) – A draggable scale to choose between a range of numeric values.
-* [Dimensions](./classes/control-dimensions) – A component with 4 number fields, suitable for setting top/right/bottom/left settings.
+* [Dimensions](./classes/control-dimensions) – A component with four number fields, suitable for setting top/right/bottom/left settings.
 
 ## Extending Unit Controls
 
