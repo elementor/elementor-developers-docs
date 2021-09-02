@@ -7,7 +7,7 @@ tagline: Resources and tutorials for Elementor developer
 ---
 
 <p class="action">
-  <a href="/docs/" class="action-button">Get Started</a>
+  <a href="/getting-started/" class="action-button">Get Started</a>
 </p>
 
 <div class="user-types">
@@ -40,8 +40,8 @@ tagline: Resources and tutorials for Elementor developer
     <h2>Get Started</h2>
     <p>The developers docs is a great place to learn how to extend Elementor, creating addons and extensions.</p>
     <ul>
-      <li><a href="/docs/">Getting Started</a></li>
-      <li><a href="/docs/extending-elementor">Extending Elementor</a></li>
+      <li><a href="/getting-started/">Getting Started</a></li>
+      <li><a href="/getting-started/extending-elementor">Extending Elementor</a></li>
     </ul>
   </div>
 
