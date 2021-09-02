@@ -1,11 +1,11 @@
 # Control Template
 
-The template generates the final HTML displayed in the Editor. The template uses JS to return data from the settings using the `data` JS object.
+The template generates the final HTML displayed in the editor. The template uses JS to return data from the settings using the `data` JS object.
 
 ## Template Method
 
-You can use the same JS templates to style the user interface. To retrieve settings 
-With JS templates we don’t really need to retrieve the data using a special function, it's done by Elementor for us. The data from the controls stored in `data` variable.
+You can use the same JS templates to style the user interface. 
+With JS templates we don’t need to retrieve data using a special function, Elementor does it for us. The data from the controls is stored in the `data` variable:
 
 ```php
 <?php
