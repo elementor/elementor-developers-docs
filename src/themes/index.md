@@ -6,7 +6,7 @@
 
 ## Overview
 
-Before the release of **Elementor Pro 2.0**, Elementor was a page-builder only affecting [the_content()](https://developer.wordpress.org/reference/functions/the_content/) of a single page. Elementor could not set global headers, global footers, design custom archive pages, search results, author pages, 404 pages etc.
+Before the release of **Elementor Pro 2.0**, Elementor was a page-builder, only affecting [the_content()](https://developer.wordpress.org/reference/functions/the_content/) of a single page. Elementor could not set global headers, global footers, design custom archive pages, search results, author pages, 404 pages etc.
 
 The new theme builder functionality changed everything! It has greatly empowered users. They no longer have to rely on pre-designed themes, as they can design their own layouts using simple drag-and-drop functionality without any code.
 
