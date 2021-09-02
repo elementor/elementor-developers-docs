@@ -1,10 +1,10 @@
 # Control Enqueue
 
-Controls can register and enqueue scripts & styles used by control.
+Controls can register and enqueue scripts & styles used by the control.
 
 ## Enqueue Method
 
-If you need to use an external library or some custom JS/CSS, you can do that by registering scripts in `enqueue()` method.
+If you need to use an external library or some custom JS/CSS, you can do that by registering scripts using the `enqueue()` method:
 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
