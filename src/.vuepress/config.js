@@ -60,7 +60,7 @@ module.exports = {
     nav: [
       {
         text: 'Getting Started',
-        link: '/getting-started/writing-your-first-addon',
+        link: '/getting-started/',
       },
       {
         text: 'Internals',
