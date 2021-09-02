@@ -1,5 +1,28 @@
-# Simple Example
+# Addon Example
 
+
+
+## Folders Structure
+
+It's recommended to keep similar files together. For example, you should group together CSS files and JS files. This rule applied on file types and functionality - "widgets" should be grouped together.
+
+Here is a reference for a recommended addon folder structure:
+
+```
+elementor-test-extension/
+|
+├─ assets/
+|  ├─ css/
+|  └─ js/
+|
+├─ includes/
+|  ├─ controls/
+|  └─ widgets/
+|
+├─ elementor-test-extension.php
+└─ plugin.php
+
+```
 
 
 ## The Entire Code
@@ -48,7 +71,7 @@ final class Elementor_Test_Extension {
 	 * @since 1.0.0
 	 * @var string Minimum Elementor version required to run the plugin.
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '3.2.0';
+	const MINIMUM_ELEMENTOR_VERSION = '3.5.0';
 
 	/**
 	 * Minimum PHP Version
@@ -56,7 +79,7 @@ final class Elementor_Test_Extension {
 	 * @since 1.0.0
 	 * @var string Minimum PHP version required to run the plugin.
 	 */
-	const MINIMUM_PHP_VERSION = '7.0';
+	const MINIMUM_PHP_VERSION = '7.3';
 
 	/**
 	 * Instance

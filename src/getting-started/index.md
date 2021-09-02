@@ -22,7 +22,7 @@ You can zip the entire `elementor-addon` folder and upload the zip file to your 
 
 ## Addon files
 
-The add on will have several files. The main file `elementor-addon.php` will register the widgets. The `hello-world-widget-1.php` and `hello-world-widget-2.php` files which will have the widgets functionality.
+The addon will have several files. The main file `elementor-addon.php` will register the widgets. The `hello-world-widget-1.php` and `hello-world-widget-2.php` files which will have the widgets functionality.
 
 ### Main Addon File
 
@@ -52,11 +52,13 @@ add_action( 'elementor/widgets/widgets_registered', 'register_hello_world_widget
 
 The header comments are a basic way WordPress uses to provide information about plugins.
 
-![Plugins screen](/assets/img/elementor-addon-1.png)
+![Plugins screen](/assets/img/elementor-addon-plugin-screen.png)
 
 The widget registration function is the way Elementor registers new widgets. We use the `elementor/widgets/widgets_registered` lifecycle hook and run the `register_hello_world_widget()` function.
 
 The function first loads the two widget files and then registers the widget classes using the widget manager.
+
+![The two widgets in the widgets panel](/assets/img/elementor-addon-widgets.png)
 
 ### 1st Widget
 

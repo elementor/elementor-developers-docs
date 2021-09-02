@@ -21,12 +21,25 @@ plugin-name/
 |  └─ js/
 |
 ├─ includes/
-|  ├─ context-menu/
 |  ├─ controls/
-|  ├─ forms/
+|  ├─ dynamic-tags/
+|  ├─ finder/
 |  └─ widgets/
 |
-├─ index.php
-├─ plugin-name.php
-└─ readme.txt
+└─ plugin-name.php
+```
+
+When creating a single component addon, you can use a simpler folder structure:
+
+```
+plugin-name/
+|
+├─ assets/
+|  ├─ images/
+|  ├─ css/
+|  └─ js/
+|
+├─ widgets/
+|
+└─ plugin-name.php
 ```

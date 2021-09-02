@@ -1,6 +1,6 @@
 # Extending Elementor
 
-Elementor addon is a basically a WordPress Plugin that adds functionality to Elementor. Before you go about creating an Elementor addon you need to have a background in creating WordPress plugins.
+Elementor Addon is a basically a WordPress plugin that adds functionality to Elementor. Before you go about creating an Elementor addon you need to have a background in creating WordPress plugins.
 
 ## WordPress Plugin
 
@@ -17,13 +17,13 @@ To start with, you need to create a simple WordPress Plugins focused on Elemento
 * [Plugin Structure](./plugin-structure)
 * [Plugin Compatibility](./plugin-compatibility)
 * [Register Files](./register-files)
-* [Simple Example](./simple-example)
+* [Addon Example](./addon-example)
 
 Only when you finish building a WordPress wrapper, you can start extending Elementor components. How can you extend Elementor? See the following tutorials:
 
-* [Add new Elementor Widgets](/widgets/)
-* [Extend Elementor Finder](/finder/)
-* [Extend the Context Menu](/context-menu/)
-* [Create custom Controls](/controls/)
-* [Extend Elementor Forms](/forms/)
+* [Create new widgets](/widgets/)
+* [Create new controls](/controls/)
+* [Create new dynamic tags](/dynamic-tags/)
+* [Create new finder categories](/finder/)
+* [Extend the context menu](/context-menu/)
 * And much more...

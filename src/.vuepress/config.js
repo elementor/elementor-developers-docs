@@ -2,11 +2,11 @@ const { description } = require('../../package');
 
 const contextMenuSidebar = require('./sidebars/context-menu');
 const controlsSidebar = require('./sidebars/controls');
-const docsSidebar = require('./sidebars/docs');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
 const editorSidebar = require('./sidebars/editor');
 const finderSidebar = require('./sidebars/finder');
 const formsSidebar = require('./sidebars/forms');
+const gettingStartedSidebar = require('./sidebars/getting-started');
 const hooksSidebar = require('./sidebars/hooks');
 const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
@@ -60,7 +60,7 @@ module.exports = {
     nav: [
       {
         text: 'Getting Started',
-        link: '/docs/',
+        link: '/getting-started/writing-your-first-addon',
       },
       {
         text: 'Internals',
@@ -120,9 +120,9 @@ module.exports = {
     sidebar: {
       '/context-menu/': contextMenuSidebar,
       '/controls/': controlsSidebar,
-      '/docs/': docsSidebar,
       '/dynamic-tags/': dynamicTagsSidebar,
       '/editor/': editorSidebar,
+      '/getting-started/': gettingStartedSidebar,
       '/finder/': finderSidebar,
       '/forms/': formsSidebar,
       '/hooks/': hooksSidebar,
