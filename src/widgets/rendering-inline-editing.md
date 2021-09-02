@@ -1,6 +1,6 @@
 # Rendering Inline Editing
 
-When developing widgets, developers can define which controls will be inline editable in both the editor panel and preview areas.
+When developing widgets, developers can define which controls will be inline editable in both the editor panel and preview area.
 
 <iframe width="560" height="315"src="https://www.youtube.com/embed/miNu2oONgYI" frameborder="0" allowfullscreen></iframe>
 
