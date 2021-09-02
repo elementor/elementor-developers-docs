@@ -12,13 +12,13 @@ Addon developers can create a wide range of dynamic tags, and can even use exter
 
 ## How it Works
 
-Dynamic tags interact with [controls](/controls/) by extending the control functionality. They turn static controls into smart components. With dynamic tags, users can use dynamically generated data on their sites.
+Dynamic tags interact with [controls](/controls/) by extending the control functionality. They turn static controls into smart components. With dynamic tags, users can leverage dynamically generated data on their sites.
 
 You could say that dynamic tags are like functions, the user can define custom parameters to change the output based on different factors.
 
 ## Elementor Pro
 
-The dynamic tags functionality is defined in Elementor's core, but the basic version of Elementor does not support active dynamic tags. These is a feature of Elementor Pro, which includes dozens of dynamic tags to choose from.
+The dynamic tags functionality is defined in Elementor's core, but the basic version of Elementor does not support active dynamic tags. They are a feature of Elementor Pro, which includes dozens of dynamic tags to choose from.
 
 ## Creating Dynamic Tags
 
