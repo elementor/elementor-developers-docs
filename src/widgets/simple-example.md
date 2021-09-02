@@ -1,6 +1,6 @@
 # Simple Example
 
-Putting all these pieces together, we are going to create a simple Elementor widget which will use the [native oEmbed functionality](https://developer.wordpress.org/reference/functions/wp_oembed_get/) of WordPress to auto-embed content from external sites using simple URLs.
+Putting all these pieces together, we're going to create a simple Elementor widget which will use the [native oEmbed functionality](https://developer.wordpress.org/reference/functions/wp_oembed_get/) of WordPress to auto-embed content from external sites using simple URLs.
 
 ## Folder Structure
 
