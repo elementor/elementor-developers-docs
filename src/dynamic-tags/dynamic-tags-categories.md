@@ -10,14 +10,14 @@ Elementor Pro has the following predefined dynamic tag category constants:
 
 | Constant             | Value       | Info                                 |
 |----------------------|-------------|--------------------------------------|
-| `NUMBER_CATEGORY`    | `number`    | Dynamic tags for number controls.    |
-| `TEXT_CATEGORY`      | `text`      | Dynamic tags for text controls.      |
-| `URL_CATEGORY`       | `url`       | Dynamic tags for URL controls.       |
-| `COLOR_CATEGORY`     | `color`     | Dynamic tags for color controls.     |
-| `IMAGE_CATEGORY`     | `image`     | Dynamic tags for image controls.     |
-| `MEDIA_CATEGORY`     | `media`     | Dynamic tags for media controls.     |
-| `GALLERY_CATEGORY`   | `gallery`   | Dynamic tags for gallery controls.   |
-| `POST_META_CATEGORY` | `post_meta` | Dynamic tags for post meta controls. |
+| `NUMBER_CATEGORY`    | `number`    | Dynamic tags for number controls     |
+| `TEXT_CATEGORY`      | `text`      | Dynamic tags for text controls       |
+| `URL_CATEGORY`       | `url`       | Dynamic tags for URL controls        |
+| `COLOR_CATEGORY`     | `color`     | Dynamic tags for color controls      |
+| `IMAGE_CATEGORY`     | `image`     | Dynamic tags for image controls      |
+| `MEDIA_CATEGORY`     | `media`     | Dynamic tags for media controls      |
+| `GALLERY_CATEGORY`   | `gallery`   | Dynamic tags for gallery controls    |
+| `POST_META_CATEGORY` | `post_meta` | Dynamic tags for post meta controls  |
 
 ::: warning Please Note
 In older Elementor versions, you could define the returned value as simple text like `url`, `number`, `text`, `media` etc. As Elementor has evolved, it replaced the text based values with predefined uppercase `constants`. We strongly recommend you replace old text base values with new category constants.
@@ -55,7 +55,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 ## Using Categories in Controls
 
-On the other hand, when you create [controls](/controls/) you need to support dynamic tags when defining the [control settings](/controls/control-settings) through the `get_default_settings()` method and choose the category to display:
+On the other hand, when you create [controls](/controls/), you need to support dynamic tags when defining the [control settings](/controls/control-settings) through the `get_default_settings()` method and choose the category to display:
 
 ```php {13-19}
 class Elementor_Test_Control extends \Elementor\Base_Control {
