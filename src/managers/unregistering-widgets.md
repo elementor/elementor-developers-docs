@@ -1,6 +1,6 @@
 # Unregistering Widgets
 
-Developers can remove [Elementor widgets](/widgets/) from the list of registered widgets. This is done by hooking to the widgets manager and un-register specific widgets by passing widget name.
+Developers can remove [Elementor widgets](/widgets/) from the list of registered widgets. This is done by hooking to the widget manager and unregistering specific widgets by passing the widget name.
 
 ## Unregistering Existing Widgets
 
@@ -23,4 +23,4 @@ function unregister_widgets( $widgets_manager ) {
 add_action( 'elementor/widgets/register', 'unregister_widgets' );
 ```
 
-This hooks to the `elementor/widgets/register` action hook which holds the widgets manager. The manager then unregisters widgets by passing the widget name.
+This hooks to the `elementor/widgets/register` action hook which holds the widget manager. The manager then unregisters widgets by passing the widget name.
