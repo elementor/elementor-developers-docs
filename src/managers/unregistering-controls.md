@@ -1,6 +1,6 @@
 # Unregistering Controls
 
-Developers can remove [Elementor controls](/controls/) from the list of registered controls. This is done by hooking to the controls manager and un-register specific controls by passing control id.
+Developers can remove [Elementor controls](/controls/) from the list of registered controls. This is done by hooking to the control manager and unregistering specific controls by passing the control ID.
 
 ## Unregistering Existing Controls
 
@@ -23,4 +23,4 @@ function unregister_controls( $controls_manager ) {
 add_action( 'elementor/controls/register', 'unregister_controls' );
 ```
 
-This hooks to the `elementor/controls/register` action hook which holds the controls manager. The manager then unregisters controls by passing the control id.
+This hooks to the `elementor/controls/register` action hook which holds the control manager. The manager then unregisters controls by passing the control id.
