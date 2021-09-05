@@ -4,7 +4,7 @@ When you create new [Elementor controls](/controls/) you must register them. Thi
 
 ## Registering New Controls
 
-As of Elementor 3.5, a new registration system was implemented and developers should use the following code to register new controls:
+As of Elementor 3.5, developers should use the following code to register new controls:
 
 ```php
 /**
@@ -26,7 +26,7 @@ function register_new_controls( $controls_manager ) {
 add_action( 'elementor/controls/register', 'register_new_controls' );
 ```
 
-This hooks to the new `elementor/controls/register` action hook which holds the controls manager. The manager then registers the new controls by passing the control instances.
+This hooks to the `elementor/controls/register` action hook which holds the controls manager. The manager then registers the new controls by passing the control instances.
 
 ## Registering New Controls in Previous Versions
 
