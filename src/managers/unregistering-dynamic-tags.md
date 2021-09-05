@@ -1,6 +1,6 @@
 # Unregistering Dynamic Tags
 
-Developers can remove [dynamic tags](/dynamic-tags/) from the list of registered dynamic tags. This is done by hooking to the dynamic tags manager and un-register specific dynamic tags by passing dynamic tag name.
+Developers can remove [dynamic tags](/dynamic-tags/) from the list of registered dynamic tags. This is done by hooking to the dynamic tags manager and unregistering specific dynamic tags by passing dynamic tag name.
 
 ## Unregistering Existing Dynamic Tags
 
@@ -23,4 +23,4 @@ function register_dynamic_tags( $dynamic_tags_manager ) {
 add_action( 'elementor/dynamic_tags/register', 'register_dynamic_tags' );
 ```
 
-This hooks to the `elementor/dynamic_tags/register` action hook which holds the dynamic tags manager. The manager then unregisters dynamic tags by passing the dynamic tag name.
+This hooks to the `elementor/dynamic_tags/register` action hook which holds the dynamic tags manager. The manager then unregisters the dynamic tag by passing the dynamic tag name.
