@@ -1,6 +1,6 @@
 # Registering Widgets
 
-When you create new [Elementor widgets](/widgets/), you must register them. This is done by hooking to the `elementor/widgets/widgets_registered` action hook.
+When you create new [Elementor widgets](/widgets/), you must register them. This is done by hooking to the registration hook in the widgets manager and passing a new widget instance.
 
 ## Registering New Widgets
 
@@ -28,10 +28,9 @@ add_action( 'elementor/widgets/register', 'register_new_widgets' );
 
 This hooks to the new `elementor/widgets/register` action hook which holds the widgets manager. The manager then registers new widgets by passing the widget instance.
 
-
 ## Registering New Widgets in Previous Versions
 
-For earlier versions of Elementor, register new widgets using the following code:
+For earlier versions, prior to Elementor 3.5, register new widgets using the following code:
 
 ```php
 /**
@@ -52,4 +51,3 @@ add_action( 'elementor/widgets/widgets_registered', 'register_new_widgets' );
 ```
 
 This hooks the `elementor/widgets/widgets_registered` action hook and passes a callback function importing the new widget files and registering them with the widget manager.
-

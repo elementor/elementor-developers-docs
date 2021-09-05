@@ -1,6 +1,6 @@
 # Registering Dynamic Tags
 
-When you create new [dynamic tags](/dynamic-tags/), you must register them. This is done by hooking to the `elementor/dynamic_tags/register_tags` action hook.
+When you create new [dynamic tags](/dynamic-tags/), you must register them. This is done by hooking to the registration hook in the dynamic tags manager and passing a new dynamic tag instance.
 
 ## Registering New Dynamic Tags
 
@@ -28,11 +28,9 @@ add_action( 'elementor/dynamic_tags/register', 'register_new_dynamic_tags' );
 
 This hooks to the new `elementor/dynamic_tags/register` action hook which holds the dynamic tags manager. The manager registers new dynamic tags by passing the dynamic tag instance.
 
-
-
 ## Registering New Dynamic Tags in Previous Versions
 
-For earlier versions of Elementor, register new dynamic tags using the following code:
+For earlier versions, prior to Elementor 3.5, register new dynamic tags using the following code:
 
 ```php
 /**
@@ -55,4 +53,3 @@ add_action( 'elementor/dynamic_tags/register_tags', 'register_new_dynamic_tags' 
 ```
 
 This hooks to the `elementor/dynamic_tags/register_tags` action hook that holds the `$dynamic_tags_manager` parameter, passing a callback function importing the new dynamic tag files, and registering them with the dynamic tags manager.
-

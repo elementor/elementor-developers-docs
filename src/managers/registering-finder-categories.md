@@ -1,6 +1,6 @@
 # Registering Finder Categories
 
-When you create new [finder categories](/finder/) you must register them. This is done by hooking to the `elementor/finder/categories/init` action hook.
+When you create new [finder categories](/finder/) you must register them. This is done by hooking to the registration hook in the finder manager and passing a new finder category instance.
 
 ## Registering New Finder Categories
 
@@ -28,10 +28,9 @@ add_action( 'elementor/finder/categories/register', 'register_new_finder_categor
 
 This hooks to the new `elementor/finder/categories/register` action hook that holds the finder categories manager. The manager then registers new finder categories by passing the finder category instance.
 
-
 ## Registering New Finder Categories in Previous Versions
 
-For earlier versions of Elementor, register new finder categories using the following code:
+For earlier versions, prior to Elementor 3.5, register new finder categories using the following code:
 
 ```php
 /**
@@ -54,4 +53,3 @@ add_action( 'elementor/finder/categories/init', 'register_new_finder_categories'
 ```
 
 This hooks to the `elementor/finder/categories/init` action hook holding the `$categories_manager` parameter, passing a callback function that imports the new finder files, and registers them with the finder categories manager.
-
