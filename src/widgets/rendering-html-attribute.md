@@ -55,7 +55,7 @@ protected function content_template() {
 		}
 	);
 	#>
-	<div ' + view.getRenderAttributeString( 'wrapper' ) + '> ... </div>
+	<div {{{ view.getRenderAttributeString( 'wrapper' ) }}}> ... </div>
 	<?php
 }
 ```
