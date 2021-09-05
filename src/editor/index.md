@@ -20,5 +20,5 @@ The panel can be compared to a sideboard and its functionality will depend on wh
 * [User Preferences Panel](./user-preferences-panel)
 * [Page Settings Panel](./page-settings-panel)
 * [History Panel](./history-panel)
-* [Widgets Panel](./widgets-panel)
+* [Widget Panel](./widgets-panel)
 
