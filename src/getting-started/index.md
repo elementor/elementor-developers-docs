@@ -62,7 +62,7 @@ The function first loads the two widget files and then registers the widget clas
 
 ### 1st Widget
 
-**hello-world-widget-1.php**
+**widgets/hello-world-widget-1.php**
 
 ```php
 <?php
@@ -102,7 +102,7 @@ This a simple widget. It only prints "Hello World" text on screen.
 
 ### 2nd Widget
 
-**hello-world-widget-2.php**
+**widgets/hello-world-widget-2.php**
 
 ```php
 <?php
