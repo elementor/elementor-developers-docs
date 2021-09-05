@@ -23,4 +23,4 @@ function unregister_controls( $controls_manager ) {
 add_action( 'elementor/controls/register', 'unregister_controls' );
 ```
 
-This hooks to the `elementor/controls/register` action hook which holds the control manager. The manager then unregisters controls by passing the control id.
+This hooks to the `elementor/controls/register` action hook which holds the control manager. The manager then unregisters controls by passing the control ID.
