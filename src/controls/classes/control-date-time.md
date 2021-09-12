@@ -86,7 +86,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -94,7 +94,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'due_date',
 			[
-				'label' => __( 'Due Date', 'plugin-name' ),
+				'label' => esc_html__( 'Due Date', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::DATE_TIME,
 			]
 		);
@@ -108,7 +108,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$due_date = strtotime( $this->get_settings( 'due_date' ) );
 		$due_date_in_days = $due_date / DAY_IN_SECONDS;
 		?>
-		<p><?php printf( __( 'Something will happen in %s days.', 'plugin-name' ), $due_date_in_days ); ?></p>
+		<p><?php printf( esc_html__( 'Something will happen in %s days.', 'plugin-name' ), $due_date_in_days ); ?></p>
 		<?php
 	}
 

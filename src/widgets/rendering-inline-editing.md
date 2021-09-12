@@ -63,7 +63,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -71,27 +71,27 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'Title', 'plugin-name' ),
+				'default' => esc_html__( 'Title', 'plugin-name' ),
 			]
 		);
 
 		$this->add_control(
 			'description',
 			[
-				'label' => __( 'Description', 'plugin-name' ),
+				'label' => esc_html__( 'Description', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => __( 'Description', 'plugin-name' ),
+				'default' => esc_html__( 'Description', 'plugin-name' ),
 			]
 		);
 
 		$this->add_control(
 			'content',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::WYSIWYG,
-				'default' => __( 'Content', 'plugin-name' ),
+				'default' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 

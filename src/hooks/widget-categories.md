@@ -41,14 +41,14 @@ function add_elementor_widget_categories( $elements_manager ) {
 	$elements_manager->add_category(
 		'first-category',
 		[
-			'title' => __( 'First Category', 'plugin-name' ),
+			'title' => esc_html__( 'First Category', 'plugin-name' ),
 			'icon' => 'fa fa-plug',
 		]
 	);
 	$elements_manager->add_category(
 		'second-category',
 		[
-			'title' => __( 'Second Category', 'plugin-name' ),
+			'title' => esc_html__( 'Second Category', 'plugin-name' ),
 			'icon' => 'fa fa-plug',
 		]
 	);

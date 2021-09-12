@@ -59,7 +59,7 @@ function register_site_dynamic_tag_group( $dynamic_tags ) {
 	\Elementor\Plugin::instance()->dynamic_tags->register_group(
 		'site',
 		[
-			'title' => __( 'Site', 'elementor-acf-average-dynamic-tag' )
+			'title' => esc_html__( 'Site', 'elementor-acf-average-dynamic-tag' )
 		]
 	);
 
@@ -131,7 +131,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return __( 'ACF Average', 'elementor-acf-average-dynamic-tag' );
+		return esc_html__( 'ACF Average', 'elementor-acf-average-dynamic-tag' );
 	}
 
 	/**
@@ -173,7 +173,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 		$this->add_control(
 			'fields',
 			[
-				'label' => __( 'Fields', 'elementor-acf-average-dynamic-tag' ),
+				'label' => esc_html__( 'Fields', 'elementor-acf-average-dynamic-tag' ),
 				'type' => 'text',
 			]
 		);

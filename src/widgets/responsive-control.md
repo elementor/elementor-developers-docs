@@ -10,7 +10,7 @@ The following will add a new responsive control:
 $this->add_responsive_control(
 	'control-name',
 	[
-		'label' => __( 'Spacing', 'plugin-name' ),
+		'label' => esc_html__( 'Spacing', 'plugin-name' ),
 		'type' => \Elementor\Controls_Manager::SLIDER,
 	]
 );
@@ -46,7 +46,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -55,7 +55,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'space_between',
 			[
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'label' => __( 'Spacing', 'plugin-name' ),
+				'label' => esc_html__( 'Spacing', 'plugin-name' ),
 				'range' => [
 					'px' => [
 						'min' => 0,
@@ -100,7 +100,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -109,7 +109,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'title_padding',
 			[
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'label' => __( 'Padding', 'plugin-name' ),
+				'label' => esc_html__( 'Padding', 'plugin-name' ),
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
 					'{{WRAPPER}} .widget-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -136,7 +136,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -145,18 +145,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_align',
 			[
 				'type' => \Elementor\Controls_Manager::CHOOSE,
-				'label' => __( 'Alignment', 'plugin-name' ),
+				'label' => esc_html__( 'Alignment', 'plugin-name' ),
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'plugin-name' ),
+						'title' => esc_html__( 'Left', 'plugin-name' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'plugin-name' ),
+						'title' => esc_html__( 'Center', 'plugin-name' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'plugin-name' ),
+						'title' => esc_html__( 'Right', 'plugin-name' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],

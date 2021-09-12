@@ -112,7 +112,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'oEmbed', 'elementor-oembed-widget' );
+		return esc_html__( 'oEmbed', 'elementor-oembed-widget' );
 	}
 
 	/**
@@ -180,7 +180,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'elementor-oembed-widget' ),
+				'label' => esc_html__( 'Content', 'elementor-oembed-widget' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -188,10 +188,10 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'url',
 			[
-				'label' => __( 'URL to embed', 'elementor-oembed-widget' ),
+				'label' => esc_html__( 'URL to embed', 'elementor-oembed-widget' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'input_type' => 'url',
-				'placeholder' => __( 'https://your-link.com', 'elementor-oembed-widget' ),
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor-oembed-widget' ),
 			]
 		);
 

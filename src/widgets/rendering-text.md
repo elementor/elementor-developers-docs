@@ -15,7 +15,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -23,9 +23,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'placeholder' => __( 'Enter your title', 'plugin-name' ),
+				'placeholder' => esc_html__( 'Enter your title', 'plugin-name' ),
 			]
 		);
 

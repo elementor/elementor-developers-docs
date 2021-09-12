@@ -192,7 +192,7 @@ class Elementor_Currency_Control extends \Elementor\Base_Data_Control {
 
 			<div class="elementor-control-input-wrapper">
 				<select id="<?php echo $control_uid; ?>" data-setting="{{ data.name }}">
-					<option value=""><?php echo __( 'Select currency', 'elementor-currency-control' ); ?></option>
+					<option value=""><?php echo esc_html__( 'Select currency', 'elementor-currency-control' ); ?></option>
 					<# _.each( data.currencies, function( currency_label, currency_value ) { #>
 					<option value="{{ currency_value }}">{{{ currency_label }}}</option>
 					<# } ); #>
@@ -257,7 +257,7 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Currency', 'elementor-currency-control' );
+		return esc_html__( 'Currency', 'elementor-currency-control' );
 	}
 
 	/**
@@ -325,7 +325,7 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'elementor-currency-control' ),
+				'label' => esc_html__( 'Content', 'elementor-currency-control' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -333,7 +333,7 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'price',
 			[
-				'label' => __( 'Price', 'elementor-currency-control' ),
+				'label' => esc_html__( 'Price', 'elementor-currency-control' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'default' => 100,
 			]
@@ -342,7 +342,7 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'price_currency',
 			[
-				'label' => __( 'Currency', 'elementor-currency-control' ),
+				'label' => esc_html__( 'Currency', 'elementor-currency-control' ),
 				'type' => 'currency',
 			]
 		);

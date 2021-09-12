@@ -78,7 +78,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);

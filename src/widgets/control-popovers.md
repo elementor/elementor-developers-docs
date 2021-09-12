@@ -11,9 +11,9 @@ $this->add_control(
 	'popover-toggle',
 	[
 		'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
-		'label' => __( 'Box', 'plugin-name' ),
-		'label_off' => __( 'Default', 'plugin-name' ),
-		'label_on' => __( 'Custom', 'plugin-name' ),
+		'label' => esc_html__( 'Box', 'plugin-name' ),
+		'label_off' => esc_html__( 'Default', 'plugin-name' ),
+		'label_on' => esc_html__( 'Custom', 'plugin-name' ),
 		'return_value' => 'yes',
 	]
 );
@@ -50,7 +50,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -58,10 +58,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'popover-toggle',
 			[
-				'label' => __( 'Box', 'plugin-name' ),
+				'label' => esc_html__( 'Box', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
-				'label_off' => __( 'Default', 'plugin-name' ),
-				'label_on' => __( 'Custom', 'plugin-name' ),
+				'label_off' => esc_html__( 'Default', 'plugin-name' ),
+				'label_on' => esc_html__( 'Custom', 'plugin-name' ),
 				'return_value' => 'yes',
 			]
 		);

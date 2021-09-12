@@ -43,7 +43,7 @@ function theme_prefix_register_elementor_locations( $elementor_theme_manager ) {
 	$elementor_theme_manager->register_location(
 		'main-sidebar',
 		[
-			'label' => __( 'Main Sidebar', 'theme-name' ),
+			'label' => esc_html__( 'Main Sidebar', 'theme-name' ),
 			'multiple' => true,
 			'edit_in_content' => false,
 		]

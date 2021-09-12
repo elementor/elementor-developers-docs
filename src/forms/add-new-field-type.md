@@ -100,7 +100,7 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 	 * @return string Field name.
 	 */
 	public function get_name() {
-		return __( 'Credit Card Number', 'plugin-name' );
+		return esc_html__( 'Credit Card Number', 'plugin-name' );
 	}
 
 	/**
@@ -151,7 +151,7 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 		}
 
 		if ( preg_match( '/^[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$/', $field['value'] ) !== 1 ) {
-			$ajax_handler->add_error( $field['id'], __( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'plugin-name' ) );
+			$ajax_handler->add_error( $field['id'], esc_html__( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'plugin-name' ) );
 		}
 	}
 
@@ -175,7 +175,7 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 		$field_controls = [
 			'placeholder' => [
 				'name' => 'placeholder',
-				'label' => __( 'Placeholder', 'plugin-name' ),
+				'label' => esc_html__( 'Placeholder', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => 'xxxx xxxx xxxx xxxx',
 				'condition' => [

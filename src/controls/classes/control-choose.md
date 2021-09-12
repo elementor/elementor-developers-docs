@@ -90,7 +90,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -98,19 +98,19 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'text_align',
 			[
-				'label' => __( 'Alignment', 'plugin-name' ),
+				'label' => esc_html__( 'Alignment', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'plugin-name' ),
+						'title' => esc_html__( 'Left', 'plugin-name' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'plugin-name' ),
+						'title' => esc_html__( 'Center', 'plugin-name' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'plugin-name' ),
+						'title' => esc_html__( 'Right', 'plugin-name' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],

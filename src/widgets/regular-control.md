@@ -11,7 +11,7 @@ $this->add_control(
 	'control-name',
 	[
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => __( 'Control Name', 'plugin-name' ),
+		'label' => esc_html__( 'Control Name', 'plugin-name' ),
 	]
 );
 ```
@@ -46,7 +46,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 
@@ -54,8 +54,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'title',
 			[
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'label' => __( 'Title', 'plugin-name' ),
-				'placeholder' => __( 'Enter your title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'plugin-name' ),
+				'placeholder' => esc_html__( 'Enter your title', 'plugin-name' ),
 			]
 		);
 
@@ -78,7 +78,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 
@@ -86,7 +86,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'size',
 			[
 				'type' => \Elementor\Controls_Manager::NUMBER,
-				'label' => __( 'Size', 'plugin-name' ),
+				'label' => esc_html__( 'Size', 'plugin-name' ),
 				'placeholder' => '0',
 				'min' => 0,
 				'max' => 100,
@@ -114,7 +114,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 
@@ -122,11 +122,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'open_lightbox',
 			[
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'label' => __( 'Lightbox', 'plugin-name' ),
+				'label' => esc_html__( 'Lightbox', 'plugin-name' ),
 				'options' => [
-					'default' => __( 'Default', 'plugin-name' ),
-					'yes' => __( 'Yes', 'plugin-name' ),
-					'no' => __( 'No', 'plugin-name' ),
+					'default' => esc_html__( 'Default', 'plugin-name' ),
+					'yes' => esc_html__( 'Yes', 'plugin-name' ),
+					'no' => esc_html__( 'No', 'plugin-name' ),
 				],
 				'default' => 'no',
 			]
@@ -151,7 +151,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 
@@ -159,18 +159,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'alignment',
 			[
 				'type' => \Elementor\Controls_Manager::CHOOSE,
-				'label' => __( 'Alignment', 'plugin-name' ),
+				'label' => esc_html__( 'Alignment', 'plugin-name' ),
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'plugin-name' ),
+						'title' => esc_html__( 'Left', 'plugin-name' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'plugin-name' ),
+						'title' => esc_html__( 'Center', 'plugin-name' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'plugin-name' ),
+						'title' => esc_html__( 'Right', 'plugin-name' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -197,7 +197,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 
@@ -205,7 +205,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'font_size',
 			[
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'label' => __( 'Size', 'plugin-name' ),
+				'label' => esc_html__( 'Size', 'plugin-name' ),
 				'size_units' => [ 'px', 'em', 'rem' ],
 				'range' => [
 					'px' => [
@@ -239,7 +239,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 
@@ -247,7 +247,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'text_color',
 			[
 				'type' => \Elementor\Controls_Manager::COLOR,
-				'label' => __( 'Text Color', 'plugin-name' ),
+				'label' => esc_html__( 'Text Color', 'plugin-name' ),
 				'default' => '#fefefe',
 			]
 		);
@@ -271,7 +271,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 			]
 		);
 
@@ -279,7 +279,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'image',
 			[
 				'type' => \Elementor\Controls_Manager::MEDIA,
-				'label' => __( 'Choose Image', 'plugin-name' ),
+				'label' => esc_html__( 'Choose Image', 'plugin-name' ),
 				'default' => [
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
 				]

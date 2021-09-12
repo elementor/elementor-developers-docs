@@ -78,7 +78,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -87,7 +87,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Text_Shadow::get_type(),
 			[
 				'name' => 'text_shadow',
-				'label' => __( 'Text Shadow', 'plugin-name' ),
+				'label' => esc_html__( 'Text Shadow', 'plugin-name' ),
 				'selector' => '{{WRAPPER}} .your-class',
 			]
 		);

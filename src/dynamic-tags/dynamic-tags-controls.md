@@ -15,8 +15,8 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 			'text_param',
 			[
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'label' => __( 'Text Param', 'plugin-name' ),
-				'placeholder' => __( 'Enter your title', 'plugin-name' ),
+				'label' => esc_html__( 'Text Param', 'plugin-name' ),
+				'placeholder' => esc_html__( 'Enter your title', 'plugin-name' ),
 			]
 		);
 
@@ -24,7 +24,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 			'number_param',
 			[
 				'type' => \Elementor\Controls_Manager::NUMBER,
-				'label' => __( 'Number Param', 'plugin-name' ),
+				'label' => esc_html__( 'Number Param', 'plugin-name' ),
 				'min' => 0,
 				'max' => 100,
 				'step' => 1,
@@ -36,11 +36,11 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 			'select_param',
 			[
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'label' => __( 'Select Param', 'plugin-name' ),
+				'label' => esc_html__( 'Select Param', 'plugin-name' ),
 				'options' => [
-					'default' => __( 'Default', 'plugin-name' ),
-					'yes' => __( 'Yes', 'plugin-name' ),
-					'no' => __( 'No', 'plugin-name' ),
+					'default' => esc_html__( 'Default', 'plugin-name' ),
+					'yes' => esc_html__( 'Yes', 'plugin-name' ),
+					'no' => esc_html__( 'No', 'plugin-name' ),
 				],
 				'default' => 'no',
 			]

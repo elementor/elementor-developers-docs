@@ -68,7 +68,7 @@ Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Ac
 	}
 
 	public function get_label() {
-		return __( 'Sendy', 'text-domain' );
+		return esc_html__( 'Sendy', 'text-domain' );
 	}
 }
 ```
@@ -83,7 +83,7 @@ Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Ac
         $widget->start_controls_section(
             'section_sendy',
             [
-                'label' => __( 'Sendy', 'text-domain' ),
+                'label' => esc_html__( 'Sendy', 'text-domain' ),
                 'condition' => [
                     'submit_actions' => $this->get_name(),
                 ],
@@ -93,30 +93,30 @@ Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Ac
         $widget->add_control(
             'sendy_url',
             [
-                'label' => __( 'Sendy URL', 'text-domain' ),
+                'label' => esc_html__( 'Sendy URL', 'text-domain' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'placeholder' => 'http://your_sendy_installation/',
                 'label_block' => true,
                 'separator' => 'before',
 
-                'description' => __( 'Enter the URL where you have Sendy installed', 'text-domain' ),
+                'description' => esc_html__( 'Enter the URL where you have Sendy installed', 'text-domain' ),
             ]
         );
 
         $widget->add_control(
             'sendy_list',
             [
-                'label' => __( 'Sendy List ID', 'text-domain' ),
+                'label' => esc_html__( 'Sendy List ID', 'text-domain' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
                 'separator' => 'before',
-                'description' => __( 'the list id you want to subscribe a user to. This encrypted & hashed id can be found under View all lists section named ID.', 'text-domain' ),
+                'description' => esc_html__( 'the list id you want to subscribe a user to. This encrypted & hashed id can be found under View all lists section named ID.', 'text-domain' ),
             ]
         );
 
         $widget->add_control(
             'sendy_email_field',
             [
-                'label' => __( 'Email Field ID', 'text-domain' ),
+                'label' => esc_html__( 'Email Field ID', 'text-domain' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
             ]
         );
@@ -124,7 +124,7 @@ Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Ac
         $widget->add_control(
             'sendy_name_field',
             [
-                'label' => __( 'Name Field ID', 'text-domain' ),
+                'label' => esc_html__( 'Name Field ID', 'text-domain' ),
                 'type' => \Elementor\Controls_Manager::TEXT,
             ]
         );
@@ -250,7 +250,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 	 * @return string
 	 */
 	public function get_label() {
-		return __( 'Sendy', 'text-domain' );
+		return esc_html__( 'Sendy', 'text-domain' );
 	}
 
 	/**
@@ -328,7 +328,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 		$widget->start_controls_section(
 			'section_sendy',
 			[
-				'label' => __( 'Sendy', 'text-domain' ),
+				'label' => esc_html__( 'Sendy', 'text-domain' ),
 				'condition' => [
 					'submit_actions' => $this->get_name(),
 				],
@@ -338,29 +338,29 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 		$widget->add_control(
 			'sendy_url',
 			[
-				'label' => __( 'Sendy URL', 'text-domain' ),
+				'label' => esc_html__( 'Sendy URL', 'text-domain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'placeholder' => 'http://your_sendy_installation/',
 				'label_block' => true,
 				'separator' => 'before',
-				'description' => __( 'Enter the URL where you have Sendy installed', 'text-domain' ),
+				'description' => esc_html__( 'Enter the URL where you have Sendy installed', 'text-domain' ),
 			]
 		);
 
 		$widget->add_control(
 			'sendy_list',
 			[
-				'label' => __( 'Sendy List ID', 'text-domain' ),
+				'label' => esc_html__( 'Sendy List ID', 'text-domain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'separator' => 'before',
-				'description' => __( 'the list id you want to subscribe a user to. This encrypted & hashed id can be found under View all lists section named ID.', 'text-domain' ),
+				'description' => esc_html__( 'the list id you want to subscribe a user to. This encrypted & hashed id can be found under View all lists section named ID.', 'text-domain' ),
 			]
 		);
 
 		$widget->add_control(
 			'sendy_email_field',
 			[
-				'label' => __( 'Email Field ID', 'text-domain' ),
+				'label' => esc_html__( 'Email Field ID', 'text-domain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 			]
 		);
@@ -368,7 +368,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 		$widget->add_control(
 			'sendy_name_field',
 			[
-				'label' => __( 'Name Field ID', 'text-domain' ),
+				'label' => esc_html__( 'Name Field ID', 'text-domain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 			]
 		);

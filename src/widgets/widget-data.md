@@ -14,7 +14,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'My Widget Name', 'plugin-name' );
+		return esc_html__( 'My Widget Name', 'plugin-name' );
 	}
 
 	public function get_icon() {

@@ -23,7 +23,7 @@ Validating email field:
 function elementor_form_email_field_validation( $field, $record, $ajax_handler ) {
 	// Validate email format
 	if ( ! is_email( $field['value'] ) ) {
-		$ajax_handler->add_error( $field['id'], __( 'Invalid email address, it must be in xx@xx.xx format.', 'plugin-name' ) );
+		$ajax_handler->add_error( $field['id'], esc_html__( 'Invalid email address, it must be in xx@xx.xx format.', 'plugin-name' ) );
 		return;
 	}
 
@@ -47,7 +47,7 @@ function elementor_form_validation( $record, $ajax_handler ) {
 	$field = current( $fields );
 
 	if ( 1 !== preg_match( '/^\w{3}-\w{4}$/', $field['value'] ) ) {
-		$ajax_handler->add_error( $field['id'], __( 'Invalid Ticket ID, it must be in XXX-XXXX format.', 'plugin-name' ) );
+		$ajax_handler->add_error( $field['id'], esc_html__( 'Invalid Ticket ID, it must be in XXX-XXXX format.', 'plugin-name' ) );
 	}
 }
 add_action( 'elementor_pro/forms/validation', 'elementor_form_validation', 10, 2 );
@@ -68,7 +68,7 @@ function elementor_form_tel_field_validation( $field, $record, $ajax_handler ) {
 
 	// Match this format XXX-XXX-XXXX, e.g. 123-456-7890
 	if ( preg_match( '/[0-9]{3}(-?)[0-9]{3}(-?)[0-9]{4}/', $field['value'] ) !== 1 ) {
-		$ajax_handler->add_error( $field['id'], __( 'Please make sure the phone number is in XXX-XXX-XXXX format, eg: 123-456-7890', 'plugin-name' ) );
+		$ajax_handler->add_error( $field['id'], esc_html__( 'Please make sure the phone number is in XXX-XXX-XXXX format, eg: 123-456-7890', 'plugin-name' ) );
 	}
 }
 add_action( 'elementor_pro/forms/validation/tel', 'elementor_form_tel_field_validation', 10, 3 );
@@ -81,7 +81,7 @@ function elementor_form_tel_field_rendering( $item, $item_index, $form ) {
 	// Add custom render ex:
 	$form->add_render_attribute( 'input' . $item_index, 'class', 'elementor-field-textual' );
 	$form->add_render_attribute( 'input' . $item_index, 'pattern', '[0-9]{3}(-?)[0-9]{3}(-?)[0-9]{4}' );
-	$form->add_render_attribute( 'input' . $item_index, 'title', __( 'Number should be in this format xxx-xxx-xxxx.', 'plugin-name' ) );
+	$form->add_render_attribute( 'input' . $item_index, 'title', esc_html__( 'Number should be in this format xxx-xxx-xxxx.', 'plugin-name' ) );
 
 	echo '<input size="1" ' . $form->get_render_attribute_string( 'input' . $item_index ) . '>';
 }

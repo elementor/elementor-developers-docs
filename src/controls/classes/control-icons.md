@@ -110,7 +110,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Icons Test Widget', 'plugin-name' );
+		return esc_html__( 'Icons Test Widget', 'plugin-name' );
 	}
 
 	protected function register_controls() {
@@ -118,14 +118,14 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_icon',
 			[
-				'label' => __( 'Icon', 'plugin-name' ),
+				'label' => esc_html__( 'Icon', 'plugin-name' ),
 			]
 		);
 
 		$this->add_control(
 			'icon',
 			[
-				'label' => __( 'Icon', 'plugin-name' ),
+				'label' => esc_html__( 'Icon', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 				'default' => [
 					'value' => 'fas fa-star',

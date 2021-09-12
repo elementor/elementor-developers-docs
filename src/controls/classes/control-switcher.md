@@ -96,7 +96,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -104,10 +104,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_title',
 			[
-				'label' => __( 'Show Title', 'plugin-name' ),
+				'label' => esc_html__( 'Show Title', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'your-plugin' ),
-				'label_off' => __( 'Hide', 'your-plugin' ),
+				'label_on' => esc_html__( 'Show', 'your-plugin' ),
+				'label_off' => esc_html__( 'Hide', 'your-plugin' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
@@ -116,9 +116,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'Default title', 'plugin-name' ),
+				'default' => esc_html__( 'Default title', 'plugin-name' ),
 			]
 		);
 

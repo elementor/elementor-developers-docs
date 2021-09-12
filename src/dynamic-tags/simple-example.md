@@ -112,7 +112,7 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return __( 'Random Number', 'elementor-random-number-dynamic-tag' );
+		return esc_html__( 'Random Number', 'elementor-random-number-dynamic-tag' );
 	}
 
 	/**

@@ -112,7 +112,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -120,9 +120,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'website_link',
 			[
-				'label' => __( 'Link', 'plugin-name' ),
+				'label' => esc_html__( 'Link', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'plugin-name' ),
+				'placeholder' => esc_html__( 'https://your-link.com', 'plugin-name' ),
 				'default' => [
 					'url' => '',
 					'is_external' => true,

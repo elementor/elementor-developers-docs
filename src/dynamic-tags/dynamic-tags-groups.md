@@ -48,7 +48,7 @@ function register_new_dynamic_tag_group( $dynamic_tags ) {
 	\Elementor\Plugin::instance()->dynamic_tags->register_group(
 		'group-name',
 		[
-			'title' => __( 'Group Label', 'plugin-name' )
+			'title' => esc_html__( 'Group Label', 'plugin-name' )
 		]
 	);
 

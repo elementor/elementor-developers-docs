@@ -14,7 +14,7 @@ $this->start_controls_tabs(
 $this->start_controls_tab(
 	'style_normal_tab',
 	[
-		'label' => __( 'Normal', 'plugin-name' ),
+		'label' => esc_html__( 'Normal', 'plugin-name' ),
 	]
 );
 
@@ -49,7 +49,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => __( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -61,7 +61,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_tab(
 			'style_normal_tab',
 			[
-				'label' => __( 'Normal', 'plugin-name' ),
+				'label' => esc_html__( 'Normal', 'plugin-name' ),
 			]
 		);
 
@@ -76,7 +76,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_tab(
 			'style_hover_tab',
 			[
-				'label' => __( 'Hover', 'plugin-name' ),
+				'label' => esc_html__( 'Hover', 'plugin-name' ),
 			]
 		);
 

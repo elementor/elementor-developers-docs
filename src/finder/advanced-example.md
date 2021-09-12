@@ -96,7 +96,7 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	 * @return string Finder category title.
 	 */
 	public function get_title() {
-		return __( 'WordPress Settings', 'elementor-finder-wordpress-settings' );
+		return esc_html__( 'WordPress Settings', 'elementor-finder-wordpress-settings' );
 	}
 
 	/**
@@ -110,37 +110,37 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	public function get_category_items( array $options = [] ) {
 		return [
 			'general' => [
-				'title' => __( 'General', 'elementor-finder-wordpress-settings' ),
+				'title' => esc_html__( 'General', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'wordpress',
 				'url' => admin_url( 'options-general.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'general', 'settings' ],
 			],
 			'writing' => [
-				'title' => __( 'Writing', 'elementor-finder-wordpress-settings' ),
+				'title' => esc_html__( 'Writing', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'edit',
 				'url' => admin_url( 'options-writing.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'writing', 'settings' ],
 			],
 			'reading' => [
-				'title' => __( 'Reading', 'elementor-finder-wordpress-settings' ),
+				'title' => esc_html__( 'Reading', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'post-content',
 				'url' => admin_url( 'options-reading.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'reading', 'settings' ],
 			],
 			'discussion' => [
-				'title' => __( 'Discussion', 'elementor-finder-wordpress-settings' ),
+				'title' => esc_html__( 'Discussion', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'comments',
 				'url' => admin_url( 'options-discussion.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'discussion', 'settings' ],
 			],
 			'media' => [
-				'title' => __( 'Media', 'elementor-finder-wordpress-settings' ),
+				'title' => esc_html__( 'Media', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'image',
 				'url' => admin_url( 'options-media.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'media', 'settings' ],
 			],
 			'permalink' => [
-				'title' => __( 'Permalink', 'elementor-finder-wordpress-settings' ),
+				'title' => esc_html__( 'Permalink', 'elementor-finder-wordpress-settings' ),
 				'icon' => 'editor-link',
 				'url' => admin_url( 'options-permalink.php' ),
 				'keywords' => [ 'wordpress', 'dashboard', 'permalink', 'settings' ],

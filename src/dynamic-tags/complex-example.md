@@ -59,7 +59,7 @@ function register_request_variables_dynamic_tag_group( $dynamic_tags ) {
 	\Elementor\Plugin::instance()->dynamic_tags->register_group(
 		'request-variables',
 		[
-			'title' => __( 'Request Variables', 'plugin-name' )
+			'title' => esc_html__( 'Request Variables', 'plugin-name' )
 		]
 	);
 
@@ -131,7 +131,7 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return __( 'Server Variable', 'plugin-name' );
+		return esc_html__( 'Server Variable', 'plugin-name' );
 	}
 
 	/**
@@ -180,7 +180,7 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 			'user_selected_variable',
 			[
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'label' => __( 'Variable', 'plugin-name' ),
+				'label' => esc_html__( 'Variable', 'plugin-name' ),
 				'options' => $variables,
 			]
 		);

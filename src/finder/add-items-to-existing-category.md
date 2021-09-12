@@ -10,7 +10,7 @@ In the example below, the developer is adding the `theme-template` item to the `
 public function add_new_finder_items( array $categories ) {
 
 	$categories['create']['items']['theme-template'] = [
-		'title' => __( 'Add New Theme Template', 'plugin-name' ),
+		'title' => esc_html__( 'Add New Theme Template', 'plugin-name' ),
 		'icon' => 'plus-circle-o',
 		'url' => $this->get_admin_templates_url() . '#add_new',
 		'keywords' => [ 'template', 'theme', 'new', 'create' ],

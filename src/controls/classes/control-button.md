@@ -90,7 +90,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'plugin-name' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -98,11 +98,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'delete_content',
 			[
-				'label' => __( 'Delete Content', 'plugin-name' ),
+				'label' => esc_html__( 'Delete Content', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::BUTTON,
 				'separator' => 'before',
 				'button_type' => 'success',
-				'text' => __( 'Delete', 'plugin-name' ),
+				'text' => esc_html__( 'Delete', 'plugin-name' ),
 				'event' => 'namespace:editor:delete',
 			]
 		);

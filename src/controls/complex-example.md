@@ -286,7 +286,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Test', 'elementor-emojionearea-control' );
+		return esc_html__( 'Test', 'elementor-emojionearea-control' );
 	}
 
 	/**
@@ -354,7 +354,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Content', 'elementor-emojionearea-control' ),
+				'label' => esc_html__( 'Content', 'elementor-emojionearea-control' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -362,7 +362,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'content',
 			[
-				'label' => __( 'Content with Emoji', 'elementor-emojionearea-control' ),
+				'label' => esc_html__( 'Content with Emoji', 'elementor-emojionearea-control' ),
 				'type' => 'emojionearea',
 
 			]

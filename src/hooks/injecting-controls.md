@@ -48,7 +48,7 @@ add_action( 'elementor/element/before_section_start', function( $element, $secti
 			'custom_section',
 			[
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-				'label' => __( 'Custom Section', 'plugin-name' ),
+				'label' => esc_html__( 'Custom Section', 'plugin-name' ),
 			]
 		);
 
@@ -56,7 +56,7 @@ add_action( 'elementor/element/before_section_start', function( $element, $secti
 			'custom_control',
 			[
 				'type' => \Elementor\Controls_Manager::NUMBER,
-				'label' => __( 'Custom Control', 'plugin-name' ),
+				'label' => esc_html__( 'Custom Control', 'plugin-name' ),
 			]
 		);
 
@@ -90,7 +90,7 @@ add_action( 'elementor/element/after_section_start', function( $element, $sectio
 			'custom_control',
 			[
 				'type' => \Elementor\Controls_Manager::NUMBER,
-				'label' => __( 'Custom Control', 'plugin-name' ),
+				'label' => esc_html__( 'Custom Control', 'plugin-name' ),
 			]
 		);
 
@@ -143,7 +143,7 @@ add_action( 'elementor/element/heading/section_title/before_section_start', func
 		'custom_section',
 		[
 			'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-			'label' => __( 'Custom Section', 'plugin-name' ),
+			'label' => esc_html__( 'Custom Section', 'plugin-name' ),
 		]
 	);
 
@@ -151,7 +151,7 @@ add_action( 'elementor/element/heading/section_title/before_section_start', func
 		'custom_control',
 		[
 			'type' => \Elementor\Controls_Manager::NUMBER,
-			'label' => __( 'Custom Control', 'plugin-name' ),
+			'label' => esc_html__( 'Custom Control', 'plugin-name' ),
 		]
 	);
 
@@ -180,7 +180,7 @@ add_action( 'elementor/element/heading/section_title/before_section_start', func
 		'custom_control',
 		[
 			'type' => \Elementor\Controls_Manager::NUMBER,
-			'label' => __( 'Custom Control', 'plugin-name' ),
+			'label' => esc_html__( 'Custom Control', 'plugin-name' ),
 		]
 	);
 

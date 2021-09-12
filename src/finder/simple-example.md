@@ -96,7 +96,7 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 	 * @return string finder category title.
 	 */
 	public function get_title() {
-		return __( 'Social Media Websites', 'elementor-finder-social-media' );
+		return esc_html__( 'Social Media Websites', 'elementor-finder-social-media' );
 	}
 
 	/**
@@ -110,19 +110,19 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 	public function get_category_items( array $options = [] ) {
 		return [
 			'facebook' => [
-				'title' => __( 'Facebook', 'elementor-finder-social-media' ),
+				'title' => esc_html__( 'Facebook', 'elementor-finder-social-media' ),
 				'icon' => 'facebook',
 				'url' => 'https://facebook.com/',
 				'keywords' => [ 'facebook', 'social', 'media' ],
 			],
 			'twitter' => [
-				'title' => __( 'Twitter', 'elementor-finder-social-media' ),
+				'title' => esc_html__( 'Twitter', 'elementor-finder-social-media' ),
 				'icon' => 'twitter',
 				'url' => 'https://twitter.com/',
 				'keywords' => [ 'twitter', 'social', 'media' ],
 			],
 			'pinterest' => [
-				'title' => __( 'Pinterest', 'elementor-finder-social-media' ),
+				'title' => esc_html__( 'Pinterest', 'elementor-finder-social-media' ),
 				'icon' => 'pinterest',
 				'url' => 'https://www.pinterest.com/',
 				'keywords' => [ 'pinterest', 'social', 'media' ],

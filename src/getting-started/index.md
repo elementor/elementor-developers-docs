@@ -73,7 +73,7 @@ class Elementor_Hello_World_Widget_1 extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Hello World 1', 'elementor-addon' );
+		return esc_html__( 'Hello World 1', 'elementor-addon' );
 	}
 
 	public function get_icon() {
@@ -113,7 +113,7 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'Hello World 2', 'elementor-addon' );
+		return esc_html__( 'Hello World 2', 'elementor-addon' );
 	}
 
 	public function get_icon() {
@@ -135,16 +135,16 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Title', 'elementor-addon' ),
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
 			]
 		);
 
 		$this->add_control(
 			'title',
 			[
-				'label' => __( 'Title', 'elementor-addon' ),
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
-				'default' => __( 'Hello world', 'elementor-addon' ),
+				'default' => esc_html__( 'Hello world', 'elementor-addon' ),
 			]
 		);
 
@@ -158,7 +158,7 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => __( 'Title', 'elementor-addon' ),
+				'label' => esc_html__( 'Title', 'elementor-addon' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -166,7 +166,7 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Text Color', 'elementor-addon' ),
+				'label' => esc_html__( 'Text Color', 'elementor-addon' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .hello-world' => 'color: {{VALUE}};',
