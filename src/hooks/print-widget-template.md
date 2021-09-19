@@ -6,7 +6,7 @@ Elementor has a hook that lets developers change a widget's JavaScript template 
 
 ## Hook Details
 
-* **Hook Type:** Action Hook
+* **Hook Type:** Filter Hook
 * **Hook Name:** `elementor/{$element_type}/print_template`
 * **Notes:** The dynamic portion of the hook name, `$element_type`, refers to `widget`.
 * **Affects:** Preview
@@ -24,7 +24,7 @@ Elementor has a hook that lets developers change a widget's JavaScript template 
 /**
  * Update the heading widget JS template in Elementor preview.
  *
- * Adds an icon to all external links.
+ * Adds an icon to all the external links.
  *
  * @since 1.0.0
  * @param string                 $template The JavaScript template output.
@@ -41,7 +41,7 @@ function change_heading_js_template( $template, $widget ) {
 	return $template;
 
 }
-add_action( 'elementor/widget/print_template', 'change_heading_js_template', 10, 2 );
+add_filter( 'elementor/widget/print_template', 'change_heading_js_template', 10, 2 );
 ```
 
 The code above is only an example. We do not recommend using `str_replace` on templates, because the template may be changed and the `str_replace` will fail. Instead, edit the entire original template for your needs.
