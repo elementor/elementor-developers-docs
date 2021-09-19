@@ -4,27 +4,18 @@ In this example, we'll build a full Elementor addon to modify a context menu.
 
 ## Folder Structure
 
-This addon will have several index files to prevent direct access to the folders. The main file will register and enqueue a JS file in the editor, and the JS will modify the context menu:
+The addon will have two files. The main file will register and enqueue a JS file in the editor, and the JS will modify the context menu.
 
 ```
 elementor-context-menus/
 |
 ├─ assets/js/
-|  ├─ index.php
 |  └─ context-menus.js
 |
-├─ index.php
 └─ elementor-context-menus.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-context-menus.php**
 
@@ -59,13 +50,6 @@ function elementor_context_menus_scripts() {
 
 }
 add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_context_menus_scripts' );
-```
-
-**assets/js/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **assets/js/context-menus.js**

@@ -4,27 +4,18 @@ Putting all these pieces together, we're going to create a simple Elementor widg
 
 ## Folder Structure
 
-This addon will have four files. Two index files to prevent direct access to files, one file for the widget and the main file to register the widget:
+The addon will have two files. One file for the widget and the other main file to register the widget.
 
 ```
 elementor-oembed-widget/
 |
 ├─ widgets/
-|  ├─ index.php
 |  └─ oembed-widget.php
 |
-├─ index.php
 └─ elementor-oembed-widget.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-oembed-widget.php**
 
@@ -63,13 +54,6 @@ function register_oembed_widget() {
 
 }
 add_action( 'elementor/widgets/widgets_registered', 'register_oembed_widget' );
-```
-
-**widgets/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **widgets/oembed-widget.php**

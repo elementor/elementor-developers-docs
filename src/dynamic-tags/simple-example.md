@@ -4,27 +4,18 @@ To put it all together, we're going to create a simple dynamic tag which will re
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag:
+The addon will have two files. The dynamic tag with its functionality. And the main file will register the tag.
 
 ```
 elementor-random-number-dynamic-tag/
 |
 ├─ dynamic-tags/
-|  ├─ index.php
 |  └─ random-number-dynamic-tag.php
 |
-├─ index.php
 └─ elementor-random-number-dynamic-tag.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-random-number-dynamic-tag.php**
 
@@ -63,13 +54,6 @@ function register_random_number_dynamic_tag( $dynamic_tags ) {
 
 }
 add_action( 'elementor/dynamic_tags/register_tags', 'register_random_number_dynamic_tag' );
-```
-
-**dynamic-tags/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **dynamic-tags/random-number-dynamic-tag.php**

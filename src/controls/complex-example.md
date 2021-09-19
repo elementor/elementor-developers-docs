@@ -4,35 +4,24 @@ Now we'll build an addon that adds a new control to Elementor by using an extern
 
 ## Folder Structure
 
-The addon will have several index files to prevent direct access to folders while the main file will register the control and the JS file. To test the control we will create a simple test widget.
+The addon will have four files. The main file will register the control and the JS file. To test the control we will create a simple test widget.
 
 ```
 elementor-emojionearea-control/
 |
 ├─ assets/js/
-|  ├─ index.php
 |  └─ emojionearea.js
 |
 ├─ controls/
-|  ├─ index.php
 |  └─ emojionearea.php
 |
 ├─ widgets/
-|  ├─ index.php
 |  └─ test-widget.php
 |
-├─ index.php
 └─ elementor-emojionearea-control.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-emojionearea-control.php**
 
@@ -88,13 +77,6 @@ function register_test_widget() {
 
 }
 add_action( 'elementor/widgets/widgets_registered', 'register_test_widget' );
-```
-
-**controls/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **controls/emojionearea.php**
@@ -195,13 +177,6 @@ class Elementor_EmojiOneArea_Control extends \Elementor\Base_Data_Control {
 }
 ```
 
-**assets/js/index.php**
-
-```php
-<?php
-// Silence is golden.
-```
-
 **assets/js/emojionearea.js**
 
 ```js
@@ -237,13 +212,6 @@ jQuery( window ).on( 'elementor:init', () => {
 	elementor.addControlView( 'emojionearea', emojioneareaItemView );
 
 } );
-```
-
-**widgets/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **widgets/test-widget.php**

@@ -4,27 +4,19 @@ To showcase a complex dynamic tag, we are going to allow the user to display ser
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag:
+The addon will have two files. The dynamic tag with its functionality. And the main file will register the tag and tags group.
 
 ```
 elementor-server-variable-dynamic-tag/
 |
 ├─ dynamic-tags/
-|  ├─ index.php
 |  └─ server-variable-dynamic-tag.php
 |
-├─ index.php
 └─ elementor-server-variable-dynamic-tag.php
 ```
 
 ## Plugin Files
 
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 **elementor-server-variable-dynamic-tag.php**
 
 ```php
@@ -82,13 +74,6 @@ function register_server_variable_dynamic_tag( $dynamic_tags ) {
 
 }
 add_action( 'elementor/dynamic_tags/register_tags', 'register_server_variable_dynamic_tag' );
-```
-
-**dynamic-tags/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **dynamic-tags/server-variable-dynamic-tag.php**

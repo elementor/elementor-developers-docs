@@ -4,27 +4,18 @@ To see how easy it is to extend the finder, we are going to create a very simple
 
 ## Folder Structure
 
-This addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class:
+The addon will have two files. One file for the finder category and the other main file to register the class.
 
 ```
 elementor-finder-social-media/
 |
 ├─ finder/
-|  ├─ index.php
 |  └─ social-media.php
 |
-├─ index.php
 └─ elementor-finder-social-media.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-finder-social-media.php**
 
@@ -64,13 +55,6 @@ function elementor_finder_social_media( $categories_manager ) {
 
 };
 add_action( 'elementor/finder/categories/init', 'elementor_finder_social_media' );
-```
-
-**finder/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **finder/social-media.php**

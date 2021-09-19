@@ -4,27 +4,19 @@ This more advanced example will include the use of custom fields, and controls w
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the dynamic tag and the main file to register the tag:
+The addon will have two files. The dynamic tag with its functionality. And the main file will register the tag and tags group.
 
 ```
 elementor-acf-average-dynamic-tag/
 |
 ├─ dynamic-tags/
-|  ├─ index.php
 |  └─ acf-average-dynamic-tag.php
 |
-├─ index.php
 └─ elementor-acf-average-dynamic-tag.php
 ```
 
 ## Plugin Files
 
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 **elementor-acf-average-dynamic-tag.php**
 
 ```php
@@ -82,13 +74,6 @@ function register_acf_average_dynamic_tag( $dynamic_tags ) {
 
 }
 add_action( 'elementor/dynamic_tags/register_tags', 'register_acf_average_dynamic_tag' );
-```
-
-**dynamic-tags/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **dynamic-tags/acf-average-dynamic-tag.php**

@@ -4,31 +4,21 @@ Let's build an addon that adds a new control to Elementor. The control will disp
 
 ## Folder Structure
 
-The addon will have several index files to prevent direct access to folders, while the main file will register the control, along with a simple widget to test the control.
+The addon will have three files. The main file will register the control and the JS file. To test the control we will create a simple test widget.
 
 ```
 elementor-currency-control/
 |
 ├─ controls/
-|  ├─ index.php
 |  └─ currency.php
 |
 ├─ widgets/
-|  ├─ index.php
 |  └─ currency-widget.php
 |
-├─ index.php
 └─ elementor-currency-control.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-currency-control.php**
 
@@ -84,13 +74,6 @@ function register_currency_widget() {
 
 }
 add_action( 'elementor/widgets/widgets_registered', 'register_currency_widget' );
-```
-
-**controls/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **controls/currency.php**
@@ -208,13 +191,6 @@ class Elementor_Currency_Control extends \Elementor\Base_Data_Control {
 	}
 
 }
-```
-
-**widgets/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **widgets/currency-widget.php**

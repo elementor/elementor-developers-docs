@@ -4,27 +4,18 @@ For a more advanced use-case, we'll replace static links with core WordPress fun
 
 ## Folder Structure
 
-The addon will have four files. Two index files to prevent direct access to files, one file for the finder category and the main file to register the class:
+The addon will have two files. One file for the finder category and the other main file to register the class.
 
 ```
 elementor-finder-wordpress-settings/
 |
 ├─ finder/
-|  ├─ index.php
 |  └─ wordpress-settings.php
 |
-├─ index.php
 └─ elementor-finder-wordpress-settings.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-finder-wordpress-settings.php**
 
@@ -64,13 +55,6 @@ function elementor_finder_wordpress_settings( $categories_manager ) {
 
 };
 add_action( 'elementor/finder/categories/init', 'elementor_finder_wordpress_settings' );
-```
-
-**finder/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **finder/social-media.php**

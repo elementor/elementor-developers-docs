@@ -4,27 +4,18 @@ In this example, we'll build a full Elementor addon that sends and opens [Google
 
 ## Folder Structure
 
-This addon will contain several index files to prevent direct access to folders. The main file will register and enqueue a JS file in the editor, and the JS will add the page-speed action to the Elementor context menu:
+The addon will have two files. The main file will register and enqueue a JS file in the editor, and the JS will add the page-speed action to the Elementor context menu.
 
 ```
 elementor-page-speed-context-menu/
 |
 ├─ assets/js/
-|  ├─ index.php
 |  └─ page-speed-context-menu.js
 |
-├─ index.php
 └─ elementor-page-speed-context-menu.php
 ```
 
 ## Plugin Files
-
-**index.php**
-
-```php
-<?php
-// Silence is golden.
-```
 
 **elementor-page-speed-context-menu.php**
 
@@ -59,13 +50,6 @@ function elementor_page_speed_context_menu_scripts() {
 
 }
 add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_page_speed_context_menu_scripts' );
-```
-
-**assets/js/index.php**
-
-```php
-<?php
-// Silence is golden.
 ```
 
 **assets/js/page-speed-context-menu.js**
