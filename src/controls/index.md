@@ -8,7 +8,7 @@ Elementor includes a wide range of controls out-of-the-box. They are used in wid
 
 <img src="/assets/img/elementor-controls.png" alt="Elementor Controls" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-## Using Controls
+## Control Types
 
 Learn more about the control types available in Elementor:
 
@@ -18,6 +18,20 @@ Learn more about the control types available in Elementor:
 * [Multi Value Controls](./multi-value-controls)
 * [Unit Controls](./unit-controls)
 * [Group Controls](./group-controls)
+
+## Using Controls
+
+Learn more about the controls you can use:
+
+* [Regular Control](./regular-control)
+* [Responsive Control](./responsive-control)
+* [Group Control](./group-control)
+
+Learn more about wrappers to rearrange your controls:
+
+* [Control Section](./control-section)
+* [Control Tabs](./control-tabs)
+* [Control Popovers](./control-popovers)
 
 ## Creating Controls
 

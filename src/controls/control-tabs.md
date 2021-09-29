@@ -1,10 +1,10 @@
 # Control Tabs
 
-**Control Tabs** are UI wrappers used to arrange sections and controls in the panel. Controls must be added to sections and sections are part of a tab. Tabs are created using two methods: `start_controls_tabs()` creates a new tabs while `end_controls_tabs()` closes the tab. Each tab area has inner tab elements and these inner tabs are also created using two methods: `start_controls_tab()` creates a new inner tab while `end_controls_tab()` closes the inner tab.
+Control tabs are UI wrappers used to arrange sections and controls in the panel. Controls must be added to sections and sections are part of a tab. Tabs are created using two methods: `start_controls_tabs()` creates a new tabs while `end_controls_tabs()` closes the tab. Each tab area has inner tab elements and these inner tabs are also created using two methods: `start_controls_tab()` creates a new inner tab while `end_controls_tab()` closes the inner tab.
 
 ## Control Tabs Structure
 
-Use the following to add a new control tab:
+Use the following code to add a new control tabs:
 
 ```php
 $this->start_controls_tabs(

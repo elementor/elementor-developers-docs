@@ -1,10 +1,10 @@
 # Responsive Control
 
-**Responsive controls** are [regular controls](./regular-control) with special capabilities that let users set different values for different devices and screen sizes. To add responsive controls to Elementor widgets we use the `add_responsive_control()` method.
+Responsive controls are basically [regular controls](./regular-control) with special capabilities that let users set different values for different devices and screen sizes. To add responsive controls we use the `add_responsive_control()` method.
 
 ## Responsive Control Structure
 
-The following will add a new responsive control:
+The following code will add a new responsive control:
 
 ```php
 $this->add_responsive_control(

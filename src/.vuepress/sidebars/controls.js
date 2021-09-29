@@ -8,7 +8,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Using Controls',
+    title: 'Control Types',
     collapsable: false,
     sidebarDepth: -1,
     children: [
@@ -18,6 +18,20 @@ module.exports = [
       'multi-value-controls',
       'unit-controls',
       'group-controls',
+    ]
+  },
+  {
+    title: 'Using Controls',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'using-controls',
+      'regular-control',
+      'responsive-control',
+      'group-control',
+      'control-section',
+      'control-tabs',
+      'control-popovers',
     ]
   },
   {

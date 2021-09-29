@@ -1,10 +1,10 @@
 # Control Popovers
 
-**Control popovers** are UI wrappers used to group controls and display them in popups, which will appear over the panel. Using popovers can help you can declutter the panel by moving controls to popovers and displaying them only when the user chooses to see them. An excellent example of this is the typography control. It contains a toggle, and only if the user chooses to change the default typography settings will the extra controls appear in a popover. Popovers are created using two methods: `start_popover()` creates a new popover and `end_popover()` closes the popover.
+Control popovers are UI wrappers used to group controls and display them in popups, which will appear over the panel. Using popovers can help you can declutter the panel by moving controls to popovers and displaying them only when the user chooses to see them. An excellent example of this is the typography control. It contains a toggle, and only if the user chooses to change the default typography settings will the extra controls appear in a popover. Popovers are created using two methods: `start_popover()` creates a new popover and `end_popover()` closes the popover.
 
 ## Control Popovers Structure
 
-Use the following to add a new control popover:
+Use the following code to add a new control popover:
 
 ```php
 $this->add_control(

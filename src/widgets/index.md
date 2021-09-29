@@ -17,20 +17,6 @@ Learn more about widget anatomy and how to create your own custom widgets:
 * [Widget Controls](./widget-controls)
 * [Widget Rendering](./widget-rendering)
 
-## Mastering Widget Controls
-
-Learn more about the controls you can use in your widgets:
-
-* [Regular Control](./regular-control)
-* [Responsive Control](./responsive-control)
-* [Group Control](./group-control)
-
-Learn more about UI wrappers for groups and rearranging controls:
-
-* [Control Section](./control-section)
-* [Control Tabs](./control-tabs)
-* [Control Popovers](./control-popovers)
-
 ## Rendering Widgets
 
 Learn more about the widget render mechanism and how to use it in your widgets:

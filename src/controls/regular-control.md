@@ -1,10 +1,10 @@
 # Regular Control
 
-Regular [widget controls](./widget-controls) are added to Elementor widgets using the `add_control()` method. 
+Regular controls are added using the `add_control()` method. 
 
 ## Regular Control Structure
 
-Use the following to add a new control:
+Use the following code to add a control:
 
 ```php
 $this->add_control(

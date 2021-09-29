@@ -21,19 +21,6 @@ module.exports = [
     ]
   },
   {
-    title: 'Widget Controls',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'regular-control',
-      'responsive-control',
-      'group-control',
-      'control-section',
-      'control-tabs',
-      'control-popovers',
-    ]
-  },
-  {
     title: 'Widget Rendering',
     collapsable: false,
     sidebarDepth: -1,

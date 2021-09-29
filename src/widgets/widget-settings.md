@@ -24,6 +24,7 @@ When retrieving data saved by the user, we can either retrieve all the data from
 Use the following to retrieve data from a single control:
 
 ```php
+<?php
 protected function render() {
 	?>
 	<h3>
@@ -36,6 +37,7 @@ protected function render() {
 When retrieving data from multiple controls, we can retrieve all the data from all the controls into a single parameter:
 
 ```php
+<?php
 protected function render() {
 	$settings = $this->get_settings_for_display();
 	?>

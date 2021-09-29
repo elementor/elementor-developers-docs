@@ -1,6 +1,6 @@
 # Widget Controls
 
-Each widget needs to have some controls (setting fields), where users can select their data. This data is saved in the database and later used to generate custom output based on the user's selection.
+Each widget needs to have some [controls](/controls/) (setting fields), where users can select their data. This data is saved in the database and later used to [generate custom output](./widget-rendering) based on the user's selection.
 
 ## Registering Controls
 
@@ -15,9 +15,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 		$this->add_control();
 
-		$this->add_responsive_control();
+		$this->add_control();
 
-		$this->add_group_control();
+		$this->add_control();
 
 		$this->end_controls_section();
 
@@ -28,29 +28,88 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Widget Controls** – The `register_controls()` method lets you define which controls (setting fields) your widget will contain.
 
-## Available Control Types
+## Available Controls
 
-Elementor has three **control types** that can be added to widgets:
+Elementor offers a [wide variety of controls](/controls/control-types) out-of-the-box. All the controls have to be wrapped in [sections](/controls/control-section). You can add [regular controls](/controls/regular-control), [responsive controls](/controls/responsive-control) and [group controls](/controls/group-control). Developers can even [create new controls](/controls/control-structure).
 
-* [Regular Control](./regular-control) – adds a single control.
-* [Responsive Control](./responsive-control) – adds a control that sets different values for different screen sizes.
-* [Group Control](./group-control) – adds a control that groups together several other controls.
+## Add Controls to your Widget
 
-Elementor also has **UI wrappers for controls** that can be used to group and rearrange controls:
+In the example below, we're going to add a few controls to a widget to allow users save data:
 
-* [Control Section](./control-section) – a wrapper for controls.
-* [Control Tabs](./control-tabs) – a wrapper that arranges controls in tabs.
-* [Control Popovers](./control-popovers) – a wrapper that toggles popover control.
+```php {12-19,21-32,34-46,48-69}
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-## Control Methods
+	protected function register_controls() {
 
-Elementor controls have a *single method* that registers a settings field. UI wrappers for controls have *two/four methods* that wrap other controls.
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => esc_html__( 'Content', 'plugin-name' ),
+			]
+		);
 
-Available methods:
+		$this->add_control(
+			'title',
+			[
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'label' => esc_html__( 'Title', 'plugin-name' ),
+				'placeholder' => esc_html__( 'Enter your title', 'plugin-name' ),
+			]
+		);
 
-* **Regular Control** - `add_control()`
-* **Responsive Control** - `add_responsive_control()`
-* **Group Control** - `add_group_control()`
-* **Control Section** - `start_controls_section()` & `end_controls_section()`
-* **Control Tabs** - `start_controls_tabs()` & `end_controls_tabs()` & `start_controls_tab()` & `end_controls_tab()`
-* **Control Popovers** - `start_popover()` & `end_popover()`
+		$this->add_control(
+			'size',
+			[
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'label' => esc_html__( 'Size', 'plugin-name' ),
+				'placeholder' => '0',
+				'min' => 0,
+				'max' => 100,
+				'step' => 1,
+				'default' => 50,
+			]
+		);
+
+		$this->add_control(
+			'open_lightbox',
+			[
+				'type' => \Elementor\Controls_Manager::SELECT,
+				'label' => esc_html__( 'Lightbox', 'plugin-name' ),
+				'options' => [
+					'default' => esc_html__( 'Default', 'plugin-name' ),
+					'yes' => esc_html__( 'Yes', 'plugin-name' ),
+					'no' => esc_html__( 'No', 'plugin-name' ),
+				],
+				'default' => 'no',
+			]
+		);
+
+		$this->add_control(
+			'alignment',
+			[
+				'type' => \Elementor\Controls_Manager::CHOOSE,
+				'label' => esc_html__( 'Alignment', 'plugin-name' ),
+				'options' => [
+					'left' => [
+						'title' => esc_html__( 'Left', 'plugin-name' ),
+						'icon' => 'fa fa-align-left',
+					],
+					'center' => [
+						'title' => esc_html__( 'Center', 'plugin-name' ),
+						'icon' => 'fa fa-align-center',
+					],
+					'right' => [
+						'title' => esc_html__( 'Right', 'plugin-name' ),
+						'icon' => 'fa fa-align-right',
+					],
+				],
+				'default' => 'center',
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+}
+```
