@@ -1,68 +1,8 @@
 /**
  * Custom Styles here.
  *
- * ref：https://v1.vuepress.vuejs.org/config/#index-styl
+ * ref: https://v1.vuepress.vuejs.org/config/#index-styl
  */
-
-.home .hero img
-  max-width 450px!important
-
-.home
-  text-align center
-
-.home .hero img
-  max-width 450px !important
-  margin 2rem auto !important
-
-.home .action-button
-  display inline-block
-  box-sizing border-box
-  font-size 1.1rem
-  padding 0.8rem 1.6rem
-  margin 0 1rem 1rem
-  border-radius 4px
-  transition background-color 0.1s ease
-  color #fff
-  background-color $accentColor
-
-.home .user-types
-  display flex
-  flex-wrap wrap
-  align-items flex-start
-  align-content stretch
-  justify-content space-between
-  padding 2.5rem 0
-  margin 0
-  border-top: 1px solid #eaecef;
-  text-align left
-
-.home .user-type
-  flex-grow 1
-  flex-basis 25%
-  max-width 25%
-  padding-bottom 2.5rem
-  text-align center
-
-.home .user-type h2
-  font-size 1.4rem
-  font-weight 500
-  border-bottom: none
-  padding-bottom 0
-  color #3a5169
-
-.home .user-type p
-  font-size 0.85rem
-  font-weight normal
-  padding 0 0.5rem
-
-.home .features
-  padding 2.5rem 0 !important
-  margin 0 !important
-  border-bottom 1px solid #eee
-  text-align left
-
-.home .feature
-  padding-bottom 2.5rem !important
 
 .page-edit
   clear both
@@ -73,8 +13,503 @@
 .page-nav
 .header-anchor
 .badge
-  user-select: none;
+  user-select none
 
 a.sidebar-link:hover
 a.sidebar-link.active
-  background-color: #fdf6f8;
+  background-color #fdf6f8
+
+
+// Home 
+
+div.docs-home
+  main
+
+    .content__default
+      padding-left 0
+      padding-right 0
+      padding-top 0
+
+    div.content__default,
+    footer.page-edit,
+    div.page-nav
+      max-width 100%
+
+    .last-updated
+      display none
+
+    a
+      cursor pointer
+
+    #home-hero
+      background #FFBC7D
+      text-align center
+      padding 160px 1.5rem
+
+      h2
+        font-weight bold
+        font-size 72px
+        line-height 1
+        color #000
+        margin 0
+        border 0
+
+      p
+        font-size 18px
+        line-height 1.5
+        color #000
+        margin 16px 0 32px
+        border 0
+
+      a
+        background #FF3700
+        color #fff
+        padding 12px 24px
+        text-decoration none
+
+      a:after
+        content " "
+        display inline-block
+        margin-left 12px
+        vertical-align middle
+        background-image url(/assets/img/home/arrow-right.svg)
+        background-position center center
+        background-size contain
+        background-repeat no-repeat
+        width 12px
+        height 24px
+        color #fff
+        will-change transform
+        transition-duration 0.2s
+        transition-property transform
+        transition-timing-function linear
+
+      a:hover:after,
+      a:focus:after
+        transform translateX(8px)
+
+    #home-docs
+      background #fff
+      text-align center
+      padding 80px 1.5rem
+
+      div
+        font-weight bold
+        font-size 16px
+        line-height 1.1
+        letter-spacing 0.06em
+        text-transform uppercase
+        color #000
+        margin-bottom 8px
+
+      h2
+        font-weight bold
+        font-size 48px
+        line-height 1
+        color #000
+        margin 0 0 40px
+        border 0
+
+      p
+        font-size 18px
+        line-height 1.5
+        color #000
+        max-width 800px
+        margin 0 auto
+        border 0
+
+    #home-components
+      background #FFDCC5
+      text-align center
+      padding 80px 1.5rem
+
+      h2
+        font-weight bold
+        font-size 48px
+        line-height 1.1
+        color #000
+        margin 0 0 80px
+        border 0
+
+      .home-components-list
+        display grid
+        gap 24px
+        grid-template-columns repeat(4, 1fr)
+        max-width 1400px
+        margin 0 auto
+        text-align left
+
+        .component
+          background #FFF
+          padding 24px
+          will-change transform
+          transition-duration 0.2s
+          transition-property transform
+          transition-timing-function linear
+
+          h3
+            color #000
+            font-weight 600
+            font-size 16px
+            line-height 1
+            text-transform capitalize
+            margin-top 0
+
+            a
+              color #000
+              text-decoration none
+
+          p
+            font-size 14px
+            line-height 1.5
+            color #212121
+
+        .component:hover,
+        .component:focus
+          transform translateY(-8px)
+
+    #home-internals
+      background #fff
+      text-align center
+      padding 80px 1.5rem
+
+      h2
+        font-weight bold
+        font-size 48px
+        line-height 1
+        color #000
+        margin 0 0 80px
+        border 0
+
+      .home-internals-list
+        display grid
+        gap 24px
+        grid-template-columns repeat(4, 1fr)
+        max-width 1400px
+        margin 0 auto
+        text-align left
+
+        .internal
+          background #FFBC7D
+          padding 24px
+          will-change transform
+          transition-duration 0.2s
+          transition-property transform
+          transition-timing-function linear
+
+          h3
+            font-size 20px
+            font-weight bold
+            line-height 1
+            text-transform capitalize
+            margin-top 0
+
+            a
+              color #000
+              font-weight 600
+              text-decoration none
+
+          p
+            font-size 14px
+            line-height 1.5
+            color #212121
+
+          .learn-more
+              margin-top 44px
+
+              a
+                color #000
+                font-size 16px
+                font-weight bold
+
+              a:after
+                content " "
+                display inline-block
+                margin-left 12px
+                vertical-align middle
+                background-image url(/assets/img/home/arrow-right.svg)
+                background-position center center
+                background-size contain
+                background-repeat no-repeat
+                width 12px
+                height 24px
+                will-change transform
+                transition-duration 0.2s
+                transition-property transform
+                transition-timing-function linear
+
+              a:hover,
+              a:focus
+                text-decoration none
+
+        .internal:hover,
+        .internal:focus
+          transform translateY(-8px)
+
+          .learn-more a:after
+            transform translateX(8px)
+
+    #home-testimonials
+      background #fff
+      text-align center
+      padding 80px 1.5rem
+
+      h2
+        font-weight bold
+        font-size 48px
+        line-height 1
+        color #000
+        margin 0 0 80px
+        border 0
+
+      .home-testimonials-list
+        display grid
+        gap 24px
+        grid-template-columns repeat(3, 1fr)
+        max-width 1400px
+        margin 0 auto
+        text-align left
+
+        .testimonial
+          display flex
+          flex-direction column
+          justify-content space-between
+          align-items flex-start
+          min-height 600px
+          padding 40px 31px
+          border 1px solid #D2D2D2
+          box-sizing border-box
+          border-radius 8px
+          will-change transform
+          transition-duration 0.2s
+          transition-property transform
+          transition-timing-function linear
+
+          .metric
+            font-weight bold
+            font-size 16px
+            line-height 1.6
+            letter-spacing 0.02em
+            text-transform uppercase
+            color #000000
+            margin-bottom 16px
+
+          blockquote          
+            font-size 24px
+            line-height 1.68
+            letter-spacing -0.04em
+            color #2B2A34
+            border 0
+            padding 0
+            margin 0
+            flex-grow 1
+            flex-shrink 1
+
+          p
+            font-size 14px
+            line-height 1.5
+            color #212121
+            margin 0
+
+          .name
+            font-weight 600
+            font-size 22px
+            line-height 1.6
+            align-self center
+
+          .position
+            font-size 16px
+            line-height 1.6
+            align-self center
+
+        .testimonial:hover,
+        .testimonial:focus
+          transform translateY(-8px)
+
+    #home-blog
+      background #fff
+      text-align center
+      padding 80px 1.5rem
+
+      h2
+        font-weight bold
+        font-size 48px
+        line-height 1
+        color #000
+        margin 0 0 80px
+        border 0
+
+      .home-blog-list
+        display grid
+        gap 24px
+        grid-template-columns repeat(3, 1fr)
+        max-width 1400px
+        margin 0 auto
+        text-align left
+
+        .blog-post
+          will-change transform
+          transition-duration 0.2s
+          transition-property transform
+          transition-timing-function linear
+
+          .post-image
+            width 100%
+            aspect-ratio 16 / 9
+            margin-bottom 20px
+            background #FF3700
+
+          .post-info
+            margin 0 0 5px
+
+          .post-title,
+          .post-title a
+            color #0C0D0E
+            margin 0 0 10px
+            text-decoration none
+
+        .blog-post:hover,
+        .blog-post:focus
+          transform translateY(-8px)
+
+      a.blog
+        display inline-block
+        margin-top 80px
+        background #fff
+        color #FF3700
+        padding 15px 70px
+        text-decoration none
+        border 1.5px solid #FF3700
+
+      a.blog:after
+        content " "
+        display inline-block
+        margin-left 12px
+        vertical-align middle
+        background-image url(/assets/img/home/arrow-right.svg)
+        background-position center center
+        background-size contain
+        background-repeat no-repeat
+        width 12px
+        height 24px
+        color #FF3700
+        will-change transform
+        transition-duration 0.2s
+        transition-property transform
+        transition-timing-function linear
+
+      a.blog:hover:after,
+      a.blog:focus:after
+        transform translateX(8px)
+
+/* Tablet */
+
+@media (max-width: 720px)
+  div.docs-home main
+
+    .content__default
+      padding-left 0
+      padding-right 0
+      padding-top 0
+
+    #home-hero
+      padding 80px 1.5rem
+
+      h2
+        font-size 40px
+
+    #home-docs
+      padding 80px 1.5rem
+
+      div
+        font-size 14px
+
+      h2
+        font-size 28px
+        margin-bottom 20px
+
+    #home-components
+      padding 80px 1.5rem
+
+      h2
+        font-size 28px
+        margin 0 0 40px
+
+      .home-components-list
+        gap 20px
+        grid-template-columns repeat(2, 1fr)
+
+    #home-internals
+      padding 80px 1.5rem
+
+      h2
+        font-size 28px
+        margin 0 0 40px
+
+      .home-internals-list
+        gap 20px
+        grid-template-columns repeat(2, 1fr)
+
+    #home-testimonials
+      padding 80px 1.5rem
+
+      h2
+        font-size 28px
+        margin 0 0 40px
+
+      .home-testimonials-list
+        gap 20px
+        grid-template-columns repeat(2, 1fr)
+
+        .testimonial
+          padding 20px
+
+    #home-blog
+      padding 80px 1.5rem
+
+      h2
+        font-size 28px
+        margin 0 0 40px
+
+      .home-blog-list
+        gap 20px
+        grid-template-columns repeat(2, 1fr)
+
+/* Mobile */
+
+@media (max-width: 360px)
+  div.docs-home main
+
+    #home-hero
+      padding 32px 1.5rem
+
+    #home-docs
+      padding 32px 1.5rem
+
+    #home-components
+      padding 32px 1.5rem
+
+      .home-components-list
+        gap 16px
+        grid-template-columns 1fr
+
+    #home-internals
+      padding 32px 1.5rem
+
+      .home-internals-list
+        gap 16px
+        grid-template-columns 1fr
+
+    #home-testimonials
+      padding 32px 1.5rem
+
+      .home-testimonials-list
+        gap 16px
+        grid-template-columns 1fr
+
+    #home-blog
+      padding 32px 1.5rem
+
+      .home-blog-list
+        gap 16px
+        grid-template-columns 1fr
