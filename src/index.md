@@ -9,79 +9,81 @@ pageClass: docs-home
 ---
 
 <section id="home-hero">
-  <h2>One Platform,<br>Endless Possibilities</h2>
-  <p>Access powerful APIs to bring your ideas to life on the platform that makes web creation easy for everyone.</p>
+  <h2>The Information You Need<br>for the Elementor You Want</h2>
+  <p>Welcome to the Elementor Developers Documentation Center. Here, you’ll find detailed documentation, clearly explaining how developers can leverage the wide-range of tools and options Elementor provides them.</p>
   <a href="/getting-started/">Get Started</a>
 </section>
 
 <section id="home-docs">
-  <div>Extend Elementor</div>
+  <div class="roof">Extend Elementor</div>
   <h2>Create Your Own Elementor Addons</h2>
-  <p>The resources on this site will guide you through the different Elementor components you can extend and provide code examples you can use and learn from.</p>
+  <p>If you’re a new Elementor developer, check out our <a href="/getting-started/">getting started</a> section which will help you build your first addon. If you’re an old hand with Elementor, feel free to jump in to the documentation using the links below.</p>
 </section>
 
 <section id="home-components">
-  <h2>Explore the Components</h2>
+  <div class="roof">Elementor developers library</div>
+  <h2>Access full documentation of Elementor’s components</h2>
   <div class="home-components-list">
     <div class="component">
       <a href="/context-menu/"><img src="/assets/img/home/icons/context-menu.svg" alt="Context Menu"></a>
       <h3><a href="/context-menu/">Context Menu</a></h3>
-      <p>Accelerate and innovate your website developments.</p>
+      <p>Give users a quick way to edit and customize Elementor building blocks.</p>
     </div>
     <div class="component">
       <a href="/finder/"><img src="/assets/img/home/icons/finder.svg" alt="Finder"></a>
       <h3><a href="/finder/">Finder</a></h3>
-      <p>Accelerate and innovate your website developments.</p>
+      <p>Learn how Finder can offer easy access to pages and settings.</p>
     </div>
     <div class="component">
       <a href="/widgets/"><img src="/assets/img/home/icons/widgets.svg" alt="Widgets"></a>
       <h3><a href="/widgets/">Widgets</a></h3>
-      <p>Accelerate and innovate your website developments.</p>
+      <p>Learn how to create and customize widgets, putting your own mark on Elementor.</p>
     </div>
     <div class="component">
       <a href="/controls/"><img src="/assets/img/home/icons/controls.svg" alt="Controls"></a>
       <h3><a href="/controls/">Controls</a></h3>
-      <p>Accelerate and innovate your website developments.</p>
+      <p>Learn how controls are used to set fields, save data and build interfaces.</p>
     </div>
     <div class="component">
       <a href="/dynamic-tags/"><img src="/assets/img/home/icons/dynamic-tags.svg" alt="Dynamic Tags"></a>
       <h3><a href="/dynamic-tags/">Dynamic Tags</a></h3>
-      <p>Accelerate and innovate your website developments.</p>
+      <p>Leverage information from your site and even from external APIs using dynamic tags.</p>
     </div>
-    <div class="component">
+    <!-- <div class="component">
       <a href="/forms/"><img src="/assets/img/home/icons/forms.svg" alt="Forms"></a>
       <h3><a href="/forms/">Forms</a></h3>
-      <p>Accelerate and innovate your website developments.</p>
-    </div>
+      <p> </p>
+    </div> -->
     <div class="component">
       <a href="/themes/"><img src="/assets/img/home/icons/themes.svg" alt="Themes"></a>
       <h3><a href="/themes/">Themes</a></h3>
-      <p>Accelerate and innovate your website developments.</p>
+      <p>Themes make building sites more efficient. Make your themes Elementor compatible.</p>
     </div>
   </div>
 </section>
 
 <section id="home-internals">
-  <h2>Get to Know Elementor Internals</h2>
+  <div class="roof">Behind the scene</div>
+  <h2>Learn about Elementor’s internal technologies</h2>
   <div class="home-internals-list">
     <div class="internal">
       <h3><a href="/editor/">The Editor</a></h3>
-      <p>Learn about the environment in which users create content and control site settings.</p>
+      <p>Learn about the editor preview and panel areas, the first things users encounter when opening an Elementor page.</p>
       <div class="learn-more"><a href="/editor/">Learn more</a></div>
     </div>
     <div class="internal">
       <h3><a href="/managers/">Managers</a></h3>
-      <p>Learn how to manage Elementor elements. To register and unregister components the right way.</p>
+      <p>The new extensions you create must be registered with Elementor. Learn more about that process here.</p>
       <div class="learn-more"><a href="/managers/">Learn more</a></div>
     </div>
     <div class="internal">
       <h3><a href="/scripts-styles/">Scripts & Styles</a></h3>
-      <p>Learn how to register scripts and styles. Enqueue files dynamically with performance in mind.</p>
+      <p>Learn how to embed custom scripts and styles, allowing you to incorporate them in your own addons.</p>
       <div class="learn-more"><a href="/scripts-styles/">Learn more</a></div>
     </div>
     <div class="internal">
       <h3><a href="/hooks/">Hooks</a></h3>
-      <p>Learn how to change default settings and extend some area with new functionality.</p>
+      <p>Learn how Elementor hooks can help you add your own functionality and extend Elementor capabilities.</p>
       <div class="learn-more"><a href="/hooks/">Learn more</a></div>
     </div>
   </div>
@@ -156,3 +158,7 @@ pageClass: docs-home
   </div>
   <a href="https://developers.elementor.com/blog/" class="blog">View All</a>
 </section>
+
+
+
+Accelerate your web developments. Gain full access to our code and a powerful knowledge base. 
