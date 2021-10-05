@@ -35,9 +35,6 @@ When creating a single component addon, you can use a simpler folder structure:
 plugin-name/
 |
 ├─ assets/
-|  ├─ images/
-|  ├─ css/
-|  └─ js/
 |
 ├─ widgets/
 |

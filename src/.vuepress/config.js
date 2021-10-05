@@ -1,5 +1,6 @@
 const { description } = require('../../package');
 
+const addonsSidebar = require('./sidebars/addons');
 const contextMenuSidebar = require('./sidebars/context-menu');
 const controlsSidebar = require('./sidebars/controls');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
@@ -81,6 +82,10 @@ module.exports = {
             text: 'Hooks',
             link: '/hooks/',
           },
+          {
+            text: 'Building Addons',
+            link: '/addons/',
+          },
         ],
       },
       {
@@ -118,6 +123,7 @@ module.exports = {
       },
     ],
     sidebar: {
+      '/addons/': addonsSidebar,
       '/context-menu/': contextMenuSidebar,
       '/controls/': controlsSidebar,
       '/dynamic-tags/': dynamicTagsSidebar,

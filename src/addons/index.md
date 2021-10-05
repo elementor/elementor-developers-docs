@@ -1,4 +1,4 @@
-# Extending Elementor
+# Building Addons
 
 Elementor Addon is a basically a WordPress plugin that adds functionality to Elementor. Before you go about creating an Elementor addon you need to have a background in creating WordPress plugins.
 
