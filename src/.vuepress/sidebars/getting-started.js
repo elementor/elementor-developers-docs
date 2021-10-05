@@ -7,4 +7,15 @@ module.exports = [
       '',
     ]
   },
+  {
+    title: 'Developer Docs',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'introduction',
+      'addons',
+      'internals',
+      'components',
+    ]
+  },
 ];
