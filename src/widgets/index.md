@@ -35,4 +35,3 @@ Check out how easy it is to create Elementor widgets:
 
 * [Simple Example](./simple-example)
 * [Advanced Example](./advanced-example)
-* [Complex Example](./complex-example)
