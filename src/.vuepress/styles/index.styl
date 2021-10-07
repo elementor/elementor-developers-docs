@@ -120,6 +120,87 @@ div.docs-home
         margin 1rem auto 0
         border 0
 
+    #home-internals
+      background #fff
+      text-align center
+      padding 80px 1.5rem
+
+      h2
+        font-weight bold
+        font-size 48px
+        line-height 1
+        color #000
+        margin 0 0 80px
+        border 0
+
+      .home-internals-list
+        display grid
+        gap 24px
+        grid-template-columns repeat(3, 1fr)
+        max-width 1400px
+        margin 0 auto
+        text-align left
+
+        .internal
+          background #FFBC7D
+          padding 24px
+          will-change transform
+          transition-duration 0.2s
+          transition-property transform
+          transition-timing-function linear
+
+          h3
+            font-size 20px
+            font-weight bold
+            line-height 1
+            text-transform capitalize
+            margin-top 0
+
+            a
+              color #000
+              font-weight 600
+              text-decoration none
+
+          p
+            font-size 14px
+            line-height 1.5
+            color #212121
+
+          .more-link
+              margin-top 44px
+
+              a
+                color #000
+                font-size 16px
+                font-weight bold
+
+              a:after
+                content " "
+                display inline-block
+                margin-left 12px
+                vertical-align middle
+                background-image url(/assets/img/home/arrow-right.svg)
+                background-position center center
+                background-size contain
+                background-repeat no-repeat
+                width 12px
+                height 24px
+                will-change transform
+                transition-duration 0.2s
+                transition-property transform
+                transition-timing-function linear
+
+              a:hover,
+              a:focus
+                text-decoration none
+
+        .internal:hover,
+        .internal:focus
+          transform translateY(-8px)
+
+          .more-link a:after
+            transform translateX(8px)
+
     #home-components
       background #FFDCC5
       text-align center
@@ -136,7 +217,7 @@ div.docs-home
       .home-components-list
         display grid
         gap 24px
-        grid-template-columns repeat(4, 1fr)
+        grid-template-columns repeat(3, 1fr)
         max-width 1400px
         margin 0 auto
         text-align left
@@ -169,87 +250,6 @@ div.docs-home
         .component:hover,
         .component:focus
           transform translateY(-8px)
-
-    #home-internals
-      background #fff
-      text-align center
-      padding 80px 1.5rem
-
-      h2
-        font-weight bold
-        font-size 48px
-        line-height 1
-        color #000
-        margin 0 0 80px
-        border 0
-
-      .home-internals-list
-        display grid
-        gap 24px
-        grid-template-columns repeat(4, 1fr)
-        max-width 1400px
-        margin 0 auto
-        text-align left
-
-        .internal
-          background #FFBC7D
-          padding 24px
-          will-change transform
-          transition-duration 0.2s
-          transition-property transform
-          transition-timing-function linear
-
-          h3
-            font-size 20px
-            font-weight bold
-            line-height 1
-            text-transform capitalize
-            margin-top 0
-
-            a
-              color #000
-              font-weight 600
-              text-decoration none
-
-          p
-            font-size 14px
-            line-height 1.5
-            color #212121
-
-          .learn-more
-              margin-top 44px
-
-              a
-                color #000
-                font-size 16px
-                font-weight bold
-
-              a:after
-                content " "
-                display inline-block
-                margin-left 12px
-                vertical-align middle
-                background-image url(/assets/img/home/arrow-right.svg)
-                background-position center center
-                background-size contain
-                background-repeat no-repeat
-                width 12px
-                height 24px
-                will-change transform
-                transition-duration 0.2s
-                transition-property transform
-                transition-timing-function linear
-
-              a:hover,
-              a:focus
-                text-decoration none
-
-        .internal:hover,
-        .internal:focus
-          transform translateY(-8px)
-
-          .learn-more a:after
-            transform translateX(8px)
 
     #home-testimonials
       background #fff
@@ -430,17 +430,6 @@ div.docs-home
         font-size 28px
         margin-bottom 20px
 
-    #home-components
-      padding 80px 1.5rem
-
-      h2
-        font-size 28px
-        margin 0 0 40px
-
-      .home-components-list
-        gap 20px
-        grid-template-columns repeat(2, 1fr)
-
     #home-internals
       padding 80px 1.5rem
 
@@ -449,6 +438,17 @@ div.docs-home
         margin 0 0 40px
 
       .home-internals-list
+        gap 20px
+        grid-template-columns repeat(2, 1fr)
+
+    #home-components
+      padding 80px 1.5rem
+
+      h2
+        font-size 28px
+        margin 0 0 40px
+
+      .home-components-list
         gap 20px
         grid-template-columns repeat(2, 1fr)
 
@@ -488,17 +488,17 @@ div.docs-home
     #home-docs
       padding 32px 1.5rem
 
-    #home-components
-      padding 32px 1.5rem
-
-      .home-components-list
-        gap 16px
-        grid-template-columns 1fr
-
     #home-internals
       padding 32px 1.5rem
 
       .home-internals-list
+        gap 16px
+        grid-template-columns 1fr
+
+    #home-components
+      padding 32px 1.5rem
+
+      .home-components-list
         gap 16px
         grid-template-columns 1fr
 

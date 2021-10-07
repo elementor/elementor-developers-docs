@@ -9,15 +9,50 @@ pageClass: docs-home
 ---
 
 <section id="home-hero">
+  <div class="roof">Elementor Developers Docs</div>
   <h2>The Information You Need<br>for the Elementor You Want</h2>
   <p>Welcome to the Elementor Developers Documentation Center. Here, you’ll find detailed documentation, clearly explaining how developers can leverage the wide-range of tools and options Elementor provides them.</p>
   <a href="/getting-started/">Get Started</a>
 </section>
 
+<!--
 <section id="home-docs">
   <div class="roof">Extend Elementor</div>
   <h2>Create Your Own Elementor Addons</h2>
   <p>If you’re a new Elementor developer, check out our <a href="/getting-started/">getting started</a> section which will help you build your first addon. If you’re an old hand with Elementor, feel free to jump in to the documentation using the links below.</p>
+</section>
+-->
+
+<section id="home-internals">
+  <div class="roof">Behind the scene</div>
+  <h2>Learn about Elementor’s internal technologies</h2>
+  <div class="home-internals-list">
+    <div class="internal">
+      <h3><a href="/editor/">The Editor</a></h3>
+      <p>Learn about the editor preview and panel areas, the first things users encounter when opening an Elementor page.</p>
+      <div class="more-link"><a href="/editor/">Learn more</a></div>
+    </div>
+    <div class="internal">
+      <h3><a href="/managers/">Managers</a></h3>
+      <p>The new extensions you create must be registered with Elementor. Learn more about that process here.</p>
+      <div class="more-link"><a href="/managers/">Learn more</a></div>
+    </div>
+    <div class="internal">
+      <h3><a href="/scripts-styles/">Scripts & Styles</a></h3>
+      <p>Learn how to embed custom scripts and styles, allowing you to incorporate them in your own addons.</p>
+      <div class="more-link"><a href="/scripts-styles/">Learn more</a></div>
+    </div>
+    <div class="internal">
+      <h3><a href="/hooks/">Hooks</a></h3>
+      <p>Learn which lifecycle hooks can help you add your own functionality to extend Elementor capabilities.</p>
+      <div class="more-link"><a href="/hooks/">Learn more</a></div>
+    </div>
+    <div class="internal">
+      <h3><a href="/addons/">Building Addons</a></h3>
+      <p>Learn how to build Elementor addons...</p>
+      <div class="more-link"><a href="/hooks/">Learn more</a></div>
+    </div>
+  </div>
 </section>
 
 <section id="home-components">
@@ -32,7 +67,7 @@ pageClass: docs-home
     <div class="component">
       <a href="/finder/"><img src="/assets/img/home/icons/finder.svg" alt="Finder"></a>
       <h3><a href="/finder/">Finder</a></h3>
-      <p>Learn how Finder can offer easy access to pages and settings.</p>
+      <p>Learn how you can customize the finder to help users easily navigate to pages and settings.</p>
     </div>
     <div class="component">
       <a href="/widgets/"><img src="/assets/img/home/icons/widgets.svg" alt="Widgets"></a>
@@ -58,33 +93,6 @@ pageClass: docs-home
       <a href="/themes/"><img src="/assets/img/home/icons/themes.svg" alt="Themes"></a>
       <h3><a href="/themes/">Themes</a></h3>
       <p>Themes make building sites more efficient. Make your themes Elementor compatible.</p>
-    </div>
-  </div>
-</section>
-
-<section id="home-internals">
-  <div class="roof">Behind the scene</div>
-  <h2>Learn about Elementor’s internal technologies</h2>
-  <div class="home-internals-list">
-    <div class="internal">
-      <h3><a href="/editor/">The Editor</a></h3>
-      <p>Learn about the editor preview and panel areas, the first things users encounter when opening an Elementor page.</p>
-      <div class="learn-more"><a href="/editor/">Learn more</a></div>
-    </div>
-    <div class="internal">
-      <h3><a href="/managers/">Managers</a></h3>
-      <p>The new extensions you create must be registered with Elementor. Learn more about that process here.</p>
-      <div class="learn-more"><a href="/managers/">Learn more</a></div>
-    </div>
-    <div class="internal">
-      <h3><a href="/scripts-styles/">Scripts & Styles</a></h3>
-      <p>Learn how to embed custom scripts and styles, allowing you to incorporate them in your own addons.</p>
-      <div class="learn-more"><a href="/scripts-styles/">Learn more</a></div>
-    </div>
-    <div class="internal">
-      <h3><a href="/hooks/">Hooks</a></h3>
-      <p>Learn how Elementor hooks can help you add your own functionality and extend Elementor capabilities.</p>
-      <div class="learn-more"><a href="/hooks/">Learn more</a></div>
     </div>
   </div>
 </section>
@@ -158,7 +166,3 @@ pageClass: docs-home
   </div>
   <a href="https://developers.elementor.com/blog/" class="blog">View All</a>
 </section>
-
-
-
-Accelerate your web developments. Gain full access to our code and a powerful knowledge base. 
