@@ -8,7 +8,7 @@ Dynamic Tags are used to insert customized data based on various sources.
 
 For example, Elementor Pro allows you to add dynamic data based on the page and site parameters, this includes data such as; *Post Title*, *Post Excerpt*, *Author Info*, *Site Name*, *Site Logo*, and much more.
 
-Addon developers can create a wide range of dynamic tags, and can even use external APIs to pull data to Elementor. The possibilities are endless.
+Addon developers can create a wide range of dynamic tags, and can even use external APIs to pull data to Elementor. 
 
 ## How it Works
 
