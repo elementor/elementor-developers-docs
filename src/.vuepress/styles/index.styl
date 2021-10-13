@@ -51,7 +51,7 @@ div.docs-home
       margin-bottom 8px
 
     #home-hero
-      background #FFBC7D
+      background-color #ffbc7d
       text-align center
       padding 160px 1.5rem
 
@@ -73,7 +73,8 @@ div.docs-home
 
       a
         display inline-block
-        background #FF3700
+        background-color #ff3700
+        border 1px solid #ff3700
         color #fff
         padding 12px 24px
         text-decoration none
@@ -90,17 +91,14 @@ div.docs-home
         width 12px
         height 24px
         color #fff
-        will-change transform
-        transition-duration 0.2s
-        transition-property transform
-        transition-timing-function linear
 
-      a:hover:after,
-      a:focus:after
-        transform translateX(8px)
+      a:hover,
+      a:focus
+        background-color #ffbc7d
+        color #ff3700
 
     #home-docs
-      background #fff
+      background-color #fff
       text-align center
       padding 80px 1.5rem
 
@@ -121,7 +119,7 @@ div.docs-home
         border 0
 
     #home-internals
-      background #fff
+      background-color #fff
       text-align center
       padding 80px 1.5rem
 
@@ -142,12 +140,9 @@ div.docs-home
         text-align left
 
         .internal
-          background #FFBC7D
+          background-color #ffbc7d
+          border 1px solid #ffbc7d
           padding 24px
-          will-change transform
-          transition-duration 0.2s
-          transition-property transform
-          transition-timing-function linear
 
           h3
             font-size 20px
@@ -185,10 +180,6 @@ div.docs-home
                 background-repeat no-repeat
                 width 12px
                 height 24px
-                will-change transform
-                transition-duration 0.2s
-                transition-property transform
-                transition-timing-function linear
 
               a:hover,
               a:focus
@@ -196,13 +187,11 @@ div.docs-home
 
         .internal:hover,
         .internal:focus
-          transform translateY(-8px)
-
-          .more-link a:after
-            transform translateX(8px)
+          background-color #fff
+          border-color #333
 
     #home-components
-      background #FFDCC5
+      background-color #ffdcc5
       text-align center
       padding 80px 1.5rem
 
@@ -223,12 +212,9 @@ div.docs-home
         text-align left
 
         .component
-          background #FFF
+          background-color #fff
+          border 1px solid #fff
           padding 24px
-          will-change transform
-          transition-duration 0.2s
-          transition-property transform
-          transition-timing-function linear
 
           h3
             color #000
@@ -249,10 +235,11 @@ div.docs-home
 
         .component:hover,
         .component:focus
-          transform translateY(-8px)
+          background-color #ffdcc5
+          border-color #000
 
     #home-testimonials
-      background #fff
+      background-color #fff
       text-align center
       padding 80px 1.5rem
 
@@ -279,13 +266,9 @@ div.docs-home
           align-items flex-start
           min-height 600px
           padding 40px 31px
-          border 1px solid #D2D2D2
+          border 1px solid #d2d2d2
           box-sizing border-box
           border-radius 8px
-          will-change transform
-          transition-duration 0.2s
-          transition-property transform
-          transition-timing-function linear
 
           .metric
             font-weight bold
@@ -293,7 +276,7 @@ div.docs-home
             line-height 1.6
             letter-spacing 0.02em
             text-transform uppercase
-            color #000000
+            color #000
             margin-bottom 16px
 
           blockquote          
@@ -324,12 +307,8 @@ div.docs-home
             line-height 1.6
             align-self center
 
-        .testimonial:hover,
-        .testimonial:focus
-          transform translateY(-8px)
-
     #home-blog
-      background #fff
+      background-color #fff
       text-align center
       padding 80px 1.5rem
 
@@ -343,45 +322,43 @@ div.docs-home
 
       .home-blog-list
         display grid
-        gap 24px
+        gap 2px
         grid-template-columns repeat(3, 1fr)
         max-width 1400px
         margin 0 auto
         text-align left
 
         .blog-post
-          will-change transform
-          transition-duration 0.2s
-          transition-property transform
-          transition-timing-function linear
+          border 1px solid #fff
+          padding 11px
 
           .post-image
             width 100%
             aspect-ratio 16 / 9
             margin-bottom 20px
-            background #FF3700
+            background-color #ff3700
 
           .post-info
             margin 0 0 5px
 
           .post-title,
           .post-title a
-            color #0C0D0E
+            color #000
             margin 0 0 10px
             text-decoration none
 
         .blog-post:hover,
         .blog-post:focus
-          transform translateY(-8px)
+          border-color #000
 
       a.blog
         display inline-block
         margin-top 80px
-        background #fff
-        color #FF3700
+        background-color #fff
+        color #ff3700
         padding 15px 70px
         text-decoration none
-        border 1.5px solid #FF3700
+        border 1.5px solid #ff3700
 
       a.blog:after
         content " "
@@ -394,15 +371,12 @@ div.docs-home
         background-repeat no-repeat
         width 12px
         height 24px
-        color #FF3700
-        will-change transform
-        transition-duration 0.2s
-        transition-property transform
-        transition-timing-function linear
+        color #ff3700
 
-      a.blog:hover:after,
-      a.blog:focus:after
-        transform translateX(8px)
+      a.blog:hover,
+      a.blog:focus
+        background-color #ff3700
+        color #fff
 
 /* Tablet */
 
