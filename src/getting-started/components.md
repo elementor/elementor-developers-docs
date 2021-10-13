@@ -1,35 +1,35 @@
 # Elementor Components
 
-Developers can extend different parts of Elementor. The docs include several components with more to come. Each component has a short explanation how it works, and indepth tutorials explaining how you can modify it. In addition, each component has full code examples showing you how to create an addon from scratch. You can copy the code, modifying it for your needs and learn as you go.
+Elementor contains numerous components developers can modify to extend Elementor’s capabilities. This section contains a list of components currently covered by this documentation. 
 
 ## Available Components
 
+Below is a list of Elementor components, along with a short description and links to more in-depth information:
+
 * [Context Menu](/context-menu/)
 
-  When editing elements in the preview area, you can right click an element and access actions that can be applied on the element. Developers can add custom actions the context menus. Learn how to do that.
+  When editing elements in the preview area, right clicking an element accesses actions that can be applied via a context menu. Custom actions can be added to these context menus.
 
 * [Finder](/finder/)
 
-
+  The finder offers easy access to many pages and settings on the site. Developers can extend the finder, adding and removing items and categories.
 
 * [Widgets](/widgets/)
 
-
+  Elementor contains dozens of useful widgets in the widgets panel. Developers can create their own widgets, introducing advanced functionality not currently present in Elementor.
 
 * [Controls](/controls/)
 
-
+  Elementor Controls are input fields and UI elements that are used to construct an interface. Developers can customize the available settings and change the design in the editor’s preview area.
 
 * [Dynamic Tags](/dynamic-tags/)
 
-
+  Dynamic Tags are used to insert customized data based on various sources. Addon developers can create a wide range of dynamic tags, and even use external APIs to pull data to Elementor.
 
 * [Themes](/themes/)
 
-
+  The theme builder transformed Elementor from a page builder to a full site builder. Theme developers can make their themes “Elementor compatible” with theme locations.
 
 ## More Components
 
-Stay tuned as we are working new tutorials for new components. Keep in mind that some components take more time to be documented as we need to rewrite way Elementor code works to allow 3rd party code to be integrated into Elementor Core.
-
-You can be sure that are doing everything to simplify our codebase in order to make it easier for external developers to implement their ideas over the Elementor infrastructure.
+As Elementor grows, we will be adding documentation for more components. This is part of our fundamental commitment to encourage and support third-party developers. As part of this process, we are doing everything possible to simplify our codebase, making it easier for external developers to implement their ideas within the Elementor infrastructure.

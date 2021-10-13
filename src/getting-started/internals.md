@@ -1,21 +1,23 @@
 # Elementor Internals
 
-You should get to know how Elementor works behind the sene. This is why we created a set of tutorials separated to different topics to help you get to know high-level aspects.
+Elementor has underlying technology, which we call the internals. In this section we’ll introduce you to the concepts you should understand when developing your Elementor addons.
 
 ## Available Internals
 
+Below is a list of Elementor’s internals, along with a short description and links to more in-depth information:
+
 * [The Editor](/editor/)
 
-  Get to know the editor which is the environment in which users create pages and controls the settings. You need know the difference between the preview area and the panel area. And make sure you know the main panels Elementor editor offers.
+  The editor is where users create pages and control their settings. It is divided into preview and panel areas. The panel hosts the widget panel and is where users control the settings. The preview screen is where they see how the page will look.
 
 * [Managers](/managers/)
 
-  Elementor's architecture registers and unregisters the different elements using special managers. External developers can use the those managers to register their own elements. Learn how to do exactly that.
+  Elementor's architecture registers and unregisters elements using special managers. External developers need to use these managers to register their own elements. This will let Elementor know about them, enabling their use.
 
 * [Scripts & Styles](/scripts-styles/)
 
-  As a developer, you will need to know how different components load custom JS scripts and CSS stylesheets. As those files can impact performance, make sure you learn how different components use different methods.
+  Developers need to know how different Elementor components load custom JS and CSS files. Since these files can severely impact performance, it’s important to learn the proper methods to load them for each component.
 
 * [Hooks](/hooks/)
 
-  The docs offer the entire list of all the available hooks Elementor has to offer. Developers will find here both filter hooks and action hooks. PHP hooks and JS hooks. Frontend hooks and editor hooks.
+  There are a wide range of hooks that can be used with Elementor. This documentation contains a complete listing of the entire range of available hooks Elementor has to offer - filter hooks, action hooks, PHP hooks, JS hooks, frontend hooks and editor hooks.

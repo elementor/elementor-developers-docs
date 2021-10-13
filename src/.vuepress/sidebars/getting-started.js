@@ -5,6 +5,7 @@ module.exports = [
     sidebarDepth: -1,
     children: [
       '',
+      'addons',
     ]
   },
   {
@@ -12,10 +13,17 @@ module.exports = [
     collapsable: false,
     sidebarDepth: -1,
     children: [
-      'introduction',
-      'addons',
+      'usage',
       'internals',
       'components',
+    ]
+  },
+  {
+    title: 'Start Coding',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'first-addon',
     ]
   },
 ];

@@ -1,15 +1,17 @@
-# Elementor Addons
+# What is an Elementor addon?
 
-Before you start planning and developing your Elementor addon, it’s important to understand what addons do and how they fit into Elementor.
+Before you start planning and developing your Elementor addon, it’s important to understand what addons are and how they fit into Elementor. Addons are a way third party developers can extend the Elementor’s functionality, add new features, integrate external services, customize workflow and more.  
 
-## Addons Economy
+## The Elementor economy
 
-Developers can extend Elementor by developing new features, integrating with external services, customizing your Elementor workflow, building new addons and more.
+Over the years, developers have created hundreds of custom addons for Elementor, including widgets, templates, graphs, sliders, custom popups and more.  These addons are then marketed and sold to millions of Elementor users as part of an ever growing Elementor economy.
 
-Professionals from the community have built custom [addons for Elementor](https://elementor.com/addons/), extending Elementor capabilities. With millions of websites built with Elementor, our 3rd party developers have created a multi-million dollar economy. Join them today.
+Some examples of these addons include:
 
-## Community of Creators
-
-Elementor widgets created by thousands of developers and designers from all over the world, ranging from individual hobbyists to large corporations.
-
-Customize and personalize Elementor with new widgets. Add new features and functionality, enhance your interaction with Elementor, and changing the way your website looks.
+* Advanced Widgets
+* Forms integrations
+* New Dynamic tags
+* Popups
+* Lead collection
+* Animations
+* Custom Fonts and Font Icons
