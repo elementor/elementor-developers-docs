@@ -20,10 +20,12 @@ a.sidebar-link.active
   background-color #fdf6f8
 
 
+
 // Home 
 
 div.docs-home
   main
+    padding-bottom 0
 
     .content__default
       padding-left 0
@@ -35,6 +37,7 @@ div.docs-home
     div.page-nav
       max-width 100%
 
+    footer.page-edit
     .last-updated
       display none
 
@@ -47,79 +50,50 @@ div.docs-home
       line-height 1.1
       letter-spacing 0.06em
       text-transform uppercase
-      color #000
       margin-bottom 8px
 
     #home-hero
-      background-color #ffbc7d
+      background-color #483082
+      color #fff
       text-align center
-      padding 160px 1.5rem
+      padding 80px 1.5rem
 
       h2
         font-weight bold
         font-size 72px
         line-height 1
-        color #000
         margin 0
         border 0
 
       p
         font-size 18px
         line-height 1.5
-        color #000
         border 0
         max-width 900px
         margin 1rem auto 2rem
 
+      .cta
+        width 300px
+        margin 0 auto
+        display flex
+        justify-content space-between
+
       a
         display inline-block
-        background-color #ff3700
-        border 1px solid #ff3700
-        color #fff
+        background-color #ff7be5
+        border 1px solid #ff7be5
+        color #05047E
         padding 12px 24px
         text-decoration none
 
-      a:after
-        content " "
-        display inline-block
-        margin-left 12px
-        vertical-align middle
-        background-image url(/assets/img/home/arrow-right.svg)
-        background-position center center
-        background-size contain
-        background-repeat no-repeat
-        width 12px
-        height 24px
-        color #fff
-
       a:hover,
       a:focus
-        background-color #ffbc7d
-        color #ff3700
-
-    #home-docs
-      background-color #fff
-      text-align center
-      padding 80px 1.5rem
-
-      h2
-        font-weight bold
-        font-size 48px
-        line-height 1
-        color #000
-        margin 0 0 40px
-        border 0
-
-      p
-        font-size 18px
-        line-height 1.5
-        color #000
-        max-width 920px
-        margin 1rem auto 0
-        border 0
+        background-color #483082
+        color #ff7be5
 
     #home-internals
       background-color #fff
+      color #000
       text-align center
       padding 80px 1.5rem
 
@@ -127,7 +101,6 @@ div.docs-home
         font-weight bold
         font-size 48px
         line-height 1
-        color #000
         margin 0 0 80px
         border 0
 
@@ -140,8 +113,8 @@ div.docs-home
         text-align left
 
         .internal
-          background-color #ffbc7d
-          border 1px solid #ffbc7d
+          background-color #eae7ff
+          border 1px solid #eae7ff
           padding 24px
 
           h3
@@ -188,10 +161,11 @@ div.docs-home
         .internal:hover,
         .internal:focus
           background-color #fff
-          border-color #333
+          border-color #000
 
     #home-components
-      background-color #ffdcc5
+      background-color #ffc5f3
+      color #000
       text-align center
       padding 80px 1.5rem
 
@@ -199,7 +173,6 @@ div.docs-home
         font-weight bold
         font-size 48px
         line-height 1.1
-        color #000
         margin 0 0 80px
         border 0
 
@@ -217,7 +190,6 @@ div.docs-home
           padding 24px
 
           h3
-            color #000
             font-weight 600
             font-size 16px
             line-height 1
@@ -235,11 +207,12 @@ div.docs-home
 
         .component:hover,
         .component:focus
-          background-color #ffdcc5
+          background-color #ffc5f3
           border-color #000
 
     #home-testimonials
       background-color #fff
+      color #000
       text-align center
       padding 80px 1.5rem
 
@@ -247,7 +220,6 @@ div.docs-home
         font-weight bold
         font-size 48px
         line-height 1
-        color #000
         margin 0 0 80px
         border 0
 
@@ -309,6 +281,7 @@ div.docs-home
 
     #home-blog
       background-color #fff
+      color #000
       text-align center
       padding 80px 1.5rem
 
@@ -316,7 +289,6 @@ div.docs-home
         font-weight bold
         font-size 48px
         line-height 1
-        color #000
         margin 0 0 80px
         border 0
 
@@ -336,7 +308,7 @@ div.docs-home
             width 100%
             aspect-ratio 16 / 9
             margin-bottom 20px
-            background-color #ff3700
+            background-color #ffdcc5
 
           .post-info
             margin 0 0 5px
@@ -389,23 +361,13 @@ div.docs-home
       padding-top 0
 
     #home-hero
-      padding 80px 1.5rem
+      padding 64px 1.5rem
 
       h2
         font-size 40px
 
-    #home-docs
-      padding 80px 1.5rem
-
-      div
-        font-size 14px
-
-      h2
-        font-size 28px
-        margin-bottom 20px
-
     #home-internals
-      padding 80px 1.5rem
+      padding 64px 1.5rem
 
       h2
         font-size 28px
@@ -416,7 +378,7 @@ div.docs-home
         grid-template-columns repeat(2, 1fr)
 
     #home-components
-      padding 80px 1.5rem
+      padding 64px 1.5rem
 
       h2
         font-size 28px
@@ -427,7 +389,7 @@ div.docs-home
         grid-template-columns repeat(2, 1fr)
 
     #home-testimonials
-      padding 80px 1.5rem
+      padding 64px 1.5rem
 
       h2
         font-size 28px
@@ -441,7 +403,7 @@ div.docs-home
           padding 20px
 
     #home-blog
-      padding 80px 1.5rem
+      padding 64px 1.5rem
 
       h2
         font-size 28px
@@ -457,9 +419,6 @@ div.docs-home
   div.docs-home main
 
     #home-hero
-      padding 32px 1.5rem
-
-    #home-docs
       padding 32px 1.5rem
 
     #home-internals

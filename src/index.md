@@ -12,16 +12,11 @@ pageClass: docs-home
   <div class="roof">Elementor Developers Docs</div>
   <h2>The Information You Need<br>for the Elementor You Want</h2>
   <p>Welcome to the Elementor Developers Documentation Center. Here, you’ll find detailed documentation, clearly explaining how developers can leverage the wide-range of tools and options Elementor provides them.</p>
-  <a href="/getting-started/">Get Started</a>
+  <div class="cta">
+    <a href="/getting-started/">Get Started</a>
+    <a href="/getting-started/first-addon">Start Coding</a>
+  </div>
 </section>
-
-<!--
-<section id="home-docs">
-  <div class="roof">Extend Elementor</div>
-  <h2>Create Your Own Elementor Addons</h2>
-  <p>If you’re a new Elementor developer, check out our <a href="/getting-started/">getting started</a> section which will help you build your first addon. If you’re an old hand with Elementor, feel free to jump in to the documentation using the links below.</p>
-</section>
--->
 
 <section id="home-internals">
   <div class="roof">Behind the scene</div>
