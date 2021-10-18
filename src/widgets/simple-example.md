@@ -30,8 +30,8 @@ elementor-oembed-widget/
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-oembed-widget
  *
- * Elementor tested up to: 3.3.0
- * Elementor Pro tested up to: 3.3.0
+ * Elementor tested up to: 3.5.0
+ * Elementor Pro tested up to: 3.5.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

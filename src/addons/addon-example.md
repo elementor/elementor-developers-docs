@@ -40,8 +40,8 @@ Altogether, the main plugin class with some header data and extra phpDocs should
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-test-extension
  * 
- * Elementor tested up to:     3.3.0
- * Elementor Pro tested up to: 3.3.0
+ * Elementor tested up to:     3.5.0
+ * Elementor Pro tested up to: 3.5.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -71,7 +71,7 @@ final class Elementor_Test_Extension {
 	 * @since 1.0.0
 	 * @var string Minimum Elementor version required to run the plugin.
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '3.3.0';
+	const MINIMUM_ELEMENTOR_VERSION = '3.5.0';
 
 	/**
 	 * Minimum PHP Version
