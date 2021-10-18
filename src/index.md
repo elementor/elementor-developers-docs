@@ -13,8 +13,8 @@ pageClass: docs-home
   <h2>The Information You Need<br>for the Elementor You Want</h2>
   <p>Welcome to the Elementor Developers Documentation Center. Here, you’ll find detailed documentation, clearly explaining how developers can leverage the wide-range of tools and options Elementor provides them.</p>
   <div class="cta">
-    <a href="/getting-started/">Get Started</a>
-    <a href="/getting-started/first-addon">Start Coding</a>
+    <a href="/getting-started/" class="primary">Get Started</a>
+    <a href="/getting-started/first-addon" class="secondary">Start Coding</a>
   </div>
 </section>
 
@@ -25,27 +25,27 @@ pageClass: docs-home
     <div class="internal">
       <h3><a href="/editor/">The Editor</a></h3>
       <p>Learn about the editor preview and panel areas, the first things users encounter when opening an Elementor page.</p>
-      <div class="more-link"><a href="/editor/">Learn more</a></div>
+      <div class="more-link"><a href="/editor/">Read more</a></div>
     </div>
     <div class="internal">
       <h3><a href="/managers/">Managers</a></h3>
       <p>The new extensions you create must be registered with Elementor. Learn more about that process here.</p>
-      <div class="more-link"><a href="/managers/">Learn more</a></div>
+      <div class="more-link"><a href="/managers/">Read more</a></div>
     </div>
     <div class="internal">
       <h3><a href="/scripts-styles/">Scripts & Styles</a></h3>
       <p>Learn how to embed custom scripts and styles, allowing you to incorporate them in your own addons.</p>
-      <div class="more-link"><a href="/scripts-styles/">Learn more</a></div>
+      <div class="more-link"><a href="/scripts-styles/">Read more</a></div>
     </div>
     <div class="internal">
       <h3><a href="/hooks/">Hooks</a></h3>
       <p>Learn which lifecycle hooks can help you add your own functionality to extend Elementor capabilities.</p>
-      <div class="more-link"><a href="/hooks/">Learn more</a></div>
+      <div class="more-link"><a href="/hooks/">Read more</a></div>
     </div>
     <div class="internal">
       <h3><a href="/addons/">Building Addons</a></h3>
-      <p>Learn how to build Elementor addons...</p>
-      <div class="more-link"><a href="/hooks/">Learn more</a></div>
+      <p>Learn WordPress plugin development and the Elementor addons development with object oriented programming.</p>
+      <div class="more-link"><a href="/addons/">Read more</a></div>
     </div>
   </div>
 </section>

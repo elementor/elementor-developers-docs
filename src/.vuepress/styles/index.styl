@@ -91,16 +91,28 @@ div.docs-home
 
       a
         display inline-block
-        background-color #ff7be5
-        border 1px solid #ff7be5
-        color #05047E
         padding 12px 24px
         text-decoration none
 
-      a:hover
-      a:focus
+        &.primary
+          background-color #ff7be5
+          border 1px solid #ff7be5
+          color #05047E
+
+        &.secondary
+          background-color #483082
+          border 1px solid #ff7be5
+          color #ff7be5
+
+      a.primary:hover
+      a.primary:focus
         background-color #483082
         color #ff7be5
+
+      a.secondary:hover
+      a.secondary:focus
+        background-color #ff7be5
+        color #05047E
 
     #home-internals
       background-color #fff
@@ -149,7 +161,7 @@ div.docs-home
               margin-top 44px
 
               a
-                color #000
+                color #05047E
                 font-size 16px
                 font-weight bold
 
