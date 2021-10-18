@@ -4,6 +4,17 @@
  * ref: https://v1.vuepress.vuejs.org/config/#index-styl
  */
 
+body
+  font-family "DM Sans"
+
+h1
+h2
+h3
+h4
+h5
+h6
+	font-family "ivar text"
+
 .page-edit
   clear both
 
@@ -32,8 +43,8 @@ div.docs-home
       padding-right 0
       padding-top 0
 
-    div.content__default,
-    footer.page-edit,
+    div.content__default
+    footer.page-edit
     div.page-nav
       max-width 100%
 
@@ -86,7 +97,7 @@ div.docs-home
         padding 12px 24px
         text-decoration none
 
-      a:hover,
+      a:hover
       a:focus
         background-color #483082
         color #ff7be5
@@ -154,11 +165,11 @@ div.docs-home
                 width 12px
                 height 24px
 
-              a:hover,
+              a:hover
               a:focus
                 text-decoration none
 
-        .internal:hover,
+        .internal:hover
         .internal:focus
           background-color #fff
           border-color #000
@@ -205,7 +216,7 @@ div.docs-home
             line-height 1.5
             color #212121
 
-        .component:hover,
+        .component:hover
         .component:focus
           background-color #ffc5f3
           border-color #000
@@ -313,13 +324,13 @@ div.docs-home
           .post-info
             margin 0 0 5px
 
-          .post-title,
+          .post-title
           .post-title a
             color #000
             margin 0 0 10px
             text-decoration none
 
-        .blog-post:hover,
+        .blog-post:hover
         .blog-post:focus
           border-color #000
 
@@ -345,7 +356,7 @@ div.docs-home
         height 24px
         color #ff3700
 
-      a.blog:hover,
+      a.blog:hover
       a.blog:focus
         background-color #ff3700
         color #fff
@@ -448,3 +459,14 @@ div.docs-home
       .home-blog-list
         gap 16px
         grid-template-columns 1fr
+
+/* Font */
+
+@font-face {
+	font-family: "ivar text";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://elementor.com/wp-content/uploads/2020/05/IvarText-Bold.eot);
+	src: url(https://elementor.com/wp-content/uploads/2020/05/IvarText-Bold.eot?#iefix) format('embedded-opentype'), url(https://elementor.com/wp-content/uploads/2020/05/IvarText-Bold.woff2) format('woff2'), url(https://elementor.com/wp-content/uploads/2020/05/IvarText-Bold.woff) format('woff'), url(https://elementor.com/wp-content/uploads/2020/05/IvarText-Bold.ttf) format('truetype'), url(https://elementor.com/wp-content/uploads/2020/05/IvarText-Bold.svg#IvarText) format('svg');
+}
