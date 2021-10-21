@@ -79,11 +79,13 @@ pageClass: docs-home
       <h3><a href="/dynamic-tags/">Dynamic Tags</a></h3>
       <p>Leverage information from your site and even from external APIs using dynamic tags.</p>
     </div>
-    <!-- <div class="component">
+    <!--
+    <div class="component">
       <a href="/forms/"><img src="/assets/img/home/icons/forms.svg" alt="Forms"></a>
       <h3><a href="/forms/">Forms</a></h3>
       <p> </p>
-    </div> -->
+    </div>
+    -->
     <div class="component">
       <a href="/themes/"><img src="/assets/img/home/icons/themes.svg" alt="Themes"></a>
       <h3><a href="/themes/">Themes</a></h3>
@@ -92,6 +94,7 @@ pageClass: docs-home
   </div>
 </section>
 
+<!--
 <section id="home-testimonials">
   <h2>Become an Industry Leader</h2>
   <div class="home-testimonials-list">
@@ -115,6 +118,7 @@ pageClass: docs-home
     </div>
   </div>
 </section>
+-->
 
 <section id="home-blog">
   <h2>Recommended Posts From Our Developers Blog</h2>
