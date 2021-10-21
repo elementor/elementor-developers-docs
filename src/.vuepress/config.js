@@ -54,7 +54,7 @@ module.exports = {
   themeConfig: {
     base: '/elementor-developers-docs/',
     repo: 'elementor/elementor-developers-docs',
-    docsBranch: 'main',
+    docsBranch: 'master',
     docsDir: 'src',
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
