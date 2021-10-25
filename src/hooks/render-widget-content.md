@@ -42,7 +42,7 @@ function change_heading_widget_content( $widget_content, $widget ) {
 	return $widget_content;
 
 }
-add_action( 'elementor/widget/render_content', 'change_heading_widget_content', 10, 2 );
+add_filter( 'elementor/widget/render_content', 'change_heading_widget_content', 10, 2 );
 ```
 
 ## Notes
