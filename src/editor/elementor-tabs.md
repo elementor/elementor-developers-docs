@@ -8,14 +8,14 @@ In some panels, Elementor uses tab navigation to display controls. When extendin
 
 Elementor has 6 pre-defined tabs used in different panels:
 
-| Name/ID      | Label      | Constant                                       |
-|--------------|------------|------------------------------------------------|
-| `content`    | Content    | `\Elementor\Controls_Manager::TAB_CONTENT`     |
-| `style`      | Style      | `\Elementor\Controls_Manager::TAB_ADVANCED`    |
-| `advanced`   | Advanced   | `\Elementor\Controls_Manager::TAB_RESPONSIVE`  |
-| `responsive` | Responsive | `\Elementor\Controls_Manager::TAB_LAYOUT`      |
-| `layout`     | Layout     | `\Elementor\Controls_Manager::TAB_LAYOUT`      |
-| `settings`   | Settings   | `\Elementor\Controls_Manager::TAB_SETTINGS`    |
+| Name/ID      | Label      | Constant                                      |
+|--------------|------------|-----------------------------------------------|
+| `content`    | Content    | `\Elementor\Controls_Manager::TAB_CONTENT`    |
+| `style`      | Style      | `\Elementor\Controls_Manager::TAB_STYLE`      |
+| `advanced`   | Advanced   | `\Elementor\Controls_Manager::TAB_ADVANCED`   |
+| `responsive` | Responsive | `\Elementor\Controls_Manager::TAB_RESPONSIVE` |
+| `layout`     | Layout     | `\Elementor\Controls_Manager::TAB_LAYOUT`     |
+| `settings`   | Settings   | `\Elementor\Controls_Manager::TAB_SETTINGS`   |
 
 The tabs are set in the `\Elementor\Controls_Manager` class. They are defined as constants and registered using the `init_tabs()` method; each constant contains the tab name and label.
 
