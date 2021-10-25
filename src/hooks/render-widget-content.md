@@ -6,7 +6,7 @@ Elementor has a hook that lets developers change a widget's content in the front
 
 ## Hook Details
 
-* **Hook Type:** Action Hook
+* **Hook Type:** Filter Hook
 * **Hook Name:** `elementor/widget/render_content`
 * **Affects:** Frontend
 
