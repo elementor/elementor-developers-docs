@@ -59,7 +59,7 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
     lastUpdated: true,
-    logo: '/assets/img/logo.svg',
+    logo: '/assets/img/icon.svg',
     displayAllHeaders: true,
     smoothScroll: true,
     search: false,
