@@ -19,6 +19,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: 'Elementor Developers',
+
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -27,7 +28,7 @@ module.exports = {
   /**
    * Extra tags to be injected to the page HTML `<head>`
    *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
+   * Ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
     ['link', { rel: 'icon', href: '/assets/img/logo.svg' }],
@@ -49,7 +50,7 @@ module.exports = {
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
+   * Ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
     base: '/elementor-developers-docs/',
@@ -144,13 +145,20 @@ module.exports = {
     }
   },
 
-  markdown: {
+  /**
+   * Markdown rules.
+   * 
+   * Ref：https://v1.vuepress.vuejs.org/config/#markdown
+   */
+   markdown: {
     lineNumbers: true,
     toc: true
   },
 
   /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/plugin/
+   * Apply vue plugins.
+   * 
+   * Ref：https://v1.vuepress.vuejs.org/plugin/
    */
   plugins: [
     '@vuepress/plugin-back-to-top',
