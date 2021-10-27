@@ -14,9 +14,17 @@ module.exports = [
     children: [
       'file-folder-structure',
       'plugin-header',
-      'plugin-structure',
-      'plugin-compatibility',
-      'register-files',
+      'namespaces',
+      'main-class',
+      'compatibility',
+      'initialization',
+    ]
+  },
+  {
+    title: 'Examples',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
       'addon-example',
     ]
   },

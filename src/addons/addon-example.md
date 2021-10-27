@@ -1,44 +1,45 @@
-# Addon Example
+# Addon Wrapper Example
 
-
+Let’s create a wrapper for Elementor addon that incorporates everything we’ve learned so far. A file/folder structure, basic header comments required for every WordPress plugin, namespaces, and compatibility checks.
 
 ## Folders Structure
 
-It's recommended to keep similar files together. For example, you should group together CSS files and JS files. This rule applied on file types and functionality - "widgets" should be grouped together.
-
-Here is a reference for a recommended addon folder structure:
+The addon will have the following folder structure:
 
 ```
-elementor-test-extension/
-|
-├─ assets/
-|  ├─ css/
-|  └─ js/
+elementor-test-addon/
 |
 ├─ includes/
+|  |
 |  ├─ controls/
-|  └─ widgets/
+|  |  ├─ control-1.php
+|  |  └─ control-2.php
+|  |
+|  ├─ widgets/
+|  |  ├─ widget-1.php
+|  |  └─ widget-2.php
+|  |
+|  └─ plugin.php
 |
-├─ elementor-test-extension.php
-└─ plugin.php
-
+└─ elementor-test-addon.php
 ```
-
 
 ## The Entire Code
 
-Altogether, the main plugin class with some header data and extra phpDocs should look as follows:
+The addon code should look as follows:
+
+**elementor-test-addon.php**
 
 ```php
 <?php
 /**
- * Plugin Name: Elementor Test Extension
- * Description: Custom Elementor extension.
+ * Plugin Name: Elementor Test Addon
+ * Description: Custom Elementor addon.
  * Plugin URI:  https://elementor.com/
  * Version:     1.0.0
  * Author:      Elementor Developer
  * Author URI:  https://developers.elementor.com/
- * Text Domain: elementor-test-extension
+ * Text Domain: elementor-test-addon
  * 
  * Elementor tested up to:     3.5.0
  * Elementor Pro tested up to: 3.5.0
@@ -48,20 +49,41 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+function elementor_test_addon() {
+
+	// Load plugin file
+	require_once( __DIR__ . '/includes/plugin.php' );
+
+	// Run the plugin
+	\Elementor_Test_Addon\Plugin::instance();
+
+}
+add_action( 'plugins_loaded', 'elementor_test_addon' );
+```
+
+**includes/plugin.php**
+
+```php
+namespace Elementor_Test_Addon;
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
+
 /**
- * Elementor Test Extension
+ * Plugin class.
  *
- * The main class that initiates and runs the plugin.
+ * The main class that initiates and runs the addon.
  *
  * @since 1.0.0
  */
-final class Elementor_Test_Extension {
+final class Plugin {
 
 	/**
-	 * Plugin Version
+	 * Addon Version
 	 *
 	 * @since 1.0.0
-	 * @var string The plugin version.
+	 * @var string The addon version.
 	 */
 	const VERSION = '1.0.0';
 
@@ -69,7 +91,7 @@ final class Elementor_Test_Extension {
 	 * Minimum Elementor Version
 	 *
 	 * @since 1.0.0
-	 * @var string Minimum Elementor version required to run the plugin.
+	 * @var string Minimum Elementor version required to run the addon.
 	 */
 	const MINIMUM_ELEMENTOR_VERSION = '3.5.0';
 
@@ -77,7 +99,7 @@ final class Elementor_Test_Extension {
 	 * Minimum PHP Version
 	 *
 	 * @since 1.0.0
-	 * @var string Minimum PHP version required to run the plugin.
+	 * @var string Minimum PHP version required to run the addon.
 	 */
 	const MINIMUM_PHP_VERSION = '7.3';
 
@@ -87,7 +109,7 @@ final class Elementor_Test_Extension {
 	 * @since 1.0.0
 	 * @access private
 	 * @static
-	 * @var Elementor_Test_Extension The single instance of the class.
+	 * @var \Elementor_Test_Addon\Plugin The single instance of the class.
 	 */
 	private static $_instance = null;
 
@@ -99,7 +121,7 @@ final class Elementor_Test_Extension {
 	 * @since 1.0.0
 	 * @access public
 	 * @static
-	 * @return Elementor_Test_Extension An instance of the class.
+	 * @return \Elementor_Test_Addon\Plugin An instance of the class.
 	 */
 	public static function instance() {
 
@@ -113,27 +135,13 @@ final class Elementor_Test_Extension {
 	/**
 	 * Constructor
 	 *
+	 * Perform some compatibility checks to make sure basic requirements are meet.
+	 * If all compatibility checks pass, initialize the functionality.
+	 *
 	 * @since 1.0.0
 	 * @access public
 	 */
 	public function __construct() {
-
-		add_action( 'plugins_loaded', [ $this, 'when_wordpress_plugins_loaded' ] );
-
-	}
-
-	/**
-	 * When WordPress Plugins Loaded
-	 *
-     * After all WordPress plugins (including Elementor) are loaded, performs some compatibility checks.
-	 * If all compatibility checks pass, initialize the plugin.
-	 *
-	 * Fired by `plugins_loaded` action hook.
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 */
-	public function when_wordpress_plugins_loaded() {
 
 		if ( $this->is_compatible() ) {
 			add_action( 'elementor/init', [ $this, 'init' ] );
@@ -144,9 +152,7 @@ final class Elementor_Test_Extension {
 	/**
 	 * Compatibility Checks
 	 *
-	 * Checks if Elementor is installed and activated.
-	 * Checks if the installed version of Elementor meets the plugin's minimum requirement.
-	 * Checks if the installed PHP version meets the plugin's minimum requirement.
+	 * Checks whether the site meets the addon requirement.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -176,61 +182,6 @@ final class Elementor_Test_Extension {
 	}
 
 	/**
-	 * Initialize the plugin
-	 *
-	 * Load the plugin only after Elementor (and other plugins) are loaded.
-	 * Load the files required to run the plugin.
-	 *
-	 * Fired by `elementor/init` action hook.
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 */
-	public function init() {
-
-		// Add Plugin actions
-		add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
-		add_action( 'elementor/controls/controls_registered', [ $this, 'init_controls' ] );
-
-	}
-
-	/**
-	 * Init Widgets
-	 *
-	 * Include widgets files and register them
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 */
-	public function init_widgets() {
-
-		// Include Widget files
-		require_once( __DIR__ . '/widgets/test-widget.php' );
-
-		// Register widget
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Test_Widget() );
-
-	}
-
-	/**
-	 * Init Controls
-	 *
-	 * Include controls files and register them
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 */
-	public function init_controls() {
-
-		// Include Control files
-		require_once( __DIR__ . '/controls/test-control.php' );
-
-		// Register control
-		\Elementor\Plugin::instance()->controls_manager->register_control( 'control-type-', new \Test_Control() );
-
-	}
-
-	/**
 	 * Admin notice
 	 *
 	 * Warning when the site doesn't have Elementor installed or activated.
@@ -244,9 +195,9 @@ final class Elementor_Test_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'elementor-test-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-test-extension' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-test-addon' ),
+			'<strong>' . esc_html__( 'Elementor Test Addon', 'elementor-test-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'elementor-test-addon' ) . '</strong>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -267,9 +218,9 @@ final class Elementor_Test_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'elementor-test-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-test-extension' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-addon' ),
+			'<strong>' . esc_html__( 'Elementor Test Addon', 'elementor-test-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'elementor-test-addon' ) . '</strong>',
 			 self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -291,9 +242,9 @@ final class Elementor_Test_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'elementor-test-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'elementor-test-extension' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-addon' ),
+			'<strong>' . esc_html__( 'Elementor Test Addon', 'elementor-test-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'elementor-test-addon' ) . '</strong>',
 			 self::MINIMUM_PHP_VERSION
 		);
 
@@ -301,7 +252,61 @@ final class Elementor_Test_Extension {
 
 	}
 
-}
+	/**
+	 * Initialize
+	 *
+	 * Load the addons functionality only after Elementor is initialized.
+	 *
+	 * Fired by `elementor/init` action hook.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	public function init() {
 
-Elementor_Test_Extension::instance();
+		// Add Plugin actions
+		add_action( 'elementor/widgets/register', [ $this, 'register_widgets' ] );
+		add_action( 'elementor/controls/register', [ $this, 'register_controls' ] );
+
+	}
+
+	/**
+	 * Register Widgets
+	 *
+	 * Load widgets files and register new Elementor widgets.
+	 *
+	 * Fired by `elementor/widgets/register` action hook.
+	 *
+	 * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
+	 */
+	public function register_widgets( $widgets_manager ) {
+
+		require_once( __DIR__ . '/includes/widgets/widget-1.php' );
+		require_once( __DIR__ . '/includes/widgets/widget-2.php' );
+
+		$widgets_manager->register( new \Elementor_Test_Addon\Widget_1() );
+		$widgets_manager->register( new \Elementor_Test_Addon\Widget_2() );
+
+	}
+
+	/**
+	 * Register Controls
+	 *
+	 * Load controls files and register new Elementor controls.
+	 *
+	 * Fired by `elementor/controls/register` action hook.
+	 *
+	 * @param \Elementor\Controls_Manager $controls_manager Elementor controls manager.
+	 */
+	public function register_controls( $controls_manager ) {
+
+		require_once( __DIR__ . '/includes/controls/control-1.php' );
+		require_once( __DIR__ . '/includes/controls/control-2.php' );
+
+		$controls_manager->register( new \Elementor_Test_Addon\Control_1() );
+		$controls_manager->register( new \Elementor_Test_Addon\Control_2() );
+
+	}
+
+}
 ```

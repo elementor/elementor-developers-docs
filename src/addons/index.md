@@ -1,6 +1,6 @@
 # Building Addons
 
-Elementor Addon is a basically a WordPress plugin that adds functionality to Elementor. Before you go about creating an Elementor addon you need to have a background in creating WordPress plugins.
+Elementor Addon is a basically a WordPress plugin that adds functionality to Elementor. Before you go about creating an Elementor addon you need to have a background in creating WordPress plugins. Next, you need to learn the basics on how Elementor addons are built.
 
 ## WordPress Plugin
 
@@ -13,13 +13,16 @@ When extending Elementor, you should implement all the WordPress coding standard
 To start with, you need to create a simple WordPress Plugins focused on Elementor:
 
 * [File & Folder Structure](./file-folder-structure)
-* [Plugin Header](./plugin-header)
-* [Plugin Structure](./plugin-structure)
-* [Plugin Compatibility](./plugin-compatibility)
-* [Register Files](./register-files)
+* [Header Comments](./plugin-header)
+* [Using Namespaces](./namespaces)
+* [Main Class](./main-class)
+* [Compatibility Checks](./compatibility)
+* [Initialization Process](./initialization)
 * [Addon Example](./addon-example)
 
-Only when you finish building a WordPress wrapper, you can start extending Elementor components. How can you extend Elementor? See the following tutorials:
+## What's Next?
+
+Only when you finish building a wrapper, you can start extending Elementor components. How can you extend Elementor? See the following tutorials:
 
 * [Create new widgets](/widgets/)
 * [Create new controls](/controls/)

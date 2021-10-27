@@ -1,19 +1,21 @@
-# Plugin Compatibility
+# Compatibility Checks
 
-The initialization process should check for basic requirements before running the plugin logic. We need to make sure that if one of the basic plugin requirements fails, the plugin logic won’t run.
+Before running the initialization process, the addon should check for basic requirements needed to run the addon. We need to make sure that if one of the basic requirements fails, the logic won’t run.
 
 ## Basic Checks
 
-Since the extension extends Elementor’s core functionality, it should check whether Elementor is installed and activated, then check the minimum version of Elementor, lastly check for the minimum PHP version.
+Since the addon extends Elementor’s core functionality, it should check whether Elementor is installed and activated. In addition, it should check the minimum version of Elementor, lastly check for the minimum PHP version. 
 
 ```php
-final class Elementor_Test_Extension {
+namespace Elementor_Test_Addon;
+
+final class Plugin {
 
 	/**
 	 * Minimum Elementor Version
 	 *
 	 * @since 1.0.0
-	 * @var string Minimum Elementor version required to run the plugin.
+	 * @var string Minimum Elementor version required to run the addon.
 	 */
 	const MINIMUM_ELEMENTOR_VERSION = '3.2.0';
 
@@ -21,23 +23,40 @@ final class Elementor_Test_Extension {
 	 * Minimum PHP Version
 	 *
 	 * @since 1.0.0
-	 * @var string Minimum PHP version required to run the plugin.
+	 * @var string Minimum PHP version required to run the addon.
 	 */
 	const MINIMUM_PHP_VERSION = '7.0';
 
 	/**
+	 * Constructor
+	 *
+	 * Perform some compatibility checks to make sure basic requirements are meet.
+	 * If all compatibility checks pass, initialize the functionality.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	public function __construct() {
+
+		if ( $this->is_compatible() ) {
+
+			// Run init process here...
+
+		}
+
+	}
+
+	/**
 	 * Compatibility Checks
 	 *
-	 * Checks if Elementor is installed and activated.
-	 * Checks if the installed version of Elementor meets the plugin's minimum requirement.
-	 * Checks if the installed PHP version meets the plugin's minimum requirement.
+	 * Checks whether the site meets the addon requirement.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 */
 	public function is_compatible() {
 
-		// Check if Elementor installed and activated
+		// Check if Elementor is installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
 			add_action( 'admin_notices', [ $this, 'admin_notice_missing_main_plugin' ] );
 			return false;
@@ -73,9 +92,9 @@ final class Elementor_Test_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'elementor-test-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-test-extension' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'elementor-test-addon' ),
+			'<strong>' . esc_html__( 'Elementor Test Addon', 'elementor-test-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'elementor-test-addon' ) . '</strong>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -96,9 +115,9 @@ final class Elementor_Test_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'elementor-test-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'elementor-test-extension' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-addon' ),
+			'<strong>' . esc_html__( 'Elementor Test Addon', 'elementor-test-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'elementor-test-addon' ) . '</strong>',
 			 self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -120,9 +139,9 @@ final class Elementor_Test_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'elementor-test-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'elementor-test-extension' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'elementor-test-addon' ),
+			'<strong>' . esc_html__( 'Elementor Test Addon', 'elementor-test-addon' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'elementor-test-addon' ) . '</strong>',
 			 self::MINIMUM_PHP_VERSION
 		);
 
@@ -133,4 +152,4 @@ final class Elementor_Test_Extension {
 }
 ```
 
-You can add additional custom compatibility checks based on your plugin requirements.
+You can add as many compatibility checks as needed. If one of the basic requirements fails, the addon won’t run.
