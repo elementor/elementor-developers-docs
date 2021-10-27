@@ -1,10 +1,12 @@
-# Writing Your First Addon
+# Creating Your First Addon
 
-To get started we will create a simple Elementor addon that registers two widget. The initial version will be a simple "Hello World" widget and as we go we will improve the widget with new functionality.
+Let’s create a simple Elementor addon that adds two widgets to Elementor. The first will be a simple "Hello World" widget while the second will be similar, but with improved functionality. 
 
 ## Addon Folder Structure
 
-Assuming you know how to create WordPress plugins, the plugin folder structure will look as follows:
+The first step will be to register the two widgets.
+
+The addon should be placed on your site’s `wp-content/plugins/` folder with the folder structure looking like this:
 
 ```
 elementor-addon/
@@ -16,15 +18,13 @@ elementor-addon/
 └─ elementor-addon.php
 ```
 
-The plugin should be placed on your sites `wp-content/plugins/` folder.
-
 You can zip the entire `elementor-addon` folder and upload the zip file to your site from "_WordPress Dashboard_" > "_Plugins_" screen.
 
 ## Addon files
 
-The addon will have several files. The main file `elementor-addon.php` will register the widgets. The `hello-world-widget-1.php` and `hello-world-widget-2.php` files which will have the widgets functionality.
+These widgets will require several files. The main file `elementor-addon.php` will register the widgets. The `hello-world-widget-1.php` and `hello-world-widget-2.php` files will control the widget’s functionality: 
 
-### Main Addon File
+### The Main Addon File
 
 **elementor-addon.php**
 
@@ -50,19 +50,19 @@ function register_hello_world_widget() {
 add_action( 'elementor/widgets/widgets_registered', 'register_hello_world_widget' );
 ```
 
-The header comments are a basic way WordPress uses to provide information about plugins.
+Header comments are the standard way WordPress uses to provide information about plugins:
 
 ![Plugins screen](/assets/img/elementor-addon-plugin-screen.png)
 
-The widget registration function is the way Elementor registers new widgets. We use the `elementor/widgets/widgets_registered` lifecycle hook and run the `register_hello_world_widget()` function.
+Elementor register new widgets with the widget registration function. Here, we will use the `elementor/widgets/widgets_registered` lifecycle hook to run the `register_hello_world_widget()` function.
 
-The function first loads the two widget files and then registers the widget classes using the widget manager.
+The function first loads the two widget files and then registers the widget classes using the widget manager. After running the code, the widget panel will display the two widgets:
 
 ![The two widgets in the widgets panel](/assets/img/elementor-addon-widgets.png)
 
-### 1st Widget
+### The First Widget
 
-**widgets/hello-world-widget-1.php**
+The first widget is `widgets/hello-world-widget-1.php`. It’s quite simple, it simply prints the text, "Hello World" on the screen. Create it using the following code:
 
 ```php
 <?php
@@ -98,11 +98,9 @@ class Elementor_Hello_World_Widget_1 extends \Elementor\Widget_Base {
 }
 ```
 
-This a simple widget. It only prints "Hello World" text on screen.
+### The Second Widget
 
-### 2nd Widget
-
-**widgets/hello-world-widget-2.php**
+The second widget is `widgets/hello-world-widget-2.php`. It creates two controls in the widget panel. One allows the user to enter their own text and style the text with a custom color (with "Hello World" being the default text). Create it using the following code:
 
 ```php
 <?php
@@ -136,6 +134,7 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 			'section_title',
 			[
 				'label' => esc_html__( 'Title', 'elementor-addon' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
@@ -193,4 +192,4 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 }
 ```
 
-The second widget has two controls on the widget panel. One allows the user to choose the text (default text is "Hello World") and style the text with custom color.
+Now that you’ve seen how easy it is to build addons, it’s time to take advantage of the growing Elementor market and start working on your own cool ideas. And remember, in addition to this detailed documentation, you can also turn to the [Elementor Community Hub](https://elementor.com/community/) and [Elementor Academy](https://elementor.com/academy/) for additional support. 

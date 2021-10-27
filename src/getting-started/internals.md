@@ -4,11 +4,11 @@ Elementor has underlying technology, which we call the internals. In this sectio
 
 ## Available Internals
 
-Below is a list of Elementor’s internals, along with a short description and links to more in-depth information:
+Below is a list of Elementor internals along with a short description and links to more in-depth information:
 
 * [The Editor](/editor/)
 
-  The editor is where users create pages and control their settings. It is divided into preview and panel areas. The panel hosts the widget panel and is where users control the settings. The preview screen is where they see how the page will look.
+  The editor is where users create pages and control their settings. It is divided into preview and panel areas. The panel hosts the list of widgets and is where users control the settings. The preview screen is where they see how the page will look.
 
 * [Managers](/managers/)
 
@@ -21,3 +21,7 @@ Below is a list of Elementor’s internals, along with a short description and l
 * [Hooks](/hooks/)
 
   There are a wide range of hooks that can be used with Elementor. This documentation contains a complete listing of the entire range of available hooks Elementor has to offer - filter hooks, action hooks, PHP hooks, JS hooks, frontend hooks and editor hooks.
+
+* [Building Addons](/addons/)
+
+  This section contains information for those unfamiliar with WordPress. It discusses basic WordPress plugin development, as well as Elementor addons and advanced topics, including background information on plugins and object oriented programming.    

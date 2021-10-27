@@ -23,6 +23,7 @@ module.exports = [
     collapsable: false,
     sidebarDepth: -1,
     children: [
+      'requirements',
       'first-addon',
     ]
   },

@@ -1,6 +1,6 @@
 # Elementor Components
 
-Elementor contains numerous components developers can modify to extend Elementor’s capabilities. This section contains a list of components currently covered by this documentation. 
+Elementor contains numerous components developers can modify to extend Elementor’s capabilities. This section contains a list of components currently covered by this documentation.
 
 ## Available Components
 
@@ -20,7 +20,7 @@ Below is a list of Elementor components, along with a short description and link
 
 * [Controls](/controls/)
 
-  Elementor Controls are input fields and UI elements that are used to construct an interface. Developers can customize the available settings and change the design in the editor’s preview area.
+  Elementor Controls are input fields and UI elements used to construct an interface. Developers can customize the available settings and change the design in the editor’s preview area.
 
 * [Dynamic Tags](/dynamic-tags/)
 
