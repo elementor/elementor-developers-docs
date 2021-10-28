@@ -124,8 +124,7 @@ pageClass: docs-home
   <h2>Recommended Posts From Our Developers Blog</h2>
   <div class="home-blog-list">
     <div class="blog-post">
-      <div class="post-image">
-      </div>
+      <img class="post-image" src="https://elementor.com/cdn-cgi/image/f=auto,w=1200/marketing/wp-content/uploads/sites/9/2020/11/brand_blog_post-02.png" alt="Additional Custom Breakpoints – Technical Details and Gotchas">
       <p class="post-info">
         <span class="post-author">Udi Dollberg</span> | 
         <span class="post-date">August 17, 2021</span>
@@ -137,8 +136,7 @@ pageClass: docs-home
       </h3>
     </div>
     <div class="blog-post">
-      <div class="post-image">
-      </div>
+      <img class="post-image" src="https://elementor.com/cdn-cgi/image/f=auto,w=1200/marketing/wp-content/uploads/sites/9/2021/03/Best-Web-Analytics-Tools_1200x628.png" alt="How Elementor Improved Asset Loading and Made Your Website Run Faster">
       <p class="post-info">
         <span class="post-author">Rami Yushuvaev</span> | 
         <span class="post-date">July 27, 2021</span>
@@ -150,8 +148,7 @@ pageClass: docs-home
       </h3>
     </div>
     <div class="blog-post">
-      <div class="post-image">
-      </div>
+      <img class="post-image" src="https://elementor.com/cdn-cgi/image/f=auto,w=1200/marketing/wp-content/uploads/sites/9/2021/07/29.06.2021_11-BEST-BOOKS-TO-LEARN-WEB-DEVELOPMENT_BLOG-07.png" alt="A New Method For Attaching A JS Handler To An Element">
       <p class="post-info">
         <span class="post-author">Rotem Ben Itzhak</span> | 
         <span class="post-date">December 21, 2020</span>
