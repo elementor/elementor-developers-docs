@@ -1,7 +1,7 @@
 {
   "name": "elementor.developers",
   "version": "1.0.0",
-  "description": "Official Elementor Developer Resources",
+  "description": "Resources and tutorials for Elementor developers",
   "main": "index.js",
   "authors": {
     "name": "Rami Yushuvaev",
