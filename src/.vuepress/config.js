@@ -117,10 +117,10 @@ module.exports = {
             text: 'Dynamic Tags',
             link: '/dynamic-tags/',
           },
-          {
-            text: 'Forms',
-            link: '/forms/',
-          },
+          // {
+          //   text: 'Forms',
+          //   link: '/forms/',
+          // },
           {
             text: 'Themes',
             link: '/themes/',
