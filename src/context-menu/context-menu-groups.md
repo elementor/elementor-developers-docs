@@ -1,5 +1,7 @@
 # Context Menu Groups
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Context menu popups contain several groups divided by a separator. Each group contains a number of actions - groups are only displayed if they have at least one action.
 
 ## Group Object

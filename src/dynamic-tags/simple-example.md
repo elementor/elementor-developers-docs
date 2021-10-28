@@ -1,5 +1,7 @@
 # Simple Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 To put it all together, we're going to create a simple dynamic tag which will return a random number. To simplify the example, this dynamic tag won't have controls. But you can enhance the code and add two controls for minimum and maximum limits.
 
 ## Folder Structure

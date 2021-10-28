@@ -1,5 +1,7 @@
 # Add New Action
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 To add a new action to the context menu, we need to define a new action object and insert the object into the relevant context menu group.
 
 ## Add New Widget Action

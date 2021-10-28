@@ -1,5 +1,7 @@
 # The Docs Website
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 In order to further support and encourage the developer community, Elementor has created this updated and revised docs center where developers can access detailed documentation, clearly explaining how Elementor works and the options it provides developers.
 
 ## Using this Documentation

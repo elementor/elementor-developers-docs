@@ -1,5 +1,7 @@
 # Regular Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Regular controls are added using the `add_control()` method. 
 
 ## Regular Control Structure

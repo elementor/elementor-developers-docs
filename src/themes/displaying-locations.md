@@ -1,5 +1,7 @@
 # Displaying Locations
 
+<Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Displaying Elementor locations in your theme is a simple process. The `elementor_theme_do_location()` function will display the location as defined by the user. In addition, theme developers can set fallback designs if a template was assigned to the location.
 
 ## Simple Location Display

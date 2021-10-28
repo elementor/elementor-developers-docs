@@ -1,5 +1,7 @@
 # Remove Action
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 To remove an existing action from the context menu, we need to delete that action from a group.
 
 ## Remove Widget Action

@@ -1,5 +1,7 @@
 # Main Class
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The main class should check basic requirements, load the required files to activate the addon functionality.
 
 ## Class Structure

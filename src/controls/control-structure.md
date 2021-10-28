@@ -1,5 +1,7 @@
 # Control Structure
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 Creating custom controls is a task reserved for advanced Elementor developers who are very familiar with the code base. The process starts with learning the `Base_Control` class, along with its inner methods. This will allow you to understand how Elementor creates different controls and how you can customize these base methods.
 
 Each control must have a two basic methods - a unique name and the HTML code that displays the field in the editor. More advanced controls can set custom settings, define default values, enqueue scripts and styles, and much more.

@@ -1,5 +1,7 @@
 # Rendering Repeaters
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 One advanced use case is to render multiple elements using the repeater control. Here, users set multiple fields in the repeater control and we need to print them on screen.
 
 ## Render Multiple Fields

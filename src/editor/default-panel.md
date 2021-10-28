@@ -1,5 +1,7 @@
 # Default Panel
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 By default, Elementor displays the [widgets panel]() when the editor is loaded for the first time. You can change this.
 
 ## Changing the Default Panel

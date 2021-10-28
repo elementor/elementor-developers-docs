@@ -1,5 +1,7 @@
 # Using Namespaces
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 PHP namespaces are a way of encapsulating you addon functionality. Just like the filesystem, the namespace system can make your code organized and easy to use.
 
 Elementor core uses namespaces all over the code to group related classes, interfaces, functions and constants. We recommend for our developers use namespace when developing addons.

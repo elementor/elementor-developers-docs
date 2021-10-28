@@ -1,5 +1,7 @@
 # Group Controls
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Group controls are used to group together several regular controls and return them as a small popup in the editor. This helps improve UX by displaying a large number of controls in single line.
 
 ## Using Group Controls

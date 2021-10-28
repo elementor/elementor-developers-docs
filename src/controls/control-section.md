@@ -1,5 +1,7 @@
 # Control Section
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Control sections are UI wrappers used to arrange controls under the tabs in the panel. These controls are divided into sections and each control must be part of a section. These sections are created using two methods: `start_controls_section()` creates a new section while `end_controls_section()` closes the section.
 
 ## Control Section Structure

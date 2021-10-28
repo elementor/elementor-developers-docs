@@ -1,5 +1,7 @@
 # Advanced Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 This more advanced example will include the use of custom fields, and controls where the user can set fields. The tag will calculate the average of those fields and include a single control where the user can set a comma-separated list of ACF field IDs.
 
 ## Folder Structure

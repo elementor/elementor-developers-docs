@@ -1,5 +1,7 @@
 # Building Addons
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor Addon is a basically a WordPress plugin that adds functionality to Elementor. Before you go about creating an Elementor addon you need to have a background in creating WordPress plugins. Next, you need to learn the basics on how Elementor addons are built.
 
 ## WordPress Plugin

@@ -1,5 +1,7 @@
 # Remove Finder Categories
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Developers can use the `elementor/finder/categories` filter hook to remove entire finder categories, along with all their items. 
 
 ## Removing Categories

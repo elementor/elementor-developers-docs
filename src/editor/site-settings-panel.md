@@ -1,5 +1,7 @@
 # Site Settings Panel
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img src="/assets/img/site-settings-panel.png" alt="Elementor Site Settings Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 **Site Settings** is a panel in [the editor](/editor/) where the user can globally define site settings. This includes global colors, typography, site identity, and more.

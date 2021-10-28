@@ -1,5 +1,7 @@
 # Context Menu Types
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor has several types of context menus based on the selected location or element. To open a context menu the user needs to right click an element or location. As different elements have different functionalities, each menu lists different action items. When modifying an action, developers must indicate which element the action should be applied to.
 
 ## Available Types

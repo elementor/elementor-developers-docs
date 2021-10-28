@@ -1,5 +1,7 @@
 # Compatibility Checks
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Before running the initialization process, the addon should check for basic requirements needed to run the addon. We need to make sure that if one of the basic requirements fails, the logic won’t run.
 
 ## Basic Checks

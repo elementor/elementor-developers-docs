@@ -1,5 +1,7 @@
 # Control Template
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 The template generates the final HTML displayed in the editor. The template uses JS to return data from the settings using the `data` JS object.
 
 ## Template Method

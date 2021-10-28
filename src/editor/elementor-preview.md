@@ -1,5 +1,7 @@
 # Elementor Preview
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Preview is the area that displays a live preview of the page currently being edited. It is rendered by a JavaScript engine, typically without loading from the server side. In other words, this is the area where you can see what the site will look like.
 
 ![Elementor Preview](/assets/img/elementor-preview.png)

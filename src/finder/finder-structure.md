@@ -1,5 +1,7 @@
 # Finder Structure
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The finder is organized into categories, each of which includes an array of links.
 
 ## Finder Class

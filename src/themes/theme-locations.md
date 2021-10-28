@@ -1,5 +1,7 @@
 # Theme Locations
 
+<Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 **Theme Builder** only works if the theme has registered **theme locations**. This signals to Elementor that the theme supports global headers / footers, custom archive pages or single pages. Themes can support all core locations, some locations or create their own custom locations.
 
 ## Available Locations

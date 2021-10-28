@@ -1,5 +1,7 @@
 # Dynamic Tags Data
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 Each dynamic tag requires basic information like the unique ID, title, group and category.
 
 ## Data Methods

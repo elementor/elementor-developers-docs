@@ -1,5 +1,7 @@
 # Creating Your First Addon
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Let’s create a simple Elementor addon that adds two widgets to Elementor. The first will be a simple "Hello World" widget while the second will be similar, but with improved functionality. 
 
 ## Addon Folder Structure

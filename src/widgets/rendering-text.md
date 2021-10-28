@@ -1,5 +1,7 @@
 # Rendering Text
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 The most common [widget rendering](./widget-rendering) use case is to print the value of a simple text control. These controls are usually found in the content tab.
 
 ## Printing Text Values

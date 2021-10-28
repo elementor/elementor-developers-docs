@@ -1,5 +1,7 @@
 # Control Scripts
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 When you create new [Elementor controls](/controls/) and need to register custom scripts, they must be registered using the [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) function and enqueued using the [wp_enqueue_script()](https://developer.wordpress.org/reference/functions/wp_enqueue_script/) function. To ensure that Elementor only loads the scripts in the editor, use the control `enqueue()` method.
 
 ## Registering Control Scripts

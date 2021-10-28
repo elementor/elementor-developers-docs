@@ -1,5 +1,7 @@
 # Widget Rendering
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 The last step in widget development is to display the output. Each widget needs to render the data returned from the controls, and generate the final HTML displayed in the frontend and the preview area.
 
 ## Rendering Methods

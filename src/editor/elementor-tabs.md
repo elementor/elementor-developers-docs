@@ -1,5 +1,7 @@
 # Elementor Tabs
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img src="/assets/img/elementor-tabs.png" alt="Elementor Tabs" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 In some panels, Elementor uses tab navigation to display controls. When extending Elementor, you can use any tab you need, or create new ones.

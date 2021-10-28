@@ -1,5 +1,7 @@
 # Dynamic Tags Structure
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 Each dynamic tag needs to have a few basic settings, such as a unique name. On top of that, there are some advanced settings like dynamic tag controls, which are basically optional fields where users can configure their custom data. There is also a render method that generates the final output based on user settings taken from the dynamic tag’s controls.
 
 ## Extending Dynamic Tags

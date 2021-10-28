@@ -1,5 +1,7 @@
 # Using Controls
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Controls can be used inside Elementor widgets or Elementor panels. Controls used by end users to select their data. This data is saved in the database and later used to generate custom output based on the user's selection.
 
 ## Registering Controls

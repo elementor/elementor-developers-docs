@@ -1,5 +1,7 @@
 # Frontend Scripts
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Some addons have custom frontend scripts loaded to the client side on pages built with Elementor. In these cases, use `elementor/frontend/before_register_scripts` or `elementor/frontend/after_register_scripts` action hooks, which are fired when Elementor frontend scripts are registered and enqueued.
 
 ## Registering Frontend Scripts

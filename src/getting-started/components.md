@@ -1,5 +1,7 @@
 # Elementor Components
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor contains numerous components developers can modify to extend Elementor’s capabilities. This section contains a list of components currently covered by this documentation.
 
 ## Available Components

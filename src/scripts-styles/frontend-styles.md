@@ -1,5 +1,7 @@
 # Frontend Styles
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 When using custom stylesheets, they must be registered to all pages using Elementor. Use the `elementor/frontend/before_enqueue_styles` or `elementor/frontend/after_enqueue_styles` action hooks, which are fired when Elementor frontend styles are registered and enqueued.
 
 ## Registering Frontend Styles

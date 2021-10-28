@@ -1,5 +1,7 @@
 # Data Controls
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Data controls are simple controls, used to return a single value and save it in the database.
 
 ## Using Data Controls

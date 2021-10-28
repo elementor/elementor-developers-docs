@@ -1,5 +1,7 @@
 # Header Comments
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Header comments are the standard way WordPress uses to provide information about plugins. The addon's main PHP file should include header comment with basic information. In addition, addons can add optional Elementor header comments.
 
 ## WordPress Header Comments

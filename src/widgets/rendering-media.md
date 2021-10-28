@@ -1,5 +1,7 @@
 # Rendering Media
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Elementor lets you select an image using the media control defined in the `\Elementor\Control_Media` class. There are two ways to render media files.
 
 ## Simple Image Rendering

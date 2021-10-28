@@ -1,5 +1,7 @@
 # File & Folder Structure
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 All [WordPress plugins guidelines](https://developer.wordpress.org/plugins/plugin-basics/best-practices/#file-organization) applied on Elementor addons. You should keep your folder structure simple and organize similar files together.
 
 ## Files

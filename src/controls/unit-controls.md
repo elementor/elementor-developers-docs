@@ -1,5 +1,7 @@
 # Unit Controls
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Unit controls are used to return unit based values.
 
 ## Using Unit Controls

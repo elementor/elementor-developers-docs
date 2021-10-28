@@ -1,5 +1,7 @@
 # Simple Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 In this example, we'll build a full Elementor addon to modify a context menu.
 
 ## Folder Structure

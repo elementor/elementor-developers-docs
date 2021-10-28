@@ -1,5 +1,7 @@
 # What is Elementor?
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor is the ultimate WordPress website builder that enables users to create pixel-perfect WordPress websites intuitively, professionally, and without having to write code. At the same time, it provides a framework allowing developers to extend its functionality providing users with additional features.  While it provides incredible ease-of-use, Elementor is also powerful and flexible, allowing creators to implement sophisticated designs and functionality, all within the Elementor framework.
 
 ## Elementor Versions

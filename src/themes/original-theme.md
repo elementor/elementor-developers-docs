@@ -1,5 +1,7 @@
 # Original Theme
 
+<Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 To simplify the theme migration process, we stripped all custom code from the original theme (including the WordPress loop), and moved it to the `/template-parts/` folder. This way the code snippets will be much shorter and simpler to understand.
 
 ## Original Files

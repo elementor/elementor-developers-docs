@@ -1,5 +1,7 @@
 # Simple Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Putting all these pieces together, we're going to create a simple Elementor widget which will use the [native oEmbed functionality](https://developer.wordpress.org/reference/functions/wp_oembed_get/) of WordPress to auto-embed content from external sites using simple URLs.
 
 ## Folder Structure

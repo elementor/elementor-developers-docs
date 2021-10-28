@@ -1,5 +1,7 @@
 # Finder Categories
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The finder returns a set of links organized by categories. Each category includes links to different sections on the site. For each search term entered by the user, the finder filters the list of links based on the relevant "keywords."
 
 ## Available Categories

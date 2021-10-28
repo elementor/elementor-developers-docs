@@ -1,5 +1,7 @@
 # Widget Structure
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Creating a custom Elementor Widget is not very different from creating a native WordPress widget. Start by creating a class that extends the `\Elementor\Widget_Base` class and fill in all the required methods.
 
 Each widget needs to have a few basic settings - a unique name that will identify the widget in the code, a title that will be used as the widget label, and an icon. There are also advanced settings such as widget controls which are the fields where users select their custom data, and a render script that generates the final output based on user data from the widget controls.

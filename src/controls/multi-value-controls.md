@@ -1,5 +1,7 @@
 # MultiValue Controls
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 MultiValue controls are used to return more than a single value. Each value in the multivalue control will be returned as an item in a `key => value` array.
 
 ## Using MultiValue Controls

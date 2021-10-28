@@ -1,5 +1,7 @@
 # Elementor Internals
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor has underlying technology, which we call the internals. In this section we’ll introduce you to the concepts you should understand when developing your Elementor addons.
 
 ## Available Internals

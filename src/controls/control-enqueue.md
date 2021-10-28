@@ -1,5 +1,7 @@
 # Control Enqueue
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 Controls can register and enqueue scripts & styles used by the control.
 
 ## Enqueue Method

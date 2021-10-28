@@ -1,5 +1,7 @@
 # Remove Finder Items
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Developers can remove specific items from finder categories by using the `elementor/finder/categories` filter hook.
 
 ## Removing Items

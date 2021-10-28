@@ -1,5 +1,7 @@
 # Update Action
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 To modify an existing action, we need to change the action object value in a specific entry.
 
 ## Update Widget Action

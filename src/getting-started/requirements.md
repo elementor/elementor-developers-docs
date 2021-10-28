@@ -1,5 +1,7 @@
 # Requirements
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Before starting to work, make sure you meet the requirements as outlined below.
 
 ## Server
@@ -15,14 +17,3 @@ Your site should have both the [Elementor plugin](https://wordpress.org/plugins/
 ## Programming Languages
 
 We also recommend you have a working knowledge of [WordPress plugin development](https://developer.wordpress.org/plugins/), and familiarity with HTML, CSS, JavaScript and PHP.
-
-
-
-
-<!-- 
-
-## Server Requirements
-
-You can use the basic [server requirements required to run WordPress](https://wordpress.org/about/requirements/). However, to protect your environment and make it faster, it is recommended that you do not rely on [basic environment setup](https://make.wordpress.org/hosting/handbook/server-environment/) and instead utilize the most recent software versions.
-
--->

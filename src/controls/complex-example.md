@@ -1,5 +1,7 @@
 # Complex Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 Now we'll build an addon that adds a new control to Elementor by using an external library. The control will display a textarea field, and we will use the [Emoji One Area](https://github.com/mervick/emojionearea) library to allow the user to add emojis to the content.
 
 ## Folder Structure

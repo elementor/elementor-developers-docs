@@ -1,5 +1,7 @@
 # Control Settings
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 **Control settings** allow developers to set defaults for controls such as the label, description, whether or not to show a separator, hide the label, etc.
 
 ## Available Settings

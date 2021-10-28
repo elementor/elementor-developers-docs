@@ -1,5 +1,7 @@
 # Advanced Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 In this example, we'll build a full Elementor addon that sends and opens [Google PageSpeed](https://developers.google.com/speed/pagespeed/insights/) in a new tab to test page performance.
 
 ## Folder Structure

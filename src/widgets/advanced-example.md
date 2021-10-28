@@ -1,5 +1,7 @@
 # Advanced Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 For a more advanced example we will create a widget with a repeater field, to allow the user to generate a list with items. It will also have a conditional field display when choosing "other" marker type, to display a new control that let's the user enter a [custom marker](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker).
 
 ## Folder Structure

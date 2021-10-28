@@ -1,5 +1,7 @@
 # Context Menu Actions
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The context menu popup contains groups, and within these groups are items called actions. Actions are applied to a selected element (section, column, widget). Behind the scenes, these actions are JS callback functions.
 
 ## Action Object

@@ -1,5 +1,7 @@
 # What is an Elementor addon?
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Before you start planning and developing your Elementor addon, it’s important to understand what addons are and how they fit into Elementor. Addons are a way third party developers can extend the Elementor’s functionality, add new features, integrate external services, customize workflow and more.
 
 ## Addons in the Market

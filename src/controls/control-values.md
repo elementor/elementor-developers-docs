@@ -1,5 +1,7 @@
 # Control Values
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 You can set custom default values for your control. For example, if you add a new field, you can define its default value.
 
 ## Control Default Value

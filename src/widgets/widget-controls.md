@@ -1,5 +1,7 @@
 # Widget Controls
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Each widget needs to have some [controls](/controls/) (setting fields), where users can select their data. This data is saved in the database and later used to [generate custom output](./widget-rendering) based on the user's selection.
 
 ## Registering Controls

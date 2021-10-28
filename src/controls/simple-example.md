@@ -1,5 +1,7 @@
 # Simple Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 Let's build an addon that adds a new control to Elementor. The control will display a select field with the ability to choose currencies.
 
 ## Folder Structure

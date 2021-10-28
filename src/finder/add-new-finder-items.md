@@ -1,5 +1,7 @@
 # Add New Finder Items
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 For each new item (link) we add to the finder, we need to define several fields. This includes the label, the URL, the icon, etc. All these links are grouped together in an array and returned together.
 
 ## New Category

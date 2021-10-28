@@ -1,5 +1,7 @@
 # Dynamic Tags Rendering
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 The render method generates the final output and echoes the data to the control. If the dynamic tag has controls, the render function should use the data while generating the output.
 
 ## Rendering Methods

@@ -1,5 +1,7 @@
 # Initialization Process
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 When all the compatibility checks have passed, we can safely run the addon logic and start extending Elementor functionality. We can load other files, hook to filters and actions and write custom code.
 
 ## Registering Custom Scripts & Styles

@@ -1,5 +1,7 @@
 # Widget Settings
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Before the [widget rendering](./widget-rendering) function starts generating the final HTML output, it needs to retrieve data from the controls.
 
 In Elementor terminology, "*widget settings*" are the "*user data*" retrieved from the widget controls.

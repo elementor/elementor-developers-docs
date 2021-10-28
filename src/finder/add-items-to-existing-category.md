@@ -1,5 +1,7 @@
 # Add Items to an Existing Category
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 In some cases, developers would like to add new items to existing finder categories. You can do that using the `elementor/finder/categories` filter hook.
 
 ## Add Items

@@ -1,5 +1,7 @@
 # Advanced Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 For a more advanced use-case, we'll replace static links with core WordPress functions, linking to the WordPress dashboard settings panels.
 
 ## Folder Structure

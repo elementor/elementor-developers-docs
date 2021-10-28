@@ -1,5 +1,7 @@
 # Rendering HTML Attributes
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 This type of rendering is used to add render attributes to specific HTML elements. For example, a widget can add a new `<div>` tag with a hardcoded "class" attribute or add a new `<a>` tag with hardcoded "target" and "rel" attributes. When used, you need to add `if` statements to check whether or not there are classes/target/rel attributed before adding them to the HTML tag. In addition, you need to escape user data with `esc_attr()` to improve security.
 
 Elementor offers another way to add HTML attributes using the `add_render_attribute()` and `get_render_attribute_string()` methods.

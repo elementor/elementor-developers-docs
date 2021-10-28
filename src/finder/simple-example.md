@@ -1,5 +1,7 @@
 # Simple Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 To see how easy it is to extend the finder, we are going to create a very simple finder category with static links to social media websites.
 
 ## Folder Structure

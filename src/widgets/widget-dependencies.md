@@ -1,5 +1,7 @@
 # Widget Dependencies
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Some widgets are dependent on custom scripts and styles for functionality and look and feel.
 
 ## Defining Dependencies

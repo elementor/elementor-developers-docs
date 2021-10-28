@@ -1,5 +1,7 @@
 # JS Hooks
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 Elementor has a number of JS hooks that allow developers to change default behavior and even add new functionality.
 
 ## Frontend Filters
