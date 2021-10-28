@@ -19,7 +19,7 @@ pageClass: docs-home
 </section>
 
 <section id="home-internals">
-  <div class="roof">Behind the scene</div>
+  <div class="roof">Behind the scenes</div>
   <h2>Learn about Elementor’s internal technologies</h2>
   <div class="home-internals-list">
     <div class="internal">
