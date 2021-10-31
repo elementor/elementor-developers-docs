@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-All [WordPress plugins guidelines](https://developer.wordpress.org/plugins/plugin-basics/best-practices/#file-organization) applied on Elementor addons. You should keep your folder structure simple and organize similar files together.
+All [WordPress plugin guidelines](https://developer.wordpress.org/plugins/plugin-basics/best-practices/#file-organization) should be applied to Elementor addons. You should keep your folder structure simple and place similar files together.
 
 ## Files
 
-The root level of your addon directory `/elementor-test-addon/` should contain a `elementor-test-addon.php` file. It's recommended to use the same name for the main file as the folder name.
+The root level of your addon directory `/elementor-test-addon/` should contain an `elementor-test-addon.php` file. Best practice is to give the folder and main file the same name.
 
 ``` {3}
 elementor-test-addon/
@@ -18,7 +18,7 @@ Other files are optional. If the addon has other files, they all should be organ
 
 ## Folders
 
-It's recommended to keep similar files together. For example, you should group together CSS files and JS files. This rule applied on file types and functionality - "widgets" should be grouped together, as well as "controls" and all the other components.
+Best practice is to keep similar files together. For example, you should group CSS files together and JS files together. This rule also applies to  file types and functionality - e.g. "widgets" should be grouped together, controls should be grouped together etc. 
 
 ### Single Component Addon
 
@@ -36,8 +36,7 @@ elementor-test-addon/
 
 ### Multi Component Addon
 
-As your addon becomes larger and more complex, it's recomended to organize the files in folders. Recommended folder structure:
-
+As your addon becomes larger and more complex, you should organize the files in folders. We recommend this folder structure:
 ```
 elementor-test-addon/
 |
