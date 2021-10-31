@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Let’s create a wrapper for Elementor addon that incorporates everything we’ve learned so far. A file/folder structure, basic header comments required for every WordPress plugin, namespaces, and compatibility checks.
+Let’s create a wrapper for Elementor addons that incorporates everything we’ve learned so far -a file/folder structure, the basic header comments required for every WordPress plugin, namespaces, and compatibility checks.
 
 ## Folders Structure
 
