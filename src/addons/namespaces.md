@@ -2,15 +2,15 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-PHP namespaces are a way of encapsulating you addon functionality. Just like the filesystem, the namespace system can make your code organized and easy to use.
+PHP namespaces are a way of encapsulating your addon's functionality. Just like the filesystem, the namespace system can make your code organized and easy to use.
 
-Elementor core uses namespaces all over the code to group related classes, interfaces, functions and constants. We recommend for our developers use namespace when developing addons.
+Elementor uses namespaces in its code to group related classes, interfaces, functions, and constants. We recommend that developers use namespaces when developing addons.
 
 ## Should you use Namespaces?
 
-WordPress, for example, is not using namespaces. Elementor, on the other hand, is using namespaces all over the code.
+Use of namespaces is a personal choice. WordPress, for example, does not use namespaces, while Elementor's code contains many namespaces.
 
-Developers are not required to use namespaces in their addons. It's a personal choice. Elementor addons will work with and without them.
+For Elementor addons, developers are not required to use namespaces. Addons will work with or without them.
 
 ## Example Namespace Structure
 
@@ -26,7 +26,7 @@ Elementor's namespaces are organize in sun-namespaces to organize similar functi
 
 ## Defining Main Namespaces
 
-Due to limitation in WordPress athitecture, you can't add namespaces to the main file where the header comments are located. This is why both Elementor and Elementor Pro are loading the `plugin.php` file where all the functionality is located and where the main namespace is defined.
+Due to limitations in the WordPress athitecture, you can't add namespaces to the main file where the header comments are located. This is why both Elementor and Elementor Pro load the `plugin.php` file where the functionality is located and where the main namespace is defined.
 
 Addon developers can use the same structure:
 
@@ -44,7 +44,7 @@ elementor-test-addon/
 
 ### Example
 
-The main `elementor-test-addon.php` file will load the file with the functionality:
+The main `elementor-test-addon.php` file loads the functionality:
 
 ```php
 <?php
@@ -74,7 +74,7 @@ add_action( 'plugins_loaded', 'elementor_test_addon' );
 
 ```
 
-The  `/includes/plugin.php` file will defined the namespace and other functionality:
+The  `/includes/plugin.php` file defines the namespace and more functionality:
 
 ```php
 <?php
@@ -87,7 +87,7 @@ final class Plugin {
 
 ### Notes
 
-Please note that now we have three PHP classes named `Plugin`, one in the Elementor, another one in Elementor Pro and the last one is in out test addon. But as they all are using different namespaces there is no name collision as each has its own scope:
+Please note that the above example incorporates three PHP classes named `Plugin`, one in Elementor, another one in Elementor Pro and the last one in our test addon. However since they all are using different namespaces, each has its own scope so there is no name collision:
 
 ```
 \Elementor\Plugin()
