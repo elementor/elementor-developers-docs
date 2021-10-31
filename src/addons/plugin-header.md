@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Header comments are the standard way WordPress uses to provide information about plugins. The addon's main PHP file should include header comment with basic information. In addition, addons can add optional Elementor header comments.
+Header comments are the standard way WordPress uses to provide information about plugins. The addon's main PHP file should include a header comment with basic information. Addons can also add optional Elementor header comments.
 
 ## WordPress Header Comments
 
-To get started, we are going to use some very basic fields at the top of the main file:
+To get started, we will use some very basic fields at the top of the main file:
 
 ```php
 <?php
@@ -21,7 +21,7 @@ To get started, we are going to use some very basic fields at the top of the mai
  */
 ```
 
-WordPress will display this information in "*WordPress Dashboard*" > "*Plugins*" screen:
+WordPress will display this information in the "*WordPress Dashboard*" > "*Plugins*" screen:
 
 ![Plugins screen](/assets/img/elementor-test-addon-plugin-screen.png)
 
@@ -29,7 +29,7 @@ For the full list of available header fields checkout the [WordPress header requ
 
 ## Elementor Header Comments
 
-Elementor has it's own header comments where you can set the heights Elementor version that the addon was tested against. This is an optional header, but we recommend using it.
+Elementor has its own header comments where you can note the Elementor version that the addon was tested against. This is an optional header, but we recommend using it.
 
 ```php
 /**
@@ -38,4 +38,4 @@ Elementor has it's own header comments where you can set the heights Elementor v
  */
 ```
 
-To prevent compatibility problems between different versions of Elementor and other addons, Elementor introduced the "Compatibility Tag" mechanism that notifies users about addons that are not compatible to their currently-installed version of Elementor. This will make the relationship between Elementor and other addons more transparent, and will make it easier to debug issues if any arise.
+Elementor has a compatibility tag to prevent compatibility problems between addons and different versions of Elementor. The compatibility tag  notifies users if addons are incompatible with the user's version of Elementor. This increases transparency between Elementor and its addons. It also makes debugging easier. 
