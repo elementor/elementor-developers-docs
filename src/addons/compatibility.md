@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Before running the initialization process, the addon should check for basic requirements needed to run the addon. We need to make sure that if one of the basic requirements fails, the logic won’t run.
+Before initializing, the addon should check that its basic requirements are met. If these requirements are not met, the addon shouldn’t run. 
 
 ## Basic Checks
 
-Since the addon extends Elementor’s core functionality, it should check whether Elementor is installed and activated. In addition, it should check the minimum version of Elementor, lastly check for the minimum PHP version. 
+Since the addon extends Elementor’s core functionality, it should check to make sure that both the Elementor and PHP versions are compatible. 
 
 ```php
 namespace Elementor_Test_Addon;
@@ -154,4 +154,4 @@ final class Plugin {
 }
 ```
 
-You can add as many compatibility checks as needed. If one of the basic requirements fails, the addon won’t run.
+You can add as many compatibility checks as needed. If one of the basic requirements fails, the addon shouldn't run.
