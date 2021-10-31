@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-The main class should check basic requirements, load the required files to activate the addon functionality.
+The main class should check basic requirements and load the files required to activate the addon's functionality.
 
 ## Class Structure
 
-A good example of an addon class will host the following functionality:
+A good example of an addon class is one that hosts the following functionality:
 
 ```php
 namespace Elementor_Test_Addon;
@@ -68,7 +68,7 @@ final class Plugin {
 
 ## Constructor
 
-The constructor should perform compatibility checks to make sure basic requirements are meet. If all checks pass, the main functionality should be initialized.
+The constructor should perform compatibility checks to make sure the basic requirements are met. If all checks pass, the main functionality should be initialized.
 
 ```php
 namespace Elementor_Test_Addon;
@@ -125,4 +125,4 @@ final class Plugin {
 }
 ```
 
-Now let's see a few examples of [compatibility checks](./compatibility) an addon can have.
+Now let's examine a few examples of addon [compatibility checks](./compatibility):
