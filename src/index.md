@@ -143,7 +143,7 @@ pageClass: docs-home
       </p>
       <h3 class="post-title">
         <a href="https://developers.elementor.com/how-elementor-improved-asset-loading-and-made-your-website-run-faster/" target="_blank">
-          How Elementor Improved Asset Loading and Made Your Website Run Faster
+          How Elementor Improved Asset Loading Made Your Website Run Faster
         </a>
       </h3>
     </div>
