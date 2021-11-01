@@ -1,9 +1,9 @@
 {
   "name": "Elementor Developers",
-  "short_name": "elementor-dev",
-  "description": "Official Elementor Developer Resources",
+  "short_name": "elementor-developers",
+  "description": "Resources and tutorials for Elementor developers",
   "lang": "en-US",
-  "start_url": "https://elementor-developers.netlify.app/",
+  "start_url": "https://developers.elementor.com/",
   "background_color": "#ffffff",
   "theme_color": "#db3157",
   "display": "standalone",
