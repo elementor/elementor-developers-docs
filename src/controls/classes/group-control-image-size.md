@@ -132,7 +132,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo Group_Control_Image_Size::get_attachment_image_html( $settings, 'thumbnail', 'image' );
+		echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'thumbnail', 'image' );
 	}
 
 	protected function content_template() {
