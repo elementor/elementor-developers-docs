@@ -39,6 +39,61 @@ a.sidebar-link.active
 
 
 
+// Navigation
+
+@media (min-width: 719px)
+  .nav-item > a:not(.external):hover
+  .nav-item > a:not(.external).router-link-active
+    border-bottom 0 !important
+
+  .nav-dropdown
+    background #FFF
+    padding-top 64px !important
+    padding-bottom 64px !important
+    border 1px solid #000
+    border-radius 16px !important
+    box-shadow 3px 4px 0px #000
+
+    .dropdown-item
+      padding 0 64px
+
+      &:not(:first-of-type)
+        padding-top 20px
+
+      h4
+        padding 0 !important
+        font-size 1.125rem !important
+        line-height 2rem !important
+
+      a
+        padding 0 !important
+        font-size 1.125rem
+        line-height 2.75rem !important
+
+        :hover
+        :focus
+          text-decoration underline
+
+@media (max-width: 720px)
+  .sidebar .nav-links .nav-item,
+  .dropdown-wrapper .mobile-dropdown-title .title
+  .sidebar .nav-links .repo-link
+    font-weight 600 !important
+    font-size 18.75px !important
+    line-height 25px !important
+    font-style normal
+    font-variant-caps normal
+    font-variant-east-asian normal
+    font-variant-ligatures normal
+    font-variant-numeric normal
+
+  .sidebar .nav-links .nav-item
+  .sidebar .nav-links .repo-link
+    padding-top 23px !important
+    padding-bottom 23px !important
+
+
+
 // Home
 
 div.docs-home
