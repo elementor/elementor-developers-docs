@@ -81,7 +81,6 @@ a.sidebar-link.active
           font-size 0.875rem
           font-weight 500
           line-height 1.5rem
-          border-bottom 2px solid transparent
 
           &::after
             content " "
@@ -96,13 +95,27 @@ a.sidebar-link.active
             color #ff3700
             transition-duration 0.3s
 
+          &::before
+            content ' '
+            position absolute
+            left 0
+            bottom 0
+            width 0%
+            height 2px
+            opacity 0
+            background #000
+            transition all 0.3s
+
           &:hover
           &:focus
             color currentColor
-            border-color $textColor
 
             &::after
               transform translateX(8px)
+
+            &::before
+              opacity 1
+              width 100%
 
     .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active
       color $textColor
