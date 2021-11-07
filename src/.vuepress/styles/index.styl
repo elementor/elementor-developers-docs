@@ -83,7 +83,7 @@ a.sidebar-link.active
           line-height 1.5rem
           border-bottom 2px solid transparent
 
-          &:after
+          &::after
             content " "
             display inline-block
             margin-left 64px
@@ -99,10 +99,19 @@ a.sidebar-link.active
           &:hover
           &:focus
             color currentColor
-            border-color #000
+            border-color $textColor
 
-            &:after
+            &::after
               transform translateX(8px)
+
+    .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active
+      color $textColor
+
+      &::after
+        padding 0
+        margin 0
+        border 0
+        position unset
 
 @media (max-width: 720px)
 
