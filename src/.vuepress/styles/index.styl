@@ -57,8 +57,7 @@ a.sidebar-link.active
 
     .nav-dropdown
       background #FFF
-      padding-top 32px
-      padding-bottom 32px
+      padding 32px 0
       border 1px solid #000
       border-radius 16px
       box-shadow 3px 4px 0px #000
@@ -67,7 +66,7 @@ a.sidebar-link.active
         padding 0 32px
 
         &:not(:first-of-type)
-          padding-top 20px
+          padding-top 16px
 
         h4
           padding 0
@@ -79,9 +78,10 @@ a.sidebar-link.active
           justify-content space-between
           align-items center
           padding 0
-          font-size 1.125rem
-          line-height 2.75rem
-          border-bottom 1px solid transparent
+          font-size 0.875rem
+          font-weight 500
+          line-height 1.5rem
+          border-bottom 2px solid transparent
 
           &:after
             content " "
@@ -91,7 +91,7 @@ a.sidebar-link.active
             background-position center center
             background-size contain
             background-repeat no-repeat
-            width 20px
+            width 18px
             height 24px
             color #ff3700
             transition-duration 0.3s
@@ -99,7 +99,7 @@ a.sidebar-link.active
           &:hover
           &:focus
             color currentColor
-            border-bottom 1px solid #000
+            border-color #000
 
             &:after
               transform translateX(8px)
@@ -111,7 +111,7 @@ a.sidebar-link.active
     .dropdown-wrapper .mobile-dropdown-title .title
     .sidebar .nav-links .repo-link
       font-weight 600
-      font-size 18.75px
+      font-size 16.5px
       line-height 25px
       font-style normal
       font-variant-caps normal
@@ -121,8 +121,8 @@ a.sidebar-link.active
 
     .sidebar .nav-links .nav-item
     .sidebar .nav-links .repo-link
-      padding-top 23px
-      padding-bottom 23px
+      padding-top 8px
+      padding-bottom 8px
 
 
 
