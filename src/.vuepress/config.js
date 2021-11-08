@@ -180,6 +180,14 @@ module.exports = {
       }
     ],
     [
+      'vuepress-plugin-clean-urls',
+      {
+        normalSuffix: '/',
+        indexSuffix: '/',
+        notFoundPath: '/404.html',
+      },
+    ],
+    [
       'vuepress-plugin-seo',
       {
         siteTitle: (_, $site) => $site.title,
