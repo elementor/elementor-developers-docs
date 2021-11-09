@@ -67,7 +67,20 @@ module.exports = {
     nav: [
       {
         text: 'Getting Started',
-        link: '/getting-started/',
+        items: [
+          {
+            text: 'Getting Started',
+            link: '/getting-started/',
+          },
+          {
+            text: 'Your First Addon',
+            link: '/getting-started/first-addon',
+          },
+          {
+            text: 'Building Addons',
+            link: '/addons/',
+          },
+        ],
       },
       {
         text: 'Internals',
@@ -87,10 +100,6 @@ module.exports = {
           {
             text: 'Hooks',
             link: '/hooks/',
-          },
-          {
-            text: 'Building Addons',
-            link: '/addons/',
           },
         ],
       },
@@ -150,7 +159,7 @@ module.exports = {
    * 
    * Ref：https://v1.vuepress.vuejs.org/config/#markdown
    */
-   markdown: {
+  markdown: {
     lineNumbers: true,
     toc: true
   },
@@ -168,15 +177,15 @@ module.exports = {
       {
         serviceWorker: true,
         updatePopup: {
-          message: "New content is available.",
-          buttonText: "Refresh"
+          message: 'New content is available.',
+          buttonText: 'Refresh'
         }
       }
     ],
     [
       '@vuepress/google-analytics',
       {
-        'ga': 'UA-123456789-0'
+        ga: 'UA-123456789-0'
       }
     ],
     [
