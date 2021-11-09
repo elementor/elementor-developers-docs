@@ -14,13 +14,13 @@ When creating Elementor addons, you should implement all WordPress coding standa
 
 To start creating an Elementor addon, you first need to build a simple WordPress plugin focused on Elementor, using the following information:
 
-* [File & Folder Structure](./file-folder-structure)
-* [Header Comments](./plugin-header)
-* [Using Namespaces](./namespaces)
-* [Main Class](./main-class)
-* [Compatibility Checks](./compatibility)
-* [Initialization Process](./initialization)
-* [Addon Example](./addon-example)
+* [File & Folder Structure](/addons/file-folder-structure)
+* [Header Comments](/addons/plugin-header)
+* [Using Namespaces](/addons/namespaces)
+* [Main Class](/addons/main-class)
+* [Compatibility Checks](/addons/compatibility)
+* [Initialization Process](/addons/initialization)
+* [Addon Example](/addons/addon-example)
 
 ## What's Next?
 

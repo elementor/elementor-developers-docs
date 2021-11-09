@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-In this example, we'll add [Elementor locations](./theme-locations) to the [original theme](./original-theme) using **hooks**. After migration, the theme will look as follows:
+In this example, we'll add [Elementor locations](/themes/theme-locations) to the [original theme](/themes/original-theme) using **hooks**. After migration, the theme will look as follows:
 
 ## Themes Files
 

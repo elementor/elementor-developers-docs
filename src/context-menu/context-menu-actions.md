@@ -30,6 +30,6 @@ const action = {
 
 By hooking to the `elements/${elementType}/contextMenuGroups` JS filter hook, you can add, modify, or delete action items.
 
-* [Add New Action](./add-new-action)
-* [Remove Action](./remove-action)
-* [Update Action](./update-action)
+* [Add New Action](/context-menu/add-new-action)
+* [Remove Action](/context-menu/remove-action)
+* [Update Action](/context-menu/update-action)

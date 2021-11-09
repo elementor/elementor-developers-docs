@@ -12,40 +12,40 @@ Elementor includes a wide range of controls out-of-the-box. They are used in wid
 
 Learn more about the control types available in Elementor:
 
-* [Control Types](./control-types)
-* [UI Controls](./ui-controls)
-* [Data_Controls](./data-controls)
-* [Multi Value Controls](./multi-value-controls)
-* [Unit Controls](./unit-controls)
-* [Group Controls](./group-controls)
+* [Control Types](/controls/control-types)
+* [UI Controls](/controls/ui-controls)
+* [Data_Controls](/controls/data-controls)
+* [Multi Value Controls](/controls/multi-value-controls)
+* [Unit Controls](/controls/unit-controls)
+* [Group Controls](/controls/group-controls)
 
 ## Using Controls
 
 Learn more about the controls you can use:
 
-* [Regular Control](./regular-control)
-* [Responsive Control](./responsive-control)
-* [Group Control](./group-control)
+* [Regular Control](/controls/regular-control)
+* [Responsive Control](/controls/responsive-control)
+* [Group Control](/controls/group-control)
 
 Learn more about wrappers to rearrange your controls:
 
-* [Control Section](./control-section)
-* [Control Tabs](./control-tabs)
-* [Control Popovers](./control-popovers)
+* [Control Section](/controls/control-section)
+* [Control Tabs](/controls/control-tabs)
+* [Control Popovers](/controls/control-popovers)
 
 ## Creating Controls
 
 Learn more about how to create your own custom controls:
 
-* [Control Structure](./control-structure)
-* [Control Template](./control-template)
-* [Control Settings](./control-settings)
-* [Control Values](./control-values)
-* [Control Enqueue](./control-enqueue)
+* [Control Structure](/controls/control-structure)
+* [Control Template](/controls/control-template)
+* [Control Settings](/controls/control-settings)
+* [Control Values](/controls/control-values)
+* [Control Enqueue](/controls/control-enqueue)
 
 ## Code Examples
 
 Check out how easy it is to create new controls:
 
-* [Simple Example](./simple-example)
-* [Complex Example](./complex-example)
+* [Simple Example](/controls/simple-example)
+* [Complex Example](/controls/complex-example)

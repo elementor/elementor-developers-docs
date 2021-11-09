@@ -10,12 +10,12 @@ The panel is like an editing dashboard. This is the area where users can control
 
 The panel area consists of several panels:
 
-* [Menu Panel](./menu-panel)
-* [Site Settings Panel](./site-settings-panel)
-* [User Preferences Panel](./user-preferences-panel)
-* [Page Settings Panel](./page-settings-panel)
-* [History Panel](./history-panel)
-* [Widgets Panel](./widgets-panel)
+* [Menu Panel](/editor/menu-panel)
+* [Site Settings Panel](/editor/site-settings-panel)
+* [User Preferences Panel](/editor/user-preferences-panel)
+* [Page Settings Panel](/editor/page-settings-panel)
+* [History Panel](/editor/history-panel)
+* [Widgets Panel](/editor/widgets-panel)
 
 ## Extending the Panels
 

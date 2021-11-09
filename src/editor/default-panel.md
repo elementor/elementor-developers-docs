@@ -6,7 +6,7 @@ By default, Elementor displays the [widgets panel]() when the editor is loaded f
 
 ## Changing the Default Panel
 
-Use the code below to make the [page settings panel](./page-settings-panel) the default panel:
+Use the code below to make the [page settings panel](/editor/page-settings-panel) the default panel:
 
 ```php
 function change_default_elementor_panel( $config ) {
@@ -30,17 +30,17 @@ add_filter( 'elementor/document/config', 'change_default_elementor_panel' );
 
 Here is a partial list of the built-in panels you can use as the default panel:
 
-* [Menu Panel](./menu-panel)
+* [Menu Panel](/editor/menu-panel)
   * `panel/menu`
-* [User Preferences](./user-preferences-panel)
+* [User Preferences](/editor/user-preferences-panel)
   * `panel/editor-preferences`
-* [Page Settings](./page-settings-panel)
+* [Page Settings](/editor/page-settings-panel)
   * `panel/page-settings/settings`
   * `panel/page-settings/style`
   * `panel/page-settings/advanced`
-* [History Panel](./history-panel)
+* [History Panel](/editor/history-panel)
   * `panel/history/actions`
   * `panel/history/revisions`
-* [Widgets Panel](./widgets-panel)
+* [Widgets Panel](/editor/widgets-panel)
   * `panel/elements/categories`
   * `panel/elements/global`

@@ -28,10 +28,10 @@ Elementor offers a number of ways to use the returned value of a control. Widget
 
 We're going to dive in and see how this is done using the different methods. We'll start with very simple methods and move on to more advanced ones.
 
-* [Widget Settings](./widget-settings)
-* [Rendering Text](./rendering-text)
-* [Rendering Style](./rendering-style)
-* [Rendering Media](./rendering-media)
-* [Rendering Repeater](./rendering-repeaters)
-* [Rendering HTML Attribute](./rendering-html-attribute)
-* [Rendering Inline Editing](./rendering-inline-editing)
+* [Widget Settings](/widgets/widget-settings)
+* [Rendering Text](/widgets/rendering-text)
+* [Rendering Style](/widgets/rendering-style)
+* [Rendering Media](/widgets/rendering-media)
+* [Rendering Repeater](/widgets/rendering-repeaters)
+* [Rendering HTML Attribute](/widgets/rendering-html-attribute)
+* [Rendering Inline Editing](/widgets/rendering-inline-editing)

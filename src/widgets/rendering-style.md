@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-A common [widget rendering](./widget-rendering) use case is using the control value to style different HTML elements. Usually used by controls from the content tab.
+A common [widget rendering](/widgets/widget-rendering) use case is using the control value to style different HTML elements. Usually used by controls from the content tab.
 
 ## Styling Elements
 

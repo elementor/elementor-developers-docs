@@ -20,7 +20,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 }
 ```
 
-To extract data from the [dynamic tag controls](./dynamic-tags-controls), we can use the `get_settings()` method:
+To extract data from the [dynamic tag controls](/dynamic-tags/dynamic-tags-controls), we can use the `get_settings()` method:
 
 ```php
 Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {

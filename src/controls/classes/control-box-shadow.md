@@ -65,4 +65,4 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## Notes
 
-Please not that developers should not use this control rather the [Box Shadow Group Control](./group-control-box-shadow).
+Please not that developers should not use this control rather the [Box Shadow Group Control](/controls/group-control-box-shadow).

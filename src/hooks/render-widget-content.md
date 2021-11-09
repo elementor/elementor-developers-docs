@@ -47,4 +47,4 @@ add_filter( 'elementor/widget/render_content', 'change_heading_widget_content', 
 
 ## Notes
 
-To change the [widget JavaScript template](./print-widget-template) see `elementor/widget/print_template`.
+To change the [widget JavaScript template](/hooks/print-widget-template) see `elementor/widget/print_template`.

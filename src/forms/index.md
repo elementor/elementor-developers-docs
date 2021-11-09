@@ -16,10 +16,10 @@ External developers can extend the form Widget functionality to match their need
 
 Use the following tutorials to extend Elementor Forms to your needs:
 
-* [Form Fields](./form-fields)
-* [Form Validation](./form-validation)
-* [Form Processing](./form-processing)
-* [Form Submission Actions](./form-submission-actions)
-* [Form Webhook Response](./form-webhook-response)
-* [Form Actions](./form-actions)
-* [Form Records](./form-records)
+* [Form Fields](/forms/form-fields)
+* [Form Validation](/forms/form-validation)
+* [Form Processing](/forms/form-processing)
+* [Form Submission Actions](/forms/form-submission-actions)
+* [Form Webhook Response](/forms/form-webhook-response)
+* [Form Actions](/forms/form-actions)
+* [Form Records](/forms/form-records)

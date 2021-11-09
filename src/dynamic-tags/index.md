@@ -24,16 +24,16 @@ The dynamic tags functionality is defined in Elementor's core, but the basic ver
 
 Learn more about the anatomy of dynamic tags and how to create your own:
 
-* [Dynamic Tags Structure](./dynamic-tags-structure)
-* [Dynamic Tags Data](./dynamic-tags-data)
-* [Dynamic Tags Groups](./dynamic-tags-groups)
-* [Dynamic Tags Categories](./dynamic-tags-categories)
-* [Dynamic Tags Controls](./dynamic-tags-controls)
-* [Dynamic Tags Rendering](./dynamic-tags-rendering)
+* [Dynamic Tags Structure](/dynamic-tags/dynamic-tags-structure)
+* [Dynamic Tags Data](/dynamic-tags/dynamic-tags-data)
+* [Dynamic Tags Groups](/dynamic-tags/dynamic-tags-groups)
+* [Dynamic Tags Categories](/dynamic-tags/dynamic-tags-categories)
+* [Dynamic Tags Controls](/dynamic-tags/dynamic-tags-controls)
+* [Dynamic Tags Rendering](/dynamic-tags/dynamic-tags-rendering)
 
 ## Code Examples
 
 Check out how easy it is to create new dynamic tags:
 
-* [Simple Example](./simple-example)
-* [Complex Example](./complex-example)
+* [Simple Example](/dynamic-tags/simple-example)
+* [Complex Example](/dynamic-tags/complex-example)

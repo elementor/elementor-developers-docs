@@ -18,15 +18,15 @@ Every theme developer can make their theme **Elementor compatible** by supportin
 
 Learn how to develop "Elementor Compatible" themes:
 
-* [Theme Locations](./theme-locations)
-* [Registering Locations](./registering-locations)
-* [Displaying Locations](./displaying-locations)
+* [Theme Locations](/themes/theme-locations)
+* [Registering Locations](/themes/registering-locations)
+* [Displaying Locations](/themes/displaying-locations)
 
 ## Theme Migration
 
 Check out these examples to see how easy it is to migrate an existing theme and add Elementor support:
 
-* [Migrating Themes](./migrating-themes)
-* [Original Theme](./original-theme)
-* [Migrating Themes with Functions](./migrating-themes-with-functions)
-* [Migrating Themes with Hooks](./migrating-themes-with-hooks)
+* [Migrating Themes](/themes/migrating-themes)
+* [Original Theme](/themes/original-theme)
+* [Migrating Themes with Functions](/themes/migrating-themes-with-functions)
+* [Migrating Themes with Hooks](/themes/migrating-themes-with-hooks)

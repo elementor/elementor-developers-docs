@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Responsive controls are basically [regular controls](./regular-control) with special capabilities that let users set different values for different devices and screen sizes. To add responsive controls we use the `add_responsive_control()` method.
+Responsive controls are basically [regular controls](/controls/regular-control) with special capabilities that let users set different values for different devices and screen sizes. To add responsive controls we use the `add_responsive_control()` method.
 
 ## Responsive Control Structure
 

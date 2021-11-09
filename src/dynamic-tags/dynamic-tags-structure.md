@@ -37,10 +37,10 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 The dynamic tags methods can be divided into the following groups:
 
-* [Data](./dynamic-tags-data)
-* [Groups](./dynamic-tags-groups)
-* [Categories](./dynamic-tags-categories)
-* [Controls](./dynamic-tags-controls)
-* [Rendering](./dynamic-tags-rendering)
+* [Data](/dynamic-tags/dynamic-tags-data)
+* [Groups](/dynamic-tags/dynamic-tags-groups)
+* [Categories](/dynamic-tags/dynamic-tags-categories)
+* [Controls](/dynamic-tags/dynamic-tags-controls)
+* [Rendering](/dynamic-tags/dynamic-tags-rendering)
 
 Please note that the `\Elementor\Core\DynamicTags\Tag` class has many more methods, but the methods mentioned above will cover the vast majority of your needs.

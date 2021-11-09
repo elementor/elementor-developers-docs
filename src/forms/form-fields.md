@@ -39,5 +39,5 @@ Form widget come out-of-the-box with several field types:
 
 External developers can manage field types. Learn more how to do that:
 
-* [Add New Field Type](./add-new-field-type)
-* [Remove Field Type](./remove-field-type)
+* [Add New Field Type](/forms/add-new-field-type)
+* [Remove Field Type](/forms/remove-field-type)

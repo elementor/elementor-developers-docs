@@ -10,28 +10,28 @@ Elementor is packed with dozens of useful widgets in the **widgets panel**. Thes
 
 Learn more about widget anatomy and how to create your own custom widgets:
 
-* [Widget Structure](./widget-structure)
-* [Widget Data](./widget-data)
-* [Widget Categories](./widget-categories)
-* [Widget Dependencies](./widget-dependencies)
-* [Widget Controls](./widget-controls)
-* [Widget Rendering](./widget-rendering)
+* [Widget Structure](/widgets/widget-structure)
+* [Widget Data](/widgets/widget-data)
+* [Widget Categories](/widgets/widget-categories)
+* [Widget Dependencies](/widgets/widget-dependencies)
+* [Widget Controls](/widgets/widget-controls)
+* [Widget Rendering](/widgets/widget-rendering)
 
 ## Rendering Widgets
 
 Learn more about the widget render mechanism and how to use it in your widgets:
 
-* [Widget Settings](./widget-settings)
-* [Rendering Text](./rendering-text)
-* [Rendering Style](./rendering-style)
-* [Rendering Media](./rendering-media)
-* [Rendering Repeater](./rendering-repeaters)
-* [Rendering HTML Attribute](./rendering-html-attribute)
-* [Rendering Inline Editing](./rendering-inline-editing)
+* [Widget Settings](/widgets/widget-settings)
+* [Rendering Text](/widgets/rendering-text)
+* [Rendering Style](/widgets/rendering-style)
+* [Rendering Media](/widgets/rendering-media)
+* [Rendering Repeater](/widgets/rendering-repeaters)
+* [Rendering HTML Attribute](/widgets/rendering-html-attribute)
+* [Rendering Inline Editing](/widgets/rendering-inline-editing)
 
 ## Code Examples
 
 Check out how easy it is to create Elementor widgets:
 
-* [Simple Example](./simple-example)
-* [Advanced Example](./advanced-example)
+* [Simple Example](/widgets/simple-example)
+* [Advanced Example](/widgets/advanced-example)

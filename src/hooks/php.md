@@ -40,8 +40,8 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/frontend/assets_url`
 * `elementor/frontend/builder_content_data`
 * `elementor/frontend/google_font_subsets`
-* [elementor/frontend/print_google_fonts](./print-google-fonts)
-* [elementor/frontend/the_content](./frontend-content)
+* [elementor/frontend/print_google_fonts](/hooks/print-google-fonts)
+* [elementor/frontend/the_content](/hooks/frontend-content)
 * `elementor/frontend/{$element_type}/should_render`
 * `elementor/icons_manager/additional_tabs`
 * `elementor/icons_manager/native`
@@ -71,14 +71,14 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/tracker/last_send_time`
 * `elementor/tracker/send_override`
 * `elementor/tracker/send_tracking_data_params`
-* [elementor/utils/get_placeholder_image_src](./placeholder-image)
+* [elementor/utils/get_placeholder_image_src](/hooks/placeholder-image)
 * `elementor/utils/is_post_support`
 * `elementor/utils/is_post_type_support`
-* [elementor/widget/render_content](./render-widget-content)
+* [elementor/widget/render_content](/hooks/render-widget-content)
 * `elementor/widgets/black_list`
 * `elementor/widgets/read_more/default_link_text`
 * `elementor/widgets/wordpress/widget_args`
-* [elementor/{$element_type}/print_template](./print-widget-template)
+* [elementor/{$element_type}/print_template](/hooks/print-widget-template)
 
 ## Action Hooks
 
@@ -103,7 +103,7 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/dynamic_tags/before_render`
 * `elementor/dynamic_tags/after_render`
 * `elementor/editor/init`
-* [elementor/editor/after_save](./save-editor-data)
+* [elementor/editor/after_save](/hooks/save-editor-data)
 * [elementor/editor/after_enqueue_scripts](/scripts-styles/editor-scripts)
 * [elementor/editor/before_enqueue_scripts](/scripts-styles/editor-scripts)
 * [elementor/editor/after_enqueue_styles](/scripts-styles/editor-styles)
@@ -111,15 +111,15 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/editor/footer`
 * `elementor/editor/wp_head`
 * `elementor/element/before_parse_css`
-* [elementor/element/parse_css](./parse-element-css)
-* [elementor/element/after_section_start](./injecting-controls)
-* [elementor/element/before_section_start](./injecting-controls)
-* [elementor/element/before_section_end](./injecting-controls)
-* [elementor/element/after_section_end](./injecting-controls)
-* [elementor/element/{$section_name}/{$section_id}/before_section_start](./injecting-controls)
-* [elementor/element/{$section_name}/{$section_id}/after_section_start](./injecting-controls)
-* [elementor/element/{$stack_name}/{$section_id}/before_section_end](./injecting-controls)
-* [elementor/element/{$stack_name}/{$section_id}/after_section_end](./injecting-controls)
+* [elementor/element/parse_css](/hooks/parse-element-css)
+* [elementor/element/after_section_start](/hooks/injecting-controls)
+* [elementor/element/before_section_start](/hooks/injecting-controls)
+* [elementor/element/before_section_end](/hooks/injecting-controls)
+* [elementor/element/after_section_end](/hooks/injecting-controls)
+* [elementor/element/{$section_name}/{$section_id}/before_section_start](/hooks/injecting-controls)
+* [elementor/element/{$section_name}/{$section_id}/after_section_start](/hooks/injecting-controls)
+* [elementor/element/{$stack_name}/{$section_id}/before_section_end](/hooks/injecting-controls)
+* [elementor/element/{$stack_name}/{$section_id}/after_section_end](/hooks/injecting-controls)
 * `elementor/element/after_add_attributes`
 * `elementor/elements/elements_registered`
 * `elementor/elements/categories_registered`
@@ -127,10 +127,10 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/experiments/default-features-registered`
 * [elementor/finder/categories/init](/managers/registering-finder-categories)
 * `elementor/fonts/print_font_links/{$font_type}`
-* [elementor/frontend/after_render](./render-frontend-elements)
-* [elementor/frontend/before_render](./render-frontend-elements)
-* [elementor/frontend/{$element_type}/before_render](./render-frontend-elements)
-* [elementor/frontend/{$element_type}/after_render](./render-frontend-elements)
+* [elementor/frontend/after_render](/hooks/render-frontend-elements)
+* [elementor/frontend/before_render](/hooks/render-frontend-elements)
+* [elementor/frontend/{$element_type}/before_render](/hooks/render-frontend-elements)
+* [elementor/frontend/{$element_type}/after_render](/hooks/render-frontend-elements)
 * `elementor/frontend/after_enqueue_scripts`
 * [elementor/frontend/after_enqueue_styles](/scripts-styles/frontend-styles)
 * [elementor/frontend/after_register_scripts](/scripts-styles/frontend-scripts)
@@ -142,9 +142,9 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/frontend/before_get_builder_content`
 * `elementor/frontend/get_builder_content`
 * `elementor/frontend/render_mode/register`
-* [elementor/init](./elementor-init)
+* [elementor/init](/hooks/elementor-init)
 * `elementor/kit/register_tabs`
-* [elementor/loaded](./elementor-loaded)
+* [elementor/loaded](/hooks/elementor-loaded)
 * `elementor/loggers/register`
 * `elementor/maintenance_mode/mode_changed`
 * `elementor/page_templates/canvas/before_content`
@@ -162,5 +162,5 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/template-library/before_get_source_data`
 * `elementor/template-library/create_new_dialog_fields`
 * `elementor/widget/before_render_content`
-* [elementor/widget/{$widget_name}/skins_init](./widget-skins)
+* [elementor/widget/{$widget_name}/skins_init](/hooks/widget-skins)
 * [elementor/widgets/widgets_registered](/managers/registering-widgets)

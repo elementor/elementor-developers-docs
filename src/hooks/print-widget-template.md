@@ -48,4 +48,4 @@ The code above is only an example. We do not recommend using `str_replace` on 
 
 ## Notes
 
-To change the widget [content in the frontend](./render-widget-content) see `elementor/widget/render_content`.
+To change the widget [content in the frontend](/hooks/render-widget-content) see `elementor/widget/render_content`.

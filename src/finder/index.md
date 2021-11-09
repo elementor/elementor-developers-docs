@@ -8,22 +8,22 @@ The finder component opens a popup search bar offering easy access to many pages
 
 ## Finder Structure
 
-The finder contains an array of [categories](./finder-categories). Each category contains a number of **items**. Each item includes a label, a link and a set of keywords. When a user enters a search term, the finder filters the list of items based on the relevant keywords.
+The finder contains an array of [categories](/finder/finder-categories). Each category contains a number of **items**. Each item includes a label, a link and a set of keywords. When a user enters a search term, the finder filters the list of items based on the relevant keywords.
 
-Learn more about the [finder structure](./finder-structure), its main class and the available methods.
+Learn more about the [finder structure](/finder/finder-structure), its main class and the available methods.
 
 ## Extending the Finder
 
 External developers can register their own custom finder categories with their own custom links. Learn more:
 
-* [Add new finder items](./add-new-finder-items)
-* [Add items to an existing category](./add-items-to-existing-category)
-* [Remove finder categories](./remove-finder-categories)
-* [Remove finder items](./remove-finder-items)
+* [Add new finder items](/finder/add-new-finder-items)
+* [Add items to an existing category](/finder/add-items-to-existing-category)
+* [Remove finder categories](/finder/remove-finder-categories)
+* [Remove finder items](/finder/remove-finder-items)
 
 ## Code Examples
 
 Check out how easy it is to extend the finder:
 
-* [Simple example](./simple-example)
-* [Advanced example](./advanced-example)
+* [Simple example](/finder/simple-example)
+* [Advanced example](/finder/advanced-example)

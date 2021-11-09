@@ -8,12 +8,12 @@ MultiValue controls are used to return more than a single value. Each value in t
 
 The following controls are included in Elementor:
 
-* [URL](./classes/control-url) – A URL field with a button to open the link in an external tab.
-* [Media](./classes/control-media) – A media chooser section based on the WordPress media library.
-* [Image Dimensions](./classes/control-image-dimensions) – A component with image width, input, image height input and an apply button.
-* [Icons Control](./classes/control-icons) – An icon chooser (Font Icons or SVG files) based on the Elementor icon library.
-* [Text Shadow](./classes/control-text-shadow) – Input fields for horizontal shadow, vertical shadow, shadow blur and shadow color.
-* [Box Shadow](./classes/control-box-shadow) – Input fields for horizontal shadow, vertical shadow, shadow blur, shadow spread and shadow color.
+* [URL](/controls/classes/control-url) – A URL field with a button to open the link in an external tab.
+* [Media](/controls/classes/control-media) – A media chooser section based on the WordPress media library.
+* [Image Dimensions](/controls/classes/control-image-dimensions) – A component with image width, input, image height input and an apply button.
+* [Icons Control](/controls/classes/control-icons) – An icon chooser (Font Icons or SVG files) based on the Elementor icon library.
+* [Text Shadow](/controls/classes/control-text-shadow) – Input fields for horizontal shadow, vertical shadow, shadow blur and shadow color.
+* [Box Shadow](/controls/classes/control-box-shadow) – Input fields for horizontal shadow, vertical shadow, shadow blur, shadow spread and shadow color.
 
 ## Extending Multi Value Controls
 
