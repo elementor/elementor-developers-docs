@@ -20,7 +20,7 @@ pageClass: docs-home
 
 <section id="home-internals">
   <div class="roof">Behind the scenes</div>
-  <h2>Learn about Elementor’s internal technologies</h2>
+  <h2>Learn About Elementor’s Internal Technologies</h2>
   <div class="home-internals-list">
     <div class="internal">
       <h3><a href="/editor/">The Editor</a></h3>
@@ -54,7 +54,7 @@ pageClass: docs-home
 
 <section id="home-components">
   <div class="roof">Elementor developers library</div>
-  <h2>Access full documentation of Elementor’s components</h2>
+  <h2>Access Full Documentation of Elementor’s Components</h2>
   <div class="home-components-list">
     <div class="component">
       <a href="/context-menu/"><img src="/assets/img/home/icons/context-menu.svg" alt="Context Menu"></a>
