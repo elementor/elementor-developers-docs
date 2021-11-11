@@ -27,15 +27,12 @@ The built-in context menu groups for elements (section, column and widget) inclu
 * **Clipboard** (_`clipboard`_) - actions to copy, paste, paste style etc.
 * **Save** (_`save`_) - actions to save as a global widget or save as a template.
 * **Tools** (_`tools`_) - actions to open tools (e.g. navigator).
+* **{Custom}** - actions added by external developers.
 * **Delete** (_`delete`_) - actions to delete elements.
-
-::: warning Please Note
-Due to a temporary limitation, external developers can only add new actions to 3 groups: `general`, `clipboard` and `delete`.
-:::
 
 ## Groups By Element Type
 
-Below are the active groups displayed in each element:
+Below are the default groups displayed in each element:
 
 ### Section
 
@@ -70,3 +67,13 @@ Below are the active groups displayed in each element:
 * Save
 * Tools
 * Delete
+
+<br clear="both">
+
+## Manage Groups
+
+To add, update or delete custom groups, you need to use the JavaScript `elements/context-menu/groups` filter hook, introduced in Elementor 3.5. Please keep in mind that this hook doesn't change any built-in groups added by Elementor, it only allows external developers to add and modify new groups.
+
+* [Add New Group](/context-menu/add-new-group)
+* [Remove Group](/context-menu/remove-group)
+* [Update Group](/context-menu/update-group)

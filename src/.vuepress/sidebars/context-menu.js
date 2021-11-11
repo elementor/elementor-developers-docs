@@ -18,6 +18,16 @@ module.exports = [
     ]
   },
   {
+    title: 'Manage Groups',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'add-new-group',
+      'remove-group',
+      'update-group',
+    ]
+  },
+  {
     title: 'Manage Actions',
     collapsable: false,
     sidebarDepth: -1,

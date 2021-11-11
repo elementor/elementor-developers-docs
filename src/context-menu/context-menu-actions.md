@@ -26,9 +26,13 @@ const action = {
 * **Is Enabled** - Defines whether the action enabled or disabled.
 * **Action Callback** - JS callback functions which apply to the selected element.
 
+::: warning Please Note
+Action keyboard shortcuts won't be covered in the documentation as it requires additional JS components configuration.
+:::
+
 ## Manage Actions
 
-By hooking to the `elements/${elementType}/contextMenuGroups` JS filter hook, you can add, modify, or delete action items.
+By hooking to the JS `elements/context-menu/groups` filter hook, you can add, modify, or delete action items.
 
 * [Add New Action](/context-menu/add-new-action)
 * [Remove Action](/context-menu/remove-action)

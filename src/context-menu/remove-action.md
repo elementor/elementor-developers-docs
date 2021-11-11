@@ -6,57 +6,69 @@ To remove an existing action from the context menu, we need to delete that actio
 
 ## Remove Widget Action
 
-In the example below, we'll remove the "duplicate" action from a widget "general" group:
+In the example below, we'll remove the `widget-action` action from the `custom-widget-actions` group located in the `widget` context menu:
 
-```js {1}
-elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
+```js
+elementor.hooks.addFilter( 'elements/context-menu/groups', ( customGroups, elementType ) => {
 
-	groups.forEach( ( group ) => {
-		if ( 'general' === group.name ) {
-			const actionIndex = group.actions.findIndex( ( action ) => 'duplicate' === action.name );
-			group.actions.splice( actionIndex, 1 );
-		}
-	} );
+	if ( 'widget' === elementType ) {
+		customGroups.forEach( ( group ) => {
+			if ( 'custom-widget-actions' === group.name ) {
+				const actionIndex = group.actions.findIndex( ( action ) => 'widget-action' === action.name );
+				if ( actionIndex > -1 ) {
+					group.actions.splice( actionIndex, 1 );
+				}
+			}
+		} );
+	}
 
-	return groups;
+	return customGroups;
 
 } );
 ```
 
 ## Remove Column Action
 
-Now we'll remove the "add new column" action from a column "add" group:
+Now we'll remove the `column-action` action from the `custom-column-actions` group located in the `column` context menu:
 
-```js {1}
-elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view ) => {
+```js
+elementor.hooks.addFilter( 'elements/context-menu/groups', ( customGroups, elementType ) => {
 
-	groups.forEach( ( group ) => {
-		if ( 'addNew' === group.name ) {
-			const actionIndex = group.actions.findIndex( ( action ) => 'addNew' === action.name );
-			group.actions.splice( actionIndex, 1 );
-		}
-	} );
+	if ( 'column' === elementType ) {
+		customGroups.forEach( ( group ) => {
+			if ( 'custom-column-actions' === group.name ) {
+				const actionIndex = group.actions.findIndex( ( action ) => 'column-action' === action.name );
+				if ( actionIndex > -1 ) {
+					group.actions.splice( actionIndex, 1 );
+				}
+			}
+		} );
+	}
 
-	return groups;
+	return customGroups;
 
 } );
 ```
 
 ## Remove Section Action
 
-Now we'll remove the "save as template" action from a section "save" group:
+Next we'll remove the `section-action` action from the `custom-section-actions` group located in the `section` context menu:
 
-```js {1}
-elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view ) => {
+```js
+elementor.hooks.addFilter( 'elements/context-menu/groups', ( customGroups, elementType ) => {
 
-	groups.forEach( ( group ) => {
-		if ( 'save' === group.name ) {
-			const actionIndex = group.actions.findIndex( ( action ) => 'save' === action.name );
-			group.actions.splice( actionIndex, 1 );
-		}
-	} );
+	if ( 'section' === elementType ) {
+		customGroups.forEach( ( group ) => {
+			if ( 'custom-section-actions' === group.name ) {
+				const actionIndex = group.actions.findIndex( ( action ) => 'section-action' === action.name );
+				if ( actionIndex > -1 ) {
+					group.actions.splice( actionIndex, 1 );
+				}
+			}
+		} );
+	}
 
-	return groups;
+	return customGroups;
 
 } );
 ```

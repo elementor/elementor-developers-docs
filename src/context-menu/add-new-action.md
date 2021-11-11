@@ -6,36 +6,38 @@ To add a new action to the context menu, we need to define a new action object a
 
 ## Add New Widget Action
 
-In the example below, we'll add a new action to the general group. This action will activate a callback function [alerting](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) the widget type.
+In the example below, we'll add a new action to an existing `custom-widget-actions` group. This action will add an external link to Elementor website.
 
-```js {1}
-elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
+```js
+elementor.hooks.addFilter( 'elements/context-menu/groups', ( customGroups, elementType ) => {
 
 	const newAction = {
-		name: 'alert-widget-type',
+		name: 'elementor-link',
 		icon: 'eicon-alert',
-		title: 'Widget Type',
+		title: 'Elementor Link',
 		isEnabled: () => true,
-		callback: () => alert( view.model.get( 'widgetType' ) ),
+		callback: () => window.open( 'https://elementor.com/', '_blank' ).focus(),
 	};
 
-	groups.forEach( ( group ) => {
-		if ( 'general' === group.name ) {
-			group.actions.push( newAction );
-		}
-	} );
+	if ( 'widget' === elementType ) {
+		customGroups.forEach( ( group ) => {
+			if ( 'custom-widget-actions' === group.name ) {
+				group.actions.push( newAction );
+			}
+		} );
+	}
 
-	return groups;
+	return customGroups;
 
 } );
 ```
 
 ## Add New Column Action
 
-Now we'll add a new action to the "tools" group which will console log some text.
+Now we'll add a new action to an existing `custom-column-actions` group. This action will log some text in the browser console.
 
-```js {1}
-elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view ) => {
+```js
+elementor.hooks.addFilter( 'elements/context-menu/groups', ( customGroups, elementType ) => {
 
 	const newAction = {
 		name: 'log',
@@ -45,23 +47,25 @@ elementor.hooks.addFilter( 'elements/column/contextMenuGroups', ( groups, view )
 		callback: () => console.log( 'some text...' ),
 	};
 
-	groups.forEach( ( group ) => {
-		if ( 'tools' === group.name ) {
-			group.actions.push( newAction );
-		}
-	} );
+	if ( 'column' === elementType ) {
+		customGroups.forEach( ( group ) => {
+			if ( 'custom-column-actions' === group.name ) {
+				group.actions.push( newAction );
+			}
+		} );
+	}
 
-	return groups;
+	return customGroups;
 
 } );
 ```
 
 ## Add New Section Action
 
-Now we'll add a new action to the "tools" group which will open the page settings panel.
+Next we'll add a new action to an existing `custom-section-actions` group. This action will open the page settings panel.
 
-```js {1}
-elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view ) => {
+```js
+elementor.hooks.addFilter( 'elements/context-menu/groups', ( customGroups, elementType ) => {
 
 	const newAction = {
 		name: 'page-settings',
@@ -71,13 +75,15 @@ elementor.hooks.addFilter( 'elements/section/contextMenuGroups', ( groups, view 
 		callback: () => $e.run( 'panel/page-settings/settings' ),
 	};
 
-	groups.forEach( ( group ) => {
-		if ( 'tools' === group.name ) {
-			group.actions.push( newAction );
-		}
-	} );
+	if ( 'section' === elementType ) {
+		customGroups.forEach( ( group ) => {
+			if ( 'custom-section-actions' === group.name ) {
+				group.actions.push( newAction );
+			}
+		} );
+	}
 
-	return groups;
+	return customGroups;
 
 } );
 ```

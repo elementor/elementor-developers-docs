@@ -16,7 +16,15 @@ Each menu item is called an [action](/context-menu/context-menu-actions). Action
 
 ## Extending Context Menus
 
-External developers can register their own custom actions and modify existing ones. Learn more:
+External developers can register their own custom actions and modify existing ones.
+
+Learn to manage groups:
+
+* [Add New Context Menu Group](/context-menu/add-new-group)
+* [Remove Context Menu Group](/context-menu/remove-group)
+* [Update Context Menu Group](/context-menu/update-group)
+
+Learn to manage actions:
 
 * [Add New Context Menu Action](/context-menu/add-new-action)
 * [Remove Context Menu Action](/context-menu/remove-action)

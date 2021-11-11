@@ -57,25 +57,35 @@ add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_context_menus_s
 **assets/js/context-menus.js**
 
 ```js
-jQuery( window ).on( 'elementor:init', () => {
+window.addEventListener( 'elementor/init', () => {
 
-	elementor.hooks.addFilter( 'elements/widget/contextMenuGroups', ( groups, view ) => {
+	elementor.hooks.addFilter( 'elements/context-menu/groups', ( customGroups, elementType ) => {
 
-		const newAction = {
-			name: 'alert-widget-type',
-			icon: 'eicon-alert',
-			title: 'Widget Type',
-			isEnabled: () => true,
-			callback: () => alert( view.model.get( 'widgetType' ) ),
-		};
+		const newGroup = {
+			name: 'elementor-links-group',
+			actions: [
+				{
+					name: 'elementor-link',
+					icon: 'eicon-link',
+					title: 'Elementor.com',
+					isEnabled: () => true,
+					callback: () => window.open( 'https://elementor.com/', '_blank' ).focus(),
+				},
+				{
+					name: 'elementor-developers-link',
+					icon: 'eicon-link',
+					title: 'Developers Docs',
+					isEnabled: () => true,
+					callback: () => window.open( 'https://developers.elementor.com/', '_blank' ).focus(),
+				}
+			],
+		}
 
-		groups.forEach( ( group ) => {
-			if ( 'general' === group.name ) {
-				group.actions.push( newAction );
-			}
-		} );
+		if ( 'widget' === elementType ) {
+			customGroups.push( newGroup );
+		}
 
-		return groups;
+		return customGroups;
 
 	} );
 

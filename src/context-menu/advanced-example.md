@@ -57,7 +57,7 @@ add_action( 'elementor/editor/after_enqueue_scripts', 'elementor_page_speed_cont
 **assets/js/page-speed-context-menu.js**
 
 ```js
-jQuery( window ).on( 'elementor:init', () => {
+window.addEventListener( 'elementor/init', () => {
 
 	const currentPageURL = elementor.documents.currentDocument.config.urls.permalink;
 
