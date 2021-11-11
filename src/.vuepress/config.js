@@ -74,7 +74,7 @@ module.exports = {
           },
           {
             text: 'Your First Addon',
-            link: '/getting-started/first-addon',
+            link: '/getting-started/first-addon/',
           },
           {
             text: 'Building Addons',
