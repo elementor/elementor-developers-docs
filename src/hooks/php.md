@@ -125,7 +125,7 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/elements/categories_registered`
 * `elementor/experiments/feature-registered`
 * `elementor/experiments/default-features-registered`
-* [elementor/finder/categories/init](/managers/registering-finder-categories)
+* [elementor/finder/register](/managers/registering-finder-categories)
 * `elementor/fonts/print_font_links/{$font_type}`
 * [elementor/frontend/after_render](/hooks/render-frontend-elements)
 * [elementor/frontend/before_render](/hooks/render-frontend-elements)

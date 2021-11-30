@@ -46,17 +46,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include finder file and register the class.
  *
  * @since 1.0.0
- * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $categories_manager.
+ * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $finder_categories_manager.
  * @return void
  */
-function elementor_finder_social_media( $categories_manager ) {
+function elementor_finder_social_media( $finder_categories_manager ) {
 
 	require_once( __DIR__ . '/finder/social-media.php' );
 
-	$categories_manager->add_category( 'social-media', new Elementor_Finder_Social_Media() );
+	$finder_categories_manager->register( new Elementor_Finder_Social_Media() );
 
 };
-add_action( 'elementor/finder/categories/init', 'elementor_finder_social_media' );
+add_action( 'elementor/finder/register', 'elementor_finder_social_media' );
 ```
 
 **finder/social-media.php**
@@ -75,11 +75,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finder\Base_Category {
 
 	/**
+	 * Get finder category id.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return string Finder category id.
+	 */
+	public function get_id() {
+		return 'social-media';
+	}
+
+	/**
 	 * Get finder category title.
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 * @return string finder category title.
+	 * @return string Finder category title.
 	 */
 	public function get_title() {
 		return esc_html__( 'Social Media Websites', 'elementor-finder-social-media' );

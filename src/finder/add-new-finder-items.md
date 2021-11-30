@@ -11,6 +11,10 @@ Finder categories include all the category labels and their items.
 ```php
 class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
 
+	public function get_id() {
+		return 'my-category-name';
+	}
+
 	public function get_title() {
 		return esc_html__( 'Category Label', 'plugin-name' );
 	}
@@ -45,15 +49,15 @@ Each item has to include the following properties:
 
 ## Registering a Finder Category
 
-When the finder category class is ready, we must add it to the categories manager. This is done using the `elementor/finder/categories/init` action hook.
+When the finder category class is ready, we must add it to the categories manager. This is done using the `elementor/finder/register` action hook.
 
-When adding a new category, we need to provide a unique ID and the class itself, with this code:
+When adding a new category, we need to provide the class itself, with this code:
 
 ```php
-function register_new_finder_category( $categories_manager ) {
+function register_new_finder_category( $finder_categories_manager ) {
 
-	$categories_manager->add_category( 'my-category-name', new New_Finder_Category() );
+	$finder_categories_manager->register( new New_Finder_Category() );
 
 };
-add_action( 'elementor/finder/categories/init', 'register_new_finder_category' );
+add_action( 'elementor/finder/register', 'register_new_finder_category' );
 ```

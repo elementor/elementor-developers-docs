@@ -46,17 +46,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include finder file and register the class.
  *
  * @since 1.0.0
- * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $categories_manager.
+ * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $finder_categories_manager.
  * @return void
  */
-function elementor_finder_wordpress_settings( $categories_manager ) {
+function elementor_finder_wordpress_settings( $finder_categories_manager ) {
 
 	require_once( __DIR__ . '/finder/wordpress-settings.php' );
 
-	$categories_manager->add_category( 'wordpress-settings', new Elementor_Finder_WordPress_Settings() );
+	$finder_categories_manager->register( new Elementor_Finder_WordPress_Settings() );
 
 };
-add_action( 'elementor/finder/categories/init', 'elementor_finder_wordpress_settings' );
+add_action( 'elementor/finder/register', 'elementor_finder_wordpress_settings' );
 ```
 
 **finder/social-media.php**
@@ -73,6 +73,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Provides searchable items related to WordPress settings.
  */
 class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules\Finder\Base_Category {
+
+	/**
+	 * Get finder category id.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return string Finder category id.
+	 */
+	public function get_id() {
+		return 'wordpress-settings';
+	}
 
 	/**
 	 * Get finder category title.

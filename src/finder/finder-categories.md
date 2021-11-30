@@ -19,5 +19,5 @@ By default, the finder provides quick access to the following groups of links:
 
 Finder categories have two hooks developers can use:
 
-* `elementor/finder/categories/init` action - Used to register new finder categories when the finder is initiated.
+* `elementor/finder/register` action - Used to register new finder categories.
 * `elementor/finder/categories` filter - Used to modify the finder categories array.

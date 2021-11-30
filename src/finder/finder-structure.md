@@ -20,6 +20,8 @@ The extended class will have the following methods:
 ```php
 class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
 
+	public function get_id() {}
+
 	public function get_title() {}
 
 	public function get_category_items() {}
@@ -29,8 +31,10 @@ class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Cat
 }
 ```
 
+* **Category ID** - The `get_id()` method returns a unique ID that will be used in the code.
+
 * **Category Title** - The `get_title()` method returns the label displayed to the user.
 
 * **Category Items** - The `get_category_items()` method returns an array of links belong to the category.
 
-* **Is Dynamic** - The `is_dynamic()` method is an optional method that return a boolean value. It is used when the category items return data using Ajax requests (like posts/pages titles). We wiil not be covering this method.
+* **Is Dynamic** - The `is_dynamic()` method is an optional method that return a boolean value. It is used when the category items return data using Ajax requests (like posts/pages titles). We will not be covering this method.
