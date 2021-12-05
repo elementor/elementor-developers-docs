@@ -42,13 +42,6 @@ pageClass: docs-home
       <p>Learn which lifecycle hooks can help you add your own functionality to extend Elementor capabilities.</p>
       <div class="more-link"><a href="/hooks/">Read more</a></div>
     </div>
-    <!--
-    <div class="internal">
-      <h3><a href="/addons/">Building Addons</a></h3>
-      <p>Learn WordPress plugin development and the Elementor addons development with object oriented programming.</p>
-      <div class="more-link"><a href="/addons/">Read more</a></div>
-    </div>
-    -->
   </div>
 </section>
 
@@ -95,32 +88,6 @@ pageClass: docs-home
     </div>
   </div>
 </section>
-
-<!--
-<section id="home-testimonials">
-  <h2>Become an Industry Leader</h2>
-  <div class="home-testimonials-list">
-    <div class="testimonial">
-      <p class="metric">1.4M unique installs</p>
-      <blockquote>“It’s been years since I touched a Wordpress website. However, thanks to @elemntor, building out a site on Wordpress has become much easier!”</blockquote>
-      <p class="name">Kyle Chicoine</p>
-      <p class="position">Plugin Developer | Seattle, WA</p>
-    </div>
-    <div class="testimonial">
-      <p class="metric">1.4M unique installs</p>
-      <blockquote>“It’s been years since I touched a Wordpress website. However, thanks to @elemntor, building out a site on Wordpress has become much easier!”</blockquote>
-      <p class="name">Kyle Chicoine</p>
-      <p class="position">Plugin Developer | Seattle, WA</p>
-    </div>
-    <div class="testimonial">
-      <p class="metric">1.4M unique installs</p>
-      <blockquote>“It’s been years since I touched a Wordpress website. However, thanks to @elemntor, building out a site on Wordpress has become much easier!”</blockquote>
-      <p class="name">Kyle Chicoine</p>
-      <p class="position">Plugin Developer | Seattle, WA</p>
-    </div>
-  </div>
-</section>
--->
 
 <section id="home-blog">
   <h2>Recommended Posts From Our Developers Blog</h2>

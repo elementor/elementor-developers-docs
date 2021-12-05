@@ -30,23 +30,6 @@ class Elementor_Test_Control extends \Elementor\Base_Data_Control {
 }
 ```
 
-<!--
-Settings default a value for a [multi value control](/controls/multi-value-controls) which return an array:
-
-```php
-class Elementor_Test_Control extends \Elementor\Control_Base_Multiple  {
-
-	public function get_default_value() {
-		return [
-			'width' => '',
-			'height' => '',
-		];
-	}
-
-}
-```
--->
-
 ## Overriding Default Values
 
 When controls are used in widgets, you can either use the default value set by the control or override it and set your own default values:
