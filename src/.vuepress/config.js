@@ -183,12 +183,6 @@ module.exports = {
       }
     ],
     [
-      '@vuepress/google-analytics',
-      {
-        ga: 'UA-123456789-0'
-      }
-    ],
-    [
       'vuepress-plugin-clean-urls',
       {
         normalSuffix: '/',
