@@ -19,7 +19,7 @@ Both **posts widgets** and **portfolio widgets** come with a robust query contro
 
 ## Setting Up a Custom Filter
 
-<img src="/assets/img/elementor-posts-query-id.png" alt="Elementor Posts Query ID" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/elementor-posts-query-id.png')" alt="Elementor Posts Query ID" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 In a posts or portfolio widget, give your query an ID, making sure it is unique, unless you want the filter to run on multiple posts or portfolio widgets.
 

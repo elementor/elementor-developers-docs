@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-<img src="/assets/img/dynamic-tag-switcher.png" alt="Dynamic Tag Switcher" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/dynamic-tag-switcher.png')" alt="Dynamic Tag Switcher" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 Dynamic Tags are used to insert customized data based on various sources.
 

@@ -36,7 +36,7 @@ Below are the default groups displayed in each element:
 
 ### Section
 
-<img src="/assets/img/context-menu-section.png" alt="Section Context Menu" style="float: right; margin-left: 20px;">
+<img :src="$withBase('/assets/img/context-menu-section.png')" alt="Section Context Menu" style="float: right; margin-left: 20px;">
 
 * General
 * Clipboard
@@ -48,7 +48,7 @@ Below are the default groups displayed in each element:
 
 ### Column
 
-<img src="/assets/img/context-menu-column.png" alt="Column Context Menu" style="float: right; margin-left: 20px;">
+<img :src="$withBase('/assets/img/context-menu-column.png')" alt="Column Context Menu" style="float: right; margin-left: 20px;">
 
 * General
 * Add
@@ -60,7 +60,7 @@ Below are the default groups displayed in each element:
 
 ### Widget
 
-<img src="/assets/img/context-menu-widget.png" alt="Widget Context Menu" style="float: right; margin-left: 20px;">
+<img :src="$withBase('/assets/img/context-menu-widget.png')" alt="Widget Context Menu" style="float: right; margin-left: 20px;">
 
 * General
 * Clipboard

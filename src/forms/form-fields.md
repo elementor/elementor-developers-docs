@@ -1,8 +1,8 @@
 # Form Field Types
 
-<!-- <img src="/assets/img/elementor-form-fields.png" alt="Elementor Form Fields" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;"> -->
+<!-- <img :src="$withBase('/assets/img/elementor-form-fields.png')" alt="Elementor Form Fields" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;"> -->
 
-<img src="/assets/img/elementor-form-field-types.png" alt="Elementor Form Field Types" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/elementor-form-field-types.png')" alt="Elementor Form Field Types" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 When users add a Form widget to the page, they have the freedom to select which fields to display in the form.
 

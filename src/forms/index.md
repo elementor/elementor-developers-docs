@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-<img src="/assets/img/elementor-form.png" alt="Elementor Form Widget" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/elementor-form.png')" alt="Elementor Form Widget" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 **Elementor Form Builder** is an advanced [Elementor Widget](/widgets/) that allows users to create forms with the ultimate drag and drop visual form builder.
 

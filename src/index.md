@@ -50,39 +50,39 @@ pageClass: docs-home
   <h2>Access Full Documentation of Elementor’s Components</h2>
   <div class="home-components-list">
     <div class="component">
-      <a href="./context-menu/"><img src="$withBase('$withBase('/assets/img/home/icons/context-menu.svg')" alt="Context Menu"></a>
+      <a href="./context-menu/"><img :src="$withBase('/assets/img/home/icons/context-menu.svg')" alt="Context Menu"></a>
       <h3><a href="./context-menu/">Context Menu</a></h3>
       <p>Give users a quick way to edit and customize Elementor building blocks.</p>
     </div>
     <div class="component">
-      <a href="./finder/"><img src="$withBase('/assets/img/home/icons/finder.svg')" alt="Finder"></a>
+      <a href="./finder/"><img :src="$withBase('/assets/img/home/icons/finder.svg')" alt="Finder"></a>
       <h3><a href="./finder/">Finder</a></h3>
       <p>Learn how you can customize the finder to help users easily navigate to pages and settings.</p>
     </div>
     <div class="component">
-      <a href="./widgets/"><img src="$withBase('/assets/img/home/icons/widgets.svg')" alt="Widgets"></a>
+      <a href="./widgets/"><img :src="$withBase('/assets/img/home/icons/widgets.svg')" alt="Widgets"></a>
       <h3><a href="./widgets/">Widgets</a></h3>
       <p>Learn how to create and customize widgets, putting your own mark on Elementor.</p>
     </div>
     <div class="component">
-      <a href="./controls/"><img src="$withBase('/assets/img/home/icons/controls.svg')" alt="Controls"></a>
+      <a href="./controls/"><img :src="$withBase('/assets/img/home/icons/controls.svg')" alt="Controls"></a>
       <h3><a href="./controls/">Controls</a></h3>
       <p>Learn how controls are used to set fields, save data and build interfaces.</p>
     </div>
     <div class="component">
-      <a href="./dynamic-tags/"><img src="$withBase('/assets/img/home/icons/dynamic-tags.svg')" alt="Dynamic Tags"></a>
+      <a href="./dynamic-tags/"><img :src="$withBase('/assets/img/home/icons/dynamic-tags.svg')" alt="Dynamic Tags"></a>
       <h3><a href="./dynamic-tags/">Dynamic Tags</a></h3>
       <p>Leverage information from your site and even from external APIs using dynamic tags.</p>
     </div>
     <!--
     <div class="component">
-      <a href="./forms/"><img src="$withBase('/assets/img/home/icons/forms.svg')" alt="Forms"></a>
+      <a href="./forms/"><img :src="$withBase('/assets/img/home/icons/forms.svg')" alt="Forms"></a>
       <h3><a href="./forms/">Forms</a></h3>
       <p> </p>
     </div>
     -->
     <div class="component">
-      <a href="./themes/"><img src="$withBase('/assets/img/home/icons/themes.svg')" alt="Themes"></a>
+      <a href="./themes/"><img :src="$withBase('/assets/img/home/icons/themes.svg')" alt="Themes"></a>
       <h3><a href="./themes/">Themes</a></h3>
       <p>Themes make building sites more efficient. Make your themes Elementor compatible.</p>
     </div>

@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-<img src="/assets/img/dynamic-tags-list.png" alt="Dynamic Tags List" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/dynamic-tags-list.png')" alt="Dynamic Tags List" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 To simplify navigation, all tags are arranged into groups. This allows users to quickly scan the list and scroll to the group that suits them.
 

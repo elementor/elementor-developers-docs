@@ -1,6 +1,6 @@
 # Form Actions
 
-<img src="/assets/img/elementor-form-actions.png" alt="Elementor Form Actions" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/elementor-form-actions.png')" alt="Elementor Form Actions" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 Form actions are tasks being done after the submission. An action can send the form data by email, it can redirect to a different page, or send your data to an external marketing service. The possibilities are endless.
 

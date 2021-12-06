@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-<img src="/assets/img/elementor-categories.png" alt="Elementor Widget Categories" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/elementor-categories.png')" alt="Elementor Widget Categories" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
 Elementor **widget categories** are used to organize the widgets into groups. When Elementor is initialized, it registers several default categories.
 
