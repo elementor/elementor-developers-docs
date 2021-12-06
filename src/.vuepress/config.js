@@ -1,4 +1,4 @@
-const { description } = require('../../package');
+const { description, base } = require('../../package');
 
 const addonsSidebar = require('./sidebars/addons');
 const contextMenuSidebar = require('./sidebars/context-menu');
@@ -19,6 +19,11 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
   title: 'Elementor Developers',
+
+  /**
+   *Ref：https://v1.vuepress.vuejs.org/config/#base
+   */
+  base: process.env.NODE_ENV === 'production' ? base : undefined,
 
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
