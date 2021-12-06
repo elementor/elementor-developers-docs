@@ -13,8 +13,8 @@ pageClass: docs-home
   <h2>The Information You Need<br>for the Elementor You Want</h2>
   <p>Welcome to the Elementor Developers Documentation Center. Here, you’ll find detailed documentation, clearly explaining how developers can leverage the wide-range of tools and options Elementor provides them.</p>
   <div class="cta">
-    <a href="/getting-started/" class="primary">Get Started</a>
-    <a href="/getting-started/first-addon" class="secondary">Start Coding</a>
+    <a href="./getting-started/" class="primary">Get Started</a>
+    <a href="./getting-started/first-addon" class="secondary">Start Coding</a>
   </div>
 </section>
 
@@ -23,24 +23,24 @@ pageClass: docs-home
   <h2>Learn About Elementor’s Internal Technologies</h2>
   <div class="home-internals-list">
     <div class="internal">
-      <h3><a href="/editor/">The Editor</a></h3>
+      <h3><a href="./editor/">The Editor</a></h3>
       <p>Learn about the editor preview and panel areas, the first things users encounter when opening an Elementor page.</p>
-      <div class="more-link"><a href="/editor/">Read more</a></div>
+      <div class="more-link"><a href="./editor/">Read more</a></div>
     </div>
     <div class="internal">
-      <h3><a href="/managers/">Managers</a></h3>
+      <h3><a href="./managers/">Managers</a></h3>
       <p>The new extensions you create must be registered with Elementor. Learn more about that process here.</p>
-      <div class="more-link"><a href="/managers/">Read more</a></div>
+      <div class="more-link"><a href="./managers/">Read more</a></div>
     </div>
     <div class="internal">
-      <h3><a href="/scripts-styles/">Scripts & Styles</a></h3>
+      <h3><a href="./scripts-styles/">Scripts & Styles</a></h3>
       <p>Learn how to embed custom scripts and styles, allowing you to incorporate them in your own addons.</p>
-      <div class="more-link"><a href="/scripts-styles/">Read more</a></div>
+      <div class="more-link"><a href="./scripts-styles/">Read more</a></div>
     </div>
     <div class="internal">
-      <h3><a href="/hooks/">Hooks</a></h3>
+      <h3><a href="./hooks/">Hooks</a></h3>
       <p>Learn which lifecycle hooks can help you add your own functionality to extend Elementor capabilities.</p>
-      <div class="more-link"><a href="/hooks/">Read more</a></div>
+      <div class="more-link"><a href="./hooks/">Read more</a></div>
     </div>
   </div>
 </section>
@@ -50,40 +50,40 @@ pageClass: docs-home
   <h2>Access Full Documentation of Elementor’s Components</h2>
   <div class="home-components-list">
     <div class="component">
-      <a href="/context-menu/"><img src="/assets/img/home/icons/context-menu.svg" alt="Context Menu"></a>
-      <h3><a href="/context-menu/">Context Menu</a></h3>
+      <a href="./context-menu/"><img src="$withBase('$withBase('/assets/img/home/icons/context-menu.svg')" alt="Context Menu"></a>
+      <h3><a href="./context-menu/">Context Menu</a></h3>
       <p>Give users a quick way to edit and customize Elementor building blocks.</p>
     </div>
     <div class="component">
-      <a href="/finder/"><img src="/assets/img/home/icons/finder.svg" alt="Finder"></a>
-      <h3><a href="/finder/">Finder</a></h3>
+      <a href="./finder/"><img src="$withBase('/assets/img/home/icons/finder.svg')" alt="Finder"></a>
+      <h3><a href="./finder/">Finder</a></h3>
       <p>Learn how you can customize the finder to help users easily navigate to pages and settings.</p>
     </div>
     <div class="component">
-      <a href="/widgets/"><img src="/assets/img/home/icons/widgets.svg" alt="Widgets"></a>
-      <h3><a href="/widgets/">Widgets</a></h3>
+      <a href="./widgets/"><img src="$withBase('/assets/img/home/icons/widgets.svg')" alt="Widgets"></a>
+      <h3><a href="./widgets/">Widgets</a></h3>
       <p>Learn how to create and customize widgets, putting your own mark on Elementor.</p>
     </div>
     <div class="component">
-      <a href="/controls/"><img src="/assets/img/home/icons/controls.svg" alt="Controls"></a>
-      <h3><a href="/controls/">Controls</a></h3>
+      <a href="./controls/"><img src="$withBase('/assets/img/home/icons/controls.svg')" alt="Controls"></a>
+      <h3><a href="./controls/">Controls</a></h3>
       <p>Learn how controls are used to set fields, save data and build interfaces.</p>
     </div>
     <div class="component">
-      <a href="/dynamic-tags/"><img src="/assets/img/home/icons/dynamic-tags.svg" alt="Dynamic Tags"></a>
-      <h3><a href="/dynamic-tags/">Dynamic Tags</a></h3>
+      <a href="./dynamic-tags/"><img src="$withBase('/assets/img/home/icons/dynamic-tags.svg')" alt="Dynamic Tags"></a>
+      <h3><a href="./dynamic-tags/">Dynamic Tags</a></h3>
       <p>Leverage information from your site and even from external APIs using dynamic tags.</p>
     </div>
     <!--
     <div class="component">
-      <a href="/forms/"><img src="/assets/img/home/icons/forms.svg" alt="Forms"></a>
-      <h3><a href="/forms/">Forms</a></h3>
+      <a href="./forms/"><img src="$withBase('/assets/img/home/icons/forms.svg')" alt="Forms"></a>
+      <h3><a href="./forms/">Forms</a></h3>
       <p> </p>
     </div>
     -->
     <div class="component">
-      <a href="/themes/"><img src="/assets/img/home/icons/themes.svg" alt="Themes"></a>
-      <h3><a href="/themes/">Themes</a></h3>
+      <a href="./themes/"><img src="$withBase('/assets/img/home/icons/themes.svg')" alt="Themes"></a>
+      <h3><a href="./themes/">Themes</a></h3>
       <p>Themes make building sites more efficient. Make your themes Elementor compatible.</p>
     </div>
   </div>
