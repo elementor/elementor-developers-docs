@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Resources and tutorials for Elementor developers",
   "main": "index.js",
+  "base": "/docs/",
   "authors": {
     "name": "Rami Yushuvaev",
     "email": "ramiy@elementor.com"

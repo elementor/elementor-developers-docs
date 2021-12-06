@@ -1,0 +1,25 @@
+name: Build and Deploy (Dispatch)
+on:
+ push:
+   branches:
+#     - master
+
+jobs:
+  RepoAjobs:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: send dispatch
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.DEVOPS_TOKEN  }}
+          repository: ${{ secrets.dispatch_repo }}
+          event-type: ${{ github.event.repository.name }}-${{ github.ref }}-${{ github.actor }}
+          client-payload: >-
+            {
+              "type": "docker",
+              "repository": "${{ github.event.repository.name }}" ,
+              "repository_full": "${{ github.event.repository.full_name }}" ,
+              "github-actor": "${{ github.actor }}",
+              "github-sha": "${{ github.sha }}",
+              "github-ref": "${{ github.ref }}"
+            }
