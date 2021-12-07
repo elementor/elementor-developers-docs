@@ -1,8 +1,8 @@
 name: Build and Deploy (Dispatch)
-#on:
-# push:
-#   branches:
-#     - master
+on:
+ push:
+   branches:
+     - master
 
 jobs:
   RepoAjobs:
