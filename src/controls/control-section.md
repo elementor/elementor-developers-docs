@@ -64,7 +64,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 This will create a new section for our controls under the "**Content**" tab.
 
-![Elementor Single Section](/assets/img/elementor-single-section.png)
+![Elementor Single Section](./assets/img/elementor-single-section.png)
 
 ### Multiple Sections
 
@@ -114,7 +114,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 This will create two sections for our controls under the "**Content**" tab.
 
-![Elementor Multiple Sections](/assets/img/elementor-multiple-sections.png)
+![Elementor Multiple Sections](./assets/img/elementor-multiple-sections.png)
 
 ### Sections in Multiple Tabs
 
@@ -182,6 +182,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 In this example, we created two sections under the "**Content**" tab and another section under the "**Style**" tab.
 
-![Elementor Section in a Tab](/assets/img/elementor-section-in-a-tab.png)
+![Elementor Section in a Tab](./assets/img/elementor-section-in-a-tab.png)
 
 As you can see from the code, unless we define the "tab", the section will be added to the "**Content**" tab by default.

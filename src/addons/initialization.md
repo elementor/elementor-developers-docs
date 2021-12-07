@@ -6,7 +6,7 @@ After passing all compatibility checks, we can safely run the addon and start ex
 
 ## Registering Custom Scripts & Styles
 
-The addon can register and enqueue [scripts and styles](/scripts-styles/). Let's see an example of how this is done:
+The addon can register and enqueue [scripts and styles](./scripts-styles/). Let's see an example of how this is done:
 
 ```php
 namespace Elementor_Test_Addon;
@@ -57,7 +57,7 @@ final class Plugin {
 
 ## Registering New Widgets
 
-To add new widgets to Elementor, we need to register them using the [widget manager](/managers/registering-widgets) mechanism. It’s a pretty simple process, we hook to the widget registration hook, include the widget's files and register the widget's classes.
+To add new widgets to Elementor, we need to register them using the [widget manager](./managers/registering-widgets) mechanism. It’s a pretty simple process, we hook to the widget registration hook, include the widget's files and register the widget's classes.
 
 ```php
 namespace Elementor_Test_Addon;
@@ -104,7 +104,7 @@ final class Plugin {
 
 ## Registering New Controls
 
-Now let's see how to register new controls using the [controls manager](/managers/registering-controls). Again, we are hooking to the control registration action to load the controls files and register the control classes.
+Now let's see how to register new controls using the [controls manager](./managers/registering-controls). Again, we are hooking to the control registration action to load the controls files and register the control classes.
 
 ```php
 namespace Elementor_Test_Addon;

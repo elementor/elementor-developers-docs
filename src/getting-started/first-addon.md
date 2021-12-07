@@ -54,13 +54,13 @@ add_action( 'elementor/widgets/widgets_registered', 'register_hello_world_widget
 
 Header comments are the standard way WordPress uses to provide information about plugins:
 
-![Plugins screen](/assets/img/elementor-addon-plugin-screen.png)
+![Plugins screen](./assets/img/elementor-addon-plugin-screen.png)
 
 Elementor register new widgets with the widget registration function. Here, we will use the `elementor/widgets/widgets_registered` lifecycle hook to run the `register_hello_world_widget()` function.
 
 The function first loads the two widget files and then registers the widget classes using the widget manager. After running the code, the widget panel will display the two widgets:
 
-![The two widgets in the widgets panel](/assets/img/elementor-addon-widgets.png)
+![The two widgets in the widgets panel](./assets/img/elementor-addon-widgets.png)
 
 ### The First Widget
 

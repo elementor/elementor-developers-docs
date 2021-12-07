@@ -132,4 +132,4 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 
 ## The Result
 
-![Elementor Finder Social Media](/assets/img/elementor-finder-social-media.png)
+![Elementor Finder Social Media](./assets/img/elementor-finder-social-media.png)

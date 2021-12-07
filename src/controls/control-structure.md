@@ -15,7 +15,7 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 }
 ```
 
-You can also extend one of the [specific control types](/controls/control-types):
+You can also extend one of the [specific control types](./controls/control-types):
 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Data_Control {
@@ -58,7 +58,7 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 
 These methods can be divided into the following groups:
 
-* [Settings](/controls/control-settings/)
-* [Template](/controls/control-template/)
-* [Values](/controls/control-values/)
-* [Enqueue](/controls/control-enqueue)
+* [Settings](./controls/control-settings/)
+* [Template](./controls/control-template/)
+* [Values](./controls/control-values/)
+* [Enqueue](./controls/control-enqueue)

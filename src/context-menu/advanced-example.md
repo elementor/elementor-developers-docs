@@ -96,4 +96,4 @@ window.addEventListener( 'elementor/init', () => {
 
 ## The Result
 
-![Elementor PageSpeed Context Menu](/assets/img/elementor-context-menu-page-speed.png)
+![Elementor PageSpeed Context Menu](./assets/img/elementor-context-menu-page-speed.png)

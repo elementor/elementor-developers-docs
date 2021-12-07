@@ -209,4 +209,4 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 
 ## Result
 
-![Elementor oEmbed Widget](/assets/img/elementor-widget-oembed.png)
+![Elementor oEmbed Widget](./assets/img/elementor-widget-oembed.png)

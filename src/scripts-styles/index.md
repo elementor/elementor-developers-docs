@@ -14,33 +14,33 @@ Each script and stylesheet increases the page size. This is why it is best pract
 
 Learn more about registering new scripts and styles to frontend pages:
 
-* [Frontend Scripts](/scripts-styles/frontend-scripts)
-* [Frontend Styles](/scripts-styles/frontend-styles)
+* [Frontend Scripts](./scripts-styles/frontend-scripts)
+* [Frontend Styles](./scripts-styles/frontend-styles)
 
 ## Editor Scripts & Styles
 
-Learn more about registering new scripts and styles to the [Elementor Editor](/editor/elementor-panel):
+Learn more about registering new scripts and styles to the [Elementor Editor](./editor/elementor-panel):
 
-* [Editor Scripts](/scripts-styles/editor-scripts)
-* [Editor Styles](/scripts-styles/editor-styles)
+* [Editor Scripts](./scripts-styles/editor-scripts)
+* [Editor Styles](./scripts-styles/editor-styles)
 
 ## Preview Scripts & Styles
 
-Learn more about registering new scripts and styles to [Elementor preview](/editor/elementor-preview):
+Learn more about registering new scripts and styles to [Elementor preview](./editor/elementor-preview):
 
-* [Preview Scripts](/scripts-styles/preview-scripts)
-* [Preview Styles](/scripts-styles/preview-styles)
+* [Preview Scripts](./scripts-styles/preview-scripts)
+* [Preview Styles](./scripts-styles/preview-styles)
 
 ## Widget Scripts & Styles
 
-Learn more about registering custom scripts and styles to [Elementor widgets](/widgets/):
+Learn more about registering custom scripts and styles to [Elementor widgets](./widgets/):
 
-* [Widget Scripts](/scripts-styles/widget-scripts)
-* [Widget Styles](/scripts-styles/widget-styles)
+* [Widget Scripts](./scripts-styles/widget-scripts)
+* [Widget Styles](./scripts-styles/widget-styles)
 
 ## Controls Scripts & Styles
 
-Learn more about registering custom scripts and styles to [Elementor controls](/controls/):
+Learn more about registering custom scripts and styles to [Elementor controls](./controls/):
 
-* [Control Scripts](/scripts-styles/control-scripts)
-* [Control Styles](/scripts-styles/control-styles)
+* [Control Scripts](./scripts-styles/control-scripts)
+* [Control Styles](./scripts-styles/control-styles)

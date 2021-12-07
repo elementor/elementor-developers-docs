@@ -460,4 +460,4 @@ class Elementor_List_Widget extends \Elementor\Widget_Base {
 
 ## Result
 
-![Elementor List Widget](/assets/img/elementor-list-widget.png)
+![Elementor List Widget](./assets/img/elementor-list-widget.png)

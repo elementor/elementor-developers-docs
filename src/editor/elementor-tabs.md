@@ -23,9 +23,9 @@ The tabs are set in the `\Elementor\Controls_Manager` class. They are defined as
 
 ## Usage Examples
 
-The [widgets panel](/editor/widgets-panel), for example, displays controls in a **Content tab**, allowing the user to set the widget content, and a **Style tab** to design the content. In addition, Elementor adds an **Advanced tab** to all widgets.
+The [widgets panel](./editor/widgets-panel), for example, displays controls in a **Content tab**, allowing the user to set the widget content, and a **Style tab** to design the content. In addition, Elementor adds an **Advanced tab** to all widgets.
 
-The [page settings panel](/editor/page-settings-panel), on the other hand, displays controls in the **Settings tab**, the **Style tab**, the **Layout tab**, among others – depending on the settings.
+The [page settings panel](./editor/page-settings-panel), on the other hand, displays controls in the **Settings tab**, the **Style tab**, the **Layout tab**, among others – depending on the settings.
 
 ## Using Tabs
 

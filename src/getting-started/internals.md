@@ -8,22 +8,22 @@ Elementor has underlying technology, which we call the internals. In this sectio
 
 Below is a list of Elementor internals along with a short description and links to more in-depth information:
 
-* [The Editor](/editor/)
+* [The Editor](./editor/)
 
   The editor is where users create pages and control their settings. It is divided into preview and panel areas. The panel hosts the list of widgets and is where users control the settings. The preview screen is where they see how the page will look.
 
-* [Managers](/managers/)
+* [Managers](./managers/)
 
   Elementor's architecture registers and unregisters elements using special managers. External developers need to use these managers to register their own elements. This will let Elementor know about them, enabling their use.
 
-* [Scripts & Styles](/scripts-styles/)
+* [Scripts & Styles](./scripts-styles/)
 
   Developers need to know how different Elementor components load custom JS and CSS files. Since these files can severely impact performance, it’s important to learn the proper methods to load them for each component.
 
-* [Hooks](/hooks/)
+* [Hooks](./hooks/)
 
   There are a wide range of hooks that can be used with Elementor. This documentation contains a complete listing of the entire range of available hooks Elementor has to offer - filter hooks, action hooks, PHP hooks, JS hooks, frontend hooks and editor hooks.
 
-* [Building Addons](/addons/)
+* [Building Addons](./addons/)
 
   This section contains information for those unfamiliar with WordPress. It discusses basic WordPress plugin development, as well as Elementor addons and advanced topics, including background information on plugins and object oriented programming.    

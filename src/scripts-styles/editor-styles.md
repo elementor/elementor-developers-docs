@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you develop addons that extend [Elementor Editor](/editor/) and you are using your own custom stylesheets, use `elementor/editor/before_enqueue_styles` or `elementor/editor/after_enqueue_scripts` action hooks, which are fired when editor styles are registered and enqueued.
+When you develop addons that extend [Elementor Editor](./editor/) and you are using your own custom stylesheets, use `elementor/editor/before_enqueue_styles` or `elementor/editor/after_enqueue_scripts` action hooks, which are fired when editor styles are registered and enqueued.
 
 ## Registering Editor Styles
 

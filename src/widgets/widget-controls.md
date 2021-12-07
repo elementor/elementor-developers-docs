@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Each widget needs to have some [controls](/controls/) (setting fields), where users can select their data. This data is saved in the database and later used to [generate custom output](/widgets/widget-rendering) based on the user's selection.
+Each widget needs to have some [controls](./controls/) (setting fields), where users can select their data. This data is saved in the database and later used to [generate custom output](./widgets/widget-rendering) based on the user's selection.
 
 ## Registering Controls
 
@@ -32,7 +32,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## Available Controls
 
-Elementor offers a [wide variety of controls](/controls/control-types) out-of-the-box. All the controls have to be wrapped in [sections](/controls/control-section). You can add [regular controls](/controls/regular-control), [responsive controls](/controls/responsive-control) and [group controls](/controls/group-control). Developers can even [create new controls](/controls/control-structure).
+Elementor offers a [wide variety of controls](./controls/control-types) out-of-the-box. All the controls have to be wrapped in [sections](./controls/control-section). You can add [regular controls](./controls/regular-control), [responsive controls](./controls/responsive-control) and [group controls](./controls/group-control). Developers can even [create new controls](./controls/control-structure).
 
 ## Add Controls to your Widget
 

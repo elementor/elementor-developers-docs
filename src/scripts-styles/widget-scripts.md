@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you develop new [Elementor widgets](/widgets/) and need to register custom scripts, they must be registered using the [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) function and enqueued using the widget `get_script_depends()` method. This way, Elementor will dynamically  load these scripts only on pages using these widgets.
+When you develop new [Elementor widgets](./widgets/) and need to register custom scripts, they must be registered using the [wp_register_script()](https://developer.wordpress.org/reference/functions/wp_register_script/) function and enqueued using the widget `get_script_depends()` method. This way, Elementor will dynamically  load these scripts only on pages using these widgets.
 
 ## Registering Widget Scripts
 

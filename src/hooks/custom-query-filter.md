@@ -133,4 +133,4 @@ add_action( 'elementor/query/{$query_id}', 'my_query_by_post_status' );
 
 ## Notes
 
-You may need to refresh the [editor](/editor/) to see the filter's effect.
+You may need to refresh the [editor](./editor/) to see the filter's effect.

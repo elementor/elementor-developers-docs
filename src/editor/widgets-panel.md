@@ -4,7 +4,7 @@
 
 <img :src="$withBase('/assets/img/widgets-panel.png')" alt="Elementor Widgets Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-**Widgets** is the gate panel (the first panel users see) in [the editor](/editor/). From here, users can drag & drop widgets to the [preview](/editor/elementor-preview) area.
+**Widgets** is the gate panel (the first panel users see) in [the editor](./editor/). From here, users can drag & drop widgets to the [preview](./editor/elementor-preview) area.
 
 ## Structure and Functionality
 
@@ -19,5 +19,5 @@ The global tab displays all the saved widgets along with their settings and desi
 
 ## Extending the Widgets Panel
 
-Elementor offers dozens of widgets out-of-the-box. Nevertheless, external developers can [create new widgets](/widgets/) and even organize them into their own branded [widget categories](/widgets/widget-categories).
+Elementor offers dozens of widgets out-of-the-box. Nevertheless, external developers can [create new widgets](./widgets/) and even organize them into their own branded [widget categories](./widgets/widget-categories).
 

@@ -4,18 +4,18 @@
 
 The panel is like an editing dashboard. This is the area where users can control all aspects of a page. It includes the global settings, page settings, widgets panel etc.
 
-![Elementor Panel](/assets/img/elementor-panel.png)
+![Elementor Panel](./assets/img/elementor-panel.png)
 
 ## Elementor Panels
 
 The panel area consists of several panels:
 
-* [Menu Panel](/editor/menu-panel)
-* [Site Settings Panel](/editor/site-settings-panel)
-* [User Preferences Panel](/editor/user-preferences-panel)
-* [Page Settings Panel](/editor/page-settings-panel)
-* [History Panel](/editor/history-panel)
-* [Widgets Panel](/editor/widgets-panel)
+* [Menu Panel](./editor/menu-panel)
+* [Site Settings Panel](./editor/site-settings-panel)
+* [User Preferences Panel](./editor/user-preferences-panel)
+* [Page Settings Panel](./editor/page-settings-panel)
+* [History Panel](./editor/history-panel)
+* [Widgets Panel](./editor/widgets-panel)
 
 ## Extending the Panels
 

@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Developers can remove [Elementor widgets](/widgets/) from the list of registered widgets. This is done by hooking to the widget manager and unregistering specific widgets by passing the widget name.
+Developers can remove [Elementor widgets](./widgets/) from the list of registered widgets. This is done by hooking to the widget manager and unregistering specific widgets by passing the widget name.
 
 ## Unregistering Existing Widgets
 

@@ -48,7 +48,7 @@ Please note that some managers already use the new syntax. We plan on updating m
 
 Check out the different elements you can register, and how to register them properly:
 
-* [Registering Widgets](/managers/registering-widgets)
-* [Registering Controls](/managers/registering-controls)
-* [Registering Dynamic Tags](/managers/registering-dynamic-tags)
-* [Registering Finder Categories](/managers/registering-finder-categories)
+* [Registering Widgets](./managers/registering-widgets)
+* [Registering Controls](./managers/registering-controls)
+* [Registering Dynamic Tags](./managers/registering-dynamic-tags)
+* [Registering Finder Categories](./managers/registering-finder-categories)

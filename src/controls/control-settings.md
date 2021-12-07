@@ -39,11 +39,11 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 }
 ```
 
-Later on, you can utilize those settings when generating a [control template](/controls/control-template/).
+Later on, you can utilize those settings when generating a [control template](./controls/control-template/).
 
 ## Dynamic Tags
 
-You can also support [dynamic tags](/dynamic-tags/) in your controls. To use this feature in your controls, add the `dynamic` setting:
+You can also support [dynamic tags](./dynamic-tags/) in your controls. To use this feature in your controls, add the `dynamic` setting:
 
 ```php {9-12}
 class Elementor_Test_Control extends \Elementor\Base_Control {

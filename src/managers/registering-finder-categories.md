@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you create new [finder categories](/finder/) you must register them. This is done by hooking to the registration hook in the finder manager and passing a new finder category instance.
+When you create new [finder categories](./finder/) you must register them. This is done by hooking to the registration hook in the finder manager and passing a new finder category instance.
 
 ## Registering New Finder Categories
 

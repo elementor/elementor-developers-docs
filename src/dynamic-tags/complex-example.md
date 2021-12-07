@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-To showcase a complex dynamic tag, we are going to allow the user to display server variables from a list of available server variables. It will include a custom [dynamic tags group](/dynamic-tags/dynamic-tags-groups) and feature a control with a select box containing all the available server variables. The render function will return the variable the user selected and return its value.
+To showcase a complex dynamic tag, we are going to allow the user to display server variables from a list of available server variables. It will include a custom [dynamic tags group](./dynamic-tags/dynamic-tags-groups) and feature a control with a select box containing all the available server variables. The render function will return the variable the user selected and return its value.
 
 ## Folder Structure
 
@@ -204,8 +204,8 @@ Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 
 The dynamic tag in a group view:
 
-![Dynamic tag example - groups](/assets/img/elementor-dynamic-tag-example-server-variable-groups.png)
+![Dynamic tag example - groups](./assets/img/elementor-dynamic-tag-example-server-variable-groups.png)
 
 The dynamic tag controls:
 
-![Dynamic tag example - controls](/assets/img/elementor-dynamic-tag-example-server-variable-controls.png)
+![Dynamic tag example - controls](./assets/img/elementor-dynamic-tag-example-server-variable-controls.png)

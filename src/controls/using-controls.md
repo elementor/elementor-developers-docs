@@ -32,15 +32,15 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 Elementor has three **control types** that can be added to widgets:
 
-* [Regular Control](/controls/regular-control) – adds a single control.
-* [Responsive Control](/controls/responsive-control) – adds a control that sets different values for different screen sizes.
-* [Group Control](/controls/group-control) – adds a control that groups together several other controls.
+* [Regular Control](./controls/regular-control) – adds a single control.
+* [Responsive Control](./controls/responsive-control) – adds a control that sets different values for different screen sizes.
+* [Group Control](./controls/group-control) – adds a control that groups together several other controls.
 
 Elementor also has **UI wrappers for controls** that can be used to group and rearrange controls:
 
-* [Control Section](/controls/control-section) – a wrapper for controls.
-* [Control Tabs](/controls/control-tabs) – a wrapper that arranges controls in tabs.
-* [Control Popovers](/controls/control-popovers) – a wrapper that toggles popover control.
+* [Control Section](./controls/control-section) – a wrapper for controls.
+* [Control Tabs](./controls/control-tabs) – a wrapper that arranges controls in tabs.
+* [Control Popovers](./controls/control-popovers) – a wrapper that toggles popover control.
 
 ## Control Methods
 
