@@ -347,4 +347,4 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 
 ## The Result
 
-![Currency control in a widget](./assets/img/elementor-control-currencies.png)
+<img :src="$withBase('/assets/img/elementor-control-currencies.png')" alt="Currency control in a widget">

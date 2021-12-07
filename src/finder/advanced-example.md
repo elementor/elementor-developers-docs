@@ -150,4 +150,4 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 
 ## The Result
 
-![Elementor Finder WordPress Settings](./assets/img/elementor-finder-wordPress-settings.png)
+<img :src="$withBase('/assets/img/elementor-finder-wordPress-settings.png')" alt="Elementor Finder WordPress Settings">

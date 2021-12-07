@@ -35,16 +35,16 @@ Each element has its own set of actions as seen below:
 
 ### Section
 
-![Section Context Menu](./assets/img/context-menu-section.png)
+<img :src="$withBase('/assets/img/context-menu-section.png')" alt="Section Context Menu">
 
 ### Column
 
-![Column Context Menu](./assets/img/context-menu-column.png)
+<img :src="$withBase('/assets/img/context-menu-column.png')" alt="Column Context Menu">
 
 ### Widget
 
-![Widget Context Menu](./assets/img/context-menu-widget.png)
+<img :src="$withBase('/assets/img/context-menu-widget.png')" alt="Widget Context Menu">
 
 ### Add new section / template
 
-![Context menu for add new section / template](./assets/img/context-menu-add-new-section-template.png)
+<img :src="$withBase('/assets/img/context-menu-add-new-section-template.png')" alt="Context menu for add new section / template">

@@ -94,4 +94,4 @@ window.addEventListener( 'elementor/init', () => {
 
 ## The Result
 
-![Elementor Context Menu Example](./assets/img/elementor-context-menu-example.png)
+<img :src="$withBase('/assets/img/elementor-context-menu-example.png')" alt="Elementor Context Menu Example">

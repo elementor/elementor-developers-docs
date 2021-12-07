@@ -4,7 +4,7 @@
 
 A context menu is a popup menu that appears when users right click an element in the [Elementor preview](./editor/elementor-preview) area. This popup menu offers a set of available actions based on location or the selected element. That is why it is called a context menu.
 
-![Elementor Context Menu](./assets/img/elementor-context-menu.png)
+<img :src="$withBase('/assets/img/elementor-context-menu.png')" alt="Elementor Context Menu">
 
 ## Context Menu Structure
 

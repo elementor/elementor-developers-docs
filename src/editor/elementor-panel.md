@@ -4,7 +4,7 @@
 
 The panel is like an editing dashboard. This is the area where users can control all aspects of a page. It includes the global settings, page settings, widgets panel etc.
 
-![Elementor Panel](./assets/img/elementor-panel.png)
+<img :src="$withBase('/assets/img/elementor-panel.png')" alt="Elementor Panel">
 
 ## Elementor Panels
 

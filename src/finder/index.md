@@ -4,7 +4,7 @@
 
 The finder component opens a popup search bar offering easy access to many pages and settings on the site. It can be used to create new posts, edit other pages, navigate to different setting pages, and more.
 
-![Elementor finder](./assets/img/elementor-finder.png)
+<img :src="$withBase('/assets/img/elementor-finder.png')" alt="Elementor Finder">
 
 ## Finder Structure
 

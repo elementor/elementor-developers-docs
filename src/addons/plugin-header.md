@@ -23,7 +23,7 @@ To get started, we will use some very basic fields at the top of the main file:
 
 WordPress will display this information in the "*WordPress Dashboard*" > "*Plugins*" screen:
 
-![Plugins screen](./assets/img/elementor-test-addon-plugin-screen.png)
+<img :src="$withBase('/assets/img/elementor-test-addon-plugin-screen.png')" alt="Plugins screen">
 
 For the full list of available header fields checkout the [WordPress header requirements](https://developer.wordpress.org/plugins/plugin-basics/header-requirements/).
 

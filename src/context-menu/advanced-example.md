@@ -96,4 +96,4 @@ window.addEventListener( 'elementor/init', () => {
 
 ## The Result
 
-![Elementor PageSpeed Context Menu](./assets/img/elementor-context-menu-page-speed.png)
+<img :src="$withBase('/assets/img/elementor-context-menu-page-speed.png')" alt="Elementor PageSpeed Context Menu">

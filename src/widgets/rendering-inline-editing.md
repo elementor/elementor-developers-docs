@@ -14,7 +14,7 @@ Elementor supports the following types of toolbars for inline editing:
 * **Basic Toolbar** – `(basic)` Inline text editing with a minimal toolbar, including: bold, italic and underline buttons.
 * **Advanced Toolbar** – `(advanced)` Inline text editing with a full toolbar, including: adding/removing links, H1-H6 heading, blockquote, preformatting and bulleted or numbered list buttons.
 
-![Inline editing example](./assets/img/inline-editing-example.png)
+<img :src="$withBase('/assets/img/inline-editing-example.png')" alt="Inline editing example">
 
 Elementor recommends using inline editing as follows:
 

@@ -362,8 +362,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 The emojis control as it appears in a widget:
 
-![Emojis control in a widget](./assets/img/elementor-control-emojis-1.png)
+<img :src="$withBase('/assets/img/elementor-control-emojis-1.png')" alt="Emojis control in a widget">
 
 The control content as displayed in Elementor preview:
 
-![Control content in Elementor preview](./assets/img/elementor-control-emojis-2.png)
+<img :src="$withBase('/assets/img/elementor-control-emojis-2.png')" alt="Control content in Elementor preview">

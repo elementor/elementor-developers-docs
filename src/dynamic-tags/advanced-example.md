@@ -209,8 +209,8 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 
 The dynamic tag in a group view:
 
-![Dynamic tag example - group view](./assets/img/elementor-dynamic-tag-example-acf-average-groups.png)
+<img :src="$withBase('/assets/img/elementor-dynamic-tag-example-acf-average-groups.png')" alt="Dynamic tag example - group view">
 
 The dynamic tag controls:
 
-![Dynamic tag example - controls](./assets/img/elementor-dynamic-tag-example-acf-average-controls.png)
+<img :src="$withBase('/assets/img/elementor-dynamic-tag-example-acf-average-controls.png')" alt="Dynamic tag example - controls">
