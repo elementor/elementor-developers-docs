@@ -21,7 +21,7 @@ module.exports = {
   title: 'Elementor Developers',
 
   /**
-   *Ref：https://v1.vuepress.vuejs.org/config/#base
+   * Ref：https://v1.vuepress.vuejs.org/config/#base
    */
   base: process.env.NODE_ENV === 'production' ? base : undefined,
 
@@ -183,8 +183,6 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/plugin/
    */
   plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
     [
       '@vuepress/pwa',
       {
