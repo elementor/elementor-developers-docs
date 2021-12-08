@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you develop addons that extend [Elementor preview](./editor/elementor-preview) and need to register custom scripts, use the `elementor/preview/enqueue_scripts` action hook, which is fired when preview scripts are registered and enqueued.
+When you develop addons that extend [Elementor preview](./../editor/elementor-preview/) and need to register custom scripts, use the `elementor/preview/enqueue_scripts` action hook, which is fired when preview scripts are registered and enqueued.
 
 ## Registering Preview Scripts
 

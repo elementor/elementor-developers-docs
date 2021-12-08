@@ -4,7 +4,7 @@
 
 <img :src="$withBase('/assets/img/page-settings-panel.png')" alt="Elementor Page Settings Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-**Page Settings** is a panel in [the editor](./editor/) where users can change the post/page fields such as, the title, the excerpt (if the post type supports excerpts), feature image, post status, etc.
+**Page Settings** is a panel in [the editor](./../editor/) where users can change the post/page fields such as, the title, the excerpt (if the post type supports excerpts), feature image, post status, etc.
 
 Page settings are based on posts/pages, meaning that each post/page on the site has its own unique settings saved in the `wp_posts` table in the database.
 
@@ -53,7 +53,7 @@ echo $test_color; // Possible output: '#9b0a46'
 
 ## Adding New Settings
 
-Developers can add new controls to this panel. This is done by [injecting controls](./hooks/injecting-controls) into page settings.
+Developers can add new controls to this panel. This is done by [injecting controls](./../hooks/injecting-controls/) into page settings.
 
 Below is an example how we can add color control to the style tab:
 

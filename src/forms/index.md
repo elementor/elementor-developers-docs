@@ -4,7 +4,7 @@
 
 <img :src="$withBase('/assets/img/elementor-form.png')" alt="Elementor Form Widget" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-**Elementor Form Builder** is an advanced [Elementor Widget](./widgets/) that allows users to create forms with the ultimate drag and drop visual form builder.
+**Elementor Form Builder** is an advanced [Elementor Widget](./../widgets/) that allows users to create forms with the ultimate drag and drop visual form builder.
 
 ## Overview
 
@@ -16,10 +16,10 @@ External developers can extend the form Widget functionality to match their need
 
 Use the following tutorials to extend Elementor Forms to your needs:
 
-* [Form Fields](./forms/form-fields)
-* [Form Validation](./forms/form-validation)
-* [Form Processing](./forms/form-processing)
-* [Form Submission Actions](./forms/form-submission-actions)
-* [Form Webhook Response](./forms/form-webhook-response)
-* [Form Actions](./forms/form-actions)
-* [Form Records](./forms/form-records)
+* [Form Fields](./form-fields/)
+* [Form Validation](./form-validation/)
+* [Form Processing](./form-processing/)
+* [Form Submission Actions](./form-submission-actions/)
+* [Form Webhook Response](./form-webhook-response/)
+* [Form Actions](./form-actions/)
+* [Form Records](./form-records/)

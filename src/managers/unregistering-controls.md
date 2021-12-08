@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Developers can remove [Elementor controls](./controls/) from the list of registered controls. This is done by hooking to the control manager and unregistering specific controls by passing the control ID.
+Developers can remove [Elementor controls](./../controls/) from the list of registered controls. This is done by hooking to the control manager and unregistering specific controls by passing the control ID.
 
 ## Unregistering Existing Controls
 

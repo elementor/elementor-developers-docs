@@ -18,7 +18,7 @@ Elementor Pro adds the following groups:
 * **Author** - Post author dynamic data.
 * **Comments** - Post comments dynamic data.
 
-If you would like to use the groups added by Elementor Pro, your addons must [set Elementor Pro as a dependency](./addons/plugin-header).
+If you would like to use the groups added by Elementor Pro, your addons must [set Elementor Pro as a dependency](./../addons/plugin-header/).
 
 ## Applying Groups
 

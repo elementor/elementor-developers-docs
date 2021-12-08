@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you create new [dynamic tags](./dynamic-tags/), you must register them. This is done by hooking to the registration hook in the dynamic tags manager and passing a new dynamic tag instance.
+When you create new [dynamic tags](./../dynamic-tags/), you must register them. This is done by hooking to the registration hook in the dynamic tags manager and passing a new dynamic tag instance.
 
 ## Registering New Dynamic Tags
 

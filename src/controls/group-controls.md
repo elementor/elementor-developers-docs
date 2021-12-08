@@ -8,13 +8,13 @@ Group controls are used to group together several regular controls and return th
 
 The following controls are included in Elementor:
 
-* [Typography](./controls/classes/group-control-typography) – Font size, font family, font weight, text transform, font style, line height and letter spacing.
-* [Text Shadow](./controls/classes/group-control-text-shadow) – Add a shadow effect to texts.
-* [Box Shadow](./controls/classes/group-control-box-shadow) – Add a shadow effect to elements.
-* [Border](./controls/classes/group-control-border) – Border type, border width and border color.
-* [Background](./controls/classes/group-control-background) – Background color, background image, background gradient or background video.
-* [Image Size](./controls/classes/group-control-image-size) – Select image sizes (thumbnail, medium, medium_large, large) or custom dimensions.
-* [CSS Filter](./controls/classes/group-control-css-filter) – Apply CSS filters like blur, brighten, contrast, saturation or hue.
+* [Typography](./../controls/classes/group-control-typography/) – Font size, font family, font weight, text transform, font style, line height and letter spacing.
+* [Text Shadow](./../controls/classes/group-control-text-shadow/) – Add a shadow effect to texts.
+* [Box Shadow](./../controls/classes/group-control-box-shadow/) – Add a shadow effect to elements.
+* [Border](./controls/classes/group-control-border/) – Border type, border width and border color.
+* [Background](./../controls/classes/group-control-background/) – Background color, background image, background gradient or background video.
+* [Image Size](./../controls/classes/group-control-image-size/) – Select image sizes (thumbnail, medium, medium_large, large) or custom dimensions.
+* [CSS Filter](./../controls/classes/group-control-css-filter/) – Apply CSS filters like blur, brighten, contrast, saturation or hue.
 
 ## Extending Group Controls
 

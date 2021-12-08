@@ -34,6 +34,6 @@ Action keyboard shortcuts won't be covered in the documentation as it requires a
 
 By hooking to the JS `elements/context-menu/groups` filter hook, you can add, modify, or delete action items.
 
-* [Add New Action](./context-menu/add-new-action)
-* [Remove Action](./context-menu/remove-action)
-* [Update Action](./context-menu/update-action)
+* [Add New Action](./add-new-action/)
+* [Remove Action](./remove-action/)
+* [Update Action](./update-action/)

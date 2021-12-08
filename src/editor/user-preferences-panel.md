@@ -4,7 +4,7 @@
 
 <img :src="$withBase('/assets/img/user-preferences-panel.png')" alt="Elementor User Preferences Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-**User Preferences** is a panel in [the editor](./editor/) where the user can control the editor's look and feel. Users can choose whether to display a light or a dark theme, set the default panel width, decide to show/hide editing buttons, etc.
+**User Preferences** is a panel in [the editor](./../editor/) where the user can control the editor's look and feel. Users can choose whether to display a light or a dark theme, set the default panel width, decide to show/hide editing buttons, etc.
 
 These preferences are user-based, meaning that different users can set different preferences for themselves. This data is saved in the `wp_users` table in the database.
 
@@ -16,11 +16,11 @@ Currently, the panel has only section:
 
 ## Extending the Panel
 
-Developers can extend the user preferences panel by [injecting new controls](./hooks/injecting-controls) to the panel. Make sure to only add controls that manage how your addon is displayed in the Editor.
+Developers can extend the user preferences panel by [injecting new controls](./../hooks/injecting-controls/) to the panel. Make sure to only add controls that manage how your addon is displayed in the Editor.
 
 ## Adding New Preferences 
 
-Developers can add new controls to this panel. This is done by [injecting controls](./hooks/injecting-controls).
+Developers can add new controls to this panel. This is done by [injecting controls](./../hooks/injecting-controls/).
 
 In the example below, we'll add a new control:
 

@@ -53,4 +53,4 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 }
 ```
 
-The same control mechanism is used for [widget controls](./widgets/widget-controls).
+The same control mechanism is used for [widget controls](./../widgets/widget-controls/).

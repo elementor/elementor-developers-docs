@@ -46,6 +46,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL, where the user can get more information about the widget, below the controls.
 
-* **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widgets/widget-categories).
+* **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widget-categories/).
 
 * **Widget Keywords** – The `get_keywords()` method lets you set widget keywords and is used to filter the widget list.

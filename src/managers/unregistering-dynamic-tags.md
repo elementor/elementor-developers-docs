@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Developers can remove [dynamic tags](./dynamic-tags/) from the list of registered dynamic tags. This is done by hooking to the dynamic tags manager and unregistering specific dynamic tags by passing dynamic tag name.
+Developers can remove [dynamic tags](./../dynamic-tags/) from the list of registered dynamic tags. This is done by hooking to the dynamic tags manager and unregistering specific dynamic tags by passing dynamic tag name.
 
 ## Unregistering Existing Dynamic Tags
 

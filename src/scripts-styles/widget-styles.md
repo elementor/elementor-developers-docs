@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you develop new [Elementor widgets](./widgets/) and need to register custom stylesheets, they must be registered using the [wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/) function and enqueued using the widget `get_style_depends()` method. This way Elementor will dynamically load the stylesheets only on pages using these widgets.
+When you develop new [Elementor widgets](./../widgets/) and need to register custom stylesheets, they must be registered using the [wp_register_style()](https://developer.wordpress.org/reference/functions/wp_register_style/) function and enqueued using the widget `get_style_depends()` method. This way Elementor will dynamically load the stylesheets only on pages using these widgets.
 
 ## Registering Widget Styles
 

@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you create new [Elementor controls](./controls/) you must register them. This is done by hooking to the registration hook in the controls manager and passing a new control instance.
+When you create new [Elementor controls](./../controls/) you must register them. This is done by hooking to the registration hook in the controls manager and passing a new control instance.
 
 ## Registering New Controls
 

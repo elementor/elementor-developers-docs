@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Group Control is a set of [regular controls](./controls/regular-control) and [responsive controls](./controls/responsive-control) with similar functionality, which are grouped together into a single control (e.g. typography control, text shadow control, box shadow control). To add group controls we use the `add_group_control()` method.
+Group Control is a set of [regular controls](./regular-control/) and [responsive controls](./responsive-control/) with similar functionality, which are grouped together into a single control (e.g. typography control, text shadow control, box shadow control). To add group controls we use the `add_group_control()` method.
 
 ## Group Control Structure
 

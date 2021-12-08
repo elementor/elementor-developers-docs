@@ -8,8 +8,8 @@ Unit controls are used to return unit based values.
 
 The following controls are included in Elementor:
 
-* [Slider](./controls/classes/control-slider) – A draggable scale to choose between a range of numeric values.
-* [Dimensions](./controls/classes/control-dimensions) – A component with four number fields, suitable for setting top/right/bottom/left settings.
+* [Slider](./../controls/classes/control-slider/) – A draggable scale to choose between a range of numeric values.
+* [Dimensions](./../controls/classes/control-dimensions/) – A component with four number fields, suitable for setting top/right/bottom/left settings.
 
 ## Extending Unit Controls
 

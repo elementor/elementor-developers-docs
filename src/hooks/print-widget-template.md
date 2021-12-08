@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor has a hook that lets developers change a widget's JavaScript template in the [preview](./editor/elementor-preview) area.
+Elementor has a hook that lets developers change a widget's JavaScript template in the [preview](./../editor/elementor-preview/) area.
 
 ## Hook Details
 
@@ -48,4 +48,4 @@ The code above is only an example. We do not recommend using `str_replace` on 
 
 ## Notes
 
-To change the widget [content in the frontend](./hooks/render-widget-content) see `elementor/widget/render_content`.
+To change the widget [content in the frontend](./render-widget-content/) see `elementor/widget/render_content`.

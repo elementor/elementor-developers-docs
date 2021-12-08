@@ -13,7 +13,7 @@ To validate form data Elementor Pro offers the following action hooks:
 * `elementor_pro/forms/validation`
 * `elementor_pro/forms/validation/{$field_type}`
 
-The first hook applied on all fields, the second hook applied on specific [field types](./forms/form-fields).
+The first hook applied on all fields, the second hook applied on specific [field types](./form-fields/).
 
 ## Examples
 

@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-When you develop addons that extend [Elementor Editor](./editor/) and you have your own custom scripts, use `elementor/editor/before_enqueue_scripts` or `elementor/editor/after_enqueue_scripts` action hooks, which are fired when editor scripts are registered and enqueued.
+When you develop addons that extend [Elementor Editor](./../editor/) and you have your own custom scripts, use `elementor/editor/before_enqueue_scripts` or `elementor/editor/after_enqueue_scripts` action hooks, which are fired when editor scripts are registered and enqueued.
 
 ## Registering Editor Scripts
 
