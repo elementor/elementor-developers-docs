@@ -125,4 +125,4 @@ final class Plugin {
 }
 ```
 
-Now let's examine a few examples of addon [compatibility checks](./addons/compatibility):
+Now let's examine a few examples of addon [compatibility checks](./compatibility):
