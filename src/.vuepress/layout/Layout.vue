@@ -104,9 +104,9 @@ export default {
   },
 
   beforeMount() {
-    let recaptchaScript = document.createElement('noscript')
-    recaptchaScript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJK8HW" height="0" width="0" style="display:none;visibility:hidden"></iframe>'
-    document.body.appendChild(recaptchaScript)
+    let gtmNoScript = document.createElement('noscript')
+    gtmNoScript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJK8HW" height="0" width="0" style="display:none;visibility:hidden"></iframe>'
+    document.body.appendChild(gtmNoScript)
   },
 
   mounted () {
