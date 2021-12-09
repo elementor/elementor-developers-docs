@@ -14,7 +14,7 @@ pageClass: docs-home
   <p>Welcome to the Elementor Developers Documentation Center. Here, you’ll find detailed documentation, clearly explaining how developers can leverage the wide-range of tools and options Elementor provides them.</p>
   <div class="cta">
     <a href="./getting-started/" class="primary">Get Started</a>
-    <a href="./getting-started/first-addon" class="secondary">Start Coding</a>
+    <a href="./getting-started/first-addon/" class="secondary">Start Coding</a>
   </div>
 </section>
 
