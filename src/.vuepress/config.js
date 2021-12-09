@@ -23,7 +23,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#base
    */
-  base: process.env.NODE_ENV === 'production' ? base : undefined,
+  base: process.env.BASE === '1' ? base : undefined,
 
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
