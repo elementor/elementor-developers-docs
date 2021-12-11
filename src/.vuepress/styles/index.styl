@@ -172,23 +172,15 @@ div.docs-home
     a
       cursor pointer
 
-    div.roof
-      font-weight bold
-      font-size 16px
-      line-height 1.1
-      letter-spacing 0.06em
-      text-transform uppercase
-      margin-bottom 8px
-
     #home-hero
-      background-color #483082
-      color #fff
+      background-color #FFF1E8
+      color #000
       text-align center
       padding 80px 1.5rem
 
-      h2
-        font-weight bold
-        font-size 72px
+      h1
+        font-weight 600
+        font-size 48px
         line-height 1
         margin 0
         border 0
@@ -197,282 +189,26 @@ div.docs-home
         font-size 18px
         line-height 1.5
         border 0
-        max-width 900px
+        max-width 740px
         margin 1rem auto 2rem
 
-      .cta
-        width 300px
-        margin 0 auto
-        display flex
-        justify-content space-between
-
-      a
-        display inline-block
-        padding 12px 24px
-        text-decoration none
-
-        &.primary
-          background-color #ff7be5
-          border 1px solid #ff7be5
-          color #05047E
-
-        &.secondary
-          background-color #483082
-          border 1px solid #ff7be5
-          color #ff7be5
-
-      a.primary:hover
-      a.primary:focus
-        background-color #483082
-        color #ff7be5
-
-      a.secondary:hover
-      a.secondary:focus
-        background-color #ff7be5
-        color #05047E
-
-    #home-internals
+    .home-content
       background-color #fff
       color #000
-      text-align center
+      max-width 800px
       padding 80px 1.5rem
+      margin 0 auto
+      display grid
+      grid-template-columns 2fr 1fr
+      gap 3rem
+      align-items end
 
       h2
         font-weight bold
         font-size 48px
         line-height 1
-        margin 0 0 80px
+        margin 0
         border 0
-
-      .home-internals-list
-        display grid
-        gap 24px
-        grid-template-columns repeat(4, 1fr)
-        max-width 1400px
-        margin 0 auto
-        text-align left
-
-        .internal
-          background-color #eae7ff
-          border 1px solid #eae7ff
-          padding 24px
-
-          h3
-            font-size 20px
-            font-weight bold
-            line-height 1
-            text-transform capitalize
-            margin-top 0
-
-            a
-              color #000
-              font-weight 600
-              text-decoration none
-
-          p
-            font-size 14px
-            line-height 1.5
-            color #212121
-
-          .more-link
-              margin-top 44px
-
-              a
-                color #05047E
-                font-size 16px
-                font-weight bold
-
-              a:after
-                content " "
-                display inline-block
-                margin-left 12px
-                vertical-align middle
-                background-image url(/docs/assets/img/home/arrow-right.svg)
-                background-position center center
-                background-size contain
-                background-repeat no-repeat
-                width 12px
-                height 24px
-
-              a:hover
-              a:focus
-                text-decoration none
-
-        .internal:hover
-        .internal:focus
-          border-color #000
-
-    #home-components
-      background-color #ffc5f3
-      color #000
-      text-align center
-      padding 80px 1.5rem
-
-      h2
-        font-weight bold
-        font-size 48px
-        line-height 1.1
-        margin 0 0 80px
-        border 0
-
-      .home-components-list
-        display grid
-        gap 24px
-        grid-template-columns repeat(3, 1fr)
-        max-width 1400px
-        margin 0 auto
-        text-align left
-
-        .component
-          background-color #fff
-          border 1px solid #fff
-          padding 24px
-
-          h3
-            font-weight 600
-            font-size 16px
-            line-height 1
-            text-transform capitalize
-            margin-top 0
-
-            a
-              color #000
-              text-decoration none
-
-          p
-            font-size 14px
-            line-height 1.5
-            color #212121
-
-        .component:hover
-        .component:focus
-          border-color #000
-
-    #home-testimonials
-      background-color #fff
-      color #000
-      text-align center
-      padding 80px 1.5rem
-
-      h2
-        font-weight bold
-        font-size 48px
-        line-height 1
-        margin 0 0 80px
-        border 0
-
-      .home-testimonials-list
-        display grid
-        gap 24px
-        grid-template-columns repeat(3, 1fr)
-        max-width 1400px
-        margin 0 auto
-        text-align left
-
-        .testimonial
-          display flex
-          flex-direction column
-          justify-content space-between
-          align-items flex-start
-          min-height 600px
-          padding 40px 31px
-          border 1px solid #d2d2d2
-          box-sizing border-box
-          border-radius 8px
-
-          .metric
-            font-weight bold
-            font-size 16px
-            line-height 1.6
-            letter-spacing 0.02em
-            text-transform uppercase
-            color #000
-            margin-bottom 16px
-
-          blockquote          
-            font-size 24px
-            line-height 1.68
-            letter-spacing -0.04em
-            color #2B2A34
-            border 0
-            padding 0
-            margin 0
-            flex-grow 1
-            flex-shrink 1
-
-          p
-            font-size 14px
-            line-height 1.5
-            color #212121
-            margin 0
-
-          .name
-            font-weight 600
-            font-size 22px
-            line-height 1.6
-            align-self center
-
-          .position
-            font-size 16px
-            line-height 1.6
-            align-self center
-
-    #home-blog
-      background-color #fff
-      color #000
-      text-align center
-      padding 80px 1.5rem
-
-      h2
-        font-weight bold
-        font-size 48px
-        line-height 1
-        margin 0 0 80px
-        border 0
-
-      .home-blog-list
-        display grid
-        gap 2px
-        grid-template-columns repeat(3, 1fr)
-        max-width 1400px
-        margin 0 auto
-        text-align left
-
-        .blog-post
-          border 1px solid #fff
-          padding 11px
-
-          .post-image
-            width 100%
-            aspect-ratio 16 / 9
-            margin-bottom 20px
-
-          .post-info
-            margin 0 0 5px
-
-          .post-title
-          .post-title a
-            color #000
-            margin 0 0 10px
-            text-decoration none
-
-        .blog-post:hover
-        .blog-post:focus
-          border-color #000
-
-      a.blog
-        display inline-block
-        margin-top 80px
-        background-color #fff
-        color #ff3700
-        padding 15px 70px
-        text-decoration none
-        border 1.5px solid #ff3700
-
-      a.blog:hover
-      a.blog:focus
-        background-color #ff3700
-        color #fff
 
 /* Tablet */
 
@@ -487,55 +223,17 @@ div.docs-home
     #home-hero
       padding 64px 1.5rem
 
-      h2
+      h1
         font-size 40px
 
-    #home-internals
+    .home-content
       padding 64px 1.5rem
+      grid-template-columns 2fr 1fr
+      gap 2rem
 
       h2
         font-size 28px
         margin 0 0 40px
-
-      .home-internals-list
-        gap 20px
-        grid-template-columns repeat(2, 1fr)
-
-    #home-components
-      padding 64px 1.5rem
-
-      h2
-        font-size 28px
-        margin 0 0 40px
-
-      .home-components-list
-        gap 20px
-        grid-template-columns repeat(2, 1fr)
-
-    #home-testimonials
-      padding 64px 1.5rem
-
-      h2
-        font-size 28px
-        margin 0 0 40px
-
-      .home-testimonials-list
-        gap 20px
-        grid-template-columns repeat(2, 1fr)
-
-        .testimonial
-          padding 20px
-
-    #home-blog
-      padding 64px 1.5rem
-
-      h2
-        font-size 28px
-        margin 0 0 40px
-
-      .home-blog-list
-        gap 20px
-        grid-template-columns repeat(2, 1fr)
 
 /* Mobile */
 
@@ -545,33 +243,10 @@ div.docs-home
     #home-hero
       padding 32px 1.5rem
 
-    #home-internals
+    .home-content
       padding 32px 1.5rem
-
-      .home-internals-list
-        gap 16px
-        grid-template-columns 1fr
-
-    #home-components
-      padding 32px 1.5rem
-
-      .home-components-list
-        gap 16px
-        grid-template-columns 1fr
-
-    #home-testimonials
-      padding 32px 1.5rem
-
-      .home-testimonials-list
-        gap 16px
-        grid-template-columns 1fr
-
-    #home-blog
-      padding 32px 1.5rem
-
-      .home-blog-list
-        gap 16px
-        grid-template-columns 1fr
+      grid-template-columns 1fr
+      gap 1rem
 
 /* Font */
 
