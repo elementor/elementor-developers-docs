@@ -149,6 +149,22 @@ module.exports = {
           },
         ],
       },
+      {
+        text: 'Blog',
+        link: 'https://developers.elementor.com/blog/',
+      },
+      {
+        text: 'Community',
+        link: 'https://forum.elementor.com/development-24',
+      },
+      {
+        text: 'Addons',
+        link: 'https://elementor.com/addons/',
+      },
+      {
+        text: 'Experts',
+        link: 'https://experts.elementor.com/',
+      },
     ],
     sidebar: {
       '/addons/': addonsSidebar,

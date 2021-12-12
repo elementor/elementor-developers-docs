@@ -41,11 +41,20 @@ a.sidebar-link.active
 
 // Navigation
 
+#app
+  .repo-link
+    display none
+
+  .nav-item > a.external > span
+    display none
+
 @media (min-width: 719px)
 
   #app
     .navbar
       display flex
+      align-items center
+      height 70px
 
     .navbar .links
       position unset
@@ -82,6 +91,7 @@ a.sidebar-link.active
           font-size 0.875rem
           font-weight 500
           line-height 1.5rem
+          color #000
 
           &::after
             content " "
@@ -119,13 +129,16 @@ a.sidebar-link.active
               width 100%
 
     .dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active
-      color $textColor
 
       &::after
         padding 0
         margin 0
         border 0
         position unset
+
+    .dropdown-wrapper .dropdown-title,
+    .dropdown-wrapper .mobile-dropdown-title
+      color #000
 
 @media (max-width: 720px)
 
