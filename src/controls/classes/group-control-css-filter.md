@@ -84,7 +84,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		);
 
 		$this->add_group_control(
-			Group_Control_Css_Filter::get_type(),
+			\Elementor\Group_Control_Css_Filter::get_type(),
 			[
 				'name' => 'custom_css_filters',
 				'selector' => '{{WRAPPER}} .your-class',
