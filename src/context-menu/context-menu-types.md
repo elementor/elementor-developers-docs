@@ -17,18 +17,6 @@ Elementor has 3 main context menu types:
 
 **Element** context menus (section, column and widget) are the most common. They cover the vast majority of users' and developers' needs. The other two types are specific use-cases, displaying only actions relevant to those cases. We won't be covering them as they are internal use-cases and have no filter hooks allowing you to modify them.
 
-## JS Filter Hooks
-
-To add, modify, or delete action items, you must first choose which element type to apply the action to. This is done by hooking to the `elements/${elementType}/contextMenuGroups` filter hook.
-
-This gives us three elements to choose from:
-
-* **Section** - `elements/section/contextMenuGroups`
-* **Column** - `elements/column/contextMenuGroups`
-* **Widget** - `elements/widget/contextMenuGroups`
-
-**Note:** as mentioned above, we will only be focusing on **element** context menus.
-
 ## Different Context Menus
 
 Each element has its own set of actions as seen below:
