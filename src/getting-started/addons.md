@@ -22,4 +22,4 @@ In essence, Elementor has developed into a strong framework. This framework, in 
 
 ## Addon Ideas
 
-As you can see from the above list, the possibilities for creating new addons are almost endless. There are opportunities for developers to create advanced widgets, form integrations, dynamic tags, animations, extensions for lead collection, custom fonts and font icons, sophisticated sliders, mega menus, visibility functionality and more. Have your own idea for a cool addon? You can start here, by building your first addon. 
+As you can see from the above list, the possibilities for creating new addons are almost endless. There are opportunities for developers to create advanced widgets, form integrations, dynamic tags, animations, extensions for lead collection, custom fonts and font icons, sophisticated sliders, mega menus, visibility functionality and more. Have your own idea for a cool addon? You can start [here](https://developers.elementor.com/docs/getting-started/first-addon/), by building your first addon. 
