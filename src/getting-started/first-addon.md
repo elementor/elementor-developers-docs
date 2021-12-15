@@ -40,23 +40,23 @@ These widgets will require several files. The main file `elementor-addon.php` wi
  * Author URI:  https://developers.elementor.com/
  */
 
-function register_hello_world_widget() {
+function register_hello_world_widget( $widgets_manager ) {
 
 	require_once( __DIR__ . '/widgets/hello-world-widget-1.php' );
 	require_once( __DIR__ . '/widgets/hello-world-widget-2.php' );
 
-	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Hello_World_Widget_1() );
-	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Hello_World_Widget_2() );
+	$widgets_manager->register( new \Elementor_Hello_World_Widget_1() );
+	$widgets_manager->register( new \Elementor_Hello_World_Widget_2() );
 
 }
-add_action( 'elementor/widgets/widgets_registered', 'register_hello_world_widget' );
+add_action( 'elementor/widgets/register', 'register_hello_world_widget' );
 ```
 
 Header comments are the standard way WordPress uses to provide information about plugins:
 
 <img :src="$withBase('/assets/img/elementor-addon-plugin-screen.png')" alt="Plugins screen">
 
-Elementor register new widgets with the widget registration function. Here, we will use the `elementor/widgets/widgets_registered` lifecycle hook to run the `register_hello_world_widget()` function.
+Elementor register new widgets with the widget registration function. Here, we will use the `elementor/widgets/register` lifecycle hook to run the `register_hello_world_widget()` function.
 
 The function first loads the two widget files and then registers the widget classes using the widget manager. After running the code, the widget panel will display the two widgets:
 

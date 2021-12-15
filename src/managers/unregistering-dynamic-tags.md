@@ -13,7 +13,6 @@ As of Elementor 3.5, developers should use the following code to unregister exis
  * Unregister Elementor dynamic tags.
  *
  * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
- *
  * @return void
  */
 function register_dynamic_tags( $dynamic_tags_manager ) {

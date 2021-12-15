@@ -49,16 +49,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include control file and register control class.
  *
  * @since 1.0.0
+ * @param \Elementor\Controls_Manager $controls_manager Elementor controls manager.
  * @return void
  */
-function register_currency_control() {
+function register_currency_control( $controls_manager ) {
 
 	require_once( __DIR__ . '/controls/currency.php' );
 
-    \Elementor\Plugin::instance()->controls_manager->register_control( 'currency', new \Elementor_Currency_Control() );
+    $controls_manager->register( 'currency', new \Elementor_Currency_Control() );
 
 }
-add_action( 'elementor/controls/controls_registered', 'register_currency_control' );
+add_action( 'elementor/controls/register', 'register_currency_control' );
 
 /**
  * Register Currency Widget.
@@ -66,16 +67,17 @@ add_action( 'elementor/controls/controls_registered', 'register_currency_control
  * Include widget file and register widget class.
  *
  * @since 1.0.0
+ * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
  * @return void
  */
-function register_currency_widget() {
+function register_currency_widget( $widgets_manager ) {
 
 	require_once( __DIR__ . '/widgets/currency-widget.php' );
 
-	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Currency_Widget() );
+	$widgets_manager->register( new \Elementor_Currency_Widget() );
 
 }
-add_action( 'elementor/widgets/widgets_registered', 'register_currency_widget' );
+add_action( 'elementor/widgets/register', 'register_currency_widget' );
 ```
 
 **controls/currency.php**

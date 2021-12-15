@@ -46,16 +46,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include widget file and register widget class.
  *
  * @since 1.0.0
+ * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
  * @return void
  */
-function register_list_widget() {
+function register_list_widget( $widgets_manager ) {
 
 	require_once( __DIR__ . '/widgets/list-widget.php' );
 
-	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_List_Widget() );
+	$widgets_manager->register( new \Elementor_List_Widget() );
 
 }
-add_action( 'elementor/widgets/widgets_registered', 'register_list_widget' );
+add_action( 'elementor/widgets/register', 'register_list_widget' );
 ```
 
 **widgets/list-widget.php**

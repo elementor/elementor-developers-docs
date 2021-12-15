@@ -46,11 +46,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Register new dynamic tag group for Request Variables.
  *
  * @since 1.0.0
+ * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_request_variables_dynamic_tag_group( $dynamic_tags ) {
+function register_request_variables_dynamic_tag_group( $dynamic_tags_manager ) {
 
-	\Elementor\Plugin::instance()->dynamic_tags->register_group(
+	$dynamic_tags_manager->register_group(
 		'request-variables',
 		[
 			'title' => esc_html__( 'Request Variables', 'plugin-name' )
@@ -58,7 +59,7 @@ function register_request_variables_dynamic_tag_group( $dynamic_tags ) {
 	);
 
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_request_variables_dynamic_tag_group' );
+add_action( 'elementor/dynamic_tags/register', 'register_request_variables_dynamic_tag_group' );
 
 /**
  * Register Server Variable Dynamic Tag.
@@ -66,16 +67,17 @@ add_action( 'elementor/dynamic_tags/register_tags', 'register_request_variables_
  * Include dynamic tag file and register tag class.
  *
  * @since 1.0.0
+ * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_server_variable_dynamic_tag( $dynamic_tags ) {
+function register_server_variable_dynamic_tag( $dynamic_tags_manager ) {
 
 	require_once( __DIR__ . '/dynamic-tags/server-variable-dynamic-tag.php' );
 
-	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Server_Variable' );
+	$dynamic_tags_manager->register( new \Elementor_Dynamic_Tag_Server_Variable );
 
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_server_variable_dynamic_tag' );
+add_action( 'elementor/dynamic_tags/register', 'register_server_variable_dynamic_tag' );
 ```
 
 **dynamic-tags/server-variable-dynamic-tag.php**

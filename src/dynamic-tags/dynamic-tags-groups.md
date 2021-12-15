@@ -43,11 +43,12 @@ Elementor Pro’s dynamic tags manager lets external developers create custom gr
  * Register new dynamic tag group
  *
  * @since 1.0.0
+ * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_new_dynamic_tag_group( $dynamic_tags ) {
+function register_new_dynamic_tag_group( $dynamic_tags_manager ) {
 
-	\Elementor\Plugin::instance()->dynamic_tags->register_group(
+	$dynamic_tags_manager->register_group(
 		'group-name',
 		[
 			'title' => esc_html__( 'Group Label', 'plugin-name' )
@@ -55,5 +56,5 @@ function register_new_dynamic_tag_group( $dynamic_tags ) {
 	);
 
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_new_dynamic_tag_group' );
+add_action( 'elementor/dynamic_tags/register', 'register_new_dynamic_tag_group' );
 ```

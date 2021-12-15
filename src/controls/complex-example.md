@@ -52,16 +52,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include control file and register control class.
  *
  * @since 1.0.0
+ * @param \Elementor\Controls_Manager $controls_manager Elementor controls manager.
  * @return void
  */
-function register_emojionearea_control() {
+function register_emojionearea_control( $controls_manager ) {
 
 	require_once( __DIR__ . '/controls/emojionearea.php' );
 
-    \Elementor\Plugin::instance()->controls_manager->register_control( 'emojionearea', new \Elementor_EmojiOneArea_Control() );
+    $controls_manager->register( new \Elementor_EmojiOneArea_Control() );
 
 }
-add_action( 'elementor/controls/controls_registered', 'register_emojionearea_control' );
+add_action( 'elementor/controls/register', 'register_emojionearea_control' );
 
 /**
  * Register Test Widget.
@@ -69,16 +70,17 @@ add_action( 'elementor/controls/controls_registered', 'register_emojionearea_con
  * Include widget file and register widget class.
  *
  * @since 1.0.0
+ * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
  * @return void
  */
-function register_test_widget() {
+function register_test_widget( $widgets_manager ) {
 
 	require_once( __DIR__ . '/widgets/test-widget.php' );
 
-	\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \Elementor_Test_Widget() );
+	$widgets_manager->register( new \Elementor_Test_Widget() );
 
 }
-add_action( 'elementor/widgets/widgets_registered', 'register_test_widget' );
+add_action( 'elementor/widgets/register', 'register_test_widget' );
 ```
 
 **controls/emojionearea.php**

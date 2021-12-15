@@ -88,7 +88,7 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/app/init`
 * `elementor/common/after_register_scripts`
 * `elementor/connect/apps/register`
-* [elementor/controls/controls_registered](./../managers/registering-controls/)
+* [elementor/controls/register](./../managers/registering-controls/)
 * `elementor/core/files/clear_cache`
 * `elementor/core/files/assets/assets_registered`
 * `elementor/css-file/{$name}/enqueue`
@@ -99,7 +99,7 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/document/save_version`
 * `elementor/documents/register`
 * `elementor/documents/register_controls`
-* [elementor/dynamic_tags/register_tags](./../managers/registering-dynamic-tags/)
+* [elementor/dynamic_tags/register](./../managers/registering-dynamic-tags/)
 * `elementor/dynamic_tags/before_render`
 * `elementor/dynamic_tags/after_render`
 * `elementor/editor/init`
@@ -163,4 +163,4 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/template-library/create_new_dialog_fields`
 * `elementor/widget/before_render_content`
 * [elementor/widget/{$widget_name}/skins_init](./widget-skins/)
-* [elementor/widgets/widgets_registered](./../managers/registering-widgets/)
+* [elementor/widgets/register](./../managers/registering-widgets/)

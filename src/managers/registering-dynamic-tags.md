@@ -13,7 +13,6 @@ As of Elementor 3.5, developers should use the following code to register new dy
  * Register new Elementor dynamic tags.
  *
  * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
- *
  * @return void
  */
 function register_new_dynamic_tags( $dynamic_tags_manager ) {
@@ -39,7 +38,6 @@ For earlier versions, prior to Elementor 3.5, register new dynamic tags using th
  * Register new Elementor dynamic tags.
  *
  * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
- *
  * @return void
  */
 function register_new_dynamic_tags( $dynamic_tags_manager ) {

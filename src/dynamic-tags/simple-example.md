@@ -46,16 +46,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Include dynamic tag file and register tag class.
  *
  * @since 1.0.0
+ * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_random_number_dynamic_tag( $dynamic_tags ) {
+function register_random_number_dynamic_tag( $dynamic_tags_manager ) {
 
 	require_once( __DIR__ . '/dynamic-tags/random-number-dynamic-tag.php' );
 
-	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_Random_Number' );
+	$dynamic_tags_manager->register( new \Elementor_Dynamic_Tag_Random_Number );
 
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_random_number_dynamic_tag' );
+add_action( 'elementor/dynamic_tags/register', 'register_random_number_dynamic_tag' );
 ```
 
 **dynamic-tags/random-number-dynamic-tag.php**

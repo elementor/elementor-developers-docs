@@ -13,7 +13,6 @@ As of Elementor 3.5, developers should use the following code to unregister exis
  * Unregister Elementor controls.
  *
  * @param \Elementor\Controls_Manager $controls_manager Elementor controls manager.
- *
  * @return void
  */
 function unregister_controls( $controls_manager ) {

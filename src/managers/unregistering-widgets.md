@@ -13,7 +13,6 @@ As of Elementor 3.5, developers should use the following code to unregister exis
  * Unregister Elementor widgets.
  *
  * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
- *
  * @return void
  */
 function unregister_widgets( $widgets_manager ) {

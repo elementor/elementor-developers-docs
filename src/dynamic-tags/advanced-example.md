@@ -46,11 +46,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Register new site group for site-related tags.
  *
  * @since 1.0.0
+ * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_site_dynamic_tag_group( $dynamic_tags ) {
+function register_site_dynamic_tag_group( $dynamic_tags_manager ) {
 
-	\Elementor\Plugin::instance()->dynamic_tags->register_group(
+	$dynamic_tags_manager->register_group(
 		'site',
 		[
 			'title' => esc_html__( 'Site', 'elementor-acf-average-dynamic-tag' )
@@ -58,7 +59,7 @@ function register_site_dynamic_tag_group( $dynamic_tags ) {
 	);
 
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_site_dynamic_tag_group' );
+add_action( 'elementor/dynamic_tags/register', 'register_site_dynamic_tag_group' );
 
 /**
  * Register ACF Average Dynamic Tag.
@@ -66,16 +67,17 @@ add_action( 'elementor/dynamic_tags/register_tags', 'register_site_dynamic_tag_g
  * Include dynamic tag file and register tag class.
  *
  * @since 1.0.0
+ * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_acf_average_dynamic_tag( $dynamic_tags ) {
+function register_acf_average_dynamic_tag( $dynamic_tags_manager ) {
 
 	require_once( __DIR__ . '/dynamic-tags/acf-average-dynamic-tag.php' );
 
-	$dynamic_tags->register_tag( 'Elementor_Dynamic_Tag_ACF_Average' );
+	$dynamic_tags_manager->register( new \Elementor_Dynamic_Tag_ACF_Average );
 
 }
-add_action( 'elementor/dynamic_tags/register_tags', 'register_acf_average_dynamic_tag' );
+add_action( 'elementor/dynamic_tags/register', 'register_acf_average_dynamic_tag' );
 ```
 
 **dynamic-tags/acf-average-dynamic-tag.php**

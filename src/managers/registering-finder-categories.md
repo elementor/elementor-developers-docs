@@ -13,7 +13,6 @@ As of Elementor 3.5, developers should use the following code to register new fi
  * Register new Elementor finder categories.
  *
  * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $finder_categories_manager Elementor finder categories manager.
- *
  * @return void
  */
 function register_new_finder_categories( $finder_categories_manager ) {
@@ -39,7 +38,6 @@ For earlier versions, prior to Elementor 3.5, register new finder categories usi
  * Register new Elementor finder categories.
  *
  * @param \Elementor\Core\Common\Modules\Finder\Categories_Manager $finder_categories_manager Elementor finder categories manager.
- *
  * @return void
  */
 function register_new_finder_categories( $finder_categories_manager ) {
