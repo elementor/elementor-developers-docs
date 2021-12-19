@@ -6,28 +6,9 @@ Elementor is an extendable framework. It offers an architecture which allows ext
 
 ## Registering Elements
 
-Each component has its own manager that holds all the references to all the registered elements. To register your own element, you need to use a registration method in the component manager. The traditional way to register new elements looks like this:
+Each component has its own manager that holds all the references to all the registered elements. To register your own element, you need to access the registration method in the component manager.
 
-```php
-function register_something() {
-
-	require_once( __DIR__ . '/something/something-1.php' );
-	require_once( __DIR__ . '/something/something-2.php' );
-
-	\Elementor\Plugin::instance()->some_manager->register( new \Elementor_Something_1() );
-	\Elementor\Plugin::instance()->some_manager->register( new \Elementor_Something_2() );
-
-}
-add_action( 'elementor/something/register', 'register_something' );
-```
-
-You hook to some kind of action hook, pass a callback function that imports your class and then registers the class using the component manager located in the `\Elementor\Plugin` class.
-
-### Simplifying Registration
-
-Elementor is improving the managers system across all elements, standardizing the way you register new component elements and simplifying the registration process.
-
-The new registration method will include the manager as a parameter. This way, external developers won't need know the namespace, classes and registration methods names.
+To simplify the process, Elementor adopted a standard way to register new component elements. All you need to do is to hook to manager using a action hook, pass a callback function that imports your class and then registers the class using the component manager.
 
 ```php
 function register_something( $some_manager ) {
@@ -41,8 +22,6 @@ function register_something( $some_manager ) {
 }
 add_action( 'elementor/something/register', 'register_something' );
 ```
-
-Please note that some managers already use the new syntax. We plan on updating many managers in Elementor 3.5, and future versions should have a fully standard way to register new elements across all components.
 
 ## Managers
 
