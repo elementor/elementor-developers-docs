@@ -45,7 +45,7 @@ function elementor_context_menus_scripts() {
 	wp_enqueue_script(
 		'elementor-context-menus',
 		plugins_url( 'assets/js/context-menus.js', __FILE__ ),
-		[ 'jquery' ],
+		[],
 		'1.0.0',
 		false
 	);

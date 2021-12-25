@@ -125,7 +125,7 @@ class Elementor_EmojiOneArea_Control extends \Elementor\Base_Data_Control {
 
 		// Scripts
 		wp_register_script( 'emojionearea', 'https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.js', [], '3.4.2' );
-		wp_register_script( 'emojionearea-control', plugins_url( '/assets/js/emojionearea.js', dirname( __FILE__ ) ), [ 'emojionearea', 'jquery' ], '1.0.0' );
+		wp_register_script( 'emojionearea-control', plugins_url( '/assets/js/emojionearea.js', dirname( __FILE__ ) ), [ 'emojionearea' ], '1.0.0' );
 		wp_enqueue_script( 'emojionearea-control' );
 	}
 
@@ -184,7 +184,7 @@ class Elementor_EmojiOneArea_Control extends \Elementor\Base_Data_Control {
 **assets/js/emojionearea.js**
 
 ```js
-jQuery( window ).on( 'elementor:init', () => {
+window.addEventListener( 'elementor/init', () => {
 
 	var emojioneareaItemView = elementor.modules.controls.BaseData.extend({
 		onReady() {

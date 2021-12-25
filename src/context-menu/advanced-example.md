@@ -45,7 +45,7 @@ function elementor_page_speed_context_menu_scripts() {
 	wp_enqueue_script(
 		'elementor-page-speed-context-menu',
 		plugins_url( 'assets/js/page-speed-context-menu.js', __FILE__ ),
-		[ 'jquery' ],
+		[],
 		'1.0.0',
 		false
 	);
