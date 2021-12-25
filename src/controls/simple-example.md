@@ -263,7 +263,7 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget help URL.
 	 */
 	public function get_custom_help_url() {
-		return 'https://developers.elementor.com/widgets/';
+		return 'https://developers.elementor.com/docs/widgets/';
 	}
 
 	/**
