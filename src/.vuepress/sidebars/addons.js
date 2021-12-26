@@ -14,10 +14,11 @@ module.exports = [
     children: [
       'file-folder-structure',
       'plugin-header',
-      'namespaces',
+      'load',
       'main-class',
       'compatibility',
       'initialization',
+      'namespaces',
     ]
   },
   {

@@ -16,10 +16,11 @@ To start creating an Elementor addon, you first need to build a simple WordPress
 
 * [File & Folder Structure](./file-folder-structure/)
 * [Header Comments](./plugin-header/)
-* [Using Namespaces](./namespaces/)
+* [Loading Process](./load/)
 * [Main Class](./main-class/)
 * [Compatibility Checks](./compatibility/)
 * [Initialization Process](./initialization/)
+* [Using Namespaces](./namespaces/)
 * [Addon Example](./addon-example/)
 
 ## What's Next?
