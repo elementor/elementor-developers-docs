@@ -2,22 +2,20 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-The main class should check basic requirements and load the files required to activate the addon's functionality.
+We can move the different components into a single class - our main class. It should check basic requirements and load the files required to activate the addon's functionality, and then load the various components.
 
 ## Class Structure
 
 A good example of an addon class is one that hosts the following functionality:
 
 ```php
-namespace Elementor_Test_Addon;
-
 final class Plugin {
 
 	private static $_instance = null;
 	public static function instance() {}
 
 	public function __construct() {}
-	public function is_compatible() {
+	public function is_compatible() {}
 	public function init() {}
 
 }
@@ -28,8 +26,6 @@ final class Plugin {
 The main class should use a singleton design pattern to make sure it loads only once:
 
 ```php
-namespace Elementor_Test_Addon;
-
 final class Plugin {
 
 	/**
@@ -63,7 +59,7 @@ final class Plugin {
 
 }
 
-\Elementor_Test_Addon\Plugin::instance();
+\Plugin::instance();
 ```
 
 ## Constructor
@@ -71,8 +67,6 @@ final class Plugin {
 The constructor should perform compatibility checks to make sure the basic requirements are met. If all checks pass, the main functionality should be initialized.
 
 ```php
-namespace Elementor_Test_Addon;
-
 final class Plugin {
 
 	/**

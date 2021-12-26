@@ -9,8 +9,6 @@ Before initializing, the addon should check that its basic requirements are met.
 Since the addon extends Elementor’s core functionality, it should check to make sure that both the Elementor and PHP versions are compatible. 
 
 ```php
-namespace Elementor_Test_Addon;
-
 final class Plugin {
 
 	/**

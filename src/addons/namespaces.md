@@ -67,11 +67,10 @@ function elementor_test_addon() {
 	require_once( __DIR__ . '/includes/plugin.php' );
 
 	// Run the plugin
-	\Elementor_Test_Addon\Plugin();
+	\Elementor_Test_Addon\Plugin::instance();
 
 }
 add_action( 'plugins_loaded', 'elementor_test_addon' );
-
 ```
 
 The  `/includes/plugin.php` file defines the namespace and more functionality:

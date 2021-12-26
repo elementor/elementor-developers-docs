@@ -9,8 +9,6 @@ After passing all compatibility checks, we can safely run the addon and start ex
 The addon can register and enqueue [scripts and styles](./../scripts-styles/). Let's see an example of how this is done:
 
 ```php
-namespace Elementor_Test_Addon;
-
 final class Plugin {
 
 	/**
@@ -60,8 +58,6 @@ final class Plugin {
 To add new widgets to Elementor, we need to register them using the [widget manager](./../managers/registering-widgets/) mechanism. It’s a pretty simple process, we hook to the widget registration hook, include the widget's files and register the widget's classes.
 
 ```php
-namespace Elementor_Test_Addon;
-
 final class Plugin {
 
 	/**
@@ -94,8 +90,8 @@ final class Plugin {
 		require_once( __DIR__ . '/includes/widgets/widget-1.php' );
 		require_once( __DIR__ . '/includes/widgets/widget-2.php' );
 
-		$widgets_manager->register( new \Elementor_Test_Addon\Widget_1() );
-		$widgets_manager->register( new \Elementor_Test_Addon\Widget_2() );
+		$widgets_manager->register( new \Widget_1() );
+		$widgets_manager->register( new \Widget_2() );
 
 	}
 
@@ -107,8 +103,6 @@ final class Plugin {
 Now let's see how to register new controls using the [controls manager](./../managers/registering-controls/). Again, we are hooking to the control registration action to load the controls files and register the control classes.
 
 ```php
-namespace Elementor_Test_Addon;
-
 final class Plugin {
 
 	/**
@@ -141,8 +135,8 @@ final class Plugin {
 		require_once( __DIR__ . '/includes/controls/control-1.php' );
 		require_once( __DIR__ . '/includes/controls/control-2.php' );
 
-		$controls_manager->register( new \Elementor_Test_Addon\Control_1() );
-		$controls_manager->register( new \Elementor_Test_Addon\Control_2() );
+		$controls_manager->register( new \Control_1() );
+		$controls_manager->register( new \Control_2() );
 
 	}
 

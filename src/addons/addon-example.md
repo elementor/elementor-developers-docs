@@ -266,7 +266,6 @@ final class Plugin {
 	 */
 	public function init() {
 
-		// Add Plugin actions
 		add_action( 'elementor/widgets/register', [ $this, 'register_widgets' ] );
 		add_action( 'elementor/controls/register', [ $this, 'register_controls' ] );
 
