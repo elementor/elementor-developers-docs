@@ -152,4 +152,4 @@ final class Plugin {
 }
 ```
 
-You can add as many compatibility checks as needed. If one of the basic requirements fails, the addon shouldn't run.
+You can add as many compatibility checks as needed, the best example is Elementor Pro, but it can be anything. If one of the basic requirements fails, the addon shouldn't run.
