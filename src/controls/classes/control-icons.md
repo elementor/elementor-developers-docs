@@ -119,6 +119,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 			'section_icon',
 			[
 				'label' => esc_html__( 'Icon', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 

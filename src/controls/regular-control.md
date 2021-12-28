@@ -49,6 +49,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			[
 				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
@@ -81,6 +82,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			[
 				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
@@ -117,6 +119,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			[
 				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
@@ -154,6 +157,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			[
 				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
@@ -200,6 +204,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			[
 				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
@@ -242,6 +247,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			[
 				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
@@ -274,6 +280,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_section',
 			[
 				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
 
