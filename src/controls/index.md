@@ -13,10 +13,10 @@ Elementor includes a wide range of controls out-of-the-box. They are used in wid
 Learn more about the control types available in Elementor:
 
 * [Control Types](./control-types/)
-* [UI Controls](./ui-controls/)
 * [Data_Controls](./data-controls/)
 * [Multi Value Controls](./multi-value-controls/)
 * [Unit Controls](./unit-controls/)
+* [UI Controls](./ui-controls/)
 * [Group Controls](./group-controls/)
 
 ## Using Controls

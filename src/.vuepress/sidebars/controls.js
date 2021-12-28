@@ -13,10 +13,10 @@ module.exports = [
     sidebarDepth: -1,
     children: [
       'control-types',
-      'ui-controls',
       'data-controls',
       'multi-value-controls',
       'unit-controls',
+      'ui-controls',
       'group-controls',
     ]
   },
