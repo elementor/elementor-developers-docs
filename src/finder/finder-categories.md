@@ -9,7 +9,7 @@ The finder returns a set of links organized by categories. Each category include
 By default, the finder provides quick access to the following groups of links:
 
 * **Create** (_`create`_) – Provides links related to creating new posts/pages/templates etc.
-* **Edit** (_`edit`_) – Provides links related to editing new posts/pages/templates etc.
+* **Edit** (_`edit`_) – Provides links related to editing posts/pages/templates etc.
 * **General** (_`general`_) – Provides general links related to Elementor.
 * **Settings** (_`settings`_) – Provides links related to Elementor’s settings.
 * **Tools** (_`tools`_) – Provides links related to Elementor’s tools.
