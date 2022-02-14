@@ -38,7 +38,7 @@ Elementor offers a [wide variety of controls](./../controls/control-types/) out-
 
 In the example below, we're going to add a few controls to a widget to allow users save data:
 
-```php {12-19,21-32,34-46,48-69}
+```php {13-20,22-33,35-47,49-70}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
