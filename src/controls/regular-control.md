@@ -40,7 +40,7 @@ Each control has the following key parameters:
 
 In the example below, we're going to add a simple text control defined at the `control_text` class, which will allow users to save a simple string. The control will have a placeholder set:
 
-```php {12-19}
+```php {13-20}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -73,7 +73,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 In the example below, we're going to add a simple number control defined at the `Control_Number` class, which will allow users to save numbers:
 
-```php {12-23}
+```php {13-24}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -110,7 +110,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 Another simple example is the `Control_Select` class, which will allow users to choose predefined fields:
 
-```php {12-24}
+```php {13-25}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -148,7 +148,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 Choose control is an improved version of select control. The `Control_Choose` class allows users to choose predefined fields, but the components are styled with an icon for each option.
 
-```php {12-33}
+```php {13-34}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -195,7 +195,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 Another useful control is the `Control_Slider`, which displays a draggable range slider:
 
-```php {12-29}
+```php {13-30}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -238,7 +238,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 One of the more more popular controls is `Control_Color`, which lets users choose a color:
 
-```php {12-19}
+```php {13-20}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -271,7 +271,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 And finally, for advanced users, you can use `Control_Media` to select images from the WordPress media library:
 
-```php {12-21}
+```php {13-22}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
