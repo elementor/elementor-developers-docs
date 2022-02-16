@@ -14,10 +14,12 @@ With JS templates we don’t need to retrieve the data using a special function,
 <?php
 protected function content_template() {
 	?>
-	<h3 class="{{{ settings.class }}}">{{{ settings.title }}}</h3>
+	<h3 class="{{ settings.class }}">{{{ settings.title }}}</h3>
 	<?php
 }
 ```
+
+Use double curly brackets `{{` for escaped results and triple curly brackets `{{{` for un-escaped results. The best practice is to use double curly brackets everywhere, unless you need to to use un-scaped values.
 
 ## Retrieving PHP Settings
 
