@@ -103,15 +103,15 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'options' => [
 					'left' => [
 						'title' => esc_html__( 'Left', 'plugin-name' ),
-						'icon' => 'fa fa-align-left',
+						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
 						'title' => esc_html__( 'Center', 'plugin-name' ),
-						'icon' => 'fa fa-align-center',
+						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
 						'title' => esc_html__( 'Right', 'plugin-name' ),
-						'icon' => 'fa fa-align-right',
+						'icon' => 'eicon-text-align-right',
 					],
 				],
 				'default' => 'center',
