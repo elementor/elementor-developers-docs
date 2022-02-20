@@ -25,7 +25,7 @@ If you would like to use the groups added by Elementor Pro, your addons must [se
 When creating new dynamic tags, you can set the tag group by returning group names with the `get_group()` method:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function get_group() {
 		return [ 'actions' ];

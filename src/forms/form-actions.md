@@ -62,7 +62,7 @@ class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Ac
 Now that we have a class for our Form Action, we can start filling in the methods, and we start with the simple ones:
 
 ```php
-Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
+class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 	public function get_name() {
 		return 'sendy';
 	}
@@ -78,7 +78,7 @@ Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Ac
 Next, we need to add the Form Action controls using the `register_settings_section()` method:
 
 ```php
-Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
+class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
     public function register_settings_section( $widget ) {
         $widget->start_controls_section(
             'section_sendy',
@@ -142,7 +142,7 @@ We add a new controls section to the form widget which will be active (shown) if
 Like mentioned before the `run()` method is the actual action method which is triggered once the form is submitted, and in our case, this is where we send a request to Sendy’s API to subscribe the user to a list.
 
 ```php
-Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
+class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 	public function run( $record, $ajax_handler ) {
 		$settings = $record->get( 'form_settings' );
 
@@ -202,7 +202,7 @@ Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Ac
 Last we need to implement `on_export()` method to make sure we don’t export it as a form setting:
 
 ```php
-Class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
+class Elementor_Form_Sendy_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
     public function on_export( $element ) {
         unset(
             $element['sendy_url'],

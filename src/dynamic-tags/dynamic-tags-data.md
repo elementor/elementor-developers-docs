@@ -9,7 +9,7 @@ Each dynamic tag requires basic information like the unique ID, title, group and
 Dynamic tags data is "returned" by these methods:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function get_name() {
 		return 'tag-name';

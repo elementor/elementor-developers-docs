@@ -30,7 +30,7 @@ In older Elementor versions, you could define the returned value as simple text 
 When creating new dynamic tags, you need to define what data type the tag will return. This is done with the `get_categories()` method:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function get_categories() {
 		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
@@ -42,7 +42,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 The method returns an array, meaning that the dynamic tag can return several data types to the control:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function get_categories() {
 		return [

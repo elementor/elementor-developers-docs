@@ -9,7 +9,7 @@ Simple tags return dynamic data that have no dependencies, such as a random numb
 To set custom controls for dynamic tags, use the `register_controls()` method as follows:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	protected function register_controls() {
 

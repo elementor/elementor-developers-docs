@@ -9,7 +9,7 @@ The render method generates the final output and echoes the data to the control.
 To render the dynamic tag output and data echoes, we use the `render()` method as follows:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function render() {
 
@@ -23,7 +23,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 To extract data from the [dynamic tag controls](./dynamic-tags-controls/), we can use the `get_settings()` method:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function render() {
 		$param1 = $this->get_settings( 'text_param' );

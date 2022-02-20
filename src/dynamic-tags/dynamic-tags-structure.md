@@ -9,7 +9,7 @@ Each dynamic tag needs to have a few basic settings, such as a unique name. On t
 To create your own control, you need to **extend** the dynamic tags control to inherit its methods:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 }
 ```
 
@@ -18,7 +18,7 @@ Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 A simple dynamic tag skeleton will look like this:
 
 ```php
-Class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 	public function get_name() {}
 

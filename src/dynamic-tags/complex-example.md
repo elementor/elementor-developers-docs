@@ -95,7 +95,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-Class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\Tag {
+class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\Tag {
 
 	/**
 	 * Get dynamic tag name.
