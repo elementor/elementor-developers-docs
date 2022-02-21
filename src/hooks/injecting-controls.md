@@ -24,13 +24,13 @@ There are eight available hooks to choose from, four hooks are used to [inject c
 |--------------|-------------------------------|---------------------------------------------------------------|
 | `element`    | _`\Elementor\Controls_Stack`_ | The edited element.                                           |
 | `section_id` | _`string`_                    | Section id.                                                   |
-| `args`       | _`array`_                     | Section arguments sent to `$element->start_controls_section`  |
+| `args`       | _`array`_                     | Section arguments sent to `$element->start_controls_section`  |
 
 ### `elementor/element/before_section_start`
 
 ### `elementor/element/after_section_end`
 
-Runs before or after an editor section is registered. This is used to add additional sections before and after a section and affects all elements in a panel. If you need to add a section in a specific place (a specific element & section), the hooks described below would be preferable (See the section "**Targeting Specific Elements**).
+Runs before or after an editor section is registered. This is used to add additional sections before and after a section and affects all elements in a panel. If you need to add a section in a specific place (a specific element & section), the hooks described below would be preferable (See the section "**Targeting Specific Elements**).
 
 ### Example
 
@@ -122,7 +122,7 @@ To target a specific element (like the `heading` widget) and a specific section 
 | Argument  | Type             | Description                                                   |
 |-----------|------------------|---------------------------------------------------------------|
 | `element` | _`Element_Base`_ | The edited element.                                           |
-| `args`    | _`array`_        | Section arguments sent to `$element->start_controls_section`. |
+| `args`    | _`array`_        | Section arguments sent to `$element->start_controls_section`. |
 
 ### `elementor/element/{$stack_name}/{$section_id}/before_section_start`
 

@@ -49,7 +49,7 @@ add_action( 'wp_footer', function() {
 
 ## Frontend Actions
 
-### `init`
+### `elementor/frontend/init`
 
 Loads the Elementor frontend.
 
@@ -60,7 +60,7 @@ None
 #### Example
 
 ```js
-elementorFrontend.hooks.addAction( 'init', function() {
+elementorFrontend.hooks.addAction( 'elementor/frontend/init', function() {
  // Do something that is based on the elementorFrontend object.
 } );
 ```

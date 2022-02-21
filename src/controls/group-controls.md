@@ -8,7 +8,7 @@ Group controls are used to group together several regular controls and return th
 
 The following controls are included in Elementor:
 
-* [Typography](./../controls/classes/group-control-typography/) – Font size, font family, font weight, text transform, font style, line height and letter spacing.
+* [Typography](./../controls/classes/group-control-typography/) – Font size, font family, font weight, text transform, font style, line height, letter spacing and word spacing.
 * [Text Shadow](./../controls/classes/group-control-text-shadow/) – Add a shadow effect to texts.
 * [Box Shadow](./../controls/classes/group-control-box-shadow/) – Add a shadow effect to elements.
 * [Border](./../controls/classes/group-control-border/) – Border type, border width and border color.
