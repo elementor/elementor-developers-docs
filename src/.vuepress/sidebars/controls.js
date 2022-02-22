@@ -35,6 +35,16 @@ module.exports = [
     ]
   },
   {
+    title: 'Control Arguments',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'conditional-display',
+      'global-style',
+      'dynamic-content',
+    ]
+  },
+  {
     title: 'Creating Controls',
     collapsable: false,
     sidebarDepth: -1,
