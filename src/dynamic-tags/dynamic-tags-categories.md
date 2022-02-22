@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-When controls are created, developers can define whether the [control can accept dynamic data](./../controls/control-settings/#dynamic-tags) or not. If the control does accept dynamic data, then a data type (e.g. text values, colors, images) must be set. Dynamic tags, on the other hand, need to define what types of data they return to the control.
+When controls are created, developers can define whether the [control can accept dynamic data](./../controls/dynamic-content/) or not. If the control does accept dynamic data, then a data type (e.g. text values, colors, images) must be set. Dynamic tags, on the other hand, need to define what types of data they return to the control.
 
 This is where categories come in handy. Elementor Pro has a list of categories arranged by data type, which are returned by the dynamic tag to the control.
 
