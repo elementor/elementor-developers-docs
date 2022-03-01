@@ -285,8 +285,8 @@ final class Plugin {
 		require_once( __DIR__ . '/includes/widgets/widget-1.php' );
 		require_once( __DIR__ . '/includes/widgets/widget-2.php' );
 
-		$widgets_manager->register( new \Elementor_Test_Addon\Widget_1() );
-		$widgets_manager->register( new \Elementor_Test_Addon\Widget_2() );
+		$widgets_manager->register( new Widget_1() );
+		$widgets_manager->register( new Widget_2() );
 
 	}
 
@@ -304,8 +304,8 @@ final class Plugin {
 		require_once( __DIR__ . '/includes/controls/control-1.php' );
 		require_once( __DIR__ . '/includes/controls/control-2.php' );
 
-		$controls_manager->register( new \Elementor_Test_Addon\Control_1() );
-		$controls_manager->register( new \Elementor_Test_Addon\Control_2() );
+		$controls_manager->register( new Control_1() );
+		$controls_manager->register( new Control_2() );
 
 	}
 
