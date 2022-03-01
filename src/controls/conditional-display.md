@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-In some cases you need to diaply controls based on user selection in a dependent controls. For example, if a switcher control is turrned on then display few more controls. The controls mechnism in the editor has a special conditional display functionality. Let's see how to use it up.
+In some cases you need to diaply controls based on user selection in a dependent control. For example, if a switcher control is turrned on then display few more controls. The controls mechnism in the editor has a special conditional display functionality. Let's see how to use it up.
 
 ## Condition Argument
 
@@ -23,7 +23,7 @@ $this->add_control(
 
 ## Multiple Conditions
 
-Display conditions may depend on the number of controls. This is why the `condition` argument accepts an `array`. It checks if *all* the conditions are meet to decide whether the display the control.
+Display conditions may depend on the number of controls. This is why the `condition` argument accepts an `array`. It uses the logical `AND` (`&&`) operator, checking if *all* the conditions are meet to decide whether the display the control.
 
 To set multiple conditions, pass several values:
 
