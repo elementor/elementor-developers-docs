@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor has the ability to replace the control output using [dynamic tags](../dynamic-tags/) to generated content programatically. Dynamic capabilities turn static controls into smart components. Helping users to add customized data from various sources to their site. Let's see how to set it up.
+Elementor can replace control outputs using [dynamic tags](../dynamic-tags/) to generate content programmatically. Dynamic capabilities turn static controls into smart components. This helps users add customized data from various sources to their site. Let's see how to set this up.
 
 ## Dynamic Argument
 
-To set dynamic tags on Elementor controls, use the `dynamic` argument:
+Use the `dynamic` argument to set dynamic tags using Elementor controls:
 
 ```php{6-8}
 $this->add_control(
@@ -23,7 +23,7 @@ $this->add_control(
 
 <img :src="$withBase('/assets/img/elementor-dynamic-tag-indicator.png')" alt="Elementor Dynamic Tag Indicator" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-When a control has dynamic tags support, an additional icon is added to indicate to the user that he can replace the content with any dynamic tag.
+When a control has dynamic tags support, an additional icon is added to indicate to the user that they can replace the content with any dynamic tag.
 
 ## Dynamic Example
 
