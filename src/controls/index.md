@@ -2,9 +2,9 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor Controls are **input fields** and **UI elements** that are used to construct an interface. Controls allow the user to customize the available settings from the panel and change the design in the preview.
+Elementor Controls are **input fields** and **UI elements** that are used to construct an interface. Controls allow users to customize available panel settings and change the design in the preview.
 
-Elementor includes a wide range of controls out-of-the-box. They are used in widgets and panels to collect user data and generate custom output based on user selections.
+Elementor includes a wide range of out-of-the-box controls. They are used in widgets and panels to collect visitor data and generate custom output based on their selections.
 
 <img :src="$withBase('/assets/img/elementor-controls.png')" alt="Elementor Controls" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
