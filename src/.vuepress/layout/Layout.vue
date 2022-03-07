@@ -105,7 +105,7 @@ export default {
 
   beforeMount() {
     let gtmNoScript = document.createElement('noscript')
-    gtmNoScript.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJK8HW" height="0" width="0" style="display:none;visibility:hidden"></iframe>'
+    gtmNoScript.innerHTML = '<iframe src="https://gtm.elementor.com/ns.html?id=GTM-NJK8HW" height="0" width="0" style="display:none;visibility:hidden"></iframe>'
     document.body.appendChild(gtmNoScript)
   },
 
