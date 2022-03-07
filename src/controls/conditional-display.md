@@ -2,7 +2,8 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-In some cases you need to diaply controls based on user selection in a dependent control. For example, if a switcher control is turrned on then display few more controls. The controls mechnism in the editor has a special conditional display functionality. Let's see how to use it up.
+In some cases, you may need to display controls based on a user’s selection in a dependent control. For example, turning a switcher control on may trigger the display of other controls. The controls mechanism in the editor has a special conditional display functionality. Let's see how it is used.
+
 
 ## Condition Argument
 
@@ -23,7 +24,7 @@ $this->add_control(
 
 ## Multiple Conditions
 
-Display conditions may depend on the number of controls. This is why the `condition` argument accepts an `array`. It uses the logical `AND` (`&&`) operator, checking if *all* the conditions are meet to decide whether the display the control.
+Display conditions may depend on the number of controls. This is why the `condition` argument accepts an `array`. It uses the logical `AND` (`&&`) operator, checking to see if *all* the conditions are met in order to decide whether or not to display the control.
 
 To set multiple conditions, pass several values:
 
@@ -44,11 +45,11 @@ $this->add_control(
 
 ## Equality Operators
 
-A condition has two equality operators, it can check whether the control value *equal* OR *not equal* to some value.
+A condition has two equality operators, it can check whether the control value is *equal* OR *not equal* to a value.
 
 ### Equality Check
 
-Display controls only if the dependent control equals to some value:
+Display controls only if the dependent control equals a certain value:
 
 ```php
 'condition' => [
@@ -58,7 +59,7 @@ Display controls only if the dependent control equals to some value:
 
 ### Inequality Check
 
-Display controls only if the dependent control is not equals to some value:
+Display controls only if the dependent control does not equal a certain value:
 
 ```php
 'condition' => [
@@ -70,7 +71,8 @@ We simply add a `!` suffix to the control name.
 
 ## Condition Example
 
-Let's start with an example in which we want to allow the user to set borders and style them. To smplify the user-experiance, we initialy hide all the border controls and leave only a [switcher](./../controls/classes/control-switcher/). If the user turns on the switcher, he will see all the border controls.
+Let's start with an example in which we want to allow users to set borders and style them. To simplify the user experience, we initially hide all the border controls and leave only a [switcher](./../controls/classes/control-switcher/). If a user turns on the switcher, they will see all the border controls.
+
 
 ```php{2,25-27,41-43,55-57}
 $this->add_control(
@@ -134,9 +136,9 @@ $this->add_responsive_control(
 );
 ```
 
-The example above shows us how all the border controls are dependent on a single border control. To set multiple dependent controls, we can set more conditions as the user adds more input.
+In the example above all the border controls are dependent on a single border control. To set multiple dependent controls, we can set more conditions allowing the user to add more input.
 
-In the example bellow the user first needs the turn on the switcher and then to set the border style, only then he will see the colors & width controls. We use multiple conditions with both equality and inequality checks.
+In the example below, the user needs to first turn on the switcher and set a border style. Only then will the color and width controls appear. To do this we will need multiple conditions using both equality and inequality checks.
 
 ```php{2,25-27,41-44,56-59}
 $this->add_control(
