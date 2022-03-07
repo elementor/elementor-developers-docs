@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor users can set global styles using the [site settings panel](../editor/site-settings-panel/). The controls mechnism in the editor has a special functionality that allows the user to set custom styling or inherit global styles. Let's see how to set it up.
+Elementor end-users can set global styles using the [site settings panel](../editor/site-settings-panel/). The control mechanism in the editor has a special functionality that allows these users to set custom styling, or inherit global styles. Let's see how to set it up.
 
 ## Global Argument
 
-To set global styles on Elementor controls, use the `global` argument in any color or typography control:
+To set global styles with Elementor controls, use the `global` argument in any color or typography control:
 
 ```php{6-8}
 $this->add_control(
@@ -23,11 +23,11 @@ $this->add_control(
 
 <img :src="$withBase('/assets/img/elementor-global-style-indicator.png')" alt="Elementor Global Style Indicator" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-When setting a `global` argument on controls, the control has an additional globe icon which indicates to the user that he can either use one of the defined global styles or set a custom style.
+When setting a `global` argument for controls, the control has an additional globe icon which indicates to the end-user that they can either use one of the defined global styles or set a custom style.
 
 ## Available Global Styles
 
-Site settings panel is where the user defines the sites design system. Currently Elementor design system has support for:
+The end-user defines the site’s design system in the site settings panel. Elementor design system currently supports:
 
 <img :src="$withBase('/assets/img/elementor-design-system.png')" alt="Elementor Design System" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
@@ -52,7 +52,7 @@ Elementor offers 4 default colors and 4 default typography sets to which users c
 
 ## Global Example
 
-Let's see how a control can inherit global styles from the sites design system defined by the user in the site settings panel:
+Let's see how a control can inherit global styles from the site's design system, as defined in the site settings panel:
 
 ```php{9-11,23-25,37-39,48-50,59-61,70-72}
 $this->add_control(
@@ -131,4 +131,4 @@ $this->add_group_control(
 );
 ```
 
-In conclusion, you can set whether the controls will be able to inherit global styles from the sites design system, and if so what type it will inherit (primary, secondary, text or accent).
+In conclusion, you can set whether or not the controls can inherit global styles from the site's design system and, if so, what type(s) of styles it will inherit (primary, secondary, text or accent).
