@@ -36,7 +36,7 @@ module.exports = {
    * Ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['link', { rel: 'icon', href: '/assets/img/logo.svg' }],
+    ['link', { rel: 'icon', href: '/favicon.png' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['link', { rel: 'mask-icon', href: '/assets/img/logo.svg', color: '#db3157' }],
     ['link', { rel: 'apple-touch-icon', href: '/assets/img/logo.svg' }],
