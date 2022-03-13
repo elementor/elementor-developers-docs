@@ -28,6 +28,7 @@ Go over all the `heading` widgets and, if the heading uses external links, add a
  * @since 1.0.0
  * @param string                 $widget_content The widget HTML output.
  * @param \Elementor\Widget_Base $widget         The widget instance.
+ * @return string The changed widget content.
  */
 function change_heading_widget_content( $widget_content, $widget ) {
 
