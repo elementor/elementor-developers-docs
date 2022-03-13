@@ -4,27 +4,13 @@
 
 In some cases, you may need to display controls based on a user’s selection in a dependent control. For example, turning a switcher control on may trigger the display of other controls. The controls mechanism in the editor has a special conditional display functionality. Let's see how it is used.
 
-
 ## Condition Argument
 
-To set conditional display to Elementor controls, use the `condition` argument in any control:
+To set conditional display to Elementor controls, use the `condition` argument in any control.
 
-```php{6-8}
-$this->add_control(
-	'unique-control-name',
-	[
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
-		'type' => \Elementor\Controls_Manager::TEXT,
-		'condition' => [
-			'dependent-control-name' => 'dependent-control-value',
-		],
-	]
-);
-```
+### Single-Value Condition
 
-## Multi-Value Condition
-
-Display conditions may depend on an exact value:
+Display condition may depend on an exact value:
 
 ```php{6-8}
 $this->add_control(
@@ -39,7 +25,9 @@ $this->add_control(
 );
 ```
 
-Or depend on a set of values, whice uses a logical `OR` (`||`) operator:
+### Multi-Value Condition
+
+Display condition may depend on a set of values:
 
 ```php{6-8}
 $this->add_control(
@@ -53,6 +41,8 @@ $this->add_control(
 	]
 );
 ```
+
+Elementor uses a logical `OR` (`||`) operator when passing an array of values.
 
 ## Multiple Conditions
 
