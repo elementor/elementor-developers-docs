@@ -22,6 +22,38 @@ $this->add_control(
 );
 ```
 
+## Multi-Value Condition
+
+Display conditions may depend on an exact value:
+
+```php{6-8}
+$this->add_control(
+	'unique-control-name',
+	[
+		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'type' => \Elementor\Controls_Manager::TEXT,
+		'condition' => [
+			'dependent-control-name' => 'exact-value',
+		],
+	]
+);
+```
+
+Or depend on a set of values, whice uses a logical `OR` (`||`) operator:
+
+```php{6-8}
+$this->add_control(
+	'unique-control-name',
+	[
+		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'type' => \Elementor\Controls_Manager::TEXT,
+		'condition' => [
+			'dependent-control-name' => [ 'value-1', 'value-2' ],
+		],
+	]
+);
+```
+
 ## Multiple Conditions
 
 Display conditions may depend on the number of controls. This is why the `condition` argument accepts an `array`. It uses the logical `AND` (`&&`) operator, checking to see if *all* the conditions are met in order to decide whether or not to display the control.
