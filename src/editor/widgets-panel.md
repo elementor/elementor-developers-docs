@@ -11,7 +11,7 @@
 The panel has two tabs:
 
 * **Elements** - A list of the registered widgets.
-* **Global** - A list of widgets saved by the user.
+* **Global** - A list of global widgets saved by the user.
 
 The elements tab displays the site's widgets grouped by categories. It also has a search bar which can be used to filter the widgets.
 
