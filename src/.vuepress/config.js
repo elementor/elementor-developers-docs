@@ -58,6 +58,9 @@ module.exports = {
       'https://gtm.elementor.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-NJK8HW');
     `],
+    // OneTrust Cookies Consent Notice for elementor.com
+    ['script', { type: 'text/javascript', src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', charset: 'UTF-8', 'data-cfasync': 'false', 'data-domain-script': '31f0e3a0-7e21-4548-96da-7ae09f8d3f78' }],
+    ['script', {}, `function OptanonWrapper() { }`],
   ],
 
   /**
