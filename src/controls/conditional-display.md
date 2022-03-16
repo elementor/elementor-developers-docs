@@ -225,3 +225,192 @@ $this->add_responsive_control(
 	]
 );
 ```
+
+## Advanced Conditions
+
+Elementor has an advanced conditional display functionality for controls in the editor. Insted of using the `condition` use `conditions` argument (plural **s**).
+
+### Available Values
+
+The `conditions` argument accepts an array with the following values:
+
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th><code>relation</code></th>
+			<td>(<code>string</code>) Relation check with either <code>and</code> / <code>or</code> logical operators.<br> Default is <code>and</code>.</td>
+		</tr>
+		<tr>
+			<th><code>terms</code></th>
+			<td>(<code>array</code>) An array of arrays containing the rules.
+				<ul>
+					<li><code>name</code> - The dependent control name.</li>
+					<li><code>value</code> - The dependent control value.</li>
+					<li><code>operator</code> - The equality operator, <code>==</code>, <code>!=</code>, <code>!==</code>, <code>in</code>, <code>!in</code>, <code>contains</code>, <code>!contains</code>, <code><</code>, <code><=</code>, <code>></code>, <code>>=</code>, <code>===</code>. Default is <code>===</code>.</li>
+				</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+### More Operators
+
+Up untill now you could only use the equality check and inequality check. Now you have many more operators: `==`, `!=`, `!==`, `in`, `!in`, `contains`, `!contains`, `<`, `<=`, `>`, `>=` and `===`.
+
+We can replace the simple `condition` argument:
+
+```php
+'condition' => [
+	'control-name!' => 'control-value',
+],
+```
+
+With the advanced `conditions` argument, and include the `operator` rule inside the `term` array:
+
+```php
+'conditions' => [
+	'terms' => [
+		[
+			'name' => 'control-name',
+			'operator' => '!==',
+			'value' => 'control-value',
+		],
+	],
+],
+```
+
+It also make it easy to use equality operator for numeric values (`<`, `<=`, `>`, `>=`, `==`, `===`, `!=` and `!==`):
+
+```php
+'conditions' => [
+	'terms' => [
+		[
+			'name' => 'spacing',
+			'operator' => '>=',
+			'value' => 0,
+		],
+	],
+],
+```
+
+Check against multiple values:
+
+```php
+'conditions' => [
+	'terms' => [
+		[
+			'name' => 'background_type',
+			'operator' => 'in',
+			'value' => [ 'classic', 'gradient', 'video', 'slideshow' ],
+		],
+	],
+],
+```
+
+Check if the term contains some value:
+
+```php
+'conditions' => [
+	'terms' => [
+		[
+			'name' => 'heading',
+			'operator' => 'contains',
+			'value' => 'elementor',
+		],
+	],
+],
+```
+
+### Multiple Conditions 
+
+As mentioned above, the simple `condition` argument allows developers to combine several conditions:
+
+```php
+'condition' => [
+	'border' => 'yes',
+	'border_style!' => '',
+],
+```
+
+The advanced `conditions` argument has the same ability:
+
+```php
+'conditions' => [
+    'terms' => [
+        [
+            'name' => 'border',
+            'operator' => '===',
+            'value' => 'yes',
+        ],
+        [
+            'name' => 'border_style',
+            'operator' => '!==',
+            'value' => '',
+        ],
+    ],
+],
+```
+
+But while with `condition` all the terms must met in order to display the control, the advanced `conditions` adds more logical operarator using the new `relation` value.
+
+### Term Relations
+
+Now we can use not only the `and` logical operator but also `or` operator the check relations between terms:
+
+```php
+'conditions' => [
+	'relation' => 'or',
+	'terms' => [
+		[
+			'name' => 'background',
+			'operator' => '!==',
+			'value' => '',
+		],
+		[
+			'name' => 'border',
+			'operator' => '!==',
+			'value' => '',
+		],
+	],
+],
+```
+
+### Nested Conditions
+
+We can also nest conditions 
+
+```php
+'conditions' => [
+	'relation' => 'or',
+	'terms' => [
+		[
+			'name' => 'video_type',
+			'operator' => '===',
+			'value' => 'youtube',
+		],
+		[
+			'relation' => 'and',
+			'terms' => [
+				[
+					'name' => 'show_image_overlay',
+					'operator' => '===',
+					'value' => 'yes',
+				],
+				[
+					'name' => 'video_type',
+					'operator' => '!==',
+					'value' => 'hosted',
+				],
+			],
+		],
+	],
+],
+```
+
+Developers have the ability to create very strict rules with many nested levels for conditional control display.
