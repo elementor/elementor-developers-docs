@@ -20,7 +20,7 @@ elementor-addon/
 └─ elementor-addon.php
 ```
 
-You can zip the entire `elementor-addon` folder and upload the zip file to your site from "_WordPress Dashboard_" > "_Plugins_" screen.
+You can zip the entire `elementor-addon` folder and upload the `zip` file to your site from "_WordPress Dashboard_" > "_Plugins_" screen.
 
 ## Addon files
 
@@ -194,4 +194,6 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 }
 ```
 
-Now that you’ve seen how easy it is to start build addons, it’s time to take advantage of the growing Elementor market and start working on your own cool ideas. You can also read more about [Building Advanced Addon](./../addons/) with examples of an [Addon Wrapper](./../addons/addon-example/).
+Now that you’ve seen how easy it is to create your first Elementor addon, it’s time to take advantage of the growing Elementor market and start working on your own cool ideas.
+
+Continue reading more about [Building Advanced Addons](./../addons/) with best practices, codding standarts and even more [code examples](./../addons/addon-example/).
