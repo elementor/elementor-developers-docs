@@ -17,6 +17,14 @@ module.exports = [
     ]
   },
   {
+    title: 'Editor Work Flow',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'editor-work-flow',
+    ]
+  },
+  {
     title: 'Editor Panels',
     collapsable: false,
     sidebarDepth: -1,
