@@ -194,4 +194,4 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 }
 ```
 
-Now that you’ve seen how easy it is to build addons, it’s time to take advantage of the growing Elementor market and start working on your own cool ideas. And remember, in addition to this detailed documentation, you can also turn to the [Elementor Community Hub](https://elementor.com/community/) and [Elementor Academy](https://elementor.com/academy/) for additional support. 
+Now that you’ve seen how easy it is to start build addons, it’s time to take advantage of the growing Elementor market and start working on your own cool ideas. You can also read more about [Building Advanced Addon](./../addons/) with examples of an [Addon Wrapper](./../addons/addon-example/).
