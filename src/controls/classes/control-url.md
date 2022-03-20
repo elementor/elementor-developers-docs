@@ -129,6 +129,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 					'nofollow' => true,
 					'custom_attributes' => '',
 				],
+				'label_block' => true,
 			]
 		);
 
