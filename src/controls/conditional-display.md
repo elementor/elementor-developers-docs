@@ -6,11 +6,11 @@ In some cases, you may need to display controls based on a user’s selection in
 
 ## Condition Argument
 
-To set conditional display to Elementor controls, use the `condition` argument in any control.
+To set a conditional display for Elementor controls, use the `condition` argument in any control.
 
 ### Single-Value Condition
 
-Display condition may depend on an exact value:
+The display condition may depend on an exact value:
 
 ```php{6-8}
 $this->add_control(
@@ -27,7 +27,7 @@ $this->add_control(
 
 ### Multi-Value Condition
 
-Display condition may depend on a set of values:
+The display condition may depend on a set of values:
 
 ```php{6-8}
 $this->add_control(
@@ -158,9 +158,9 @@ $this->add_responsive_control(
 );
 ```
 
-In the example above all the border controls are dependent on a single border control. To set multiple dependent controls, we can set more conditions allowing the user to add more input.
+In the example above all the border controls are dependent on a single border control. To set multiple dependent controls, we can set more conditions allowing the user to add more inputs.
 
-In the example below, the user needs to first turn on the switcher and set a border style. Only then will the color and width controls appear. To do this we will need multiple conditions using both equality and inequality checks.
+In the example below, the user needs to first turn on the switcher and set a border style. Only then, will the color and width controls appear. To do this we will need to set multiple conditions using both equality and inequality checks.
 
 ```php{2,25-27,41-44,56-59}
 $this->add_control(
@@ -228,7 +228,7 @@ $this->add_responsive_control(
 
 ## Advanced Conditions
 
-Elementor has an advanced conditional display functionality for controls in the editor. Insted of using the `condition` use `conditions` argument (plural **s**).
+Elementor has an advanced conditional display functionality for controls in the editor. Instead of using the `condition` argument, use the `conditions` argument (with an **s**).
 
 ### Available Values
 
@@ -261,7 +261,7 @@ The `conditions` argument accepts an array with the following values:
 
 ### More Operators
 
-Up untill now you could only use the equality check and inequality check. Now you have many more operators: `==`, `!=`, `!==`, `in`, `!in`, `contains`, `!contains`, `<`, `<=`, `>`, `>=` and `===`.
+Before implementing the 'conditions' argument, you could only use equality and inequality checks. Now you have many more operators at your disposal: `==`, `!=`, `!==`, `in`, `!in`, `contains`, `!contains`, `<`, `<=`, `>`, `>=` and `===`.
 
 We can replace the simple `condition` argument:
 
@@ -271,7 +271,7 @@ We can replace the simple `condition` argument:
 ],
 ```
 
-With the advanced `conditions` argument, and include the `operator` rule inside the `term` array:
+with the advanced `conditions` argument, and include the `operator` rule inside the `term` array:
 
 ```php
 'conditions' => [
@@ -285,7 +285,7 @@ With the advanced `conditions` argument, and include the `operator` rule inside 
 ],
 ```
 
-It also make it easy to use equality operator for numeric values (`<`, `<=`, `>`, `>=`, `==`, `===`, `!=` and `!==`):
+This also makes it easier to use equality operators for numeric values (`<`, `<=`, `>`, `>=`, `==`, `===`, `!=` and `!==`):
 
 ```php
 'conditions' => [
@@ -299,7 +299,7 @@ It also make it easy to use equality operator for numeric values (`<`, `<=`, `>`
 ],
 ```
 
-Check against multiple values:
+Below is an example of checking against multiple values:
 
 ```php
 'conditions' => [
@@ -313,7 +313,7 @@ Check against multiple values:
 ],
 ```
 
-Check if the term contains some value:
+Below is an example of checking if the term contains a value:
 
 ```php
 'conditions' => [
@@ -357,11 +357,11 @@ The advanced `conditions` argument has the same ability:
 ],
 ```
 
-But while with `condition` all the terms must met in order to display the control, the advanced `conditions` adds more logical operarator using the new `relation` value.
+However, with the `condition` argument all the terms must be met in order to display the control, while the advanced `conditions` argument allows you to add more logical operators using the new `relation` value.
 
 ### Term Relations
 
-Now we can use not only the `and` logical operator but also `or` operator the check relations between terms:
+Now we can use not only the `and` logical operator but also the `or` operator to check the relationship between terms:
 
 ```php
 'conditions' => [
@@ -383,7 +383,7 @@ Now we can use not only the `and` logical operator but also `or` operator the ch
 
 ### Nested Conditions
 
-We can also nest conditions 
+We can also nest conditions: 
 
 ```php
 'conditions' => [
@@ -413,4 +413,4 @@ We can also nest conditions
 ],
 ```
 
-Developers have the ability to create very strict rules with many nested levels for conditional control display.
+All this gives developers the ability to create very strict rules with many nested levels for conditional control display.
