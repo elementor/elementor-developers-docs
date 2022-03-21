@@ -182,7 +182,7 @@ class TestWidgetHandler extends elementorModules.frontend.handlers.Base {
 /**
  * Register Test Widget JS Handler
  */
-jQuery( window ).on( 'elementor/frontend/init', () => {
+window.addEventListener( 'elementor/frontend/init', () => {
 	const addHandler = ( $element ) => {
 		elementorFrontend.elementsHandler.addHandler( TestWidgetHandler, { $element } );
 	};
