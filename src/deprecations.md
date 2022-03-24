@@ -10,9 +10,7 @@ Developers are informed of the code change through several channels, including t
 
 Elementor's deprecation process includes 3 steps:
 
-* **Soft Deprecation**
-* **Hard Deprecation**
-* **Deletion**
+<img :src="$withBase('/assets/img/elementor-deprecation-process.png')" alt="Elementor Deprecation Process">
 
 ### Soft Deprecation
 
