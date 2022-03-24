@@ -24,14 +24,13 @@ This step lasts additional 4 major Elementor versions. Using deprecated code in 
 
 After 8 major versions, the deprecated code is deleted from the codebase. At this point, using deprecated function/argument/hook/methods will breake sites as this code is no longer exist.
 
-## Deprecation Example
+## Updating Deprecated Code
 
 If we deprecated a method in Elementor 3.0.0, it will start throwing errors after Elementor 3.4.0, and will likely be deleted in Elementor 3.8.0.
 
 ### Widgets
 
 A good example we still see is when addon developers create [widgets](./widgets/) using depreated methods prefixed with `_`.
-
 
 ```diff
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -63,3 +62,19 @@ Using the old code will break sites as the old methods already delete from the E
 Another, more recent example, is the rename of the [managers](./managers/) registration hooks in Elementor 3.5. Where we tried to standardize the registration process with simpler and intuitive hook names.
 
 Using the old hook name won't break site untill Elementor 4.3.
+
+```diff
+function register_new_widgets( $widgets_manager ) {
+
+	require_once( __DIR__ . '/widgets/widget-1.php' );
+	require_once( __DIR__ . '/widgets/widget-2.php' );
+
+-	$widgets_manager->register_widget_type( new \Elementor_Widget_1() );
+-	$widgets_manager->register_widget_type( new \Elementor_Widget_2() );
++	$widgets_manager->register( new \Elementor_Widget_1() );
++	$widgets_manager->register( new \Elementor_Widget_2() );
+
+}
+- add_action( 'elementor/widgets/widgets_registered', 'register_new_widgets' );
++ add_action( 'elementor/widgets/register', 'register_new_widgets' );
+```
