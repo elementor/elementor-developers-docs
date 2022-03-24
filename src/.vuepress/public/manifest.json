@@ -3,7 +3,7 @@
   "short_name": "elementor-developers",
   "description": "Resources and tutorials for Elementor developers",
   "lang": "en-US",
-  "start_url": "https://developers.elementor.com/",
+  "start_url": "https://developers.elementor.com/docs/",
   "background_color": "#ffffff",
   "theme_color": "#db3157",
   "display": "standalone",
