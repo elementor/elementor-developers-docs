@@ -144,7 +144,7 @@ Now, the widget JS hendler class should extend the `elementorModules.frontend.ha
  * Test Widget JS Handler Class
  */
 class TestWidgetHandler extends elementorModules.frontend.handlers.Base {
-	
+
 	/**
 	 * Update Test Widget Content
 	 *
@@ -184,7 +184,10 @@ class TestWidgetHandler extends elementorModules.frontend.handlers.Base {
 }
 
 /**
- * Register Test Widget JS Handler
+ * Register JS Handler for the Test Widget
+ *
+ * When Elementor frontend was initiated, and the widget is ready, register the widet
+ * JS handler.
  */
 window.addEventListener( 'elementor/frontend/init', () => {
 	const addHandler = ( $element ) => {
