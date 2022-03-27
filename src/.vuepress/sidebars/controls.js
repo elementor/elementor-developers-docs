@@ -42,6 +42,7 @@ module.exports = [
       'conditional-display',
       'global-style',
       'dynamic-content',
+      'frontend-available',
     ]
   },
   {
