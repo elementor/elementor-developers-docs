@@ -24,7 +24,7 @@ By default, `frontend_available` is set to `false`. Developers can override this
 
 Each widget can load [custom script handlers](./../widgets/widget-dependencies/) which are loaded dynamically if the widget is used in the page.
 
-```php{39-42,63,68,86,100}
+```php{39-46,67,72,90,104}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -64,7 +64,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @return array Element scripts dependencies.
 	 */
 	public function get_script_depends() {
-		wp_register_script( 'test-widget-handler', plugins_url( 'js/test-widget.js', __FILE__ ) );
+		wp_register_script(
+			'test-widget-handler',
+			plugins_url( 'js/test-widget.js', __FILE__ ),
+			[ 'elementor-frontend' ] // Dependent on 'elementor-frontend' script.
+		);
 		return [ 'test-widget-handler' ];
 	}
 
@@ -152,7 +156,7 @@ class TestWidgetHandler extends elementorModules.frontend.handlers.Base {
 			this.contentWrapper = document.querySelector( widgetUniqueSelector );
 		}
 
-		this.contentWrapper.innerText( this.getElementSettings( 'some_number' ) );
+		this.contentWrapper.innerText = this.getElementSettings( 'some_number' );
 	}
 
 	/**
