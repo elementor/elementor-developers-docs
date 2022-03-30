@@ -1,5 +1,7 @@
 # Advanced Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 A more recent example, is the standardization of the [managers](./../managers/) registration in Elementor 3.5. Where we tried to simplify the process with simpler and intuitive naming conventions.
 
 ## Widgets

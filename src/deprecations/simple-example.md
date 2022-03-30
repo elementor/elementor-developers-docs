@@ -1,5 +1,7 @@
 # Simple Example
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
+
 A good example we often see is when addon developers create [widgets](./../widgets/widget-structure/) using deprecated methods prefixed with `_`. In the past, protected method prefixed with `_` but in some point Elementor abandoned this naming convention.
 
 ## Widgets
