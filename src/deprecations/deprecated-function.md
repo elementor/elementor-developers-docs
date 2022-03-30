@@ -46,7 +46,7 @@ class Items {
 		);
 
 		// Backwards compatibility
-		register( $item_instance );
+		$this->register( $item_instance );
 	}
 
 }
