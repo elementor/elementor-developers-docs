@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: 'Elementor Deprecation',
+    title: 'Elementor Deprecations',
     collapsable: false,
     sidebarDepth: -1,
     children: [
