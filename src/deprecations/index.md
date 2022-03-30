@@ -10,7 +10,7 @@ To avoide regression errors cause by an external addon developers still using de
 
 Developers are informed of the code change through several channels, including the [developers blog](https://developers.elementor.com/category/deprecations/), major versions release notes, and debug tools.
 
-Elementor's deprecation process includes 3 steps:
+Elementor's deprecation process has 3 steps:
 
 <img :src="$withBase('/assets/img/elementor-deprecation-process.png')" alt="Elementor Deprecation Process">
 
