@@ -3,6 +3,7 @@ const { description, base } = require('../../package');
 const addonsSidebar = require('./sidebars/addons');
 const contextMenuSidebar = require('./sidebars/context-menu');
 const controlsSidebar = require('./sidebars/controls');
+const deprecationsSidebar = require('./sidebars/deprecations');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
 const editorSidebar = require('./sidebars/editor');
 const finderSidebar = require('./sidebars/finder');
@@ -117,6 +118,10 @@ module.exports = {
             text: 'Hooks',
             link: '/hooks/',
           },
+          {
+            text: 'Deprecations',
+            link: '/deprecations/',
+          },
         ],
       },
       {
@@ -173,6 +178,7 @@ module.exports = {
       '/addons/': addonsSidebar,
       '/context-menu/': contextMenuSidebar,
       '/controls/': controlsSidebar,
+      '/deprecations/': deprecationsSidebar,
       '/dynamic-tags/': dynamicTagsSidebar,
       '/editor/': editorSidebar,
       '/getting-started/': gettingStartedSidebar,
