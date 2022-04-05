@@ -14,6 +14,7 @@ module.exports = [
     children: [
       'php',
       'placeholder-image',
+      'shapes',
       'frontend-content',
       'render-frontend-elements',
       'render-widget-content',

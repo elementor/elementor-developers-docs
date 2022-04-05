@@ -51,7 +51,7 @@ Elementor's PHP hooks, both filter hooks and action hooks.
 * `elementor/kit/export/manifest-data`
 * `elementor/kit/import-export/directory/{$path}`
 * `elementor/maintenance_mode/is_login_page`
-* `elementor/shapes/additional_shapes`
+* [elementor/shapes/additional_shapes](./shapes.md)
 * `elementor/schemes/enabled_schemes`
 * `elementor/settings/controls/checkbox_list_cpt/post_type_objects`
 * `elementor/settings/tools/rollback/is_valid_rollback_version`
