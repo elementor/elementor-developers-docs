@@ -1,6 +1,7 @@
 const { description, base } = require('../../package');
 
 const addonsSidebar = require('./sidebars/addons');
+const cliSidebar = require('./sidebars/cli');
 const contextMenuSidebar = require('./sidebars/context-menu');
 const controlsSidebar = require('./sidebars/controls');
 const deprecationsSidebar = require('./sidebars/deprecations');
@@ -176,6 +177,7 @@ module.exports = {
     ],
     sidebar: {
       '/addons/': addonsSidebar,
+      '/cli/': cliSidebar,
       '/context-menu/': contextMenuSidebar,
       '/controls/': controlsSidebar,
       '/deprecations/': deprecationsSidebar,
