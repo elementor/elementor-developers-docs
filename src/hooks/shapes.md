@@ -38,14 +38,14 @@ The first is the original design, the other is the same design but with negative
 
 ## Examples
 
-To add new shapes dividers in your theme, use the following code:
+To add new shape dividers in your theme, use the following code:
 
 ```php
 /**
  * Add additional shape dividers to Elementor.
  *
  * @since 1.0.0
- * @param array $additional_shapes Additional Elementor shapes dividers.
+ * @param array $additional_shapes Additional Elementor shape dividers.
  */
 function custom_elementor_shape_dividers( $additional_shapes ) {
 
@@ -71,14 +71,14 @@ function custom_elementor_shape_dividers( $additional_shapes ) {
 add_filter( 'elementor/shapes/additional_shapes', 'custom_elementor_shape_dividers' );
 ```
 
-To add new shapes dividers in your plugin, use the following code:
+To add new shape dividers in your plugin, use the following code:
 
 ```php
 /**
  * Add additional shape dividers to Elementor.
  *
  * @since 1.0.0
- * @param array $additional_shapes Additional Elementor shapes dividers.
+ * @param array $additional_shapes Additional Elementor shape dividers.
  */
 function custom_elementor_shape_dividers( $additional_shapes ) {
 
