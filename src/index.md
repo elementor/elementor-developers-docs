@@ -39,6 +39,7 @@ pageClass: docs-home
       <li><a href="./scripts-styles/">Scripts &amp; Styles</a></li>
       <li><a href="./hooks/">Hooks</a></li>
       <li><a href="./deprecations/">Deprecations</a></li>
+      <li><a href="./cli/">CLI</a></li>
     </ul>
   </div>
 </section>
