@@ -6,7 +6,7 @@ Elementor is an evolving product. Over time, some code is removed or replaced. T
 
 ## Deprecation Process
 
-To avoide regression errors cause by an external addon developers still using deprecated code, the deprecated code is not immediately removed from the codebase. Deprecated code removed over a period covered by a number of released versions.
+To avoid regression errors cause by an external addon developers still using deprecated code, the deprecated code is not immediately removed from the codebase. Deprecated code removed over a period covered by a number of released versions.
 
 Developers are informed of the code change through several channels, including the [developers blog](https://developers.elementor.com/category/deprecations/), major versions release notes, and debug tools.
 
