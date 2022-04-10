@@ -6,7 +6,7 @@ Elementor is an evolving product. Over time, some code is removed or replaced. T
 
 ## Deprecation Process
 
-To avoide regression errors cause by an external addon developers still using deprecated code, the deprecated code is not immediately removed from the codebase. Deprecated code removed over a period covered by a number of released versions.
+To avoid regression errors cause by an external addon developers still using deprecated code, the deprecated code is not immediately removed from the codebase. Deprecated code removed over a period covered by a number of released versions.
 
 Developers are informed of the code change through several channels, including the [developers blog](https://developers.elementor.com/category/deprecations/), major versions release notes, and debug tools.
 
@@ -30,7 +30,7 @@ After 8 major versions, the deprecated code is deleted from the codebase. At thi
 
 If we deprecated a method in Elementor 3.2.0, it will start throwing PHP errors in Elementor 3.6.0, and will likely be deleted in Elementor 4.0.0.
 
-## How Elementor Deprecats Code
+## How Elementor Deprecates Code
 
 Elementor 3.1 introduced the `Deprecation` PHP class to deal with the deprecation process described above. The class handles all the notices for developers and (if needed) all the backwards compatibility requirements.
 

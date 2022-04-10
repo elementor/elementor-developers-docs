@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-UI controls are not a regular controls that the user can interact with, these are special controls only visible in [the editor](./editor/). Please note that these controls don’t return any value.
+UI controls are not a regular controls that the user can interact with, these are special controls only visible in [the editor](../editor/). Please note that these controls don’t return any value.
 
 ## Using UI Controls
 
