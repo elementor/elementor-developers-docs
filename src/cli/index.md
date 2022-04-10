@@ -6,7 +6,7 @@ Elementor integrates with [WP-CLI](https://wp-cli.org/), enabling you to run cer
 
 ## What is WordPress CLI?
 
-WP-CLI is a command line interface for [WordPress](https://wordpress.org/). It offers an alternative to the WordPress admin. Command line makes it easy for developers, agencies and hosting providers to run actions with fewer clicks, run them remotely and event perform complex scripts based on certain conditions.
+WP-CLI is a command line interface for [WordPress](https://wordpress.org/). It offers an alternative to the WordPress admin. Command line makes it easy for developers, agencies and hosting providers to run actions with fewer clicks, run them remotely, and even perform complex scripts based on certain conditions.
 
 ## What is Elementor CLI?
 
