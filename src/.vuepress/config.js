@@ -123,6 +123,10 @@ module.exports = {
             text: 'Deprecations',
             link: '/deprecations/',
           },
+          {
+            text: 'CLI',
+            link: '/cli/',
+          },
         ],
       },
       {

@@ -2,7 +2,7 @@
  
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Exporting multiple individual templates is not an easy task. Elementor can export all the content, the templates and site settings at once as a kit. A kit can be exported from the admin panel or from the command line using the `kit export` command.
+Exporting multiple individual templates is not an easy task. Elementor can export all the content, the templates, and site settings at once as a kit. A kit can be exported from the admin panel or from the command line using the `kit export` command.
 
 ## Command
 
