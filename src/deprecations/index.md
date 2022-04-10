@@ -30,7 +30,7 @@ After 8 major versions, the deprecated code is deleted from the codebase. At thi
 
 If we deprecated a method in Elementor 3.2.0, it will start throwing PHP errors in Elementor 3.6.0, and will likely be deleted in Elementor 4.0.0.
 
-## How Elementor Deprecats Code
+## How Elementor Deprecates Code
 
 Elementor 3.1 introduced the `Deprecation` PHP class to deal with the deprecation process described above. The class handles all the notices for developers and (if needed) all the backwards compatibility requirements.
 
