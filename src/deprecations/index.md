@@ -26,7 +26,7 @@ This step lasts through four additional major Elementor versions. Using deprecat
 
 After eight major versions, the deprecated code is deleted from the codebase. At this point, using deprecated code will break sites as this code will no longer work. In some cases the deletion process can be postponed until the next major release.
 
-## Deprecation Period - An Example
+## Deprecation Period Example
 
 As an example, if code is deprecated in Elementor 3.2.0, it will start throwing PHP errors in Elementor 3.6.0, and will likely be deleted in Elementor 4.0.0.
 

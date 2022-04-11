@@ -14,7 +14,7 @@ An example of renaming occured when Elementor unified the registration process f
 
 We have an action hook called `elementor/old/action`, and want to rename it `elementor/old/action`.
 
-The code:
+For example, take the following code:
 
 ```php
 class Name {
@@ -26,7 +26,7 @@ class Name {
 }
 ```
 
-The new code with the deprecation handler will look like this:
+The new code, with the deprecation handler, will look like this:
 
 ```php
 use Elementor\Plugin;
@@ -49,9 +49,9 @@ class Name {
 }
 ```
 
-The new `elementor/new/action` hook will run as expected. In addition, for the next seven versions the deprecation handler will run the old hook (for backwards compatibility) while sending some notifications to developers. 
+The new `elementor/new/action` hook will run as expected. In addition, the deprecation handler will run the old hook (for backwards compatibility) while sending some notifications to developers.
 
-After eight major versions the code will look like this:
+After eight major versions, the code will look like this:
 
 ```php
 class Name {

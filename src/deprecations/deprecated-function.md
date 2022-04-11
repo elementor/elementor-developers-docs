@@ -14,7 +14,7 @@ Unifying components is another example of this change. Elementor 3.5 renamed man
 
 In the following example we need to rename the `add_item()` method and replace it with `register()`.
 
-The original code:
+For example, take the following code:
 
 ```php
 class Items {
@@ -54,7 +54,7 @@ class Items {
 
 The original method was renamed to `register()`. But, we didn't remove the `add_item()` method, we simply added a deprecation handler to inform developers still using this method to replace it with the new name.
 
-After eight major versions the code will look like this:
+After eight major versions, the code will look like this:
 
 ```php
 class Items {
@@ -68,7 +68,7 @@ class Items {
 
 ## Updating Deprecated Functions
 
-Addon developers that use the old `add_item()` method should simply rename the method to `register()`, as follows:
+Addon developers who use the old `add_item()` method should simply rename the method to `register()`, as follows:
 
 ```diff
 class MyItem extends Items {
