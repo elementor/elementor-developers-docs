@@ -12,7 +12,7 @@ When considering naming conventions, the old naming conventions should work alon
 
 We have a filter hook called `elementor/old/filter`, and we want to rename it to `elementor/new/filter`.
 
-The code:
+For example, take the following code:
 
 ```php
 class Name {
@@ -24,7 +24,7 @@ class Name {
 }
 ```
 
-The new code with the deprecation handler will look like this:
+The new code, with the deprecation handler, will look like this:
 
 ```php
 use Elementor\Plugin;
@@ -47,9 +47,9 @@ class Name {
 }
 ```
 
-The new `elementor/new/filter` hook will run as expected. In addition, for the next seven versions the deprecation handler will run the old hook (for backwards compatibility) while sending some notifications to developers. 
+The new `elementor/new/filter` hook will run as expected. In addition, the deprecation handler will run the old hook (for backwards compatibility) while sending some notifications to developers.
 
-After eight major versions the code will look like this:
+After eight major versions, the code will look like this:
 
 ```php
 class Name {

@@ -30,7 +30,7 @@ class Items_Manager {
 
 The original method above required the `$id` argument - the new method should work with or without this argument.
 
-The new code:
+The new code, with the deprecation handler, will look like this:
 
 ```php
 use Elementor\Plugin;
@@ -56,6 +56,8 @@ class Items_Manager {
 
 }
 ```
+
+The `register()` method will work with or without the `$id` argument. In addition, the deprecation handler will sending some notifications to developers still using the deprecated argument.
 
 After eight major versions, the code will look like this:
 
