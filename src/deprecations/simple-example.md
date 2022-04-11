@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-A good example we often see is when addon developers create [widgets](./../widgets/widget-structure/) using deprecated methods prefixed with `_`. In the past, protected methods prefixed with `_` but in some point Elementor abandoned this naming convention.
+One example of commonly used deprecated conventions is when addon developers create [widgets](./../widgets/widget-structure/) using the deprecated prefix `_`. Previously, Elementor protected methods prefixed with `_` but that naming convention was deprecated. 
 
 ## Widgets
 
-Addons developers should update their code, replaceing deprecated methods. The fix is simple enough:
+Addon developers should update their code, replacing deprecated methods. The fix is simple enough:
 
 ```diff
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
