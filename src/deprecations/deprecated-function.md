@@ -6,9 +6,9 @@ Elementor offers the `Deprecation::deprecated_function()` method to handle the d
 
 ## Use Cases
 
-In the past, protected method prefixed with `_` but in some point Elementor abandoned this naming convention and renamed methods like `_register_controls()` with `register_controls()`.
+Previously, Elementor protected methods by using the `_` prefix. However, this convention is outdated. For instance, `_register_controls()` would now just be `register_controls()`.
 
-Another good example when unifying different components. Elementor 3.5 renamed many methods to unify the registration process using [managers](./../managers/). Ranaming `register_widget_type()`, `register_control()`, `register_tag()`, `add_category()` and others to simply `register()`.
+Unifying components is another example of this change. Elementor 3.5 renamed many methods in order to unify the registration process. This entailed using [managers](./../managers/), renaming `register_widget_type()`, `register_control()`, `register_tag()`, `add_category()`, and others to simply `register()`.
 
 ## How To Deprecate Functions
 
@@ -26,7 +26,7 @@ class Items {
 }
 ```
 
-The new code with the deprecation handler will look like this:
+The new code, with the deprecation handler, will look like this:
 
 ```php
 use Elementor\Plugin;
@@ -52,9 +52,9 @@ class Items {
 }
 ```
 
-The original method was renamed to `register()`. But we didn't removed the `add_item()` method, we simply added a deprecation handler to inform developers that still use this method to replace it with the new name.
+The original method was renamed to `register()`. But, we didn't remove the `add_item()` method, we simply added a deprecation handler to inform developers still using this method to replace it with the new name.
 
-After 8 major versions the code will look like this:
+After eight major versions the code will look like this:
 
 ```php
 class Items {
