@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-A more recent example, is the standardization of the [managers](./../managers/) registration in Elementor 3.5. Where we tried to simplify the process with simpler and intuitive naming conventions.
+A recent example of deprecation is standardizing the registration of [managers](./../managers/) in Elementor 3.5. In this instance, we simplified the process using easier and more intuitive naming conventions.
 
 ## Widgets
 
@@ -26,7 +26,7 @@ function register_new_widgets( $widgets_manager ) {
 
 ## Controls
 
-When [registering new controls](./../managers/registering-controls/), we renamed the action hook and the registration method, we've also removed the control name argument:
+When [registering new controls](./../managers/registering-controls/), we renamed the action hook and the registration method. We also removed the control name argument:
 
 ```diff
 function register_new_controls( $controls_manager ) {
