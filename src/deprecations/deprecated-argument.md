@@ -1,20 +1,20 @@
-# Deprecated Argument
+# Deprecated Arguments
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor offers the `Deprecation::deprecated_argument()` method to handle the deprecation process for arguments inside Elementor code.
+Elementor offers the `Deprecation::deprecated_argument()` method to handle the deprecation process for arguments inside the Elementor code.
 
 ## Use Cases
 
-As code improves some arguments become redundant. The same functionality can be processed by retrieving the data internally without the need of external arguments.
+As our code improves, some arguments become redundant. The same functionality can be processed by retrieving the data internally, without the need of external arguments.
 
-When registerig controls you no longer need to pass the ID argument as the data comes from the class itself, from a seperate method.
+For example, when registering controls, you no longer need to pass the ID argument as the data comes from the class itself, not from a separate method.
 
 ## How To Deprecate Arguments
 
-Our class has a `register()` method. This method accepted an `$id`. But now the ID moved into the class and we need to stop supporting the `$id` argument in the registration process.
+Our class has a `register()` method. This method used to accept an `$id`, but now the ID is part of the class and the `$id` argument will eventually not be supported in the registration process.
 
-The code:
+For example, take the following code:
 
 ```php
 class Items_Manager {
@@ -28,7 +28,7 @@ class Items_Manager {
 }
 ```
 
-The original method requires the `$id` argument. The new method should work with or without this argument.
+The original method above required the `$id` argument - the new method should work with or without this argument.
 
 The new code:
 
@@ -57,7 +57,7 @@ class Items_Manager {
 }
 ```
 
-After 8 major versions the code will look like this:
+After eight major versions, the code will look like this:
 
 ```php
 class Items_Manager {
@@ -74,7 +74,7 @@ class Items_Manager {
 
 ## Updating Deprecated Arguments
 
-Addon developers that use the `register()` method with the `$id` argument should simply remove the argument, as follows:
+Addon developers who use the `register()` method with the `$id` argument should simply remove the argument, as follows:
 
 ```diff
 function register_new_items( $items_manager ) {
