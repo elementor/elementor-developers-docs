@@ -1,4 +1,4 @@
-# Deprecated Filter Hook
+# Deprecated Filter Hooks
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
@@ -6,11 +6,11 @@ Elementor offers the `Deprecation::apply_deprecated_filter()` method to handle t
 
 ## Use Cases
 
-When refactoring naming conventions, the old naming conventions should work alongside the new ones.
+When considering naming conventions, the old naming conventions should work alongside the new ones.
 
 ## How To Deprecate Filter Hooks
 
-We have an filter hook called `elementor/old/filter`, and we want to rename it to `elementor/new/filter`.
+We have a filter hook called `elementor/old/filter`, and we want to rename it to `elementor/new/filter`.
 
 The code:
 
@@ -47,9 +47,9 @@ class Name {
 }
 ```
 
-The new `elementor/new/filter` hook will run as expected. In addition, the deprecation handler will run the old hook (for backwards compatibility) with some notices for developers. 
+The new `elementor/new/filter` hook will run as expected. In addition, for the next seven versions the deprecation handler will run the old hook (for backwards compatibility) while sending some notifications to developers. 
 
-After 8 major versions the code will look like this:
+After eight major versions the code will look like this:
 
 ```php
 class Name {
@@ -63,7 +63,7 @@ class Name {
 
 ## Updating Deprecated Filter Hooks
 
-Addon developers that use the old hook should simply rename it, as follows:
+Addon developers who use the old hook should simply rename it, as follows:
 
 ```diff
 function hook_callback() {
