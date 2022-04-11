@@ -6,7 +6,7 @@ Elementor is an evolving product. Over time, code is removed or replaced. These 
 
 ## Deprecation Process
 
-The reason for this gradual process is to avoid regression errors cause by external addon developers still using deprecated code. 
+The reason for this gradual process is to avoid regression errors caused by external addon developers still using deprecated code. 
 
 As a first step, developers are informed of the code change through several channels, including the [developers blog](https://developers.elementor.com/category/deprecations/), major versions' release notes, and debug tools.
 
@@ -16,7 +16,7 @@ Elementor's deprecation process has 3 steps:
 
 ### Soft Deprecation
 
-This step lasts through four major Elementor versions. Using deprecated code in this phase will shows a JS warning in the browser console. In addition, if the `ELEMENTOR_DEBUG` constant is defined as `true`, the site log will have PHP notices/warnings. During this grace period deprecated code won't break sites, as both the deprecated code and the new code will work as expected.
+This step lasts through four major Elementor versions. Using deprecated code in this phase will display a JS warning in the browser console. In addition, if the `ELEMENTOR_DEBUG` constant is defined as `true`, the site log will have PHP notices/warnings. During this grace period, deprecated code won't break sites, as both the deprecated code and the new code will work as expected.
 
 ### Hard Deprecation
 
