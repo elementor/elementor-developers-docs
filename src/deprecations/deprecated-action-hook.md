@@ -1,4 +1,4 @@
-# Deprecated Action Hook
+# Deprecated Action Hooks
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
@@ -6,13 +6,13 @@ Elementor offers the `Deprecation::do_deprecated_action()` method to handle the 
 
 ## Use Cases
 
-When refactoring naming conventions, the old naming conventions should work alongside the new ones.
+When considering naming conventions, the old naming conventions should work alongside the new ones.
 
-A recent example happened when Elementor unified the registration process in different components in versions 3.5. Many action hooks across different [managers](./../managers/) renamed.
+An example of renaming occured when Elementor unified the registration process for several components in versions 3.5. Many action hooks across different [managers](./../managers/) were renamed.
 
 ## How To Deprecate Action Hooks
 
-We have an action hook called `elementor/old/action`, and we want to rename it to `elementor/old/action`.
+We have an action hook called `elementor/old/action`, and want to rename it `elementor/old/action`.
 
 The code:
 
@@ -49,9 +49,9 @@ class Name {
 }
 ```
 
-The new `elementor/new/action` hook will run as expected. In addition, the deprecation handler will run the old hook (for backwards compatibility) with some notices for developers. 
+The new `elementor/new/action` hook will run as expected. In addition, for the next seven versions the deprecation handler will run the old hook (for backwards compatibility) while sending some notifications to developers. 
 
-After 8 major versions the code will look like this:
+After eight major versions the code will look like this:
 
 ```php
 class Name {
@@ -65,7 +65,7 @@ class Name {
 
 ## Updating Deprecated Action Hooks
 
-Addon developers that use the old hook should simply rename it, as follows:
+Addon developers who use the old hook should simply rename it, as follows:
 
 ```diff
 function hook_callback() {
