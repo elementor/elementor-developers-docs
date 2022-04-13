@@ -16,15 +16,15 @@ Elementor's deprecation process has 3 steps:
 
 ### Soft Deprecation
 
-This step lasts through four major Elementor versions. Using deprecated code in this phase will display a JS warning in the browser console. In addition, if the `ELEMENTOR_DEBUG` constant is defined as `true`, the site log will have PHP notices/warnings. During this grace period, deprecated code won't break sites, as both the deprecated code and the new code will work as expected.
+This step lasts through four major Elementor versions. During this grace period, deprecated code won't break sites, as both the deprecated code and the new code will work as expected. However, using deprecated code in this phase will display browser console notice.
 
 ### Hard Deprecation
 
-This step lasts through four additional major Elementor versions. Using deprecated code in this phase will throw a PHP error. This grace period won't break sites as both the deprecated code and the new code will work as expected.
+This step lasts through four additional major Elementor versions. This grace period won't break sites as both the deprecated code and the new code will work as expected. Nevertheless, using deprecated code in this phase will throw PHP errors.
 
 ### Deletion
 
-After eight major versions, the deprecated code is deleted from the codebase. At this point, using deprecated code will break sites as this code will no longer work. In some cases the deletion process can be postponed until the next major release.
+After eight major versions, the deprecated code is deleted from the codebase. At this point, using code that is no longer exist will throw fatal PHP errors causing sites to break. In some cases, the deletion process can be postponed until the next major release.
 
 ## Deprecation Period Example
 
