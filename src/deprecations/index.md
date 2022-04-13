@@ -34,6 +34,12 @@ As an example, if code is deprecated in Elementor 3.2.0, it will start throwing 
 
 The old deprecated code will be available until its final deletion. The new replacement code will be available from the deprecation poin. Between the deprecated and the deletion, the old code and the new code are both available for use.
 
+## Debugging Deprecated Code
+
+Addon developers should test their code with `WP_DEBUG` or `ELEMENTOR_DEBUG` constant set to `true` in `wp-config.php` file.
+
+When WordPress debug is enabled, soft deprecated code will have PHP notices/warnings in the log, and hard deprecated code will have PHP errors in the log.
+
 ## How Elementor Deprecates Code
 
 Elementor 3.1 introduced the `Deprecation` PHP class to deal with the deprecation process described above. This class handles all the notices for developers and (if needed) all the backwards compatibility requirements.
