@@ -14,7 +14,7 @@ For Elementor addons, developers are not required to use namespaces. Addons will
 
 ## Example Namespace Structure
 
-Elementor's namespaces are organize in sun-namespaces to organize similar functionality:
+Elementor's namespaces are organize in sub-namespaces to organize similar functionality:
 
 ```
 \Elementor\
