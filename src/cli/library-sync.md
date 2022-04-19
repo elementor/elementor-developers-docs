@@ -2,7 +2,7 @@
  
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor holds locally a list of available templates that can be downloaded from the Elementor template library. A transient is scheduled to synch the available templates every 12 hours. Elementor CLI `library sync` command triggers the sync from the cloud using the command line.
+Elementor holds, locally, a list of available templates that can be downloaded from the Elementor template library. A transient is scheduled to synch the available templates every 12 hours. Elementor CLI `library sync` command triggers this sync from the cloud using the command line.
 
 ## Command
 
@@ -32,10 +32,10 @@ This command will sync the library with Elementor cloud library.
 wp elementor library sync --force
 ```
 
-This command will sync the library with Elementor cloud library even if it looks like that the library is already up to date.
+This command will sync the library with the Elementor cloud library even if it appears that the library is already up to date.
 
 ```bash
 wp elementor library sync --network
 ```
 
-This command will sync the library with Elementor cloud library for each site in the network.
+This command will sync the libraries of each site on the network with the Elementor cloud library.
