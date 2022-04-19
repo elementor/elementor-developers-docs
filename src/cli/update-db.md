@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-In some cases new Elementor versions perform changes in the database (e.g. migrate to kits, replace schemes with globals etc.). Elementor CLI `update db` command will trigger the database update functionality using the command line.
+In some cases, new Elementor versions perform changes in the database (e.g. migrate to kits, replace schemes with globals etc.). Elementor CLI `update db` command will trigger the database update functionality using the command line.
 
 ## Command
 
