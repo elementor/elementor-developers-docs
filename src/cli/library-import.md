@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Users can import Elementor templates from the library by uploading a single template JSON file or a ZIP file with multiple JSON files. Elementor CLI `library import` command will import the template using the command line.
+Users can import Elementor templates from the library by uploading a single template JSON file or a ZIP file with multiple JSON files. The Elementor CLI `library import` command will import the template using the command line.
 
 ## Command
 
