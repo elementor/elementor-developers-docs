@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Connect a site to Elementor library from the command line, simply provide a WordPress user and a connection token.
+Connect a site to the Elementor library from the command line by simply providing a WordPress user and a connection token.
 
 ## Command
 
@@ -26,4 +26,4 @@ _(Optional)_ A connect token from Elementor account dashboard.
 wp elementor library connect --user=admin --token=xxx
 ```
 
-This command will connect to Elementor library the WordPress `admin` user.
+This command will connect the WordPress `admin` user to the Elementor library .
