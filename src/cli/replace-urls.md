@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Sites that change the URL, whether migrating to different domain or simple transtering from HTTP to HTTPs, need to update URLs in the database. Elementor has a tool that replaces old URLs with new URLs in all Elementor pages. The Elementor CLI `replace-urls` command will do exactly that.
+Sites that change the URL, whether migrating to different domain or simple transfering from HTTP to HTTPs, need to update URLs in the database. Elementor has a tool that replaces old URLs with new URLs in all Elementor pages. The Elementor CLI `replace-urls` command will do exactly that.
 
 ## Command
 
