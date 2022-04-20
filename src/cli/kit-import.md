@@ -2,7 +2,7 @@
  
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor kits are a bundle of templates, pages, popups, etc. Rather than importing each template individually you can import all the content at once. A kit can be imported from the admin panel or from the command line using the `kit import` command.
+An Elementor kit is a bundle of templates, pages, popups, etc. Rather than importing each template individually you can import all the content at once. A kit can be imported from the admin panel or from the command line using the `kit import` command.
 
 ## Command
 
