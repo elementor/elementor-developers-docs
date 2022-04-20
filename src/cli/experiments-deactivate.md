@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor users get access to experimental features which are not officially released. Those experiments can be deactivated from the admin panel or from the command line using the `experiments deactivate` command.
+Elementor users can access experimental features which have not been officially released. Those experiments can be deactivated from the admin panel or from the command line using the `experiments deactivate` command.
 
 ## Command
 
