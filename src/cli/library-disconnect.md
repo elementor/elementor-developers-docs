@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Disconnect a site from Elementor library using the command line, by simply providing the WordPress user.
+Disconnect a site from the Elementor library using the command line, by simply providing the WordPress user.
 
 ## Command
 
@@ -22,4 +22,4 @@ _(Optional)_ The user to disconnect. Accepts user id, user login name or an emai
 wp elementor library disconnect --user=admin
 ```
 
-This command will disconnect from Elementor library the WordPress `admin` user.
+This command will disconnect the WordPress `admin` user from Elementor library.
