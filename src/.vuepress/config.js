@@ -54,7 +54,7 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=DM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&display=auto' }],
     // OneTrust Cookies Consent Notice for elementor.com
     ['script', { type: 'text/javascript', src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', charset: 'UTF-8', 'data-cfasync': 'false', 'data-domain-script': '31f0e3a0-7e21-4548-96da-7ae09f8d3f78' }],
-    ['script', {}, `function OptanonWrapper() { }`],
+    ['script', {}, `function OptanonWrapper(){}function insureCookieBanner(n,o){window.setTimeout(function(){window[n]?o(window[n]):insureCookieBanner(n,o)},800)}insureCookieBanner("OneTrust",function(n){OneTrust.LoadBanner()});`],
     // Google Tag Manager
     ['script', {}, `
       (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
