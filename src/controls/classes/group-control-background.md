@@ -102,6 +102,14 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Background', 'plugin-name' ),
 				'types' => [ 'classic', 'gradient', 'video' ],
 				'selector' => '{{WRAPPER}} .your-class',
+				//Use fields_options to customize controls of the controls. i.e- add custom lebel, set default etc. 
+				'fields_options' => [
+					'background' => [
+						'label' => esc_html__( 'Our Background', 'plugin-name' ),
+						'description' => 'This is a description sample for group control',
+						'default' => 'classic', //which would be the default - color/image/gradient
+					],
+				],
 			]
 		);
 
