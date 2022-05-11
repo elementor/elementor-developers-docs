@@ -12,7 +12,7 @@ An example of renaming occured when Elementor unified the registration process f
 
 ## How To Deprecate Action Hooks
 
-We have an action hook called `elementor/old/action`, and want to rename it `elementor/old/action`.
+We have an action hook called `elementor/old/action`, and want to rename it `elementor/new/action`.
 
 For example, take the following code:
 
