@@ -10,7 +10,7 @@ The reason for this gradual process is to avoid regression errors caused by exte
 
 As a first step, developers are informed of the code change through several channels, including the [developers blog](https://developers.elementor.com/category/deprecations/), major versions' release notes, and debug tools.
 
-Elementor's deprecation process has 3 steps:
+Elementor's deprecation process has consists of the following steps:
 
 <img :src="$withBase('/assets/img/elementor-deprecation-process.png')" alt="Elementor Deprecation Process">
 
