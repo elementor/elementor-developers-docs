@@ -15,13 +15,13 @@ As of Elementor 3.5, developers should use the following code to unregister exis
  * @param \Elementor\Core\DynamicTags\Manager $dynamic_tags_manager Elementor dynamic tags manager.
  * @return void
  */
-function register_dynamic_tags( $dynamic_tags_manager ) {
+function unregister_dynamic_tags( $dynamic_tags_manager ) {
 
 	$dynamic_tags_manager->unregister( 'dynamic-tag-1' );
 	$dynamic_tags_manager->unregister( 'dynamic-tag-2' );
 
 }
-add_action( 'elementor/dynamic_tags/register', 'register_dynamic_tags' );
+add_action( 'elementor/dynamic_tags/register', 'unregister_dynamic_tags' );
 ```
 
 This hooks to the `elementor/dynamic_tags/register` action hook which holds the dynamic tags manager. The manager then unregisters the dynamic tag by passing the dynamic tag name.
