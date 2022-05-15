@@ -26,6 +26,7 @@ module.exports = [
       'unregistering-widgets',
       'unregistering-controls',
       'unregistering-dynamic-tags',
+      'unregistering-finder-categories',
     ]
   },
 ];
