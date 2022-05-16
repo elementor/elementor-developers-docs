@@ -1,6 +1,6 @@
 # Frontend Available
 
-In some cases, developers need to use the control value inside the widget JS loaded in the frontend. For example, an Elementor widget that uses an external slider library needs to get the amount of slides to display and pass the data to the library script in the frontend. Elementor let's developers expose control values to be used in the frontend.
+In some cases, developers need to use the control value inside the widget JS loaded in the frontend. For example, an Elementor widget that uses an external slider library needs to get the amount of slides to display and pass the data to the library script in the frontend. Elementor lets developers expose control values to be used in the frontend.
 
 ## Frontend Available Argument
 
@@ -18,7 +18,7 @@ $this->add_control(
 );
 ```
 
-By default, `frontend_available` is set to `false`. Developers can override this setting this to `true`.
+By default, `frontend_available` is set to `false`. Developers can override this by setting it to `true`.
 
 ## Fetch Control Data
 
@@ -135,9 +135,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-Please note that the widget's `render()` method does not display any output. We want do insert the data from the control using JS. To do that, we registered a JS script located in `js/test-widget.js`, using the `get_style_depends()` method.
+Please note that the widget's `render()` method does not display any output. We want to insert the data from the control using JS. To do that, we registered a JS script located in `js/test-widget.js`, using the `get_style_depends()` method.
 
-Now, the widget JS hendler class should extend the `elementorModules.frontend.handlers.Base` class. This base class acts as an "abstract" class, defining basic methods like `onInit()` and provide access to the exposed control data using the `getElementSettings()`.
+Now, the widget JS handler class should extend the `elementorModules.frontend.handlers.Base` class. This base class acts as an "abstract" class, defining basic methods like `onInit()` and providing access to the exposed control data using `getElementSettings()`.
 
 ```js
 /**
