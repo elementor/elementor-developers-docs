@@ -6,17 +6,29 @@ What happens behind the scene when the user creates a new Elementor page? The wo
 
 ## Loading
 
-The loading stage has two seperate proceses, one loads the Editor and the other loads the document.
+The loading stage has three seperate proceses, one loads the Editor and the other loads the Document and the preview.
 
 ### Load the Editor
 
-* **Create a Document** - 
+* **Load Editor Config** -
 
-* **Create a Revision** - 
+* * **General Loading Step** - not page spesific
 
-* **Load Widgets Data** - 
+load the fonts, load all the dynamic-tags, all the icons, breakpoints, user permissions and capabilities, globas settings and all the cogif needed to render the editor app. general sfuff not page specific. page specific data include only the document info. (console: "elemntor.config")
+
+* * **Additional Loading Steps** - Page specific data - what document are we talking about, 
+
+* * **Load post-meta Data** - Check if there is (called `elementor-data`)
+
+* * **Load Document Type** - elementor.template_type
+
+* **Load Widgets Data** - Then we load the elements data (=widgets). All the controls of the widgets, sections, columns, contaners. seperate load because it has lots of data.
 
 * **Heartbeat** - (lock from editing by other users)
+
+### Load the Preview
+
+iframe with the url of the current page your are editing. loads without the post-content. rendering the theme with the content elements empty.
 
 ### Load the Document
 
@@ -24,13 +36,15 @@ The loading stage has two seperate proceses, one loads the Editor and the other 
 
 * **Set Document Type** - 
 
+Then we take php represintation of the widget and inject the rendered HTML to the preview. To show you what the visitor sees.
+
 ## Editing
 
 When editing an Elementor page, behind the scene several processes occur.
 
-* **Autosave** - Each change triggers an autosave, this way Elementor can list all user actions in the [History Panel](./history-panel/) to track changes and restore previous versions. ... *In addition Elementor triggers the [WordPress Heartbeat API](https://developer.wordpress.org/plugins/javascript/heartbeat-api/) to create new autosaves* ...
-
 * **Re-render Widgets** - each time the user finish editing a widget (on blur), Elementor re-renders the widget PHP to display an updated view in the [Preview](./elementor-preview/).
+
+* **Autosave** - Each change triggers an autosave, this way Elementor can list all user actions in the [History Panel](./history-panel/) to track changes and restore previous versions. ... *In addition Elementor triggers the [WordPress Heartbeat API](https://developer.wordpress.org/plugins/javascript/heartbeat-api/) to create new autosaves* ...
 
 ## Preview
 
