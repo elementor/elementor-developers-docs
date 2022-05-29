@@ -130,7 +130,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::ICONS,
 				'default' => [
 					'value' => 'fas fa-star',
-					'library' => 'solid',
+					'library' => 'fa-solid',
 				],
 			]
 		);
