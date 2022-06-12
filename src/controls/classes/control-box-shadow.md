@@ -46,7 +46,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		);
 
 		$this->add_control(
-			'custom_box_shadow'
+			'custom_box_shadow',
 			[
 				'label' => esc_html__( 'Box Shadow', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::BOX_SHADOW,
