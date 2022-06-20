@@ -1,6 +1,6 @@
 # Switcher Control
 
-Elementor switcher control displays a an on/off switcher. It’s basically a fancy representation of checkboxes.
+Elementor switcher control displays an on/off switcher. It’s basically a fancy representation of checkboxes.
 
 The control is defined in `Control_Switcher` class which extends `Base_Data_Control` class.
 
