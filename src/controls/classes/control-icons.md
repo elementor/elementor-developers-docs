@@ -129,14 +129,19 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Icon', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 				'default' => [
-					'value' => 'fas fa-star',
+					'value' => 'fas fa-circle',
 					'library' => 'fa-solid',
 				],
 				'recommended' => [
 					'fa-solid' => [
-						'star-half-alt',
-						'star-half',
-						'star-of-life',
+						'circle',
+						'dot-circle',
+						'square-full',
+					],
+					'fa-regular' => [
+						'circle',
+						'dot-circle',
+						'square-full',
 					],
 				],
 			]
