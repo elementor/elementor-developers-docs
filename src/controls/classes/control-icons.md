@@ -132,6 +132,13 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 					'value' => 'fas fa-star',
 					'library' => 'fa-solid',
 				],
+				'recommended' => [
+					'fa-solid' => [
+						'star-half-alt',
+						'star-half',
+						'star-of-life',
+					],
+				],
 			]
 		);
 
