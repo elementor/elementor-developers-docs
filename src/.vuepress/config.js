@@ -81,7 +81,8 @@ module.exports = {
     logo: '/assets/img/icon.svg',
     displayAllHeaders: true,
     smoothScroll: true,
-    search: false,
+    search: true,
+    searchPlaceholder: 'Search...',
     nav: [
       {
         text: 'Getting Started',
