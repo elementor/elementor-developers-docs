@@ -9,16 +9,6 @@ module.exports = [
     ]
   },
   {
-    title: 'Form Fields',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'form-fields',
-      'add-new-field-type',
-      'remove-field-type',
-    ]
-  },
-  {
     title: 'Form Validation',
     collapsable: false,
     sidebarDepth: -1,
