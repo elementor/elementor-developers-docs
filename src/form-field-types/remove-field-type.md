@@ -1,10 +1,12 @@
 # Remove Field Type
 
+<Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 To remove existing field type from the form widget we simply need to delete it from the list of available fields.
 
 ## Hooks
 
-To do that we will hook to the `elementor_pro/forms/field_types` filter. This filter passed the list of available field types as a parameter. Developers can change this list to match their needs.
+To do that we simply hook to the `elementor_pro/forms/field_types` filter. This filter holds the list of available field types as a parameter. Developers can change this list to match their needs.
 
 ## Remove Field Type
 
@@ -14,10 +16,14 @@ A good example is when you don't allow your users to create forms with "File Upl
 /**
  * Remove `upload` field type from Elementor Form Widget.
  *
- * @param array $field_types Field types.
+ * @param array $field_types Elementor field types.
  */
 function remove_elementor_form_field_type( $field_types ) {
+
 	unset( $field_types['upload'] );
+
+	return $field_types;
+
 }
 add_filter( 'elementor_pro/forms/field_types', 'remove_elementor_form_field_type' );
 ```

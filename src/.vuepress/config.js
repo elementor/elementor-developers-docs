@@ -8,6 +8,7 @@ const deprecationsSidebar = require('./sidebars/deprecations');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
 const editorSidebar = require('./sidebars/editor');
 const finderSidebar = require('./sidebars/finder');
+const formFieldTypesSidebar = require('./sidebars/form-field-types');
 const formsSidebar = require('./sidebars/forms');
 const gettingStartedSidebar = require('./sidebars/getting-started');
 const hooksSidebar = require('./sidebars/hooks');
@@ -178,6 +179,7 @@ module.exports = {
       '/editor/': editorSidebar,
       '/getting-started/': gettingStartedSidebar,
       '/finder/': finderSidebar,
+      '/form-field-types/': formFieldTypesSidebar,
       '/forms/': formsSidebar,
       '/hooks/': hooksSidebar,
       '/managers/': managersSidebar,

@@ -1,5 +1,7 @@
 # Add New Field Type
 
+<Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 The forms widget has builtin field types but it also accepts new fields registered by external developers.
 
 ## Registering Field Types
@@ -7,16 +9,16 @@ The forms widget has builtin field types but it also accepts new fields register
 To register new field types you just need to initiate the field class:
 
 ```php
-function register_new_form_fields() {
+function register_new_form_fields( $form_fields_registrar ) {
 
 	require_once( __DIR__ . '/forms/fields/field-1.php' );
 	require_once( __DIR__ . '/forms/fields/field-2.php' );
 
-	\ElementorPro\Plugin::instance()->modules_manager->get_modules( 'forms' )->add_form_field_type( 'field-1', new \Field_1() );
-	\ElementorPro\Plugin::instance()->modules_manager->get_modules( 'forms' )->add_form_field_type( 'field-2', new \Field_2() );
+	$form_fields_registrar->register( new \Field_1() );
+	$form_fields_registrar->register( new \Field_2() );
 
 }
-add_action( 'elementor_pro/init', 'register_new_form_fields' );
+add_action( 'elementor_pro/forms/fields/register', 'register_new_form_fields' );
 ```
 
 ## Field Types Class
@@ -47,6 +49,8 @@ class Elementor_Test_Field_Type extends \ElementorPro\Modules\Forms\Fields\Field
 
 	public function validation() {}
 
+	public function update_controls() }{}
+
 }
 ```
 
@@ -56,7 +60,9 @@ class Elementor_Test_Field_Type extends \ElementorPro\Modules\Forms\Fields\Field
 
 * **Field Render** – The `render()` method renders the data and display the field output.
 
-* **Field Render** – The `validation()` method runs a series of checks to ensure the data complies to certain rules.
+* **Field Validation** – The `validation()` method runs a series of checks to ensure the data complies to certain rules.
+
+* **Field controls** – The `update_controls()` method updates the the widget controls, it allows to add new controls to specific field types.
 
 ## Example Field Type
 
@@ -151,7 +157,10 @@ class Elementor_Credit_Card_Number_Field_Type extends \ElementorPro\Modules\Form
 		}
 
 		if ( preg_match( '/^[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$/', $field['value'] ) !== 1 ) {
-			$ajax_handler->add_error( $field['id'], esc_html__( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'plugin-name' ) );
+			$ajax_handler->add_error(
+				$field['id'],
+				esc_html__( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'plugin-name' )
+			);
 		}
 	}
 
