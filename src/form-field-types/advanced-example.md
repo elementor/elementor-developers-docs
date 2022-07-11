@@ -175,7 +175,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 		$field_controls = [
 			'credit-card-placeholder' => [
 				'name' => 'credit-card-placeholder',
-				'label' => esc_html__( 'Card Placeholder', 'plugin-name' ),
+				'label' => esc_html__( 'Card Placeholder', 'elementor-forms-credit-card-number-field' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => 'xxxx xxxx xxxx xxxx',
 				'dynamic' => [
