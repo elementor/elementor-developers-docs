@@ -123,8 +123,8 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 				'type' => 'tel',
 				'inputmode' => 'numeric',
 				'maxlength' => '19',
-				'pattern' => '[0-9\s]{19}',
-				'placeholder' => $item['placeholder'],
+				'pattern' => '[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}',
+				'placeholder' => $item['credit-card-placeholder'],
 				'autocomplete' => 'cc-number',
 			]
 		);
@@ -173,9 +173,9 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 		}
 
 		$field_controls = [
-			'placeholder' => [
-				'name' => 'placeholder',
-				'label' => esc_html__( 'Placeholder', 'elementor-forms-credit-card-number-field' ),
+			'credit-card-placeholder' => [
+				'name' => 'credit-card-placeholder',
+				'label' => esc_html__( 'Card Placeholder', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => 'xxxx xxxx xxxx xxxx',
 				'dynamic' => [
