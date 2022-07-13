@@ -62,9 +62,9 @@ Note that when using the control, the type should be set using the `\Elementor\C
 		</tr>
 		<tr>
 			<td><code>options</code></td>
-			<td><code>array</code></td>
-			<td>[<br>'is_external',<br>'nofollow',<br>'custom_attributes'<br>]</td>
-			<td>An array of URL options to show. By default it shows all the options. But you can select which URL elements to show.</td>
+			<td><code>array</code>|<code>false</code></td>
+			<td>[<br>'url',<br>'is_external',<br>'nofollow',<br>'custom_attributes'<br>]</td>
+			<td>An array of URL options to show. By default it shows all the options. But you can select which URL elements to show. Setting the options to <code>false</code> we disable all the options.</td>
 		</tr>
 		<tr>
 			<td><code>default</code></td>
@@ -123,11 +123,12 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Link', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::URL,
 				'placeholder' => esc_html__( 'https://your-link.com', 'plugin-name' ),
+				'options' => [ 'url', 'is_external', 'nofollow' ],
 				'default' => [
 					'url' => '',
 					'is_external' => true,
 					'nofollow' => true,
-					'custom_attributes' => '',
+					// 'custom_attributes' => '',
 				],
 				'label_block' => true,
 			]
