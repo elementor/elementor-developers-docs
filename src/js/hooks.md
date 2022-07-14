@@ -1,3 +1,6 @@
+---
+search: false
+---
 ## API - `$e.hooks`
 *  **Description**: `$e.hooks` api is a manager of `$e.hooks.ui` & `$e.hooks.data`, allow you to create custom hooks.
 the hooks attached to $e.commands and each hook fired _after/before_ running a command, that runs by $e.run().

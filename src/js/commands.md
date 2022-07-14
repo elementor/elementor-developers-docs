@@ -1,3 +1,6 @@
+---
+search: false
+---
 ## API --  `$e.commands`
 The new Commands API (since 2.7.0), provides a simple and convenient way to run something in the editor, create a widget, as well as show a notice or undo changes, using JS commands.
 

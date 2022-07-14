@@ -1,3 +1,6 @@
+---
+search: false
+---
 # Form Actions
 
 <img :src="$withBase('/assets/img/elementor-form-actions.png')" alt="Elementor Form Actions" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">

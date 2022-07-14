@@ -1,3 +1,6 @@
+---
+search: false
+---
 # API - `$e.components`
 The new Components API (since 2.7.0), provides a simple and convenient way to bind all route and commands, and keyboard shortcuts that belong to a UI component – into one controller.
 The full list of components, including custom & 3rd routes, is available via: `$e.components.getAll();`

@@ -84,6 +84,7 @@ module.exports = {
     smoothScroll: true,
     search: true,
     searchPlaceholder: 'Search...',
+    searchMaxSuggestions: 10,
     nav: [
       {
         text: 'Getting Started',
