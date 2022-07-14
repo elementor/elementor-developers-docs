@@ -1,3 +1,6 @@
+---
+search: false
+---
 # Form API
 
 ::: danger

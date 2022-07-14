@@ -1,3 +1,6 @@
+---
+search: false
+---
 # Form Records
 
 After the form actions have run. This is the place to add custom form handlers.
