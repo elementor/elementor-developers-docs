@@ -101,7 +101,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {21-31,40-42,48-52}
+```php {22-44,53-55,61-65}
 <?php
 class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 
