@@ -1,6 +1,6 @@
 # Text Shadow Group Control
 
-Elementor text shadow group control displays input fields to define the the text shadow including the horizontal shadow, vertical shadow, shadow blur and shadow color.
+Elementor text shadow group control displays input fields to define the text shadow including the horizontal shadow, vertical shadow, shadow blur and shadow color.
 
 The control is defined in `Group_Control_Text_Shadow` class which extends `Group_Control_Base` class.
 
