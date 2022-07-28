@@ -4,17 +4,17 @@
 
 **Elementor Form Widget** is an advanced, yet easy to use, tool to create web forms. It makes it easy to create and style any form using dozens of field types.
 
-<img :src="$withBase('/assets/img/elementor-form-field-types.png')" alt="Elementor Form Field Types" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
+<img :src="$withBase('/assets/img/elementor-form-fields.png')" alt="Elementor Form Fields" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
 
-## Field Types
+## Form Fields
 
 When users add a Form widget to the page, they have the freedom to select which fields to display in the form.
 
-Elementor uses the "Repeater" control to allow the user to add multiple fields to the form. For each field, the user can select the field type from a list of available field types.
+Elementor uses the "Repeater" control to allow the user to add multiple fields to the form. For each field, the user can select the field type from a list of available fields.
 
-## Available Field Types
+## Available Fields
 
-The form widget come out-of-the-box with with the following field types:
+The form widget come out-of-the-box with with the following fields:
 
 * **Text** (`text`)
 * **Email** (`email`)
@@ -37,12 +37,22 @@ The form widget come out-of-the-box with with the following field types:
 * **reCAPTCHA V3** (`recaptcha_v3`)
 * **Honeypot** (`honeypot`)
 
+## Registering Form Fields
+
+External developers can register new fields and unregister existing ones. Learn more how to do that:
+
+* [Remove Fields](./remove-fields/)
+* [Add New Field](./add-new-field/)
+
 ## Manage Form Fields
 
-External developers can manage field types. Learn more how to do that:
+External developers can learn more about field anatomy and how to create your own custom field:
 
-* [Remove Field Type](./remove-field-type/)
-* [Add New Field Type](./add-new-field-type/)
+* [Field Structure](./field-structure/)
+* [Field Data](./field-data/)
+* [Field Render](./field-render/)
+* [Field Validation](./field-validation/)
+* [Field Controls](./field-controls/)
 
 ## Code Examples
 

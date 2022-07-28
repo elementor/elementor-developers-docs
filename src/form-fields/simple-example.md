@@ -9,17 +9,17 @@ To see how easy it is to extend the form widget, we are going to create an addon
 The addon will have two files. One file for the new field-type and the other main file to register the field and handle all the other stuff.
 
 ```
-elementor-forms-local-tel-field/
+elementor-form-local-tel-field/
 |
-├─ field-types/
+├─ form-fields/
 |  └─ local-tel.php
 |
-└─ elementor-forms-local-tel-field.php
+└─ elementor-form-local-tel-field.php
 ```
 
 ## Plugin Files
 
-**elementor-forms-local-tel-field.php**
+**elementor-form-local-tel-field.php**
 
 ```php
 <?php
@@ -30,7 +30,7 @@ elementor-forms-local-tel-field/
  * Version:     1.0.0
  * Author:      Elementor Developer
  * Author URI:  https://developers.elementor.com/
- * Text Domain: elementor-forms-local-tel-field
+ * Text Domain: elementor-form-local-tel-field
  *
  * Elementor tested up to: 3.5.0
  * Elementor Pro tested up to: 3.5.0
@@ -41,23 +41,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Remove `tel` field-type from Elementor form widget.
+ * Remove `tel` field from Elementor form widget.
  *
  * @since 1.0.0
- * @param array $field_types Elementor field types.
- * @return array Updated field types.
+ * @param array $fields Elementor form fields.
+ * @return array Updated fields list.
  */
-function remove_existing_form_field( $field_types ) {
+function remove_existing_form_field( $fields ) {
 
-	unset( $field_types['tel'] );
+	unset( $fields['tel'] );
 
-	return $field_types;
+	return $fields;
 
 }
 add_filter( 'elementor_pro/forms/field_types', 'remove_existing_form_field' );
 
 /**
- * Add new `local-tel` field-type to Elementor form widget.
+ * Add new `local-tel` field to Elementor form widget.
  *
  * @since 1.0.0
  * @param \ElementorPro\Modules\Forms\Registrars\Form_Fields_Registrar $form_fields_registrar
@@ -65,7 +65,7 @@ add_filter( 'elementor_pro/forms/field_types', 'remove_existing_form_field' );
  */
 function add_new_form_field( $form_fields_registrar ) {
 
-	require_once( __DIR__ . '/field-types/local-tel.php' );
+	require_once( __DIR__ . '/form-fields/local-tel.php' );
 
 	$form_fields_registrar->register( new \Elementor_Local_Tel_Field() );
 
@@ -73,7 +73,7 @@ function add_new_form_field( $form_fields_registrar ) {
 add_action( 'elementor_pro/forms/fields/register', 'add_new_form_field' );
 ```
 
-**field-types/local-tel.php**
+**form-fields/local-tel.php**
 
 ```php
 <?php
@@ -82,9 +82,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor Form Field Type - Local Tel
+ * Elementor Form Field - Local Tel
  *
- * Add a new "Local Tel" field type to Elementor form widget.
+ * Add a new "Local Tel" field to Elementor form widget.
  *
  * @since 1.0.0
  */
@@ -93,7 +93,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	/**
 	 * Get field type.
 	 *
-	 * Retrieve the unique ID of the field type.
+	 * Retrieve local-tel field unique ID.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -106,14 +106,14 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	/**
 	 * Get field name.
 	 *
-	 * Retrieve the field type label.
+	 * Retrieve local-tel field label.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 * @return string Field name.
 	 */
 	public function get_name() {
-		return esc_html__( 'Local Tel', 'elementor-forms-local-tel-field' );
+		return esc_html__( 'Local Tel', 'elementor-form-local-tel-field' );
 	}
 
 	/**
@@ -135,7 +135,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 				'size' => '1',
 				'class' => 'elementor-field-textual',
 				'pattern' => '[0-9]{3}-[0-9]{3}-[0-9]{4}',
-				'title' => esc_html__( 'Format: 123-456-7890', 'elementor-forms-local-tel-field' ),
+				'title' => esc_html__( 'Format: 123-456-7890', 'elementor-form-local-tel-field' ),
 			]
 		);
 
@@ -144,6 +144,8 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 
 	/**
 	 * Field validation.
+	 *
+	 * Validate local-tel field value to ensure it complies to certain rules.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -160,7 +162,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 		if ( preg_match( '/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $field['value'] ) !== 1 ) {
 			$ajax_handler->add_error(
 				$field['id'],
-				esc_html__( 'Phone number must be in "123-456-7890" format.', 'elementor-forms-local-tel-field' )
+				esc_html__( 'Phone number must be in "123-456-7890" format.', 'elementor-form-local-tel-field' )
 			);
 		}
 	}
