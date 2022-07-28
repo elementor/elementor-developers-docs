@@ -6,7 +6,7 @@ The actual method that executes the action once the form is submitted. This is t
 
 ## Run Method
 
-The method that triggers the action called `run()`. The method is execudet only when the the form is submitted. In your action class, use the method as follows:
+The method that triggers the action called `run()`. The method is execudet only when the form is submitted. In your action class, use the method as follows:
 
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {

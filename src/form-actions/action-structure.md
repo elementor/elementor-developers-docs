@@ -11,7 +11,7 @@ Each form action needs to have a few basic settings like a unique name and a lab
 First, we need to create a class that extends the `\ElementorPro\Modules\Forms\Classes\Action_Base` class:
 
 ```php
-class Elementor_Test_Form_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
+class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 }
 ```
 
@@ -20,7 +20,7 @@ class Elementor_Test_Form_Action extends \ElementorPro\Modules\Forms\Classes\Act
 As mentioned above, Elementor Form Action extends the `\ElementorPro\Modules\Forms\Classes\Action_Base` class and inherits its methods. A simple Action skeleton will look as follows:
 
 ```php
-class Elementor_Test_Form_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
+class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
 	public function get_name() {}
 
