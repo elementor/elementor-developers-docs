@@ -32,7 +32,7 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 
 ## Add Controls to your Action
 
-In the example below, we're going to add a few controls to an action to allow users save data:
+In the example below, we're going to add a few controls to the widget instance to allow users to save additional data:
 
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
@@ -72,6 +72,6 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 }
 ```
 
-Please note that we rocommend to add an entire setting section dedicated to your custom action.
+Please note that we recommend to add an entire setting section dedicated to your custom action.
 
-In addition, you should use [conditional display](./../controls/conditional-display/), to show the section only if the `submit_action` control in the Form Widget has your custom action.
+In addition, you should use [conditional display](./../controls/conditional-display/), to show the section only if the `submit_action` control in the Form Widget has your custom action. This way, the entire section is displayed only when the user selected this particular action.

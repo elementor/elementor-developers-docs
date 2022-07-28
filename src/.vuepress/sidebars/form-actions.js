@@ -12,6 +12,14 @@ module.exports = [
     collapsable: false,
     sidebarDepth: -1,
     children: [
+      'add-new-action',
+    ]
+  },
+  {
+    title: 'Creating Actions',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
       'action-structure',
       'action-data',
       'action-controls',

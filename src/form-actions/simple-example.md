@@ -133,7 +133,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	/**
 	 * Register action controls.
 	 *
-	 * This action has no input fields.
+	 * Ping action has no input fields to the form widget.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -144,7 +144,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	/**
 	 * On export.
 	 *
-	 * This action has no fields to clear when exporting.
+	 * Ping action has no fields to clear when exporting.
 	 *
 	 * @since 1.0.0
 	 * @access public
