@@ -9,17 +9,17 @@ For more advanced example we are going to create an addon with a credit card fie
 The addon will have two files. One file for the new field-type and the other main file to register the new field.
 
 ```
-elementor-forms-credit-card-field/
+elementor-form-credit-card-number-field/
 |
-├─ field-types/
+├─ form-fields/
 |  └─ credit-card-number.php
 |
-└─ elementor-forms-credit-card-field.php
+└─ elementor-form-credit-card-number-field.php
 ```
 
 ## Plugin Files
 
-**elementor-forms-credit-card-field.php**
+**elementor-form-credit-card-number-field.php**
 
 ```php
 <?php
@@ -30,7 +30,7 @@ elementor-forms-credit-card-field/
  * Version:     1.0.0
  * Author:      Elementor Developer
  * Author URI:  https://developers.elementor.com/
- * Text Domain: elementor-forms-credit-card-number-field
+ * Text Domain: elementor-form-credit-card-number-field
  *
  * Elementor tested up to: 3.5.0
  * Elementor Pro tested up to: 3.5.0
@@ -49,7 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function add_new_credit_card_number_field( $form_fields_registrar ) {
 
-	require_once( __DIR__ . '/field-types/credit-card-number.php' );
+	require_once( __DIR__ . '/form-fields/credit-card-number.php' );
 
 	$form_fields_registrar->register( new \Elementor_Credit_Card_Number_Field() );
 
@@ -57,7 +57,7 @@ function add_new_credit_card_number_field( $form_fields_registrar ) {
 add_action( 'elementor_pro/forms/fields/register', 'add_new_credit_card_number_field' );
 ```
 
-**field-types/credit-card-number.php**
+**form-fields/credit-card-number.php**
 
 ```php
 <?php
@@ -66,9 +66,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor Form Field Type - Credit Card Number
+ * Elementor Form Field - Credit Card Number
  *
- * Add a new "Credit Card Number" field type to Elementor form widget.
+ * Add a new "Credit Card Number" field to Elementor form widget.
  *
  * @since 1.0.0
  */
@@ -77,7 +77,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	/**
 	 * Get field type.
 	 *
-	 * Retrieve the unique ID of the field type.
+	 * Retrieve credit card number field unique ID.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -90,14 +90,14 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	/**
 	 * Get field name.
 	 *
-	 * Retrieve the field type label.
+	 * Retrieve credit card number field label.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 * @return string Field name.
 	 */
 	public function get_name() {
-		return esc_html__( 'Credit Card Number', 'elementor-forms-credit-card-number-field' );
+		return esc_html__( 'Credit Card Number', 'elementor-form-credit-card-number-field' );
 	}
 
 	/**
@@ -135,6 +135,8 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	/**
 	 * Field validation.
 	 *
+	 * Validate credit card number field value to ensure it complies to certain rules.
+	 *
 	 * @since 1.0.0
 	 * @access public
 	 * @param \ElementorPro\Modules\Forms\Classes\Field_Base   $field
@@ -150,13 +152,15 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 		if ( preg_match( '/^[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$/', $field['value'] ) !== 1 ) {
 			$ajax_handler->add_error(
 				$field['id'],
-				esc_html__( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'elementor-forms-credit-card-number-field' )
+				esc_html__( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'elementor-form-credit-card-number-field' )
 			);
 		}
 	}
 
 	/**
 	 * Update form widget controls.
+	 *
+	 * Add input fields to allow the user to customize the credit card number field.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -175,7 +179,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 		$field_controls = [
 			'credit-card-placeholder' => [
 				'name' => 'credit-card-placeholder',
-				'label' => esc_html__( 'Card Placeholder', 'elementor-forms-credit-card-number-field' ),
+				'label' => esc_html__( 'Card Placeholder', 'elementor-form-credit-card-number-field' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => 'xxxx xxxx xxxx xxxx',
 				'dynamic' => [
@@ -184,6 +188,9 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 				'condition' => [
 					'field_type' => $this->get_type(),
 				],
+				'tab'          => 'content',
+				'inner_tab'    => 'form_fields_content_tab',
+				'tabs_wrapper' => 'form_fields_tabs',
 			],
 		];
 
