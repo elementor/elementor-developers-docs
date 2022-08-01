@@ -33,7 +33,13 @@ The form widget come out-of-the-box with with the following actions:
 
 ## Manage Form Actions
 
-External developers can learn more about actions anatomy and how to create your own custom action:
+External developers can register new form actions. Learn more how to do that:
+
+* [Add New Action](./add-new-action/)
+
+## Creating Form Actions
+
+Learn more about actions anatomy and how to create your own custom action:
 
 * [Action Structure](./action-structure/)
 * [Action Data](./action-data/)
