@@ -8,7 +8,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Manage Dynamic Tags',
+    title: 'Managing Tags',
     collapsable: false,
     sidebarDepth: -1,
     children: [
@@ -17,7 +17,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Creating Dynamic Tags',
+    title: 'Creating Tags',
     collapsable: false,
     sidebarDepth: -1,
     children: [

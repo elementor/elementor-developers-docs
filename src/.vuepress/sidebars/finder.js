@@ -17,7 +17,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Manage Items',
+    title: 'Managing Items',
     collapsable: false,
     sidebarDepth: -1,
     children: [
