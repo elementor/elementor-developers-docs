@@ -18,7 +18,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Manage Groups',
+    title: 'Managing Groups',
     collapsable: false,
     sidebarDepth: -1,
     children: [
@@ -28,7 +28,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Manage Actions',
+    title: 'Managing Actions',
     collapsable: false,
     sidebarDepth: -1,
     children: [

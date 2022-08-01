@@ -8,7 +8,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Manage Fields',
+    title: 'Managing Fields',
     collapsable: false,
     sidebarDepth: -1,
     children: [
