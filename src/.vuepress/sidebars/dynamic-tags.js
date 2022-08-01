@@ -8,6 +8,15 @@ module.exports = [
     ]
   },
   {
+    title: 'Manage Dynamic Tags',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'add-new-dynamic-tag',
+      'remove-dynamic-tags',
+    ]
+  },
+  {
     title: 'Creating Dynamic Tags',
     collapsable: false,
     sidebarDepth: -1,
