@@ -31,7 +31,7 @@ The form widget come out-of-the-box with with the following actions:
 * **Discord**
 * **Popup**
 
-## Manage Form Actions
+## Managing Form Actions
 
 External developers can register new form actions. Learn more how to do that:
 
@@ -39,7 +39,7 @@ External developers can register new form actions. Learn more how to do that:
 
 ## Creating Form Actions
 
-Learn more about actions anatomy and how to create your own custom action:
+Learn more about actions anatomy and how to create your own:
 
 * [Action Structure](./action-structure/)
 * [Action Data](./action-data/)

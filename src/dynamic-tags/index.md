@@ -20,7 +20,7 @@ You could say that dynamic tags are like functions, the user can define custom p
 
 The dynamic tags functionality is defined in Elementor's core, but the basic version of Elementor does not support active dynamic tags. They are a feature of Elementor Pro, which includes dozens of dynamic tags to choose from.
 
-## Manage Dynamic Tags
+## Managing Dynamic Tags
 
 External developers can register new dynamic tags and unregister existing ones. Learn more how to do that:
 

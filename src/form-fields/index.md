@@ -37,16 +37,16 @@ The form widget come out-of-the-box with with the following fields:
 * **reCAPTCHA V3** (`recaptcha_v3`)
 * **Honeypot** (`honeypot`)
 
-## Registering Form Fields
+## Managing Form Fields
 
 External developers can register new fields and unregister existing ones. Learn more how to do that:
 
 * [Remove Fields](./remove-fields/)
 * [Add New Field](./add-new-field/)
 
-## Manage Form Fields
+## Creating Form Fields
 
-External developers can learn more about field anatomy and how to create your own custom field:
+External developers can learn more about field anatomy and how to create your own:
 
 * [Field Structure](./field-structure/)
 * [Field Data](./field-data/)
