@@ -51,5 +51,5 @@ Learn more about actions anatomy and how to create your own:
 
 Check out how easy it is to add new actions:
 
-* [Simple example](./simple-example/)
-* [Advanced example](./advanced-example/)
+* [Simple Example](./simple-example/)
+* [Advanced Example](./advanced-example/)

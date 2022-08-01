@@ -58,5 +58,5 @@ External developers can learn more about field anatomy and how to create your ow
 
 Check out how easy it is to add new fields:
 
-* [Simple example](./simple-example/)
-* [Advanced example](./advanced-example/)
+* [Simple Example](./simple-example/)
+* [Advanced Example](./advanced-example/)

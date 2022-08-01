@@ -25,5 +25,5 @@ External developers can register their own custom finder categories with their o
 
 Check out how easy it is to extend the finder:
 
-* [Simple example](./simple-example/)
-* [Advanced example](./advanced-example/)
+* [Simple Example](./simple-example/)
+* [Advanced Example](./advanced-example/)
