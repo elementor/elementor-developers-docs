@@ -18,20 +18,19 @@ module.exports = [
       'widget-dependencies',
       'widget-controls',
       'widget-rendering',
-    ]
-  },
-  {
-    title: 'Widget Rendering',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'widget-settings',
-      'rendering-text',
-      'rendering-style',
-      'rendering-media',
-      'rendering-repeaters',
-      'rendering-html-attribute',
-      'rendering-inline-editing',
+      {
+        collapsable: false,
+        sidebarDepth: -1,
+        children: [
+          'widget-settings',
+          'rendering-text',
+          'rendering-style',
+          'rendering-media',
+          'rendering-repeaters',
+          'rendering-html-attribute',
+          'rendering-inline-editing',
+        ]
+      },
     ]
   },
   {
