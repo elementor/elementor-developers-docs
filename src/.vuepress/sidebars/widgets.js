@@ -8,6 +8,15 @@ module.exports = [
     ]
   },
   {
+    title: 'Managing Widgets',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'add-new-widget',
+      'remove-widgets',
+    ]
+  },
+  {
     title: 'Creating Widgets',
     collapsable: false,
     sidebarDepth: -1,
