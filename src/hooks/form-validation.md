@@ -1,5 +1,7 @@
 # Form Validation
 
+<Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 Form validation allows you to run a series of checks to ensure the data complies to certain rules. Elementor Pro provides a set of tools for validating data sent through the form widget.
 
 ## Validation Lifecycle
