@@ -1,5 +1,7 @@
 # Widget Categories
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor **Widget Categories** are used to organize the widgets into groups. When Elementor is initialized, it registers several default categories. The categories are displayed in the widgets panel, only if they have widgets assigned to them.
 
 ## Using Widget Categories
