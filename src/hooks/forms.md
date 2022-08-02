@@ -1,7 +1,7 @@
 # Elementor Forms
 
 ::: danger
-This page will be deleted once all content will move [Elementor Hooks](./../hooks/).
+This page will be deleted once all the content will be moved to individual pages inside [Elementor Hooks](./).
 :::
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
