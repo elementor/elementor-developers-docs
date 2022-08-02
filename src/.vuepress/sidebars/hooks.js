@@ -27,6 +27,9 @@ module.exports = [
       'parse-element-css',
       'custom-query-filter',
       'injecting-controls',
+      'font-display',
+      'form-validation',
+      'forms',
     ]
   },
   {
