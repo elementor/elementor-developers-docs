@@ -24,8 +24,8 @@ The dynamic tags functionality is defined in Elementor's core, but the basic ver
 
 External developers can register new dynamic tags and unregister existing ones. Learn more how to do that:
 
-* [Remove Dynamic Tags](./)
-* [Add New Dynamic Tag](./)
+* [Remove Dynamic Tags](./remove-dynamic-tags/)
+* [Add New Dynamic Tag](./add-new-dynamic-tag/)
 
 ## Creating Dynamic Tags
 
