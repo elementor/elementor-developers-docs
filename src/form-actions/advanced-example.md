@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-To see how easy it is to create new form actions, we are going to create an addon which will add a new subscriber to a [Sendy](https://sendy.co/) server using it’s [API](https://sendy.co/api).
+To demonstrate how easy it is to create new form actions, we're going to create an addon which will add a new subscriber to a [Sendy](https://sendy.co/) server using its [API](https://sendy.co/api).
 
 ## Folder Structure
 
-The addon will have two files. One file for the new form action and the other main file to register the action and handle all the other stuff.
+The addon will have two files. One file for the new form action and a main file to register the action and handle all the other stuff.
 
 ```
 elementor-forms-sendy-action/
@@ -163,7 +163,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 	/**
 	 * Run action.
 	 *
-	 * Runs the Sendy action after form submition.
+	 * Runs the Sendy action after form submission.
 	 *
 	 * @since 1.0.0
 	 * @access public
