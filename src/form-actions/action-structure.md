@@ -2,9 +2,9 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Creating custom form actions, triggered after the form submission, is not as hard as it sounds. 
+Creating custom form actions, triggered after a form's submission, is not as hard as it sounds. 
 
-Each form action needs to have a few basic settings like a unique name and a label that will be used in the editor. Next are the controls which are basically optional fields where the user can configure his custom data. The last piece is the actual method that executes the action once the form is submitted.
+Each form action needs to have a few basic settings. First, it needs a unique name and a label that will be used in the editor. Next are the controls. These are basically optional fields where users can configure their custom data. The last setting is the actual method that executes the action once the form is submitted.
 
 ## Form Action Class
 
@@ -17,7 +17,7 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 
 ## Form Action Structure
 
-As mentioned above, Elementor Form Action extends the `\ElementorPro\Modules\Forms\Classes\Action_Base` class and inherits its methods. A simple Action skeleton will look as follows:
+As mentioned above, an Elementor Form Action extends the `\ElementorPro\Modules\Forms\Classes\Action_Base` class and inherits its methods. A simple action skeleton will look as follows:
 
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
