@@ -14,7 +14,7 @@ const gettingStartedSidebar = require('./sidebars/getting-started');
 const hooksSidebar = require('./sidebars/hooks');
 const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
-const themesSidebar = require('./sidebars/themes');
+const themeLocationsSidebar = require('./sidebars/theme-locations');
 const widgetsSidebar = require('./sidebars/widgets');
 
 module.exports = {
@@ -160,7 +160,7 @@ module.exports = {
           //   link: '/forms/',
           // },
           {
-            text: 'Themes',
+            text: 'Theme Locations',
             link: '/themes/',
           },
         ],
@@ -185,7 +185,7 @@ module.exports = {
       '/hooks/': hooksSidebar,
       '/managers/': managersSidebar,
       '/scripts-styles/': scriptsStylesSidebar,
-      '/themes/': themesSidebar,
+      '/themes/': themeLocationsSidebar,
       '/widgets/': widgetsSidebar,
     }
   },
