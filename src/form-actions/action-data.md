@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Every action has basic information such as the action unique ID and the action label. This data is used in the code and displayed to the user in the editor.
+Every action has basic information such as the unique action ID and label. This data is used in the code and displayed to the user in the editor.
 
 ## Data Methods
 
@@ -22,6 +22,6 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 }
 ```
 
-* **Action Name** - The `get_name()` method return the action name (id) as it will be used in the code.
+* **Action Name** - The `get_name()` method returns the action name (id) as it will be used in the code.
 
-* **Action Label** - The `get_label()` method return the action label as it will be displayed in the editor to the user.
+* **Action Label** - The `get_label()` method returns the action label as it will be displayed in the editor to the user.
