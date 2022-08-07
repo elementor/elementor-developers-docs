@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-To see how easy it is to create new form actions, we are going to create an addon which will ping an external server.
+To demonstrate how easy it is to create new form actions, we're going to create an addon which will ping an external server.
 
 ## Folder Structure
 
-The addon will have two files. One file for the new form action and the other main file to register the action and handle all the other stuff.
+The addon will have two files. One file for the new form action and a main file to register the action and handle all the other stuff.
 
 ```
 elementor-forms-ping-action/
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Add new form action after form submition.
+ * Add new form action after form submission.
  *
  * @since 1.0.0
  * @param ElementorPro\Modules\Forms\Registrars\Form_Actions_Registrar $form_actions_registrar
@@ -104,7 +104,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	/**
 	 * Run action.
 	 *
-	 * Ping an external server after form submition.
+	 * Ping an external server after form submission.
 	 *
 	 * @since 1.0.0
 	 * @access public
