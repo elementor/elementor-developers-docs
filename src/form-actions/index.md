@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Form actions are tasks being done after the submission. An action can send the form data by email, it can redirect to a different page, or send your data to an external marketing service. The possibilities are endless.
+Form actions are tasks taken after a visitor has sumitted data. An action can send the form data by email, redirect it to a different page, or send the data to an external marketing service - the possibilities are endless.
 
 Elementor Pro provides a set of tools to add your own custom actions.
 
@@ -10,11 +10,11 @@ Elementor Pro provides a set of tools to add your own custom actions.
 
 ## Actions
 
-When users add a Form widget to the page, they can choose the actions that will be performed after a visitor submits the form. Choosing an action will add its setting in a seperate section.
+When users add a form widget to the page, they can choose the actions that will be performed after a visitor submits the form. Choosing an action will add its setting in a separate section.
 
 ## Available Actions
 
-The form widget come out-of-the-box with with the following actions:
+The form widget comes with with the following actions by default:
 
 * **Collect Submissions**
 * **Email**
@@ -33,13 +33,13 @@ The form widget come out-of-the-box with with the following actions:
 
 ## Managing Form Actions
 
-External developers can register new form actions. Learn more how to do that:
+External developers can register new form actions. Learn more:
 
 * [Add New Action](./add-new-action/)
 
 ## Creating Form Actions
 
-Learn more about actions anatomy and how to create your own:
+Learn more about the anatomy of actions and how to create your own:
 
 * [Action Structure](./action-structure/)
 * [Action Data](./action-data/)
