@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: 'Themes',
+    title: 'Theme Locations',
     collapsable: false,
     sidebarDepth: -1,
     children: [
@@ -8,17 +8,16 @@ module.exports = [
     ]
   },
   {
-    title: 'Theme Locations',
+    title: 'Managing Locations',
     collapsable: false,
     sidebarDepth: -1,
     children: [
-      'theme-locations',
       'registering-locations',
       'displaying-locations',
     ]
   },
   {
-    title: 'Migration',
+    title: 'Theme Migration',
     collapsable: false,
     sidebarDepth: -1,
     children: [
