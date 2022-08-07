@@ -121,6 +121,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 					'Content-Type' => 'application/json',
 				],
 				'body' => wp_json_encode([
+					'site' => get_home_url(),
 					'action' => 'Form submitted',
 				]),
 				'httpversion' => '1.0',
