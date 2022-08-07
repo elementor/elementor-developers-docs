@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-The forms widget has several builtin actions, but external developers can create and register new form actions.
+The form widget has several built-in actions, but external developers can create and register new form actions.
 
 ## Registering Actions
 
@@ -21,4 +21,4 @@ function register_new_form_actions( $form_actions_registrar ) {
 add_action( 'elementor_pro/forms/actions/register', 'register_new_form_actions' );
 ```
 
-This hooks to the `elementor_pro/forms/actions/register` action hook which holds the form registrar manager. The manager then registers the new actions by passing the action instances.
+This hooks to the `elementor_pro/forms/actions/register` action hook, which holds the form registrar manager. The manager then registers the new actions by passing the action instances.
