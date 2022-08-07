@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-It's best practice to exclude action settings when exporting Elementor data. If your form action adds some settings ([action controls](./action-controls/)), you should not export them.
+Best practice is to exclude action settings when exporting Elementor data. If your form action adds some settings ([action controls](./action-controls/)), you should not export them.
 
 ## On Export Method
 
-The method that excludes data from export called `on_export()`. This method can be used to excludes the action data on export.
+The method that excludes data from the export process is called `on_export()`. This method can be used to exclude action data when you export.
 
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
@@ -20,11 +20,11 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 }
 ```
 
-* **On Export** - The `on_export()` method beeing used to clear settings when exporting. The `$element` parameter is an array containing the data of the exported Element.
+* **On Export** - The `on_export()` method is used to clear settings when exporting. The `$element` parameter is an array containing the data of the exported element.
 
 ## Exclude Settings
 
-In the following example will register a new section with two controls, api key and app id. Then we exclude them from export:
+In the following example will register a new section with two controls - an api key and an app id. Then we will exclude them from the exported data:
 
 ```php {16,24,35-44}
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
