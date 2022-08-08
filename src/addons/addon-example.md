@@ -43,8 +43,8 @@ The addon code should look as follows:
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-test-addon
  * 
- * Elementor tested up to:     3.5.0
- * Elementor Pro tested up to: 3.5.0
+ * Elementor tested up to: 3.7.0
+ * Elementor Pro tested up to: 3.7.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

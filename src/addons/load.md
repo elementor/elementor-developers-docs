@@ -54,8 +54,8 @@ The main `elementor-test-addon.php` file loads the functionality:
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-test-addon
  * 
- * Elementor tested up to:     3.5.0
- * Elementor Pro tested up to: 3.5.0
+ * Elementor tested up to: 3.7.0
+ * Elementor Pro tested up to: 3.7.0
  */
 
 function elementor_test_addon() {
