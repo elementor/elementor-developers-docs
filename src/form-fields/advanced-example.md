@@ -32,8 +32,8 @@ elementor-form-credit-card-number-field/
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-form-credit-card-number-field
  *
- * Elementor tested up to: 3.5.0
- * Elementor Pro tested up to: 3.5.0
+ * Elementor tested up to: 3.7.0
+ * Elementor Pro tested up to: 3.7.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -197,6 +197,65 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 		$control_data['fields'] = $this->inject_field_controls( $control_data['fields'], $field_controls );
 
 		$widget->update_control( 'form_fields', $control_data );
+	}
+
+	/**
+	 * Field constructor.
+	 *
+	 * Used to add a script to the Elementor editor preview.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function __construct() {
+		parent::__construct();
+		add_action( 'elementor/preview/init', [ $this, 'editor_preview_footer' ] );
+	}
+
+	/**
+	 * Elementor editor preview.
+	 *
+	 * Add a script to the footer of the editor preview screen.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function editor_preview_footer() {
+		add_action( 'wp_footer', [ $this, 'content_template_script' ] );
+	}
+
+	/**
+	 * Content template script.
+	 *
+	 * Add content template alternative, to display the field in Elemntor editor.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function content_template_script() {
+		?>
+		<script>
+		jQuery( document ).ready( function ( $ ) {
+			elementor.hooks.addFilter(
+				'elementor_pro/forms/content_template/field/<?php echo $this->get_type(); ?>',
+				function ( inputField, item, i ) {
+					const fieldType    = 'tel';
+					const classes      = 'elementor-field-textual';
+					const inputmode    = 'numeric';
+					const maxlength    = '19';
+					const pattern      = '[0-9\s]{19}';
+					const placeholder  = item['credit-card-placeholder'];
+					const autocomplete = 'cc-number';
+
+					return `<input type="${fieldType}" class="${classes}" inputmode="${inputmode}" maxlength="${maxlength}" pattern="${pattern}" placeholder="${placeholder}" autocomplete="${autocomplete}">`;
+				}, 10, 3
+			);
+		} );
+		</script>
+		<?php
 	}
 
 }
