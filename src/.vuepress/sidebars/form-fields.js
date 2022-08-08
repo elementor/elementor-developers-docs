@@ -26,6 +26,7 @@ module.exports = [
       'field-render',
       'field-validation',
       'field-controls',
+      'field-content-template',
     ]
   },
   {

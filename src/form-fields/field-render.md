@@ -45,9 +45,9 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-## Field Controls
+## Retrieve Data From Field Controls
 
-Some fields have [custom controls](./field-controls/) that allow the user to customize the field. Developers can use user data from the form widget, as follows:
+Some fields have [custom controls](./field-controls/) that allow the user to customize the field. Displaying user data in the form widget is done as follows:
 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {

@@ -32,8 +32,8 @@ elementor-form-local-tel-field/
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-form-local-tel-field
  *
- * Elementor tested up to: 3.5.0
- * Elementor Pro tested up to: 3.5.0
+ * Elementor tested up to: 3.7.0
+ * Elementor Pro tested up to: 3.7.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -165,6 +165,62 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 				esc_html__( 'Phone number must be in "123-456-7890" format.', 'elementor-form-local-tel-field' )
 			);
 		}
+	}
+
+	/**
+	 * Field constructor.
+	 *
+	 * Used to add a script to the Elementor editor preview.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function __construct() {
+		parent::__construct();
+		add_action( 'elementor/preview/init', [ $this, 'editor_preview_footer' ] );
+	}
+
+	/**
+	 * Elementor editor preview.
+	 *
+	 * Add a script to the footer of the editor preview screen.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function editor_preview_footer() {
+		add_action( 'wp_footer', [ $this, 'content_template_script' ] );
+	}
+
+	/**
+	 * Content template script.
+	 *
+	 * Add content template alternative, to display the field in Elemntor editor.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function content_template_script() {
+		?>
+		<script>
+		jQuery( document ).ready( function ( $ ) {
+			elementor.hooks.addFilter(
+				'elementor_pro/forms/content_template/field/<?php echo $this->get_type(); ?>',
+				function ( inputField, item, i ) {
+					const size    = '1';
+					const classes = 'elementor-field-textual';
+					const pattern = '[0-9]{3}-[0-9]{3}-[0-9]{4}';
+					const title   = "<?php echo esc_html__( 'Format: 123-456-7890', 'elementor-forms-local-tel-field' ); ?>";
+
+					return `<input size="${size}" class="${classes}" pattern="${pattern}" title="${title}">`;
+				}, 10, 3
+			);
+		} );
+		</script>
+		<?php
 	}
 
 }
