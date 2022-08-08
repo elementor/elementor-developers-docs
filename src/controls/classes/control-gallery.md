@@ -89,6 +89,20 @@ Note that when using the control, the type should be set using the `\Elementor\C
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
+/**
+	 * Get widget name.
+	 *
+	 * Retrieve list widget name.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return string Widget name.
+	 */
+	public function get_name() {
+		return 'Custom Gallery';
+	}
+
+
 	protected function register_controls() {
 
 		$this->start_controls_section(
