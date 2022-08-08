@@ -46,5 +46,5 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 ::: warning Please Note
 1. The workaround described above is a temporary solution.
 2. We may introduce an official `content_template()` method to render JS templates, the same way it's done in Elementor widgets.
-3. To make sure your code is future campatible, make sure your field class won't have a method called `content_template()`.
+3. To make sure your code is future compatible, make sure your field class won't have a method called `content_template()`.
 :::
