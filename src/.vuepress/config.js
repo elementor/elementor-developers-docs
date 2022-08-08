@@ -155,10 +155,10 @@ module.exports = {
             text: 'Dynamic Tags',
             link: '/dynamic-tags/',
           },
-          // {
-          //   text: 'Forms',
-          //   link: '/forms/',
-          // },
+          {
+            text: 'Form Actions',
+            link: '/form-actions/',
+          },
           {
             text: 'Theme Locations',
             link: '/themes/',

@@ -56,6 +56,7 @@ pageClass: docs-home
       <li><a href="./widgets/">Widgets</a></li>
       <li><a href="./controls/">Controls</a></li>
       <li><a href="./dynamic-tags/">Dynamic Tags</a></li>
+      <li><a href="./form-actions/">Form Actions</a></li>
       <li><a href="./themes/">Themes</a></li>
     </ul>
   </div>
