@@ -15,6 +15,7 @@ const hooksSidebar = require('./sidebars/hooks');
 const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
 const themeLocationsSidebar = require('./sidebars/theme-locations');
+const themeConditionsSidebar = require('./sidebars/theme-conditions');
 const widgetsSidebar = require('./sidebars/widgets');
 
 module.exports = {
@@ -186,6 +187,7 @@ module.exports = {
       '/managers/': managersSidebar,
       '/scripts-styles/': scriptsStylesSidebar,
       '/themes/': themeLocationsSidebar,
+      '/theme-conditions/': themeConditionsSidebar,
       '/widgets/': widgetsSidebar,
     }
   },
