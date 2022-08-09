@@ -206,19 +206,22 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	public function content_template_script() {
 		?>
 		<script>
-		jQuery( document ).ready( function ( $ ) {
+		jQuery( document ).ready( () => {
+
 			elementor.hooks.addFilter(
 				'elementor_pro/forms/content_template/field/<?php echo $this->get_type(); ?>',
 				function ( inputField, item, i ) {
-					const size    = '1';
-					const classes = 'elementor-field-textual';
-					const pattern = '[0-9]{3}-[0-9]{3}-[0-9]{4}';
-					const title   = "<?php echo esc_html__( 'Format: 123-456-7890', 'elementor-forms-local-tel-field' ); ?>";
+					const fieldId    = `form_field_${i}`;
+					const fieldClass = `elementor-field-textual elementor-field ${item.css_classes}`;
+					const size       = '1';
+					const pattern    = '[0-9]{3}-[0-9]{3}-[0-9]{4}';
+					const title      = "<?php echo esc_html__( 'Format: 123-456-7890', 'elementor-forms-local-tel-field' ); ?>";
 
-					return `<input size="${size}" class="${classes}" pattern="${pattern}" title="${title}">`;
+					return `<input id="${fieldId}" class="${fieldClass}" size="${size}" pattern="${pattern}" title="${title}">`;
 				}, 10, 3
 			);
-		} );
+
+		});
 		</script>
 		<?php
 	}
