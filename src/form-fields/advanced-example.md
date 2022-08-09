@@ -238,22 +238,25 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	public function content_template_script() {
 		?>
 		<script>
-		jQuery( document ).ready( function ( $ ) {
+		jQuery( document ).ready( () => {
+
 			elementor.hooks.addFilter(
 				'elementor_pro/forms/content_template/field/<?php echo $this->get_type(); ?>',
 				function ( inputField, item, i ) {
 					const fieldType    = 'tel';
-					const classes      = 'elementor-field-textual';
+					const fieldId      = `form_field_${i}`;
+					const fieldClass   = `elementor-field-textual elementor-field ${item.css_classes}`;
 					const inputmode    = 'numeric';
 					const maxlength    = '19';
 					const pattern      = '[0-9\s]{19}';
 					const placeholder  = item['credit-card-placeholder'];
 					const autocomplete = 'cc-number';
 
-					return `<input type="${fieldType}" class="${classes}" inputmode="${inputmode}" maxlength="${maxlength}" pattern="${pattern}" placeholder="${placeholder}" autocomplete="${autocomplete}">`;
+					return `<input type="${fieldType}" id="${fieldId}" class="${fieldClass}" inputmode="${inputmode}" maxlength="${maxlength}" pattern="${pattern}" placeholder="${placeholder}" autocomplete="${autocomplete}">`;
 				}, 10, 3
 			);
-		} );
+
+		});
 		</script>
 		<?php
 	}

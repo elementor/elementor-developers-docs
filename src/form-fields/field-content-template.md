@@ -24,18 +24,21 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 	public function content_template_script() {
 		?>
 		<script>
-		jQuery( document ).ready( function ( $ ) {
+		jQuery( document ).ready( () => {
+
 			elementor.hooks.addFilter(
 				'elementor_pro/forms/content_template/field/<?php echo $this->get_type(); ?>',
 				function ( inputField, item, i ) {
-					const fieldType = 'text';
-					const classes   = 'elementor-field-textual';
-					const title     = "<?php echo esc_html__( 'Some text...', 'plugin-name' ); ?>";
+					const fieldType  = 'text';
+					const fieldId    = `form_field_${i}`;
+					const fieldClass = `elementor-field-textual elementor-field ${item.css_classes}`;
+					const title      = "<?php echo esc_html__( 'Some text...', 'plugin-name' ); ?>";
 
-					return `<input type="${fieldType}" class="${classes}" title="${title}">`;
+					return `<input type="${fieldType}" id="${fieldId}" class="${fieldClass}" title="${title}">`;
 				}, 10, 3
 			);
-		} );
+
+		});
 		</script>
 		<?php
 	}
