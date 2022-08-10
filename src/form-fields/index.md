@@ -54,6 +54,7 @@ External developers can learn more about field anatomy and how to create your ow
 * [Field Validation](./field-validation/)
 * [Field Controls](./field-controls/)
 * [Field Content Template](./field-content-template/)
+* [Field Dependencies](./field-dependencies/)
 
 ## Code Examples
 
