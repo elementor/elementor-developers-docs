@@ -17,7 +17,6 @@ A good example is when you don't allow your users to create forms with "File Upl
  * Remove `upload` field from Elementor Form Widget.
  *
  * @param array $fields Elementor form fields.
- *
  * @return array Updated fields list.
  */
 function remove_elementor_form_field( $fields ) {
