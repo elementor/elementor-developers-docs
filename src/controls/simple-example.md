@@ -114,7 +114,6 @@ class Elementor_Currency_Control extends \Elementor\Base_Data_Control {
 	 * @since 1.0.0
 	 * @access public
 	 * @static
-	 *
 	 * @return array Available currencies.
 	 */
 	public static function get_currencies() {
@@ -151,7 +150,6 @@ class Elementor_Currency_Control extends \Elementor\Base_Data_Control {
 	 *
 	 * @since 1.0.0
 	 * @access public
-	 *
 	 * @return array Currency control default value.
 	 */
 	public function get_default_value() {
