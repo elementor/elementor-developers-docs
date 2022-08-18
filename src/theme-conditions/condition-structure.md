@@ -4,7 +4,7 @@
 
 Each condition needs to have a few basic settings, such as a unique name and label. In addition, a condition should be assigned to a group. A condition could have sub conditions. The final, and most important, is the check method that checks whether the condition complies to certain set of predefined rules.
 
-# Theme Condition Class
+## Theme Condition Class
 
 First, we need to create a class that extends the `\ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base` class:
 
@@ -43,10 +43,10 @@ Let’s break it down:
 
 * **Condition Label** – The `get_label()` method return the condition label that will be displayed to the user.
 
-* **Condition All Label** – The `get_all_label()` method return the all/any label that will be displayed to the user.
+* **Condition All Label** – The `get_all_label()` method return the all/any label that will be displayed to the user, if the condition has sub-conditions.
 
-* **Condition Sub Controls** – The `register_sub_conditions()` method used to register any sub-condition.
+* **Condition Check** – The `check()` method is the actual method that checks if the condition complies to a certain set of rules.
 
-* **Condition Check** – The `check()` method is the actual condition check method.
+* **Sub Conditions** – The `register_sub_conditions()` method registers sub-conditions.
 
 Please note that the `Condition_Base` class has many more methods developers can use, but the methods mentioned above will cover the vast majority of your needs.

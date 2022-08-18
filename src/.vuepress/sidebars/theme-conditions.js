@@ -23,8 +23,8 @@ module.exports = [
       'condition-structure',
       'condition-group-type',
       'condition-data',
-      'condition-sub-conditions',
       'condition-check',
+      'sub-conditions',
     ]
   },
   {
