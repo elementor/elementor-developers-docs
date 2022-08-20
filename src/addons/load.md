@@ -68,4 +68,4 @@ function elementor_test_addon() {
 add_action( 'plugins_loaded', 'elementor_test_addon' );
 ```
 
-Until now, we didn't even started Elementor functionality, it was all WordPress related setup.
+Until now, we have yet to start on Elementor functionality, it was all WordPress related setup.
