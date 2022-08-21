@@ -2,9 +2,6 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-When [rendering widgets](./../widgets/widget-rendering/) we have a PHP template and a JS template. [Form field rendering](./field-render/) has the `render()` method for PHP template but it currently has not a method to render JS template. External developers can use a workaround for that.
-
-
 When [rendering widgets](./../widgets/widget-rendering/) we have a PHP template and a JS template. However, [form field rendering](./field-render/) only has the PHP template, without the JS template. External developers can use a workaround to overcome this barrier.
 
 ## Rendering JS Template
