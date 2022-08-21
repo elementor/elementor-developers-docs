@@ -2,11 +2,14 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-When [rendering widgets](./../widgets/widget-rendering/) we have a PHP template and a JS template. [Field rendering](./field-render/) has the `render()` method for PHP template but it currently has not a method to render JS template. External developers can use a workaround for that.
+When [rendering widgets](./../widgets/widget-rendering/) we have a PHP template and a JS template. [Form field rendering](./field-render/) has the `render()` method for PHP template but it currently has not a method to render JS template. External developers can use a workaround for that.
+
+
+When [rendering widgets](./../widgets/widget-rendering/) we have a PHP template and a JS template. However, [form field rendering](./field-render/) only has the PHP template, without the JS template. External developers can use a workaround to overcome this barrier.
 
 ## Rendering JS Template
 
-The following part is a simple workaround to render JS template for the form field inside Elementor editor.
+The following code is a simple workaround to render a JS template inside the Elementor editor.
 
 ```php
 <?php
@@ -48,6 +51,6 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 
 ::: warning Please Note
 1. The workaround described above is a temporary solution.
-2. We may introduce an official `content_template()` method to render JS templates, the same way it's done in Elementor widgets.
-3. To make sure your code is future compatible, make sure your field class won't have a method called `content_template()`.
+2. We may introduce an official `content_template()` method to render JS templates, the same as is done for Elementor widgets.
+3. To make sure your code is future compatible, make sure your field class doesn't have a method called `content_template()`.
 :::

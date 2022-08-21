@@ -6,7 +6,7 @@ To see how easy it is to extend the form widget, we are going to create an addon
 
 ## Folder Structure
 
-The addon will have two files. One file for the new field-type and the other main file to register the field and handle all the other stuff.
+The addon will have two files. One file for the new field-type and a main file to register the field and handle all the other stuff.
 
 ```
 elementor-form-local-tel-field/
@@ -25,7 +25,7 @@ elementor-form-local-tel-field/
 <?php
 /**
  * Plugin Name: Elementor Forms Local Tel Field
- * Description: Custom addon that adds "local-tel" field to Elementor Forms Widget.
+ * Description: Custom addon that adds a "local-tel" field to Elementor Forms Widget.
  * Plugin URI:  https://elementor.com/
  * Version:     1.0.0
  * Author:      Elementor Developer

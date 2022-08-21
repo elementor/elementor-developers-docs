@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-When creating form fields we needs to have a few basic settings like a unique name and a label that will be used in the editor. Next is the render function that outputs the field markup. The field can also have a validation check. The last piece is an optional set of controls, where user can configure his custom data.
+When creating new form fields we needs to have a few basic settings like a unique name and a label that will be used in the editor. Next is the render function that outputs the field markup. The field can also have a validation check. This last piece is an optional set of controls, where a user can configure their custom data.
 
 ## Form Field Class
 
@@ -15,7 +15,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 
 ## Form Field Structure
 
-As mentioned above, Elementor Form Field extends the `\ElementorPro\Modules\Forms\Fields\Field_Base` class and inherits its methods. A simple field skeleton will look as follows:
+As mentioned above, Elementor form fields extend the `\ElementorPro\Modules\Forms\Fields\Field_Base` class and inherit its methods. A simple field skeleton will look as follows:
 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
@@ -47,8 +47,8 @@ Let’s break it down:
 
 * **Field Name** – The `get_name()` method returns the field label that will be displayed to the user.
 
-* **Field Render** – The `render()` method renders the data and display the field output.
+* **Field Render** – The `render()` method renders the data and displays the field output.
 
 * **Field Validation** – The `validation()` method runs a series of checks to ensure the data complies to certain rules.
 
-* **Field Controls** – The `update_controls()` method updates the widget controls, it allows to add new controls to specific field types.
+* **Field Controls** – The `update_controls()` method updates the widget controls, it allows developers to add new controls to specific field types.

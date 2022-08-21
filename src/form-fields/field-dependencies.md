@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Some form fields are dependent on custom scripts and styles for functionality and look and feel.
+Some form fields are dependent on custom scripts for functionality and custom styles for look and feel.
 
 ## Dependency Properties
 
@@ -50,7 +50,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 
 Our roadmap includes a task to unify the way scripts and styles are registered across different components.
 
-We plan to deprecate `$depended_scripts` and `$depended_styles` properties, replacing them with `get_script_depends()` and `get_style_depends()` methods. The same way it's is done in [widgets](./../widgets/widget-dependencies/).
+We plan to deprecate the `$depended_scripts` and `$depended_styles` properties, replacing them with the `get_script_depends()` and `get_style_depends()` methods. The same way it's done in [widgets](./../widgets/widget-dependencies/).
 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
@@ -85,5 +85,5 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 ```
 
 ::: warning Please Note
-To make sure your current code is future campatible, make sure your field class don't have the `get_script_depends()` and `get_style_depends()` methods.
+To make sure your current code is future campatible, make sure your field class doesn't have the `get_script_depends()` and `get_style_depends()` methods.
 :::

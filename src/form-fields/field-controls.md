@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Form fields can have additional controls where users can customize the form field. When the field is added to the form, those controls will be displayed in the field setting. The data entered to those controls is saved in the database and later can be used to render the field output or validate the field value.
+Form fields can have additional controls where users can customize the form field. When the field is added to the form, those controls will be displayed in the field setting. The data entered into those controls is saved in the database and later can be used to render the field output or validate the field value.
 
 ## Registering Controls
 
@@ -20,7 +20,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-* **Field Controls** – The `update_controls()` method updates the widget controls, it allows to add new controls to specific field types. The `$widget` parameter is an instance of the form widget.
+* **Field Controls** – The `update_controls()` method updates the widget controls, it allows developers to add new controls to specific field types. The `$widget` parameter is an instance of the form widget.
 
 ## Add Controls to your Field
 
@@ -73,4 +73,4 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-Basically we are injecting new field controls to the form widget. Those fields are injected to the fields repeater where the user adds fields to his form.
+Basically we are injecting new field controls into the form widget. These fields are injected into the "*field's repeater*" where the user adds fields to their form.
