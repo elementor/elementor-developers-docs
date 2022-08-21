@@ -6,7 +6,7 @@ For a more advanced example we will create a widget with a repeater field, to al
 
 ## Folder Structure
 
-The addon will have two files. One file for the widget and the other main file to register the widget.
+The addon will have two files. One file for the widget and a main file to register the widget.
 
 ```
 elementor-list-widget/

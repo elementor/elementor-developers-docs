@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-To demonstrate how easy it is to create new form actions, we're going to create an addon which will add a new subscriber to a [Sendy](https://sendy.co/) server using its [API](https://sendy.co/api).
+For a more advanced example we are going to create an addon which will add a new subscriber to a [Sendy](https://sendy.co/) server using its [API](https://sendy.co/api).
 
 ## Folder Structure
 

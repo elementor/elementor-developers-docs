@@ -6,7 +6,7 @@ Putting all these pieces together, we're going to create a simple Elementor widg
 
 ## Folder Structure
 
-The addon will have two files. One file for the widget and the other main file to register the widget.
+The addon will have two files. One file for the widget and a main file to register the widget.
 
 ```
 elementor-oembed-widget/
