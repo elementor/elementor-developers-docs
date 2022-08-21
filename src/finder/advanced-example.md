@@ -6,7 +6,7 @@ For a more advanced use-case, we'll replace static links with core WordPress fun
 
 ## Folder Structure
 
-The addon will have two files. One file for the finder category and the other main file to register the class.
+The addon will have two files. One file for the finder category and a main file to register the class.
 
 ```
 elementor-finder-wordpress-settings/

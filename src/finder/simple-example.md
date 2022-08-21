@@ -6,7 +6,7 @@ To see how easy it is to extend the finder, we are going to create a very simple
 
 ## Folder Structure
 
-The addon will have two files. One file for the finder category and the other main file to register the class.
+The addon will have two files. One file for the finder category and a main file to register the class.
 
 ```
 elementor-finder-social-media/
