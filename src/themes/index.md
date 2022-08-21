@@ -16,7 +16,7 @@ Every theme developer can make their theme **Elementor compatible** by supportin
 
 ## Available Locations
 
-Themes can support all core locations, some locations or create their own custom locations. The following are the builtin Elementor locations:
+Themes can support all core locations, some locations or create their own custom locations. The following are the built-in Elementor locations:
 
 * **Header** – template header replaces the theme `header.php` file.
 * **Footer** – template footer replaces the theme `footer.php` file.

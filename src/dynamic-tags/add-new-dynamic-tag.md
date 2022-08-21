@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor offers many builtin dynamic tags out of the box, but it also allows external developers to register new tags.
+Elementor offers many built-in dynamic tags out of the box, but it also allows external developers to register new tags.
 
 ## Hooks
 

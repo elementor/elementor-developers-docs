@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor offers many builtin widgets out of the box, but it also allows external developers to register new widgets.
+Elementor offers many built-in widgets out of the box, but it also allows external developers to register new widgets.
 
 ## Hooks
 
