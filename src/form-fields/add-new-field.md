@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-The forms widget has builtin field types but it also accepts new fields registered by external developers.
+The Form widget has built-in field types, but it also accepts new fields registered by external developers.
 
 ## Registering Fields
 
-To register new fields you just need to initiate the field class:
+To register new fields just initiate the field class:
 
 ```php
 function register_new_form_fields( $form_fields_registrar ) {

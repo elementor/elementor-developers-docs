@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-For more advanced example we are going to create an addon with a credit card field.
+For a more advanced example we are going to create an addon with a credit card field.
 
 ## Folder Structure
 
-The addon will have two files. One file for the new field-type and the other main file to register the new field.
+The addon will have two files. One file for the new field-type and a main file to register the new field and handle all the other stuff.
 
 ```
 elementor-form-credit-card-number-field/
@@ -25,7 +25,7 @@ elementor-form-credit-card-number-field/
 <?php
 /**
  * Plugin Name: Elementor Forms Credit Card Number Field
- * Description: Custom addon that adds "credit-card" field to Elementor Forms Widget.
+ * Description: Custom addon that adds a "credit-card" field to Elementor Forms Widget.
  * Plugin URI:  https://elementor.com/
  * Version:     1.0.0
  * Author:      Elementor Developer

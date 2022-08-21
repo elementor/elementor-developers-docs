@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-The field used in the form needs to have an output in the frontend. The render method sets the fields code when the feild is displayed to the user on the site.
+A field used in a form needs to have an output in the frontend. The render method sets the field's code when the field is displayed to the user on the site.
 
 ## Render Method
 
-The method that actually generates the field output called `render()`. In your field class, use the method as follows:
+The method that actually generates the field output is called `render()`. In your field class, use the method as follows:
 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
@@ -20,11 +20,11 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-* **Field Render** – The `render()` method renders the data and display the field output.
+* **Field Render** – The `render()` method renders the data and displays the field output.
 
 ## Render Attribute
 
-To add attributes "the Elementor way", you should not hardcode the HTML elements with your attributes. You should use the `add_render_attribute()` method. This methos is responsble for definning attribute and their values programatically.
+To add attributes "the Elementor way", you should not hardcode the HTML elements with your attributes. You should use the `add_render_attribute()` method. This method is responsible for defining attributes and their values programmatically.
 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
