@@ -14,7 +14,7 @@ When users add a form widget to the page, they can choose the actions that will 
 
 ## Available Actions
 
-The form widget comes with with the following actions by default:
+The form widget comes with the following actions by default:
 
 * **Collect Submissions**
 * **Email**
