@@ -25,4 +25,8 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 * **Condition All Label** – The `get_all_label()` method return the all/any label that will be displayed to the user, if the condition has sub-conditions.
 
+<img :src="$withBase('/assets/img/elementor-theme-all-sub-conditions.png')" alt="All Sub Conditions">
+
 * **Sub Conditions** – The `register_sub_conditions()` method registers sub-conditions.
+
+<img :src="$withBase('/assets/img/elementor-theme-sub-condition.png')" alt="Sub Conditions">
