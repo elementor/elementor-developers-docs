@@ -36,12 +36,20 @@ function register_new_theme_conditions( $conditions_manager  ) {
 	require_once( __DIR__ . '/theme-conditions/sub-condition-1.php' );
 	require_once( __DIR__ . '/theme-conditions/sub-condition-2.php' );
 
-	$conditions_manager->get_condition( 'general' )->register_sub_condition( new \Condition() );
-	$conditions_manager->get_condition( 'main_condition_name' )->register_sub_condition( new \Sub_Condition_1() );
-	$conditions_manager->get_condition( 'main_condition_name' )->register_sub_condition( new \Sub_Condition_2() );
+	$conditions_manager
+		->get_condition( 'general' )
+		->register_sub_condition( new \Main_Condition() );
+
+	$conditions_manager
+		->get_condition( 'main_condition_name' )
+		->register_sub_condition( new \Sub_Condition_1() );
+
+	$conditions_manager
+		->get_condition( 'main_condition_name' )
+		->register_sub_condition( new \Sub_Condition_2() );
 
 }
 add_action( 'elementor/theme/register_conditions', 'register_new_theme_conditions' );
 ```
 
-To register sub conditions from the main condition class, see the [Sub Conditions](./sub-conditions/) section.
+To register sub conditions from the main condition class, see the [sub conditions](./sub-conditions/) section.
