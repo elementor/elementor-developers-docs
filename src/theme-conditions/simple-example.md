@@ -84,7 +84,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @return string
 	 */
 	public static function get_type() {
-		return 'logged_in_user';
+		return 'general';
 	}
 
 	/**
