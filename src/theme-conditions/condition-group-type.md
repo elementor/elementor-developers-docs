@@ -24,10 +24,15 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 When you select to which group to assign your condition to, you can select one of the following groups:
 
-| Label           | ID         | Description                                             |
-|-----------------| ---------- | ------------------------------------------------------- |
-| **Entire Site** | `general`  | Condition to display the template across all the pages. |
-| **Archives**    | `archive`  | Condition to display the template on archive pages.     |
-| **Singular**    | `singular` | Condition to display the template on singular pages.    |
+| ID            | Label              | Description                                             |
+| ------------- |--------------------| ------------------------------------------------------- |
+| >`general`    | > **General**      |                                                         |
+| >> `general`  | >> **Entire Site** | Condition to display the template across all the pages. |
+| >> `archive`  | >> **Archives**    | Condition to display the template on archive pages.     |
+| >> `singular` | >> **Singular**    | Condition to display the template on singular pages.    |
 
 <img :src="$withBase('/assets/img/elementor-theme-conditions-groups.png')" alt="Theme Conditions Groups">
+
+## Conditions Tree
+
+We basicaly creating a tree of conditions. Each time we add a sub-condition, we expand the tree. The `get_type()` method tels us to wich group the condition belongs.
