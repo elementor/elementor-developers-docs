@@ -228,3 +228,9 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 
 }
 ```
+
+## The Result
+
+The new "Local Tel" field inside the Elementor form widget:
+
+<img :src="$withBase('/assets/img/elementor-form-fields-example-local-tel.png')" alt="Elementor Form - Local Tel Field">
