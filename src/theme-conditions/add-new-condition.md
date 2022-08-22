@@ -21,4 +21,27 @@ function register_new_theme_conditions( $conditions_manager  ) {
 add_action( 'elementor/theme/register_conditions', 'register_new_theme_conditions' );
 ```
 
-This hooks to the `elementor/theme/register_conditions` action hook which holds the conditions manager. The manager then registers the condition by initiating new condition instances.
+This code snippet hooks to the `elementor/theme/register_conditions` action hook which holds the conditions manager. The manager then registers the condition by initiating new condition instances.
+
+## Registering Sub Conditions
+
+There are two ways to register sub conditions, either from the conditions manager or from the condition class itself.
+
+To register sub conditions from the manager, use the following code:
+
+```php
+function register_new_theme_conditions( $conditions_manager  ) {
+
+	require_once( __DIR__ . '/theme-conditions/main-condition.php' );
+	require_once( __DIR__ . '/theme-conditions/sub-condition-1.php' );
+	require_once( __DIR__ . '/theme-conditions/sub-condition-2.php' );
+
+	$conditions_manager->get_condition( 'general' )->register_sub_condition( new \Condition() );
+	$conditions_manager->get_condition( 'main_condition_name' )->register_sub_condition( new \Sub_Condition_1() );
+	$conditions_manager->get_condition( 'main_condition_name' )->register_sub_condition( new \Sub_Condition_2() );
+
+}
+add_action( 'elementor/theme/register_conditions', 'register_new_theme_conditions' );
+```
+
+To register sub conditions from the main condition class, see the [Sub Conditions](./sub-conditions/) section.
