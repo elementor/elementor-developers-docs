@@ -263,3 +263,9 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 
 }
 ```
+
+## The Result
+
+The new "Credit Card Number" field inside the Elementor form widget:
+
+<img :src="$withBase('/assets/img/elementor-form-fields-example-credit-card-number.png')" alt="Elementor Form - Credit Card Number Field">
