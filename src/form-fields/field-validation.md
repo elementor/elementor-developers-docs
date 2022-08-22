@@ -6,7 +6,9 @@ Elementor offers the ability to run a series of checks to ensure that field data
 
 ## Validation Method
 
-The method that triggers the validation process called `validation()`. In your field class, use the method as follows:
+The method that triggers the validation process called `validation()`. This method makes sure the end-user entered a valid value by running a set of checks. If one of the checks fails, the method adds an error using `$ajax_handler->add_error( $field, $message )`.
+
+When the form is submitted, Elementor checkes whether all the fields have valid values. Using the ajax handler, Elementor can add error messages to the fields that fail validation. If the field value is valid, the server will process the form submission. Otherwise, an ajax handler will be sent with the error message.
 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
@@ -29,7 +31,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-If the field value is valid, the server will process the form submission. Otherwise, an ajax handler will be sent with the error message.
+This method accepts three parameters. The `$field` parameter is an instance of the field itself. The `$record` parameter is an instance of the form record containong the user data. The `$ajax_handler` parameter is an instance of form ajax, responsible for handling the form ajax.
 
 ## Field Controls
 

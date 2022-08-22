@@ -74,3 +74,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 ```
 
 Basically we are injecting new field controls into the form widget. These fields are injected into the "*field's repeater*" where the user adds fields to their form.
+
+The `$control_data` is the fields repeater inside the form widget. The code is injecting new fields with display condition that shows them only on specific field type and only on the field content tab.
+
+<img :src="$withBase('/assets/img/elementor-form-field-controls.png')" alt="Elementor Form - Field Controls">
