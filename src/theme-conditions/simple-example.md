@@ -129,8 +129,8 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 }
 ```
 
-## Result
+## The Result
+
+The "Logged In User" condition in display conditions screen:
 
 <img :src="$withBase('/assets/img/elementor-theme-conditions-example-logged-in-user.png')" alt="Logged In User Condition">
-
-Please note that the addon can be extended to include user roles as sub-conditions.
