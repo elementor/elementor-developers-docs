@@ -37,3 +37,4 @@ Learn more about the condition anatomy and how to create your own:
 Check out how easy it is to add new conditions:
 
 * [Simple Example](./simple-example/)
+* [Advanced Example](./advanced-example/)
