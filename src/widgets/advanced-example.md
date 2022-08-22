@@ -459,6 +459,8 @@ class Elementor_List_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-## Result
+## The Result
+
+A new "List" widget with a repeater field:
 
 <img :src="$withBase('/assets/img/elementor-list-widget.png')" alt="Elementor List Widget">

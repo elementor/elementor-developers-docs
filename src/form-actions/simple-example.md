@@ -155,3 +155,9 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 
 }
 ```
+
+## The Result
+
+The new "Ping" action inside the "Action After Submit" section:
+
+<img :src="$withBase('/assets/img/elementor-form-actions-example-ping.png')" alt="Elementor Form - Ping Action">

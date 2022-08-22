@@ -208,6 +208,8 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-## Result
+## The Result
+
+A new "oEmbed" widget:
 
 <img :src="$withBase('/assets/img/elementor-widget-oembed.png')" alt="Elementor oEmbed Widget">

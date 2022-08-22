@@ -250,3 +250,9 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 
 }
 ```
+
+## The Result
+
+The new "Sendy" action controls inside the Elementor form widget:
+
+<img :src="$withBase('/assets/img/elementor-form-actions-example-sendy.png')" alt="Elementor Form - Sendy Action">
