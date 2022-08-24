@@ -160,6 +160,10 @@ module.exports = {
             link: '/form-actions/',
           },
           {
+            text: 'Form Fields',
+            link: '/form-fields/',
+          },
+          {
             text: 'Theme Locations',
             link: '/themes/',
           },
