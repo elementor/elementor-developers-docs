@@ -15,10 +15,16 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 		return 'condition_type';
 	}
 
+	public static function get_priority() {
+		return 40;
+	}
+
 }
 ```
 
-* **Condition Group Types** – The `get_type()` method return the condition group type.
+* **Condition Group Type** – The `get_type()` method return the condition group type.
+
+* **Condition Priority** – The `get_priority()` method priorotize the condition in a group type.
 
 ## Available Condition Groups
 
@@ -35,4 +41,10 @@ When you select to which group to assign your condition to, you can select one o
 
 ## Conditions Tree
 
-We basicaly creating a tree of conditions. Each time we add a sub-condition, we expand the tree. The `get_type()` method tels us to wich group the condition belongs.
+We basically creating a tree of conditions. Each time we add a sub-condition, we expand the tree. `get_type()` method tells us to which group the condition belongs.
+
+## Conditions Priority
+
+When several sub-conditions are nested inside a group type or inside a condition, their display order can be controlled using the priority method.
+
+Built-in conditions use priority ranging between `0` to `100`. When `get_priority()` method is not defined, the default priority inherited from the base class, there it returns `100`.

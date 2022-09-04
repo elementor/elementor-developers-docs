@@ -22,6 +22,8 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 	public static function get_type() {}
 
+	public function get_priority() {}
+
 	public function get_name() {}
 
 	public function get_label() {}
@@ -38,6 +40,8 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 Let’s break it down:
 
 * **Condition Type** – The `get_type()` method return the condition group type.
+
+* **Condition Priority** – The `get_priority()` method priorotize the condition in a group type.
 
 * **Condition Name** – The `get_name()` method return the condition name (id) that will be used in the code.
 
