@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Form actions are tasks taken after a visitor has sumitted data. An action can send the form data by email, redirect it to a different page, or send the data to an external marketing service - the possibilities are endless.
+Form actions are tasks taken after a visitor has submitted data. An action can send the form data by email, redirect it to a different page, or send the data to an external marketing service - the possibilities are endless.
 
 Elementor Pro provides a set of tools to add your own custom actions.
 
