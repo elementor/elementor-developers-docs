@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor run a series of checks to ensure the condition complies to a certain set of rules. The `check()` method sets the checks to apply the condition.
+Elementor runs a series of checks to ensure that conditions comply with a certain set of rules. The `check()` method sets these checks.
 
 ## Check Method
 
-The method that triggers the condition proccess called `check()`. In your condition class, use the method as follows:
+The method that triggers this condition process is called `check()`. In your condition class, use the method as follows:
 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
@@ -26,7 +26,7 @@ Developers can add any type of condition checking. Let's see some examples.
 
 ### Front Page
 
-In the example below, we'll check if it's a front page:
+In the example below, we'll check to see if it's a front page:
 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
@@ -40,7 +40,7 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 ### 404 Page
 
-In the following example we'll check if it's a 404 page:
+In the following example we'll check to see if it's a 404 page:
 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
@@ -54,7 +54,7 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 ## Embed Page
 
-Another use case is to check if it's an embed page:
+In this example we'll check to see if it's an embed page:
 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
@@ -68,7 +68,7 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 ## SSL Page
 
-We can use server variables to check if the page was accessed with SSL:
+We can use server variables to check and see if the page was accessed with SSL:
 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
@@ -82,7 +82,7 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 ## User Browser
 
-We can apply different templates for different browsers by checking the [user browser](https://www.php.net/manual/en/function.get-browser.php):
+We can apply different templates for different browsers by checking the [user's browser](https://www.php.net/manual/en/function.get-browser.php):
 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {

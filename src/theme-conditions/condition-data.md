@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Every condition has basic information such as the feild unique ID and the condition label. This data is used in the code and displayed to the user in the editor.
+Every condition has basic information such as the condition unique ID and the condition label. This data is used in the code and displayed to the user in the editor.
 
 ## Data Methods
 
-Feild data needs to be "returned" by certain methods. Those methods are simple:
+Condition data needs to be "returned" by certain methods. Those methods are simple:
 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {

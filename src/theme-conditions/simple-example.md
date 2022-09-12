@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-To see how easy it is to extend theme conditions, we are going to create an addon that registers a condition which will check if a user is logged in. The addon will help Elementor users to display some templates only to logged in users and other templates to anonymous users.
+To demonstrate how easy it is to extend theme conditions, we're going to create an addon that registers a condition which will check to see if a visitor is logged-in. This addon will help Elementor users display some templates to logged-in visitors and other templates to anonymous visitors.
 
 ## Folder Structure
 
-The addon will have two files. One file for logged in user condition and the other main file to register the condition and handle all the other stuff.
+The addon will have two files. One file for the logged-in user condition and the main file, which will register the condition and handle all the other stuff.
 
 ```
 elementor-logged-in-user-condition/
@@ -24,8 +24,8 @@ elementor-logged-in-user-condition/
 ```php
 <?php
 /**
- * Plugin Name: Elementor Logged In User Condition
- * Description: Custom addon that adds a logged in user condition to Elementor.
+ * Plugin Name: Elementor Logged-In User Condition
+ * Description: Custom addon that adds a logged-in user condition to Elementor.
  * Plugin URI:  https://elementor.com/
  * Version:     1.0.0
  * Author:      Elementor Developer
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Add a logged in user condition to Elementor.
+ * Add a logged-in user condition to Elementor.
  *
  * @since 1.0.0
  * @param \ElementorPro\Modules\ThemeBuilder\Classes\Conditions_Manager $conditions_manager An instance of conditions manager.
@@ -66,9 +66,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor Logged In User Condition.
+ * Elementor Logged-In User Condition.
  *
- * Add a logged in user condition to Elementor.
+ * Add a logged-in user condition to Elementor.
  *
  * @since 1.0.0
  */
@@ -77,7 +77,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	/**
 	 * Get condition group type.
 	 *
-	 * Retrieve logged in user condition group type.
+	 * Retrieve logged-in user condition group type.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -90,7 +90,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	/**
 	 * Get condition name.
 	 *
-	 * Retrieve logged in user condition unique ID.
+	 * Retrieve logged-in user condition unique ID.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -103,20 +103,20 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	/**
 	 * Get condition label.
 	 *
-	 * Retrieve logged in user condition label.
+	 * Retrieve logged-in user condition label.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 * @return string
 	 */
 	public function get_label() {
-		return esc_html__( 'Logged in user', 'elementor-logged-in-user-condition' );
+		return esc_html__( 'Logged-in user', 'elementor-logged-in-user-condition' );
 	}
 
 	/**
 	 * Check condition.
 	 *
-	 * Validate logged in user condition to ensure it complies to certain rules.
+	 * Validate logged-in user condition to ensure it complies with certain rules.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -131,6 +131,6 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 
 ## The Result
 
-The "Logged In User" condition in display conditions screen:
+The "Logged-In User" condition as displayed on the conditions screen:
 
-<img :src="$withBase('/assets/img/elementor-theme-conditions-example-logged-in-user.png')" alt="Logged In User Condition">
+<img :src="$withBase('/assets/img/elementor-theme-conditions-example-logged-in-user.png')" alt="Logged-In User Condition">
