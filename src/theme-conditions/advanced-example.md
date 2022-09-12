@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-For a more advanced use-case, we are going to create an addon that registers conditions based on the role of the logged in user. The addon will help Elementor users to display some templates only to specific user roles.
+For a more advanced use-case, we're going to create an addon that registers conditions based on the role of a logged-in visitor. The addon will help Elementor users to display some templates only to visitors with specific roles.
 
 ## Folder Structure
 
@@ -67,9 +67,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Elementor Logged In User Condition.
+ * Elementor Logged-In User Condition.
  *
- * Add a logged in user condition to Elementor.
+ * Add a logged-in user condition to Elementor.
  *
  * @since 1.0.0
  */
@@ -78,7 +78,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	/**
 	 * Get condition group type.
 	 *
-	 * Retrieve logged in user condition group type.
+	 * Retrieve logged-in user condition group type.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -91,7 +91,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	/**
 	 * Get condition name.
 	 *
-	 * Retrieve logged in user condition unique ID.
+	 * Retrieve logged-in user condition unique ID.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -104,20 +104,20 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	/**
 	 * Get condition label.
 	 *
-	 * Retrieve logged in user condition label.
+	 * Retrieve logged-in user condition label.
 	 *
 	 * @since 1.0.0
 	 * @access public
 	 * @return string
 	 */
 	public function get_label() {
-		return esc_html__( 'Logged in User', 'elementor-user-role-conditions' );
+		return esc_html__( 'Logged-in User', 'elementor-user-role-conditions' );
 	}
 
 	/**
 	 * Get condition all label.
 	 *
-	 * Retrieve logged in user condition 'All' label.
+	 * Retrieve logged-in user condition 'All' label.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -128,7 +128,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	}
 
 	/**
-	 * Register sub conditions.
+	 * Register sub-conditions.
 	 *
 	 * Add sub-conditions based on user role.
 	 *
@@ -153,7 +153,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	/**
 	 * Check condition.
 	 *
-	 * Validate logged in user condition to ensure it complies to certain rules.
+	 * Validate logged-in user condition to ensure it complies to certain rules.
 	 *
 	 * @since 1.0.0
 	 * @access public
@@ -258,7 +258,7 @@ class User_Role_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\
 
 ## The Result
 
-The "Logged In User" > "User Roles" conditions:
+The "Logged-In User" > "User Roles" conditions:
 
 <img :src="$withBase('/assets/img/elementor-theme-conditions-example-user-roles.png')" alt="User role conditions">
 
