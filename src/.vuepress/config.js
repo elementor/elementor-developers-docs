@@ -14,8 +14,8 @@ const gettingStartedSidebar = require('./sidebars/getting-started');
 const hooksSidebar = require('./sidebars/hooks');
 const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
-const themeLocationsSidebar = require('./sidebars/theme-locations');
 const themeConditionsSidebar = require('./sidebars/theme-conditions');
+const themeLocationsSidebar = require('./sidebars/theme-locations');
 const widgetsSidebar = require('./sidebars/widgets');
 
 module.exports = {
@@ -165,6 +165,10 @@ module.exports = {
             link: '/form-fields/',
           },
           {
+            text: 'Theme Conditions',
+            link: '/theme-conditions/',
+          },
+          {
             text: 'Theme Locations',
             link: '/themes/',
           },
@@ -190,8 +194,8 @@ module.exports = {
       '/hooks/': hooksSidebar,
       '/managers/': managersSidebar,
       '/scripts-styles/': scriptsStylesSidebar,
-      '/themes/': themeLocationsSidebar,
       '/theme-conditions/': themeConditionsSidebar,
+      '/themes/': themeLocationsSidebar,
       '/widgets/': widgetsSidebar,
     }
   },
