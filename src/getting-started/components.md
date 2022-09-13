@@ -30,7 +30,7 @@ Below is a list of Elementor components, along with a short description and link
 
 * [Themes Conditions](./../theme-conditions/)
 
-  The theme builder uses a condition-based mechanism to display template. The mechanism cover the native WordPress Template Hierarchy, but developers can add aditional conditions.
+  The theme builder uses a condition-based mechanism to display template. The mechanism cover the native WordPress Template Hierarchy, but developers can add additional conditions.
 
 * [Themes Locations](./../themes/)
 
