@@ -51,8 +51,6 @@ pageClass: docs-home
   </div>
   <div>
     <ul>
-      <li><a href="./context-menu/">Context Menu</a></li>
-      <li><a href="./finder/">Finder</a></li>
       <li><a href="./widgets/">Widgets</a></li>
       <li><a href="./controls/">Controls</a></li>
       <li><a href="./dynamic-tags/">Dynamic Tags</a></li>
@@ -60,6 +58,8 @@ pageClass: docs-home
       <li><a href="./form-fields/">Form Fields</a></li>
       <li><a href="./theme-conditions/">Theme Conditions</a></li>
       <li><a href="./themes/">Theme Locations</a></li>
+      <li><a href="./context-menu/">Context Menu</a></li>
+      <li><a href="./finder/">Finder</a></li>
     </ul>
   </div>
 </section>
