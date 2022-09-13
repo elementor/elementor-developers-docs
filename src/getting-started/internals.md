@@ -24,6 +24,14 @@ Below is a list of Elementor internals along with a short description and links 
 
   There are a wide range of hooks that can be used with Elementor. This documentation contains a complete listing of the entire range of available hooks Elementor has to offer - filter hooks, action hooks, PHP hooks, JS hooks, frontend hooks and editor hooks.
 
+* [Deprecations](./../deprecations/)
+
+  Over time, code is removed or replaced. The deprecation process is gradual and and Elementor deprecation process consists of the several steps. Developers need to know how Elementor deprecates code and how they need to debug and update deprecated code.
+
+* [CLI](./../cli/)
+
+  Elementor integrates with WP-CLI, enabling developers to run certain Elementor tasks via the command line interface, without using a web browser. All the available comands with their arguments and usage examples are listed here.
+
 * [Building Addons](./../addons/)
 
   This section contains information for those unfamiliar with WordPress. It discusses basic WordPress plugin development, as well as Elementor addons and advanced topics, including background information on plugins and object oriented programming.    
