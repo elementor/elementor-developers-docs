@@ -137,14 +137,6 @@ module.exports = {
         text: 'Components',
         items: [
           {
-            text: 'Context Menu',
-            link: '/context-menu/',
-          },
-          {
-            text: 'Finder',
-            link: '/finder/',
-          },
-          {
             text: 'Widgets',
             link: '/widgets/',
           },
@@ -171,6 +163,14 @@ module.exports = {
           {
             text: 'Theme Locations',
             link: '/themes/',
+          },
+          {
+            text: 'Context Menu',
+            link: '/context-menu/',
+          },
+          {
+            text: 'Finder',
+            link: '/finder/',
           },
         ],
       },
