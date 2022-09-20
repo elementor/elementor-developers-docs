@@ -4,7 +4,7 @@ Elementor divider control displays a separator between controls.
 
 The control is defined in `Control_Divider` class which extends `Base_UI_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::DIVIDER` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::DIVIDER` constant.
 
 ## Arguments
 

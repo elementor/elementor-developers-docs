@@ -1,10 +1,14 @@
 # Popover Toggle Control
 
-Elementor popover toggle control displays a toggle  button to open and close a popover. The control allow you to open a Popover with custom controls.
+<img :src="$withBase('/assets/img/controls/control-popover-toggle.png')" alt="Popover Toggle Control" style="float: right;">
+
+Elementor popover toggle control displays a toggle  button to open and close a popover. The control allow you to open a popover with custom controls.
+
+<img :src="$withBase('/assets/img/controls/control-popover-toggle-active.png')" alt="Acvite Popover Toggle Control" style="float: right;">
 
 The control is defined in `Control_Popover_Toggle` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::POPOVER_TOGGLE` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::POPOVER_TOGGLE` constant.
 
 ## Arguments
 
@@ -94,10 +98,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 

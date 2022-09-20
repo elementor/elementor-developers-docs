@@ -1,10 +1,12 @@
 # Media Control
 
+<img :src="$withBase('/assets/img/controls/control-media.png')" alt="Media Control" style="float: right;">
+
 Elementor Media control displays a media chooser section based on the WordPress media library. It allows the user to select an image from the media library.
 
 The control is defined in `Control_Media` class which extends `Control_Base_Multiple` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::MEDIA` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::MEDIA` constant.
 
 ## Arguments
 

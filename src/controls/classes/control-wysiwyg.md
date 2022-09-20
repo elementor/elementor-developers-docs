@@ -1,10 +1,12 @@
 # WYSIWYG Control
 
+<img :src="$withBase('/assets/img/controls/control-wysiwyg.png')" alt="WYSIWYG Control" style="float: right;">
+
 Elementor WYSIWYG control displays a WordPress rich-text editor based on the [TinyMCE](https://www.tiny.cloud/) library.
 
 The control is defined in `Control_Wysiwyg` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::WYSIWYG` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::WYSIWYG` constant.
 
 ## Arguments
 

@@ -4,7 +4,7 @@ Elementor Text Shadow control displays an input fields for horizontal shadow, ve
 
 The control is defined in `Control_Text_Shadow` class which extends `Control_Base_Multiple` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::TEXT_SHADOW` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::TEXT_SHADOW` constant.
 
 ## Arguments
 

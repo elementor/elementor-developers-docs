@@ -1,10 +1,12 @@
 # Color Control
 
+<img :src="$withBase('/assets/img/controls/control-color.png')" alt="Color Control" style="float: right;">
+
 Elementor color control displays a color picker field with an alpha slider. It includes a customizable color palette that can be preset by the user.
 
 The control is defined in `Control_Color` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::COLOR` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::COLOR` constant.
 
 ## Arguments
 
@@ -82,20 +84,20 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
 		$this->add_control(
-			'title_color',
+			'text_color',
 			[
-				'label' => esc_html__( 'Title Color', 'plugin-name' ),
+				'label' => esc_html__( 'Text Color', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .title' => 'color: {{VALUE}}',
+					'{{WRAPPER}} .your-class' => 'color: {{VALUE}}',
 				],
 			]
 		);
@@ -107,17 +109,17 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<h2 class="title" style="color: <?php echo esc_attr( $settings['title_color'] ); ?>;">
+		<div class="your-class">
 			...
-		</h2>
+		</div>
 		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<h2 class="title" style="color: {{ settings.title_color }}">
+		<div class="your-class">
 			...
-		</h2>
+		</div>
 		<?php
 	}
 

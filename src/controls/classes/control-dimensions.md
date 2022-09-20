@@ -1,10 +1,14 @@
 # Dimensions Control
 
+<img :src="$withBase('/assets/img/controls/control-dimensions.png')" alt="Dimensions Control" style="float: right;">
+
 Elementor dimensions control displays a input fields for top, right, bottom, left and the option to link them together.
 
 The control is defined in `Control_Dimensions` class which extends `Control_Base_Units` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::DIMENSIONS` constant.
+<img :src="$withBase('/assets/img/controls/control-dimensions2.png')" alt="Dimensions Control" style="float: right;">
+
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::DIMENSIONS` constant.
 
 ## Arguments
 
@@ -21,7 +25,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 		<tr>
 			<td><code>type</code></td>
 			<td><code>string</code></td>
-			<td>slider</td>
+			<td>dimensions</td>
 			<td>The type of the control.</td>
 		</tr>
 		<tr>
@@ -57,8 +61,8 @@ Note that when using the control, the type should be set using the `\Elementor\C
 		<tr>
 			<td><code>size_units</code></td>
 			<td><code>array</code></td>
-			<td>[ ‘px’ ]</td>
-			<td>An array of available CSS units like <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>deg</code> and <code>vh</code>.</td>
+			<td>[ 'px' ]</td>
+			<td>An array of available CSS units like <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>deg</code>, <code>vh</code> etc.</td>
 		</tr>
 		<tr>
 			<td><code>default</code></td>
@@ -110,10 +114,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 

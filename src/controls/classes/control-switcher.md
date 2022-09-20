@@ -1,10 +1,14 @@
 # Switcher Control
 
-Elementor switcher control displays an on/off switcher. It’s basically a fancy representation of checkboxes.
+<img :src="$withBase('/assets/img/controls/control-switcher.png')" alt="Switcher Control" style="float: right;">
+
+Elementor switcher control displays an on/off switcher. It's basically a fancy representation of checkboxes.
+
+<img :src="$withBase('/assets/img/controls/control-switcher-checked.png')" alt="Checked Switcher Control" style="float: right;">
 
 The control is defined in `Control_Switcher` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::SWITCHER` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::SWITCHER` constant.
 
 ## Arguments
 

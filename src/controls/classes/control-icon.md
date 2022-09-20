@@ -8,7 +8,7 @@ Elementor icon control displays a font icon select box field based on [Font Awes
 
 The control is defined in `Control_Icon` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::ICON` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::ICON` constant.
 
 ## Arguments
 

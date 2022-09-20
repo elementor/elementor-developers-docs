@@ -1,10 +1,12 @@
 # Textarea Control
 
+<img :src="$withBase('/assets/img/controls/control-textarea.png')" alt="Textarea Control" style="float: right;">
+
 Elementor textarea control displays a classic textarea field with an option to set the number of `rows`.
 
 The control is defined in `Control_Textarea` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::TEXTAREA` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::TEXTAREA` constant.
 
 ## Arguments
 

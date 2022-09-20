@@ -4,7 +4,7 @@ Elementor box shadow group control displays input fields to define the box shado
 
 The control is defined in `Group_Control_Box_Shadow` class which extends `Group_Control_Base` class.
 
-Note that when using group controls, the type should be set using the `Group_Control_Box_Shadow::get_type()` method.
+When using this group control, the `type` should be set to `Group_Control_Box_Shadow::get_type()` method.
 
 ## Arguments
 

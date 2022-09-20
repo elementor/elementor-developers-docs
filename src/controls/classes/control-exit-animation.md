@@ -1,10 +1,12 @@
 # Exit Animation Control
 
+<img :src="$withBase('/assets/img/controls/control-exit-animation.png')" alt="Exit Animation Control" style="float: right;">
+
 Elementor exit animation control displays a select box field based on the [Animate.css](https://animate.style/) library. The control allows to set an exit animation effect for an item.
 
 The control is defined in `Control_Exit_Animation` class which extends `Control_Animation` class, which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::EXIT_ANIMATION` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::EXIT_ANIMATION` constant.
 
 ## Arguments
 
@@ -21,7 +23,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 		<tr>
 			<td><code>type</code></td>
 			<td><code>string</code></td>
-			<td>animation</td>
+			<td>exit_animation</td>
 			<td>The type of the control.</td>
 		</tr>
 		<tr>
@@ -76,10 +78,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -87,7 +89,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'exit_animation',
 			[
 				'label' => esc_html__( 'Exit Animation', 'plugin-name' ),
-				'type' => \Elementor\Controls_Manager::ANIMATION,
+				'type' => \Elementor\Controls_Manager::EXIT_ANIMATION,
 				'prefix_class' => 'animated ',
 			]
 		);

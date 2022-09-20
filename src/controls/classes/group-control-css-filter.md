@@ -4,7 +4,7 @@ Elementor CSS filter group control displays sliders fields to define the values 
 
 The control is defined in `Group_Control_Css_Filter` class which extends `Group_Control_Base` class.
 
-Note that when using group controls, the type should be set using the `Group_Control_Typography::get_type()` method.
+When using this group control, the `type` should be set to `Group_Control_Typography::get_type()` method.
 
 ## Arguments
 

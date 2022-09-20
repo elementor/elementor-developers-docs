@@ -4,7 +4,7 @@ Elementor border group control displays input fields to define the border includ
 
 The control is defined in `Group_Control_Border` class which extends `Group_Control_Base` class.
 
-Note that when using group controls, the type should be set using the `Group_Control_Border::get_type()` method.
+When using this group control, the `type` should be set to `Group_Control_Border::get_type()` method.
 
 ## Arguments
 

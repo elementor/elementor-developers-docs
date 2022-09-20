@@ -1,10 +1,12 @@
 # Font Control
 
+<img :src="$withBase('/assets/img/controls/control-font.png')" alt="Font Control" style="float: right;">
+
 Elementor font control displays a font select box field based on [Google Fonts](https://fonts.google.com/) library. The control allows you to set a list of fonts.
 
 The control is defined in `Control_Font` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::FONT` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::FONT` constant.
 
 ## Arguments
 
@@ -92,10 +94,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -106,7 +108,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::FONT,
 				'default' => "'Open Sans', sans-serif",
 				'selectors' => [
-					'{{WRAPPER}} .title' => 'font-family: {{VALUE}}',
+					'{{WRAPPER}} .your-class' => 'font-family: {{VALUE}}',
 				],
 			]
 		);
@@ -118,7 +120,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<h2 class="title" style="font-family: <?php echo esc_attr( $settings['font_family'] ); ?>;">
+		<h2 class="your-class">
 			...
 		</h2>
 		<?php
@@ -127,7 +129,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
-		<h2 class="title" style="font-family: {{ settings.font_family }}">
+		<h2 class="your-class">
 			...
 		</h2>
 		<?php

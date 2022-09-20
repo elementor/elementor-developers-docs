@@ -1,10 +1,14 @@
 # URL Control
 
-Elementor URL control displays a URL input field with the ability to set the target of the link to _blank to open in a new tab and nofollow attribute.
+<img :src="$withBase('/assets/img/controls/control-url.png')" alt="URL Control" style="float: right;">
+
+Elementor URL control displays a URL input field. The control also has the ability to display more controls, such as the ability to open the link in new window, to add `nofollow` attribute and to define additional attributes (a comma-separated list of key-value pairs).
+
+<img :src="$withBase('/assets/img/controls/control-url-options2.png')" alt="URL Control Options" style="float: right;">
 
 The control is defined in `Control_URL` class which extends `Control_Base_Multiple` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::URL` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::URL` constant.
 
 ## Arguments
 
@@ -99,11 +103,11 @@ Note that when using the control, the type should be set using the `\Elementor\C
 * **$url** (_`string`_) The URL.
 * **$is_external** (_`bool`_) Whether to open the url in the same tab or in a new one.
 * **$nofollow** (_`bool`_) Whether to add nofollow attribute.
-* **$custom_attributes** (_`string`_) Custom attributes string that come as a string of comma-delimited key|value pairs.
+* **$custom_attributes** (_`string`_) Custom attributes string that come as a string of comma-delimited `key|value` pairs.
 
 ## Usage
 
-```php {14-27,35-37,39-41,47-49}
+```php {14-29,37-39,41-43,49-51}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 

@@ -4,7 +4,7 @@ Elementor heading control displays a text heading between controls in the panel.
 
 The control is defined in `Control_Heading` class which extends `Base_UI_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::HEADING` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::HEADING` constant.
 
 ## Arguments
 
