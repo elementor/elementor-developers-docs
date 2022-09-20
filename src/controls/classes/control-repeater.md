@@ -4,7 +4,7 @@ Elementor repeater control allows you to build repeatable blocks of fields. You 
 
 The control is defined in `Control_Repeater` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::REPEATER` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::REPEATER` constant.
 
 ## Arguments
 

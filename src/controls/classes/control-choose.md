@@ -1,10 +1,12 @@
 # Choose Control
 
+<img :src="$withBase('/assets/img/controls/control-choose.png')" alt="Choose Control" style="float: right;">
+
 Elementor choose control displays radio buttons styled as groups of buttons with icons for each option.
 
 The control is defined in `Control_Choose` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::CHOOSE` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::CHOOSE` constant.
 
 ## Arguments
 
@@ -88,10 +90,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -116,6 +118,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				],
 				'default' => 'center',
 				'toggle' => true,
+				'selectors' => [
+					'{{WRAPPER}} .your-class' => 'text-align: {{VALUE}};',
+				],
 			]
 		);
 
@@ -126,7 +131,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<div style="text-align: <?php echo esc_attr( $settings['text_align'] ); ?>;">
+		<div class="your-class">
 			...
 		</div>
 		<?php
@@ -134,7 +139,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
-		<div style="text-align: {{ settings.text_align }}">
+		<div class="your-class">
 			...
 		</div>
 		<?php

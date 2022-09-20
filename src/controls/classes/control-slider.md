@@ -1,10 +1,14 @@
 # Slider Control
 
+<img :src="$withBase('/assets/img/controls/control-slider.png')" alt="Slider Control" style="float: right;">
+
 Elementor slider control displays a draggable range slider. The slider control can optionally have a number of unit types (`size_units`) for the user to choose from. The control also accepts a `range` argument that allows you to set the `min`, `max` and `step` values per unit type.
+
+<img :src="$withBase('/assets/img/controls/control-slider2.png')" alt="Slider Control" style="float: right;">
 
 The control is defined in `Control_Slider` class which extends `Control_Base_Units` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::SLIDER` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::SLIDER` constant.
 
 ## Arguments
 
@@ -57,7 +61,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 		<tr>
 			<td><code>size_units</code></td>
 			<td><code>array</code></td>
-			<td>[ ‘px’ ]</td>
+			<td>[ 'px' ]</td>
 			<td>An array of available CSS units like <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>deg</code> and <code>vh</code>.</td>
 		</tr>
 		<tr>

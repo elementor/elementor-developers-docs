@@ -1,10 +1,12 @@
 # Image Dimensions Control
 
-Elementor image dimensions control displays a width input, a height input and an apply button. It is used by the Image Size control to allow the user to set custom width or height for an image.
+<img :src="$withBase('/assets/img/controls/control-image-dimensions.png')" alt="Image Dimensions Control" style="float: right;">
+
+Elementor image dimensions control displays a width input, a height input and an apply button. It is used by the [Image Size group control](group-control-image-size.md) to allow the user to set custom width or height for an image.
 
 The control is defined in `Control_Image_Dimensions` class which extends `Control_Base_Multiple` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::IMAGE_DIMENSIONS` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::IMAGE_DIMENSIONS` constant.
 
 ## Arguments
 

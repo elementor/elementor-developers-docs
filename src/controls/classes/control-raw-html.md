@@ -4,7 +4,7 @@ Elementor raw HTML control displays an HTML content in the panel.
 
 The control is defined in `Control_Raw_Html` class which extends `Base_UI_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::RAW_HTML` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::RAW_HTML` constant.
 
 ## Arguments
 

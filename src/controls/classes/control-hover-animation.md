@@ -1,10 +1,12 @@
 # Hover Animation Control
 
+<img :src="$withBase('/assets/img/controls/control-hover-animation.png')" alt="Hover Animation Control" style="float: right;">
+
 Elementor hover animation control displays a select box field based on the [Hover.css](https://ianlunn.github.io/Hover/) library. The control allows to set an hover animation effect for an item.
 
 The control is defined in `Control_Hover_Animation` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::HOVER_ANIMATION` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::HOVER_ANIMATION` constant.
 
 ## Arguments
 
@@ -67,7 +69,6 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 (_`string`_) The selected hover animation class.
 
-
 ## Usage
 
 ```php {14-20,29-33,35-37,43-52}
@@ -77,10 +78,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 

@@ -1,10 +1,12 @@
 # Icons Control
 
-Elementor Icons control displays Elementor’s Icon Library as well as allows SVG icons uploads.
+<img :src="$withBase('/assets/img/controls/control-icons.png')" alt="Icons Control" style="float: right;">
+
+Elementor Icons control displays the icons chooser. In addition, it has the abilitiy to select existing icons from Elementor's "Icon Library" or "Upload SVG" to WordPress media library.
 
 The control is defined in `Control_Icons` class which extends `Control_Base_Multiple` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::ICONS` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::ICONS` constant.
 
 ## Arguments
 
@@ -101,7 +103,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {22-44,53-55,61-65}
+```php {22-44,53-55,61-66}
 <?php
 class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 
@@ -162,8 +164,9 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
-		<# var iconHTML = elementor.helpers.renderIcon( view, settings.selected_icon, { 'aria-hidden': true }, 'i' , 'object' ); #>
-
+		<#
+		var iconHTML = elementor.helpers.renderIcon( view, settings.selected_icon, { 'aria-hidden': true }, 'i' , 'object' );
+		#>
 		<div class="my-icon-wrapper">
 			{{{ iconHTML.value }}}
 		</div>

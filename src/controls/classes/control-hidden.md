@@ -4,7 +4,7 @@ Elementor hidden control adds a hidden input field to the panel. It used to save
 
 The control is defined in `Control_Hidden` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::HIDDEN` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::HIDDEN` constant.
 
 ## Arguments
 
@@ -28,7 +28,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 			<td><code>label</code></td>
 			<td><code>string</code></td>
 			<td></td>
-			<td>The label that appears above of the field. But in this case it won’t be displayed.</td>
+			<td>The label that appears above of the field. But in this case it won't be displayed.</td>
 		</tr>
 		<tr>
 			<td><code>default</code></td>

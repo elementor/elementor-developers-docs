@@ -1,10 +1,12 @@
 # Date Time Control
 
+<img :src="$withBase('/assets/img/controls/control-date-time.png')" alt="Date Time Control" style="float: right;">
+
 Elementor date time control displays a date/time picker field based on the [Flatpickr](https://flatpickr.js.org/) library.
 
 The control is defined in `Control_Date_Time` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::DATE_TIME` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::DATE_TIME` constant.
 
 ## Arguments
 

@@ -1,10 +1,12 @@
 # Select Control
 
+<img :src="$withBase('/assets/img/controls/control-select.png')" alt="Select Control" style="float: right;">
+
 Elementor select control displays a simple select box field. It accepts an array in which the `key` is the option `value` and the value is the option name.
 
 The control is defined in `Control_Select` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::SELECT` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::SELECT` constant.
 
 ## Arguments
 
@@ -82,10 +84,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 
@@ -102,6 +104,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 					'double' => esc_html__( 'Double', 'plugin-name' ),
 					'none' => esc_html__( 'None', 'plugin-name' ),
 				],
+				'selectors' => [
+					'{{WRAPPER}} .your-class' => 'border-style: {{VALUE}};',
+				],
 			]
 		);
 
@@ -112,7 +117,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 		?>
-		<div style="border-style: <?php echo esc_attr( $settings['border_style'] ); ?>">
+		<div class="your-class">
 			...
 		</div>
 		<?php
@@ -120,7 +125,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
-		<div style="border-style: {{ settings.border_style }}">
+		<div class="your-class">
 			...
 		</div>
 		<?php

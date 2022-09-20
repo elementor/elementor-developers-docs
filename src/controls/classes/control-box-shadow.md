@@ -4,7 +4,7 @@ Elementor Box Shadow control displays an input fields for horizontal shadow, ver
 
 The control is defined in `Control_Box_Shadow` class which extends `Control_Base_Multiple` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::BOX_SHADOW` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::BOX_SHADOW` constant.
 
 ## Arguments
 
@@ -38,10 +38,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 

@@ -4,7 +4,7 @@ Elementor button control displays a button in the panel that can trigger an even
 
 The control is defined in `Control_Button` class which extends `Base_UI_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::BUTTON` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::BUTTON` constant.
 
 ## Arguments
 
@@ -88,10 +88,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function register_controls() {
 
 		$this->start_controls_section(
-			'content_section',
+			'style_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
-				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
 

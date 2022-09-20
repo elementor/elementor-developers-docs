@@ -1,10 +1,12 @@
 # Number Control
 
+<img :src="$withBase('/assets/img/controls/control-number.png')" alt="Number Control" style="float: right;">
+
 Elementor number control displays a simple number input field with the option to limit the min and max values and define the step when changing the value.
 
 The control is defined in `Control_Number` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::NUMBER` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::NUMBER` constant.
 
 ## Arguments
 

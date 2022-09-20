@@ -1,10 +1,14 @@
 # Gallery Control
 
+<img :src="$withBase('/assets/img/controls/control-gallery.png')" alt="Gallery Control" style="float: right;">
+
 Elementor gallery control displays a media select area based on WordPress Galleries. The control allows to select multiple images from the WordPress Media Library.
 
 The control is defined in `Control_Gallery` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::GALLERY` constant.
+<img :src="$withBase('/assets/img/controls/control-gallery2.png')" alt="Gallery Control" style="float: right;">
+
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::GALLERY` constant.
 
 ## Arguments
 
@@ -85,7 +89,7 @@ Note that when using the control, the type should be set using the `\Elementor\C
 
 ## Usage
 
-```php {14-21,29-31,36-38}
+```php {14-22,30-32,37-39}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -104,6 +108,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Add Images', 'plugin-name' ),
 				'type' => \Elementor\Controls_Manager::GALLERY,
+				'show_label' => false,
 				'default' => [],
 			]
 		);

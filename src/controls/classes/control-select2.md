@@ -1,10 +1,12 @@
 # Select2 Control
 
+<img :src="$withBase('/assets/img/controls/control-select2.png')" alt="Select2 Control" style="float: right;">
+
 Elementor select2 control displays a select box control based on [Select2](https://select2.org/) library. It accepts an array in which the `key` is the value and the `value` is the option name. Set `multiple` to `true` to allow multiple value selection.
 
 The control is defined in `Control_Select2` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::SELECT2` constant.
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::SELECT2` constant.
 
 ## Arguments
 

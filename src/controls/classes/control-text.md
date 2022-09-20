@@ -1,10 +1,14 @@
 # Text Control
 
+<img :src="$withBase('/assets/img/controls/control-text.png')" alt="Text Control" style="float: right;">
+
 Elementor text control displays a simple text input field.
 
 The control is defined in `Control_Text` class which extends `Base_Data_Control` class.
 
-Note that when using the control, the type should be set using the `\Elementor\Controls_Manager::TEXT` constant.
+<img :src="$withBase('/assets/img/controls/control-text-block.png')" alt="Text Control - block view" style="float: right;">
+
+When using this control, the `type` should be set to `\Elementor\Controls_Manager::TEXT` constant.
 
 ## Arguments
 
