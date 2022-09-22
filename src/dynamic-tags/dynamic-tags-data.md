@@ -16,7 +16,7 @@ class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Dynamic Tag Name', 'plugin-name' );
+		return esc_html__( 'Dynamic Tag Name', 'textdomain' );
 	}
 
 	public function get_group() {

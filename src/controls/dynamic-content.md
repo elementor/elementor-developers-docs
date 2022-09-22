@@ -12,7 +12,7 @@ Use the `dynamic` argument to set dynamic tags using Elementor controls:
 $this->add_control(
 	'unique-control-name',
 	[
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::TEXT,
 		'dynamic' => [
 			'active' => true,
@@ -33,9 +33,9 @@ Let's see how a simple control can become dynamic:
 $this->add_control(
 	'heading',
 	[
-		'label' => esc_html__( 'Heading', 'plugin-name' ),
+		'label' => esc_html__( 'Heading', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'placeholder' => esc_html__( 'Enter your heading', 'plugin-name' ),
+		'placeholder' => esc_html__( 'Enter your heading', 'textdomain' ),
 		'label_block' => true,
 		'dynamic' => [
 			'active' => true,
@@ -46,9 +46,9 @@ $this->add_control(
 $this->add_control(
 	'content',
 	[
-		'label' => esc_html__( 'Content', 'plugin-name' ),
+		'label' => esc_html__( 'Content', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::TEXTAREA,
-		'placeholder' => esc_html__( 'Enter your content', 'plugin-name' ),
+		'placeholder' => esc_html__( 'Enter your content', 'textdomain' ),
 		'dynamic' => [
 			'active' => true,
 		],
@@ -58,7 +58,7 @@ $this->add_control(
 $this->add_control(
 	'count',
 	[
-		'label' => esc_html__( 'Count', 'plugin-name' ),
+		'label' => esc_html__( 'Count', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::NUMBER,
 		'default' => 0,
 		'min' => 0,
@@ -73,9 +73,9 @@ $this->add_control(
 $this->add_control(
 	'url',
 	[
-		'label' => esc_html__( 'Link', 'plugin-name' ),
+		'label' => esc_html__( 'Link', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::URL,
-		'placeholder' => esc_html__( 'https://your-link.com', 'plugin-name' ),
+		'placeholder' => esc_html__( 'https://your-link.com', 'textdomain' ),
 		'dynamic' => [
 			'active' => true,
 		],

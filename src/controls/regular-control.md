@@ -13,7 +13,7 @@ $this->add_control(
 	'control-name',
 	[
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => esc_html__( 'Control Name', 'plugin-name' ),
+		'label' => esc_html__( 'Control Name', 'textdomain' ),
 	]
 );
 ```
@@ -48,7 +48,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -57,8 +57,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'title',
 			[
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'label' => esc_html__( 'Title', 'plugin-name' ),
-				'placeholder' => esc_html__( 'Enter your title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'textdomain' ),
+				'placeholder' => esc_html__( 'Enter your title', 'textdomain' ),
 			]
 		);
 
@@ -81,7 +81,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -90,7 +90,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'size',
 			[
 				'type' => \Elementor\Controls_Manager::NUMBER,
-				'label' => esc_html__( 'Size', 'plugin-name' ),
+				'label' => esc_html__( 'Size', 'textdomain' ),
 				'placeholder' => '0',
 				'min' => 0,
 				'max' => 100,
@@ -118,7 +118,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -127,11 +127,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'open_lightbox',
 			[
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'label' => esc_html__( 'Lightbox', 'plugin-name' ),
+				'label' => esc_html__( 'Lightbox', 'textdomain' ),
 				'options' => [
-					'default' => esc_html__( 'Default', 'plugin-name' ),
-					'yes' => esc_html__( 'Yes', 'plugin-name' ),
-					'no' => esc_html__( 'No', 'plugin-name' ),
+					'default' => esc_html__( 'Default', 'textdomain' ),
+					'yes' => esc_html__( 'Yes', 'textdomain' ),
+					'no' => esc_html__( 'No', 'textdomain' ),
 				],
 				'default' => 'no',
 			]
@@ -156,7 +156,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -165,18 +165,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'alignment',
 			[
 				'type' => \Elementor\Controls_Manager::CHOOSE,
-				'label' => esc_html__( 'Alignment', 'plugin-name' ),
+				'label' => esc_html__( 'Alignment', 'textdomain' ),
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'plugin-name' ),
+						'title' => esc_html__( 'Left', 'textdomain' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'plugin-name' ),
+						'title' => esc_html__( 'Center', 'textdomain' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'plugin-name' ),
+						'title' => esc_html__( 'Right', 'textdomain' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -203,7 +203,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -212,7 +212,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'font_size',
 			[
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'label' => esc_html__( 'Size', 'plugin-name' ),
+				'label' => esc_html__( 'Size', 'textdomain' ),
 				'size_units' => [ 'px', 'em', 'rem' ],
 				'range' => [
 					'px' => [
@@ -246,7 +246,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -255,7 +255,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'text_color',
 			[
 				'type' => \Elementor\Controls_Manager::COLOR,
-				'label' => esc_html__( 'Text Color', 'plugin-name' ),
+				'label' => esc_html__( 'Text Color', 'textdomain' ),
 				'default' => '#fefefe',
 			]
 		);
@@ -279,7 +279,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -288,7 +288,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'image',
 			[
 				'type' => \Elementor\Controls_Manager::MEDIA,
-				'label' => esc_html__( 'Choose Image', 'plugin-name' ),
+				'label' => esc_html__( 'Choose Image', 'textdomain' ),
 				'default' => [
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
 				]

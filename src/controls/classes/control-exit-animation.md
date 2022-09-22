@@ -80,7 +80,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -88,7 +88,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'exit_animation',
 			[
-				'label' => esc_html__( 'Exit Animation', 'plugin-name' ),
+				'label' => esc_html__( 'Exit Animation', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::EXIT_ANIMATION,
 				'prefix_class' => 'animated ',
 			]

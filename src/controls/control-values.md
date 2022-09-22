@@ -43,7 +43,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -52,7 +52,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'continent_1',
 			[
-				'label' => esc_html__( 'Continent 1', 'plugin-name' ),
+				'label' => esc_html__( 'Continent 1', 'textdomain' ),
 				'type' => 'continents-control',
 			]
 		);
@@ -61,7 +61,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'continent_2',
 			[
-				'label' => esc_html__( 'Continent 2', 'plugin-name' ),
+				'label' => esc_html__( 'Continent 2', 'textdomain' ),
 				'type' => 'continents-control',
 				'default' => 'North America',
 			]

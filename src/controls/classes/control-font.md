@@ -96,7 +96,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -104,7 +104,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'font_family',
 			[
-				'label' => esc_html__( 'Font Family', 'plugin-name' ),
+				'label' => esc_html__( 'Font Family', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::FONT,
 				'default' => "'Open Sans', sans-serif",
 				'selectors' => [

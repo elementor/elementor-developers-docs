@@ -16,7 +16,7 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 	}
 
 	public function get_label() {
-		return esc_html__( 'My Action Name', 'plugin-name' );
+		return esc_html__( 'My Action Name', 'textdomain' );
 	}
 
 }

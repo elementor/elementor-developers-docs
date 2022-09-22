@@ -51,7 +51,7 @@ function register_new_dynamic_tag_group( $dynamic_tags_manager ) {
 	$dynamic_tags_manager->register_group(
 		'group-name',
 		[
-			'title' => esc_html__( 'Group Label', 'plugin-name' )
+			'title' => esc_html__( 'Group Label', 'textdomain' )
 		]
 	);
 

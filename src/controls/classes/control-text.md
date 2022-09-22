@@ -106,7 +106,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -114,10 +114,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'widget_title',
 			[
-				'label' => esc_html__( 'Title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'Default title', 'plugin-name' ),
-				'placeholder' => esc_html__( 'Type your title here', 'plugin-name' ),
+				'default' => esc_html__( 'Default title', 'textdomain' ),
+				'placeholder' => esc_html__( 'Type your title here', 'textdomain' ),
 			]
 		);
 

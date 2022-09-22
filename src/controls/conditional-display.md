@@ -16,7 +16,7 @@ The display condition may depend on an exact value:
 $this->add_control(
 	'unique-control-name',
 	[
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::TEXT,
 		'condition' => [
 			'dependent-control-name' => 'exact-value',
@@ -33,7 +33,7 @@ The display condition may depend on a set of values:
 $this->add_control(
 	'unique-control-name',
 	[
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::TEXT,
 		'condition' => [
 			'dependent-control-name' => [ 'value-1', 'value-2' ],
@@ -54,7 +54,7 @@ To set multiple conditions, pass several values:
 $this->add_control(
 	'unique-control-name',
 	[
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::TEXT,
 		'condition' => [
 			'dependent-control-1-name' => 'dependent-control-1-value',
@@ -100,7 +100,7 @@ Let's start with an example in which we want to allow users to set borders and s
 $this->add_control(
 	'border',
 	[
-		'label' => esc_html__( 'Border', 'plugin-name' ),
+		'label' => esc_html__( 'Border', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::SWITCHER,
 	]
 );
@@ -108,15 +108,15 @@ $this->add_control(
 $this->add_control(
 	'border_style',
 	[
-		'label' => esc_html__( 'Border Style', 'plugin-name' ),
+		'label' => esc_html__( 'Border Style', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::SELECT,
 		'options' => [
-			'' => esc_html__( 'None', 'plugin-name' ),
-			'solid' => esc_html__( 'Solid', 'plugin-name' ),
-			'double' => esc_html__( 'Double', 'plugin-name' ),
-			'dotted' => esc_html__( 'Dotted', 'plugin-name' ),
-			'dashed' => esc_html__( 'Dashed', 'plugin-name' ),
-			'groove' => esc_html__( 'Groove', 'plugin-name' ),
+			'' => esc_html__( 'None', 'textdomain' ),
+			'solid' => esc_html__( 'Solid', 'textdomain' ),
+			'double' => esc_html__( 'Double', 'textdomain' ),
+			'dotted' => esc_html__( 'Dotted', 'textdomain' ),
+			'dashed' => esc_html__( 'Dashed', 'textdomain' ),
+			'groove' => esc_html__( 'Groove', 'textdomain' ),
 		],
 		'selectors' => [
 			'{{WRAPPER}} .inner_class' => 'border-style: {{VALUE}}',
@@ -131,7 +131,7 @@ $this->add_control(
 $this->add_control(
 	'border_color',
 	[
-		'label' => esc_html__( 'Border Color', 'plugin-name' ),
+		'label' => esc_html__( 'Border Color', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::COLOR,
 		'default' => '',
 		'selectors' => [
@@ -146,7 +146,7 @@ $this->add_control(
 $this->add_responsive_control(
 	'border_width',
 	[
-		'label' => esc_html__( 'Border Width', 'plugin-name' ),
+		'label' => esc_html__( 'Border Width', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::DIMENSIONS,
 		'selectors' => [
 			'{{WRAPPER}} .inner_class' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -166,7 +166,7 @@ In the example below, the user needs to first turn on the switcher and set a bor
 $this->add_control(
 	'border',
 	[
-		'label' => esc_html__( 'Border', 'plugin-name' ),
+		'label' => esc_html__( 'Border', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::SWITCHER,
 	]
 );
@@ -174,15 +174,15 @@ $this->add_control(
 $this->add_control(
 	'border_style',
 	[
-		'label' => esc_html__( 'Border Style', 'plugin-name' ),
+		'label' => esc_html__( 'Border Style', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::SELECT,
 		'options' => [
-			'' => esc_html__( 'None', 'plugin-name' ),
-			'solid' => esc_html__( 'Solid', 'plugin-name' ),
-			'double' => esc_html__( 'Double', 'plugin-name' ),
-			'dotted' => esc_html__( 'Dotted', 'plugin-name' ),
-			'dashed' => esc_html__( 'Dashed', 'plugin-name' ),
-			'groove' => esc_html__( 'Groove', 'plugin-name' ),
+			'' => esc_html__( 'None', 'textdomain' ),
+			'solid' => esc_html__( 'Solid', 'textdomain' ),
+			'double' => esc_html__( 'Double', 'textdomain' ),
+			'dotted' => esc_html__( 'Dotted', 'textdomain' ),
+			'dashed' => esc_html__( 'Dashed', 'textdomain' ),
+			'groove' => esc_html__( 'Groove', 'textdomain' ),
 		],
 		'selectors' => [
 			'{{WRAPPER}} .inner_class' => 'border-style: {{VALUE}}',
@@ -197,7 +197,7 @@ $this->add_control(
 $this->add_control(
 	'border_color',
 	[
-		'label' => esc_html__( 'Border Color', 'plugin-name' ),
+		'label' => esc_html__( 'Border Color', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::COLOR,
 		'default' => '',
 		'selectors' => [
@@ -213,7 +213,7 @@ $this->add_control(
 $this->add_responsive_control(
 	'border_width',
 	[
-		'label' => esc_html__( 'Border Width', 'plugin-name' ),
+		'label' => esc_html__( 'Border Width', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::DIMENSIONS,
 		'selectors' => [
 			'{{WRAPPER}} .inner_class' => 'border-width: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',

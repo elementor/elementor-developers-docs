@@ -35,7 +35,7 @@ When we add a new control to the element panel, we use the inherited `add_contro
 $this->start_controls_section(
 	'style_section',
 	[
-		'label' => esc_html__( 'Style Section', 'plugin-name' ),
+		'label' => esc_html__( 'Style Section', 'textdomain' ),
 		'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 	]
 );
@@ -49,7 +49,7 @@ To create custom tabs, use the `add_tab()` method:
 function add_panel_tab() {
 	\Elementor\Controls_Manager::add_tab(
 		'new-tab',
-		esc_html__( 'New Tab', 'plugin-name' )
+		esc_html__( 'New Tab', 'textdomain' )
 	);
 }
 add_action( 'elementor/init', 'add_panel_tab' );

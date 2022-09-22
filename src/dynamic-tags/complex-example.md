@@ -54,7 +54,7 @@ function register_request_variables_dynamic_tag_group( $dynamic_tags_manager ) {
 	$dynamic_tags_manager->register_group(
 		'request-variables',
 		[
-			'title' => esc_html__( 'Request Variables', 'plugin-name' )
+			'title' => esc_html__( 'Request Variables', 'textdomain' )
 		]
 	);
 
@@ -120,7 +120,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @return string Dynamic tag title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Server Variable', 'plugin-name' );
+		return esc_html__( 'Server Variable', 'textdomain' );
 	}
 
 	/**
@@ -169,7 +169,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 			'user_selected_variable',
 			[
 				'type' => \Elementor\Controls_Manager::SELECT,
-				'label' => esc_html__( 'Variable', 'plugin-name' ),
+				'label' => esc_html__( 'Variable', 'textdomain' ),
 				'options' => $variables,
 			]
 		);

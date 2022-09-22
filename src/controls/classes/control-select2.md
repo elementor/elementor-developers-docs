@@ -92,7 +92,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -100,13 +100,13 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'show_elements',
 			[
-				'label' => esc_html__( 'Show Elements', 'plugin-name' ),
+				'label' => esc_html__( 'Show Elements', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::SELECT2,
 				'multiple' => true,
 				'options' => [
-					'title'  => esc_html__( 'Title', 'plugin-name' ),
-					'description' => esc_html__( 'Description', 'plugin-name' ),
-					'button' => esc_html__( 'Button', 'plugin-name' ),
+					'title'  => esc_html__( 'Title', 'textdomain' ),
+					'description' => esc_html__( 'Description', 'textdomain' ),
+					'button' => esc_html__( 'Button', 'textdomain' ),
 				],
 				'default' => [ 'title', 'description' ],
 			]

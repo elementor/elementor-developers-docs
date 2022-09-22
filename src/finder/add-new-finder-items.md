@@ -16,19 +16,19 @@ class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Cat
 	}
 
 	public function get_title() {
-		return esc_html__( 'Category Label', 'plugin-name' );
+		return esc_html__( 'Category Label', 'textdomain' );
 	}
 
 	public function get_category_items( array $options = [] ) {
 		return [
 			'elementor-website' => [
-				'title' => esc_html__( 'Elementor', 'plugin-name' ),
+				'title' => esc_html__( 'Elementor', 'textdomain' ),
 				'icon' => 'elementor',
 				'url' => 'https://elementor.com/',
 				'keywords' => [ 'elementor', 'website' ],
 			],
 			'wordpress-website' => [
-				'title' => esc_html__( 'WordPress', 'plugin-name' ),
+				'title' => esc_html__( 'WordPress', 'textdomain' ),
 				'icon' => 'wordpress',
 				'url' => 'https://wordpress.org/',
 				'keywords' => [ 'wordpress', 'website' ],

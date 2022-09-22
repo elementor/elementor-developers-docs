@@ -32,7 +32,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 					const fieldType  = 'text';
 					const fieldId    = `form_field_${i}`;
 					const fieldClass = `elementor-field-textual elementor-field ${item.css_classes}`;
-					const title      = "<?php echo esc_html__( 'Some text...', 'plugin-name' ); ?>";
+					const title      = "<?php echo esc_html__( 'Some text...', 'textdomain' ); ?>";
 
 					return `<input type="${fieldType}" id="${fieldId}" class="${fieldClass}" title="${title}">`;
 				}, 10, 3

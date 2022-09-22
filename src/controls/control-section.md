@@ -12,7 +12,7 @@ Following these steps to add a new control section:
 $this->start_controls_section(
 	'my_section',
 	[
-		'label' => esc_html__( 'My Section', 'plugin-name' ),
+		'label' => esc_html__( 'My Section', 'textdomain' ),
 		'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 	]
 );
@@ -44,7 +44,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -78,7 +78,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -94,7 +94,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'info_section',
 			[
-				'label' => esc_html__( 'Info', 'plugin-name' ),
+				'label' => esc_html__( 'Info', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -130,7 +130,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -146,7 +146,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'info_section',
 			[
-				'label' => esc_html__( 'Info', 'plugin-name' ),
+				'label' => esc_html__( 'Info', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -162,7 +162,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);

@@ -100,7 +100,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -108,7 +108,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'border_popover_toggle',
 			[
-				'label' => esc_html__( 'Border', 'plugin-name' ),
+				'label' => esc_html__( 'Border', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
 				'label_off' => esc_html__( 'Default', 'your-plugin' ),
 				'label_on' => esc_html__( 'Custom', 'your-plugin' ),

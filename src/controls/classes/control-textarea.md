@@ -92,7 +92,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -100,11 +100,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'item_description',
 			[
-				'label' => esc_html__( 'Description', 'plugin-name' ),
+				'label' => esc_html__( 'Description', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXTAREA,
 				'rows' => 10,
-				'default' => esc_html__( 'Default description', 'plugin-name' ),
-				'placeholder' => esc_html__( 'Type your description here', 'plugin-name' ),
+				'default' => esc_html__( 'Default description', 'textdomain' ),
+				'placeholder' => esc_html__( 'Type your description here', 'textdomain' ),
 			]
 		);
 

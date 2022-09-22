@@ -92,7 +92,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -100,19 +100,19 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'text_align',
 			[
-				'label' => esc_html__( 'Alignment', 'plugin-name' ),
+				'label' => esc_html__( 'Alignment', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'plugin-name' ),
+						'title' => esc_html__( 'Left', 'textdomain' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'plugin-name' ),
+						'title' => esc_html__( 'Center', 'textdomain' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'plugin-name' ),
+						'title' => esc_html__( 'Right', 'textdomain' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],

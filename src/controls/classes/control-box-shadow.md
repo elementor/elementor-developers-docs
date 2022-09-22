@@ -40,7 +40,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -48,7 +48,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'custom_box_shadow',
 			[
-				'label' => esc_html__( 'Box Shadow', 'plugin-name' ),
+				'label' => esc_html__( 'Box Shadow', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::BOX_SHADOW,
 				'selectors' => [
 					'{{SELECTOR}}' => 'box-shadow: {{HORIZONTAL}}px {{VERTICAL}}px {{BLUR}}px {{SPREAD}}px {{COLOR}};',

@@ -12,7 +12,7 @@ When conditions have sub-conditions, the condition class needs to use the follow
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
 	public function get_all_label() {
-		return esc_html__( 'All Items', 'plugin-name' );
+		return esc_html__( 'All Items', 'textdomain' );
 	}
 
 	public function register_sub_conditions() {

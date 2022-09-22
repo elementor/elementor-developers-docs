@@ -50,14 +50,14 @@ To add new shape dividers in your theme, use the following code:
 function custom_elementor_shape_dividers( $additional_shapes ) {
 
 	$additional_shapes['shape-divider-1'] = [
-		'title'        => esc_html__( 'Shape divider 1', 'plugin-name' ),
+		'title'        => esc_html__( 'Shape divider 1', 'textdomain' ),
 		'url'          => get_stylesheet_directory_uri() . '/assets/shapes/shape-1.svg',
 		'path'         => get_stylesheet_directory() . '/assets/shapes/shape-1.svg',
 		'height_only'  => true,
 	];
 
 	$additional_shapes['shape-divider-2'] = [
-		'title'        => esc_html__( 'Shape divider 2', 'plugin-name' ),
+		'title'        => esc_html__( 'Shape divider 2', 'textdomain' ),
 		'url'          => get_stylesheet_directory_uri() . '/assets/shapes/shape-2.svg',
 		'path'         => get_stylesheet_directory() . '/assets/shapes/shape-2.svg',
 		'has_flip'     => true,
@@ -83,14 +83,14 @@ To add new shape dividers in your plugin, use the following code:
 function custom_elementor_shape_dividers( $additional_shapes ) {
 
 	$additional_shapes['shape-divider-1'] = [
-		'title'        => esc_html__( 'Shape divider 1', 'plugin-name' ),
+		'title'        => esc_html__( 'Shape divider 1', 'textdomain' ),
 		'url'          => plugins_url( __FILE__ ) . 'assets/shapes/shape-1.svg',
 		'path'         => plugin_dir_path( __FILE__ ) . 'assets/shapes/shape-1.svg',
 		'height_only'  => true,
 	];
 
 	$additional_shapes['shape-divider-2'] = [
-		'title'        => esc_html__( 'Shape divider 2', 'plugin-name' ),
+		'title'        => esc_html__( 'Shape divider 2', 'textdomain' ),
 		'url'          => plugins_url( __FILE__ ) . 'assets/shapes/shape-2.svg',
 		'path'         => plugin_dir_path( __FILE__ ) . 'assets/shapes/shape-2.svg',
 		'has_flip'     => true,

@@ -33,7 +33,7 @@ Membership addons can use this filter hook to check whether or not the user can 
 function restrict_content_check( $content ) {
 
 	if ( ! membership_plugin_is_content_allowed() ) {
-		$content = esc_html__( 'Forbidden', 'plugin-name' );
+		$content = esc_html__( 'Forbidden', 'textdomain' );
 		return;
 	}
 

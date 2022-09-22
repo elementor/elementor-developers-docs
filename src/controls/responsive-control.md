@@ -12,7 +12,7 @@ The following code will add a new responsive control:
 $this->add_responsive_control(
 	'control-name',
 	[
-		'label' => esc_html__( 'Spacing', 'plugin-name' ),
+		'label' => esc_html__( 'Spacing', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::SLIDER,
 	]
 );
@@ -48,7 +48,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -57,7 +57,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'space_between',
 			[
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'label' => esc_html__( 'Spacing', 'plugin-name' ),
+				'label' => esc_html__( 'Spacing', 'textdomain' ),
 				'range' => [
 					'px' => [
 						'min' => 0,
@@ -102,7 +102,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -111,7 +111,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'title_padding',
 			[
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
-				'label' => esc_html__( 'Padding', 'plugin-name' ),
+				'label' => esc_html__( 'Padding', 'textdomain' ),
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
 					'{{WRAPPER}} .widget-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -138,7 +138,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style Section', 'plugin-name' ),
+				'label' => esc_html__( 'Style Section', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -147,18 +147,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			'content_align',
 			[
 				'type' => \Elementor\Controls_Manager::CHOOSE,
-				'label' => esc_html__( 'Alignment', 'plugin-name' ),
+				'label' => esc_html__( 'Alignment', 'textdomain' ),
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'plugin-name' ),
+						'title' => esc_html__( 'Left', 'textdomain' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'plugin-name' ),
+						'title' => esc_html__( 'Center', 'textdomain' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'plugin-name' ),
+						'title' => esc_html__( 'Right', 'textdomain' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],

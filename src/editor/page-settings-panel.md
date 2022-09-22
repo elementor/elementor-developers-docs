@@ -72,7 +72,7 @@ function register_document_controls( $document ) {
     $document->start_controls_section(
         'test_section',
         [
-            'label' => esc_html__( 'Test Section', 'plugin-name' ),
+            'label' => esc_html__( 'Test Section', 'textdomain' ),
             'tab' => \Elementor\Controls_Manager::TAB_STYLE,
         ]
     );
@@ -80,7 +80,7 @@ function register_document_controls( $document ) {
 	$document->add_control(
 		'test_color',
 		[
-			'label' => esc_html__( 'Test Color', 'plugin-name' ),
+			'label' => esc_html__( 'Test Color', 'textdomain' ),
 			'type' => \Elementor\Controls_Manager::COLOR,
 			'selectors' => [
 				'{{WRAPPER}}' => 'background-color: {{VALUE}}',

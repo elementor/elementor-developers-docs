@@ -35,7 +35,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 			[
 				'type'        => 'text',
 				'class'       => 'elementor-test-field',
-				'placeholder' => esc_html__( 'Some placeholder', 'plugin-name' ),
+				'placeholder' => esc_html__( 'Some placeholder', 'textdomain' ),
 			]
 		);
 

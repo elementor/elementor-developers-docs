@@ -92,7 +92,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -100,7 +100,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'custom_html',
 			[
-				'label' => esc_html__( 'Custom HTML', 'plugin-name' ),
+				'label' => esc_html__( 'Custom HTML', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::CODE,
 				'language' => 'html',
 				'rows' => 20,
