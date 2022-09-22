@@ -16,7 +16,7 @@ class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	}
 
 	public function get_label() {
-		return esc_html__( 'My Condition Name', 'plugin-name' );
+		return esc_html__( 'My Condition Name', 'textdomain' );
 	}
 
 }

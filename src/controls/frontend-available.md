@@ -10,7 +10,7 @@ The editor has hundreds of controls. Exposing all of them in the frontend can ca
 $this->add_control(
 	'unique-control-name',
 	[
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::NUMBER,
 		'default' => 100,
 		'frontend_available' => true,
@@ -51,7 +51,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Test Widget', 'plugin-name' );
+		return esc_html__( 'Test Widget', 'textdomain' );
 	}
 
 	/**
@@ -85,7 +85,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -93,7 +93,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'some_number',
 			[
-				'label' => esc_html__( 'Some Number', 'plugin-name' ),
+				'label' => esc_html__( 'Some Number', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::NUMBER,
 				'default' => 100,
 				'frontend_available' => true,

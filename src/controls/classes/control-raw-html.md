@@ -84,7 +84,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -92,9 +92,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'important_note',
 			[
-				'label' => esc_html__( 'Important Note', 'plugin-name' ),
+				'label' => esc_html__( 'Important Note', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::RAW_HTML,
-				'raw' => esc_html__( 'A very important message to show in the panel.', 'plugin-name' ),
+				'raw' => esc_html__( 'A very important message to show in the panel.', 'textdomain' ),
 				'content_classes' => 'your-class',
 			]
 		);

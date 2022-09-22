@@ -86,7 +86,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -94,15 +94,15 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'border_style',
 			[
-				'label' => esc_html__( 'Border Style', 'plugin-name' ),
+				'label' => esc_html__( 'Border Style', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'solid',
 				'options' => [
-					'solid'  => esc_html__( 'Solid', 'plugin-name' ),
-					'dashed' => esc_html__( 'Dashed', 'plugin-name' ),
-					'dotted' => esc_html__( 'Dotted', 'plugin-name' ),
-					'double' => esc_html__( 'Double', 'plugin-name' ),
-					'none' => esc_html__( 'None', 'plugin-name' ),
+					'solid'  => esc_html__( 'Solid', 'textdomain' ),
+					'dashed' => esc_html__( 'Dashed', 'textdomain' ),
+					'dotted' => esc_html__( 'Dotted', 'textdomain' ),
+					'double' => esc_html__( 'Double', 'textdomain' ),
+					'none' => esc_html__( 'None', 'textdomain' ),
 				],
 				'selectors' => [
 					'{{WRAPPER}} .your-class' => 'border-style: {{VALUE}};',

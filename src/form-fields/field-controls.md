@@ -42,7 +42,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 		$field_controls = [
 			'first-control' => [
 				'name' => 'first-control',
-				'label' => esc_html__( 'First Control', 'plugin-name' ),
+				'label' => esc_html__( 'First Control', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'condition' => [
 					'field_type' => $this->get_type(),
@@ -53,7 +53,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 			],
 			'second-control' => [
 				'name' => 'second-control',
-				'label' => esc_html__( 'Second Control', 'plugin-name' ),
+				'label' => esc_html__( 'Second Control', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'condition' => [
 					'field_type' => $this->get_type(),

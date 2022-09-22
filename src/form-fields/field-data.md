@@ -16,7 +16,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 	}
 
 	public function get_label() {
-		return esc_html__( 'My Field Name', 'plugin-name' );
+		return esc_html__( 'My Field Name', 'textdomain' );
 	}
 
 }

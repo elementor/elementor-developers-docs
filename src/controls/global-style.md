@@ -12,7 +12,7 @@ To set global styles with Elementor controls, use the `global` argument in any c
 $this->add_control(
 	'unique-control-name',
 	[
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::COLOR,
 		'global' => [
 			// ...
@@ -58,7 +58,7 @@ Let's see how a control can inherit global styles from the site's design system,
 $this->add_control(
 	'heading_color',
 	[
-		'label' => esc_html__( 'Heading Color', 'plugin-name' ),
+		'label' => esc_html__( 'Heading Color', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::COLOR,
 		'selectors' => [
 			'{{WRAPPER}} .heading-class' => 'color: {{VALUE}};',
@@ -72,7 +72,7 @@ $this->add_control(
 $this->add_control(
 	'sub_heading_color',
 	[
-		'label' => esc_html__( 'Sub Heading Color', 'plugin-name' ),
+		'label' => esc_html__( 'Sub Heading Color', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::COLOR,
 		'selectors' => [
 			'{{WRAPPER}} .sub-heading-class' => 'color: {{VALUE}};',
@@ -86,7 +86,7 @@ $this->add_control(
 $this->add_control(
 	'content_color',
 	[
-		'label' => esc_html__( 'Content Color', 'plugin-name' ),
+		'label' => esc_html__( 'Content Color', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::COLOR,
 		'selectors' => [
 			'{{WRAPPER}} .content-class' => 'color: {{VALUE}};',

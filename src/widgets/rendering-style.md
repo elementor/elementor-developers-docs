@@ -17,7 +17,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -25,9 +25,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label' => esc_html__( 'Title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'placeholder' => esc_html__( 'Enter your title', 'plugin-name' ),
+				'placeholder' => esc_html__( 'Enter your title', 'textdomain' ),
 
 			]
 		);
@@ -37,7 +37,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_style',
 			[
-				'label' => esc_html__( 'Style', 'plugin-name' ),
+				'label' => esc_html__( 'Style', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -45,7 +45,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'color',
 			[
-				'label' => esc_html__( 'Color', 'plugin-name' ),
+				'label' => esc_html__( 'Color', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'default' => '#f00',
 				'selectors' => [

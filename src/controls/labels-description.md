@@ -11,8 +11,8 @@ $this->add_control(
 	'unique-control-name',
 	[
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
-		'description' => esc_html__( 'Short control description.', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
+		'description' => esc_html__( 'Short control description.', 'textdomain' ),
 		'show_label' => false,
 		'label_block' => false,
 		'separator' => 'after'
@@ -40,7 +40,7 @@ $this->add_control(
 	'unique-control-name',
 	[
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 	]
 );
 ```
@@ -56,7 +56,7 @@ $this->add_control(
 	'unique-control-name',
 	[
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'label_block' => true,
 	]
 );
@@ -73,7 +73,7 @@ $this->add_control(
 	'unique-control-name',
 	[
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
 		'show_label' => false,
 	]
 );
@@ -90,8 +90,8 @@ $this->add_control(
 	'unique-control-name',
 	[
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => esc_html__( 'Control Label', 'plugin-name' ),
-		'description' => esc_html__( 'Short control description.', 'plugin-name' ),
+		'label' => esc_html__( 'Control Label', 'textdomain' ),
+		'description' => esc_html__( 'Short control description.', 'textdomain' ),
 	]
 );
 ```

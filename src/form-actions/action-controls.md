@@ -42,7 +42,7 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 		$widget->start_controls_section(
 			'custom_action_section',
 			[
-				'label' => esc_html__( 'Custom Action', 'plugin-name' ),
+				'label' => esc_html__( 'Custom Action', 'textdomain' ),
 				'condition' => [
 					'submit_actions' => $this->get_name(),
 				],
@@ -52,7 +52,7 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 		$widget->add_control(
 			'custom_action_api_key',
 			[
-				'label' => esc_html__( 'API Key', 'plugin-name' ),
+				'label' => esc_html__( 'API Key', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 			]
 		);
@@ -60,7 +60,7 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 		$widget->add_control(
 			'custom_action_app_id',
 			[
-				'label' => esc_html__( 'App ID', 'plugin-name' ),
+				'label' => esc_html__( 'App ID', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 			]
 		);

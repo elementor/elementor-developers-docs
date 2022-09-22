@@ -17,7 +17,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -25,30 +25,30 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => esc_html__( 'List', 'plugin-name' ),
+				'label' => esc_html__( 'List', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => [
 					[
 						'name' => 'text',
-						'label' => esc_html__( 'Text', 'plugin-name' ),
+						'label' => esc_html__( 'Text', 'textdomain' ),
 						'type' => \Elementor\Controls_Manager::TEXT,
-						'placeholder' => esc_html__( 'List Item', 'plugin-name' ),
-						'default' => esc_html__( 'List Item', 'plugin-name' ),
+						'placeholder' => esc_html__( 'List Item', 'textdomain' ),
+						'default' => esc_html__( 'List Item', 'textdomain' ),
 					],
 					[
 						'name' => 'link',
-						'label' => esc_html__( 'Link', 'plugin-name' ),
+						'label' => esc_html__( 'Link', 'textdomain' ),
 						'type' => \Elementor\Controls_Manager::URL,
-						'placeholder' => esc_html__( 'https://your-link.com', 'plugin-name' ),
+						'placeholder' => esc_html__( 'https://your-link.com', 'textdomain' ),
 					],
 				],
 				'default' => [
 					[
-						'text' => esc_html__( 'List Item #1', 'plugin-name' ),
+						'text' => esc_html__( 'List Item #1', 'textdomain' ),
 						'link' => 'https://elementor.com/',
 					],
 					[
-						'text' => esc_html__( 'List Item #2', 'plugin-name' ),
+						'text' => esc_html__( 'List Item #2', 'textdomain' ),
 						'link' => 'https://elementor.com/',
 					],
 				],

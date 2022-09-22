@@ -98,7 +98,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -107,18 +107,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 		$repeater->add_control(
 			'list_title', [
-				'label' => esc_html__( 'Title', 'plugin-name' ),
+				'label' => esc_html__( 'Title', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'List Title' , 'plugin-name' ),
+				'default' => esc_html__( 'List Title' , 'textdomain' ),
 				'label_block' => true,
 			]
 		);
 
 		$repeater->add_control(
 			'list_content', [
-				'label' => esc_html__( 'Content', 'plugin-name' ),
+				'label' => esc_html__( 'Content', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::WYSIWYG,
-				'default' => esc_html__( 'List Content' , 'plugin-name' ),
+				'default' => esc_html__( 'List Content' , 'textdomain' ),
 				'show_label' => false,
 			]
 		);
@@ -126,7 +126,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'list_color',
 			[
-				'label' => esc_html__( 'Color', 'plugin-name' ),
+				'label' => esc_html__( 'Color', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}'
@@ -137,17 +137,17 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'list',
 			[
-				'label' => esc_html__( 'Repeater List', 'plugin-name' ),
+				'label' => esc_html__( 'Repeater List', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => $repeater->get_controls(),
 				'default' => [
 					[
-						'list_title' => esc_html__( 'Title #1', 'plugin-name' ),
-						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'plugin-name' ),
+						'list_title' => esc_html__( 'Title #1', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
 					],
 					[
-						'list_title' => esc_html__( 'Title #2', 'plugin-name' ),
-						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'plugin-name' ),
+						'list_title' => esc_html__( 'Title #2', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
 					],
 				],
 				'title_field' => '{{{ list_title }}}',

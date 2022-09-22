@@ -32,7 +32,7 @@ function add_preferences_controls( \Elementor\PageSettings\Page $page ) {
 	$this->add_control(
 		'something',
 		[
-			'label' => esc_html__( 'Enable Something', 'plugin-name' ),
+			'label' => esc_html__( 'Enable Something', 'textdomain' ),
 			'type' => \Elementor\Controls_Manager::SWITCHER,
 			'default' => 'yes',
 		]
