@@ -22,7 +22,7 @@ elementor-addon/
 
 You can zip the entire `elementor-addon` folder and upload the `zip` file to your site from "_WordPress Dashboard_" > "_Plugins_" screen.
 
-## Addon files
+## Addon Files
 
 These widgets will require several files. The main file `elementor-addon.php` will register the widgets. The `hello-world-widget-1.php` and `hello-world-widget-2.php` files will control the widget’s functionality: 
 
