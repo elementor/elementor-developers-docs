@@ -38,6 +38,7 @@ These widgets will require several files. The main file `elementor-addon.php` wi
  * Version:     1.0.0
  * Author:      Elementor Developer
  * Author URI:  https://developers.elementor.com/
+ * Text Domain: elementor-addon
  */
 
 function register_hello_world_widget( $widgets_manager ) {
