@@ -21,6 +21,16 @@ Elementor has a hook that lets developers add code before or after elements in t
 |-----------|-----------------------------|-----------------------|
 | `element` | _`\Elementor\Element_Base`_ | The element instance  |
 
+## Element Types
+
+The dynamic portion `$element_type` refers to the type of element you're targeting. For example here are some types of elements you can use:
+
+* `section` - applies on sections and inner-sections.
+* `column` - applies on columns and inner-columns.
+* `container` - applies on containers and inner-containers.
+* `widget` - applies on all the widgets.
+* Specific widgets - `heading`, `image`, `button`, `icon-box`, `google_maps`, etc.
+
 ## Example
 
 ```php
