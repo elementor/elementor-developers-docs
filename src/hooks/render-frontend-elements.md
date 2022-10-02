@@ -19,7 +19,7 @@ Elementor has a hook that lets developers add code before or after elements in t
 
 | Argument  | Type                        | Description           |
 |-----------|-----------------------------|-----------------------|
-| `element` | _`\Elementor\Element_Base`_ | The element instance  |
+| `element` | _`\Elementor\Element_Base`_ | The element instance. |
 
 ## Element Types
 
@@ -29,15 +29,84 @@ The dynamic portion `$element_type` refers to the type of element you're targeti
 * `column` - applies on columns and inner-columns.
 * `container` - applies on containers and inner-containers.
 * `widget` - applies on all the widgets.
-* Specific widgets - `heading`, `image`, `button`, `icon-box`, `google_maps`, etc.
 
 ## Example
 
+### All Elements
+
+Apply changes to all the elements:
+
 ```php
+<?php
+/**
+ * Add `<div>` before all the elements in the page.
+ *
+ * @since 1.0.0
+ * @param \Elementor\Element_Base $element The element instance.
+ */
+function add_div_before_all_elements( $element ) {
+	?>
+	<div class="before-element"></div>
+	<?php
+}
+add_action( 'elementor/frontend/before_render', 'add_div_before_all_elements' );
+
+/**
+ * Add `<div>` after all the elements in the page.
+ *
+ * @since 1.0.0
+ * @param \Elementor\Element_Base $element The element instance.
+ */
+function add_div_after_all_elements( $element ) {
+	?>
+	<div class="after-element"></div>
+	<?php
+}
+add_action( 'elementor/frontend/after_render', 'add_div_after_all_elements' );
+```
+
+### Specific Elements
+
+Apply changes only on widgets:
+
+```php
+<?php
+/**
+ * Add `<div>` before all the widgets in the page.
+ *
+ * @since 1.0.0
+ * @param \Elementor\Element_Base $element The element instance.
+ */
+function add_div_before_all_the_widget( $element ) {
+	?>
+	<div class="before-widget"></div>
+	<?php
+}
+add_action( 'elementor/frontend/widget/before_render', 'add_div_before_all_the_widget' );
+
+/**
+ * Add `<div>` after all the widgets in the page.
+ *
+ * @since 1.0.0
+ * @param \Elementor\Element_Base $element The element instance.
+ */
+function add_div_after_all_the_widget( $element ) {
+	?>
+	<div class="after-widget"></div>
+	<?php
+}
+add_action( 'elementor/frontend/widget/after_render', 'add_div_after_all_the_widget' );
+```
+
+### Advanced Usage
+
+Change the element instance using the `$element` parameter.
+
+```php
+<?php
 /**
  * Add a custom class and a data attribute to all the elements
- * containing a specific setting defined through the element
- * control.
+ * containing a specific setting defined through the element control.
  *
  * @since 1.0.0
  * @param \Elementor\Element_Base $element The element instance.
