@@ -36,11 +36,11 @@ Runs before or after an editor section is registered. This is used to add additi
 
 ```php
 /**
- * @param \Elementor\Controls_Stack $element    The element stack.
+ * @param \Elementor\Controls_Stack $element    The element type.
  * @param string                    $section_id Section ID.
  * @param array                     $args       Section arguments.
  */
-add_action( 'elementor/element/before_section_start', function( $element, $section_id, $args ) {
+function inject_custom_control( $element, $section_id, $args ) {
 
 	if ( 'section' === $element->get_name() && 'section_background' === $section_id ) {
 
@@ -64,7 +64,8 @@ add_action( 'elementor/element/before_section_start', function( $element, $secti
 
 	}
 
-}, 10, 3 );
+}
+add_action( 'elementor/element/before_section_start', 'inject_custom_control', 10, 3 );
 ```
 
 
@@ -78,11 +79,11 @@ Runs within a section in the editor, after it was opened and before it was close
 
 ```php
 /**
- * @param \Elementor\Controls_Stack $element    The element stack.
+ * @param \Elementor\Controls_Stack $element    The element type.
  * @param string                    $section_id Section ID.
  * @param array                     $args       Section arguments.
  */
-add_action( 'elementor/element/after_section_start', function( $element, $section_id, $args ) {
+function inject_custom_control( $element, $section_id, $args ) {
 
 	if ( 'section' === $element->get_name() && 'section_background' === $section_id ) {
 
@@ -96,7 +97,8 @@ add_action( 'elementor/element/after_section_start', function( $element, $sectio
 
 	}
 
-}, 10, 3 );
+}
+add_action( 'elementor/element/after_section_start', 'inject_custom_control', 10, 3 );
 ```
 
 ## Targeting Specific Elements
@@ -134,10 +136,10 @@ Runs before / after a specific element and a specific section.
 
 ```php
 /**
- * @param \Elementor\Controls_Stack $element    The element stack.
- * @param array                     $args       Section arguments.
+ * @param \Elementor\Controls_Stack $element The element type.
+ * @param array                     $args    Section arguments.
  */
-add_action( 'elementor/element/heading/section_title/before_section_start', function( $element, $args ) {
+function inject_heading_controls( $element, $args ) {
 
 	$element->start_controls_section(
 		'custom_section',
@@ -157,7 +159,8 @@ add_action( 'elementor/element/heading/section_title/before_section_start', func
 
 	$element->end_controls_section();
 
-}, 10, 2 );
+}
+add_action( 'elementor/element/heading/section_title/before_section_start', 'inject_heading_controls', 10, 2 );
 ```
 
 
@@ -171,10 +174,10 @@ Runs within an editor section, after it was opened and before the section was cl
 
 ```php
 /**
- * @param \Elementor\Controls_Stack $element    The element stack.
- * @param array                     $args       Section arguments.
+ * @param \Elementor\Controls_Stack $element The element type.
+ * @param array                     $args    Section arguments.
  */
-add_action( 'elementor/element/heading/section_title/before_section_start', function( $element, $args ) {
+function inject_heading_controls( $element, $args ) {
 
 	$element->add_control(
 		'custom_control',
@@ -184,5 +187,6 @@ add_action( 'elementor/element/heading/section_title/before_section_start', func
 		]
 	);
 
-}, 10, 2 );
+}
+add_action( 'elementor/element/heading/section_title/before_section_start', 'inject_heading_controls', 10, 2 );
 ```
