@@ -27,3 +27,9 @@ wp elementor library connect --user=admin --token=xxx
 ```
 
 This command will connect the WordPress `admin` user to the Elementor library .
+
+## Notes
+
+::: warning Notes
+This command is used by Elementor team to connect with Elementor servers in order to update the library using CLI for testing and debugging. For the moment, external developers cannot obtain the `token`.
+:::
