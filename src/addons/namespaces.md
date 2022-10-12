@@ -26,7 +26,7 @@ Elementor's namespaces are organize in sub-namespaces to organize similar functi
 
 ## Defining Main Namespaces
 
-Due to limitations in the WordPress athitecture, you can't add namespaces to the main file where the header comments are located. This is why both Elementor and Elementor Pro load the `plugin.php` file where the functionality is located and where the main namespace is defined.
+Due to limitations in the WordPress architecture, you can't add namespaces to the main file where the header comments are located. This is why both Elementor and Elementor Pro load the `plugin.php` file where the functionality is located and where the main namespace is defined.
 
 Addon developers can use the same structure:
 
