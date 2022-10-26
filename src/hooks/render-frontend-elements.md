@@ -46,7 +46,7 @@ Apply changes to all the elements:
  */
 function add_div_before_all_elements( $element ) {
 	?>
-	<div class="before-element"></div>
+	<div class="before-element">Text before element</div>
 	<?php
 }
 add_action( 'elementor/frontend/before_render', 'add_div_before_all_elements' );
@@ -59,7 +59,7 @@ add_action( 'elementor/frontend/before_render', 'add_div_before_all_elements' );
  */
 function add_div_after_all_elements( $element ) {
 	?>
-	<div class="after-element"></div>
+	<div class="after-element">Text after element</div>
 	<?php
 }
 add_action( 'elementor/frontend/after_render', 'add_div_after_all_elements' );
@@ -79,7 +79,7 @@ Apply changes only on widgets:
  */
 function add_div_before_all_the_widget( $element ) {
 	?>
-	<div class="before-widget"></div>
+	<div class="before-widget">Text before widget</div>
 	<?php
 }
 add_action( 'elementor/frontend/widget/before_render', 'add_div_before_all_the_widget' );
@@ -92,7 +92,7 @@ add_action( 'elementor/frontend/widget/before_render', 'add_div_before_all_the_w
  */
 function add_div_after_all_the_widget( $element ) {
 	?>
-	<div class="after-widget"></div>
+	<div class="after-widget">Text after widget</div>
 	<?php
 }
 add_action( 'elementor/frontend/widget/after_render', 'add_div_after_all_the_widget' );
