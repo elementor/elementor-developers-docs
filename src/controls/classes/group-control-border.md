@@ -25,30 +25,6 @@ When using this group control, the `type` should be set to `Group_Control_Border
 			<td>The type of the control.</td>
 		</tr>
 		<tr>
-			<td><code>label</code></td>
-			<td><code>string</code></td>
-			<td></td>
-			<td>The label that appears above of the field.</td>
-		</tr>
-		<tr>
-			<td><code>description</code></td>
-			<td><code>string</code></td>
-			<td></td>
-			<td>The description that appears below the field.</td>
-		</tr>
-		<tr>
-			<td><code>show_label</code></td>
-			<td><code>bool</code></td>
-			<td>true</td>
-			<td>Whether to display the label.</td>
-		</tr>
-		<tr>
-			<td><code>label_block</code></td>
-			<td><code>bool</code></td>
-			<td>false</td>
-			<td>Whether to display the label in a separate line.</td>
-		</tr>
-		<tr>
 			<td><code>separator</code></td>
 			<td><code>string</code></td>
 			<td>default</td>
@@ -58,7 +34,7 @@ When using this group control, the `type` should be set to `Group_Control_Border
 			<td><code>exclude</code></td>
 			<td><code>array</code></td>
 			<td></td>
-			<td>Exclude some controls from the group control. Example: <code>['color']</code></td>
+			<td>Exclude some controls from the group control. Example: <code>[ 'color' ]</code></td>
 		</tr>
 	</tbody>
 </table>
@@ -87,7 +63,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'border',
-				'label' => esc_html__( 'Border', 'textdomain' ),
 				'selector' => '{{WRAPPER}} .your-class',
 			]
 		);
