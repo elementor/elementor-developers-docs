@@ -30,6 +30,8 @@ When you finish building a wrapper, you can start extending Elementor components
 * [Create new widgets](./../widgets/)
 * [Create new controls](./../controls/)
 * [Create new dynamic tags](./../dynamic-tags/)
+* [Create new form actions](./../form-actions/)
+* [Create new form fields](./../form-fields/)
 * [Create new finder categories](./../finder/)
 * [Extend the context menu](./../context-menu/)
 
