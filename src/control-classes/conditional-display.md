@@ -93,7 +93,7 @@ We simply add a `!` suffix to the control name.
 
 ## Condition Example
 
-Let's start with an example in which we want to allow users to set borders and style them. To simplify the user experience, we initially hide all the border controls and leave only a [switcher](./../controls/classes/control-switcher/). If a user turns on the switcher, they will see all the border controls.
+Let's start with an example in which we want to allow users to set borders and style them. To simplify the user experience, we initially hide all the border controls and leave only a [switcher](./control-switcher/). If a user turns on the switcher, they will see all the border controls.
 
 
 ```php{2,25-27,41-43,55-57}

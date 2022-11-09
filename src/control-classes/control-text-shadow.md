@@ -63,4 +63,4 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## Notes
 
-Please not that developers should not use this control rather the [Text Shadow Group Control](./../classes/group-control-text-shadow/).
+Please not that developers should not use this control rather the [Text Shadow Group Control](./group-control-text-shadow/).

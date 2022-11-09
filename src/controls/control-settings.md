@@ -39,5 +39,4 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 }
 ```
 
-Later on, you can utilize those settings when generating a [control template](./../controls/control-template/).
-
+Later on, you can utilize those settings when generating a [control template](./control-template/).
