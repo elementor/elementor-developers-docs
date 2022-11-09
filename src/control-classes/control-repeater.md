@@ -89,9 +89,101 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
+Usage example with `fields` array:
+
+```php {14-55,64-71,76-83}
+<?php
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+
+		$this->add_control(
+			'list',
+			[
+				'label' => esc_html__( 'Repeater List', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::REPEATER,
+				'fields' => [
+					[
+						'name' = 'list_title',
+						'label' => esc_html__( 'Title', 'textdomain' ),
+						'type' => \Elementor\Controls_Manager::TEXT,
+						'default' => esc_html__( 'List Title' , 'textdomain' ),
+						'label_block' => true,
+					],
+					[
+						'name' = 'list_content',
+						'label' => esc_html__( 'Content', 'textdomain' ),
+						'type' => \Elementor\Controls_Manager::WYSIWYG,
+						'default' => esc_html__( 'List Content' , 'textdomain' ),
+						'show_label' => false,
+					],
+					[
+						'name' = 'list_color',
+						'label' => esc_html__( 'Color', 'textdomain' ),
+						'type' => \Elementor\Controls_Manager::COLOR,
+						'selectors' => [
+							'{{WRAPPER}} {{CURRENT_ITEM}}' => 'color: {{VALUE}}'
+						],
+					]
+				],
+				'default' => [
+					[
+						'list_title' => esc_html__( 'Title #1', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
+					],
+					[
+						'list_title' => esc_html__( 'Title #2', 'textdomain' ),
+						'list_content' => esc_html__( 'Item content. Click the edit button to change this text.', 'textdomain' ),
+					],
+				],
+				'title_field' => '{{{ list_title }}}',
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+	protected function render() {
+		$settings = $this->get_settings_for_display();
+
+		if ( $settings['list'] ) {
+			echo '<dl>';
+			foreach (  $settings['list'] as $item ) {
+				echo '<dt class="elementor-repeater-item-' . esc_attr( $item['_id'] ) . '">' . $item['list_title'] . '</dt>';
+				echo '<dd>' . $item['list_content'] . '</dd>';
+			}
+			echo '</dl>';
+		}
+	}
+
+	protected function content_template() {
+		?>
+		<# if ( settings.list.length ) { #>
+		<dl>
+			<# _.each( settings.list, function( item ) { #>
+				<dt class="elementor-repeater-item-{{ item._id }}">{{{ item.list_title }}}</dt>
+				<dd>{{{ item.list_content }}}</dd>
+			<# }); #>
+			</dl>
+		<# } #>
+		<?php
+	}
+
+}
+```
+
 Usage example with `Repeater()` class:
 
-```php {14-43,50,72-79,84-91}
+```php {14-45,52,74-81,86-93}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -108,7 +200,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$repeater = new \Elementor\Repeater();
 
 		$repeater->add_control(
-			'list_title', [
+			'list_title',
+			[
 				'label' => esc_html__( 'Title', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => esc_html__( 'List Title' , 'textdomain' ),
@@ -117,7 +210,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		);
 
 		$repeater->add_control(
-			'list_content', [
+			'list_content',
+			[
 				'label' => esc_html__( 'Content', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::WYSIWYG,
 				'default' => esc_html__( 'List Content' , 'textdomain' ),
