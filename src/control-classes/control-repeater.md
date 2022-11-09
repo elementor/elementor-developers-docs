@@ -1,5 +1,7 @@
 # Repeater Control
 
+<img :src="$withBase('/assets/img/controls/control-repeater.png')" alt="Repeater Control" style="float: right;">
+
 Elementor repeater control allows you to build repeatable blocks of fields. You can create, for example, a set of fields that will contain a title and a WYSIWYG text – the user will then be able to add "rows", and each row will contain a title and a text. The data can be wrapped in custom HTML tags, designed using CSS, and interact using JS or external libraries.
 
 The control is defined in `Control_Repeater` class which extends `Base_Data_Control` class.
