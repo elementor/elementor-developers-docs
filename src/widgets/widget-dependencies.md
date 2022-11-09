@@ -82,4 +82,4 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-This can be handy when 3rd party widgets register their own frontend handlers. Read more about it on [controls `frontend_available` argument](./../controls/frontend-available/).
+This can be handy when 3rd party widgets register their own frontend handlers. Read more about it on [controls `frontend_available` argument](./../control-classes/frontend-available/).

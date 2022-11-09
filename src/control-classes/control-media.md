@@ -60,7 +60,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>media_types</code></td>
 			<td><code>array</code></td>
 			<td>['image']</td>
-			<td>Supported media types. Available values are <code>image</code>, <code>video</code> and <code>svg</code>.</td>
+			<td>Supported media types. Available values are <code>image</code>, <code>video</code>, <code>svg</code> and <code>application/pdf</code>.</td>
 		</tr>
 		<tr>
 			<td><code>default</code></td>

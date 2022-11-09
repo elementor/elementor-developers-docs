@@ -8,42 +8,12 @@ module.exports = [
     ]
   },
   {
-    title: 'Control Types',
+    title: 'Managing Controls',
     collapsable: false,
     sidebarDepth: -1,
     children: [
-      'control-types',
-      'data-controls',
-      'multi-value-controls',
-      'unit-controls',
-      'ui-controls',
-      'group-controls',
-    ]
-  },
-  {
-    title: 'Using Controls',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'using-controls',
-      'regular-control',
-      'responsive-control',
-      'group-control',
-      'control-section',
-      'control-tabs',
-      'control-popovers',
-    ]
-  },
-  {
-    title: 'Control Arguments',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'labels-description',
-      'conditional-display',
-      'global-style',
-      'dynamic-content',
-      'frontend-available',
+      'add-new-control',
+      'remove-controls',
     ]
   },
   {

@@ -3,6 +3,7 @@ const { description, base } = require('../../package');
 const addonsSidebar = require('./sidebars/addons');
 const cliSidebar = require('./sidebars/cli');
 const contextMenuSidebar = require('./sidebars/context-menu');
+const controlClassesSidebar = require('./sidebars/control-classes');
 const controlsSidebar = require('./sidebars/controls');
 const deprecationsSidebar = require('./sidebars/deprecations');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
@@ -131,6 +132,10 @@ module.exports = {
             text: 'CLI',
             link: '/cli/',
           },
+          {
+            text: 'Control Classes',
+            link: '/control-classes/',
+          },
         ],
       },
       {
@@ -183,6 +188,7 @@ module.exports = {
       '/addons/': addonsSidebar,
       '/cli/': cliSidebar,
       '/context-menu/': contextMenuSidebar,
+      '/control-classes/': controlClassesSidebar,
       '/controls/': controlsSidebar,
       '/deprecations/': deprecationsSidebar,
       '/dynamic-tags/': dynamicTagsSidebar,
