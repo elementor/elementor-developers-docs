@@ -112,21 +112,21 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::REPEATER,
 				'fields' => [
 					[
-						'name' = 'list_title',
+						'name' => 'list_title',
 						'label' => esc_html__( 'Title', 'textdomain' ),
 						'type' => \Elementor\Controls_Manager::TEXT,
 						'default' => esc_html__( 'List Title' , 'textdomain' ),
 						'label_block' => true,
 					],
 					[
-						'name' = 'list_content',
+						'name' => 'list_content',
 						'label' => esc_html__( 'Content', 'textdomain' ),
 						'type' => \Elementor\Controls_Manager::WYSIWYG,
 						'default' => esc_html__( 'List Content' , 'textdomain' ),
 						'show_label' => false,
 					],
 					[
-						'name' = 'list_color',
+						'name' => 'list_color',
 						'label' => esc_html__( 'Color', 'textdomain' ),
 						'type' => \Elementor\Controls_Manager::COLOR,
 						'selectors' => [
