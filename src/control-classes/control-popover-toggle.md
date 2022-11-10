@@ -110,8 +110,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Border', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::POPOVER_TOGGLE,
-				'label_off' => esc_html__( 'Default', 'your-plugin' ),
-				'label_on' => esc_html__( 'Custom', 'your-plugin' ),
+				'label_off' => esc_html__( 'Default', 'textdomain' ),
+				'label_on' => esc_html__( 'Custom', 'textdomain' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]
