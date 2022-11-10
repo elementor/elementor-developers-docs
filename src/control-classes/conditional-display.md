@@ -414,3 +414,133 @@ We can also nest conditions:
 ```
 
 All this gives developers the ability to create very strict rules with many nested levels for conditional control display.
+
+## Repeaters & Conditional Display
+
+Conditional control display and [repeaters](./control-repeater/) are special case. There are some things you can do, and some thinkg you can't. Let's cover three use cases.
+
+### Entire Repeater Control
+
+You can conditionaly hide/display the entire repeater:
+
+```php{2,8-9,30-32}
+$this->add_control(
+	'display_list',
+	[
+		'label' => esc_html__( 'Display List', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::SWITCHER,
+		'label_on' => esc_html__( 'Yes', 'textdomain' ),
+		'label_off' => esc_html__( 'No', 'textdomain' ),
+		'return_value' => 'yes',
+		'default' => 'yes',
+	]
+);
+
+$this->add_control(
+	'list',
+	[
+		'label' => esc_html__( 'Repeater List', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::REPEATER,
+		'fields' => [
+			[
+				'name' => 'list_title',
+				'label' => esc_html__( 'Title', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+			],
+			[
+				'name' => 'list_content',
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::WYSIWYG,
+			],
+		],
+		'condition' => [
+			'display_list' => 'yes',
+		],
+	]
+);
+```
+
+In this case there are two controls, the value of the first control affects the display of the second control.
+
+### Repeater Inner Fields
+
+You can conditionaly hide/display fields inside the repeater:
+
+```php{8,13-14,25-27}
+$this->add_control(
+	'list',
+	[
+		'label' => esc_html__( 'Repeater List', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::REPEATER,
+		'fields' => [
+			[
+				'name' => 'display_content',
+				'label' => esc_html__( 'Display Content', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::SWITCHER,
+				'label_on' => esc_html__( 'Yes', 'textdomain' ),
+				'label_off' => esc_html__( 'No', 'textdomain' ),
+				'return_value' => 'yes',
+				'default' => 'yes',
+			],
+			[
+				'name' => 'list_title',
+				'label' => esc_html__( 'Title', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+			],
+			[
+				'name' => 'list_content',
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::WYSIWYG,
+				'condition' => [
+					'display_content' => 'yes',
+				],
+			],
+		],
+	]
+);
+```
+
+In this case we have a repeater with three inner controls, the value of one inner-control affects the display of an other inner-control.
+
+### Dependents From Different Levels
+
+But you can't mix different levels. Inner controls can't be dependent on the value of a main control. 
+
+```php{2,8-9,28-30}
+$this->add_control(
+	'display_content',
+	[
+		'label' => esc_html__( 'Display Content', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::SWITCHER,
+		'label_on' => esc_html__( 'Yes', 'textdomain' ),
+		'label_off' => esc_html__( 'No', 'textdomain' ),
+		'return_value' => 'yes',
+		'default' => 'yes',
+	]
+);
+
+$this->add_control(
+	'list',
+	[
+		'label' => esc_html__( 'Repeater List', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::REPEATER,
+		'fields' => [
+			[
+				'name' => 'list_title',
+				'label' => esc_html__( 'Title', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+			],
+			[
+				'name' => 'list_content',
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::WYSIWYG,
+				'condition' => [
+					'display_content' => 'yes',
+				],
+			],
+		],
+	]
+);
+```
+
+This is not allowed. It won't work.
