@@ -282,3 +282,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 }
 ```
+
+## Notes
+
+Repeaters can be [conditionally displayed](./conditional-display/#repeaters-conditional-display). However, it's important to understand exactly what you can and cannot do when conditionally displaying repeater fields.
