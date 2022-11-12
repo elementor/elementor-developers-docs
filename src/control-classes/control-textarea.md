@@ -83,7 +83,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-23,31,36}
+```php {14-23,32-34,40-42}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -114,12 +114,18 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<p>' . $settings['item_description'] . '</p>';
+		?>
+		<p class="description">
+			<?php echo $settings['item_description']; ?>
+		</p>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<p>{{{ settings.item_description }}}</p>
+		<p class="description">
+			{{{ settings.item_description }}}
+		</p>
 		<?php
 	}
 
