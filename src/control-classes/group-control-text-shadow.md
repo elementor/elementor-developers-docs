@@ -45,7 +45,7 @@ When using this group control, the `type` should be set to `Group_Control_Text_S
 
 ## Usage
 
-```php {14-21,30-32,38-40}
+```php {14-21,29-31,37-39}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -63,7 +63,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Text_Shadow::get_type(),
 			[
 				'name' => 'text_shadow',
-				'label' => esc_html__( 'Text Shadow', 'textdomain' ),
 				'selector' => '{{WRAPPER}} .your-class',
 			]
 		);
