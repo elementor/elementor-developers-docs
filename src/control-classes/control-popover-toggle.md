@@ -91,7 +91,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-24}
+```php {14-24,26,34}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -116,6 +116,16 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'default' => 'yes',
 			]
 		);
+
+		$this->start_popover();
+
+		$this->add_control();
+
+		$this->add_control();
+
+		$this->add_control();
+
+		$this->end_popover();
 
 		$this->end_controls_section();
 
