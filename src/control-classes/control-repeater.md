@@ -168,7 +168,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<# if ( settings.list.length ) { #>
-		<dl>
+			<dl>
 			<# _.each( settings.list, function( item ) { #>
 				<dt class="elementor-repeater-item-{{ item._id }}">{{{ item.list_title }}}</dt>
 				<dd>{{{ item.list_content }}}</dd>
@@ -270,7 +270,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<# if ( settings.list.length ) { #>
-		<dl>
+			<dl>
 			<# _.each( settings.list, function( item ) { #>
 				<dt class="elementor-repeater-item-{{ item._id }}">{{{ item.list_title }}}</dt>
 				<dd>{{{ item.list_content }}}</dd>
