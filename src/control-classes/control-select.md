@@ -77,7 +77,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-28,37-39,45-47}
+```php {14-32,41-43,49-51}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -98,11 +98,12 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::SELECT,
 				'default' => 'solid',
 				'options' => [
+					'' => esc_html__( 'Default', 'textdomain' ),
+					'none' => esc_html__( 'None', 'textdomain' ),
 					'solid'  => esc_html__( 'Solid', 'textdomain' ),
 					'dashed' => esc_html__( 'Dashed', 'textdomain' ),
 					'dotted' => esc_html__( 'Dotted', 'textdomain' ),
 					'double' => esc_html__( 'Double', 'textdomain' ),
-					'none' => esc_html__( 'None', 'textdomain' ),
 				],
 				'selectors' => [
 					'{{WRAPPER}} .your-class' => 'border-style: {{VALUE}};',
