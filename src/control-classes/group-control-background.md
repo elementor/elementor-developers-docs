@@ -57,7 +57,7 @@ When using this group control, the `type` should be set to `Group_Control_Backgr
 
 ## Usage
 
-```php {14-22,31-33,39-41}
+```php {14-21,30-32,38-40}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -75,7 +75,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'background',
-				'label' => esc_html__( 'Background', 'textdomain' ),
 				'types' => [ 'classic', 'gradient', 'video' ],
 				'selector' => '{{WRAPPER}} .your-class',
 			]
