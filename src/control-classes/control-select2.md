@@ -83,7 +83,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-28,36-38,43-45}
+```php {14-28,36-42,47-53}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -119,16 +119,24 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		foreach ( $settings['list'] as $item ) {
-			echo '<div>' . $item . '</div>';
+		if ( $settings['list'] ) {
+			echo '<ul>';
+			foreach ( $settings['list'] as $item ) {
+				echo '<li>' . $item . '</li>';
+			}
+			echo '</ul>';
 		}
 	}
 
 	protected function content_template() {
 		?>
-		<# _.each( settings.list, function( item ) { #>
-			<div>{{{ item }}}</div>
-		<# } ) #>
+		<# if ( settings.list.length ) { #>
+			<ul>
+			<# _.each( settings.list, function( item ) { #>
+				<li>{{{ item }}}</li>
+			<# } ) #>
+			</ul>
+		<# } #>
 		<?php
 	}
 
