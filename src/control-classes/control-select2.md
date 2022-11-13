@@ -83,7 +83,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-27,35-37,42-44}
+```php {14-28,36-38,43-45}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -98,10 +98,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		);
 
 		$this->add_control(
-			'show_elements',
+			'list',
 			[
 				'label' => esc_html__( 'Show Elements', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::SELECT2,
+				'label_block' => true,
 				'multiple' => true,
 				'options' => [
 					'title'  => esc_html__( 'Title', 'textdomain' ),
@@ -118,15 +119,15 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		foreach ( $settings['show_elements'] as $element ) {
-			echo '<div>' . $element . '</div>';
+		foreach ( $settings['list'] as $item ) {
+			echo '<div>' . $item . '</div>';
 		}
 	}
 
 	protected function content_template() {
 		?>
-		<# _.each( settings.show_elements, function( element ) { #>
-			<div>{{{ element }}}</div>
+		<# _.each( settings.list, function( item ) { #>
+			<div>{{{ item }}}</div>
 		<# } ) #>
 		<?php
 	}
