@@ -125,3 +125,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 }
 ```
+
+## Notes
+
+Learn how to use [Global Colors](./global-style/), set in the [Site Settings](./../editor/site-settings-panel/) panel, on your color controls.
