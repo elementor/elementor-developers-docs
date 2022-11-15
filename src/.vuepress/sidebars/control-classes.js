@@ -17,8 +17,8 @@ module.exports = [
       'responsive-control',
       'group-control',
       'control-section',
-      'control-tabs',
       'control-popovers',
+      'control-tabs',
     ]
   },
   {

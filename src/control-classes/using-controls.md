@@ -39,8 +39,8 @@ Elementor has three **control types** that can be added to widgets:
 Elementor also has **UI wrappers for controls** that can be used to group and rearrange controls:
 
 * [Control Section](./control-section/) – a wrapper for controls.
-* [Control Tabs](./control-tabs/) – a wrapper that arranges controls in tabs.
 * [Control Popovers](./control-popovers/) – a wrapper that toggles popover control.
+* [Control Tabs](./control-tabs/) – a wrapper that arranges controls in tabs.
 
 ## Control Methods
 
@@ -52,5 +52,5 @@ Available methods:
 * **Responsive Control** - `add_responsive_control()`
 * **Group Control** - `add_group_control()`
 * **Control Section** - `start_controls_section()` & `end_controls_section()`
-* **Control Tabs** - `start_controls_tabs()` & `end_controls_tabs()` & `start_controls_tab()` & `end_controls_tab()`
 * **Control Popovers** - `start_popover()` & `end_popover()`
+* **Control Tabs** - `start_controls_tabs()` & `end_controls_tabs()` & `start_controls_tab()` & `end_controls_tab()`

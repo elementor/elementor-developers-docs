@@ -30,8 +30,8 @@ Learn more about the controls you can use:
 Learn more about wrappers to rearrange your controls:
 
 * [Control Section](./control-section/)
-* [Control Tabs](./control-tabs/)
 * [Control Popovers](./control-popovers/)
+* [Control Tabs](./control-tabs/)
 
 ## Control Arguments
 
