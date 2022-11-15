@@ -27,15 +27,15 @@ $this->end_controls_tabs();
 
 ## Control Parameters
 
-Each tab control has the following key parameters:
+Each *tab control* has the following key parameters:
 
 * **Tab Name** `(string)` – Unique ID used in the code.
 
-Each inner tab control has the following key parameters:
+Each *inner tab control* has the following key parameters:
 
 * **Tab Name** `(string)` – Unique ID used in the code.
 * **Tab Setting** `(array)` – Extra tab parameters.
-* **Label** `(string)` – Label displayed to the user in the panel.
+  * **Label** `(string)` – Label displayed to the user in the panel.
 
 ## Examples
 
