@@ -23,14 +23,7 @@ $this->add_group_control(
 Each control has the following key parameters:
 
 * **Group Control Type** `(string)` – Unique name of a group control.
-* **Group Control Setting** `(array)` – Extra control parameters.
-  * **Name** `(string)` – Unique ID used in the code. (Only chars, numbers and underscore are allowed)
-  * **Label** `(string)` – Label displayed to the user in the panel.
-  * **Separator** `(string)` – The position of the separator.
-  * **Frontend Available** `(bool)` – Whether or not the data is available in the frontend using `getSettings()`.
-  * **Conditions** `(array)` – Control display conditions.
-
-**Note**: Each control has its own set of *Custom Settings* in addition to the default settings mentioned above.
+* **Group Control Setting** `(array)` – Extra control parameters. Each control has its own set of *custom settings* in addition to the default settings based on the control type. For example, the "exclude" setting will allow to exclude some inner controls from the group.
 
 ## Examples
 
