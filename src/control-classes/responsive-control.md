@@ -23,16 +23,7 @@ $this->add_responsive_control(
 Each control has the following key parameters:
 
 * **Control Name** `(string)` – Unique ID used in the code.
-* **Control Setting** `(array)` – Extra control parameters.
-  * **Type** `(string)` – The control type.
-  * **Label** `(string)` – Label displayed to the user in the panel.
-  * **Show Label** `(bool)` – Whether or not to show the label.
-  * **Label Block** `(bool)` – Whether or not to display the label in a separate line.
-  * **Separator** `(string)` – The position of the separator.
-  * **Frontend Available** `(bool)` – Whether or not the data is available in the frontend using `getSettings()`.
-  * **Conditions** `(array)` – Control display conditions.
-
-**Note**: Each control has its own set of custom settings in addition to the default settings mentioned above.
+* **Control Setting** `(array)` – Extra control parameters. Each control has its own set of *custom settings* in addition to the default settings based on the control type. Responsive controls have additional device-based setting like the different default values based on the screen size.
 
 ## Examples
 
