@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Regular controls are added using the `add_control()` method. 
+Regular controls are the basic building block thay allow the users set different values for different types on input fuelds (text, number, color, image, icon, etc.). Regular controls are added using the `add_control()` method. 
 
 ## Regular Control Structure
 
@@ -12,8 +12,8 @@ Use the following code to add a control:
 $this->add_control(
 	'control-name',
 	[
+		'label' => esc_html__( 'Heading', 'textdomain' ),
 		'type' => \Elementor\Controls_Manager::TEXT,
-		'label' => esc_html__( 'Control Name', 'textdomain' ),
 	]
 );
 ```
@@ -23,16 +23,7 @@ $this->add_control(
 Each control has the following key parameters:
 
 * **Control Name** `(string)` – Unique ID used in the code.
-* **Control Setting** `(array)` – Extra control parameters.
-  * **Type** `(string)` – The control type.
-  * **Label** `(string)` – Label displayed to the user in the panel.
-  * **Show Label** `(bool)` – Whether or not to show the label.
-  * **Label Block** `(bool)` – Whether or not to display the label in a separate line.
-  * **Separator** `(string)` – The position of the separator.
-  * **Frontend Available** `(bool)` – Whether the data is available in the frontend using `getSettings()`.
-  * **Conditions** `(array)` – Control display conditions.
-
-**Note**: Each control has its own set of *custom settings* in addition to the default settings mentioned above. For example, text control has a *placeholder* setting, slider has a *range* setting, color controls have a *default* setting, etc.
+* **Control Setting** `(array)` – Extra control parameters. Each control has its own set of *custom settings* in addition to the default settings based on the control type. For example, text control has a "placeholder" setting, slider has a "range" setting, color has a "default" setting, etc.
 
 ## Examples
 
