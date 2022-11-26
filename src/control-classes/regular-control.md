@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
-Regular controls are the basic building block thay allow the users set different values for different types on input fuelds (text, number, color, image, icon, etc.). Regular controls are added using the `add_control()` method. 
+Regular controls are the basic building block thay allow the users set different values for different types on input fields (text, number, color, image, icon, etc.). Regular controls are added using the `add_control()` method. 
 
 ## Regular Control Structure
 
