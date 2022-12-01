@@ -39,3 +39,4 @@ Learn more how to customize your controls:
 * [Global Style](./global-style/)
 * [Dynamic Content](./dynamic-content/)
 * [Frontend Available](./frontend-available/)
+* [Selectors Dictionary](./selectors-dictionary/)
