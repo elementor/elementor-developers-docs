@@ -152,7 +152,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 		if ( preg_match( '/^[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}$/', $field['value'] ) !== 1 ) {
 			$ajax_handler->add_error(
 				$field['id'],
-				esc_html__( 'Credit card number must be in "XXXX XXXX XXXX XXXXX" format.', 'elementor-form-credit-card-number-field' )
+				esc_html__( 'Credit card number must be in "XXXX XXXX XXXX XXXX" format.', 'elementor-form-credit-card-number-field' )
 			);
 		}
 	}
