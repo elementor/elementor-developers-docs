@@ -1,10 +1,10 @@
 # Selectors Dictionary
 
-In some cases we need to update the available values for a sertain control. But doing so, we may break existing sites that store the old values in the database. For those cases, Elementor offers a dictionary that helps developers to transform old values into new values before using them in the code.
+In some cases, you may need to update the values of a specific control. But, doing this might break existing sites which store the old values in the database. For these cases, Elementor offers a dictionary that helps developers transform old values into new values before using them in the code.
 
 ## Selectors Dictionary Argument
 
-Use the `selectors_dictionary` argument to set old values you want to replace and thier new value.
+Use the `selectors_dictionary` argument to replace old values with the new ones.
 
 ```php{6-9}
 $this->add_control(
@@ -26,7 +26,7 @@ $this->add_control(
 
 Let's see how we can update control values and migrate the control from "**Physical CSS Properties**" to "[Logical CSS Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties)". We want to replace `text-align: right|center|left;` with `text-align: start|center|end;`.
 
-The original control used to save in the database one of 3 values `right`, `center` or `left`:
+The original control saved one of three values in the database - `right`, `center` or `left`:
 
 ```php{8,12,16}
 $this->add_control(
@@ -56,7 +56,7 @@ $this->add_control(
 );
 ```
 
-We want to migrate to `start`, `center` or `end`. But if for backwards compatibility, we have to offer a solution to the old values saved in the database.
+Now we want to swap out these values for the values - `start`, `center` or `end`. But, for backward compatibility, we have to offer a solution taking into account the old values saved in the database.
 
 We can use `selectors_dictionary` to solve this issue:
 
@@ -94,7 +94,7 @@ $this->add_control(
 
 ### Dictionary with Select Control
 
-Let's see how we can use selector dictionary with a select control. A popular addon used to save `border-style` vaules using prefix classes. The addon had 5 CSS classes for each border-style type:
+Let's see how we can use `selectors_dictionary` with a select control. In this case, a popular addon used to save `border-style` values using prefix classes. The addon had 5 CSS classes for each border-style type:
 
 ```php
 $this->add_control(
@@ -115,7 +115,7 @@ $this->add_control(
 );
 ```
 
-To fix this, and remove all the unnessesary CSS classes we can use `selectors_dictionary` as follows:
+To fix this, and remove all the unnecessary CSS classes, we can use `selectors_dictionary` as follows:
 
 ```php{14-20}
 $this->add_control(
@@ -145,8 +145,8 @@ $this->add_control(
 );
 ```
 
-In this case, replacing `prefix_class` with `selectors` is much efficient. In addition, we don't break backwards compatibility. The `selectors_dictionary` helps convert the old values to new values.
+In this case, replacing `prefix_class` with `selectors` is much more efficient. In addition, we don't break backwards compatibility. The `selectors_dictionary` helps convert the old values to new values.
 
 ## Notes
 
-It's very important to remember that `selectors_dictionary` argument works only with controls that return simple `string` values. It doesn't work on multi-value controls, unit controls, group controls or repeaters which are all return `array` values.
+It's very important to remember that the `selectors_dictionary` argument works only with controls that return simple `string` values. It doesn't work on multi-value controls, unit controls, group controls or repeaters which all return `array` values.
