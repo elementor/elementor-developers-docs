@@ -11,7 +11,7 @@ $this->add_control(
 	'text-align',
 	[
 		'label' => esc_html__( 'Control Label', 'textdomain' ),
-		'type' => Controls_Manager::SELECT,
+		'type' => \Elementor\Controls_Manager::SELECT,
 		'selectors_dictionary' => [
 			'old-value-1' => 'new-value-1',
 			'old-value-2' => 'new-value-2',
@@ -33,7 +33,7 @@ $this->add_control(
 	'text-align',
 	[
 		'label' => esc_html__( 'Alignment', 'textdomain' ),
-		'type' => Controls_Manager::CHOOSE,
+		'type' => \Elementor\Controls_Manager::CHOOSE,
 		'default' => 'center',
 		'options' => [
 			'left' => [
@@ -50,7 +50,7 @@ $this->add_control(
 			],
 		],
 		'selectors' => [
-			'{{WRAPPER}} .some-class' => 'text-align: {{VALUE}}',
+			'{{WRAPPER}} .some-class' => 'text-align: {{VALUE}};',
 		],
 	]
 );
@@ -60,33 +60,33 @@ Now we want to swap out these values for the values - `start`, `center` or `end`
 
 We can use `selectors_dictionary` to solve this issue:
 
-```php{21-24}
+```php{8-11,16-19,21-24}
 $this->add_control(
 	'text-align',
 	[
 		'label' => esc_html__( 'Alignment', 'textdomain' ),
-		'type' => Controls_Manager::CHOOSE,
+		'type' => \Elementor\Controls_Manager::CHOOSE,
 		'default' => 'center',
 		'options' => [
 			'left' => [
-				'title' => esc_html__( 'Left', 'textdomain' ),
-				'icon' => 'eicon-text-align-left',
+				'title' => esc_html__( 'End', 'textdomain' ),
+				'icon' => 'eicon-text-align-' . ( is_rtl() ? 'right' : 'left' ),
 			],
 			'center' => [
 				'title' => esc_html__( 'Center', 'textdomain' ),
 				'icon' => 'eicon-text-align-center',
 			],
 			'right' => [
-				'title' => esc_html__( 'Right', 'textdomain' ),
-				'icon' => 'eicon-text-align-right',
+				'title' => esc_html__( 'Start', 'textdomain' ),
+				'icon' => 'eicon-text-align-' . ( is_rtl() ? 'left' : 'right' ),
 			],
 		],
 		'selectors_dictionary' => [
-			'left' => 'end',
-			'right' => 'start',
+			'left' => is_rtl() ? 'end' : 'start',
+			'right' => is_rtl() ? 'start' : 'end',
 		],
 		'selectors' => [
-			'{{WRAPPER}} .some-class' => 'text-align: {{VALUE}}',
+			'{{WRAPPER}} .some-class' => 'text-align: {{VALUE}};',
 		],
 	]
 );
@@ -101,7 +101,7 @@ $this->add_control(
 	'border_style',
 	[
 		'label' => esc_html__( 'Border Style', 'textdomain' ),
-		'type' => Controls_Manager::SELECT,
+		'type' => \Elementor\Controls_Manager::SELECT,
 		'options' => [
 			'' => esc_html__( 'Default', 'textdomain' ),
 			'1' => esc_html__( 'None', 'textdomain' ),
@@ -122,7 +122,7 @@ $this->add_control(
 	'border_style',
 	[
 		'label' => esc_html__( 'Border Style', 'textdomain' ),
-		'type' => Controls_Manager::SELECT,
+		'type' => \Elementor\Controls_Manager::SELECT,
 		'options' => [
 			'' => esc_html__( 'Default', 'textdomain' ),
 			'1' => esc_html__( 'None', 'textdomain' ),
