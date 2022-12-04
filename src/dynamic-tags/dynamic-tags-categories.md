@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-When controls are created, developers can define whether the [control can accept dynamic data](./../control-classes/dynamic-content/) or not. If the control does accept dynamic data, then a data type (e.g. text values, colors, images) must be set. Dynamic tags, on the other hand, need to define what types of data they return to the control.
+When controls are created, developers can define whether the [control can accept dynamic data](./../editor-controls/dynamic-content/) or not. If the control does accept dynamic data, then a data type (e.g. text values, colors, images) must be set. Dynamic tags, on the other hand, need to define what types of data they return to the control.
 
 This is where categories come in handy. Elementor Pro has a list of categories arranged by data type, which are returned by the dynamic tag to the control.
 
@@ -57,7 +57,7 @@ class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
 ## Using Categories in Controls
 
-On the other hand, when you create [controls](./../control-classes/), you need to support dynamic tags when defining the [control settings](./../controls/control-settings/) through the `get_default_settings()` method and choose the category to display:
+On the other hand, when you create [controls](./../editor-controls/), you need to support dynamic tags when defining the [control settings](./../controls/control-settings/) through the `get_default_settings()` method and choose the category to display:
 
 ```php {13-19}
 class Elementor_Test_Control extends \Elementor\Base_Control {

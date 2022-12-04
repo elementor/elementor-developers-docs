@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Pro" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Each action can incorporate [controls](./../control-classes/) (setting fields), that allow users to select their data. When a user selects an action with these controls the control will be activated. Data entered into those fields is saved in the database and later used when [triggering the action](./action-run/).
+Each action can incorporate [controls](./../editor-controls/) (setting fields), that allow users to select their data. When a user selects an action with these controls the control will be activated. Data entered into those fields is saved in the database and later used when [triggering the action](./action-run/).
 
 ## Registering Controls
 
@@ -74,4 +74,4 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 
 Please note that we recommend adding an entire setting section dedicated to your custom action.
 
-In addition, you should only use [conditional display](./../control-classes/conditional-display/), to show the section if the `submit_action` control in the form widget contains your custom action. This way, the entire section is displayed only when the user selects this particular action.
+In addition, you should only use [conditional display](./../editor-controls/conditional-display/), to show the section if the `submit_action` control in the form widget contains your custom action. This way, the entire section is displayed only when the user selects this particular action.
