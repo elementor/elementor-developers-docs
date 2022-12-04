@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: 'Elementor Control Classes',
+    title: 'Elementor Editor Controls',
     collapsable: false,
     sidebarDepth: -1,
     children: [

@@ -35,12 +35,12 @@ pageClass: docs-home
   <div>
     <ul>
       <li><a href="./editor/">The Editor</a></li>
+      <li><a href="./editor-controls/">Editor Controls</a></li>
       <li><a href="./managers/">Managers</a></li>
       <li><a href="./scripts-styles/">Scripts &amp; Styles</a></li>
       <li><a href="./hooks/">Hooks</a></li>
       <li><a href="./deprecations/">Deprecations</a></li>
       <li><a href="./cli/">CLI</a></li>
-      <li><a href="./control-classes/">Control Classes</a></li>
     </ul>
   </div>
 </section>

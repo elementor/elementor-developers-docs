@@ -3,11 +3,11 @@ const { description, base } = require('../../package');
 const addonsSidebar = require('./sidebars/addons');
 const cliSidebar = require('./sidebars/cli');
 const contextMenuSidebar = require('./sidebars/context-menu');
-const controlClassesSidebar = require('./sidebars/control-classes');
 const controlsSidebar = require('./sidebars/controls');
 const deprecationsSidebar = require('./sidebars/deprecations');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
 const editorSidebar = require('./sidebars/editor');
+const editorControlsSidebar = require('./sidebars/editor-controls');
 const finderSidebar = require('./sidebars/finder');
 const formActionsSidebar = require('./sidebars/form-actions');
 const formFieldsSidebar = require('./sidebars/form-fields');
@@ -113,6 +113,10 @@ module.exports = {
             link: '/editor/',
           },
           {
+            text: 'Editor Controls',
+            link: '/editor-controls/',
+          },
+          {
             text: 'Managers',
             link: '/managers/',
           },
@@ -131,10 +135,6 @@ module.exports = {
           {
             text: 'CLI',
             link: '/cli/',
-          },
-          {
-            text: 'Control Classes',
-            link: '/control-classes/',
           },
         ],
       },
@@ -188,11 +188,11 @@ module.exports = {
       '/addons/': addonsSidebar,
       '/cli/': cliSidebar,
       '/context-menu/': contextMenuSidebar,
-      '/control-classes/': controlClassesSidebar,
       '/controls/': controlsSidebar,
       '/deprecations/': deprecationsSidebar,
       '/dynamic-tags/': dynamicTagsSidebar,
       '/editor/': editorSidebar,
+      '/editor-controls/': editorControlsSidebar,
       '/getting-started/': gettingStartedSidebar,
       '/finder/': finderSidebar,
       '/form-actions/': formActionsSidebar,

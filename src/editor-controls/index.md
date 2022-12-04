@@ -1,8 +1,8 @@
-# Elementor Control Classes
+# Elementor Editor Controls
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor Controls are **input fields** and **UI elements** that are used to construct an interface. Controls allow users to customize available panel settings and change the design in the preview.
+Elementor Editor Controls are **input fields** and **UI elements** that are used to construct an interface. Controls allow users to customize available panel settings and change the design in the preview.
 
 Elementor includes a wide range of controls out-of-the-box. They are used in widgets and editor panels to collect user data and generate custom output based on the user selections.
 
