@@ -24,7 +24,47 @@ By default, `frontend_available` is set to `false`. Developers can override this
 
 Each widget can load [custom script handlers](./../widgets/widget-dependencies/) which are loaded dynamically if the widget is used in the page.
 
-```php{39-46,67,72,90,104}
+```php{30-34}
+<?php
+/**
+ * Register Elementor test widget.
+ *
+ * Include widget file and register widget class.
+ *
+ * @since 1.0.0
+ * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
+ * @return void
+ */
+function elementor_test_widget_registration( $widgets_manager ) {
+
+	require_once( __DIR__ . '/widgets/test-widget.php' );
+
+	$widgets_manager->register( new \Elementor_Test_Widget() );
+
+}
+add_action( 'elementor/widgets/register', 'elementor_test_widget_registration' );
+
+/**
+ * Register Elementor test widget dependencies.
+ *
+ * Registers all the scripts and styles to be enqueued later.
+ *
+ * @since 1.0.0
+ * @return void
+ */
+function elementor_test_widget_dependencies() {
+
+	wp_register_script(
+		'test-widget-handler',
+		plugins_url( 'js/test-widget.js', __FILE__ ),
+		[ 'elementor-frontend' ] // Dependent on 'elementor-frontend' script.
+	);
+
+}
+add_action( 'wp_enqueue_scripts', 'elementor_test_widget_dependencies' );
+```
+
+```php{39-41,62,67,85,99}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -64,11 +104,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @return array Element scripts dependencies.
 	 */
 	public function get_script_depends() {
-		wp_register_script(
-			'test-widget-handler',
-			plugins_url( 'js/test-widget.js', __FILE__ ),
-			[ 'elementor-frontend' ] // Dependent on 'elementor-frontend' script.
-		);
 		return [ 'test-widget-handler' ];
 	}
 
