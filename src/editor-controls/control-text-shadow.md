@@ -44,7 +44,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		);
 
 		$this->add_control(
-			'custom_text_shadow'
+			'custom_text_shadow',
 			[
 				'label' => esc_html__( 'Text Shadow', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT_SHADOW,
