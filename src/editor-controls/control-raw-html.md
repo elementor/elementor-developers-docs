@@ -64,7 +64,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>content_classes</code></td>
 			<td><code>string</code></td>
 			<td></td>
-			<td>CSS classes to add to the content wrapper.</td>
+			<td>CSS classes to add to the control wrapper.</td>
 		</tr>
 	</tbody>
 </table>
