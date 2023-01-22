@@ -28,7 +28,7 @@ After eight major versions, the deprecated code is deleted from the codebase. At
 
 ## Deprecation Period Example
 
-As an example, if code is deprecated in Elementor 3.2.0, it will start throwing PHP errors in Elementor 3.6.0, and will likely be deleted in Elementor 4.0.0.
+As an example, if code is deprecated in Elementor 3.1.0, it will start throwing PHP errors in Elementor 3.5.0, and will likely be deleted in Elementor 3.9.0.
 
 <img :src="$withBase('/assets/img/elementor-deprecation-period.png')" alt="Elementor Deprecation Period">
 
