@@ -31,3 +31,4 @@ For over five years, Elementor has proudly helped web creators by providing them
 In turn, the Elementor community has inspired external developers around the world to create powerful extensions, sophisticated widgets, integrate advanced JavaScript libraries with Elementor, and customize themes. All of these have contributed to broadening the capabilities of Elementor.
 
 The Elementor infrastructure is capable of supporting many features and functionalities that are not part of the product. This flexibility has helped make Elementor one of the most popular WordPress plugins. You have the opportunity to join this rapidly growing community of developers and web creators to give and receive advice, and grow as a professional addon developer.
+
