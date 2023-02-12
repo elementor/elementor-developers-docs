@@ -103,7 +103,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'label' => esc_html__( 'Padding', 'textdomain' ),
-				'size_units' => [ 'px', 'em', '%' ],
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'selectors' => [
 					'{{WRAPPER}} .widget-title' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],

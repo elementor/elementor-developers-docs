@@ -342,7 +342,7 @@ class Elementor_List_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Spacing', 'elementor-list-widget' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'size_units' => [ 'px', 'em', 'rem' ],
+				'size_units' => [ 'px', 'em', 'rem', 'custom' ],
 				'range' => [
 					'px' => [
 						'min' => 0,
