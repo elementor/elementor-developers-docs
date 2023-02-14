@@ -31,12 +31,6 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td>The label that appears above of the field.</td>
 		</tr>
 		<tr>
-			<td><code>description</code></td>
-			<td><code>string</code></td>
-			<td></td>
-			<td>The description that appears below the field.</td>
-		</tr>
-		<tr>
 			<td><code>show_label</code></td>
 			<td><code>bool</code></td>
 			<td>true</td>
