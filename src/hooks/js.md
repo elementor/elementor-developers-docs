@@ -130,11 +130,9 @@ elementorFrontend.hooks.addAction( 'frontend/element_ready/image.default', funct
 
 // For a widget with a skin named `satellite`
 elementorFrontend.hooks.addAction( 'frontend/element_ready/google-maps.satellite', function( $scope ) {
-	var $iframe = $scope.find( 'iframe' ),
-		iframeUrl = $iframe.attr( 'src' );
-
-		$iframe.attr( 'src', iframeUrl + '&maptype=satellite' );
-	}
+	var $iframe = $scope.find( 'iframe' );
+	var $iframeUrl = $iframe.attr( 'src' );
+	$iframe.attr( 'src', $iframeUrl + '&maptype=satellite' );
 } );
 ```
 
