@@ -2,6 +2,8 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
 
+<img :src="$withBase('/assets/img/controls/control-sections.png')" alt="Controls Section" style="float: right;">
+
 Control sections are UI wrappers used to arrange controls under the tabs in the panel. These controls are divided into sections and each control must be part of a section. These sections are created using two methods: `start_controls_section()` creates a new section while `end_controls_section()` closes the section.
 
 ## Control Section Structure
@@ -34,7 +36,7 @@ Every control has the following key parameters:
 
 ### Single Section
 
-The example below creates a single section which will be part of the "**Content**" tab. We need to provide the section name and extra parameters like the tab label:
+The example below creates a single section which will be part of the "**Content**" tab. We need to provide the section name and extra parameters like the section label:
 
 ```php {5-11,19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
@@ -62,7 +64,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-This will create a new section for our controls under the "**Content**" tab.
+This will create a new "**Content**" section under the "**Content**" tab.
 
 <img :src="$withBase('/assets/img/elementor-single-section.png')" alt="Elementor Single Section">
 
