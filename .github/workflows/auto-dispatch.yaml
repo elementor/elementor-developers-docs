@@ -34,5 +34,5 @@ jobs:
               "repository_full": "${{ github.event.repository.full_name }}" ,
               "github-sha": "${{ github.sha }}",
               "github-actor": "${{ github.actor }}",
-              "github-ref": "${{ github.ref_name }}",
+              "github-ref": "${{ github.ref_name }}"
             }
