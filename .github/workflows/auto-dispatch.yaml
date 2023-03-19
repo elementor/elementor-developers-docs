@@ -12,6 +12,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Build npm
         run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           yarn
           yarn run build
   RepoAjobs:
