@@ -15,7 +15,7 @@ class Elementor_Test_Control extends \Elementor\Base_Control {
 }
 ```
 
-You can also extend one of the [specific control types](./control-types/):
+You can also extend one of the [specific control types](./../editor-controls/control-types/):
 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Data_Control {
