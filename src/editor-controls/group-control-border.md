@@ -1,5 +1,7 @@
 # Border Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor border group control displays input fields to define the border including the border type, border width and border color.
 
 The control is defined in `Group_Control_Border` class which extends `Group_Control_Base` class.

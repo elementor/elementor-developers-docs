@@ -1,5 +1,7 @@
 # Background Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor background group control displays input fields to define the background including the background color, background image, background gradient or background video.
 
 The control is defined in `Group_Control_Background` class which extends `Group_Control_Base` class.

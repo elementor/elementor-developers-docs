@@ -1,5 +1,7 @@
 # Hidden Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor hidden control adds a hidden input field to the panel. It can be used to add data without a visual presentation in the panel. This means that Elementor users do not have access to this control.
 
 The control is defined in `Control_Hidden` class which extends `Base_Data_Control` class.

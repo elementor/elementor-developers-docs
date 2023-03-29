@@ -1,5 +1,7 @@
 # Popover Toggle Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-popover-toggle.png')" alt="Popover Toggle Control" style="float: right;">
 
 Elementor popover toggle control displays a toggle  button to open and close a popover. The control allow you to open a popover with custom controls.

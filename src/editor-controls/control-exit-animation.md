@@ -1,5 +1,7 @@
 # Exit Animation Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-exit-animation.png')" alt="Exit Animation Control" style="float: right;">
 
 Elementor exit animation control displays a select box field based on the [Animate.css](https://animate.style/) library. The control allows to set an exit animation effect for an item.

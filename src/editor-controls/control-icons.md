@@ -1,5 +1,7 @@
 # Icons Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-icons.png')" alt="Icons Control" style="float: right;">
 
 Elementor Icons control displays the icons chooser. In addition, it has the abilitiy to select existing icons from Elementor's "Icon Library" or "Upload SVG" to WordPress media library.

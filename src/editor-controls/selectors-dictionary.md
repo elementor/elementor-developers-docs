@@ -1,5 +1,7 @@
 # Selectors Dictionary
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 In some cases, you may need to update the values of a specific control. But, doing this might break existing sites which store the old values in the database. For these cases, Elementor offers a dictionary that helps developers transform old values into new values before using them in the code.
 
 ## Selectors Dictionary Argument

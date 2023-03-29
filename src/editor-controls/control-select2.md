@@ -1,5 +1,7 @@
 # Select2 Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-select2.png')" alt="Select2 Control" style="float: right;">
 
 Elementor select2 control displays a select box control based on [Select2](https://select2.org/) library. It accepts an array in which the `key` is the value and the `value` is the option name. Set `multiple` to `true` to allow multiple value selection.

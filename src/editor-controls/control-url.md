@@ -1,5 +1,7 @@
 # URL Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-url.png')" alt="URL Control" style="float: right;">
 
 Elementor URL control displays a URL input field. The control also has the ability to display more controls, such as the ability to open the link in new window, to add `nofollow` attribute and to define additional attributes (a comma-separated list of key-value pairs).

@@ -1,5 +1,7 @@
 # Frontend Available
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
+
 In some cases, developers need to use the control value inside the widget JS loaded in the frontend. For example, an Elementor widget that uses an external slider library needs to get the amount of slides to display and pass the data to the library script in the frontend. Elementor lets developers expose control values to be used in the frontend.
 
 ## Frontend Available Argument

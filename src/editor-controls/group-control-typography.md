@@ -1,5 +1,7 @@
 # Typography Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor typography group control displays input fields to define the content typography including font size, font family, font weight, text transform, font style, line height and letter spacing.
 
 The control is defined in `Group_Control_Typography` class which extends `Group_Control_Base` class.

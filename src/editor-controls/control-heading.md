@@ -1,5 +1,7 @@
 # Heading Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor heading control displays a text heading between controls in the panel.
 
 The control is defined in `Control_Heading` class which extends `Base_UI_Control` class.

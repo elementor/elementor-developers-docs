@@ -1,5 +1,7 @@
 # Labels and Description
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Controls are simply input fields where users fill the data. Each control can have a label that appears above the field and a short description appears below the field. The control mechanism in the editor has special arguments that help developers set those fields and style them.
 
 ## Basic Arguments

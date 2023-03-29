@@ -1,5 +1,7 @@
 # Font Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-font.png')" alt="Font Control" style="float: right;">
 
 Elementor font control displays a font select box field based on [Google Fonts](https://fonts.google.com/) library. The control allows you to set a list of fonts.

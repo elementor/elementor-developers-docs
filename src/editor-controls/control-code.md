@@ -1,5 +1,7 @@
 # Code Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-code.png')" alt="Code Control" style="float: right;">
 
 Elementor code control displays a code editor textarea based on [Ace editor](https://ace.c9.io/). It accepts a language argument to define the programming `language` and includes a syntax highlighter for highlighting the code.
