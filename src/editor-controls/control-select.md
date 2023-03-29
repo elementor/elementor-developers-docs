@@ -1,5 +1,7 @@
 # Select Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-select.png')" alt="Select Control" style="float: right;">
 
 Elementor select control displays a simple select box field. It accepts an array in which the `key` is the option `value` and the value is the option name.

@@ -1,5 +1,7 @@
 # Text Stroke Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor text stroke group control displays input fields to define the text stroke including the horizontal stroke, vertical stroke, stroke blur and stroke color.
 
 The control is defined in `Group_Control_Text_Stroke` class which extends `Group_Control_Base` class.

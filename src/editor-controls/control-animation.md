@@ -1,5 +1,7 @@
 # Entrance Animation Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-animation.png')" alt="Entrance Animation Control" style="float: right;">
 
 Elementor entrance animation control displays a select box field based on the [Animate.css](https://animate.style/) library. The control allows to set an entrance animation effect for an item.

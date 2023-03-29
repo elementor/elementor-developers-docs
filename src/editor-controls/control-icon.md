@@ -1,5 +1,7 @@
 # Icon Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 ::: danger DEPRECATED
 This control was deprecated in favor of the new [Icons Control](./../editor-controls/control-icons/).
 :::

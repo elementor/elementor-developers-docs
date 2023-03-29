@@ -1,5 +1,7 @@
 # Text Shadow Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor text shadow group control displays input fields to define the text shadow including the horizontal shadow, vertical shadow, shadow blur and shadow color.
 
 The control is defined in `Group_Control_Text_Shadow` class which extends `Group_Control_Base` class.

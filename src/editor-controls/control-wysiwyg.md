@@ -1,5 +1,7 @@
 # WYSIWYG Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-wysiwyg.png')" alt="WYSIWYG Control" style="float: right;">
 
 Elementor WYSIWYG control displays a WordPress rich-text editor based on the [TinyMCE](https://www.tiny.cloud/) library.

@@ -1,5 +1,7 @@
 # Image Size Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor image size group control displays input fields to define one of the default image sizes (thumbnail, medium, medium_large, large) or custom image dimensions.
 
 The control is defined in `Group_Control_Image_Size` class which extends `Group_Control_Base` class.

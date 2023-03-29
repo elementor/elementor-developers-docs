@@ -1,5 +1,7 @@
 # Text Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-text.png')" alt="Text Control" style="float: right;">
 
 Elementor text control displays a simple text input field.

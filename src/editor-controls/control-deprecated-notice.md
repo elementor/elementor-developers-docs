@@ -1,5 +1,7 @@
 # Deprecated Notice Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor Deprecated Notice control displays a pre-formatted notice in the panel, warning that the widget is deprecated and should be replaced.
 
 The control is defined in `Control_Deprecated_Notice` class which extends `Base_UI_Control` class.

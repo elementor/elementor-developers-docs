@@ -1,5 +1,7 @@
 # Image Dimensions Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-image-dimensions.png')" alt="Image Dimensions Control" style="float: right;">
 
 Elementor image dimensions control displays a width input, a height input and an apply button. It is used by the [Image Size group control](group-control-image-size.md) to allow the user to set custom width or height for an image.

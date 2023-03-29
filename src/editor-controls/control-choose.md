@@ -1,5 +1,7 @@
 # Choose Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-choose.png')" alt="Choose Control" style="float: right;">
 
 Elementor choose control displays radio buttons styled as groups of buttons with icons for each option.

@@ -1,5 +1,7 @@
 # Slider Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-slider.png')" alt="Slider Control" style="float: right;">
 
 Elementor slider control displays a draggable range slider. The slider control can optionally have a number of unit types (`size_units`) for the user to choose from. The control also accepts a `range` argument that allows you to set the `min`, `max` and `step` values per unit type.

@@ -1,5 +1,7 @@
 # Dimensions Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-dimensions.png')" alt="Dimensions Control" style="float: right;">
 
 Elementor dimensions control displays a input fields for top, right, bottom, left and the option to link them together. The dimensions control can optionally have a number of unit types (`size_units`) for the user to choose from. The control also accepts a `range` argument that allows you to set the `min`, `max` and `step` values per unit type.

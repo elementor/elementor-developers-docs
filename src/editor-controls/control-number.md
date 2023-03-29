@@ -1,5 +1,7 @@
 # Number Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-number.png')" alt="Number Control" style="float: right;">
 
 Elementor number control displays a simple number input field with the option to limit the min and max values and define the step when changing the value.

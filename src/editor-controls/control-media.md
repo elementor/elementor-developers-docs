@@ -1,5 +1,7 @@
 # Media Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-media.png')" alt="Media Control" style="float: right;">
 
 Elementor Media control displays a media chooser section based on the WordPress media library. It allows the user to select an image from the media library.
