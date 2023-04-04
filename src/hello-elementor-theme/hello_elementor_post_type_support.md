@@ -1,5 +1,7 @@
 # Register Post Type Features
 
+<Badge type="tip" vertical="top" text="Hello Elementor Theme" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The theme registers a single post-type feature that adds excerpts to page. Developers can override this using a filter hook in a child-theme.
 
 ## Hook Details

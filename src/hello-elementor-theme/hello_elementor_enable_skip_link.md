@@ -1,6 +1,8 @@
 # Enable Skip Link
 
-The theme has a "Skip to content" link at top of the page, it's used by screen readers to quickly navigate to the main content. Developers can disable this link using a filter hook in a child-theme.
+<Badge type="tip" vertical="top" text="Hello Elementor Theme" /> <Badge type="warning" vertical="top" text="Basic" />
+
+The theme has a "Skip to content" link at the top of the page, it's used by screen readers to quickly navigate to the main content area. Developers can disable the skip link using a filter hook in a child-theme.
 
 ## Hook Details
 

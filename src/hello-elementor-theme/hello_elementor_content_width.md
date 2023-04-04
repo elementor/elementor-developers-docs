@@ -1,5 +1,7 @@
 # Content Width
 
+<Badge type="tip" vertical="top" text="Hello Elementor Theme" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The theme sets content width of 800 pixels. Developers can override this using a filter hook in a child-theme.
 
 ## Hook Details

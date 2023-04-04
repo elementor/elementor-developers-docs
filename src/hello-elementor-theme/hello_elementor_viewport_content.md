@@ -1,5 +1,7 @@
 # Viewport Content
 
+<Badge type="tip" vertical="top" text="Hello Elementor Theme" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The theme has a [viewport meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag), in the head, that controls the viewport's size and shape. Developers can modify the content attribute of the meta tag using a filter hook in a child-theme.
 
 ## Hook Details

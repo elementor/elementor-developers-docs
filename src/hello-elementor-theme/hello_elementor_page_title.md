@@ -1,5 +1,7 @@
 # Page Title
 
+<Badge type="tip" vertical="top" text="Hello Elementor Theme" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The theme displays the `<h1>` page title above the content area. Developers can override this using a filter hook in a child-theme. This is useful when using page builders to style the entire page, titles included.
 
 ## Hook Details

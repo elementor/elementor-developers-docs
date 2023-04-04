@@ -1,5 +1,7 @@
 # Enqueue Theme Styles
 
+<Badge type="tip" vertical="top" text="Hello Elementor Theme" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The theme loads the `theme.min.css` file by default. Developers can override this using a filter hook in a child-theme.
 
 ## Hook Details

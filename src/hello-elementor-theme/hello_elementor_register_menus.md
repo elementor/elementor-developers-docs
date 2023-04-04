@@ -1,5 +1,7 @@
 # Register Navigation Menus
 
+<Badge type="tip" vertical="top" text="Hello Elementor Theme" /> <Badge type="warning" vertical="top" text="Basic" />
+
 The theme registers two WordPress navigation menus, one for the header and the other footer. Developers can override this using a filter hook in a child-theme.
 
 ## Hook Details
