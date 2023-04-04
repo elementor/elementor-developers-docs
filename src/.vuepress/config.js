@@ -12,6 +12,7 @@ const finderSidebar = require('./sidebars/finder');
 const formActionsSidebar = require('./sidebars/form-actions');
 const formFieldsSidebar = require('./sidebars/form-fields');
 const gettingStartedSidebar = require('./sidebars/getting-started');
+const helloElementorTheme = require('./sidebars/hello-elementor-theme');
 const hooksSidebar = require('./sidebars/hooks');
 const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
@@ -194,6 +195,7 @@ module.exports = {
       '/editor/': editorSidebar,
       '/editor-controls/': editorControlsSidebar,
       '/getting-started/': gettingStartedSidebar,
+      '/hello-elementor-theme/': helloElementorTheme,
       '/finder/': finderSidebar,
       '/form-actions/': formActionsSidebar,
       '/form-fields/': formFieldsSidebar,
