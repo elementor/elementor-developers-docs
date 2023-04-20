@@ -40,3 +40,4 @@ Learn more how to customize your controls:
 * [Dynamic Content](./dynamic-content/)
 * [Frontend Available](./frontend-available/)
 * [Selectors Dictionary](./selectors-dictionary/)
+* [AI Button](./ai/)
