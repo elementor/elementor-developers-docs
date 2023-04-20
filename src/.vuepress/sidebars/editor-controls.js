@@ -116,6 +116,7 @@ module.exports = [
       'dynamic-content',
       'frontend-available',
       'selectors-dictionary',
+      'ai',
     ]
   }
 ];
