@@ -8,11 +8,11 @@ Developers can install Elementor and Elementor Pro via [Composer](https://getcom
 
 Composer is a PHP dependency management tool. It simplifies the process of installing dependent libraries in PHP projects.
 
-However Composer doesn't contain WordPress plugins and themes. For that developers use [wpackagist.org](https://wpackagist.org/) which is an open source service that mirrors WordPress plugin and theme as Composer repositories.
+However, Composer doesn't contain WordPress plugins and themes. For that developers use [wpackagist.org](https://wpackagist.org/) which is an open source service that mirrors WordPress plugins and themes as Composer repositories.
 
 ## Install Elementor
 
-Register WP Packagist repository on your `composer.json` file:
+Register WordPress Packagist repository on your `composer.json` file:
 
 ```json
 {
