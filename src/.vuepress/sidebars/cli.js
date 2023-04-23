@@ -31,4 +31,12 @@ module.exports = [
       'license-deactivate',
     ]
   },
+  {
+    title: 'Install',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'composer',
+    ]
+  },
 ];
