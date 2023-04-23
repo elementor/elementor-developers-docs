@@ -12,6 +12,19 @@ However Composer doesn't contain WordPress plugins and themes. For that develope
 
 ## Install Elementor
 
+Register WP Packagist repository on your `composer.json` file:
+
+```json
+{
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org"
+        }
+    ]
+}
+```
+
 Install the latest Elementor version:
 
 ```bash
