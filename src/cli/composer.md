@@ -16,12 +16,12 @@ Register WordPress Packagist repository on your `composer.json` file:
 
 ```json
 {
-    "repositories":[
-        {
-            "type":"composer",
-            "url":"https://wpackagist.org"
-        }
-    ]
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	]
 }
 ```
 
