@@ -42,7 +42,7 @@ To manage AI capabilities for Elementor controls, use the `ai` argument. It’s 
 
 Lets see a few live examples how to use the Elementor AI button to enhance editor controls.
 
-### Text
+### Write with AI
 
 Enable AI capabilities on a text-related control:
 
@@ -112,7 +112,7 @@ $this->add_control(
 );
 ```
 
-### Code
+### Code with AI
 
 Enable AI capabilities that generates custom code, we will use the following:
 
@@ -164,6 +164,6 @@ $this->add_control(
 );
 ```
 
-### Media Controls
+### Media
 
 Coming soon.
