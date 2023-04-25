@@ -42,13 +42,15 @@ composer require wpackagist-plugin/elementor:3.13.0
 Register Elementor repository on your `composer.json` file:
 
 ```json
-"repositories": {
-	"elementor": {
-		"type": "composer",
-		"url": "https://composer.elementor.com",
-		"only": [
-			"elementor/elementor-pro"
-		]
+{
+	"repositories": {
+		"elementor": {
+			"type": "composer",
+			"url": "https://composer.elementor.com",
+			"only": [
+				"elementor/elementor-pro"
+			]
+		}
 	}
 }
 ```
