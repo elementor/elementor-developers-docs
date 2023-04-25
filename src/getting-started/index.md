@@ -18,7 +18,7 @@ In addition to these versions, external developers have worked to create **Eleme
 
 ## Elementor’s Growth
 
-With over 9 million active websites currently powered by Elementor, the demand for new solutions is constantly growing. Web creators are always looking for new, niche features that lie outside the scope of Elementor’s feature set.
+With over 13 million active websites currently powered by Elementor, the demand for new solutions is constantly growing. Web creators are always looking for new, niche features that lie outside the scope of Elementor’s feature set.
 
 ## The Elementor Economy
 
