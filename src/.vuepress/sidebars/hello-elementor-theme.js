@@ -8,7 +8,7 @@ module.exports = [
     ]
   },
   {
-    title: 'Faeture Hooks',
+    title: 'Feature Hooks',
     collapsable: false,
     sidebarDepth: -1,
     children: [
