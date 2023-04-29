@@ -8,7 +8,7 @@ Hello Elementor Theme is a lightweight and minimalist WordPress theme that was b
 
 The theme provides several filter hooks that can be used in a child-theme `functions.php` file to modify the default settings.
 
-### Faeture Hooks
+### Feature Hooks
 
 * [Register Post Type Features](./hello_elementor_post_type_support/)
 * [Register Theme Features](./hello_elementor_add_theme_support/)
