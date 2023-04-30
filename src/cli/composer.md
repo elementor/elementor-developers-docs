@@ -18,8 +18,8 @@ Register WordPress Packagist repository on your `composer.json` file:
 {
 	"repositories": [
 		{
-			"type":"composer",
-			"url":"https://wpackagist.org",
+			"type": "composer",
+			"url": "https://wpackagist.org",
 			"only": [
 				"wpackagist-plugin/*",
 				"wpackagist-theme/*"
@@ -49,7 +49,7 @@ Register Elementor repository on your `composer.json` file:
 {
 	"repositories": [
 		{
-			"type":"composer",
+			"type": "composer",
 			"url": "https://composer.elementor.com",
 			"only": [
 				"elementor/elementor-pro"
