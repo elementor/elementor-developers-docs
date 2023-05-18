@@ -46,7 +46,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 			return;
 		}
 
-		if ( (int) $field['value'] > 0 ) ) {
+		if ( (int) $field['value'] > 0 ) {
 			$ajax_handler->add_error(
 				$field['id'],
 				esc_html__( 'The field must contain a positive number.', 'textdomain' )
