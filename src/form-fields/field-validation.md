@@ -19,7 +19,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 			return;
 		}
 
-		if ( (int) $field['value'] > 0 ) ) {
+		if ( (int) $field['value'] > 0 ) {
 			$ajax_handler->add_error(
 				$field['id'],
 				esc_html__( 'The field must contain a positive number.', 'textdomain' )
@@ -31,7 +31,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-This method accepts three parameters. The `$field` parameter is an instance of the field itself. The `$record` parameter is an instance of the form record containong the user data. The `$ajax_handler` parameter is an instance of form ajax, responsible for handling the form ajax.
+This method accepts three parameters. The `$field` parameter is an instance of the field itself. The `$record` parameter is an instance of the form record containing the user data. The `$ajax_handler` parameter is an instance of form ajax, responsible for handling the form ajax.
 
 ## Field Controls
 
