@@ -36,6 +36,7 @@ pageClass: docs-home
     <ul>
       <li><a href="./editor/">The Editor</a></li>
       <li><a href="./editor-controls/">Editor Controls</a></li>
+      <li><a href="./data-structure/">Data Structure</a></li>
       <li><a href="./managers/">Managers</a></li>
       <li><a href="./scripts-styles/">Scripts &amp; Styles</a></li>
       <li><a href="./hooks/">Hooks</a></li>

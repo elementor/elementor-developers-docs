@@ -4,6 +4,7 @@ const addonsSidebar = require('./sidebars/addons');
 const cliSidebar = require('./sidebars/cli');
 const contextMenuSidebar = require('./sidebars/context-menu');
 const controlsSidebar = require('./sidebars/controls');
+const dataStructureSidebar = require('./sidebars/data-structure');
 const deprecationsSidebar = require('./sidebars/deprecations');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
 const editorSidebar = require('./sidebars/editor');
@@ -118,6 +119,10 @@ module.exports = {
             link: '/editor-controls/',
           },
           {
+            text: 'Data Structure',
+            link: '/data-structure/',
+          },
+          {
             text: 'Managers',
             link: '/managers/',
           },
@@ -190,6 +195,7 @@ module.exports = {
       '/cli/': cliSidebar,
       '/context-menu/': contextMenuSidebar,
       '/controls/': controlsSidebar,
+      '/data-structure/': dataStructureSidebar,
       '/deprecations/': deprecationsSidebar,
       '/dynamic-tags/': dynamicTagsSidebar,
       '/editor/': editorSidebar,
