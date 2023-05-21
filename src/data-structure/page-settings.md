@@ -35,8 +35,6 @@ If the page has settings, `page_settings` is an `object` of key-value pairs:
 
 ## Saved Data
 
-<img :src="$withBase('/assets/img/page-settings-panel.png')" alt="Elementor Page Settings Panel" style="float: right; width: 300px; margin-left: 20px; margin-bottom: 20px;">
-
 The [Page Settings](./../editor/page-settings-panel/) panel displays several editor controls that allow the user to change WordPress-related data and Elementor-related data.
 
 The WordPress-related data includes the page title, excerpt, feature image, post status, etc. This data is saved in the "[wp_posts](https://codex.wordpress.org/Database_Description#Table:_wp_posts)" table in the database.
