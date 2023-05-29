@@ -6,7 +6,7 @@ Developers can remove [dynamic tags](./../dynamic-tags/) from the list of regist
 
 ## Unregistering Existing Dynamic Tags
 
-As of Elementor 3.5, developers should use the following code to unregister existing dynamic tags:
+Developers should use the following code to unregister existing dynamic tags:
 
 ```php
 /**
@@ -24,4 +24,4 @@ function unregister_dynamic_tags( $dynamic_tags_manager ) {
 add_action( 'elementor/dynamic_tags/register', 'unregister_dynamic_tags' );
 ```
 
-This hooks to the `elementor/dynamic_tags/register` action hook which holds the dynamic tags manager. The manager then unregisters the dynamic tag by passing the dynamic tag name.
+This code hooks to the `elementor/dynamic_tags/register` action hook which holds the dynamic tags manager. The manager then unregisters the dynamic tag by passing the dynamic tag name.
