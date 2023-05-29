@@ -24,7 +24,7 @@ The CSS `font-display` property defines how font files are loaded and displayed 
 
 ### Google Fonts
 
-As of Elementor 3.2.0, it is possible to set the `font-display` value for "Google Fonts" from the WordPress admin. Simply go to **Elementor** → **Settings** → **Advanced** → **Google Fonts Load**.
+It is possible to set the `font-display` value for "Google Fonts" from the WordPress admin. Simply go to **Elementor** → **Settings** → **Advanced** → **Google Fonts Load**.
 
 ### Custom Fonts
 
