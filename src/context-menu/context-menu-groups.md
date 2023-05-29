@@ -72,7 +72,7 @@ Below are the default groups displayed in each element:
 
 ## Manage Groups
 
-To add, update or delete custom groups, you need to use the JavaScript `elements/context-menu/groups` filter hook, introduced in Elementor 3.5. Please keep in mind that this hook doesn't change any built-in groups added by Elementor, it only allows external developers to add and modify new groups.
+To add, update or delete custom groups, you need to use the JavaScript `elements/context-menu/groups` filter hook. Please keep in mind that this hook doesn't change any built-in groups added by Elementor, it only allows external developers to add and modify new groups.
 
 * [Add New Group](./add-new-group/)
 * [Remove Group](./remove-group/)
