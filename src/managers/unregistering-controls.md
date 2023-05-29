@@ -6,7 +6,7 @@ Developers can remove [Elementor controls](./../controls/) from the list of regi
 
 ## Unregistering Existing Controls
 
-As of Elementor 3.5, developers should use the following code to unregister existing controls:
+Developers should use the following code to unregister existing controls:
 
 ```php
 /**
@@ -24,4 +24,4 @@ function unregister_controls( $controls_manager ) {
 add_action( 'elementor/controls/register', 'unregister_controls' );
 ```
 
-This hooks to the `elementor/controls/register` action hook which holds the control manager. The manager then unregisters controls by passing the control ID.
+This code hooks to the `elementor/controls/register` action hook which holds the control manager. The manager then unregisters controls by passing the control ID.

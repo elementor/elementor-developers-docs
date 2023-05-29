@@ -6,7 +6,7 @@ Developers can remove [Elementor widgets](./../widgets/) from the list of regist
 
 ## Unregistering Existing Widgets
 
-As of Elementor 3.5, developers should use the following code to unregister existing widgets:
+Developers should use the following code to unregister existing widgets:
 
 ```php
 /**
@@ -24,7 +24,7 @@ function unregister_widgets( $widgets_manager ) {
 add_action( 'elementor/widgets/register', 'unregister_widgets' );
 ```
 
-This hooks to the `elementor/widgets/register` action hook which holds the widget manager. The manager then unregisters widgets by passing the widget name.
+This code hooks to the `elementor/widgets/register` action hook which holds the widget manager. The manager then unregisters widgets by passing the widget name.
 
 ## Remove Unused Widgets
 
