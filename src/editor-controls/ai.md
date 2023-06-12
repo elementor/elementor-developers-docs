@@ -4,7 +4,7 @@
 
 <img :src="$withBase('/assets/img/elementor-control-ai-button.png')" alt="Control AI Button" style="float: right;">
 
-Elementor has added AI capabilities to a multitude of controls to empower users to elevate their websites with original or enhanced text, as well as custom codes (HTML & CSS), so that they can improve their productivity as web creators. Addon developers can choose whether to enable or disable the AI button.
+Elementor has added AI capabilities to a multitude of controls to empower users to elevate their websites with original or enhanced text, as well as custom codes (HTML & CSS), so that they can improve their productivity as web creators. Addon developers can choose whether to enable or disable the AI button. If enabled, they can control the AI capabilities.
 
 ## AI Capabilities
 
@@ -12,21 +12,21 @@ Elementor's AI solution lets users generate new content, or update existing cont
 
 ## Supported Controls
 
-Not all Editor controls support AI capabilities, for example switcher controls and select controls don’t have an AI button. However text-based controls and media controls (coming soon) have gotten a new AI button.
+Not all Editor controls support AI capabilities, for example switcher controls and select controls don’t have an AI button. However text-based controls, code controls and media controls have gotten a new AI button.
 
 The following controls have an AI button by default:
 
 * [Text control](./../editor-controls/control-text/)
 * [Textarea control](./../editor-controls/control-textarea/)
 * [WYSIWYG control](./../editor-controls/control-wysiwyg/)
-* [Code control](./../editor-controls/control-tecodext/)
-* [Media control](./../editor-controls/control-media/) (coming soon)
+* [Code control](./../editor-controls/control-code/)
+* [Media control](./../editor-controls/control-media/)
 
-Since in some cases you may not want to display the AI button on the supported control, you can choose to disable the AI button. For example, for text control that allows the user to set an Element ID.
+Since in some cases you may not want to display the AI button on the supported control, you can choose to disable the AI button. For example, there is no sense to add AI button on text control that allows the user to set an Element ID.
 
-There may be other cases, in which you may want to add AI capabilities, in that case you can choose to add the AI button. For example, when [creating new Elementor controls](./../controls/), with custom capabilities, that have text areas, where you want to allow web creators to insert AI generated content.
+There may be an opposite case in which the control has no AI button by default, but you would like to add one. For example, when [creating new Elementor controls](./../controls/), with custom capabilities, that have text areas, where you want to allow web creators to insert AI generated content.
 
-Each control type triggers different prompt options and suggestions. While text controls are mainly used for generating short titles and longer paragraphs, code suggestions are used for generating HTML & CSS code.
+Furthermore, each control type triggers different prompt options and suggestions. While text controls are mainly used for generating either short titles or longer paragraphs, code suggestions are used for generating HTML & CSS code and media controls are generating images.
 
 ## AI Argument
 
@@ -44,7 +44,7 @@ Lets see a few live examples how to use the Elementor AI button to enhance edito
 
 ### Write with AI
 
-Enable AI capabilities on a text-related control:
+Enable AI capabilities on a text-related controls:
 
 ```php
 // Text control with an AI button that generates short texts
@@ -114,7 +114,7 @@ $this->add_control(
 
 ### Code with AI
 
-Enable AI capabilities that generates custom code, we will use the following:
+Enable AI capabilities that generates custom code:
 
 ```php
 // Code control with an AI button that generates CSS
@@ -164,6 +164,131 @@ $this->add_control(
 );
 ```
 
-### Media
+### Create with AI
 
-Coming soon.
+Enable AI capabilities on a media control:
+
+```php
+// Media control with an AI button that generates background images
+$this->add_control(
+	'background-image',
+	[
+		'label' => esc_html__( 'Choose Image', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::MEDIA,
+		'dynamic' => [
+			'active' => true,
+		],
+		'ai' => [
+			'category' => 'background',
+		],
+
+	]
+);
+
+// Media control with an AI button that generates 3D images
+$this->add_control(
+	'3d-cover-image',
+	[
+		'label' => esc_html__( 'Choose Image', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::MEDIA,
+		'dynamic' => [
+			'active' => true,
+		],
+		'ai' => [
+			'category' => '3d',
+		],
+
+	]
+);
+
+// Media control with an AI button that generates photographic images
+$this->add_control(
+	'photo',
+	[
+		'label' => esc_html__( 'Choose Image', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::MEDIA,
+		'dynamic' => [
+			'active' => true,
+		],
+		'ai' => [
+			'category' => 'photographic',
+		],
+
+	]
+);
+
+// Media control with an AI button that generates handmade images
+$this->add_control(
+	'drawings',
+	[
+		'label' => esc_html__( 'Choose Image', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::MEDIA,
+		'dynamic' => [
+			'active' => true,
+		],
+		'ai' => [
+			'category' => 'handmade',
+		],
+
+	]
+);
+
+// Media control with an AI button that generates digital art
+$this->add_control(
+	'art-image',
+	[
+		'label' => esc_html__( 'Choose Image', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::MEDIA,
+		'dynamic' => [
+			'active' => true,
+		],
+		'ai' => [
+			'category' => 'digital-art',
+		],
+
+	]
+);
+```
+
+Non-image [media types](./../editor-controls/control-media/#arguments) should deactivate the AI buttons as they are not supported:
+
+```php
+// Media controls for video should deactivate the AI button
+$this->add_control(
+	'hosted_video',
+	[
+		'label' => esc_html__( 'Choose Video', 'textdomain' ),
+		'type' => Controls_Manager::MEDIA,
+		'media_type' => 'video',
+		'ai' => [
+			'active' => false,
+		],
+	]
+);
+
+// Media controls for PDF files should deactivate the AI button
+$this->add_control(
+	'pdf-file',
+	[
+		'label' => esc_html__( 'Choose PDF', 'textdomain' ),
+		'type' => Controls_Manager::MEDIA,
+		'media_type' => 'application/pdf',
+		'ai' => [
+			'active' => false,
+		],
+	]
+);
+
+// Media controls for SVG files should deactivate the AI button
+$this->add_control(
+	'svg-file',
+	[
+		'label' => esc_html__( 'Choose SVG', 'textdomain' ),
+		'type' => Controls_Manager::MEDIA,
+		'media_type' => 'svg',
+		'ai' => [
+			'active' => false,
+		],
+	]
+);
+```
