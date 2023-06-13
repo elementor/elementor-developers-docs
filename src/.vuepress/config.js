@@ -15,6 +15,7 @@ const formFieldsSidebar = require('./sidebars/form-fields');
 const gettingStartedSidebar = require('./sidebars/getting-started');
 const helloElementorTheme = require('./sidebars/hello-elementor-theme');
 const hooksSidebar = require('./sidebars/hooks');
+const hostingSidebar = require('./sidebars/hosting');
 const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
 const themeConditionsSidebar = require('./sidebars/theme-conditions');
@@ -206,6 +207,7 @@ module.exports = {
       '/form-actions/': formActionsSidebar,
       '/form-fields/': formFieldsSidebar,
       '/hooks/': hooksSidebar,
+      '/hosting/': hostingSidebar,
       '/managers/': managersSidebar,
       '/scripts-styles/': scriptsStylesSidebar,
       '/theme-conditions/': themeConditionsSidebar,
