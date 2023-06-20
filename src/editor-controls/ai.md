@@ -16,15 +16,18 @@ Not all Editor controls support AI capabilities, for example switcher controls a
 
 The following controls have an AI button by default:
 
-* [Text control](./../editor-controls/control-text/)
-* [Textarea control](./../editor-controls/control-textarea/)
-* [WYSIWYG control](./../editor-controls/control-wysiwyg/)
-* [Code control](./../editor-controls/control-code/)
-* [Media control](./../editor-controls/control-media/)
+* [Write with AI](#write-with-ai)
+  * [Text control](./../editor-controls/control-text/)
+  * [Textarea control](./../editor-controls/control-textarea/)
+  * [WYSIWYG control](./../editor-controls/control-wysiwyg/)
+* [Code with AI](#code-with-ai)
+  * [Code control](./../editor-controls/control-code/)
+* [Create with AI](#create-with-ai)
+  * [Media control](./../editor-controls/control-media/)
 
-Since in some cases you may not want to display the AI button on the supported control, you can choose to disable the AI button. For example, there is no sense to add AI button on text control that allows the user to set an Element ID.
+Since in some cases you may not want to display the AI button on the supported control, you can choose to disable the AI button. For example, there is no sense to add an AI button on a text control that allows the user to set an Element ID. You can disable the AI button.
 
-There may be an opposite case in which the control has no AI button by default, but you would like to add one. For example, when [creating new Elementor controls](./../controls/), with custom capabilities, that have text areas, where you want to allow web creators to insert AI generated content.
+There may be an opposite case in which the control has no AI button by default, but you would like to add one. For example, when [creating new Elementor controls](./../controls/), with custom capabilities, that have text areas, where you want to allow web creators to insert AI generated content. You can add an AI button.
 
 Furthermore, each control type triggers different prompt options and suggestions. While text controls are mainly used for generating either short titles or longer paragraphs, code suggestions are used for generating HTML & CSS code and media controls are generating images.
 
@@ -44,7 +47,7 @@ Lets see a few live examples how to use the Elementor AI button to enhance edito
 
 ### Write with AI
 
-Enable AI capabilities on a text-related controls:
+AI capabilities on text-based controls:
 
 ```php
 // Text control with an AI button that generates short texts
@@ -114,7 +117,7 @@ $this->add_control(
 
 ### Code with AI
 
-Enable AI capabilities that generates custom code:
+AI capabilities that generates custom code:
 
 ```php
 // Code control with an AI button that generates CSS
@@ -166,9 +169,22 @@ $this->add_control(
 
 ### Create with AI
 
-Enable AI capabilities on a media control:
+AI capabilities on media controls:
 
 ```php
+// Media control without an AI button
+$this->add_control(
+	'background-image',
+	[
+		'label' => esc_html__( 'Choose Image', 'textdomain' ),
+		'type' => \Elementor\Controls_Manager::MEDIA,
+		'ai' => [
+			'active' => true,
+		],
+
+	]
+);
+
 // Media control with an AI button that generates background images
 $this->add_control(
 	'background-image',
@@ -250,4 +266,4 @@ $this->add_control(
 );
 ```
 
-Note: Non-image [media types](./../editor-controls/control-media/#arguments) won't display the AI buttons as they are not supported.
+**Note**: Non-image [media types](./../editor-controls/control-media/#arguments) won't display the AI button as they are not supported.
