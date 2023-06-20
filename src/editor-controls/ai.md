@@ -250,45 +250,4 @@ $this->add_control(
 );
 ```
 
-Non-image [media types](./../editor-controls/control-media/#arguments) should deactivate the AI buttons as they are not supported:
-
-```php
-// Media controls for video should deactivate the AI button
-$this->add_control(
-	'hosted_video',
-	[
-		'label' => esc_html__( 'Choose Video', 'textdomain' ),
-		'type' => Controls_Manager::MEDIA,
-		'media_type' => 'video',
-		'ai' => [
-			'active' => false,
-		],
-	]
-);
-
-// Media controls for PDF files should deactivate the AI button
-$this->add_control(
-	'pdf-file',
-	[
-		'label' => esc_html__( 'Choose PDF', 'textdomain' ),
-		'type' => Controls_Manager::MEDIA,
-		'media_type' => 'application/pdf',
-		'ai' => [
-			'active' => false,
-		],
-	]
-);
-
-// Media controls for SVG files should deactivate the AI button
-$this->add_control(
-	'svg-file',
-	[
-		'label' => esc_html__( 'Choose SVG', 'textdomain' ),
-		'type' => Controls_Manager::MEDIA,
-		'media_type' => 'svg',
-		'ai' => [
-			'active' => false,
-		],
-	]
-);
-```
+Note: Non-image [media types](./../editor-controls/control-media/#arguments) won't display the AI buttons as they are not supported.
