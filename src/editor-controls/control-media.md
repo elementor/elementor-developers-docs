@@ -62,7 +62,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>media_types</code></td>
 			<td><code>array</code></td>
 			<td>['image']</td>
-			<td>Supported media types. Available values are <code>image</code>, <code>video</code>, <code>svg</code> and <code>application/pdf</code>.</td>
+			<td>Supported media types. Available values are <code>image</code>, <code>video</code>, <code>svg</code>, <code>application/pdf</code> etc.</td>
 		</tr>
 		<tr>
 			<td><code>default</code></td>
@@ -94,6 +94,8 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 * **$url** (_`string`_) Media url.
 
 ## Usage
+
+Add an image:
 
 ```php {14-23,32-33,35-36,38-43,48-65}
 <?php
@@ -161,6 +163,68 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		}
 		#>
 		<img src="{{ image_url }}">
+		<?php
+	}
+
+}
+```
+
+Add a video media type to display a self hosted video:
+
+```php
+<?php
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+
+		$this->add_control(
+			'video',
+			[
+				'label' => esc_html__( 'Choose Video File', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'media_types' => [
+					'video',
+				],
+				'default' => [
+					'url' => \Elementor\Utils::get_placeholder_image_src(),
+				],
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+	protected function render() {
+		$settings = $this->get_settings_for_display();
+		$video_url = $settings['video']['url'];
+
+		if ( empty( $video_url ) ) {
+			return;
+		}
+		?>
+		<video src="<?php echo esc_attr( $video_url ); ?>" class="elementor-video"></video>
+		<?php
+	}
+
+	protected function content_template() {
+		?>
+		<#
+		var video_url = settings.video.url;
+
+		if ( ! video_url ) {
+			return;
+		}
+		#>
+		<video src="{{ video_url }}" class="elementor-video"></video>
 		<?php
 	}
 
