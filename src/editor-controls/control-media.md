@@ -190,9 +190,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Choose Video File', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::MEDIA,
-				'media_types' => [
-					'video',
-				],
+				'media_types' => [ 'video' ],
 				'default' => [
 					'url' => \Elementor\Utils::get_placeholder_image_src(),
 				],
@@ -225,6 +223,66 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		}
 		#>
 		<video src="{{ video_url }}" class="elementor-video"></video>
+		<?php
+	}
+
+}
+```
+
+Add a PDF file:
+
+```php
+<?php
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => esc_html__( 'Content', 'textdomain' ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+
+		$this->add_control(
+			'pdf',
+			[
+				'label' => esc_html__( 'Choose PDF', 'textdomain' ),
+				'type' => \Elementor\Controls_Manager::MEDIA,
+				'media_types' => [ 'application/pdf' ],
+			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+	protected function render() {
+		$settings = $this->get_settings_for_display();
+		$pdf_url = $settings['pdf']['url'];
+
+		if ( empty( $pdf_url ) ) {
+			?>
+			<a download href="<?php echo esc_attr( $pdf_url ); ?>">
+				<?php echo esc_html__( 'Download PDF', 'textdomain' ); ?>
+			</a>
+			<?php
+		}
+	}
+
+	protected function content_template() {
+		?>
+		<#
+		var pdf_url = settings.pdf.url;
+
+		if ( pdf_url ) {
+			#>
+			<a download src="{{ video_url }}">
+				<?php echo esc_html__( 'Download PDF', 'textdomain' ); ?>
+			</a>
+			<#
+		}
 		<?php
 	}
 
