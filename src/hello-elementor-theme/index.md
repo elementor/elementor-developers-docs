@@ -26,5 +26,6 @@ The theme provides several filter hooks that can be used in a child-theme `funct
 * [Content Width](./hello_elementor_content_width/)
 * [Page Title](./hello_elementor_page_title/)
 * [Viewport Content](./hello_elementor_viewport_content/)
+* [Description Meta Tag](./hello_elementor_add_description_meta_tag/)
 * [Enable Skip Link](./hello_elementor_enable_skip_link/)
 * [Skip Link URL](./hello_elementor_skip_link_url/)

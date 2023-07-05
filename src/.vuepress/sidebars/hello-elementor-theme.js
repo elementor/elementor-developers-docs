@@ -36,6 +36,7 @@ module.exports = [
       'hello_elementor_content_width',
       'hello_elementor_page_title',
       'hello_elementor_viewport_content',
+      'hello_elementor_add_description_meta_tag',
       'hello_elementor_enable_skip_link',
       'hello_elementor_skip_link_url',
     ]
