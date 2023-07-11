@@ -24,5 +24,8 @@ However, if a website chooses to use an external SEO plugin, the page may have d
 To prevent the theme from displaying the `<meta>` tag with page description, use the following code:
 
 ```php
-remove_action( 'wp_head', 'hello_elementor_add_description_meta_tag' );
+function remove_hello_elementor_description_meta_tag() {
+	remove_action( 'wp_head', 'hello_elementor_add_description_meta_tag' );
+}
+add_action( 'after_setup_theme', 'remove_hello_elementor_description_meta_tag' );
 ```
