@@ -9,28 +9,43 @@
 The addon will have the following folder structure:
 
 ```
-elementor-editor-panel/
+elementor-editor-panels/
 |
 ├─ assets/
 |  └─ js/
 |     ├─ components/
-|     |  ├─ panel-button.jsx
-|     |  └─ panel.jsx
+|     |  ├─ my-panel-1.jsx
+|     |  └─ my-panel-2.jsx
 |     |
 |     ├─ init.js
-|     └─ panel.js
+|     └─ panels.js
 |
-└─ elementor-editor-panel.php
+└─ elementor-editor-panels.php
 ```
 
 ## Plugin Files
 
-**elementor-editor-panel.php**
+**elementor-editor-panels.php**
 
 ```php
 ```
 
-**assets/js/editor-panel.php**
+**assets/js/init.php**
 
 ```js
+```
+
+**assets/js/panels.php**
+
+```js
+```
+
+**assets/js/components/my-panel-1.jsx**
+
+```jsx
+```
+
+**assets/js/components/my-panel-2.jsx**
+
+```jsx
 ```

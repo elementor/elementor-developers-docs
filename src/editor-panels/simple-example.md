@@ -9,7 +9,7 @@
 The addon will have the following folder structure:
 
 ```
-elementor-editor-panel/
+elementor-editor-panels/
 |
 ├─ assets/
 |  └─ js/
@@ -20,14 +20,14 @@ elementor-editor-panel/
 |     ├─ init.js
 |     └─ panels.js
 |
-├─ elementor-editor-panel.php
+├─ elementor-editor-panels.php
 ├─ package.json
 └─ webpack.config.js
 ```
 
-## Plugin Files
+## Install Dependencies
 ​
-Install the required packages using your package manager:
+Install the required dependencies using your package manager:
 ​
 ```bash
 npm install @elementor/editor-panels
@@ -35,7 +35,7 @@ npm install @elementor/editor-panels
 
 ## Plugin Files
 
-**elementor-editor-panel.php**
+**elementor-editor-panels.php**
 
 ```php
 <?php
@@ -46,7 +46,7 @@ npm install @elementor/editor-panels
  * Version:     1.0.0
  * Author:      Elementor Developer
  * Author URI:  https://developers.elementor.com/
- * Text Domain: elementor-editor-panel
+ * Text Domain: elementor-editor-panels
  *
  * Elementor tested up to: 3.15.0
  * Elementor Pro tested up to: 3.15.0
@@ -66,7 +66,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return void
  */
 function enqueue_new_editor_panels() {
-	wp_enqueue_script( 'elementor-editor-panel', plugins_url( 'assets/js/init.js', __FILE__ ), [ 'elementor-packages-editor-panels' ], null, true );
+	wp_enqueue_script( 'elementor-editor-panels', plugins_url( 'assets/js/init.js', __FILE__ ), [ 'elementor-packages-editor-panels' ], null, true );
 }
 add_action( 'elementor/editor/v2/scripts/enqueue', 'enqueue_new_editor_panels' );
 ```
@@ -75,7 +75,7 @@ add_action( 'elementor/editor/v2/scripts/enqueue', 'enqueue_new_editor_panels' )
 
 ```js
 {
-	"name": "elementor-editor-panel",
+	"name": "elementor-editor-panels",
 	"dependencies": {
 		// ...
 		"@elementor/editor-panels": "latest",
@@ -94,7 +94,7 @@ module.exports = {
 };
 ```
 
-**init.js**
+**assets/js/init.js**
 ​
 ```js
 import { registerPanel } from '@elementor/editor-panels';
@@ -106,7 +106,7 @@ function init() {
 }
 ```
 ​
-**panels.js**
+**assets/js/panels.js**
 ​
 ```js
 import { createPanel, registerPanel } from '@elementor/editor-panels';
@@ -124,7 +124,7 @@ export const panel2 = createPanel( {
 } );
 ```
 ​
-**components/my-panel-1.jsx**
+**assets/js/components/my-panel-1.jsx**
 
 ```jsx
 import { Panel, PanelHeader, PanelHeaderTitle, PanelBody } from '@elementor/editor-panels';
@@ -146,7 +146,7 @@ export default function MyPanel1() {
 }
 ```
 
-**components/my-panel-2.jsx**
+**assets/js/components/my-panel-2.jsx**
 
 ```jsx
 import { Panel, PanelHeader, PanelHeaderTitle, PanelBody } from '@elementor/editor-panels';

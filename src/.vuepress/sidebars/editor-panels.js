@@ -21,8 +21,10 @@ module.exports = [
     sidebarDepth: -1,
     children: [
       'panel-structure',
-      'panel-settings',
-      'register-panel',
+      'panel-actions',
+      'panel-status',
+      'panel-create',
+      'panel-register',
     ]
   },
   {

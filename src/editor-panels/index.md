@@ -15,8 +15,8 @@ External developers can register new panels. Learn more how to do that:
 * [Panel Structure](./panel-structure/)
 * [Panel Actions](./panel-actions/)
 * [Panel Status](./panel-status/)
-* [Panel Create](./panel-settings/)
-* [Panel Registration](./panel-settings/)
+* [Panel Create](./panel-create/)
+* [Panel Register](./panel-register/)
 
 ## Code Examples
 
