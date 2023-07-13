@@ -9,6 +9,7 @@ const deprecationsSidebar = require('./sidebars/deprecations');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
 const editorSidebar = require('./sidebars/editor');
 const editorControlsSidebar = require('./sidebars/editor-controls');
+const editorPanelsSidebar = require('./sidebars/editor-panels');
 const finderSidebar = require('./sidebars/finder');
 const formActionsSidebar = require('./sidebars/form-actions');
 const formFieldsSidebar = require('./sidebars/form-fields');
@@ -201,6 +202,7 @@ module.exports = {
       '/dynamic-tags/': dynamicTagsSidebar,
       '/editor/': editorSidebar,
       '/editor-controls/': editorControlsSidebar,
+      '/editor-panels/': editorPanelsSidebar,
       '/getting-started/': gettingStartedSidebar,
       '/hello-elementor-theme/': helloElementorTheme,
       '/finder/': finderSidebar,
