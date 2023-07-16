@@ -58,14 +58,22 @@ function elementor_test_widgets_registration( $widgets_manager ) {
 add_action( 'elementor/widgets/register', 'elementor_test_widgets_registration' );
 
 /**
- * Register scripts and styles for Elementor test widgets.
+ * Register scripts for Elementor test widgets.
  */
-function elementor_test_widgets_dependencies() {
+function elementor_test_widgets_script_dependencies() {
 
 	/* Scripts */
 	wp_register_script( 'widget-script-1', plugins_url( 'assets/js/widget-script-1.js', __FILE__ ) );
 	wp_register_script( 'widget-script-2', plugins_url( 'assets/js/widget-script-2.js', __FILE__ ), [ 'external-library' ] );
 	wp_register_script( 'external-library', plugins_url( 'assets/js/libs/external-library.js', __FILE__ ) );
+
+}
+add_action( 'wp_enqueue_scripts', 'elementor_test_widgets_script_dependencies' );
+
+/**
+ * Register styles for Elementor test widgets.
+ */
+function elementor_test_widgets_style_dependencies() {
 
 	/* Styles */
 	wp_register_style( 'widget-style-1', plugins_url( 'assets/css/widget-style-1.css', __FILE__ ) );
@@ -73,7 +81,7 @@ function elementor_test_widgets_dependencies() {
 	wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
 
 }
-add_action( 'wp_enqueue_scripts', 'elementor_test_widgets_dependencies' );
+add_action( 'wp_enqueue_style', 'elementor_test_widgets_style_dependencies' );
 ```
 
 Then, each widgets should set its dependencies as follows:
