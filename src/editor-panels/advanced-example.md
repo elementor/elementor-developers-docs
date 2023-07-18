@@ -17,6 +17,7 @@ elementor-editor-panels/
 |     |  ├─ my-panel-1.jsx
 |     |  └─ my-panel-2.jsx
 |     |
+|     ├─ index.js
 |     ├─ init.js
 |     └─ panels.js
 |
@@ -30,12 +31,17 @@ elementor-editor-panels/
 ```php
 ```
 
-**assets/js/init.php**
+**assets/js/index.js**
 
 ```js
 ```
 
-**assets/js/panels.php**
+**assets/js/init.js**
+
+```js
+```
+
+**assets/js/panels.js**
 
 ```js
 ```

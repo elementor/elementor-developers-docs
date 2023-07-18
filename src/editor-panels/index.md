@@ -6,7 +6,7 @@ The editor panels are part of the [Elementor Editor](./../editor/). The panel is
 
 ## Managing Panels
 
-External developers can register new panels. Learn more how to do that:
+External developers can enqueue scripts that register new editor panels:
 
 * [Add New Panel](./add-new-panel/)
 

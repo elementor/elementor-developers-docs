@@ -17,6 +17,7 @@ elementor-editor-panels/
 |     |  ├─ my-panel-1.jsx
 |     |  └─ my-panel-2.jsx
 |     |
+|     ├─ index.js
 |     ├─ init.js
 |     └─ panels.js
 |
@@ -26,9 +27,9 @@ elementor-editor-panels/
 ```
 
 ## Install Dependencies
-​
+
 Install the required dependencies using your package manager:
-​
+
 ```bash
 npm install @elementor/editor-panels
 ```
@@ -57,28 +58,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Register oEmbed Widget.
+ * Register new editor panels.
  *
- * Include widget file and register widget class.
+ * Enqueue the script that registers new editor panels.
  *
  * @since 1.0.0
- * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
  * @return void
  */
 function enqueue_new_editor_panels() {
-	wp_enqueue_script( 'elementor-editor-panels', plugins_url( 'assets/js/init.js', __FILE__ ), [ 'elementor-packages-editor-panels' ], null, true );
+	wp_enqueue_script( 'elementor-editor-panels', plugins_url( 'assets/js/index.js', __FILE__ ), [ 'elementor-packages-editor-panels' ], null, true );
 }
 add_action( 'elementor/editor/v2/scripts/enqueue', 'enqueue_new_editor_panels' );
 ```
 
 **package.json**
 
-```js
+```json
 {
 	"name": "elementor-editor-panels",
 	"dependencies": {
 		// ...
-		"@elementor/editor-panels": "latest",
+		"@elementor/editor-panels": "latest"
 	}
 }
 ```
@@ -94,41 +94,49 @@ module.exports = {
 };
 ```
 
+**assets/js/index.js**
+
+```js
+import init from './init';
+
+init();
+```
+
 **assets/js/init.js**
-​
+
 ```js
 import { registerPanel } from '@elementor/editor-panels';
-import { panel1, panel2 } from './panel';
-​
-function init() {
+import { panel1, panel2 } from './panels';
+
+export default function init() {
 	registerPanel( panel1.panel );
 	registerPanel( panel2.panel );
 }
 ```
-​
+
 **assets/js/panels.js**
-​
+
 ```js
 import { createPanel, registerPanel } from '@elementor/editor-panels';
 import MyPanel1 from './components/my-panel-1';
 import MyPanel2 from './components/my-panel-2';
-​
+
 export const panel1 = createPanel( {
 	id: 'my-panel-1',
-	component: MyPanel1
+	component: MyPanel1,
 } );
 
 export const panel2 = createPanel( {
 	id: 'my-panel-2',
-	component: MyPanel2
+	component: MyPanel2,
 } );
 ```
-​
+
 **assets/js/components/my-panel-1.jsx**
 
 ```jsx
 import { Panel, PanelHeader, PanelHeaderTitle, PanelBody } from '@elementor/editor-panels';
-​
+
 export default function MyPanel1() {
 	return (
 		<Panel>
@@ -150,7 +158,7 @@ export default function MyPanel1() {
 
 ```jsx
 import { Panel, PanelHeader, PanelHeaderTitle, PanelBody } from '@elementor/editor-panels';
-​
+
 export default function MyPanel2() {
 	return (
 		<Panel>
