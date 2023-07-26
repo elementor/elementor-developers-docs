@@ -63,7 +63,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 		<tr>
 			<td><code>placeholder</code></td>
 			<td><code>string</code></td>
-			<td></td>
+			<td>Paste URL or type</td>
 			<td>The field placeholder that appears when the field has no values.</td>
 		</tr>
 		<tr>
@@ -109,7 +109,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-29,37-39,41-43,49-51}
+```php {14-28,36-38,40-42,48-50}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -128,7 +128,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Link', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => esc_html__( 'https://your-link.com', 'textdomain' ),
 				'options' => [ 'url', 'is_external', 'nofollow' ],
 				'default' => [
 					'url' => '',
