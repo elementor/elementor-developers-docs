@@ -205,7 +205,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$video_url = $settings['video']['url'];
 
-		if ( empty( $video_url ) ) {
+		if ( !empty( $video_url ) ) {
 			return;
 		}
 		?>
