@@ -111,11 +111,12 @@ module.exports = [
     sidebarDepth: -1,
     children: [
       'labels-description',
+      'selectors',
+      'selectors-dictionary',
       'conditional-display',
       'global-style',
       'dynamic-content',
       'frontend-available',
-      'selectors-dictionary',
     ]
   }
 ];
