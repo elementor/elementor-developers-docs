@@ -17,14 +17,6 @@ module.exports = [
     ]
   },
   {
-    title: 'Editor Work Flow',
-    collapsable: false,
-    sidebarDepth: -1,
-    children: [
-      'editor-work-flow',
-    ]
-  },
-  {
     title: 'Editor Panels',
     collapsable: false,
     sidebarDepth: -1,
@@ -35,6 +27,18 @@ module.exports = [
       'page-settings-panel',
       'history-panel',
       'widgets-panel',
+    ]
+  },
+  {
+    title: 'How the Editor Works',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'editor-work-flow',
+      [ 'editor-loading', 'Loading' ],
+      [ 'editor-editing', 'Editing' ],
+      [ 'editor-preview', 'WP Preview' ],
+      [ 'editor-saving', 'Saving' ],
     ]
   },
   {
