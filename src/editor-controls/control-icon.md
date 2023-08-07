@@ -1,7 +1,9 @@
 # Icon Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 ::: danger DEPRECATED
-This control was deprecated in favor of the new [Icons Control](./../classes/control-icons/).
+This control was deprecated in favor of the new [Icons Control](./../editor-controls/control-icons/).
 :::
 
 Elementor icon control displays a font icon select box field based on [Font Awesome](https://fontawesome.com/) fonts. The control accepts `include` or `exclude` arguments to set a partial list of icons.

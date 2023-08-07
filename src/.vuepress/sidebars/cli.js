@@ -21,12 +21,22 @@ module.exports = [
       'library-disconnect',
       'library-import',
       'library-import-dir',
+      'theme-builder-clear-conditions',
       'kit-import',
       'kit-export',
+      'experiments-status',
       'experiments-activate',
       'experiments-deactivate',
       'license-activate',
       'license-deactivate',
+    ]
+  },
+  {
+    title: 'Install',
+    collapsable: false,
+    sidebarDepth: -1,
+    children: [
+      'composer',
     ]
   },
 ];

@@ -1,5 +1,7 @@
 # Textarea Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-textarea.png')" alt="Textarea Control" style="float: right;">
 
 Elementor textarea control displays a classic textarea field with an option to set the number of `rows`.

@@ -58,7 +58,8 @@ add_action( 'elementor/init', 'add_panel_tab' );
 To add a custom icon above the tab label, you will need to add custom CSS:
 
 ```css
-.elementor-panel .elementor-tab-control-new-tab a:before {
+.elementor-panel .elementor-tab-control-new-tab a:before,
+.elementor-panel .elementor-tab-control-new-tab span:before {
 	font-family: eicons;
 	content: '\e942';
 }

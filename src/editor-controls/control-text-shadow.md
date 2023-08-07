@@ -1,5 +1,7 @@
 # Text Shadow Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor Text Shadow control displays an input fields for horizontal shadow, vertical shadow, shadow blur and shadow color.
 
 The control is defined in `Control_Text_Shadow` class which extends `Control_Base_Multiple` class.
@@ -44,7 +46,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		);
 
 		$this->add_control(
-			'custom_text_shadow'
+			'custom_text_shadow',
 			[
 				'label' => esc_html__( 'Text Shadow', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::TEXT_SHADOW,

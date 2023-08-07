@@ -6,6 +6,7 @@ Elementor offers many built-in controls out of the box, but it also allows exter
 
 ## Hooks
 
+To do that we simply hook to the `elementor/controls/register` action which provides access to the controls manager as a parameter. Developers can use the manager to add new controls using the `register()` method with the controls instance.
 
 ## Registering Controls
 

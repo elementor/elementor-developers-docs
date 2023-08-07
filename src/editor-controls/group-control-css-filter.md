@@ -1,5 +1,7 @@
 # CSS Filter Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor CSS filter group control displays sliders fields to define the values of different CSS filters including blur, brightens, contrast, saturation or hue.
 
 The control is defined in `Group_Control_Css_Filter` class which extends `Group_Control_Base` class.

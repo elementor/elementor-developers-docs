@@ -6,7 +6,7 @@ Developers can remove [finder categories](./../finder/) from the list of registe
 
 ## Unregistering Existing Finder Categories
 
-As of Elementor 3.6, developers should use the following code to unregister existing categories:
+Developers should use the following code to unregister existing categories:
 
 ```php
 /**
@@ -24,4 +24,4 @@ function unregister_finder_categories( $finder_categories_manager ) {
 add_action( 'elementor/finder/register', 'unregister_finder_categories' );
 ```
 
-This hooks to the `elementor/finder/register` action hook which holds the finder categories manager. The manager then unregisters finder categories by passing the category name.
+This code hooks to the `elementor/finder/register` action hook which holds the finder categories manager. The manager then unregisters finder categories by passing the category name.

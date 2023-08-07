@@ -1,5 +1,7 @@
 # Divider Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor divider control displays a separator between controls.
 
 The control is defined in `Control_Divider` class which extends `Base_UI_Control` class.

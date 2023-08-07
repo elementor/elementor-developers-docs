@@ -1,5 +1,7 @@
 # Box Shadow Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor Box Shadow control displays an input fields for horizontal shadow, vertical shadow, shadow blur, shadow spread and shadow color.
 
 The control is defined in `Control_Box_Shadow` class which extends `Control_Base_Multiple` class.

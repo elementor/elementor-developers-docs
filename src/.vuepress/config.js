@@ -4,6 +4,7 @@ const addonsSidebar = require('./sidebars/addons');
 const cliSidebar = require('./sidebars/cli');
 const contextMenuSidebar = require('./sidebars/context-menu');
 const controlsSidebar = require('./sidebars/controls');
+const dataStructureSidebar = require('./sidebars/data-structure');
 const deprecationsSidebar = require('./sidebars/deprecations');
 const dynamicTagsSidebar = require('./sidebars/dynamic-tags');
 const editorSidebar = require('./sidebars/editor');
@@ -12,7 +13,9 @@ const finderSidebar = require('./sidebars/finder');
 const formActionsSidebar = require('./sidebars/form-actions');
 const formFieldsSidebar = require('./sidebars/form-fields');
 const gettingStartedSidebar = require('./sidebars/getting-started');
+const helloElementorTheme = require('./sidebars/hello-elementor-theme');
 const hooksSidebar = require('./sidebars/hooks');
+const hostingSidebar = require('./sidebars/hosting');
 const managersSidebar = require('./sidebars/managers');
 const scriptsStylesSidebar = require('./sidebars/scripts-styles');
 const themeConditionsSidebar = require('./sidebars/theme-conditions');
@@ -117,6 +120,10 @@ module.exports = {
             link: '/editor-controls/',
           },
           {
+            text: 'Data Structure',
+            link: '/data-structure/',
+          },
+          {
             text: 'Managers',
             link: '/managers/',
           },
@@ -189,15 +196,18 @@ module.exports = {
       '/cli/': cliSidebar,
       '/context-menu/': contextMenuSidebar,
       '/controls/': controlsSidebar,
+      '/data-structure/': dataStructureSidebar,
       '/deprecations/': deprecationsSidebar,
       '/dynamic-tags/': dynamicTagsSidebar,
       '/editor/': editorSidebar,
       '/editor-controls/': editorControlsSidebar,
       '/getting-started/': gettingStartedSidebar,
+      '/hello-elementor-theme/': helloElementorTheme,
       '/finder/': finderSidebar,
       '/form-actions/': formActionsSidebar,
       '/form-fields/': formFieldsSidebar,
       '/hooks/': hooksSidebar,
+      '/hosting/': hostingSidebar,
       '/managers/': managersSidebar,
       '/scripts-styles/': scriptsStylesSidebar,
       '/theme-conditions/': themeConditionsSidebar,

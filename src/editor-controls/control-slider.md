@@ -1,5 +1,7 @@
 # Slider Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-slider.png')" alt="Slider Control" style="float: right;">
 
 Elementor slider control displays a draggable range slider. The slider control can optionally have a number of unit types (`size_units`) for the user to choose from. The control also accepts a `range` argument that allows you to set the `min`, `max` and `step` values per unit type.
@@ -62,7 +64,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>size_units</code></td>
 			<td><code>array</code></td>
 			<td>[ 'px' ]</td>
-			<td>An array of available CSS units like <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>deg</code> and <code>vh</code>.</td>
+			<td>An array of available CSS units like <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>deg</code>, <code>vh</code> or <code>custom</code>.</td>
 		</tr>
 		<tr>
 			<td><code>range</code></td>
@@ -127,7 +129,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Width', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'size_units' => [ 'px', '%' ],
+				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
 				'range' => [
 					'px' => [
 						'min' => 0,

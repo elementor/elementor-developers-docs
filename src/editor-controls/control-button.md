@@ -1,5 +1,7 @@
 # Button Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor button control displays a button in the panel that can trigger an event.
 
 The control is defined in `Control_Button` class which extends `Base_UI_Control` class.

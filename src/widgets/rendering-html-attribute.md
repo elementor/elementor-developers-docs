@@ -21,14 +21,15 @@ Using the `render()` method, we can add attributes to the HTML tag using `add_re
 ```php
 <?php
 protected function render() {
+	$settings = $this->get_settings_for_display();
 
 	$this->add_render_attribute(
 		'wrapper',
 		[
 			'id' => 'custom-widget-id',
-			'class' => [ 'custom-widget-wrapper-class', settings['custom_class'] ],
-			'role' => settings['role'],
-			'aria-label' => settings['name'],
+			'class' => [ 'custom-widget-wrapper-class', $settings['custom_class'] ],
+			'role' => $settings['role'],
+			'aria-label' => $settings['name'],
 		]
 	);
 	?>

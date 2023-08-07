@@ -1,5 +1,7 @@
 # Box Shadow Group Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor box shadow group control displays input fields to define the box shadow including the horizontal shadow, vertical shadow, shadow blur, shadow spread, shadow color and the position.
 
 The control is defined in `Group_Control_Box_Shadow` class which extends `Group_Control_Base` class.

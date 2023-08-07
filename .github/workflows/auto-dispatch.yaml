@@ -6,16 +6,17 @@ on:
 
 jobs:
   Build:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout this repo
         uses: actions/checkout@v2
       - name: Build npm
         run: |
+          export NODE_OPTIONS=--openssl-legacy-provider
           yarn
           yarn run build
   RepoAjobs:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     needs: Build
     steps:
       - name: send dispatch
@@ -23,13 +24,15 @@ jobs:
         with:
           token: ${{ secrets.DEVOPS_TOKEN  }}
           repository: ${{ secrets.dispatch_repo }}
-          event-type: ${{ github.event.repository.name }}-${{ github.ref }}-${{ github.actor }}
+          event-type: gitops-${{ github.event.repository.name }}-${{ github.ref }}-${{ github.actor }}
           client-payload: >-
             {
+              "product": "platform",
+              "project": "external",
               "type": "docker",
               "repository": "${{ github.event.repository.name }}" ,
               "repository_full": "${{ github.event.repository.full_name }}" ,
-              "github-actor": "${{ github.actor }}",
               "github-sha": "${{ github.sha }}",
-              "github-ref": "${{ github.ref }}"
+              "github-actor": "${{ github.actor }}",
+              "github-ref": "${{ github.ref_name }}"
             }

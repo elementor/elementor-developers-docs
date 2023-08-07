@@ -1,5 +1,7 @@
 # Color Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-color.png')" alt="Color Control" style="float: right;">
 
 Elementor color control displays a color picker field with an alpha slider. It includes a customizable color palette that can be preset by the user.

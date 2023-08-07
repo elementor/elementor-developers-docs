@@ -117,6 +117,7 @@ module.exports = [
       'global-style',
       'dynamic-content',
       'frontend-available',
+      'ai',
     ]
   }
 ];

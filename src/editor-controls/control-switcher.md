@@ -1,5 +1,7 @@
 # Switcher Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-switcher.png')" alt="Switcher Control" style="float: right;">
 
 Elementor switcher control displays an on/off switcher. It's basically a fancy representation of checkboxes.

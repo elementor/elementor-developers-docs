@@ -1,5 +1,7 @@
 # Raw HTML Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 Elementor raw HTML control displays an HTML content in the panel.
 
 The control is defined in `Control_Raw_Html` class which extends `Base_UI_Control` class.
@@ -64,7 +66,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>content_classes</code></td>
 			<td><code>string</code></td>
 			<td></td>
-			<td>CSS classes to add to the content wrapper.</td>
+			<td>CSS classes to add to the control wrapper.</td>
 		</tr>
 	</tbody>
 </table>

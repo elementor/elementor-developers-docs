@@ -1,5 +1,5 @@
 <div align="center">
-    <img width="300" src="https://developers.elementor.com/docs/assets/img/logo.svg" alt="Elementor Logo">
+    <img width="300" src="https://developers.elementor.com/docs/favicon.png" alt="Elementor Logo">
 </div>
 
 # Elementor Developers Docs

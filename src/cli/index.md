@@ -10,7 +10,7 @@ WP-CLI is a command line interface for [WordPress](https://wordpress.org/). It o
 
 ## What is Elementor CLI?
 
-Elementor CLI is a set of commands integrated into WP-CLI to allow developers to run certain Elementor tasks in a command line.
+Elementor CLI is a set of commands integrated into WP-CLI to allow developers to run certain Elementor tasks from the command line.
 
 ## Syntax
 
@@ -39,10 +39,14 @@ Currently, the following Elementor commands are available:
 * [Library Import Dir](./library-import-dir/)
 * [Library Connect](./library-connect/)
 * [Library Disconnect](./library-disconnect/)
+* [Clear Theme Builder Conditions](./theme-builder-clear-conditions/)
 * [Kit Import](./kit-import/)
 * [Kit Export](./kit-export/)
+* [Experiment Status](./experiments-status/)
 * [Experiment Activation](./experiments-activate/)
 * [Experiment Deactivation](./experiments-deactivate/)
+* [License Activate](./license-activate/)
+* [License Deactivate](./license-deactivate/)
 
 ## Help
 

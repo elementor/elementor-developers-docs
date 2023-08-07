@@ -1,5 +1,7 @@
 # Gallery Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-gallery.png')" alt="Gallery Control" style="float: right;">
 
 Elementor gallery control displays a media select area based on WordPress Galleries. The control allows to select multiple images from the WordPress Media Library.

@@ -204,7 +204,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'label' => esc_html__( 'Size', 'textdomain' ),
-				'size_units' => [ 'px', 'em', 'rem' ],
+				'size_units' => [ 'px', 'em', 'rem', 'custom' ],
 				'range' => [
 					'px' => [
 						'min' => 1,

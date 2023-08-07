@@ -1,5 +1,7 @@
 # Hover Animation Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-hover-animation.png')" alt="Hover Animation Control" style="float: right;">
 
 Elementor hover animation control displays a select box field based on the [Hover.css](https://ianlunn.github.io/Hover/) library. The control allows to set an hover animation effect for an item.

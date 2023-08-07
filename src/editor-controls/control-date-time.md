@@ -1,5 +1,7 @@
 # Date Time Control
 
+<Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Basic" />
+
 <img :src="$withBase('/assets/img/controls/control-date-time.png')" alt="Date Time Control" style="float: right;">
 
 Elementor date time control displays a date/time picker field based on the [Flatpickr](https://flatpickr.js.org/) library.
