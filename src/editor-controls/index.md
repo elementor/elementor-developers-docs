@@ -35,9 +35,10 @@ Learn more about wrappers to rearrange your controls:
 Learn more how to customize your controls:
 
 * [Labels and Description](./labels-description/)
+* [CSS Selectors](./selectors/)
+* [Selectors Dictionary](./selectors-dictionary/)
 * [Conditional Display](./conditional-display/)
 * [Global Style](./global-style/)
 * [Dynamic Content](./dynamic-content/)
 * [Frontend Available](./frontend-available/)
-* [Selectors Dictionary](./selectors-dictionary/)
 * [AI Button](./ai/)
