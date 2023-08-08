@@ -50,7 +50,7 @@ function remove_unused_widgets( $widgets_manager ) {
 		// 'divider',
 		// 'spacer',
 		// 'image-box',
-		// 'google-maps',
+		// 'google_maps',
 		// 'icon',
 		// 'icon-box',
 		// 'star-rating',
@@ -73,7 +73,7 @@ function remove_unused_widgets( $widgets_manager ) {
 		// 'read-more',
 	];
 
-	foreach ( $widgets_list as $widget ) {
+	foreach ( $widgets_to_unregister as $widget ) {
 		$widgets_manager->unregister( $widget );
 	}
 
