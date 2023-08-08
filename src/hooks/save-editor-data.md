@@ -42,7 +42,7 @@ function log_saved_elementor_data( $post_id, $editor_data ) {
 	);
 
 }
-add_action( 'elementor/editor/after_save', 'log_saved_elementor_data' );
+add_action( 'elementor/editor/after_save', 'log_saved_elementor_data', 10, 2 );
 ```
 
 Another example is when you want to clear the cache each time the user updates a post:
@@ -65,5 +65,5 @@ function clear_cache_when_updating_elementor( $post_id, $data ) {
 	clear_old_cache_data_for_your_post( $post_id );
 
 }
-add_action( 'elementor/editor/after_save', 'clear_cache_when_updating_elementor' );
+add_action( 'elementor/editor/after_save', 'clear_cache_when_updating_elementor', 10 , 2 );
 ```
