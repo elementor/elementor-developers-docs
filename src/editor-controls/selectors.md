@@ -2,25 +2,25 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-To transform control values to CSS styles, Elementor uses the `selector` argument for group controls and `selectors` argument for other controls. These two arguments define which CSS selectors to be used and on which CSS properties to set the values on. Let's see how it works.
+To transform control values to CSS styles, Elementor uses the `selector` argument for group controls and the `selectors` argument for other controls. These two arguments define which CSS selectors are used and on which CSS properties the values are set. Let's see how it works.
 
 ## Custom Stylesheets
 
-When a WordPress post/page is created it is assigned with a unique `id`. Elementor editor uses this `id` to generate a very specific stylesheet for that page, based on the user data from each control. Then, with every page load, Elementor loads the stylesheet belonging to that particular page.
+When a WordPress post/page is created, it is assigned with a unique `id`. The Elementor editor uses this `id` to generate a very specific stylesheet for that page, based on the user data from each control. Then, with every page load, Elementor loads the stylesheet belonging to that particular page.
 
 ### Stylesheet Path
 
-The stylesheet is saved in the `/elementor/css/` folder, which is located inside the WordPress `/uploads/` folder. The file itself can be identified by the it's `id`.
+The stylesheet is saved in the `/elementor/css/` folder, which is located inside the WordPress `/uploads/` folder. The file itself can be identified by its `id`.
 
 ```
 https://example.com/wp-content/uploads/elementor/css/post-{id}.css
 ```
 
-When a page is loaded, Elementor automatically loads the corresponding stylesheet containing the styling options retrieved from the controls used by the different widgets on that specific page.
+When a page is loaded, Elementor automatically loads the corresponding stylesheet containing the styling options retrieved from the controls used by the widgets on that page.
 
 ### Custom CSS
 
-Editor controls are a way to allow the user to enter data, either content or styling. To transform control values to CSS styles, the control needs to inform the editor that it needs to create a CSS. This is done by specifying a list of CSS selectors, properties and values.
+Editor controls are a way to allow the user either content or styling data. To transform control values to CSS styles, the control inform the editor that it needs to create a CSS. This is done by specifying a list of CSS selectors, properties and values.
 
 ```php
 'selectors' => [
@@ -30,7 +30,7 @@ Editor controls are a way to allow the user to enter data, either content or sty
 
 ## Selector Arguments
 
-Elementor has two selector arguments. The first applied on group controls the second on non-group controls. Both methods convert user data into a CSS style in a stylesheets.
+Elementor has two selector arguments. The first is applied on group controls, the second on non-group controls. Both methods convert user data into a CSS style in a stylesheet.
 
 ### Group Controls
 
@@ -92,7 +92,7 @@ $this->add_control(
 );
 ```
 
-It can also be used to specify multiple CSS properties in a single selector:
+The selector can also be used to specify multiple CSS properties in a single selector:
 
 ```php{6-8}
 $this->add_control(
@@ -138,7 +138,7 @@ $this->add_control(
 );
 ```
 
-Different values based on writing direction for LTR and RTL websites:
+To support both LTR and RTL websites, you can specify different selector values based on writing direction:
 
 ```php{6-9}
 $this->add_control(
@@ -160,7 +160,7 @@ Elementor offers two ways to apply custom CSS on a specific element inside your 
 
 ### Element Wrapper
 
-When an element wrapper variable used in the selector:
+When an element wrapper variable is used in a selector:
 
 ```php
 'selectors' => [
@@ -168,7 +168,7 @@ When an element wrapper variable used in the selector:
 ],
 ```
 
-It generates a CSS containing the selector of the widgets instance:
+It generates CSS containing the selector of the widget's instance:
 
 ```css
 .elementor-123 .elementor-element.elementor-element-1a2b3c4 .widget-container {
@@ -176,11 +176,11 @@ It generates a CSS containing the selector of the widgets instance:
 }
 ```
 
-If you omit the widget wrapper, the style will apply on all the `.widget-container` classes on the page. With the wrapper the style will apply only on `.widget-container` class on the widget. It is basically Elementor's way to create scoped styles for particular widget instances.
+If you omit the widget wrapper, the style will apply on all the `.widget-container` classes on the page. With the wrapper, the style will apply only on the `.widget-container` class of the widget. It is basically Elementor's way to create scoped styles for particular widget instances.
 
 ### Element ID
 
-When an element id variable used in the selector:
+When an element id variable is used in a selector:
 
 ```php
 'selectors' => [
@@ -188,7 +188,7 @@ When an element id variable used in the selector:
 ],
 ```
 
-It generates a CSS containing the id of the widget instance:
+It generates CSS containing the id of the widget instance:
 
 ```css
 #elementor-element-1a2b3c4 {
@@ -196,15 +196,15 @@ It generates a CSS containing the id of the widget instance:
 }
 ```
 
-The element id variable helps creating unique elements but it creates issue when a widget has multiple instances on the page as an `id` attribute should be unique on the page. That is why we are discouraging external developers using this technique. It is used by Elementor for very specific use cases.
+The element id variable helps create unique elements, but it presents an issue when the widget has multiple instances on the page. This is because the `id` attribute should be unique on the page. Therefore we discourage external developers from using this technique. It is used by Elementor only in very specific use cases.
 
 ## Control Values to CSS Value
 
-Each control returns a different value type, some return strings while others return arrays. Therefore you need to get familiar with the [control types](./control-types/) to understand how to properly transform them to CSS values.
+Each control returns a different value type, some return strings while others return arrays. Therefore you need to familiaraze yourself with the [control types](./control-types/). This will help you understand how to properly transform them to CSS values.
 
 ### Data Controls
 
-All the data controls return `string`s, to apply the user selected value to the style we need to insert the control value to selectors argument:
+All the data controls return `string`s. To apply the user selected value to the style we need to insert the control value to selectors argument:
 
 ```php
 'selectors' => [
@@ -214,7 +214,7 @@ All the data controls return `string`s, to apply the user selected value to the 
 
 ### Unit Control
 
-[Slider Control](./control-slider/) return an `array` with the size and the unit (`[ 'size' => '', 'unit' => '' ]`), to use this user data in the selectors argument:
+[Slider Controls](./control-slider/) return an `array` with the size and the unit (`[ 'size' => '', 'unit' => '' ]`), to use this user data in the selectors argument:
 
 ```php
 'selectors' => [
@@ -224,7 +224,7 @@ All the data controls return `string`s, to apply the user selected value to the 
 
 ### Dimensions Control
 
-[Dimensions Control](./control-dimensions/) return an `array` with all four sides and a unit (`[ 'top' => '', 'right' => '', 'bottom' => '', 'left' => '', 'unit' => '', 'isLinked' => '' ]`), to use the user data in the selectors argument:
+[Dimensions Controls](./control-dimensions/) return an `array` with all four sides and a unit (`[ 'top' => '', 'right' => '', 'bottom' => '', 'left' => '', 'unit' => '', 'isLinked' => '' ]`), to use the user data in the selectors argument:
 
 ```php
 'selectors' => [
@@ -234,7 +234,7 @@ All the data controls return `string`s, to apply the user selected value to the 
 
 ### URL Control
 
-[URL Control](./control-url/) return an `array` with url and some attributes (`[ 'url' => '', 'is_external' => '', 'nofollow' => '', 'custom_attributes' => '' ]`), to use the user data in the selectors argument:
+[URL Controls](./control-url/) return an `array` with the url and some attributes (`[ 'url' => '', 'is_external' => '', 'nofollow' => '', 'custom_attributes' => '' ]`), to use the user data in the selectors argument:
 
 ```php
 'selectors' => [
@@ -244,7 +244,7 @@ All the data controls return `string`s, to apply the user selected value to the 
 
 ### Media Control
 
-[Media Control](./control-media/) return an `array` with the media id and url (`[ 'id' => '', 'url' => '' ]`), to use the user data in the selectors argument:
+[Media Controls](./control-media/) return an `array` with the media id and url (`[ 'id' => '', 'url' => '' ]`), to use the user data in the selectors argument:
 
 ```php
 'selectors' => [
@@ -252,14 +252,13 @@ All the data controls return `string`s, to apply the user selected value to the 
 ],
 ```
 
-
 ### Multivalue Controls
 
-Other multivalue controls return different `array` types but we are not applying css on these controls as they are considered content controls rather than style controls.
+Other multivalue controls return different `array` types but we are not applying CSS to these controls as they are considered content controls rather than style controls.
 
 ## Values from other Controls
 
-In some less common cases you have more than one style control to create a single CSS property. To achieve that, Elementor offers the ability to prefix the value with the control name. This method provides the means to pull data from other controls.
+In some less common cases you'll need more than one style control to create a single CSS property. For these cases, Elementor offers the ability to prefix the value with the control name. This method provides the means to pull data from other controls.
 
 ### Simple Example
 
@@ -269,7 +268,7 @@ A simple example is an `aspect-ratio` scenario where we need to use two [number 
 aspect-ratio: {{width}} / {{height}};
 ```
 
-To achieve that, there needs to be two controls and a single `selectors` argument that utilizes the values from both controls:
+To achieve this, you need two controls, and a single `selectors` argument that utilizes the values from both controls:
 
 ```php{14-16}
 $this->add_control(
@@ -305,4 +304,4 @@ background-image: linear-gradient(
 );
 ```
 
-This time we will allow you to implement this by yourself so that you can practice.
+In this case we will allow you to implement this by yourself so that you can practice.
