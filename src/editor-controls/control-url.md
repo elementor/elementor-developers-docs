@@ -67,6 +67,12 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td>The field placeholder that appears when the field has no values.</td>
 		</tr>
 		<tr>
+			<td><code>autocomplete</code></td>
+			<td><code>bool</code></td>
+			<td>true</td>
+			<td>Whether to allow search functionality.</td>
+		</tr>
+		<tr>
 			<td><code>options</code></td>
 			<td><code>array</code>|<code>false</code></td>
 			<td>[<br>'url',<br>'is_external',<br>'nofollow',<br>'custom_attributes'<br>]</td>
