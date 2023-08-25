@@ -26,7 +26,7 @@ Below is a list of Elementor internals along with a short description and links 
 
 * [Deprecations](./../deprecations/)
 
-  Over time, code is removed or replaced. The deprecation process is gradual and and Elementor deprecation process consists of the several steps. Developers need to know how Elementor deprecates code and how they need to debug and update deprecated code.
+  Over time, code is removed or replaced. The deprecation process is gradual and Elementor deprecation process consists of the several steps. Developers need to know how Elementor deprecates code and how they need to debug and update deprecated code.
 
 * [CLI](./../cli/)
 
