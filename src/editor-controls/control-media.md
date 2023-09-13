@@ -262,7 +262,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$settings = $this->get_settings_for_display();
 		$pdf_url = $settings['pdf']['url'];
 
-		if ( !empty( $pdf_url ) ) {
+		if ( ! empty( $pdf_url ) ) {
 			?>
 			<a download href="<?php echo esc_attr( $pdf_url ); ?>">
 				<?php echo esc_html__( 'Download PDF', 'textdomain' ); ?>
