@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-In Elementor 3.0, the limited Schemes mechanism had been replaced with [Globals](./../editor-controls/global-style/) which allows users to define limitless colors and typographies. Addons using schemes in their widgets controls should update the code.
+In Elementor 3.0, the limited Schemes mechanism had been replaced with [Globals](./../editor-controls/global-style/) which allows users to define limitless colors and typographies. Addons using schemes in their widgets controls should update their code.
 
 ## Schemes to Globals
 
-Addon developers should update their code, replacing deprecated Schemes with Globals.
+To migrate from deprecated Schemes to the new Globals, developers should look for color controls and typography controls, and make the following changes:
 
 ### Typography
 
