@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-A recent example of deprecation is standardizing the registration of [managers](./../managers/) in Elementor 3.5. In this instance, we simplified the process using easier and more intuitive naming conventions.
+A common example of deprecation is the [managers](./../managers/) registration process in Elementor 3.5. In this instance, many registration methods and hooks have been standardized and simplified using intuitive naming conventions.
 
 ## Widgets
 
