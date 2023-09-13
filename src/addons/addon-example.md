@@ -43,8 +43,8 @@ The addon code should look as follows:
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-test-addon
  * 
- * Elementor tested up to: 3.7.0
- * Elementor Pro tested up to: 3.7.0
+ * Elementor tested up to: 3.16.0
+ * Elementor Pro tested up to: 3.16.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -95,7 +95,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @var string Minimum Elementor version required to run the addon.
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '3.7.0';
+	const MINIMUM_ELEMENTOR_VERSION = '3.16.0';
 
 	/**
 	 * Minimum PHP Version
@@ -103,7 +103,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @var string Minimum PHP version required to run the addon.
 	 */
-	const MINIMUM_PHP_VERSION = '7.3';
+	const MINIMUM_PHP_VERSION = '7.4';
 
 	/**
 	 * Instance

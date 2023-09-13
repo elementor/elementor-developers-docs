@@ -38,8 +38,8 @@ elementor-emojionearea-control/
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-emojionearea-control
  *
- * Elementor tested up to: 3.7.0
- * Elementor Pro tested up to: 3.7.0
+ * Elementor tested up to: 3.16.0
+ * Elementor Pro tested up to: 3.16.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
