@@ -32,8 +32,8 @@ elementor-list-widget/
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-list-widget
  *
- * Elementor tested up to: 3.7.0
- * Elementor Pro tested up to: 3.7.0
+ * Elementor tested up to: 3.16.0
+ * Elementor Pro tested up to: 3.16.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

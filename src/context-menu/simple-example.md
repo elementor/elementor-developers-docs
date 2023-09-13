@@ -32,8 +32,8 @@ elementor-context-menus/
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-context-menus
  *
- * Elementor tested up to: 3.5.0
- * Elementor Pro tested up to: 3.5.0
+ * Elementor tested up to: 3.16.0
+ * Elementor Pro tested up to: 3.16.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
