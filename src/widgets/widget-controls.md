@@ -32,7 +32,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## Available Controls
 
-Elementor offers a [wide variety of controls](./../editor-controls/control-types/) out-of-the-box. All the controls have to be wrapped in [sections](./../editor-controls/control-section/). You can add [regular controls](./../editor-controls/regular-control/), [responsive controls](./../editor-controls/responsive-control/) and [group controls](./../editor-controls/group-control/). Developers can even [create new controls](./../editor-controls/control-structure/).
+Elementor offers a [wide variety of controls](./../editor-controls/control-types/) out-of-the-box. All the controls have to be wrapped in [sections](./../editor-controls/control-section/). You can add [regular controls](./../editor-controls/regular-control/), [responsive controls](./../editor-controls/responsive-control/) and [group controls](./../editor-controls/group-control/). Developers can even [create new controls](./../controls/) 
+
+
 
 ## Add Controls to your Widget
 
