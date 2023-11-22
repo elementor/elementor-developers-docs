@@ -136,7 +136,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-24,33-35,41-43}
+```php {14-44,53-55,61-63}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -156,6 +156,26 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Margin', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'range' => [
+					'px' => [
+						'min' => 10,
+						'max' => 50,
+						'step' => 5,
+					],
+					'em' => [
+						'min' => 1,
+						'max' => 5,
+						'step' => 0.5,
+					],
+				],
+				'default' => [
+					'top' => 2,
+					'right' => 0,
+					'bottom' => 2,
+					'left' => 0,
+					'unit' => 'em',
+					'isLinked' => false,
+				],
 				'selectors' => [
 					'{{WRAPPER}} .your-class' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
 				],
