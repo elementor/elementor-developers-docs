@@ -67,19 +67,6 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td>An array of available CSS units like <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>deg</code>, <code>vh</code> or <code>custom</code>.</td>
 		</tr>
 		<tr>
-			<td><code>range</code></td>
-			<td><code>array</code></td>
-			<td></td>
-			<td>
-				An array of ranges for each register size.
-				<ul>
-					<li><strong>$min</strong> (<code>int</code>) The minimum value of range.</li>
-					<li><strong>$max</strong> (<code>int</code>) The maximum value of range.</li>
-					<li><strong>$step</strong> (<code>int</code>) The intervals value that will be incremented or decremented when using the controls’ spinners.</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
 			<td><code>default</code></td>
 			<td><code>array</code></td>
 			<td></td>
@@ -156,18 +143,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Margin', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
-				'range' => [
-					'px' => [
-						'min' => 10,
-						'max' => 50,
-						'step' => 5,
-					],
-					'em' => [
-						'min' => 1,
-						'max' => 5,
-						'step' => 0.5,
-					],
-				],
 				'default' => [
 					'top' => 2,
 					'right' => 0,
