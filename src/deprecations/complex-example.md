@@ -6,9 +6,25 @@ In Elementor 3.0, the limited Schemes mechanism had been replaced with [Globals]
 
 ## Schemes to Globals
 
-To migrate from deprecated Schemes to the new Globals, developers should look for color controls and typography controls, and make the following changes:
+To migrate from deprecated Schemes to the new Globals, developers should look for color and typography group controls, and changes them.
 
 ### Typography
+
+Replace the following:
+
+* `\Elementor\Core\Schemes\Typography::TYPOGRAPHY_1`
+* `\Elementor\Core\Schemes\Typography::TYPOGRAPHY_2`
+* `\Elementor\Core\Schemes\Typography::TYPOGRAPHY_3`
+* `\Elementor\Core\Schemes\Typography::TYPOGRAPHY_4`
+
+With:
+
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_PRIMARY`
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_SECONDARY`
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_TEXT`
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Typography::TYPOGRAPHY_ACCENT`
+
+Here is an example:
 
 ```diff
 $this->add_group_control(
@@ -61,6 +77,22 @@ $this->add_group_control(
 ```
 
 ### Colors
+
+Replace the following:
+
+* `\Elementor\Core\Schemes\Color::COLOR_1`
+* `\Elementor\Core\Schemes\Color::COLOR_2`
+* `\Elementor\Core\Schemes\Color::COLOR_3`
+* `\Elementor\Core\Schemes\Color::COLOR_4`
+
+With:
+
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_PRIMARY`
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_SECONDARY`
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_TEXT`
+* `\Elementor\Core\Kits\Documents\Tabs\Global_Colors::COLOR_ACCENT`
+
+Here is an example:
 
 ```diff
 $this->add_control(
