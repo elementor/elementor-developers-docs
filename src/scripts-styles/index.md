@@ -6,7 +6,7 @@ Just like WordPress, Elementor has special hooks to register custom scripts and 
 
 ## Static vs. Dynamic Loading
 
-Some scripts should always be loaded, others only when used. For example, editor scripts should always be loaded, while widget scripts should should only be loaded when they are being used. Elementor allows developers the freedom of choosing either method. 
+Some scripts should always be loaded, others only when used. For example, editor scripts should always be loaded, while widget scripts should only be loaded when they are being used. Elementor allows developers the freedom of choosing either method. 
 
 Each script and stylesheet increases the page size. This is why it is best practice to register assets and let Elementor decide whether or not to load them. Elementor checks to see if the page uses an element requiring your script, and only then it is loaded.
 
