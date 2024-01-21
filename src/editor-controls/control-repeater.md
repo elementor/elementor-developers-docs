@@ -56,7 +56,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>separator</code></td>
 			<td><code>string</code></td>
 			<td>default</td>
-			<td>Set the position of the control separator. Available values are <code>default</code>, <code>before</code>, <code>after</code> and <code>none</code>. <code>default</code> will position the separator depending on the control type. <code>before</code> / <code>after</code> will position the separator before/after the control. <code>none</code> will hide the separator.</td>
+			<td>Set the position of the control separator. Available values are <code>default</code>, <code>before</code> and <code>after</code>. <code>default</code> will hide the separator, unless the control type has specific separator settings. <code>before</code> / <code>after</code> will position the separator before/after the control.</td>
 		</tr>
 		<tr>
 			<td><code>fields</code></td>

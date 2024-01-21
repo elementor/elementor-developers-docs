@@ -90,7 +90,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'name' => 'image',
 				'default' => 'large',
-				'separator' => 'none',
 			]
 		);
 
