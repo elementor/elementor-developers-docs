@@ -14,7 +14,7 @@ Each control has default settings that determine the structure and design of the
 | `description` | _`string`_ |           | The description that appears below the field     |
 | `show_label`  | _`bool`_   | `true`    | Whether or not to display the label              |
 | `label_block` | _`bool`_   | `false`   | Whether or not to display the label in a separate line  |
-| `separator`   | _`string`_ | `default` | Set the position of the control separator. Available values are `default`, `before`, `after` and `none`. `default` will position the separator depending on the control type. `before` / `after` will position the separator before/after the control. `none` will hide the separator. |
+| `separator`   | _`string`_ | `default` | Set the position of the control separator. Available values are `default`, `before` and `after`. `default` will hide the separator, unless the control type has specific separator settings. `before` / `after` will position the separator before/after the control. |
 
 Each control can override the default settings and add new custom settings.
 
