@@ -86,6 +86,7 @@ module.exports = [
           'control-button',
           'control-divider',
           'control-deprecated-notice',
+          'control-alert',
         ]
       },
       {
