@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Advanced" />
 
-Elementor experimental features can be used on websites. To check from the command line whether an experimental feature is active or inactive, use the `experiments status` command.
+Elementor experimental features can be used before they're officially released. To check from the command line whether an experimental feature is active or inactive, use the `experiments status` command.
 
 ## Command
 
