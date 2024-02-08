@@ -85,8 +85,9 @@ module.exports = [
           'control-raw-html',
           'control-button',
           'control-divider',
-          'control-deprecated-notice',
           'control-alert',
+          'control-notice',
+          'control-deprecated-notice',
         ]
       },
       {
