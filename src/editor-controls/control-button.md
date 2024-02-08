@@ -66,7 +66,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>button_type</code></td>
 			<td><code>string</code></td>
 			<td>default</td>
-			<td>The button type. Available values are <code>default</code> and <code>success</code>.</td>
+			<td>The button type. Available values are <code>default</code>, <code>info</code>, <code>success</code>, <code>warning</code> and <code>danger</code>.</td>
 		</tr>
 		<tr>
 			<td><code>event</code></td>
