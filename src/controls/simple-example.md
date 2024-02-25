@@ -252,19 +252,6 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 	}
 
 	/**
-	 * Get custom help URL.
-	 *
-	 * Retrieve a URL where the user can get more information about the widget.
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 * @return string Widget help URL.
-	 */
-	public function get_custom_help_url() {
-		return 'https://developers.elementor.com/docs/widgets/';
-	}
-
-	/**
 	 * Get widget categories.
 	 *
 	 * Retrieve the list of categories the currency widget belongs to.
@@ -288,6 +275,19 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 	 */
 	public function get_keywords() {
 		return [ 'currency', 'currencies' ];
+	}
+
+	/**
+	 * Get custom help URL.
+	 *
+	 * Retrieve a URL where the user can get more information about the widget.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return string Widget help URL.
+	 */
+	public function get_custom_help_url() {
+		return 'https://developers.elementor.com/docs/widgets/';
 	}
 
 	/**

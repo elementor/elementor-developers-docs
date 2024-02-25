@@ -116,19 +116,6 @@ class Elementor_List_Widget extends \Elementor\Widget_Base {
 	}
 
 	/**
-	 * Get custom help URL.
-	 *
-	 * Retrieve a URL where the user can get more information about the widget.
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 * @return string Widget help URL.
-	 */
-	public function get_custom_help_url() {
-		return 'https://developers.elementor.com/docs/widgets/';
-	}
-
-	/**
 	 * Get widget categories.
 	 *
 	 * Retrieve the list of categories the list widget belongs to.
@@ -152,6 +139,40 @@ class Elementor_List_Widget extends \Elementor\Widget_Base {
 	 */
 	public function get_keywords() {
 		return [ 'list', 'lists', 'ordered', 'unordered' ];
+	}
+
+	/**
+	 * Get custom help URL.
+	 *
+	 * Retrieve a URL where the user can get more information about the widget.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 * @return string Widget help URL.
+	 */
+	public function get_custom_help_url() {
+		return 'https://developers.elementor.com/docs/widgets/';
+	}
+
+	/**
+	 * Get widget promotion data.
+	 *
+	 * Retrieve the widget promotion data.
+	 *
+	 * @since 1.0.0
+	 * @access protected
+	 * @return array Widget promotion data.
+	 */
+	protected function get_upsale_data() {
+		return [
+			'condition' => true,
+			'image' => esc_url( ELEMENTOR_ASSETS_URL . 'images/go-pro.svg' ),
+			'image_alt' => esc_attr__( 'Upgrade', 'elementor-list-widget' ),
+			'title' => esc_html__( 'Promotion heading', 'elementor-list-widget' ),
+			'description' => esc_html__( 'Get the premium version of the widget with additional styling capabilities.', 'elementor-list-widget' ),
+			'upgrade_url' => esc_url( 'https://example.com/upgrade-to-pro/' ),
+			'upgrade_text' => esc_html__( 'Upgrade Now', 'elementor-list-widget' ),
+		];
 	}
 
 	/**
@@ -195,7 +216,6 @@ class Elementor_List_Widget extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Link', 'elementor-list-widget' ),
 				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => esc_html__( 'https://your-link.com', 'elementor-list-widget' ),
 				'dynamic' => [
 					'active' => true,
 				],

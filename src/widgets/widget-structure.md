@@ -28,11 +28,13 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	public function get_icon() {}
 
-	public function get_custom_help_url() {}
-
 	public function get_categories() {}
 
 	public function get_keywords() {}
+
+	public function get_custom_help_url() {}
+
+	protected function get_upsale_data() {
 
 	public function get_script_depends() {}
 

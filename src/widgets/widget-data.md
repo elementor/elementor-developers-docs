@@ -23,16 +23,20 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		return 'eicon-code';
 	}
 
-	public function get_custom_help_url() {
-		return 'https://go.elementor.com/widget-name';
-	}
-
 	public function get_categories() {
 		return [ 'general' ];
 	}
 
 	public function get_keywords() {
 		return [ 'keyword', 'keyword' ];
+	}
+
+	public function get_custom_help_url() {
+		return 'https://go.elementor.com/widget-name';
+	}
+
+	protected function get_upsale_data() {
+		return [];
 	}
 
 }
@@ -44,8 +48,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Widget Icon** – The `get_icon()` method is an optional, but recommended, method. It lets you set the widget icon. You can use any [Elementor icons](https://elementor.github.io/elementor-icons/) or [FontAwesome icons](https://fontawesome.com/), to simply return the CSS class name.
 
-* **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL, where the user can get more information about the widget, below the controls.
-
 * **Widget Categories** – The `get_categories()` method lets you set [the category of the widget](./widget-categories/).
 
 * **Widget Keywords** – The `get_keywords()` method lets you set widget keywords and is used to filter the widget list.
+
+* **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL, where the user can get more information about the widget, below the controls.
+
+* **Widget Promotion** – The `get_upsale_data()` method is an optional method that is used to display promotions at the bottom of the widget panel.
