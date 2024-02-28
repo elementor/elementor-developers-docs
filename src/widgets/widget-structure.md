@@ -34,7 +34,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	public function get_custom_help_url() {}
 
-	protected function get_upsale_data() {
+	protected function get_upsale_data() {}
 
 	public function get_script_depends() {}
 
