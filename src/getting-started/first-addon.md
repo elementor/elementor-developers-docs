@@ -98,6 +98,14 @@ class Elementor_Hello_World_Widget_1 extends \Elementor\Widget_Base {
 
 		<?php
 	}
+
+	protected function content_template() {
+		?>
+
+		<p> Hello World </p>
+
+		<?php
+	}
 }
 ```
 
@@ -188,6 +196,16 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 
 		<p class="hello-world">
 			<?php echo $settings['title']; ?>
+		</p>
+
+		<?php
+	}
+
+	protected function content_template() {
+		?>
+
+		<p class="hello-world">
+			{{ settings.title }}
 		</p>
 
 		<?php
