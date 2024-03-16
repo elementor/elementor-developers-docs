@@ -32,8 +32,9 @@ elementor-page-speed-context-menu/
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-page-speed-context-menu
  *
- * Elementor tested up to: 3.16.0
- * Elementor Pro tested up to: 3.16.0
+ * Requires Plugins: elementor
+ * Elementor tested up to: 3.20.0
+ * Elementor Pro tested up to: 3.20.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
