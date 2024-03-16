@@ -11,13 +11,14 @@ To get started, we will use some very basic fields at the top of the main file:
 ```php
 <?php
 /**
- * Plugin Name: Elementor Test Addon
- * Description: Custom Elementor addon.
- * Plugin URI:  https://elementor.com/
- * Version:     1.0.0
- * Author:      Elementor Developer
- * Author URI:  https://developers.elementor.com/
- * Text Domain: elementor-test-addon
+ * Plugin Name:      Elementor Test Addon
+ * Description:      Custom Elementor addon.
+ * Plugin URI:       https://elementor.com/
+ * Version:          1.0.0
+ * Author:           Elementor Developer
+ * Author URI:       https://developers.elementor.com/
+ * Text Domain:      elementor-test-addon
+ * Requires Plugins: elementor
  */
 ```
 
