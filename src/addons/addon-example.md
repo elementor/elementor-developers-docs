@@ -42,9 +42,10 @@ The addon code should look as follows:
  * Author:      Elementor Developer
  * Author URI:  https://developers.elementor.com/
  * Text Domain: elementor-test-addon
- * 
- * Elementor tested up to: 3.16.0
- * Elementor Pro tested up to: 3.16.0
+ *
+ * Requires Plugins: elementor
+ * Elementor tested up to: 3.20.0
+ * Elementor Pro tested up to: 3.20.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
