@@ -17,7 +17,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @var string Minimum Elementor version required to run the addon.
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '3.16.0';
+	const MINIMUM_ELEMENTOR_VERSION = '3.20.0';
 
 	/**
 	 * Minimum PHP Version
