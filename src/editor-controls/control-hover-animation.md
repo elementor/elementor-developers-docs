@@ -103,9 +103,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$settings = $this->get_settings_for_display();
 
 		$elementClass = 'container';
+
 		if ( $settings['hover_animation'] ) {
 			$elementClass .= ' elementor-animation-' . $settings['hover_animation'];
 		}
+
 		$this->add_render_attribute( 'wrapper', 'class', $elementClass );
 		?>
 		<div <?php echo $this->get_render_attribute_string( 'wrapper' ); ?>>
@@ -117,10 +119,12 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		var elementClass = 'container';
+		const elementClass = 'container';
+
 		if ( '' !== settings.hover_animation ) {
 			elementClass += ' elementor-animation-' + settings.hover_animation;
 		}
+
 		view.addRenderAttribute( 'wrapper', { 'class': elementClass } );
 		#>
 		<div {{{ view.getRenderAttributeString( 'wrapper' ) }}}>

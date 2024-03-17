@@ -116,14 +116,14 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		var image = {
+		const image = {
 			id: settings.image.id,
 			url: settings.image.url,
 			size: settings.thumbnail_size,
 			dimension: settings.thumbnail_custom_dimension,
 			model: view.getEditModel()
 		};
-		var image_url = elementor.imagesManager.getImageUrl( image );
+		const image_url = elementor.imagesManager.getImageUrl( image );
 		#>
 		<img src="{{{ image_url }}}" />
 		<?php
