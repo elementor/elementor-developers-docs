@@ -457,12 +457,12 @@ class Elementor_List_Widget extends \Elementor\Widget_Base {
 		#>
 		<{{{ html_tag[ settings.marker_type ] }}} {{{ view.getRenderAttributeString( 'list' ) }}}>
 			<# _.each( settings.list_items, function( item, index ) {
-				var repeater_setting_key = view.getRepeaterSettingKey( 'text', 'list_items', index );
+				const repeater_setting_key = view.getRepeaterSettingKey( 'text', 'list_items', index );
 				view.addRenderAttribute( repeater_setting_key, 'class', 'elementor-list-widget-text' );
 				view.addInlineEditingAttributes( repeater_setting_key );
 				#>
 				<li {{{ view.getRenderAttributeString( repeater_setting_key ) }}}>
-					<# var title = item.text; #>
+					<# const title = item.text; #>
 					<# if ( item.link ) { #>
 						<# view.addRenderAttribute( `link_${index}`, item.link ); #>
 						<a href="{{ item.link.url }}" {{{ view.getRenderAttributeString( `link_${index}` ) }}}>

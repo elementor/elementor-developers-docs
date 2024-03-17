@@ -187,9 +187,9 @@ class Elementor_EmojiOneArea_Control extends \Elementor\Base_Data_Control {
 ```js
 window.addEventListener( 'elementor/init', () => {
 
-	var emojioneareaItemView = elementor.modules.controls.BaseData.extend({
+	const emojioneareaItemView = elementor.modules.controls.BaseData.extend({
 		onReady() {
-			var self = this,
+			const self = this,
 				options = _.extend({
 					events: {
 						change: () => self.saveValue(),

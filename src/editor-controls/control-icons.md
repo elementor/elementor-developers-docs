@@ -167,7 +167,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		var iconHTML = elementor.helpers.renderIcon( view, settings.selected_icon, { 'aria-hidden': true }, 'i' , 'object' );
+		const iconHTML = elementor.helpers.renderIcon( view, settings.selected_icon, { 'aria-hidden': true }, 'i' , 'object' );
 		#>
 		<div class="my-icon-wrapper">
 			{{{ iconHTML.value }}}
