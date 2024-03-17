@@ -115,12 +115,28 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo $settings['custom_html'];
+
+		if ( empty( $settings['custom_html'] ) ) {
+			return;
+		}
+		?>
+		<div class="your-class">
+			<?php echo $settings['custom_html']; ?>
+		</div>
+		<?php
+
 	}
 
 	protected function content_template() {
 		?>
-		{{{ settings.custom_html }}}
+		<#
+		if ( '' === settings.custom_html ) {
+			return;
+		}
+		#>
+		<div class="your-class">
+			{{{ settings.custom_html }}}
+		</div>
 		<?php
 	}
 

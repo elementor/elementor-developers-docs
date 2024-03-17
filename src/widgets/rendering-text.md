@@ -37,12 +37,27 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo '<h3>' . $settings['title'] . '</h3>';
+
+		if ( empty( $settings['title'] ) ) {
+			return;
+		}
+		?>
+		<h3>
+			<?php echo $settings['title']; ?>
+		</h3>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		<h3>{{{ settings.title }}}</h3>
+		<#
+		if ( '' === settings.title ) {
+			return;
+		}
+		#>
+		<h3>
+			{{{ settings.title }}}
+		</h3>
 		<?php
 	}
 

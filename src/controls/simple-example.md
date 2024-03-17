@@ -340,6 +340,11 @@ class Elementor_Currency_Widget extends \Elementor\Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+
+		if ( empty( $settings['price_currency'] ) ) {
+			return;
+		}
+
 		echo $settings['price_currency'] . ' ' . $settings['price'];
 	}
 

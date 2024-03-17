@@ -109,7 +109,12 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		$due_date = strtotime( $this->get_settings( 'due_date' ) );
+
+		if ( empty( $settings['due_date'] ) ) {
+			return;
+		}
+
+		$due_date = strtotime( $settings['due_date'] );
 		$due_date_in_days = $due_date / DAY_IN_SECONDS;
 		?>
 		<p><?php printf( esc_html__( 'Something will happen in %s days.', 'textdomain' ), $due_date_in_days ); ?></p>
@@ -119,9 +124,13 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		var due_date = new Date( settings.due_date ),
-		    now_date = new Date(),
-		    due_date_in_days = Math.floor( ( due_date - now_date ) / 86400000 ); // 86400000 milliseconds in one Day.
+		if ( '' === settings.due_date ) {
+			return;
+		}
+
+		const due_date = new Date( settings.due_date );
+		const now_date = new Date();
+		const due_date_in_days = Math.floor( ( due_date - now_date ) / 86400000 ); // 86400000 milliseconds in one Day.
 		#>
 		<p> Something will happen in {{{ due_date_in_days }}} days. </p>
 		<?php

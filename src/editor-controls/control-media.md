@@ -129,6 +129,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
+		if ( empty( $settings['image']['url'] ) ) {
+			return;
+		}
+
 		// Get image URL
 		echo '<img src="' . $settings['image']['url'] . '">';
 
@@ -146,20 +150,22 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		if ( settings.image.url ) {
-			var image = {
-				id: settings.image.id,
-				url: settings.image.url,
-				size: settings.image_size,
-				dimension: settings.image_custom_dimension,
-				model: view.getEditModel()
-			};
+		if ( '' === settings.image.url ) {
+			return;
+		}
 
-			var image_url = elementor.imagesManager.getImageUrl( image );
+		const image = {
+			id: settings.image.id,
+			url: settings.image.url,
+			size: settings.image_size,
+			dimension: settings.image_custom_dimension,
+			model: view.getEditModel()
+		};
 
-			if ( ! image_url ) {
-				return;
-			}
+		const image_url = elementor.imagesManager.getImageUrl( image );
+
+		if ( '' === image_url ) {
+			return;
 		}
 		#>
 		<img src="{{ image_url }}">
@@ -216,9 +222,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		var video_url = settings.video.url;
+		const video_url = settings.video.url;
 
-		if ( ! video_url ) {
+		if ( '' === video_url ) {
 			return;
 		}
 		#>
@@ -263,26 +269,27 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$pdf_url = $settings['pdf']['url'];
 
 		if ( ! empty( $pdf_url ) ) {
-			?>
-			<a download href="<?php echo esc_attr( $pdf_url ); ?>">
-				<?php echo esc_html__( 'Download PDF', 'textdomain' ); ?>
-			</a>
-			<?php
+			return;
 		}
+		?>
+		<a download href="<?php echo esc_attr( $pdf_url ); ?>">
+			<?php echo esc_html__( 'Download PDF', 'textdomain' ); ?>
+		</a>
+		<?php
 	}
 
 	protected function content_template() {
 		?>
 		<#
-		var pdf_url = settings.pdf.url;
+		const pdf_url = settings.pdf.url;
 
-		if ( pdf_url ) {
-			#>
-			<a download src="{{ video_url }}">
-				<?php echo esc_html__( 'Download PDF', 'textdomain' ); ?>
-			</a>
-			<#
+		if ( '' === pdf_url ) {
+			return;
 		}
+		#>
+		<a download src="{{ pdf_url }}">
+			<?php echo esc_html__( 'Download PDF', 'textdomain' ); ?>
+		</a>
 		<?php
 	}
 
