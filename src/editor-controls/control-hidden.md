@@ -76,12 +76,14 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		echo $settings['view'];
+		?>
+		<!-- <?php echo $settings['view']; ?> -->		
+		<?php
 	}
 
 	protected function content_template() {
 		?>
-		{{{ settings.view }}}
+		<!-- {{{ settings.view }}} -->
 		<?php
 	}
 

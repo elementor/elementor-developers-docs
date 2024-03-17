@@ -105,7 +105,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	protected function content_template() {
 		?>
 		<#
-		var image = {
+		const image = {
 			id: settings.image.id,
 			url: settings.image.url,
 			size: settings.image_size,
@@ -113,13 +113,13 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			model: view.getEditModel()
 		};
 
-		var image_url = elementor.imagesManager.getImageUrl( image );
+		const image_url = elementor.imagesManager.getImageUrl( image );
 
-		if ( ! image_url ) {
+		if ( '' === image_url ) {
 			return;
 		}
 		#>
-		<img src="{{{ image_url }}}" />
+		<img src="{{{ image_url }}}">
 		<?php
 	}
 

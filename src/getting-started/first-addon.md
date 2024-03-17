@@ -97,17 +97,13 @@ class Elementor_Hello_World_Widget_1 extends \Elementor\Widget_Base {
 
 	protected function render() {
 		?>
-
 		<p> Hello World </p>
-
 		<?php
 	}
 
 	protected function content_template() {
 		?>
-
 		<p> Hello World </p>
-
 		<?php
 	}
 }
@@ -196,22 +192,27 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		?>
 
+		if ( empty( $settings['title'] ) ) {
+			return;
+		}
+		?>
 		<p class="hello-world">
 			<?php echo $settings['title']; ?>
 		</p>
-
 		<?php
 	}
 
 	protected function content_template() {
 		?>
-
+		<#
+		if ( '' === settings.title ) {
+			return;
+		}
+		#>
 		<p class="hello-world">
 			{{ settings.title }}
 		</p>
-
 		<?php
 	}
 }

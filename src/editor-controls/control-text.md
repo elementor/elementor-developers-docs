@@ -129,6 +129,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+
+		if ( empty( $settings['widget_title'] ) ) {
+			return;
+		}
 		?>
 		<h2 class="title">
 			<?php echo $settings['widget_title']; ?>
@@ -138,6 +142,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
+		<#
+		if ( '' === settings.widget_title ) {
+			return;
+		}
+		#>
 		<h2 class="title">
 			{{{ settings.widget_title }}}
 		</h2>

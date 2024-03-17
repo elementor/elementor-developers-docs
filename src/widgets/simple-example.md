@@ -196,14 +196,18 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @access protected
 	 */
 	protected function render() {
-
 		$settings = $this->get_settings_for_display();
+
+		if ( empty( $settings['url'] ) ) {
+			return;
+		}
+
 		$html = wp_oembed_get( $settings['url'] );
-
-		echo '<div class="oembed-elementor-widget">';
-		echo ( $html ) ? $html : $settings['url'];
-		echo '</div>';
-
+		?>
+		<div class="oembed-elementor-widget">
+			<?php echo ( $html ) ? $html : $settings['url']; ?>
+		</div>
+		<?php
 	}
 
 }

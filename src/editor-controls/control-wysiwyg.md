@@ -103,6 +103,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+
+		if ( empty( $settings['item_description'] ) ) {
+			return;
+		}
 		?>
 		<div class="description">
 			<?php echo $settings['item_description']; ?>
@@ -113,9 +117,14 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
-		<span class="description">
+		<#
+		if ( '' === settings.item_description ) {
+			return;
+		}
+		#>
+		<div class="description">
 			{{{ settings.item_description }}}
-		</span>
+		</div>
 		<?php
 	}
 

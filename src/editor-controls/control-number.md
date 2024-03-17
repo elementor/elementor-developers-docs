@@ -135,6 +135,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+
+		if ( empty( $settings['price'] ) ) {
+			return;
+		}
 		?>
 		<span class="price">
 			<?php echo $settings['price']; ?>
@@ -144,6 +148,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
+		<#
+		if ( '' === settings.price ) {
+			return;
+		}
+		#>
 		<span class="price">
 			{{{ settings.price }}}
 		</span>
