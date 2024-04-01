@@ -99,7 +99,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-22,31-33,39-41}
+```php {14-22,35-37,48-50}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
