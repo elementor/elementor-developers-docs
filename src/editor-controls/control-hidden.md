@@ -47,7 +47,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-21,29,34}
+```php {14-21,30,36}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
