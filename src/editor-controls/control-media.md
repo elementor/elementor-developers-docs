@@ -97,7 +97,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 Add an image:
 
-```php {14-23,32-33,35-36,38-43,48-65}
+```php {14-23,36-37,39-40,42-47,52-69}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
