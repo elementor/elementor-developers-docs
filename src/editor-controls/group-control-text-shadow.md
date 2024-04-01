@@ -47,7 +47,7 @@ When using this group control, the `type` should be set to `Group_Control_Text_S
 
 ## Usage
 
-```php {14-21,29-31,37-39}
+```php {14-20,29-31,37-39}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
