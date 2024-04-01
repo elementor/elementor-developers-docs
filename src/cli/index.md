@@ -30,15 +30,15 @@ wp elementor-pro <command> [--argument]
 
 Currently, the following Elementor commands are available:
 
-* [Flush CSS](./flush-css/)
 * [System Info](./system-info/)
+* [Flush CSS](./flush-css/)
 * [Replace URLs](./replace-urls/)
 * [Update DB](./update-db/)
 * [Library Sync](./library-sync/)
-* [Library Import](./library-import/)
-* [Library Import Dir](./library-import-dir/)
 * [Library Connect](./library-connect/)
 * [Library Disconnect](./library-disconnect/)
+* [Library Import](./library-import/)
+* [Library Import Dir](./library-import-dir/)
 * [Clear Theme Builder Conditions](./theme-builder-clear-conditions/)
 * [Kit Import](./kit-import/)
 * [Kit Export](./kit-export/)
