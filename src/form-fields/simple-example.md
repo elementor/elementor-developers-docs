@@ -33,8 +33,8 @@ elementor-form-local-tel-field/
  * Text Domain: elementor-form-local-tel-field
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.20.0
- * Elementor Pro tested up to: 3.20.0
+ * Elementor tested up to: 3.21.0
+ * Elementor Pro tested up to: 3.21.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

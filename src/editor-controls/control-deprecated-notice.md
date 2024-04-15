@@ -115,7 +115,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'type' => \Elementor\Controls_Manager::DEPRECATED_NOTICE,
 				'widget' => 'your-old-widget',
 				'since' => '3.16.0',
-				'last' => '3.20.0',
+				'last' => '3.21.0',
 				'plugin' => 'Your Great Plugin',
 				'replacement' => 'your-new-widget',
 				'content_classes' => 'your-class',
@@ -152,7 +152,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->deprecated_notice(
 			'Your Great Plugin',
 			'3.16.0',
-			'3.20.0',
+			'3.21.0',
 			'your-new-widget'
 		);
 

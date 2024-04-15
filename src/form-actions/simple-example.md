@@ -34,8 +34,8 @@ elementor-forms-ping-action/
  * Text Domain: elementor-forms-ping-action
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.20.0
- * Elementor Pro tested up to: 3.20.0
+ * Elementor tested up to: 3.21.0
+ * Elementor Pro tested up to: 3.21.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
