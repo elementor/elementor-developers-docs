@@ -36,8 +36,8 @@ elementor-currency-control/
  * Text Domain: elementor-currency-control
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.20.0
- * Elementor Pro tested up to: 3.20.0
+ * Elementor tested up to: 3.21.0
+ * Elementor Pro tested up to: 3.21.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

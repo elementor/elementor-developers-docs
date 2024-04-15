@@ -41,8 +41,8 @@ These widgets will require several files. The main file `elementor-addon.php` wi
  * Text Domain: elementor-addon
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.20.0
- * Elementor Pro tested up to: 3.20.0
+ * Elementor tested up to: 3.21.0
+ * Elementor Pro tested up to: 3.21.0
  */
 
 function register_hello_world_widget( $widgets_manager ) {

@@ -44,8 +44,8 @@ The addon code should look as follows:
  * Text Domain: elementor-test-addon
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.20.0
- * Elementor Pro tested up to: 3.20.0
+ * Elementor tested up to: 3.21.0
+ * Elementor Pro tested up to: 3.21.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -96,7 +96,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @var string Minimum Elementor version required to run the addon.
 	 */
-	const MINIMUM_ELEMENTOR_VERSION = '3.20.0';
+	const MINIMUM_ELEMENTOR_VERSION = '3.21.0';
 
 	/**
 	 * Minimum PHP Version
