@@ -108,9 +108,9 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_inline_editing_attributes( 'description', 'basic' );
 		$this->add_inline_editing_attributes( 'content', 'advanced' );
 		?>
-		<h2 <?php echo $this->get_render_attribute_string( 'title' ); ?>><?php echo $settings['title']; ?></h2>
-		<div <?php echo $this->get_render_attribute_string( 'description' ); ?>><?php echo $settings['description']; ?></div>
-		<div <?php echo $this->get_render_attribute_string( 'content' ); ?>><?php echo $settings['content']; ?></div>
+		<h2 <?php $this->print_render_attribute_string( 'title' ); ?>><?php echo $settings['title']; ?></h2>
+		<div <?php $this->print_render_attribute_string( 'description' ); ?>><?php echo $settings['description']; ?></div>
+		<div <?php $this->print_render_attribute_string( 'content' ); ?>><?php echo $settings['content']; ?></div>
 		<?php
 	}
 
