@@ -62,17 +62,21 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
+
+		if ( ! $settings['list'] ) {
+			return;
+		}
 		?>
 		<ul>
 		<?php foreach ( $settings['list'] as $index => $item ) : ?>
 			<li>
-				<?php
-				if ( ! $item['link']['url'] ) {
-					echo $item['text'];
-				} else {
-					?><a href="<?php echo esc_url( $item['link']['url'] ); ?>"><?php echo $item['text']; ?></a><?php
-				}
-				?>
+			<?php
+			if ( $item['link']['url'] ) {
+				?><a href="<?php echo esc_url( $item['link']['url'] ); ?>"><?php echo $item['text']; ?></a><?php
+			} else {
+				echo $item['text'];
+			}
+			?>
 			</li>
 		<?php endforeach; ?>
 		</ul>
@@ -81,22 +85,21 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function content_template() {
 		?>
-		<ul>
 		<#
-		if ( settings.list ) {
-			_.each( settings.list, function( item, index ) {
-			#>
-			<li>
-				<# if ( item.link && item.link.url ) { #>
-					<a href="{{{ item.link.url }}}">{{{ item.text }}}</a>
-				<# } else { #>
-					{{{ item.text }}}
-				<# } #>
-			</li>
-			<#
-			} );
+		if ( ! settings.list.length ) {
+			return;
 		}
 		#>
+		<ul>
+		<# _.each( settings.list, function( item, index ) { #>
+			<li>
+			<# if ( item.link && item.link.url ) { #>
+				<a href="{{{ item.link.url }}}">{{{ item.text }}}</a>
+			<# } else { #>
+				{{{ item.text }}}
+			<# } #>
+			</li>
+		<# } ); #>
 		</ul>
 		<?php
 	}
