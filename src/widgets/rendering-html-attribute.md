@@ -16,7 +16,7 @@ Let's look at a simple widget output:
 
 ## PHP Render Attribute
 
-Using the `render()` method, we can add attributes to the HTML tag using `add_render_attribute()` and retrieve the attribute using `get_render_attribute_string()`:
+Using the `render()` method, we can add attributes to the HTML tag using `add_render_attribute()`, retrieve the attributes using `get_render_attribute_string()`, and print attributes using `print_render_attribute_string()`:
 
 ```php
 <?php
@@ -32,16 +32,27 @@ protected function render() {
 			'aria-label' => $settings['name'],
 		]
 	);
-	?>
-	<div <?php echo $this->get_render_attribute_string( 'wrapper' ); ?>> ... </div>
-	<?php
 
+	$this->add_render_attribute(
+		'inner',
+		[
+			'class' => 'custom-widget-inner-class',
+			'data-custom' => 'custom-widget-information',
+		]
+	);
+	?>
+	<div <?php echo $this->get_render_attribute_string( 'wrapper' ); ?>>
+		<div <?php $this->print_render_attribute_string( 'inner' ); ?>>
+			...
+		</div>
+	</div>
+	<?php
 }
 ```
 
 ## JS Render Attribute
 
-Using the `content_template()` method, we can add attributes to the HTML tag using `addRenderAttribute()` and retrieve the attribute using `getRenderAttributeString()`:
+Using the `content_template()` method, we can add attributes to the HTML tag using `addRenderAttribute()`, and retrieve the attribute using `getRenderAttributeString()`:
 
 ```php
 <?php
@@ -57,8 +68,19 @@ protected function content_template() {
 			'aria-label': settings.name,
 		}
 	);
+	view.addRenderAttribute(
+		'inner',
+		{
+			'class': 'custom-widget-inner-class',
+			'data-custom': 'custom-widget-information',
+		}
+	);
 	#>
-	<div {{{ view.getRenderAttributeString( 'wrapper' ) }}}> ... </div>
+	<div {{{ view.getRenderAttributeString( 'wrapper' ) }}}>
+		<div {{{ view.getRenderAttributeString( 'inner' ) }}}>
+			...
+		</div>
+	</div>
 	<?php
 }
 ```

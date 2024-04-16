@@ -155,7 +155,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			$this->add_link_attributes( 'website_link', $settings['website_link'] );
 		}
 		?>
-		<a <?php echo $this->get_render_attribute_string( 'website_link' ); ?>>
+		<a <?php $this->print_render_attribute_string( 'website_link' ); ?>>
 			...
 		</a>
 		<?php

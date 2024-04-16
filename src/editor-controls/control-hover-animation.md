@@ -110,7 +110,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 		$this->add_render_attribute( 'wrapper', 'class', $elementClass );
 		?>
-		<div <?php echo $this->get_render_attribute_string( 'wrapper' ); ?>>
+		<div <?php $this->print_render_attribute_string( 'wrapper' ); ?>>
 			...
 		</div>
 		<?php
