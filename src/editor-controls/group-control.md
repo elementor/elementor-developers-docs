@@ -90,3 +90,42 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 }
 ```
+
+### Advanced Group Control Label Modify
+
+Here's an advanced setup for changing the background control label.
+
+```php {13-19}
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function register_controls() {
+
+		$this->start_controls_section(
+			'style_section',
+			[
+				'label' => esc_html__( 'Style', 'textdomain' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_group_control(
+		    Group_Control_Background::get_type(),
+		    [
+			'name'     => 'control_name',
+			'label'    => esc_html__('Background', 'textdomain'),
+			'types'    => ['classic', 'gradient', 'video'],
+			'fields_options' => [
+			    'background' => [
+				'label' => 'New Label Here...'
+			    ],
+			],
+			'selector' => '{{WRAPPER}}',
+		    ]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+}
+```
