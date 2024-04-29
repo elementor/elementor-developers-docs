@@ -91,7 +91,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-### Advanced Group Control Label Modify
+### Group Control Label Modify
 
 Here's an advanced setup for changing the background control label.
 
