@@ -30,7 +30,7 @@ Below is a list of Elementor internals along with a short description and links 
 
 * [CLI](./../cli/)
 
-  Elementor integrates with WP-CLI, enabling developers to run certain Elementor tasks via the command line interface, without using a web browser. All the available comands with their arguments and usage examples are listed here.
+  Elementor integrates with WP-CLI, enabling developers to run certain Elementor tasks via the command line interface, without using a web browser. All the available commands with their arguments and usage examples are listed here.
 
 * [Building Addons](./../addons/)
 
