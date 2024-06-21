@@ -2,7 +2,7 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Every widget requires basic information such as the widget ID, label and icon.
+Every widget requires basic information such as the widget ID, label and icon. In addition, a widget can have optional data providing extra information like an external link describing how to use the widget or promotion to promote premium version of the widget.
 
 ## Data Methods
 
@@ -32,7 +32,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	}
 
 	public function get_custom_help_url() {
-		return 'https://go.elementor.com/widget-name';
+		return 'https://example.com/widget-name';
 	}
 
 	protected function get_upsale_data() {
@@ -54,4 +54,4 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 * **Widget Help URL** – The `get_custom_help_url()` method is an optional method that sets a custom URL, where the user can get more information about the widget, below the controls.
 
-* **Widget Promotion** – The `get_upsale_data()` method is an optional method that is used to display promotions at the bottom of the widget panel.
+* **Widget Promotion** – The `get_upsale_data()` method is an optional method that is used to [display promotions](./widget-promotions/) at the bottom of the widget panel.
