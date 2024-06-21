@@ -19,7 +19,9 @@ Learn more about widget anatomy and how to create your own:
 
 * [Widget Structure](./widget-structure/)
 * [Widget Data](./widget-data/)
-* [Widget Categories](./widget-categories/)
+  * [Widget Information](./widget-information/)
+  * [Widget Promotions](./widget-promotions/)
+  * [Widget Categories](./widget-categories/)
 * [Widget Dependencies](./widget-dependencies/)
 * [Widget Controls](./widget-controls/)
 * [Widget Rendering](./widget-rendering/)

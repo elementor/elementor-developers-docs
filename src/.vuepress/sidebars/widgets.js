@@ -23,7 +23,15 @@ module.exports = [
     children: [
       'widget-structure',
       'widget-data',
-      'widget-categories',
+      {
+        collapsable: false,
+        sidebarDepth: -1,
+        children: [
+          'widget-information',
+          'widget-promotions',
+          'widget-categories',
+        ]
+      },
       'widget-dependencies',
       'widget-controls',
       'widget-rendering',
