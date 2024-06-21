@@ -46,6 +46,7 @@ module.exports = [
           'rendering-repeaters',
           'rendering-html-attribute',
           'rendering-inline-editing',
+          'widget-output-caching',
         ]
       },
     ]

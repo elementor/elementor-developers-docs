@@ -32,6 +32,7 @@ Learn more about widget anatomy and how to create your own:
   * [Rendering Repeater](./rendering-repeaters/)
   * [Rendering HTML Attribute](./rendering-html-attribute/)
   * [Rendering Inline Editing](./rendering-inline-editing/)
+  * [Widget Output Caching](./widget-output-caching/)
 
 ## Code Examples
 

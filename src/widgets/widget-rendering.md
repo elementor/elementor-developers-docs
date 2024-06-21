@@ -35,3 +35,4 @@ We're going to dive in and see how this is done using the different methods. We'
 * [Rendering Repeater](./rendering-repeaters/)
 * [Rendering HTML Attribute](./rendering-html-attribute/)
 * [Rendering Inline Editing](./rendering-inline-editing/)
+* [Widget Output Caching](./widget-output-caching/)
