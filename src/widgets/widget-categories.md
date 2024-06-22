@@ -38,7 +38,6 @@ When you select which category to assign your widget to, you can select one of t
 | **Site**        | `theme-elements`       | ElementorPro | Category for site & theme widgets               |
 | **WooCommerce** | `woocommerce-elements` | ElementorPro | Category for WooCommerce widgets                |
 | **{Custom}**    |                        | {Addons}     | Custom categories added by external developers  |
-| **Pojo Themes** | `pojo`                 | Pojo Themes  | Category for Pojo widgets                       |
 | **WordPress**   | `wordpress`            | WordPress    | Category for WordPress widgets                  |
 
 Or you can register your own category.
