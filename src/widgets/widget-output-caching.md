@@ -1,4 +1,4 @@
-## Widget Output Caching
+## Widget Output Caching / Element Caching
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
@@ -184,3 +184,10 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 ```
 
 This widget generates different HTML output for logged-in users and anonymous users. We can't cache the widget output as the cached HTML may be displayed for the wrong users.
+
+### Testing
+When testing the performance improvements, please make sure to use different types of widgets - not multiple instances of the same widget. The more widgets on the page, and the more different types of widgets, the larger the impact.
+
+Next, you’ll need to “Regenerate CSS files & data” from WP Admin > Elementor > Tools.
+
+Then, in your speed comparison tool, compare the first run (rendered data) to the second run (cached data) and you should see the impact on the server memory usage and TTFB.
