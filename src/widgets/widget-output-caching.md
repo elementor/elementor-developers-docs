@@ -1,4 +1,4 @@
-## Widget Output Caching / Element Caching
+## Widget Output Caching
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
@@ -10,7 +10,7 @@ By default, Elementor does not cache widget outputs and renders all widgets on t
 
 During page load, Elementor renders all widgets to generate the required markup. The more widgets the page has, the slower the rendering process.
 
-To optimize this, Elementor's widget caching mechanism can be employed. This mechanism renders a widget once, caches the output, and uses the cached version for subsequent page loads. This reduces server memory usage by 99% and improves Time To First Byte (TTFB) on the frontend.
+To optimize this process, Elementor's element caching mechanism can be employed. The "Element Caching" mechanism renders a widget once, caches the output, and uses the cached version for subsequent page loads. This action reduces server memory usage by 99% and improves [Time To First Byte](https://web.dev/articles/ttfb) (TTFB) on the frontend.
 
 ### Content Types
 
@@ -186,8 +186,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 This widget generates different HTML output for logged-in users and anonymous users. We can't cache the widget output as the cached HTML may be displayed for the wrong users.
 
 ### Testing
-When testing the performance improvements, please make sure to use different types of widgets - not multiple instances of the same widget. The more widgets on the page, and the more different types of widgets, the larger the impact.
 
-Next, you’ll need to “Regenerate CSS files & data” from WP Admin > Elementor > Tools.
+When testing the performance improvements, make sure to use different types of widgets - not multiple instances of the same widget. The more widgets the page has, and the more types of widgets, the larger the impact. Next, click the "Regenerate Files & Data" button in the _WordPress Admin > Elementor > Tools_.
 
-Then, in your speed comparison tool, compare the first run (rendered data) to the second run (cached data) and you should see the impact on the server memory usage and TTFB.
+Then, in your speed comparison tool of your choose, compare the first run (rendered data) to the second run (cached data). If you measure server performance, see the impact on the server memory. If you measure frontend performance, see the impact on Time To First Byte (TTFB).
