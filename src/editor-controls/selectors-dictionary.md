@@ -70,7 +70,7 @@ $this->add_control(
 		'type' => \Elementor\Controls_Manager::CHOOSE,
 		'default' => 'center',
 		'options' => [
-			'left' => [
+			'end' => [
 				'title' => esc_html__( 'End', 'textdomain' ),
 				'icon' => 'eicon-text-align-' . ( is_rtl() ? 'right' : 'left' ),
 			],
@@ -78,7 +78,7 @@ $this->add_control(
 				'title' => esc_html__( 'Center', 'textdomain' ),
 				'icon' => 'eicon-text-align-center',
 			],
-			'right' => [
+			'start' => [
 				'title' => esc_html__( 'Start', 'textdomain' ),
 				'icon' => 'eicon-text-align-' . ( is_rtl() ? 'left' : 'right' ),
 			],
