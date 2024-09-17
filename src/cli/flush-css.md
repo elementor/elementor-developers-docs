@@ -16,6 +16,10 @@ wp elementor flush-css [--network]
 
 _(Optional)_ Flush CSS files for all the sites in the network.
 
+`[--regenerate]`
+
+_(Optional)_ Re-create the CSS files. Otherwise they will be created by a page visit.
+
 ## Usage Examples
 
 ```bash
@@ -29,3 +33,9 @@ wp elementor flush-css --network
 ```
 
 This command will flush the CSS files for all Elementor pages in all the sites in the network.
+
+```bash
+wp elementor flush-css --regenerate
+```
+
+This command will flush the CSS files for elementor page builder and re-create the new CSS files.
