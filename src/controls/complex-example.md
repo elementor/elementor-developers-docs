@@ -39,8 +39,8 @@ elementor-emojionearea-control/
  * Text Domain: elementor-emojionearea-control
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
