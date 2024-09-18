@@ -34,7 +34,7 @@ To enhance widget performance by caching static content, apply the following met
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function is_dynamic_content() {
+	protected function is_dynamic_content(): bool {
 		return false;
 	}
 
@@ -59,7 +59,7 @@ Let's say you have a widget with a single control in which the users can set a "
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function is_dynamic_content() {
+	protected function is_dynamic_content(): bool {
 		return false;
 	}
 
