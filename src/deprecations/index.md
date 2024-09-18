@@ -32,7 +32,7 @@ As an example, if code is deprecated in Elementor 3.1.0, it will start throwing 
 
 <img :src="$withBase('/assets/img/elementor-deprecation-period.png')" alt="Elementor Deprecation Period">
 
-The old deprecated code will be available until its final deletion. The new replacement code will be available from the deprecation poin. Between the deprecated and the deletion, the old code and the new code are both available for use.
+The old deprecated code will be available until its final deletion. The new replacement code will be available from the deprecation point. Between the deprecated and the deletion, the old code and the new code are both available for use.
 
 ## Debugging Deprecated Code
 
