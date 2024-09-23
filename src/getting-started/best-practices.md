@@ -6,7 +6,7 @@ This Best Practices guide is a living document for Elementor addon developers, m
 
 ## Supported PHP Versions
 
-Support PHP 7.4 and 8.0+ to ensure compatibility with the latest PHP versions and the most used PHP versions.
+Ensure your addon is compatible with the most used PHP version (v7.4) and the latest PHP versions and (v8.0 and above).
 
 ## Compatibility Tag
 
@@ -14,11 +14,11 @@ Elementor has its own [header comments](https://developers.elementor.com/docs/ad
 
 ## Compatibility Checks
 
-[Check which Elementor and PHP versions](https://developers.elementor.com/docs/addons/compatibility/) a website uses to make sure your addon supports it.
+[Check which Elementor and PHP versions](https://developers.elementor.com/docs/addons/compatibility/) a website uses to make sure your addon supports it. Otherwise, notify the user that the website doesn’t meet the addon’s requirements.
 
 ## Scripts & Style Registration
 
-Elementor has its own way to [register scripts and styles](https://developers.elementor.com/docs/scripts-styles/).
+Elementor has its own way to [register scripts and styles](https://developers.elementor.com/docs/scripts-styles/). Using the recommended methods ensures your addon is optimized for performance.
 
 ## Internationalization
 
@@ -35,3 +35,7 @@ Implement [Element Caching](https://developers.elementor.com/elementor-3-22-deve
 ## Elementor Pro Developer License
 
 Test with Elementor Pro by requesting a [Developer License](https://elementor.com/pages/addon-developers-corner/).
+
+## Security
+
+Participate in Patchstack’s free [mVDP Program](https://elemn.to/patchstack-for-plugins) to maintain the security hygiene of your product with a clear vulnerability reporting structure.
