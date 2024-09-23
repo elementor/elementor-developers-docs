@@ -56,7 +56,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 					],
 				],
 				'devices' => [ 'desktop', 'tablet', 'mobile' ],
-				'desktop_default' => [
+				'default' => [
 					'size' => 30,
 					'unit' => 'px',
 				],
