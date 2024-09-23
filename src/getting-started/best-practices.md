@@ -14,7 +14,7 @@ Elementor has its own [header comments](https://developers.elementor.com/docs/ad
 
 ## Compatibility Checks
 
-[Check which versions](https://developers.elementor.com/docs/addons/compatibility/) a website uses to make sure your addon supports it. 
+[Check which Elementor and PHP versions](https://developers.elementor.com/docs/addons/compatibility/) a website uses to make sure your addon supports it.
 
 ## Scripts & Style Registration
 
