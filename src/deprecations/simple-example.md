@@ -11,22 +11,22 @@ Addon developers should update their code, replacing deprecated methods. The fix
 ```diff
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_name() {}
+	public function get_name(): string {}
 
-	public function get_title() {}
+	public function get_title(): string {}
 
-	public function get_icon() {}
+	public function get_icon(): string {}
 
-	public function get_categories() {}
+	public function get_categories(): array {}
 
--	protected function _register_controls() {}
-+	protected function register_controls() {}
+-	protected function _register_controls(): void {}
++	protected function register_controls(): void {}
 
--	protected function _render() {}
-+	protected function render() {}
+-	protected function _render(): void {}
++	protected function render(): void {}
 
--	protected function _content_template() {}
-+	protected function content_template() {}
+-	protected function _content_template(): void {}
++	protected function content_template(): void {}
 
 }
 ```

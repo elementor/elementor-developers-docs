@@ -34,7 +34,7 @@ When adding titles and custom content to Elementor widgets, we need to allow the
 ```php {13-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'style_section',
@@ -66,7 +66,7 @@ Border control is a bit different from typography control. It is defined in the 
 ```php {13-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'style_section',

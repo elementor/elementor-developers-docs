@@ -11,19 +11,19 @@ Dynamic tags data is "returned" by these methods:
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'tag-name';
 	}
 
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Dynamic Tag Name', 'textdomain' );
 	}
 
-	public function get_group() {
+	public function get_group(): array {
 		return [ 'group-name' ];
 	}
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
 	}
 

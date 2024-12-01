@@ -53,8 +53,9 @@ final class Plugin {
 	 *
 	 * @since 1.0.0
 	 * @access public
+	 * @return bool
 	 */
-	public function is_compatible() {
+	public function is_compatible(): bool {
 
 		// Check if Elementor is installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
@@ -86,7 +87,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function admin_notice_missing_main_plugin() {
+	public function admin_notice_missing_main_plugin(): void {
 
 		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
 
@@ -109,7 +110,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function admin_notice_minimum_elementor_version() {
+	public function admin_notice_minimum_elementor_version(): void {
 
 		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
 
@@ -133,7 +134,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function admin_notice_minimum_php_version() {
+	public function admin_notice_minimum_php_version(): void {
 
 		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
 

@@ -11,7 +11,7 @@ If you need to use an external library or some custom JS/CSS, you can do that by
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
-	protected function enqueue() {
+	protected function enqueue(): void {
 
 		// Styles
 		wp_register_style( 'control-style', plugins_url( 'assets/css/control-style.css', __FILE__ ) );

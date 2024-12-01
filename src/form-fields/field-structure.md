@@ -24,15 +24,15 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 
 	public $depended_styles = [];
 
-	public function get_type() {}
+	public function get_type(): string {}
 
-	public function get_name() {}
+	public function get_name(): string {}
 
-	public function render( $item, $item_index, $form ) {}
+	public function render( $item, $item_index, $form ): void {}
 
-	public function validation( $field, $record, $ajax_handler ) {}
+	public function validation( $field, $record, $ajax_handler ): void {}
 
-	public function update_controls( $widget ) {}
+	public function update_controls( $widget ): void {}
 
 }
 ```

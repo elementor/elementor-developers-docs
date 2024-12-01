@@ -48,7 +48,7 @@ Let's group controls into two tabs - "Normal" and "Hover":
 ```php {13-15,17-22,30,32-37,45,47}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'style_section',

@@ -85,11 +85,11 @@ We plan to deprecate the `$depended_scripts` and `$depended_styles` properties, 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function get_script_depends() {
+	public function get_script_depends(): array {
 		return [ 'field-script-1', 'field-script-2' ];
 	}
 
-	public function get_style_depends() {
+	public function get_style_depends(): array {
 		return [ 'field-style-1', 'field-style-2' ];
 	}
 

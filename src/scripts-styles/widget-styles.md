@@ -22,7 +22,7 @@ Then, the widget class will set the CSS dependencies:
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_style_depends() {
+	public function get_style_depends(): array {
 		return [ 'widget-style-1', 'widget-style-2' ];
 	}
 

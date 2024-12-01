@@ -20,17 +20,17 @@ A simple dynamic tag skeleton will look like this:
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function get_name() {}
+	public function get_name(): string {}
 
-	public function get_title() {}
+	public function get_title(): string {}
 
-	public function get_group() {}
+	public function get_group(): array {}
 
-	public function get_categories() {}
+	public function get_categories(): array {}
 
-	protected function register_controls() {}
+	protected function register_controls(): void {}
 
-	public function render() {}
+	public function render(): void {}
 
 }
 ```

@@ -11,9 +11,9 @@ Elementor has two rendering methods, both rely on the returned values from the c
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function render() {}
+	protected function render(): void {}
 
-	protected function content_template() {}
+	protected function content_template(): void {}
 
 }
 ```

@@ -12,7 +12,7 @@ The simplest media rendering method is to print the image URL in a custom `<img>
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'section_content',
@@ -37,7 +37,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 
 		// Get image url
@@ -47,7 +47,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		echo wp_get_attachment_image( $settings['image']['id'], 'thumbnail' );
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<img src="{{{ settings.image.url }}}">
 		<?php
@@ -64,7 +64,7 @@ The more advanced way to handle images is to combine the `\Elementor\Control_Med
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'section_content',
@@ -97,12 +97,12 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 		echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings );
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		const image = {

@@ -85,7 +85,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return string
 	 */
-	public static function get_type() {
+	public static function get_type(): string {
 		return 'general';
 	}
 
@@ -98,7 +98,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return string
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'logged_in_user';
 	}
 
@@ -111,7 +111,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return string
 	 */
-	public function get_label() {
+	public function get_label(): string {
 		return esc_html__( 'Logged-in User', 'elementor-user-role-conditions' );
 	}
 
@@ -124,7 +124,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return string
 	 */
-	public function get_all_label() {
+	public function get_all_label(): string {
 		return esc_html__( 'Any user role', 'elementor-user-role-conditions' );
 	}
 
@@ -137,7 +137,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return void
 	 */
-	public function register_sub_conditions() {
+	public function register_sub_conditions(): void {
 		global $wp_roles;
 
 		if ( ! isset( $wp_roles ) ) {
@@ -160,7 +160,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return bool
 	 */
-	public function check( $args ) {
+	public function check( $args ): bool {
 		return is_user_logged_in();
 	}
 
@@ -208,7 +208,7 @@ class User_Role_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\
 	 * @access public
 	 * @return string
 	 */
-	public static function get_type() {
+	public static function get_type(): string {
 		return 'logged_in_user';
 	}
 
@@ -221,7 +221,7 @@ class User_Role_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\
 	 * @access public
 	 * @return string
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return strtolower( $this->user_role . '_role' );
 	}
 
@@ -234,7 +234,7 @@ class User_Role_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\
 	 * @access public
 	 * @return string
 	 */
-	public function get_label() {
+	public function get_label(): string {
 		/* translators: %s: User role label. */
 		return sprintf( esc_html__( '%s role', 'elementor-user-role-conditions' ), $this->user_role );
 	}
@@ -248,7 +248,7 @@ class User_Role_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\
 	 * @access public
 	 * @return bool
 	 */
-	public function check( $args ) {
+	public function check( $args ): bool {
 		$current_user = wp_get_current_user();
 		$site_roles = (array) $current_user->roles;
 		return in_array( $this->user_role, $site_roles );

@@ -109,15 +109,15 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 <?php
 class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'icons_test_widget';
 	}
 
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Icons Test Widget', 'textdomain' );
 	}
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'section_icon',
@@ -155,7 +155,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 		?>
 		<div class="my-icon-wrapper">
@@ -164,7 +164,7 @@ class Icons_Elementor_Test_Control_Widget extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		const iconHTML = elementor.helpers.renderIcon( view, settings.selected_icon, { 'aria-hidden': true }, 'i' , 'object' );

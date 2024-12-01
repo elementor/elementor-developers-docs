@@ -34,7 +34,7 @@ In the example below, we're going to add a simple text control defined at the `c
 ```php {13-20}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -67,7 +67,7 @@ In the example below, we're going to add a simple number control defined at the 
 ```php {13-24}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -104,7 +104,7 @@ Another simple example is the `Control_Select` class, which will allow users to 
 ```php {13-25}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -142,7 +142,7 @@ Choose control is an improved version of select control. The `Control_Choose` cl
 ```php {13-34}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -189,7 +189,7 @@ Another useful control is the `Control_Slider`, which displays a draggable range
 ```php {13-30}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -232,7 +232,7 @@ One of the more more popular controls is `Control_Color`, which lets users choos
 ```php {13-20}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -265,7 +265,7 @@ And finally, for advanced users, you can use `Control_Media` to select images fr
 ```php {13-22}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',

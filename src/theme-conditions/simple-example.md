@@ -84,7 +84,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return string
 	 */
-	public static function get_type() {
+	public static function get_type(): string {
 		return 'general';
 	}
 
@@ -97,7 +97,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return string
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'logged_in_user';
 	}
 
@@ -110,7 +110,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return string
 	 */
-	public function get_label() {
+	public function get_label(): string {
 		return esc_html__( 'Logged-in user', 'elementor-logged-in-user-condition' );
 	}
 
@@ -123,7 +123,7 @@ class Logged_In_User_Condition extends \ElementorPro\Modules\ThemeBuilder\Condit
 	 * @access public
 	 * @return bool
 	 */
-	public function check( $args ) {
+	public function check( $args ): bool {
 		return is_user_logged_in();
 	}
 

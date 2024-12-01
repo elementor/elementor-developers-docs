@@ -12,7 +12,7 @@ With JS templates we don’t need to retrieve the data using a special function,
 
 ```php
 <?php
-protected function content_template() {
+protected function content_template(): void {
 	?>
 	<h3 class="{{ settings.class }}">{{{ settings.title }}}</h3>
 	<?php
@@ -29,7 +29,7 @@ Use the following to retrieve data from a single control:
 
 ```php
 <?php
-protected function render() {
+protected function render(): void {
 	?>
 	<h3>
 		<?php echo $this->get_settings_for_display( 'title' ); ?>
@@ -42,7 +42,7 @@ When retrieving data from multiple controls, we can retrieve all the data from a
 
 ```php
 <?php
-protected function render() {
+protected function render(): void {
 	$settings = $this->get_settings_for_display();
 	?>
 	<h3 class="<?php echo esc_attr( $settings['class'] ); ?>">

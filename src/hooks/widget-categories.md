@@ -11,7 +11,7 @@ We use widget categories while registering new Elementor widgets. By extending t
 ```php {3-5}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ 'basic' ];
 	}
 

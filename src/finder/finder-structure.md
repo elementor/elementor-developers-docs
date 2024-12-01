@@ -20,13 +20,13 @@ The extended class will have the following methods:
 ```php
 class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
 
-	public function get_id() {}
+	public function get_id(): string {}
 
-	public function get_title() {}
+	public function get_title(): string {}
 
-	public function get_category_items() {}
+	public function get_category_items(): array {}
 
-	public function is_dynamic() {}
+	public function is_dynamic(): bool {}
 
 }
 ```

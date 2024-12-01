@@ -86,7 +86,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return string Widget name.
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'oembed';
 	}
 
@@ -99,7 +99,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return string Widget title.
 	 */
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'oEmbed', 'elementor-oembed-widget' );
 	}
 
@@ -112,7 +112,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return string Widget icon.
 	 */
-	public function get_icon() {
+	public function get_icon(): string {
 		return 'eicon-code';
 	}
 
@@ -125,7 +125,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return array Widget categories.
 	 */
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ 'general' ];
 	}
 
@@ -138,7 +138,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return array Widget keywords.
 	 */
-	public function get_keywords() {
+	public function get_keywords(): array {
 		return [ 'oembed', 'url', 'link' ];
 	}
 
@@ -151,7 +151,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return string Widget help URL.
 	 */
-	public function get_custom_help_url() {
+	public function get_custom_help_url(): string {
 		return 'https://developers.elementor.com/docs/widgets/';
 	}
 
@@ -163,7 +163,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @since 1.0.0
 	 * @access protected
 	 */
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -195,7 +195,7 @@ class Elementor_oEmbed_Widget extends \Elementor\Widget_Base {
 	 * @since 1.0.0
 	 * @access protected
 	 */
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 
 		if ( empty( $settings['url'] ) ) {

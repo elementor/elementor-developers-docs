@@ -27,7 +27,7 @@ When creating new dynamic tags, you can set the tag group by returning group nam
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function get_group() {
+	public function get_group(): array {
 		return [ 'action' ];
 	}
 

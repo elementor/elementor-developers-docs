@@ -11,7 +11,7 @@ The method that excludes data from the export process is called `on_export()`. T
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function on_export( $element ) {
+	public function on_export( $element ): array {
 
 		return $element;
 
@@ -29,7 +29,7 @@ In the following example will register a new section with two controls - an api 
 ```php {16,24,35-44}
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function register_settings_section( $widget ) {
+	public function register_settings_section( $widget ): void {
 
 		$widget->start_controls_section(
 			'custom_action_section',
@@ -61,7 +61,7 @@ class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_B
 
 	}
 
-	public function on_export( $element ) {
+	public function on_export( $element ): array {
 
 		unset(
 			$element['custom_action_api_key'],

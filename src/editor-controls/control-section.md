@@ -41,7 +41,7 @@ The example below creates a single section which will be part of the "**Content*
 ```php {5-11,19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -75,7 +75,7 @@ Now let's create multiple control sections for the "**Content**" tab:
 ```php {5-11,19,21-27,35}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -127,7 +127,7 @@ Elementor has a predefined list of tabs that you can use, but with widgets the c
 ```php {5-11,19,21-27,35,37-43,51}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',

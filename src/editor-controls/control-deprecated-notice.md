@@ -99,7 +99,7 @@ Add a notice warning that the widget is deprecated using the regular `add_contro
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -139,7 +139,7 @@ Add a notice warning that the widget is deprecated using the `deprecated_notice(
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',

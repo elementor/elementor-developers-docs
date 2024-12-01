@@ -73,7 +73,7 @@ When using this group control, the `type` should be set to `Group_Control_Image_
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -108,12 +108,12 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 		echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'thumbnail', 'image' );
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		const image = {

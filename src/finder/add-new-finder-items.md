@@ -11,15 +11,15 @@ Finder categories include all the category labels and their items.
 ```php
 class New_Finder_Category extends \Elementor\Core\Common\Modules\Finder\Base_Category {
 
-	public function get_id() {
+	public function get_id(): string {
 		return 'my-category-name';
 	}
 
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Category Label', 'textdomain' );
 	}
 
-	public function get_category_items( array $options = [] ) {
+	public function get_category_items( array $options = [] ): array {
 		return [
 			'elementor-website' => [
 				'title' => esc_html__( 'Elementor', 'textdomain' ),

@@ -86,7 +86,7 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	 * @access public
 	 * @return string Dynamic tag name.
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'random-number';
 	}
 
@@ -99,7 +99,7 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	 * @access public
 	 * @return string Dynamic tag title.
 	 */
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Random Number', 'elementor-random-number-dynamic-tag' );
 	}
 
@@ -112,7 +112,7 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	 * @access public
 	 * @return array Dynamic tag groups.
 	 */
-	public function get_group() {
+	public function get_group(): array {
 		return [ 'actions' ];
 	}
 
@@ -125,7 +125,7 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	 * @access public
 	 * @return array Dynamic tag categories.
 	 */
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ \Elementor\Modules\DynamicTags\Module::NUMBER_CATEGORY ];
 	}
 
@@ -138,7 +138,7 @@ class Elementor_Dynamic_Tag_Random_Number extends \Elementor\Core\DynamicTags\Ta
 	 * @access public
 	 * @return void
 	 */
-	public function render() {
+	public function render(): void {
 		echo rand();
 	}
 

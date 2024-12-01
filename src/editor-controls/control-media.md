@@ -101,7 +101,7 @@ Add an image:
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -126,7 +126,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 
 		if ( empty( $settings['image']['url'] ) ) {
@@ -147,7 +147,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		echo \Elementor\Group_Control_Image_Size::get_attachment_image_html( $settings, 'thumbnail', 'image' );
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		if ( '' === settings.image.url ) {
@@ -181,7 +181,7 @@ Add a video media type to display a self hosted video:
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -207,7 +207,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 		$video_url = $settings['video']['url'];
 
@@ -219,7 +219,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		const video_url = settings.video.url;
@@ -241,7 +241,7 @@ Add a PDF file:
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -264,7 +264,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 		$pdf_url = $settings['pdf']['url'];
 
@@ -278,7 +278,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		const pdf_url = settings.pdf.url;

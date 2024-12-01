@@ -25,7 +25,7 @@ If a control uses the default settings, you don't need to add it to your class. 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
-	protected function get_default_settings() {
+	protected function get_default_settings(): array {
 
 		return [
 			'label_block' => true,

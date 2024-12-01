@@ -35,7 +35,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
