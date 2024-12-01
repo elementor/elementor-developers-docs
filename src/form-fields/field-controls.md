@@ -11,7 +11,7 @@ In your field class, you can add controls using the `update_controls()` method a
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function update_controls( $widget ) {
+	public function update_controls( $widget ): void {
 
 		/* ... */
 
@@ -29,7 +29,7 @@ In the example below, we're going to add some controls to the widget instance in
 ```php {13-36}
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function update_controls( $widget ) {
+	public function update_controls( $widget ): void {
 
 		$elementor = \ElementorPro\Plugin::elementor();
 

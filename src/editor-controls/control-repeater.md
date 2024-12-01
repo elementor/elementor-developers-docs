@@ -97,7 +97,7 @@ Usage example with `fields` array:
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -154,7 +154,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 
 		if ( $settings['list'] ) {
@@ -167,7 +167,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		}
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<# if ( settings.list.length ) { #>
 			<dl>
@@ -189,7 +189,7 @@ Usage example with `Repeater()` class:
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -256,7 +256,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 
 		if ( $settings['list'] ) {
@@ -269,7 +269,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		}
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<# if ( settings.list.length ) { #>
 			<dl>

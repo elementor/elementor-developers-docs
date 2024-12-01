@@ -13,17 +13,17 @@ The following will set a default value for a [data control](./../editor-controls
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Data_Control {
 
-	public function get_type() {
+	public function get_type(): string {
 		return 'continents-control';
 	}
 
-	protected function get_default_settings() {
+	protected function get_default_settings(): array {
 		return [
 			'continents' => [ 'Asia', 'Africa', 'Europe', 'North America', 'South America', 'Australia/Oceania', 'Antarctica', ]
 		];
 	}
 
-	public function get_default_value() {
+	public function get_default_value(): string {
 		return 'Europe';
 	}
 
@@ -38,7 +38,7 @@ When controls are used in widgets, you can either use the default value set by t
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'section_content',

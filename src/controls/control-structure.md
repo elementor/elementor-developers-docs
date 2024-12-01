@@ -31,9 +31,9 @@ A simple control only requires two methods, the control type and the template:
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
-	public function get_type() {}
+	public function get_type(): string {}
 
-	public function content_template() {}
+	public function content_template(): void {}
 
 }
 ```
@@ -43,15 +43,15 @@ More advanced controls can use other available methods:
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
-	public function get_type() {}
+	public function get_type(): string {}
 
-	protected function get_default_settings() {}
+	protected function get_default_settings(): array {}
 
-	public function get_default_value() {}
+	public function get_default_value(): string {}
 
-	public function content_template() {}
+	public function content_template(): void {}
 
-	public function enqueue() {}
+	public function enqueue(): void {}
 
 }
 ```

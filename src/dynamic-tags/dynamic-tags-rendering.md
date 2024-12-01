@@ -11,7 +11,7 @@ To render the dynamic tag output and data echoes, we use the `render()` method a
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function render() {
+	public function render(): void {
 
 		echo rand();
 
@@ -25,7 +25,7 @@ To extract data from the [dynamic tag controls](./dynamic-tags-controls/), we ca
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function render() {
+	public function render(): void {
 		$param1 = $this->get_settings( 'text_param' );
 		$param2 = $this->get_settings( 'number_param' );
 		$param3 = $this->get_settings( 'select_param' );

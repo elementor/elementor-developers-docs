@@ -22,15 +22,15 @@ As mentioned above, an Elementor Form Action extends the `\ElementorPro\Modules\
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function get_name() {}
+	public function get_name(): string {}
 
-	public function get_label() {}
+	public function get_label(): string {}
 
-	public function register_settings_section( $widget ) {}
+	public function register_settings_section( $widget ): void {}
 
-	public function run( $record, $ajax_handler ) {}
+	public function run( $record, $ajax_handler ): void {}
 
-	public function on_export( $element ) {}
+	public function on_export( $element ): array {}
 
 }
 ```

@@ -11,7 +11,7 @@ To set a unique ID for the widget, use the `get_name()` method. This string is u
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'widget_name';
 	}
 
@@ -25,7 +25,7 @@ Widget title is the label used in the Elementor editor. The end user will see th
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'My Widget Name', 'textdomain' );
 	}
 
@@ -41,7 +41,7 @@ Widgets can use any [Elementor icons](https://elementor.github.io/elementor-icon
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_icon() {
+	public function get_icon(): string {
 		return 'eicon-code';
 	}
 

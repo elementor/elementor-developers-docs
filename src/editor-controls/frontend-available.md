@@ -79,7 +79,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return string Widget name.
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'test_widget';
 	}
 
@@ -92,7 +92,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return string Widget title.
 	 */
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Test Widget', 'textdomain' );
 	}
 
@@ -105,7 +105,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @access public
 	 * @return array Element scripts dependencies.
 	 */
-	public function get_script_depends() {
+	public function get_script_depends(): array {
 		return [ 'test-widget-handler' ];
 	}
 
@@ -117,7 +117,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @since 1.0.0
 	 * @access protected
 	 */
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -149,7 +149,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @since 1.0.0
 	 * @access protected
 	 */
-	protected function render() {
+	protected function render(): void {
 		?>
 		<div class="test-widget"></div>
 		<?php
@@ -163,7 +163,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * @since 1.0.0
 	 * @access protected
 	 */
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<div class="test-widget"></div>
 		<?php

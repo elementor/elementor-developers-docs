@@ -19,7 +19,7 @@ To assign the widget to a different category, we need to override this method an
 ```php {3-5}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ 'basic' ];
 	}
 

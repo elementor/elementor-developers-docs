@@ -21,14 +21,14 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function init() {
+	public function init(): void {
 
 		add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'frontend_styles' ] );
 		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'frontend_scripts' ] );
 
 	}
 
-	public function frontend_styles() {
+	public function frontend_styles(): void {
 
 		wp_register_style( 'frontend-style-1', plugins_url( 'assets/css/frontend-style-1.css', __FILE__ ) );
 		wp_register_style( 'frontend-style-2', plugins_url( 'assets/css/frontend-style-2.css', __FILE__ ), [ 'external-framework' ] );
@@ -39,7 +39,7 @@ final class Plugin {
 
 	}
 
-	public function frontend_scripts() {
+	public function frontend_scripts(): void {
 
 		wp_register_script( 'frontend-script-1', plugins_url( 'assets/js/frontend-script-1.js', __FILE__ ) );
 		wp_register_script( 'frontend-script-2', plugins_url( 'assets/js/frontend-script-2.js', __FILE__ ), [ 'external-library' ] );
@@ -70,7 +70,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function init() {
+	public function init(): void {
 
 		add_action( 'elementor/widgets/register', [ $this, 'register_widgets' ] );
 
@@ -85,7 +85,7 @@ final class Plugin {
 	 *
 	 * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
 	 */
-	public function register_widgets( $widgets_manager ) {
+	public function register_widgets( $widgets_manager ): void {
 
 		require_once( __DIR__ . '/includes/widgets/widget-1.php' );
 		require_once( __DIR__ . '/includes/widgets/widget-2.php' );
@@ -115,7 +115,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function init() {
+	public function init(): void {
 
 		add_action( 'elementor/controls/register', [ $this, 'register_controls' ] );
 
@@ -130,7 +130,7 @@ final class Plugin {
 	 *
 	 * @param \Elementor\Controls_Manager $controls_manager Elementor controls manager.
 	 */
-	public function register_controls( $controls_manager ) {
+	public function register_controls( $controls_manager ): void {
 
 		require_once( __DIR__ . '/includes/controls/control-1.php' );
 		require_once( __DIR__ . '/includes/controls/control-2.php' );

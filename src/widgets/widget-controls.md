@@ -11,7 +11,7 @@ In your widget class, you can add controls inside the `register_controls()` meth
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section();
 
@@ -42,7 +42,7 @@ In the example below, we're going to add a few controls to a widget to allow use
 ```php {13-20,22-33,35-47,49-70}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',

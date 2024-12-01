@@ -85,7 +85,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	 * @access public
 	 * @return string
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'ping';
 	}
 
@@ -98,7 +98,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	 * @access public
 	 * @return string
 	 */
-	public function get_label() {
+	public function get_label(): string {
 		return esc_html__( 'Ping', 'elementor-forms-ping-action' );
 	}
 
@@ -112,7 +112,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	 * @param \ElementorPro\Modules\Forms\Classes\Form_Record  $record
 	 * @param \ElementorPro\Modules\Forms\Classes\Ajax_Handler $ajax_handler
 	 */
-	public function run( $record, $ajax_handler ) {
+	public function run( $record, $ajax_handler ): void {
 
 		wp_remote_post(
 			'https://api.example.com/',
@@ -141,7 +141,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	 * @access public
 	 * @param \Elementor\Widget_Base $widget
 	 */
-	public function register_settings_section( $widget ) {}
+	public function register_settings_section( $widget ): void {}
 
 	/**
 	 * On export.
@@ -152,7 +152,7 @@ class Ping_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Actio
 	 * @access public
 	 * @param array $element
 	 */
-	public function on_export( $element ) {}
+	public function on_export( $element ): array {}
 
 }
 ```

@@ -21,7 +21,7 @@ class Items_Manager {
 
 	private $items;
 
-	function register( $instance, $id = null ) {
+	function register( $instance, $id = null ): void {
 		$this->items[ $id ] = $instance;
 	}
 
@@ -39,7 +39,7 @@ class Items_Manager {
 
 	private $items;
 
-	function register( $instance, $id = null ) {
+	function register( $instance, $id = null ): void {
 		if ( $id ) {
 			// TODO: Remove this in the future.
 			Plugin::instance()->modules_manager->get_modules( 'dev-tools' )->deprecation->deprecated_argument(
@@ -66,7 +66,7 @@ class Items_Manager {
 
 	private $items;
 
-	function register( $instance ) {
+	function register( $instance ): void {
 		$id = $instance->get_id();
 		$this->items[ $id ] = $instance;
 	}

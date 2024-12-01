@@ -95,7 +95,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -119,14 +119,14 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 		foreach ( $settings['gallery'] as $image ) {
 			echo '<img src="' . esc_attr( $image['url'] ) . '">';
 		}
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<# _.each( settings.gallery, function( image ) { #>
 			<img src="{{ image.url }}">

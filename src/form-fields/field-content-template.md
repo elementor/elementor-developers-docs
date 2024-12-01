@@ -17,11 +17,11 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 		add_action( 'elementor/preview/init', [ $this, 'editor_preview_footer' ] );
 	}
 
-	public function editor_preview_footer() {
+	public function editor_preview_footer(): void {
 		add_action( 'wp_footer', [ $this, 'content_template_script' ] );
 	}
 
-	public function content_template_script() {
+	public function content_template_script(): void {
 		?>
 		<script>
 		jQuery( document ).ready( () => {

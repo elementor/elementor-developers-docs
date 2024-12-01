@@ -11,7 +11,7 @@ The method that triggers the action is called `run()`. The method is executed on
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function run( $record, $ajax_handler ) {
+	public function run( $record, $ajax_handler ): void {
 
 		// ...
 
@@ -33,7 +33,7 @@ In the example below, we'll send an email each time a form is submitted:
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function run( $record, $ajax_handler ) {
+	public function run( $record, $ajax_handler ): void {
 
 		wp_mail( /* ... */ );
 
@@ -49,7 +49,7 @@ In the following example we'll send an HTTP request every time a form is submitt
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function run( $record, $ajax_handler ) {
+	public function run( $record, $ajax_handler ): void {
 
 		wp_remote_post( /* ... */ )
 
@@ -65,7 +65,7 @@ Another use case is to create WordPress CPTs after every form submission:
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function run( $record, $ajax_handler ) {
+	public function run( $record, $ajax_handler ): void {
 
 		wp_insert_post( /* ... */ );
 

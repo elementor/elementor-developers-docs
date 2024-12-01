@@ -32,7 +32,7 @@ When creating new dynamic tags, you need to define what data type the tag will r
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
 	}
 
@@ -44,7 +44,7 @@ The method returns an array, meaning that the dynamic tag can return several dat
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [
 			\Elementor\Modules\DynamicTags\Module::URL_CATEGORY,
 			\Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY,
@@ -62,11 +62,11 @@ On the other hand, when you create [controls](./../editor-controls/), you need t
 ```php {13-19}
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
-	public function get_type() {}
+	public function get_type(): string {}
 
-	public function content_template() {}
+	public function content_template(): void {}
 
-	protected function get_default_settings() {
+	protected function get_default_settings(): array {
 
 		return [
 			'show_label' => true,

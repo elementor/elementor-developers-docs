@@ -19,7 +19,7 @@ Each widget have the option to set an external link containing general informati
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_custom_help_url() {
+	public function get_custom_help_url(): string {
 		return 'https://example.com/widget-name';
 	}
 
@@ -33,7 +33,7 @@ Promotions are a way for freemium plugins to offer upsells to upgrade to premium
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function get_upsale_data() {
+	protected function get_upsale_data(): array {
 		return [
 			'condition' => ! \Elementor\Utils::has_pro(),
 			'image' => esc_url( ELEMENTOR_ASSETS_URL . 'images/go-pro.svg' ),

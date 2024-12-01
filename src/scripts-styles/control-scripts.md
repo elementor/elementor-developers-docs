@@ -11,7 +11,7 @@ In the example below, we'll register scripts and enqueue them when creating new 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
-	protected function enqueue() {
+	protected function enqueue(): void {
 
 		wp_register_script( 'control-script-1', plugins_url( 'assets/js/control-script-1.js', __FILE__ ) );
 		wp_register_script( 'control-script-2', plugins_url( 'assets/js/control-script-2.js', __FILE__ ), [ 'external-library' ] );

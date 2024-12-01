@@ -89,7 +89,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'style_section',
@@ -130,7 +130,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 		?>
 		<div class="your-class">
@@ -139,7 +139,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<div class="your-class">
 			...

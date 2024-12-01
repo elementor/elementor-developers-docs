@@ -37,12 +37,12 @@ Use the following to add new inline editing attributes:
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function render() {
+	protected function render(): void {
 		$this->add_inline_editing_attributes( 'text', 'advanced' );
 		echo '<div ' . $this->get_render_attribute_string( 'text' ) . '>' . $this->get_settings( 'text' ) . '</div>';
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<# view.addInlineEditingAttributes( 'text', 'advanced' ); #>
 		<div {{{ view.getRenderAttributeString( 'text' ) }}}>{{{ settings.text }}}</div>
@@ -60,7 +60,7 @@ The following is a full example using three controls all having inline support. 
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -101,7 +101,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 
 		$this->add_inline_editing_attributes( 'title', 'none' );
@@ -114,7 +114,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		view.addInlineEditingAttributes( 'title', 'none' );

@@ -20,19 +20,19 @@ As mentioned above, conditions extend the `\ElementorPro\Modules\ThemeBuilder\Co
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public static function get_type() {}
+	public static function get_type(): string {}
 
-	public function get_priority() {}
+	public function get_priority(): int {}
 
-	public function get_name() {}
+	public function get_name(): string {}
 
-	public function get_label() {}
+	public function get_label(): string {}
 
-	public function get_all_label() {}
+	public function get_all_label(): string {}
 
-	public function register_sub_conditions() {}
+	public function register_sub_conditions(): void {}
 
-	public function check( $args ) {}
+	public function check( $args ): bool {}
 
 }
 ```
@@ -41,7 +41,7 @@ Let’s break it down:
 
 * **Condition Type** – The `get_type()` method returns the condition group type.
 
-* **Condition Priority** – The `get_priority()` method priorotize the condition in a group type.
+* **Condition Priority** – The `get_priority()` method prioritize the condition in a group type.
 
 * **Condition Name** – The `get_name()` method returns the condition name (id) that will be used in the code.
 

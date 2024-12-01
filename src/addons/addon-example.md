@@ -160,7 +160,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function is_compatible() {
+	public function is_compatible(): void {
 
 		// Check if Elementor installed and activated
 		if ( ! did_action( 'elementor/loaded' ) ) {
@@ -192,7 +192,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function admin_notice_missing_main_plugin() {
+	public function admin_notice_missing_main_plugin(): void {
 
 		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
 
@@ -215,7 +215,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function admin_notice_minimum_elementor_version() {
+	public function admin_notice_minimum_elementor_version(): void {
 
 		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
 
@@ -239,7 +239,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function admin_notice_minimum_php_version() {
+	public function admin_notice_minimum_php_version(): void {
 
 		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
 
@@ -265,7 +265,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function init() {
+	public function init(): void {
 
 		add_action( 'elementor/widgets/register', [ $this, 'register_widgets' ] );
 		add_action( 'elementor/controls/register', [ $this, 'register_controls' ] );
@@ -281,7 +281,7 @@ final class Plugin {
 	 *
 	 * @param \Elementor\Widgets_Manager $widgets_manager Elementor widgets manager.
 	 */
-	public function register_widgets( $widgets_manager ) {
+	public function register_widgets( $widgets_manager ): void {
 
 		require_once( __DIR__ . '/includes/widgets/widget-1.php' );
 		require_once( __DIR__ . '/includes/widgets/widget-2.php' );
@@ -300,7 +300,7 @@ final class Plugin {
 	 *
 	 * @param \Elementor\Controls_Manager $controls_manager Elementor controls manager.
 	 */
-	public function register_controls( $controls_manager ) {
+	public function register_controls( $controls_manager ): void {
 
 		require_once( __DIR__ . '/includes/controls/control-1.php' );
 		require_once( __DIR__ . '/includes/controls/control-2.php' );

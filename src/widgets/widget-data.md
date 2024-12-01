@@ -11,31 +11,31 @@ Widget data needs to be "returned" by certain methods. Those methods are simple:
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'widget_name';
 	}
 
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'My Widget Name', 'textdomain' );
 	}
 
-	public function get_icon() {
+	public function get_icon(): string {
 		return 'eicon-code';
 	}
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ 'general' ];
 	}
 
-	public function get_keywords() {
+	public function get_keywords(): array {
 		return [ 'keyword', 'keyword' ];
 	}
 
-	public function get_custom_help_url() {
+	public function get_custom_help_url(): string {
 		return 'https://example.com/widget-name';
 	}
 
-	protected function get_upsale_data() {
+	protected function get_upsale_data(): array {
 		return [];
 	}
 

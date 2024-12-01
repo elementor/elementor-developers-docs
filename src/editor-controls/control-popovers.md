@@ -49,7 +49,7 @@ In the example below, we'll group controls into two popovers - "Normal" tab and 
 ```php {13-22,24,32}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'style_section',
