@@ -61,7 +61,7 @@ Tel match this format XXX-XXX-XXXX, i.e. 123-456-7890
 function elementor_form_tel_field_validation( $field, $record, $ajax_handler ) {
 	// Remove native validation
 	$forms_module = \ElementorPro\Plugin::instance()->modules_manager->get_modules( 'forms' );
-	remove_action( 'elementor_pro/forms/validation/tel', [ $forms_module->field_types['tel'], 'validation' ] );
+	remove_action( 'elementor_pro/forms/validation/tel', [ $forms_module->fields_registrar->get( 'tel' ), 'validation' ], 10, 3 );
 
 	// Run your own validation, ex:
 	if ( empty( $field['value'] ) ) {
@@ -78,7 +78,7 @@ add_action( 'elementor_pro/forms/validation/tel', 'elementor_form_tel_field_vali
 function elementor_form_tel_field_rendering( $item, $item_index, $form ) {
 	// Remove native render
 	$forms_module = \ElementorPro\Plugin::instance()->modules_manager->get_modules( 'forms' );
-	remove_action( 'elementor_pro/forms/render_field/tel', [$forms_module->field_types['tel'] , 'field_render' ], 10, 3 );
+	remove_action( 'elementor_pro/forms/render_field/tel', [ $forms_module->fields_registrar->get( 'tel' ), 'field_render' ], 10, 3 );
 
 	// Add custom render ex:
 	$form->add_render_attribute( 'input' . $item_index, 'class', 'elementor-field-textual' );
