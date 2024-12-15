@@ -65,6 +65,12 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td>An array of <code>key =&gt; value</code> pairs: <code>[ 'key' =&gt; 'value', ... ]</code></td>
 		</tr>
 		<tr>
+			<td><code>groups</code></td>
+			<td><code>array</code></td>
+			<td></td>
+			<td>An array of grouped options.</td>
+		</tr>
+		<tr>
 			<td><code>default</code></td>
 			<td><code>string</code></td>
 			<td></td>
@@ -79,7 +85,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 ## Usage
 
-```php {14-32,41-43,49-51}
+```php {14-32,34-67,76-78,84-86}
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
@@ -110,6 +116,41 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'selectors' => [
 					'{{WRAPPER}} .your-class' => 'border-style: {{VALUE}};',
 				],
+			]
+		);
+
+		$this->add_control(
+			'custom_animation',
+			[
+				'label' => esc_html__( 'Animation', 'textdomain' ),
+				'type' => Controls_Manager::SELECT,
+				'groups' => [
+					[
+						'label' => esc_html__( 'None', 'textdomain' ),
+						'options' => [
+							'' => esc_html__( 'None', 'textdomain' ),
+						],
+					],
+					[
+						'label' => esc_html__( 'Slide', 'textdomain' ),
+						'options' => [
+							'slide-from-right' => esc_html__( 'Slide In Right', 'textdomain' ),
+							'slide-from-left' => esc_html__( 'Slide In Left', 'textdomain' ),
+							'slide-from-top' => esc_html__( 'Slide In Up', 'textdomain' ),
+							'slide-from-bottom' => esc_html__( 'Slide In Down', 'textdomain' ),
+						],
+					],
+					[
+						'label' => esc_html__( 'Zoom', 'textdomain' ),
+						'options' => [
+							'grow' => esc_html__( 'Grow', 'textdomain' ),
+							'shrink' => esc_html__( 'Shrink', 'textdomain' ),
+							'zoom-in' => esc_html__( 'Zoom In', 'textdomain' ),
+							'zoom-out' => esc_html__( 'Zoom Out', 'textdomain' ),
+						],
+					],
+				],
+				'prefix_class' => 'custom-animation-',
 			]
 		);
 
