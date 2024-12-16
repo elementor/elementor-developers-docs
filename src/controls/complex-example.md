@@ -315,6 +315,32 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	}
 
 	/**
+	 * Whether the widget requires inner wrapper.
+	 *
+	 * Determine whether to optimize the DOM size.
+	 *
+	 * @since 1.0.0
+	 * @access protected
+	 * @return bool Whether to optimize the DOM size.
+	 */
+	public function has_widget_inner_wrapper(): bool {
+		return false;
+	}
+
+	/**
+	 * Whether the element returns dynamic content.
+	 *
+	 * Determine whether to cache the element output or not.
+	 *
+	 * @since 1.0.0
+	 * @access protected
+	 * @return bool Whether to cache the element output.
+	 */
+	protected function is_dynamic_content(): bool {
+		return false;
+	}
+
+	/**
 	 * Register test widget controls.
 	 *
 	 * Add input fields to allow the user to customize the widget settings.

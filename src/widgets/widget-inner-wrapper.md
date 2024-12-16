@@ -40,7 +40,7 @@ To reduce the DOM size, developers can use the `has_widget_inner_wrapper()` meth
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function has_widget_inner_wrapper(): bool {
+	public function has_widget_inner_wrapper(): bool {
 		return false;
 	}
 
@@ -57,7 +57,7 @@ Legacy widgets that rely on the `.elementor-widget-container` class can continue
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function has_widget_inner_wrapper(): bool {
+	public function has_widget_inner_wrapper(): bool {
 		return true;
 	}
 
