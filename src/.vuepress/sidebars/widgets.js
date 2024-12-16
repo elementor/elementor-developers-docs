@@ -53,8 +53,8 @@ module.exports = [
         collapsable: false,
         sidebarDepth: -1,
         children: [
-          'widget-output-caching',
           'widget-inner-wrapper',
+          'widget-output-caching',
         ]
       },
     ]
