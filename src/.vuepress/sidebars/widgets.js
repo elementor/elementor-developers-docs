@@ -46,7 +46,15 @@ module.exports = [
           'rendering-repeaters',
           'rendering-html-attribute',
           'rendering-inline-editing',
+        ]
+      },
+      'widget-optimization',
+      {
+        collapsable: false,
+        sidebarDepth: -1,
+        children: [
           'widget-output-caching',
+          'widget-inner-wrapper',
         ]
       },
     ]
