@@ -40,6 +40,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	public function get_style_depends(): array {}
 
+	public function has_widget_inner_wrapper(): bool {}
+
 	protected function is_dynamic_content(): bool {}
 
 	protected function register_controls(): void {}
