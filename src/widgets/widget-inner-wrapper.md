@@ -2,15 +2,15 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor widgets define define their own markup in the `render()` method. However, Elementor wraps each widget in two `<div>` elements, the outer `<div class="elementor-widget">` element and the inner `<div class="elementor-widget-container">` element. These additional wrapper allow Elementor to add additional styles like background, margins, borders, motion effect etc.
+Elementor widgets define their own markup in the `render()` method. However, Elementor wraps each widget in two `<div>` elements; the outer `<div class="elementor-widget">` element, and the inner `<div class="elementor-widget-container">` element. These additional wrappers allow Elementor to add additional styles like background, margins, borders, motion effects, etc.
 
-Two wrapper for each widget increase the overall DOM size, reducing page performance. To overcome this, developers can use the `has_widget_inner_wrapper()` method to control the number of wrapper elements the widget has.
+Two wrappers for each widget increases the overall DOM size, reducing page performance. To overcome this, developers can use the `has_widget_inner_wrapper()` method to control the number of wrapper elements the widget has.
 
-By switching to a single wrapper, a widget can reduces the DOM size and optimize it's footprint on the page. However, existing widgets that rely on the inner `.elementor-widget-container` wrapping element to style widgets, can keep backwards compatibility.
+By switching to a single wrapper, a widget can reduce the DOM size and optimize its footprint on the page. However, existing widgets that rely on the inner `.elementor-widget-container` wrapping element to style widgets, can maintain backwards compatibility.
 
 ## Widget Markup
 
-The current, unoptimized widget markup includes two wrapping elements:
+The current, unoptimized widget markup, includes two wrapping elements:
 
 ```html
 <div class="elementor-widget elementor-widget-{widget-name}">
@@ -20,7 +20,7 @@ The current, unoptimized widget markup includes two wrapping elements:
 </div>
 ```
 
-The optimized markup, has only one wrapping element:
+The optimized markup has only one wrapping element:
 
 ```html
 <div class="elementor-widget elementor-widget-{widget-name}">
@@ -28,7 +28,7 @@ The optimized markup, has only one wrapping element:
 </div>
 ```
 
-By default, Elementor uses the unoptimized markup for backward compatibility.
+By default, Elementor uses the unoptimized markup for backwards compatibility.
 
 ## Examples
 
@@ -85,7 +85,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-This widget can't use the optimized DOM capability as is uses the inner `.elementor-widget-container` CSS class to style the widget. Therefore, setting `has_widget_inner_wrapper()` to `true` will make sure that Elementor won't remove the inner wrapper for this widget.
+This widget can't use the optimized DOM capability as it uses the inner `.elementor-widget-container` CSS class to style the widget. Therefore, setting `has_widget_inner_wrapper()` to `true` will make sure that Elementor doesn't remove the inner wrapper for this widget.
 
 ## Notes
 

@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor offers several methods and best practices to optimize widgets and improve performance. The optimizations are not implemented for all the widgets to keep backwards compatibility for older websites. In addition, each widget has its own characteristics. The widget developer needs to add some extra for Elementor to make sure Elementor knows how to process it.
+Elementor offers several methods and best practices to optimize widgets and improve performance. The optimizations are not implemented for all widgets in order to maintain backwards compatibility. In addition, each widget has its own characteristics. The widget developer needs to add some extra methods to the widget class to make sure Elementor knows how to process it.
 
 ## Performance Optimization Methods
 
-Elementor has two performance optimization methods:
+Elementor widgets has two performance optimization methods:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
