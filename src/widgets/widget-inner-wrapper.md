@@ -93,7 +93,7 @@ Please note that retaining unoptimized DOM is a temporary solution that allows a
 
 Optimized DOM for widget wrappers is not only setting `has_widget_inner_wrapper()` to `false`, it requires removal of `.elementor-widget-container` from all files, including PHP, CSS and JS.
 
-In the example code above, to fix is as simple as removing the `.elementor-widget-container` class from the selector:
+In the example code above, simply remove the `.elementor-widget-container` class from the selector:
 
 ```diff
 -	'{{WRAPPER}} > .elementor-widget-container h3' => 'color: {{VALUE}};',
