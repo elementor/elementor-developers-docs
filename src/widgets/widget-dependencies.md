@@ -108,15 +108,35 @@ class Elementor_Test_Widget_2 extends \Elementor\Widget_Base {
 
 This way, Elementor can build the dependency tree and enqueue only dependencies for widgets used in the page.
 
+### Using Elementor Assets
+
+Third-party developers can use assets registered by Elementor, for instance using [Swiper](https://swiperjs.com/) to create carousel-based widgets.
+
+```php
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	public function get_style_depends(): array {
+		return [ 'swiper', 'widget-custom-style' ];
+	}
+
+	public function get_script_depends(): array {
+		return [ 'swiper', 'widget-custom-script' ];
+	}
+
+}
+```
+
+Elementor registers swiper for its carousel widgets, and Elementor Pro and many other Elementor Addons use it instead of registering its own versiosn of the library.
+
 ### Using Elementor Scripts
 
-Widgets can also use scripts registered by Elementor:
+To use different Elementor JS methods, widgets needs to declare `elementor-frontend` as a dependency:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	public function get_script_depends(): array {
-		return [ 'elementor-frontend' ];
+		return [ 'elementor-frontend', 'widget-custom-script' ];
 	}
 
 }
