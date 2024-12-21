@@ -92,3 +92,10 @@ This widget can't use the optimized DOM capability as it uses the inner `.elemen
 Please note that retaining unoptimized DOM is a temporary solution that allows addon developers to maintain compatibility while updating their code. The ultimate goal is to transition all widgets to use the optimized single-wrapper structure.
 
 Optimized DOM for widget wrappers is not only setting `has_widget_inner_wrapper()` to `false`, it requires removal of `.elementor-widget-container` from all files, including PHP, CSS and JS.
+
+In the example code above, simply remove the `.elementor-widget-container` class from the selector:
+
+```diff
+-	'{{WRAPPER}} > .elementor-widget-container h3' => 'color: {{VALUE}};',
++	'{{WRAPPER}} h3' => 'color: {{VALUE}};',
+```
