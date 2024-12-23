@@ -11,12 +11,12 @@ Field data needs to be "returned" by certain methods. These methods are simple:
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function get_type() {
-		return 'field_name';
+	public function get_type(): string {
+		return 'field_id';
 	}
 
-	public function get_name() {
-		return esc_html__( 'My Field Name', 'textdomain' );
+	public function get_name(): string {
+		return esc_html__( 'My Field Label', 'textdomain' );
 	}
 
 }
