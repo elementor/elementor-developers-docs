@@ -91,11 +91,11 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 }
 ```
 
-### Group Control Label Modify
+### Group Control Fields Options
 
-Here's an advanced setup for changing the background control label.
+Here's an advanced setup for changing inner controls inside the group control using `fields_options`:
 
-```php {13-25}
+```php {13-40}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -109,17 +109,32 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		);
 
 		$this->add_group_control(
-		    Group_Control_Background::get_type(),
-		    [
-			'name'     => 'control_name',
-			'label'    => esc_html__( 'Background', 'textdomain' ),
-			'types'    => [ 'classic', 'gradient', 'video' ],
-			'fields_options' => [
-			    'background' => [
-				'label' => esc_html__( 'New Label Here...', 'textdomain' ),
-			    ],
-			],
-		    ]
+			\Elementor\Group_Control_Border::get_type(),
+			[
+				'name' => 'some_border',
+				'label' => __( 'Box Border', 'textdomain' ),
+				'fields_options' => [
+					'border' => [
+						'label' => __( 'Box Border Type', 'textdomain' ),
+						'default' => 'solid',
+					],
+					'width' => [
+						'label' => __( 'Box Border Width', 'textdomain' ),
+						'default' => [
+							'top' => '1',
+							'right' => '2',
+							'bottom' => '3',
+							'left' => '4',
+							'isLinked' => false,
+						],
+					],
+					'color' => [
+						'label' => __( 'Box Border Color', 'textdomain' ),
+						'default' => '#D4D4D4',
+					],
+				],
+				'selector' => '{{WRAPPER}} .some-box',
+			]
 		);
 
 		$this->end_controls_section();
