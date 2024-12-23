@@ -33,8 +33,8 @@ elementor-form-credit-card-number-field/
  * Text Domain: elementor-form-credit-card-number-field
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.24.0
- * Elementor Pro tested up to: 3.24.0
+ * Elementor tested up to: 3.25.0
+ * Elementor Pro tested up to: 3.25.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

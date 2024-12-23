@@ -33,8 +33,8 @@ elementor-oembed-widget/
  * Text Domain: elementor-oembed-widget
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.24.0
- * Elementor Pro tested up to: 3.24.0
+ * Elementor tested up to: 3.25.0
+ * Elementor Pro tested up to: 3.25.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
