@@ -15,8 +15,8 @@ final class Plugin {
 	public static function instance() {}
 
 	public function __construct() {}
-	public function is_compatible() {}
-	public function init() {}
+	public function is_compatible(): bool {}
+	public function init(): void {}
 
 }
 ```
@@ -94,7 +94,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function is_compatible() {
+	public function is_compatible(): bool {
 
 		// Compatibility checks here...
 
@@ -110,7 +110,7 @@ final class Plugin {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function init() {
+	public function init(): void {
 
 		// Addon functionality here...
 

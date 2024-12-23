@@ -99,7 +99,7 @@ Add a notice warning that the widget is deprecated using the regular `add_contro
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -114,8 +114,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 			[
 				'type' => \Elementor\Controls_Manager::DEPRECATED_NOTICE,
 				'widget' => 'your-old-widget',
-				'since' => '3.16.0',
-				'last' => '3.21.0',
+				'since' => '3.10.0',
+				'last' => '3.20.0',
 				'plugin' => 'Your Great Plugin',
 				'replacement' => 'your-new-widget',
 				'content_classes' => 'your-class',
@@ -139,7 +139,7 @@ Add a notice warning that the widget is deprecated using the `deprecated_notice(
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',
@@ -151,8 +151,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 		$this->deprecated_notice(
 			'Your Great Plugin',
-			'3.16.0',
-			'3.21.0',
+			'3.10.0',
+			'3.20.0',
 			'your-new-widget'
 		);
 

@@ -19,7 +19,7 @@ For example, take the following code:
 ```php
 class Items {
 
-	function add_item( $item_instance ) {
+	function add_item( $item_instance ): void {
 		/* ... */
 	}
 
@@ -33,11 +33,11 @@ use Elementor\Plugin;
 
 class Items {
 
-	function register( $item_instance ) {
+	function register( $item_instance ): void {
 		/* ... */
 	}
 
-	function add_item( $item_instance ) {
+	function add_item( $item_instance ): void {
 		// Deprecation handler
 		Plugin::$instance->modules_manager->get_modules( 'dev-tools' )->deprecation->deprecated_function(
 			'add_item()',
@@ -59,7 +59,7 @@ After eight major versions, the code will look like this:
 ```php
 class Items {
 
-	function register( $item_instance ) {
+	function register( $item_instance ): void {
 		/* ... */
 	}
 
@@ -73,8 +73,8 @@ Addon developers who use the old `add_item()` method should simply rename the me
 ```diff
 class MyItem extends Items {
 
--	protected function add_item() {
-+	protected function register() {
+-	protected function add_item(): void {
++	protected function register(): void {
 		/* ... */
 	}
 

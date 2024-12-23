@@ -20,7 +20,7 @@ Using the `render()` method, we can add attributes to the HTML tag using `add_re
 
 ```php
 <?php
-protected function render() {
+protected function render(): void {
 	$settings = $this->get_settings_for_display();
 
 	$this->add_render_attribute(
@@ -56,7 +56,7 @@ Using the `content_template()` method, we can add attributes to the HTML tag usi
 
 ```php
 <?php
-protected function content_template() {
+protected function content_template(): void {
 	?>
 	<#
 	view.addRenderAttribute(

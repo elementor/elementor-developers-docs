@@ -33,8 +33,8 @@ elementor-finder-wordpress-settings/
  * Text Domain: elementor-finder-wordpress-settings
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -82,7 +82,7 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	 * @access public
 	 * @return string Finder category id.
 	 */
-	public function get_id() {
+	public function get_id(): string {
 		return 'wordpress-settings';
 	}
 
@@ -93,7 +93,7 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	 * @access public
 	 * @return string Finder category title.
 	 */
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'WordPress Settings', 'elementor-finder-wordpress-settings' );
 	}
 
@@ -105,7 +105,7 @@ class Elementor_Finder_WordPress_Settings extends \Elementor\Core\Common\Modules
 	 * @param array $options
 	 * @return array An array of category items.
 	 */
-	public function get_category_items( array $options = [] ) {
+	public function get_category_items( array $options = [] ): array {
 		return [
 			'general' => [
 				'title' => esc_html__( 'General', 'elementor-finder-wordpress-settings' ),

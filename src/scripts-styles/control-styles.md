@@ -11,7 +11,7 @@ In the example below, we'll register stylesheets and enqueue them when creating 
 ```php
 class Elementor_Test_Control extends \Elementor\Base_Control {
 
-	protected function enqueue() {
+	protected function enqueue(): void {
 
 		wp_register_style( 'control-style-1', plugins_url( 'assets/css/control-style-1.css', __FILE__ ) );
 		wp_register_style( 'control-style-2', plugins_url( 'assets/css/control-style-2.css', __FILE__ ), [ 'external-framework' ] );

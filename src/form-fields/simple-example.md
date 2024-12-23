@@ -33,8 +33,8 @@ elementor-form-local-tel-field/
  * Text Domain: elementor-form-local-tel-field
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -100,7 +100,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	 * @access public
 	 * @return string Field type.
 	 */
-	public function get_type() {
+	public function get_type(): string {
 		return 'local-tel';
 	}
 
@@ -113,7 +113,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	 * @access public
 	 * @return string Field name.
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return esc_html__( 'Local Tel', 'elementor-form-local-tel-field' );
 	}
 
@@ -129,7 +129,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	 * @param mixed $form
 	 * @return void
 	 */
-	public function render( $item, $item_index, $form ) {
+	public function render( $item, $item_index, $form ): void {
 		$form->add_render_attribute(
 			'input' . $item_index,
 			[
@@ -155,7 +155,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	 * @param \ElementorPro\Modules\Forms\Classes\Ajax_Handler $ajax_handler
 	 * @return void
 	 */
-	public function validation( $field, $record, $ajax_handler ) {
+	public function validation( $field, $record, $ajax_handler ): void {
 		if ( empty( $field['value'] ) ) {
 			return;
 		}
@@ -191,7 +191,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	 * @access public
 	 * @return void
 	 */
-	public function editor_preview_footer() {
+	public function editor_preview_footer(): void {
 		add_action( 'wp_footer', [ $this, 'content_template_script' ] );
 	}
 
@@ -204,7 +204,7 @@ class Elementor_Local_Tel_Field extends \ElementorPro\Modules\Forms\Fields\Field
 	 * @access public
 	 * @return void
 	 */
-	public function content_template_script() {
+	public function content_template_script(): void {
 		?>
 		<script>
 		jQuery( document ).ready( () => {

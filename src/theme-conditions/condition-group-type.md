@@ -11,11 +11,11 @@ Condition group is defined by the following method:
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public static function get_type() {
+	public static function get_type(): string {
 		return 'condition_type';
 	}
 
-	public static function get_priority() {
+	public static function get_priority(): int {
 		return 40;
 	}
 

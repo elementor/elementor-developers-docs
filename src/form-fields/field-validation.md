@@ -13,7 +13,7 @@ When the form is submitted, Elementor checkes whether all the fields have valid 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function validation( $field, $record, $ajax_handler ) {
+	public function validation( $field, $record, $ajax_handler ): void {
 
 		if ( empty( $field['value'] ) ) {
 			return;
@@ -40,7 +40,7 @@ Some fields have [custom controls](./field-controls/) that allow the user to cus
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function validation( $field, $record, $ajax_handler ) {
+	public function validation( $field, $record, $ajax_handler ): void {
 
 		if ( empty( $field['value'] ) ) {
 			return;

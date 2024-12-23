@@ -22,6 +22,6 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-* **Field Type** – The `get_type()` method returns the field name (id) that will be used in the code.
+* **Field Type** – The `get_type()` method returns the field id that will be used in the code.
 
 * **Field Name** – The `get_name()` method returns the field label that will be displayed to the user.

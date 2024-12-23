@@ -22,7 +22,7 @@ Then, the widget class will set the JS dependencies:
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_script_depends() {
+	public function get_script_depends(): array {
 		return [ 'widget-script-1', 'widget-script-2' ];
 	}
 

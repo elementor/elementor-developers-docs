@@ -19,7 +19,7 @@ For example, take the following code:
 ```php
 class Name {
 
-	function init( $args ) {
+	function init( $args ): void {
 		do_action( 'elementor/old/action', $args );
 	}
 
@@ -33,7 +33,7 @@ use Elementor\Plugin;
 
 class Name {
 
-	function init( $args ) {
+	function init( $args ): void {
 		// Deprecation handler
 		Plugin::$instance->modules_manager->get_modules( 'dev-tools' )->deprecation->do_deprecated_action(
 			'elementor/old/action',
@@ -56,7 +56,7 @@ After eight major versions, the code will look like this:
 ```php
 class Name {
 
-	function init( $args ) {
+	function init( $args ): void {
 		do_action( 'elementor/new/action', $args );
 	}
 

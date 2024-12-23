@@ -34,7 +34,7 @@ When adding titles and custom content to Elementor widgets, we need to allow the
 ```php {13-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'style_section',
@@ -66,7 +66,7 @@ Border control is a bit different from typography control. It is defined in the 
 ```php {13-19}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'style_section',
@@ -82,6 +82,44 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'name' => 'border',
 				'selector' => '{{WRAPPER}} .wrapper',
 			]
+		);
+
+		$this->end_controls_section();
+
+	}
+
+}
+```
+
+### Group Control Label Modify
+
+Here's an advanced setup for changing the background control label.
+
+```php {13-25}
+class Elementor_Test_Widget extends \Elementor\Widget_Base {
+
+	protected function register_controls() {
+
+		$this->start_controls_section(
+			'style_section',
+			[
+				'label' => esc_html__( 'Style', 'textdomain' ),
+				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+			]
+		);
+
+		$this->add_group_control(
+		    Group_Control_Background::get_type(),
+		    [
+			'name'     => 'control_name',
+			'label'    => esc_html__( 'Background', 'textdomain' ),
+			'types'    => [ 'classic', 'gradient', 'video' ],
+			'fields_options' => [
+			    'background' => [
+				'label' => esc_html__( 'New Label Here...', 'textdomain' ),
+			    ],
+			],
+		    ]
 		);
 
 		$this->end_controls_section();

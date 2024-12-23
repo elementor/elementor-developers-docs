@@ -11,11 +11,11 @@ Action data needs to be "returned" by certain methods. Those methods are simple:
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'action_name';
 	}
 
-	public function get_label() {
+	public function get_label(): string {
 		return esc_html__( 'My Action Name', 'textdomain' );
 	}
 

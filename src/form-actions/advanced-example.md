@@ -33,8 +33,8 @@ elementor-forms-sendy-action/
  * Text Domain: elementor-forms-sendy-action
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -84,7 +84,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 	 * @access public
 	 * @return string
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'sendy';
 	}
 
@@ -97,7 +97,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 	 * @access public
 	 * @return string
 	 */
-	public function get_label() {
+	public function get_label(): string {
 		return esc_html__( 'Sendy', 'elementor-forms-sendy-action' );
 	}
 
@@ -110,7 +110,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 	 * @access public
 	 * @param \Elementor\Widget_Base $widget
 	 */
-	public function register_settings_section( $widget ) {
+	public function register_settings_section( $widget ): void {
 
 		$widget->start_controls_section(
 			'section_sendy',
@@ -171,7 +171,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 	 * @param \ElementorPro\Modules\Forms\Classes\Form_Record  $record
 	 * @param \ElementorPro\Modules\Forms\Classes\Ajax_Handler $ajax_handler
 	 */
-	public function run( $record, $ajax_handler ) {
+	public function run( $record, $ajax_handler ): void {
 
 		$settings = $record->get( 'form_settings' );
 
@@ -236,7 +236,7 @@ class Sendy_Action_After_Submit extends \ElementorPro\Modules\Forms\Classes\Acti
 	 * @access public
 	 * @param array $element
 	 */
-	public function on_export( $element ) {
+	public function on_export( $element ): array {
 
 		unset(
 			$element['sendy_url'],

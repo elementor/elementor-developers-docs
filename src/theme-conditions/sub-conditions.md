@@ -11,11 +11,11 @@ When conditions have sub-conditions, the condition class needs to use the follow
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function get_all_label() {
+	public function get_all_label(): string {
 		return esc_html__( 'All Items', 'textdomain' );
 	}
 
-	public function register_sub_conditions() {
+	public function register_sub_conditions(): void {
 		$this->register_sub_condition( new Elementor_Test_Sub_Condition_1(); );
 		$this->register_sub_condition( new Elementor_Test_Sub_Condition_2(); );
 	}

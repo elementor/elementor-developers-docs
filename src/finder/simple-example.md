@@ -33,8 +33,8 @@ elementor-finder-social-media/
  * Text Domain: elementor-finder-social-media
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -82,7 +82,7 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 	 * @access public
 	 * @return string Finder category id.
 	 */
-	public function get_id() {
+	public function get_id(): string {
 		return 'social-media';
 	}
 
@@ -93,7 +93,7 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 	 * @access public
 	 * @return string Finder category title.
 	 */
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Social Media Websites', 'elementor-finder-social-media' );
 	}
 
@@ -105,7 +105,7 @@ class Elementor_Finder_Social_Media extends \Elementor\Core\Common\Modules\Finde
 	 * @param array $options
 	 * @return array An array of category items.
 	 */
-	public function get_category_items( array $options = [] ) {
+	public function get_category_items( array $options = [] ): array {
 		return [
 			'facebook' => [
 				'title' => esc_html__( 'Facebook', 'elementor-finder-social-media' ),

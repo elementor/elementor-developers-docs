@@ -11,7 +11,7 @@ The method that actually generates the field output is called `render()`. In you
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function render( $item, $item_index, $form ) {
+	public function render( $item, $item_index, $form ): void {
 
 		echo '<input type="text" class="elementor-test-field" title="Some text...">';
 
@@ -29,7 +29,7 @@ To add attributes "the Elementor way", you should not hardcode the HTML elements
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function render( $item, $item_index, $form ) {
+	public function render( $item, $item_index, $form ): void {
 		$form->add_render_attribute(
 			'input' . $item_index,
 			[
@@ -52,7 +52,7 @@ Some fields have [custom controls](./field-controls/) that allow the user to cus
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public function render( $item, $item_index, $form ) {
+	public function render( $item, $item_index, $form ): void {
 		$form->add_render_attribute(
 			'textarea' . $item_index,
 			[

@@ -33,8 +33,8 @@ elementor-form-credit-card-number-field/
  * Text Domain: elementor-form-credit-card-number-field
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -84,7 +84,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	 * @access public
 	 * @return string Field type.
 	 */
-	public function get_type() {
+	public function get_type(): string {
 		return 'credit-card-number';
 	}
 
@@ -97,7 +97,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	 * @access public
 	 * @return string Field name.
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return esc_html__( 'Credit Card Number', 'elementor-form-credit-card-number-field' );
 	}
 
@@ -113,7 +113,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	 * @param mixed $form
 	 * @return void
 	 */
-	public function render( $item, $item_index, $form ) {
+	public function render( $item, $item_index, $form ): void {
 		$form_id = $form->get_id();
 
 		$form->add_render_attribute(
@@ -145,7 +145,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	 * @param \ElementorPro\Modules\Forms\Classes\Ajax_Handler $ajax_handler
 	 * @return void
 	 */
-	public function validation( $field, $record, $ajax_handler ) {
+	public function validation( $field, $record, $ajax_handler ): void {
 		if ( empty( $field['value'] ) ) {
 			return;
 		}
@@ -168,7 +168,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	 * @param \Elementor\Widget_Base $widget The form widget instance.
 	 * @return void
 	 */
-	public function update_controls( $widget ) {
+	public function update_controls( $widget ): void {
 		$elementor = \ElementorPro\Plugin::elementor();
 
 		$control_data = $elementor->controls_manager->get_control_from_stack( $widget->get_unique_name(), 'form_fields' );
@@ -223,7 +223,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	 * @access public
 	 * @return void
 	 */
-	public function editor_preview_footer() {
+	public function editor_preview_footer(): void {
 		add_action( 'wp_footer', [ $this, 'content_template_script' ] );
 	}
 
@@ -236,7 +236,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	 * @access public
 	 * @return void
 	 */
-	public function content_template_script() {
+	public function content_template_script(): void {
 		?>
 		<script>
 		jQuery( document ).ready( () => {

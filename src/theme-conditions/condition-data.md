@@ -11,11 +11,11 @@ Condition data needs to be "returned" by certain methods. Those methods are simp
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'condition_name';
 	}
 
-	public function get_label() {
+	public function get_label(): string {
 		return esc_html__( 'My Condition Name', 'textdomain' );
 	}
 

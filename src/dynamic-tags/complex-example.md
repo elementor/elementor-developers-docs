@@ -33,8 +33,8 @@ elementor-server-variable-dynamic-tag/
  * Text Domain: elementor-server-variable-dynamic-tag
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -107,7 +107,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access public
 	 * @return string Dynamic tag name.
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'server-variable';
 	}
 
@@ -120,7 +120,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access public
 	 * @return string Dynamic tag title.
 	 */
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Server Variable', 'textdomain' );
 	}
 
@@ -133,7 +133,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access public
 	 * @return array Dynamic tag groups.
 	 */
-	public function get_group() {
+	public function get_group(): array {
 		return [ 'request-variables' ];
 	}
 
@@ -146,7 +146,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access public
 	 * @return array Dynamic tag categories.
 	 */
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
 	}
 
@@ -159,7 +159,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access protected
 	 * @return void
 	 */
-	protected function register_controls() {
+	protected function register_controls(): void {
 		$variables = [];
 
 		foreach ( array_keys( $_SERVER ) as $variable ) {
@@ -185,7 +185,7 @@ class Elementor_Dynamic_Tag_Server_Variable extends \Elementor\Core\DynamicTags\
 	 * @access public
 	 * @return void
 	 */
-	public function render() {
+	public function render(): void {
 		$user_selected_variable = $this->get_settings( 'user_selected_variable' );
 
 		if ( ! $user_selected_variable ) {

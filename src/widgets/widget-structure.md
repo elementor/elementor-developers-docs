@@ -22,31 +22,33 @@ A simple widget skeleton class will look as follows:
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	public function get_name() {}
+	public function get_name(): string {}
 
-	public function get_title() {}
+	public function get_title(): string {}
 
-	public function get_icon() {}
+	public function get_icon(): string {}
 
-	public function get_categories() {}
+	public function get_categories(): array {}
 
-	public function get_keywords() {}
+	public function get_keywords(): array {}
 
-	public function get_custom_help_url() {}
+	public function get_custom_help_url(): string {}
 
-	protected function get_upsale_data() {}
+	protected function get_upsale_data(): array {}
 
-	public function get_script_depends() {}
+	public function get_script_depends(): array {}
 
-	public function get_style_depends() {}
+	public function get_style_depends(): array {}
 
-	protected function is_dynamic_content() {}
+	public function has_widget_inner_wrapper(): bool {}
 
-	protected function register_controls() {}
+	protected function is_dynamic_content(): bool {}
 
-	protected function render() {}
+	protected function register_controls(): void {}
 
-	protected function content_template() {}
+	protected function render(): void {}
+
+	protected function content_template(): void {}
 
 }
 ```

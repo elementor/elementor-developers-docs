@@ -11,7 +11,7 @@ To set custom controls for dynamic tags, use the `register_controls()` method as
 ```php
 class Elementor_Test_Tag extends \Elementor\Core\DynamicTags\Tag {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->add_control(
 			'text_param',

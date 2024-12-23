@@ -65,7 +65,7 @@ This control does not return any value.
 <?php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		$this->start_controls_section(
 			'content_section',

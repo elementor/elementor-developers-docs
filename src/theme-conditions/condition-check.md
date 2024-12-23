@@ -11,7 +11,7 @@ The method that triggers this condition process is called `check()`. In your con
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function check( $args ) {
+	public function check( $args ): bool {
 		return true;
 	}
 
@@ -31,7 +31,7 @@ In the example below, we'll check to see if it's a front page:
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function check( $args ) {
+	public function check( $args ): bool {
 		return is_front_page();
 	}
 
@@ -45,7 +45,7 @@ In the following example we'll check to see if it's a 404 page:
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function check( $args ) {
+	public function check( $args ): bool {
 		return is_404();
 	}
 
@@ -59,7 +59,7 @@ In this example we'll check to see if it's an embed page:
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function check( $args ) {
+	public function check( $args ): bool {
 		return is_embed();
 	}
 
@@ -73,7 +73,7 @@ We can use server variables to check and see if the page was accessed with SSL:
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function check( $args ) {
+	public function check( $args ): bool {
 		return empty( $_SERVER['HTTPS'] );
 	}
 
@@ -87,7 +87,7 @@ We can apply different templates for different browsers by checking the [user's 
 ```php
 class Elementor_Test_Condition extends \ElementorPro\Modules\ThemeBuilder\Conditions\Condition_Base {
 
-	public function check( $args ) {
+	public function check( $args ): bool {
 		$browser = get_browser(null, true);
 		$is_firefox = ( $browser['browser'] === 'Firefox' );
 		return $is_firefox;

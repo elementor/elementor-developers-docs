@@ -17,7 +17,7 @@ For example, take the following code:
 ```php
 class Name {
 
-	function init( $args ) {
+	function init( $args ): void {
 		$value = apply_filters( 'elementor/old/filter', $value, $args );
 	}
 
@@ -31,7 +31,7 @@ use Elementor\Plugin;
 
 class Name {
 
-	function init( $args ) {
+	function init( $args ): void {
 		// Deprecation handler
 		Plugin::$instance->modules_manager->get_modules( 'dev-tools' )->deprecation->apply_deprecated_filter(
 			'elementor/old/filter',
@@ -54,7 +54,7 @@ After eight major versions, the code will look like this:
 ```php
 class Name {
 
-	function init( $args ) {
+	function init( $args ): void {
 		$value = apply_filters( 'elementor/new/filter', $value, $args );
 	}
 

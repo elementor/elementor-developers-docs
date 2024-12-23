@@ -11,7 +11,7 @@ In your action class, you can add controls using the `register_settings_section(
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	protected function register_settings_section( $widget ) {
+	protected function register_settings_section( $widget ): void {
 
 		$widget->start_controls_section();
 
@@ -37,7 +37,7 @@ In the example below, we're going to add a few controls to the widget instance t
 ```php
 class Elementor_Test_Action extends \ElementorPro\Modules\Forms\Classes\Action_Base {
 
-	public function register_settings_section( $widget ) {
+	public function register_settings_section( $widget ): void {
 
 		$widget->start_controls_section(
 			'custom_action_section',

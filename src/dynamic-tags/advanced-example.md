@@ -33,8 +33,8 @@ elementor-acf-average-dynamic-tag/
  * Text Domain: elementor-acf-average-dynamic-tag
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -107,7 +107,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access public
 	 * @return string Dynamic tag name.
 	 */
-	public function get_name() {
+	public function get_name(): string {
 		return 'acf-average';
 	}
 
@@ -120,7 +120,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access public
 	 * @return string Dynamic tag title.
 	 */
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'ACF Average', 'elementor-acf-average-dynamic-tag' );
 	}
 
@@ -133,7 +133,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access public
 	 * @return array Dynamic tag groups.
 	 */
-	public function get_group() {
+	public function get_group(): array {
 		return [ 'site' ];
 	}
 
@@ -146,7 +146,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access public
 	 * @return array Dynamic tag categories.
 	 */
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
 	}
 
@@ -159,7 +159,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access protected
 	 * @return void
 	 */
-	protected function register_controls() {
+	protected function register_controls(): void {
 		$this->add_control(
 			'fields',
 			[
@@ -178,7 +178,7 @@ class Elementor_Dynamic_Tag_ACF_Average extends \Elementor\Core\DynamicTags\Tag 
 	 * @access public
 	 * @return void
 	 */
-	public function render() {
+	public function render(): void {
 		$fields = $this->get_settings( 'fields' );
 		$sum = 0;
 		$count = 0;

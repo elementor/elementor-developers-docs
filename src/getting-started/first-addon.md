@@ -41,8 +41,8 @@ These widgets will require several files. The main file `elementor-addon.php` wi
  * Text Domain: elementor-addon
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.21.0
- * Elementor Pro tested up to: 3.21.0
+ * Elementor tested up to: 3.24.0
+ * Elementor Pro tested up to: 3.24.0
  */
 
 function register_hello_world_widget( $widgets_manager ) {
@@ -75,33 +75,33 @@ The first widget is `widgets/hello-world-widget-1.php`. It’s quite simple, it 
 <?php
 class Elementor_Hello_World_Widget_1 extends \Elementor\Widget_Base {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'hello_world_widget_1';
 	}
 
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Hello World 1', 'elementor-addon' );
 	}
 
-	public function get_icon() {
+	public function get_icon(): string {
 		return 'eicon-code';
 	}
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ 'basic' ];
 	}
 
-	public function get_keywords() {
+	public function get_keywords(): array {
 		return [ 'hello', 'world' ];
 	}
 
-	protected function render() {
+	protected function render(): void {
 		?>
 		<p> Hello World </p>
 		<?php
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<p> Hello World </p>
 		<?php
@@ -117,27 +117,27 @@ The second widget is `widgets/hello-world-widget-2.php`. It creates two controls
 <?php
 class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 
-	public function get_name() {
+	public function get_name(): string {
 		return 'hello_world_widget_2';
 	}
 
-	public function get_title() {
+	public function get_title(): string {
 		return esc_html__( 'Hello World 2', 'elementor-addon' );
 	}
 
-	public function get_icon() {
+	public function get_icon(): string {
 		return 'eicon-code';
 	}
 
-	public function get_categories() {
+	public function get_categories(): array {
 		return [ 'basic' ];
 	}
 
-	public function get_keywords() {
+	public function get_keywords(): array {
 		return [ 'hello', 'world' ];
 	}
 
-	protected function register_controls() {
+	protected function register_controls(): void {
 
 		// Content Tab Start
 
@@ -190,7 +190,7 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 
 	}
 
-	protected function render() {
+	protected function render(): void {
 		$settings = $this->get_settings_for_display();
 
 		if ( empty( $settings['title'] ) ) {
@@ -203,7 +203,7 @@ class Elementor_Hello_World_Widget_2 extends \Elementor\Widget_Base {
 		<?php
 	}
 
-	protected function content_template() {
+	protected function content_template(): void {
 		?>
 		<#
 		if ( '' === settings.title ) {
