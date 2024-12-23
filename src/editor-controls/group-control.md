@@ -95,7 +95,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 Here's an advanced setup for changing the background control label.
 
-```php {13-19}
+```php {13-25}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	protected function register_controls() {
@@ -112,14 +112,13 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		    Group_Control_Background::get_type(),
 		    [
 			'name'     => 'control_name',
-			'label'    => esc_html__('Background', 'textdomain'),
-			'types'    => ['classic', 'gradient', 'video'],
+			'label'    => esc_html__( 'Background', 'textdomain' ),
+			'types'    => [ 'classic', 'gradient', 'video' ],
 			'fields_options' => [
 			    'background' => [
-				'label' => 'New Label Here...'
+				'label' => esc_html__( 'New Label Here...', 'textdomain' ),
 			    ],
 			],
-			'selector' => '{{WRAPPER}}',
 		    ]
 		);
 
