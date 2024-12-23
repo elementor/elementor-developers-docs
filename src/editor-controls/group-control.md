@@ -111,15 +111,15 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 		$this->add_group_control(
 			\Elementor\Group_Control_Border::get_type(),
 			[
-				'name' => 'some_border',
-				'label' => __( 'Box Border', 'textdomain' ),
+				'name' => 'box_border',
+				'label' => esc_html__( 'Box Border', 'textdomain' ),
 				'fields_options' => [
 					'border' => [
-						'label' => __( 'Box Border Type', 'textdomain' ),
+						'label' => esc_html__( 'Box Border Type', 'textdomain' ),
 						'default' => 'solid',
 					],
 					'width' => [
-						'label' => __( 'Box Border Width', 'textdomain' ),
+						'label' => esc_html__( 'Box Border Width', 'textdomain' ),
 						'default' => [
 							'top' => '1',
 							'right' => '2',
@@ -129,7 +129,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 						],
 					],
 					'color' => [
-						'label' => __( 'Box Border Color', 'textdomain' ),
+						'label' => esc_html__( 'Box Border Color', 'textdomain' ),
 						'default' => '#D4D4D4',
 					],
 				],
