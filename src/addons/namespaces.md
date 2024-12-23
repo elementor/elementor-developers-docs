@@ -58,8 +58,8 @@ The main `elementor-test-addon.php` file loads the functionality:
  * Text Domain: elementor-test-addon
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.24.0
- * Elementor Pro tested up to: 3.24.0
+ * Elementor tested up to: 3.25.0
+ * Elementor Pro tested up to: 3.25.0
  */
 
 function elementor_test_addon() {

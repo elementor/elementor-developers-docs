@@ -38,7 +38,7 @@ composer require wpackagist-plugin/elementor
 Or choose a specific version:
 
 ```bash
-composer require wpackagist-plugin/elementor:3.24.0
+composer require wpackagist-plugin/elementor:3.25.0
 ```
 
 ## Install Elementor Pro
@@ -81,7 +81,7 @@ composer require elementor/elementor-pro
 Or choose a specific version:
 
 ```bash
-composer require elementor/elementor-pro:3.24.0
+composer require elementor/elementor-pro:3.25.0
 ```
 
 ## Activation

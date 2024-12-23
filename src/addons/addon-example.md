@@ -44,8 +44,8 @@ The addon code should look as follows:
  * Text Domain: elementor-test-addon
  *
  * Requires Plugins: elementor
- * Elementor tested up to: 3.24.0
- * Elementor Pro tested up to: 3.24.0
+ * Elementor tested up to: 3.25.0
+ * Elementor Pro tested up to: 3.25.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
