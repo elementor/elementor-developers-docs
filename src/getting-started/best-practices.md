@@ -26,7 +26,7 @@ Use WordPress functions to [internationalize](https://developer.wordpress.org/ap
 
 ## Remove Deprecated Code
 
-Already have an addon? Run it through the [Elementor Deprecated Code Detector](https://github.com/matipojo/elementor-deprecated-code-detector) to see if your addon contains any [deprecated code](https://developers.elementor.com/docs/deprecations). If so, we highly recommend removing it.
+Already have an addon? Run it through the [Elementor Deprecated Code Detector](https://github.com/matipojo/elementor-deprecated-code-detector) to see if your addon contains any [deprecated code](https://developers.elementor.com/docs/deprecations). If so, we highly recommend removing it. You can see a list of [recent deprecations here](https://developers.elementor.com/recent-deprecations/)
 
 ## Adopt Latest Performance Features
 
