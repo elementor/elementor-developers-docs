@@ -2,11 +2,11 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Some widgets are dependent on custom scripts for functionality and custom styles for look and feel. Widgets can use external JS libraries, CSS frameworks, or custom JS handlers. Let's see how to register them.
+Some widgets are dependent on custom scripts for functionality and custom styles for look and feel. Widgets can use external JS libraries, CSS frameworks, or custom JS handlers. Let's see how to use them.
 
 ## Defining Dependencies
 
-Inside the widget class we can deffine the required JS and CSS dependencies the following way:
+Inside the widget class we can define the required JS and CSS dependencies the following way:
 
 ```php
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
