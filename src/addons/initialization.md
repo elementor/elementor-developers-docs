@@ -22,32 +22,33 @@ final class Plugin {
 	 * @access public
 	 */
 	public function init(): void {
+		add_action( 'elementor/frontend/after_register_styles', [ $this, 'register_frontend_styles' ] );
+		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'register_frontend_scripts' ] );
 
-		add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'frontend_styles' ] );
-		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'frontend_scripts' ] );
-
+		add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'enqueue_frontend_styles' ] );
+		add_action( 'elementor/frontend/after_enqueue_scripts', [ $this, 'enqueue_frontend_scripts' ] );
 	}
 
-	public function frontend_styles(): void {
-
+	public function register_frontend_styles(): void {
 		wp_register_style( 'frontend-style-1', plugins_url( 'assets/css/frontend-style-1.css', __FILE__ ) );
 		wp_register_style( 'frontend-style-2', plugins_url( 'assets/css/frontend-style-2.css', __FILE__ ), [ 'external-framework' ] );
 		wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
-
-		wp_enqueue_style( 'frontend-style-1' );
-		wp_enqueue_style( 'frontend-style-2' );
-
 	}
 
-	public function frontend_scripts(): void {
-
+	public function register_frontend_scripts(): void {
 		wp_register_script( 'frontend-script-1', plugins_url( 'assets/js/frontend-script-1.js', __FILE__ ) );
 		wp_register_script( 'frontend-script-2', plugins_url( 'assets/js/frontend-script-2.js', __FILE__ ), [ 'external-library' ] );
 		wp_register_script( 'external-library', plugins_url( 'assets/js/libs/external-library.js', __FILE__ ) );
+	}
 
+	public function enqueue_frontend_styles(): void {
+		wp_enqueue_style( 'frontend-style-1' );
+		wp_enqueue_style( 'frontend-style-2' );
+	}
+
+	public function enqueue_frontend_scripts(): void {
 		wp_enqueue_script( 'frontend-script-1' );
 		wp_enqueue_script( 'frontend-script-2' );
-
 	}
 
 }

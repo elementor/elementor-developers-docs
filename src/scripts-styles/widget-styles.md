@@ -8,18 +8,18 @@ When you develop new [Elementor widgets](./../widgets/) and need to [register cu
 
 In the example below, we'll register the required stylesheets in the main file:
 
-```php
-function register_widget_styles() {
+```php {6}
+function my_plugin_register_widget_styles() {
 	wp_register_style( 'widget-style-1', plugins_url( 'assets/css/widget-style-1.css', __FILE__ ) );
 	wp_register_style( 'widget-style-2', plugins_url( 'assets/css/widget-style-2.css', __FILE__ ), [ 'external-framework' ] );
 	wp_register_style( 'external-framework', plugins_url( 'assets/css/libs/external-framework.css', __FILE__ ) );
 }
-add_action( 'wp_enqueue_scripts', 'register_widget_styles' );
+add_action( 'wp_enqueue_scripts', 'my_plugin_register_widget_styles' );
 ```
 
 Then, the widget class will set the CSS dependencies:
 
-```php
+```php {3}
 class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 	public function get_style_depends(): array {
