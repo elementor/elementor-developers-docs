@@ -28,7 +28,37 @@ The optimized markup has only one wrapping element:
 </div>
 ```
 
-By default, Elementor uses the unoptimized markup for backwards compatibility.
+Elementor had previously utilized unoptimized markup. Nowadays, the only websites with unoptimized markup are those that have deactivated the "Optimized DOM" feature. When enough addons have embraced this feature, Elementor will activate it on all websites.
+
+### Wrapping Elements
+
+The number of wrapping elements that each widget needs is up to the widget developer.
+
+If it's a legacy widget that requires both `<div>` wrappers, add the following method to the widget:
+
+```php
+public function has_widget_inner_wrapper(): bool {
+	return true;
+}
+```
+
+If it's a new widget that can work with only the outer `<div>` wrapper, without the inner `.elementor-widget-container` wrapper, add the following method to the widget:
+
+```php
+public function has_widget_inner_wrapper(): bool {
+	return false;
+}
+```
+
+If it's a legacy widget that was already optimized, and prefer to leave the choice to the website, based on the feature activation status, add the following method to the widget:
+
+```php
+public function has_widget_inner_wrapper(): bool {
+	return ! Plugin::$instance->experiments->is_feature_active( 'e_optimized_markup' );
+}
+```
+
+Whether the experiment is running or not, widgets that do not employ the `has_widget_inner_wrapper()` function will behave like unoptimized widgets with two wrapping `<div>` elements for backward compatibility.
 
 ## Examples
 
