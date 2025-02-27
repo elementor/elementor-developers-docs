@@ -320,7 +320,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 	 * Determine whether to optimize the DOM size.
 	 *
 	 * @since 1.0.0
-	 * @access protected
+	 * @access public
 	 * @return bool Whether to optimize the DOM size.
 	 */
 	public function has_widget_inner_wrapper(): bool {

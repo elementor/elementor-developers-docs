@@ -119,7 +119,7 @@ export class Component extends $e.modules.ComponentBase {
 ## Conventions
 
 ```javascript
-// {FILE_PATH}/{FILE_NAME} - This is line should be deleted - just for the exmaple.
+// {FILE_PATH}/{FILE_NAME} - This is line should be deleted - just for the example.
 import HookUIAfter from 'elementor-api/modules/hooks/{TYPE}/after';
 
 export class {FILE_NAME_CAMEL_CASE} extends HookUIAfter {
