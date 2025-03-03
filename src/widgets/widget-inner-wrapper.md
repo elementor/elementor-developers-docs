@@ -34,7 +34,7 @@ Elementor had previously utilized unoptimized markup. Nowadays, the only website
 
 The number of wrapping elements that each widget needs is up to the widget developer.
 
-If it's a legacy widget that requires both `<div>` wrappers, add the following method to the widget:
+If it's a legacy widget that requires both `<div>` wrappers, as it reqieres the inner `.elementor-widget-container` wrapper, add the following method to the widget:
 
 ```php
 public function has_widget_inner_wrapper(): bool {
@@ -58,7 +58,9 @@ public function has_widget_inner_wrapper(): bool {
 }
 ```
 
-Whether the experiment is running or not, widgets that do not employ the `has_widget_inner_wrapper()` function will behave like unoptimized widgets with two wrapping `<div>` elements for backward compatibility.
+Finnaly, widgets that do not employ the `has_widget_inner_wrapper()` function will behave like unoptimized widgets with two wrapping `<div>` elements.
+
+In any case, whether the experiment is active or not, developer need to think about the future when Elementor merges this feature. To prevent styling issues, make the nesseary updates. Add the `has_widget_inner_wrapper()` to all the widgets.
 
 ## Examples
 
