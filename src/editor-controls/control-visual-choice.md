@@ -62,7 +62,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>options</code></td>
 			<td><code>array</code></td>
 			<td>[]</td>
-			<td>A multi dimensional array containing the <code>title</code> and the <code>icon</code> for each radio button: <code>[ [ 'title' =&gt; '', 'image' =&gt; '' ], [ 'title' =&gt; '', 'image' =&gt; '' ], ... ]</code>.</td>
+			<td>A multi dimensional array containing a <code>title</code> and an <code>image</code> for each radio button.
 		</tr>
 		<tr>
 			<td><code>columns</code></td>
