@@ -43,6 +43,7 @@ module.exports = [
           'control-select',
           'control-select2',
           'control-choose',
+          'control-visual-choice',
           'control-color',
           'control-icon',
           'control-font',
