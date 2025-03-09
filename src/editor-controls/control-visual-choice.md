@@ -138,7 +138,7 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 					]
 				],
 				'default' => 'masonry',
-				'columns' => 3,
+				'columns' => 2,
 				'prefix_class' => 'some-layout-',
 			]
 		);
