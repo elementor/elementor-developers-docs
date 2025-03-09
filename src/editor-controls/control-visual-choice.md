@@ -111,8 +111,6 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 				'label' => esc_html__( 'Structure', 'textdomain' ),
 				'type' => \Elementor\Controls_Manager::VISUAL_CHOICE,
 				'label_block' => true,
-				'default' => 'masonry',
-				'columns' => 3,
 				'options' => [
 					'grid-3' => [
 						'title' => esc_attr__( 'Grid: 3 columns.', 'textdomain' ),
@@ -139,6 +137,8 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 						'image' => plugins_url( 'assets/img/stretch.svg', __FILE__ ),
 					]
 				],
+				'default' => 'masonry',
+				'columns' => 3,
 				'prefix_class' => 'some-layout-',
 			]
 		);
