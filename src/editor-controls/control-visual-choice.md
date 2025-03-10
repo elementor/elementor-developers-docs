@@ -68,7 +68,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 			<td><code>columns</code></td>
 			<td><code>number</code></td>
 			<td>1</td>
-			<td>Whether to allow toggle / unset the selection.</td>
+			<td>The number of columns in a grid layout.</td>
 		</tr>
 		<tr>
 			<td><code>toggle</code></td>
