@@ -20,13 +20,13 @@ As mentioned above, Elementor form fields extend the `\ElementorPro\Modules\Form
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
 
-	public $depended_scripts = [];
-
-	public $depended_styles = [];
-
 	public function get_type(): string {}
 
 	public function get_name(): string {}
+
+	public function get_script_depends(): array {}
+
+	public function get_style_depends(): array {}
 
 	public function render( $item, $item_index, $form ): void {}
 
@@ -39,13 +39,13 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 
 Let’s break it down:
 
-* **Field Scripts** – The `$depended_scripts` property defines the JS files required to display the field.
-
-* **Field Styles** – The `$depended_styles` property defines the CSS files required to display the field.
-
 * **Field Type** – The `get_type()` method returns the field name (id) that will be used in the code.
 
 * **Field Name** – The `get_name()` method returns the field label that will be displayed to the user.
+
+* **Field Scripts** – The `get_script_depends()` method defines the JS files required to display the field.
+
+* **Field Styles** – The `get_style_depends()` method defines the CSS files required to display the field.
 
 * **Field Render** – The `render()` method renders the data and displays the field output.
 
