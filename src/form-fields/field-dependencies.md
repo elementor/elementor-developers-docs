@@ -86,7 +86,7 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 
 ## Backwards Compatibility
 
-Until Elementor 3.29, dependency declaration done using `$depended_scripts` and `$depended_styles` properties:
+Until Elementor 3.28, dependency declaration done using `$depended_scripts` and `$depended_styles` properties:
 
 ```php
 class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base {
@@ -98,4 +98,4 @@ class Elementor_Test_Field extends \ElementorPro\Modules\Forms\Fields\Field_Base
 }
 ```
 
-If you need to support Elementor versions prior to 3.29, add these properties to the form field class with the required script/style handles.
+If you need to support Elementor versions prior to 3.28, add these properties to the form field class with the required script/style handles.
