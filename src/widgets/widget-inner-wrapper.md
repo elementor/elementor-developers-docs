@@ -53,7 +53,7 @@ If it's a legacy widget that was already optimized, and prefer to leave the choi
 
 ```php
 public function has_widget_inner_wrapper(): bool {
-	return ! Plugin::$instance->experiments->is_feature_active( 'e_optimized_markup' );
+	return ! \Elementor\Plugin::$instance->experiments->is_feature_active( 'e_optimized_markup' );
 }
 ```
 
