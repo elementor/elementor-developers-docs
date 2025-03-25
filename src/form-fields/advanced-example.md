@@ -230,7 +230,7 @@ class Elementor_Credit_Card_Number_Field extends \ElementorPro\Modules\Forms\Fie
 	/**
 	 * Content template script.
 	 *
-	 * Add content template alternative, to display the field in Elemntor editor.
+	 * Add content template alternative, to display the field in Elementor editor.
 	 *
 	 * @since 1.0.0
 	 * @access public
