@@ -100,7 +100,7 @@ When using this control, the `type` should be set to `\Elementor\Controls_Manage
 
 (_`array`_) An array containing icon data:
 
-* **$value** (_`int`_) Icon value.
+* **$value** (_`string`_) Icon value.
 * **$library** (_`string`_) Icon library name.
 
 ## Usage
