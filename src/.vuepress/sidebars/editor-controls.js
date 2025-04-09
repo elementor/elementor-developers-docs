@@ -45,7 +45,6 @@ module.exports = [
           'control-choose',
           'control-visual-choice',
           'control-color',
-          'control-icon',
           'control-font',
           'control-date-time',
           'control-gallery',
