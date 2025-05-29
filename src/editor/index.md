@@ -13,7 +13,7 @@ The editor refers to the entire editing screen and consists of two main areas:
 
 ## Editor Panels
 
-The panel can be compared to a sideboard and its functionality will depend on what panel is being displayed:
+The panel area displays various controls and setting. The controls and functionality displayed depend on what specific panel is being displayed:
 
 * [Menu Panel](./menu-panel/)
 * [Site Settings Panel](./site-settings-panel/)
