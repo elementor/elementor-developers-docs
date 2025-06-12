@@ -15,6 +15,7 @@ module.exports = [
       'php',
       'placeholder-image',
       'shapes',
+      'masks',
       'frontend-content',
       'render-frontend-elements',
       'render-widget-content',
