@@ -36,7 +36,7 @@ To support negative variations, you should include two files:
 
 The first is the original design, the other is the same design but with negative colors.
 
-## Examples
+## Example
 
 To add new shape dividers in your theme, use the following code:
 
@@ -48,58 +48,26 @@ To add new shape dividers in your theme, use the following code:
  * @param array $additional_shapes Additional Elementor shape dividers.
  */
 function custom_elementor_shape_dividers( $additional_shapes ) {
-
-	$additional_shapes['shape-divider-1'] = [
-		'title'        => esc_html__( 'Shape divider 1', 'textdomain' ),
-		'url'          => get_stylesheet_directory_uri() . '/assets/shapes/shape-1.svg',
-		'path'         => get_stylesheet_directory() . '/assets/shapes/shape-1.svg',
-		'height_only'  => true,
+	return [
+		'shape-divider-1' => [
+			'title'        => esc_html__( 'Shape divider 1', 'textdomain' ),
+			'url'          => PLUGIN_ASSETS_URL . 'assets/shapes/shape-1.svg',
+			'path'         => PLUGIN_ASSETS_PATH . 'assets/shapes/shape-1.svg',
+			'height_only'  => true,
+		],
+		'shape-divider-1' => [
+			'title'        => esc_html__( 'Shape divider 2', 'textdomain' ),
+			'url'          => PLUGIN_ASSETS_URL . 'assets/shapes/shape-2.svg',
+			'path'         => PLUGIN_ASSETS_PATH . 'assets/shapes/shape-2.svg',
+			'has_flip'     => true,
+			'has_negative' => true,
+			'height_only'  => true,
+		],
 	];
-
-	$additional_shapes['shape-divider-2'] = [
-		'title'        => esc_html__( 'Shape divider 2', 'textdomain' ),
-		'url'          => get_stylesheet_directory_uri() . '/assets/shapes/shape-2.svg',
-		'path'         => get_stylesheet_directory() . '/assets/shapes/shape-2.svg',
-		'has_flip'     => true,
-		'has_negative' => true,
-		'height_only'  => true,
-	];
-
-	return $additional_shapes;
-
 }
 add_filter( 'elementor/shapes/additional_shapes', 'custom_elementor_shape_dividers' );
 ```
 
-To add new shape dividers in your plugin, use the following code:
+To avoid conflicts with other plugins, shape IDs should be prefixed.
 
-```php
-/**
- * Add additional shape dividers to Elementor.
- *
- * @since 1.0.0
- * @param array $additional_shapes Additional Elementor shape dividers.
- */
-function custom_elementor_shape_dividers( $additional_shapes ) {
-
-	$additional_shapes['shape-divider-1'] = [
-		'title'        => esc_html__( 'Shape divider 1', 'textdomain' ),
-		'url'          => plugins_url( __FILE__ ) . 'assets/shapes/shape-1.svg',
-		'path'         => plugin_dir_path( __FILE__ ) . 'assets/shapes/shape-1.svg',
-		'height_only'  => true,
-	];
-
-	$additional_shapes['shape-divider-2'] = [
-		'title'        => esc_html__( 'Shape divider 2', 'textdomain' ),
-		'url'          => plugins_url( __FILE__ ) . 'assets/shapes/shape-2.svg',
-		'path'         => plugin_dir_path( __FILE__ ) . 'assets/shapes/shape-2.svg',
-		'has_flip'     => true,
-		'has_negative' => true,
-		'height_only'  => true,
-	];
-
-	return $additional_shapes;
-
-}
-add_filter( 'elementor/shapes/additional_shapes', 'custom_elementor_shape_dividers' );
-```
+The `PLUGIN_ASSETS_URL` should be updated using functions like `plugin_dir_path( __FILE__ )` or `get_stylesheet_directory_uri()`. and `PLUGIN_ASSETS_PATH` should be updated using functions like `plugin_dir_path( __FILE__ )` or `get_stylesheet_directory()`.
