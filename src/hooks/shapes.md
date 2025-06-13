@@ -45,9 +45,8 @@ To add new shape dividers in your theme, use the following code:
  * Add additional shape dividers to Elementor.
  *
  * @since 1.0.0
- * @param array $additional_shapes Additional Elementor shape dividers.
  */
-function custom_elementor_shape_dividers( $additional_shapes ) {
+function custom_elementor_shape_dividers() {
 	return [
 		'shape-divider-1' => [
 			'title'        => esc_html__( 'Shape divider 1', 'textdomain' ),
