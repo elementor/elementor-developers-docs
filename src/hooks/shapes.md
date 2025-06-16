@@ -54,7 +54,7 @@ function custom_elementor_shape_dividers() {
 			'path'         => PLUGIN_ASSETS_PATH . 'assets/shapes/shape-1.svg',
 			'height_only'  => true,
 		],
-		'shape-divider-1' => [
+		'shape-divider-2' => [
 			'title'        => esc_html__( 'Shape divider 2', 'textdomain' ),
 			'url'          => PLUGIN_ASSETS_URL . 'assets/shapes/shape-2.svg',
 			'path'         => PLUGIN_ASSETS_PATH . 'assets/shapes/shape-2.svg',
@@ -69,4 +69,4 @@ add_filter( 'elementor/shapes/additional_shapes', 'custom_elementor_shape_divide
 
 To avoid conflicts with other plugins, shape IDs should be prefixed.
 
-The `PLUGIN_ASSETS_URL` should be updated using functions like `plugin_dir_path( __FILE__ )` or `get_stylesheet_directory_uri()`. and `PLUGIN_ASSETS_PATH` should be updated using functions like `plugin_dir_path( __FILE__ )` or `get_stylesheet_directory()`.
+The `PLUGIN_ASSETS_URL` should be updated using functions like `plugin_dir_path( __FILE__ )` or `get_stylesheet_directory_uri()`. The `PLUGIN_ASSETS_PATH` should be updated using functions like `plugin_dir_path( __FILE__ )` or `get_stylesheet_directory()`.
