@@ -28,7 +28,7 @@ Basic element structure:
 | `settings` | _`array`_/_`object`_ | The element data from the panel, holding the values from the editor controls. It's an empty `array` if settings are not defined, or an `object` if the element has settings. |
 | `elements` | _`array`_            | An array of objects that holds all the nested elements. |
 
-Additional values can be introduced, based on the element type. For exammple, when `elType` is `widget`, an additional `widgetType` velue is added to indicate the [widget name](./../widgets/widget-data/) (i.e. `heading`, `image`, `button`, `social-icons` etc.).
+Additional values can be introduced, based on the element type. For example, when `elType` is `widget`, an additional `widgetType` value is added to indicate the [widget name](./../widgets/widget-data/) (i.e. `heading`, `image`, `button`, `social-icons` etc.).
 
 ## Layout Elements vs. Widget Elements
 
