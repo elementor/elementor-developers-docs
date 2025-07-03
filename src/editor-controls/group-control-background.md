@@ -36,7 +36,13 @@ When using this group control, the `type` should be set to `Group_Control_Backgr
 			<td><code>types</code></td>
 			<td><code>array</code></td>
 			<td></td>
-			<td>The specific background types to use. Available types are <code>classic</code>, <code>gradient</code> and <code>video</code>. Default is an empty array, including all the types.</td>
+			<td>The specific background types to use. Available types are <code>classic</code>, <code>gradient</code>, <code>video</code> and <code>slideshow</code>. Default is an empty array, including all the types.</td>
+		</tr>
+		<tr>
+			<td><code>include</code></td>
+			<td><code>array</code></td>
+			<td></td>
+			<td>Include specific controls from the group control. Example: <code>['image']</code></td>
 		</tr>
 		<tr>
 			<td><code>exclude</code></td>
