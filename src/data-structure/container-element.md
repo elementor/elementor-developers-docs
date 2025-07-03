@@ -30,7 +30,7 @@ Container element structure:
 
 ## Nested Elements
 
-By design, conteiners can hold nested elements. All the inner elements are stored in the `elements` value, and they can have their own nested elements.
+By design, containers can hold nested elements. All the inner elements are stored in the `elements` value, and they can have their own nested elements.
 
 ## Examples
 
