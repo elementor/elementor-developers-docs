@@ -114,4 +114,4 @@ class Elementor_Test_Widget extends \Elementor\Widget_Base {
 
 ## Notes
 
-Video background is only supported at section level, not on widget level.
+Video and slideshow types are supported only at section/container level, not widget level.
