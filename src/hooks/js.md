@@ -145,15 +145,16 @@ You can use the regular window.onLoad event to act on elements when page loading
 #### Example
 
 ```js
-jQuery(document).ready(function ($) {
+jQuery(document).ready(($) => {
 	// Swiper instance only exists after image carousel widget
 	// has been initialized.
 	$(window).on('load', () => {
-		const $carousel = $('.swiper');
-		if ($carousel.data('swiper')) {
-			const swiper = $carousel.data('swiper');
-			swiper.params.a11y.containerRole = 'button';
-		}
+		$('.swiper').each(function () {
+			const swiper = $(this).data('swiper');
+			if (swiper) {
+				swiper.params.a11y.containerRole = 'button';
+			}
+		});
 	});
 });
 ```
