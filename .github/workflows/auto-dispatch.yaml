@@ -11,6 +11,6 @@ jobs:
       - name: send dispatch
         uses: peter-evans/repository-dispatch@v1
         with:
-          token: ${{ secrets.DEVOPS_TOKEN  }}
+          token: ${{ secrets.CLOUD_DEVOPS_TOKEN  }}
           repository: ${{ secrets.dispatch_repo }}
           event-type: release
