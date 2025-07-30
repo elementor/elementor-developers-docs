@@ -3,12 +3,9 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    types: [closed]
 
 jobs:
   release-dispatch:
-    if: github.event_name == 'push' || (github.event.pull_request.merged == true && github.base_ref == 'master')
     runs-on: ubuntu-latest
     steps:
       - name: Send dispatch
