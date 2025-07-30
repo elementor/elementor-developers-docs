@@ -24,15 +24,4 @@ jobs:
         with:
           token: ${{ secrets.DEVOPS_TOKEN  }}
           repository: ${{ secrets.dispatch_repo }}
-          event-type: gitops-${{ github.event.repository.name }}-${{ github.ref }}-${{ github.actor }}
-          client-payload: >-
-            {
-              "product": "platform",
-              "project": "external",
-              "type": "docker",
-              "repository": "${{ github.event.repository.name }}" ,
-              "repository_full": "${{ github.event.repository.full_name }}" ,
-              "github-sha": "${{ github.sha }}",
-              "github-actor": "${{ github.actor }}",
-              "github-ref": "${{ github.ref_name }}"
-            }
+          event-type: release
