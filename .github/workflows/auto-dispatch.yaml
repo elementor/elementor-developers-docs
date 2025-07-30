@@ -8,33 +8,9 @@ on:
 
 jobs:
   release-dispatch:
-    if: (github.event_name == 'push') || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && github.base_ref == 'master')
+    if: github.event_name == 'push' || (github.event.pull_request.merged == true && github.base_ref == 'master')
     runs-on: ubuntu-latest
     steps:
-      - name: Determine version level
-        id: level
-        run: |
-          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
-            # Extract labels from merged PR
-            LABELS="${{ join(github.event.pull_request.labels.*.name, ',') }}"
-            echo "PR Labels: $LABELS"
-            
-            if [[ "$LABELS" == *"major"* ]]; then
-              echo "level=major" >> $GITHUB_OUTPUT
-              echo "Using PR label: major"
-            elif [[ "$LABELS" == *"minor"* ]]; then
-              echo "level=minor" >> $GITHUB_OUTPUT
-              echo "Using PR label: minor"
-            else
-              echo "level=patch" >> $GITHUB_OUTPUT
-              echo "Using PR label default: patch"
-            fi
-          else
-            # Push to master - default to patch
-            echo "level=patch" >> $GITHUB_OUTPUT
-            echo "Using push default: patch"
-          fi
-
       - name: Send dispatch
         uses: peter-evans/repository-dispatch@v3
         with:
@@ -43,7 +19,7 @@ jobs:
           event-type: release
           client-payload: |
             {
-              "level": "${{ steps.level.outputs.level }}",
+              "level": "patch",
               "source": "${{ github.event_name }}",
               "ref": "${{ github.ref }}",
               "sha": "${{ github.sha }}",
