@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: send dispatch
-        uses: peter-evans/repository-dispatch@v1
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.CLOUD_DEVOPS_TOKEN  }}
           repository: ${{ secrets.dispatch_repo }}
