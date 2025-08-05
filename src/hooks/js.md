@@ -136,6 +136,29 @@ elementorFrontend.hooks.addAction( 'frontend/element_ready/google-maps.satellite
 } );
 ```
 
+## Integrating with widgets
+
+Elementor Frontend does not trigger an event when a widget is initialized and loaded.  And most widgets use hardcoded parameters derived from element settings, so you cannot customize them from PHP or JavaScript.
+
+You can use the regular window.onLoad event to act on elements when page loading has completed.
+
+#### Example
+
+```js
+jQuery(document).ready(($) => {
+	// Swiper instance only exists after image carousel widget
+	// has been initialized.
+	$(window).on('load', () => {
+		$('.swiper').each(function () {
+			const swiper = $(this).data('swiper');
+			if (swiper) {
+				swiper.params.a11y.containerRole = 'button';
+			}
+		});
+	});
+});
+```
+
 ## Editor Hooks
 
 ### `panel/open_editor/{elementType}`
