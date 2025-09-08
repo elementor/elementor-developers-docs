@@ -2,15 +2,15 @@
 
 <Badge type="tip" vertical="top" text="Elementor Core" /> <Badge type="warning" vertical="top" text="Intermediate" />
 
-Elementor widgets define their own markup in the `render()` method. However, Elementor wraps each widget in two `<div>` elements; the outer `<div class="elementor-widget">` element, and the inner `<div class="elementor-widget-container">` element. These additional wrappers allow Elementor to add additional styles like background, margins, borders, motion effects, etc.
+Elementor widgets define their own markup in the `render()` method. However, Elementor wraps each widget in two `<div>` elements; the outer `<div class="elementor-widget">` element, and the inner `<div class="elementor-widget-container">` element. In the past, these additional wrappers allow Elementor to add additional styles and features.
 
-Two wrappers for each widget increases the overall DOM size, reducing page performance. To overcome this, developers can use the `has_widget_inner_wrapper()` method to control the number of wrapper elements the widget has.
+However, two wrappers for each widget increases the overall DOM size, reducing page performance. To overcome this, developers can use the `has_widget_inner_wrapper()` method to control the number of wrapper elements the widget has.
 
-By switching to a single wrapper, a widget can reduce the DOM size and optimize its footprint on the page. However, existing widgets that rely on the inner `.elementor-widget-container` wrapping element to style widgets, can maintain backwards compatibility.
+By switching to a single wrapper, a widget can reduce the DOM size and optimize its footprint on the page. But, existing widgets that rely on the inner `.elementor-widget-container` wrapping element to style widgets, can maintain backwards compatibility.
 
 ## Widget Markup
 
-The current, unoptimized widget markup, includes two wrapping elements:
+The old, unoptimized widget markup, includes two wrapping elements:
 
 ```html
 <div class="elementor-widget elementor-widget-{widget-name}">
@@ -20,7 +20,7 @@ The current, unoptimized widget markup, includes two wrapping elements:
 </div>
 ```
 
-The optimized markup has only one wrapping element:
+The new, optimized markup, has only one wrapping element:
 
 ```html
 <div class="elementor-widget elementor-widget-{widget-name}">
@@ -28,20 +28,21 @@ The optimized markup has only one wrapping element:
 </div>
 ```
 
-Elementor had previously utilized unoptimized markup. Nowadays, the only websites with unoptimized markup are those that have deactivated the "Optimized DOM" feature. When enough addons have embraced this feature, Elementor will activate it on all websites.
+Elementor had previously utilized unoptimized markup. Nowadays, all Elementor and Elementor Pro widgets use optimized markup. Elementor provided a transition period for external developers to adopt the optimized widget markup.
 
 ### Wrapping Elements
 
-The number of wrapping elements that each widget needs is up to the widget developer.
+The number of wrapping elements required for each widget is determined by the widget developer. Elementor provided a transition period for external developers to adopt the optimized widget markup.
 
-If it's a legacy widget that requires both `<div>` wrappers, as it requires the inner `.elementor-widget-container` wrapper, add the following method to the widget:
+Legacy widgets that require both `<div>` wrappers, including the inner `.elementor-widget-container` wrapper, use the following method in the widget:
+
 ```php
 public function has_widget_inner_wrapper(): bool {
 	return true;
 }
 ```
 
-If it's a new widget that can work with only the outer `<div>` wrapper, without the inner `.elementor-widget-container` wrapper, add the following method to the widget:
+New widgets that can work with only the outer `<div>` wrapper, without the inner `.elementor-widget-container` wrapper, use the following method in the widget:
 
 ```php
 public function has_widget_inner_wrapper(): bool {
@@ -49,17 +50,12 @@ public function has_widget_inner_wrapper(): bool {
 }
 ```
 
-If it's a legacy widget that was already optimized, and prefer to leave the choice to the website, based on the feature activation status, add the following method to the widget:
+Finnaly, widgets that do not employ the `has_widget_inner_wrapper()` function will behave like unoptimized widgets with two wrapping `<div>` elements. This behaviour may change in the future to optimize the remaining widgets.
 
-```php
-public function has_widget_inner_wrapper(): bool {
-	return ! \Elementor\Plugin::$instance->experiments->is_feature_active( 'e_optimized_markup' );
-}
-```
+### Future 
 
-Finnaly, widgets that do not employ the `has_widget_inner_wrapper()` function will behave like unoptimized widgets with two wrapping `<div>` elements.
+Developers should plan ahead for when unoptimized widgets will stop being rendered. To avoid compatibility and styling problems, every widget should include the `has_widget_inner_wrapper()` method set to return `false`.
 
-In any case, whether the experiment is active or not, developer need to think about the future when Elementor merges this feature. To prevent styling issues, make the necessary updates. Add the `has_widget_inner_wrapper()` to all the widgets.
 ## Examples
 
 ### Optimized Widget DOM
