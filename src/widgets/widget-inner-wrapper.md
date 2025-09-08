@@ -28,13 +28,13 @@ The new, optimized markup, has only one wrapping element:
 </div>
 ```
 
-Elementor had previously utilized unoptimized markup. Nowadays, all widgets use optimized markup.
+Elementor had previously utilized unoptimized markup. Nowadays, all Elementor and Elementor Pro widgets use optimized markup. Elementor provided a transition period for external developers to adopt the optimized widget markup.
 
 ### Wrapping Elements
 
-The number of wrapping elements that each widget needs is up to the widget developer. It provides external developers a transition period to move to optimized widget markup.
+The number of wrapping elements required for each widget is determined by the widget developer. Elementor provided a transition period for external developers to adopt the optimized widget markup.
 
-Legacy widgets that require both `<div>` wrappers, including the inner `.elementor-widget-container` wrapper, should add the following method to the widget:
+Legacy widgets that require both `<div>` wrappers, including the inner `.elementor-widget-container` wrapper, use the following method in the widget:
 
 ```php
 public function has_widget_inner_wrapper(): bool {
@@ -42,7 +42,7 @@ public function has_widget_inner_wrapper(): bool {
 }
 ```
 
-New widgets that can work with only the outer `<div>` wrapper, without the inner `.elementor-widget-container` wrapper, should add the following method to the widget:
+New widgets that can work with only the outer `<div>` wrapper, without the inner `.elementor-widget-container` wrapper, use the following method in the widget:
 
 ```php
 public function has_widget_inner_wrapper(): bool {
@@ -50,11 +50,11 @@ public function has_widget_inner_wrapper(): bool {
 }
 ```
 
-Finnaly, widgets that do not employ the `has_widget_inner_wrapper()` function will behave like unoptimized widgets with two wrapping `<div>` elements.
+Finnaly, widgets that do not employ the `has_widget_inner_wrapper()` function will behave like unoptimized widgets with two wrapping `<div>` elements. This behaviour may change in the future to optimize the remaining widgets.
 
 ### Future 
 
-Developers need to think about the future when unoptimized widgets will no longer be rendered. To prevent compatibility and styling issues, all widgets should have `has_widget_inner_wrapper()` method, returning `false`.
+Developers should plan ahead for when unoptimized widgets will stop being rendered. To avoid compatibility and styling problems, every widget should include the `has_widget_inner_wrapper()` method set to return `false`.
 
 ## Examples
 
